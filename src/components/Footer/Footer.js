@@ -2,18 +2,16 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <>
-    <img className="svg" alt="" src='/img/wave2.png'/>
-    <footer>
-      <div className="row">
-        <div className="col mt-4"></div>
-        <div className="grid-item mt-4 mb-4">
-          <p className="text-center">copyright Federico Martearena - FabLab</p>
-        </div>
-        <div className="col mt-4"></div>
+    <footer id="footer">
+    <div className="container">
+      <div className="copyright">
+        &copy; Copyright <strong><span>Federico Martearena</span></strong>. All Rights Reserved
       </div>
-    </footer>
-    </>
+      <div className="credits">
+        Designed by <a href="/">Federico Martearena</a>
+      </div>
+    </div>
+  </footer>
   )
 }
 

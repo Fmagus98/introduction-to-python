@@ -9,9 +9,9 @@ const Item = ({ item }) => {
   const date = new Date()
   const dateFirebase = new Date(item.date.toDate())
   const itemDate = date >= dateFirebase ?
-    <Link to={`/classes/${item.id}`} onClick={handleLinkClick} className="class-teory card h-100">
+    <Link to={`/classes/${item.id}`} onClick={handleLinkClick} className="mx-auto class-teory card w-75" data-aos="zoom-in" data-aos-delay="100">
       <div className="card-body">
-        <h5 className="text-center card-title mb-2">{item.class}</h5>
+        <h4 className="text-center card-title mb-2">{item.class}</h4>
         <ul className="intr-ul">
           <li className="card-text text-center">{item.content[0]}</li>
           <li className="card-text text-center">{item.content[1]}</li>
@@ -20,8 +20,8 @@ const Item = ({ item }) => {
       </div>
     </Link>
     :
-    <div className="class-teory card h-100"><div className="card-body">
-      <h5 className="text-center card-title mb-2">{item.class}</h5>
+    <div className="mx-auto class-teory-null bg-dark text-light card w-75" data-aos="zoom-in" data-aos-delay="100"><div className="card-body">
+      <h4 className="text-center card-title mb-2">{item.class}</h4>
       <ul className="intr-ul">
         <li className="card-text text-center">{item.content[0]}</li>
         <li className="card-text text-center">{item.content[1]}</li>
@@ -32,7 +32,7 @@ const Item = ({ item }) => {
     </div>
 
   return (
-    <div className="item col mb-4">
+    <div className="col-md-6 mb-4">
       {itemDate}
     </div>
   )

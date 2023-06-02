@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Contact = () => {
@@ -21,53 +21,96 @@ const Contact = () => {
     const formulario = formularioView ?
         <form className="w-50 mx-auto" ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
-                <label className="form-label">Nombre</label>
-                <input type="text" name="user_name" className="form-control w-50"></input>
+                <label className="form-label" style={{color:"#010483", fontWeight:"700", fontSize:"22px"}}>Nombre</label>
+                <input type="text" name="user_name" className="form-control w-50" style={{borderColor:"#010483"}}></input>
             </div>
             <div className="mb-3">
-                <label className="form-label">Email</label>
-                <input type="email" name="user_email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
+                <label className="form-label" style={{color:"#010483", fontWeight:"700", fontSize:"22px"}}>Email</label>
+                <input type="email" name="user_email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style={{borderColor:"#010483"}} ></input>
             </div>
             <div className="mb-3">
-                <label className="form-label">Mensaje</label>
-                <textarea name="message" className="form-control" />
+                <label className="form-label" style={{color:"#010483", fontWeight:"700", fontSize:"22px"}}>Mensaje</label>
+                <textarea name="message" className="form-control" style={{borderColor:"#010483"}}/>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <div className="text-center text-lg-start">
+                                    <a href="#contact" type="submit" className="btn-get-started scrollto">Contactame</a>
+                                </div>
+            <button type="submit" className="btn" style={{background:"#010483", color:"white"}}>Enviar</button>
         </form> : <div>Gracias por enviarme un mensaje, en la brevedad te estaré respondiendo :)</div>
     return (
-        <div className="index">
-            <section className="section-index container" >
-                <div className="row">
-                    <div className="col mt-4 mb-4"></div>
-                    <div className="mb-4 mt-4"></div>
-                    <div className="grid-item mt-4 mb-2">
-                        <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="text-center">Contacto</h1>
+        <>
+            <section id="hero">
+                <div className="container">
+                    <div className="row justify-content-between">
+                        <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                            <div data-aos="zoom-out">
+                                <h1>Contacto</h1>
+                                <h2>Únanse a nuestro servidor de Discord, donde podrán hablar entre ustedes, consultar y crear proyectos.<br></br> Es un espacio colaborativo perfecto para fortalecer sus habilidades en programación.
+                                    <br></br> <br></br>También pueden consultarme directamente por correo electrónico para abordar dudas personalizadas. Estoy aquí para ayudarles en su proceso de aprendizaje en Python.
+                                    ¡Nos vemos en Discord y en nuestros intercambios de correo electrónico!</h2>
+                                <div className="text-center text-lg-start">
+                                    <a href="#contact" className="btn-get-started scrollto">Contactame</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                            <img src="img/python.png" className="img-fluid animated vh-60" alt="" />
+                        </div>
                     </div>
-                    <div className="col mt-4"></div>
                 </div>
-                <div className="row">
-                    <div className="col mt-4"></div>
-                    <div className="text-center grid-item mt-4 px-4">
-                        <p className="mx-auto">Únanse a nuestro servidor de Discord, donde podrán hablar entre ustedes, consultar y crear proyectos.<br></br> Es un espacio colaborativo perfecto para fortalecer sus habilidades en programación.
-                            <br></br> <br></br>También pueden consultarme directamente por correo electrónico para abordar dudas personalizadas. Estoy aquí para ayudarles en su proceso de aprendizaje en Python.
-                            ¡Nos vemos en Discord y en nuestros intercambios de correo electrónico!</p>
+
+                <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+                    <defs>
+                        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g className="wave1">
+                        <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
+                    </g>
+                    <g className="wave2">
+                        <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
+                    </g>
+                    <g className="wave3">
+                        <use xlinkHref="#wave-path" x="50" y="9" fill="#fff" />
+                    </g>
+                </svg>
+            </section>
+
+
+            <section id="contact" className="contact">
+                <div className="container">
+                    <div className="section-title" data-aos="fade-up">
+                        <h2>Contactos</h2>
+                        <p>Medios de Comunicación</p>
                     </div>
-                    <div className="col mt-4"></div>
+                    <div className="row">
+                        <div className="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                            <div className="info">
+                                <div>
+                                    <i className="bi bi-geo-alt"></i>
+                                    <h4>Localidad:</h4>
+                                    <p className="mt-1 mb-4">Sta. Rosa 4146, B1602 Vicente López, Provincia de Buenos Aires</p>
+                                </div>
+                                <div>
+                                    <i className="bi bi-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p className="mt-1 mb-4">federico@mvl.edu.ar</p>
+                                </div>
+                                <div>
+                                    <i className="bi bi-discord"></i>
+                                    <h4>Discord:</h4>
+                                    <Link to="https://discord.gg/MC4UN4E2"><p className="mt-1 mb-4">https://discord.gg/MC4UN4E2</p></Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+                            {formulario}
+                        </div>
+                    </div>
+
                 </div>
             </section>
-            <section className="intr">
-                <img className="wave" alt="" src='../img/wave.png' />
-                <h2 data-aos="flip-left" className="h2-c text-center mx-auto mb-4">Medios de contacto</h2>
-                <div className="mb-4 mt-4 w-50 mx-auto">
-                    <h3 className="mx-auto w-25 text-center">Discord</h3>
-                    <Link className="mx-auto" to="https://discord.gg/MC4UN4E2"><img className="d-block mx-auto w-50"alt="" src='../img/discord.png' /></Link>
-                </div>
-                <div className="pb-4 pt-4 mt-4 w-75 mx-auto">
-                    <h3 className="mx-auto w-25 text-center">Email</h3>
-                    {formulario}
-                </div>
-            </section>
-        </div>
+
+        </>
     )
 }
 

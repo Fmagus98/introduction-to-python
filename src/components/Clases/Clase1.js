@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Clase1 = () => {
@@ -6,38 +6,55 @@ const Clase1 = () => {
         AOS.init();
     }, [])
     return (
-        <div className="index">
-            <section className="section-index container" >
-                <div className="row">
-                    <div className="col mt-4 mb-4"></div>
-                    <div className="mb-4 mt-4"></div>
-                    <div className="grid-item mt-4 mb-2">
-                        <h1 data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine" className="text-center">Clase 1: Introducción a Python y al entorno de programación</h1>
+        <>
+            <section id="hero">
+                <div className="container">
+                    <div className="row justify-content-between">
+                        <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                            <div data-aos="zoom-out">
+                                <h1>Clase 1</h1>
+                                <h2>Introducción a Python y su sintaxis básica, Instalación y configuración del entorno de programación</h2>
+                                <h2>Instalación y configuración del entorno de programación</h2>
+                                <h2>Ejecución del primer programa en Python</h2>
+                                <div className="text-center text-lg-start">
+                                    <a href="#about" className="btn-get-started scrollto">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                            <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
+                        </div>
                     </div>
-                    <div className="col mt-4"></div>
                 </div>
-                <div className="row">
-                    <div className="col mt-4"></div>
-                    <div className="text-center grid-item mt-4 px-4">
-                        <ul className="intr-ul">
-                            <li className="card-text text-center" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" style={{ fontSize: "1.3vw" }}>Introducción a Python y su sintaxis básica, Instalación y configuración del entorno de programación</li>
-                            <li className="card-text text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" style={{ fontSize: "1.3vw" }}>Instalación y configuración del entorno de programación</li>
-                            <li className="card-text text-center" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" style={{ fontSize: "1.3vw" }}>Ejecución del primer programa en Python</li>
-                        </ul>
-                    </div>
-                    <div className="col mt-4"></div>
-                </div>
+
+                <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+                    <defs>
+                        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g className="wave1">
+                        <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
+                    </g>
+                    <g className="wave2">
+                        <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
+                    </g>
+                    <g className="wave3">
+                        <use xlinkHref="#wave-path" x="50" y="9" fill="#fff" />
+                    </g>
+                </svg>
             </section>
-            <section className="intr">
-                <img className="wave" alt="" src='../img/wave.png' />
-                <h2 data-aos="flip-left" className="h2-c text-center mx-auto">Contenido</h2>
-                <div className="accordion accordion-flush w-75 mx-auto  " id="accordionFlushExample">
-                    <div className="accordion-item bg-transparent">
-                        <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <h2 data-aos="fade-right" className="text-light">Historia de la programación</h2>
+            <section id="faq" className="faq section-bg">
+                <div className="container">
+                    <div className="section-title" data-aos="fade-up">
+                        <h2>Clase 1</h2>
+                        <p>Contenido</p>
+                    </div>
+                    <div className="accordion accordion-flush w-100 mx-auto rounded-5" style={{background:"#010483"}} id="accordionFlushExample">
+                    <div className="accordion-item rounded-5" style={{background:"#010483"}} >
+                        <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h2 data-aos="fade-right">Historia de la programación</h2>
                         </button>
-                        <div id="a1" className="accordion-collapse collapse text-light" data-bs-parent="#accordionFlushExample">
-                            <div className="accordion-body">
+                        <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body text-light bg-dark">
                                 <p className="text-center">A medida que avanzó la historia de la programación, la forma de programar ha ido evolucionando. En los comienzos de la programación,
                                     los programadores se veían obligados a escribir en código binario, lo que resultaba en una gran cantidad de código para lograr incluso las funcionalidades más simples.
                                     Con el paso de los años, las computadoras, los lenguajes de programación y los métodos se han ido desarrollando, permitiendo simplificar el proceso de programación.</p>
@@ -46,9 +63,9 @@ const Clase1 = () => {
                                     Por ejemplo, un byte onsta de 8 bits y puede representar 256 valores únicos (2^8).</p>
                                 <p className="text-center mx-auto">En los inicios de las computadoras, el código binario era la única forma de representar la información, lo que requería que los programas fueran escritos
                                     en este sistema. Sin embargo, este proceso era lento y propenso a errores ya que los programadores tenían que convertir manualmente cada instrucción y dato en una serie de ceros y unos.</p>
-                                <h3 className="text-center mx-auto mt-4">Representación de números en código binario </h3>
+                                <h4 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>REPRESENTACION DE NÚMEROS EN CÓDIGO BINARIO</h4>
                                 <img className="mx-auto d-block w-75" alt="" src='../img/clase1/btot.png' />
-                                <h3 className="text-center mx-auto mt-4">Representación de texto en código binario </h3>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>REPRESENTACIÓN DE TEXTO EN CÓDIGO BINARIO</h3>
                                 <img className="mx-auto d-block w-75" alt="" src='../img/clase1/btot2.png' />
                                 <p className="text-center mx-auto w-75"> En las primeras computadoras, el código binario era la única forma de representar la información. Los datos se almacenaban y se procesaban en forma de bits,
                                     lo que significaba que los programas debían ser escritos en código binario. Esto requería que los programadores convirtieran cada instrucción y dato en una
@@ -64,13 +81,43 @@ const Clase1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="accordion-item bg-transparent">
-                        <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 data-aos="fade-right" className="text-light">¿Que es python?</h2>
+                    <div className="accordion-item  bg-transparent rounded-5">
+                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <h2 data-aos="fade-right" className="text-light">Perfil de un programador</h2>
                         </button>
                         <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div className="accordion-body text-light">
+                            <div className="accordion-body text-light bg-dark">
+                                <p className="text-center mx-auto w-100">El perfil de un programador puede variar dependiendo de sus habilidades, experiencia y especialización. Sin embargo, hay algunas características y habilidades comunes que suelen definir a un programador y son:
+                                </p>
+                                <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>CONOCIMIENTO DE PROGRAMACIÓN</h3>
+                                    <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores tienen un conocimiento sólido de al menos un lenguaje de programación y están familiarizados con los conceptos fundamentales de la programación, como variables, estructuras de control, funciones, algoritmos, etc.</p></li>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>RESOLUCIÓN DE PROBLEMAS</h3>
+                                    <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores son buenos para analizar problemas, identificar soluciones y desarrollar algoritmos eficientes para resolverlos. Tienen habilidades de pensamiento lógico y capacidad para descomponer problemas complejos en partes más pequeñas y manejables.</p></li>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>APRENDIZAJE CONTINUO</h3>
+                                    <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores están dispuestos a aprender nuevas tecnologías, lenguajes de programación y herramientas para mantenerse actualizados en un campo en constante evolución. Están abiertos a la mejora continua y se adaptan rápidamente a nuevos desafíos.</p></li>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>ATENCIÓN AL DETALLE</h3>
+                                    <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores prestan atención a los detalles y son precisos en su trabajo. Un pequeño error en el código puede tener un gran impacto, por lo que son cuidadosos al escribir, probar y depurar su código.</p></li>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>TRABAJO EN EQUIPO</h3>
+                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores suelen trabajar en equipo, colaborando con otros desarrolladores, diseñadores y profesionales de TI. Tienen habilidades de comunicación efectivas y pueden trabajar en proyectos colaborativos.</p></li>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>RESILIENCIA Y SOLUCIÓN DE PROBLEMAS</h3>
+                                    <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores enfrentan desafíos y problemas técnicos de manera regular. La capacidad de resolver problemas de manera efectiva y persistir en la búsqueda de soluciones es una habilidad valiosa.</p></li>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>PENSAMIENTO ANALÍTICO</h3>
+                                    <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores tienen la capacidad de analizar y comprender problemas complejos, descomponerlos en partes más pequeñas y aplicar soluciones lógicas y estructuradas.</p></li>
+                                <h3 className="text-center mx-auto mt-4" style={{fontSize:"25px", fontWeight:"700"}}>CREATIVIDAD</h3>
+                                    <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">La programación también requiere creatividad para encontrar soluciones innovadoras y eficientes. Los programadores pueden encontrar diferentes enfoques y perspectivas para resolver problemas.</p></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="accordion-item bg-transparent rounded-5">
+                        <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h2 data-aos="fade-right" className="text-light">¿Que es python?</h2>
+                        </button>
+                        <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body text-light bg-dark">
                                 <div id="content">
+                                    <img className="d-block mx-auto w-25" alt="" src="../img/clase1/guido.png"></img>
                                     <p className="text-center mx-auto">Python es un lenguaje de programación de alto nivel basado en C.
                                         Fue creado en 1989 por Guido Van Rossum, un programador holandés, mientras trabajaba en el Centro de
                                         Investigación para la Informática (CWI) en los Países Bajos. </p>
@@ -94,17 +141,20 @@ const Clase1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="accordion-item  bg-transparent">
-                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <div className="accordion-item  bg-transparent rounded-5">
+                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseThree">
                             <h2 data-aos="fade-right" className="text-light">Caracteristicas de python</h2>
                         </button>
-                        <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div className="accordion-body text-light">
+                        <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body text-light bg-dark">
                                 <h3 className="text-center mx-auto"><u>Nivel alto</u></h3>
                                 <p className="text-center mx-auto">Dentro de la programación hay tipos niveles, estos niveles determinan la complejidad en la podemos programar
                                     en dicho lenguaje. Si el nivel es más bajo, este se acercará más al lenguage máquina(código binario) y facilitará a la maquina a interpretar más rápido
                                     pero a la vez es más complejo para los programadores programar en este lenguaje ya que se aleja del lenguage humano.</p>
                                 <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/level.png"></img>
+                                <h3 className="text-center mx-auto"><u>Case sensitive</u></h3>
+                                <p className="mt-4 mb-4 text-center mx-auto"> Lo que significa que distingue entre mayúsculas y minúsculas en los nombres de variables, funciones, clases, módulos y otros identificadores. Esto significa que
+                                    dos identificadores que se diferencian solo en su uso de mayúsculas y minúsculas se consideran diferentes en Python.</p>
                                 <h3 className="mx-auto text-center"><u>Implementación</u></h3>
                                 <p className="text-center mx-auto">La implementación de Python se refiere a la forma en que se ejecuta el código de Python. Hay varias implementaciones de Python disponibles, aquí hay algunas de las más populares:</p>
                                 <ul>
@@ -117,9 +167,6 @@ const Clase1 = () => {
                                 <h3 className="mx-auto text-center"><u>Multiplataforma</u></h3>
                                 <p className="text-center mx-auto">Python se puede utilizar en una amplia variedad de plataformas, incluyendo Windows, macOS y Linux, lo que lo hace muy versátil y útil en diferentes entornos de trabajo.</p>
                                 <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/os.png"></img>
-                                <h3 className="text-center mx-auto"><u>Case sensitive</u></h3>
-                                <p className="mt-4 mb-4 text-center mx-auto"> lo que significa que distingue entre mayúsculas y minúsculas en los nombres de variables, funciones, clases, módulos y otros identificadores. Esto significa que
-                                    dos identificadores que se diferencian solo en su uso de mayúsculas y minúsculas se consideran diferentes en Python.</p>
                                 <h3 className="text-center mx-auto"><u>Aplicaciones en el mercado laboral</u></h3>
                                 <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/bd.png"></img>
                                 <h3 className="display-4 mx-auto text-center">Big data</h3>
@@ -179,14 +226,14 @@ const Clase1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item bg-transparent">
-                        <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div className="accordion-item bg-transparent rounded-5">
+                        <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <h2 data-aos="fade-right" className="text-light">Instalación de python</h2>
                         </button>
-                        <div id="a4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
-                                <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a
-                                    <a href="https://www.python.org/downloads" >https://www.python.org/downloads</a>.
+                        <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body text-light bg-dark">
+                                <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <span></span>
+                                    <a href="https://www.python.org/downloads" >https://www.python.org/downloads</a>.<br></br>
                                     En este curso usaremos la version 3.8.3, para descargar una version diferente a la actual dirigete a downloads.</p>
                                 <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python1.jpg"></img>
                                 <p className="mt-4 mb-4 text-center mx-auto"> Luego iremos a "All release" </p>
@@ -200,12 +247,12 @@ const Clase1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item bg-transparent">
-                        <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div className="accordion-item bg-transparent rounded-5">
+                        <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <h2 data-aos="fade-right" className="text-light">Entorno de desarrollo integrado (IDE)</h2>
                         </button>
-                        <div id="a5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
+                        <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body text-light bg-dark">
                                 <p className="mt-4 mb-4 text-center mx-auto w-75">Para programar en un lenguaje de programación debemos tener en nuestro ordenador un entorno de desarrollo integrado, más conocido como IDE,
                                     Un IDE combina un editor de código, un compilador o intérprete, herramientas de depuración, un sistema de gestión de versiones,
                                     entre otras funcionalidades, en una sola aplicación integrada.
@@ -244,12 +291,12 @@ const Clase1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item bg-transparent text-center">
-                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div className="accordion-item bg-transparent text-center rounded-5">
+                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <h2 data-aos="fade-right" className="text-light">Ejecución del primer programa</h2>
                         </button>
-                        <div id="a6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
+                        <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div className="accordion-body text-light bg-dark">
                                 <p className="mt-4 mb-4 text-center mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
                                 <img className="w-50" alt="" src="../img/clase1/p1.jpg"></img>
                                 <p className="mt-4 mb-4 text-center mx-auto w-75">Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
@@ -285,10 +332,10 @@ const Clase1 = () => {
                                     que ingresemos el texto que necesitemos y demos un enter para continuar y guardar el valor
                                     capturado en una variable de programa.
                                 </p>
-                                <p className="mt-4 mb-4 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre. 
+                                <p className="mt-4 mb-4 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                 </p>
                                 <img className="w-75" alt="" src="../img/clase1/p8.jpg"></img>
-                                <p className="mt-4 mb-4 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre. 
+                                <p className="mt-4 mb-4 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                 </p>
                                 <img className="w-75" alt="" src="../img/clase1/p9.jpg"></img>
                                 <h2 className="mt-4 mb-4">Función len()</h2>
@@ -301,8 +348,9 @@ const Clase1 = () => {
                         </div>
                     </div>
                 </div>
-            </section >
-        </div >
+                </div>
+            </section>
+        </>
     )
 }
 

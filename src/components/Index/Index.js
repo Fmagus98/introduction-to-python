@@ -1,66 +1,50 @@
-import React, { useEffect, useState } from 'react'
-import { db } from '../../Utils/firebase'
-import { collection, getDocs } from 'firebase/firestore'
-import ItemContainer from '../ItemContainer/ItemContainer'
+import React, { useEffect} from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Index = () => {
-  const [course, setCourse] = useState([])
-  
-  useEffect(() => {
-    getDocs(collection(db, "course")).then(response => {
-      const getData = response.docs.map(doc => {
-        return { id: doc.id, ...doc.data() }
-      })
-      return (setCourse(getData))
-    })
-  }, [])
   useEffect(() => {
     AOS.init();
-}, [])
+  }, [])
   return (
-    <div className="index">
-      < section className="section-index" >
-        <div className="row">
-          <div className="col mt-4 mb-4"></div>
-          <div className="mb-4 mt-4"></div>
-          <div className="grid-item mt-4 mb-2">
-            <h1 className="text-center" data-aos="fade-right">
-              Introducción a la programacion en python
-            </h1>
-          </div>
-          <div className="col mt-4"></div>
-        </div>
-        <div className="row">
-          <div className="col mt-4"></div>
-          <div className="text-center grid-item mt-4 px-4">
-            <p style={{fontSize:"1.2vw"}} data-aos="fade-right">
-              Este curso está diseñado para introducir a los estudiantes al
-              lenguaje de programación Python, desde los conceptos básicos hasta
-              habilidades más avanzadas. Los estudiantes aprenderán a diseñar,
-              escribir y depurar programas simples y complejos utilizando Python,
-              y se les presentará a las principales estructuras de datos y
-              algoritmos utilizados en la programación.
-            </p>
-          </div>
-          <div className="col mt-4"></div>
-        </div>
-      </section>
-      <section className="intr">
-        <img className="wave" alt="" src='./img/wave.png' />
-        <div className="row">
-          <div className="col mt-4"></div>
-          <div className="text-center grid-item mt-4 mb-4">
-            <h2 className="h2-c">Contenido</h2>
-            <div id="content">
-              <ItemContainer item={course} />
+      <section id="hero">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+              <div data-aos="zoom-out">
+                <h1> Introducción a la programacion en python</h1>
+                <h2>Este curso está diseñado para introducir a los estudiantes al
+                  lenguaje de programación Python, desde los conceptos básicos hasta
+                  habilidades más avanzadas. Los estudiantes aprenderán a diseñar,
+                  escribir y depurar programas simples y complejos utilizando Python,
+                  y se les presentará a las principales estructuras de datos y
+                  algoritmos utilizados en la programación.</h2>
+                <div className="text-center text-lg-start">
+                  <a href="/classes" className="btn-get-started scrollto">Empieza a cursar!</a>
+                </div>
+              </div>
             </div>
-            <div className="col mt-4"></div>
+            <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <img src="img/python.png" className="img-fluid animated vh-60" alt="" />
+            </div>
           </div>
         </div>
+        <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+          <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g className="wave1">
+            <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
+          </g>
+          <g className="wave2">
+            <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
+          </g>
+          <g className="wave3">
+            <use xlinkHref="#wave-path" x="50" y="9" fill="#fff" />
+          </g>
+        </svg>
       </section>
-    </div>
+
   )
 }
 

@@ -169,11 +169,11 @@ const Clase2 = () => {
                 </p>
                 <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/f-string.png"></img>
                 <h2 className="text-center mx-auto">Format</h2>
-                <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves {} en la cadena y se reemplazan por los valores correspondientes.
+                <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves { } en la cadena y se reemplazan por los valores correspondientes.
                 </p>
                 <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/format.png"></img>
                 <h2 className="text-center mx-auto">Repr</h2>
-                <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves {} en la cadena y se reemplazan por los valores correspondientes.
+                <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves { } en la cadena y se reemplazan por los valores correspondientes.
                 </p>
                 <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/repr.png"></img>
               </div>
@@ -181,26 +181,50 @@ const Clase2 = () => {
           </div>
           <div className="accordion-item bg-transparent text-center">
             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseTwo">
-              <h2 data-aos="fade-right" className="text-light">métodos de String</h2>
+              <h2 data-aos="fade-right" className="text-light">Métodos de String</h2>
             </button>
             <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div className="accordion-body text-light">
-                <h2 className="text-center mx-auto">Capitalize( )</h2>
-                <p className="text-center mx-auto w-75"> El método capitalize() es utilizado en objetos de tipo str (cadenas) y se utiliza para devolver una copia de la cadena con el primer carácter en mayúscula y el resto en minúscula.
-                </p>
-                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/capitalize.png"></img>
                 <h2 className="text-center mx-auto">Lower( )</h2>
                 <p className="text-center mx-auto w-75">El método lower() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para convertir una cadena a minúsculas.
                 </p>
                 <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/lower.png"></img>
+                <h2 className="text-center mx-auto">Upper( )</h2>
+                <p className="text-center mx-auto w-75">El método upper() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para convertir una cadena a mayúsculas.
+                </p>
+                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/upper.png"></img>
+                <h2 className="text-center mx-auto">Islower( )</h2>
+                <p className="text-center mx-auto w-75">El método islower() verifica si todos los caracteres de la cadena son minúsculas.
+                </p>
+                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/islower.png"></img>
+                <h2 className="text-center mx-auto">isupper( )</h2>
+                <p className="text-center mx-auto w-75">El método isupper() verifica si todos los caracteres de la cadena son mayúsculas.
+                </p>
+                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/isupper.png"></img>
+                <h2 className="text-center mx-auto">Isdigit( )</h2>
+                <p className="text-center mx-auto w-75">El método isdigit() Verifica si todos los caracteres de la cadena son dígitos.
+                </p>
+                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/isdigit.png"></img>
+                <h2 className="text-center mx-auto">Isalpha( )</h2>
+                <p className="text-center mx-auto w-75">El método isalpha() Verifica si todos los caracteres de la cadena son letras.
+                </p>
+                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/isalpha.png"></img>
+                <h2 className="text-center mx-auto">Capitalize( )</h2>
+                <p className="text-center mx-auto w-75"> El método capitalize() es utilizado en objetos de tipo str (cadenas) y se utiliza para devolver una copia de la cadena con el primer carácter en mayúscula y el resto en minúscula.
+                </p>
+                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/capitalize.png"></img>
                 <h2 className="text-center mx-auto">Repr( )</h2>
-                <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves {} en la cadena y se reemplazan por los valores correspondientes.
+                <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves { } en la cadena y se reemplazan por los valores correspondientes.
                 </p>
                 <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/repr.png"></img>
                 <h2 className="text-center mx-auto">Center( )</h2>
                 <p className="text-center mx-auto w-75">El método center() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para centrar una cadena dentro de un ancho determinado.
                 </p>
                 <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/center.png"></img>
+                <h2 className="text-center mx-auto">Strip( )</h2>
+                <p className="text-center mx-auto w-75">El método strip() elimina los espacios en blanco al inicio y al final de la cadena, si quieres eliminar solo un lado debes usar la terminación lstrip o rstrip (l=left , r=right).
+                </p>
+                <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/strip.png"></img>
                 <h2 className="text-center mx-auto">Count( )</h2>
                 <p className="text-center mx-auto w-75">El método count() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para contar el número de apariciones de una subcadena dentro de una cadena.
                 </p>
