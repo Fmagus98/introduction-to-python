@@ -20,23 +20,24 @@ const Contact = () => {
     }, [])
     const formulario = formularioView ?
         <form className="w-50 mx-auto" ref={form} onSubmit={sendEmail}>
+        <p style={{ color: "#010483", fontWeight: "700", fontSize: "22px" }}>Envíame un mensaje directo por correo!</p>
             <div className="mb-3">
-                <label className="form-label" style={{color:"#010483", fontWeight:"700", fontSize:"22px"}}>Nombre</label>
-                <input type="text" name="user_name" className="form-control w-50" style={{borderColor:"#010483"}}></input>
+                <label className="form-label" style={{ color: "#010483", fontWeight: "700", fontSize: "22px" }}>Nombre</label>
+                <input type="text" name="user_name" className="form-control w-50" style={{ borderColor: "#010483" }}></input>
             </div>
             <div className="mb-3">
-                <label className="form-label" style={{color:"#010483", fontWeight:"700", fontSize:"22px"}}>Email</label>
-                <input type="email" name="user_email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style={{borderColor:"#010483"}} ></input>
+                <label className="form-label" style={{ color: "#010483", fontWeight: "700", fontSize: "22px" }}>Email</label>
+                <input type="email" name="user_email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style={{ borderColor: "#010483" }} ></input>
             </div>
             <div className="mb-3">
-                <label className="form-label" style={{color:"#010483", fontWeight:"700", fontSize:"22px"}}>Mensaje</label>
-                <textarea name="message" className="form-control" style={{borderColor:"#010483"}}/>
+                <label className="form-label" style={{ color: "#010483", fontWeight: "700", fontSize: "22px" }}>Mensaje</label>
+                <textarea name="message" className="form-control" style={{ borderColor: "#010483" }} />
             </div>
             <div className="text-center text-lg-start">
-                                    <a href="#contact" type="submit" className="btn-get-started scrollto">Contactame</a>
-                                </div>
-            <button type="submit" className="btn" style={{background:"#010483", color:"white"}}>Enviar</button>
-        </form> : <div>Gracias por enviarme un mensaje, en la brevedad te estaré respondiendo :)</div>
+                <a href="#contact" type="submit" className="btn-get-started scrollto">Contactame</a>
+            </div>
+            <button type="submit" className="btn" style={{ background: "#010483", color: "white" }}>Enviar</button>
+        </form>: <div style={{ color: "#010483", fontWeight: "700", fontSize: "22px" }}>Gracias por enviarme un mensaje, en la brevedad te estaré respondiendo :)</div>
     return (
         <>
             <section id="hero">

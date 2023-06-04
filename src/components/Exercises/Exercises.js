@@ -51,13 +51,16 @@ const Exercises = () => {
 
 
 
-                    <div className="accordion accordion-flush w-100 mx-auto rounded-5" style={{background:"#010483"}} id="accordionFlushExample">
-                    <div className="accordion-item bg-transparent rounded-5" style={{background:"#010483"}}>
-                        <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <h2 data-aos="fade-right" className="text-light">Clase 1</h2>
-                        </button>
-                        <div id="a1" className="accordion-collapse collapse text-light bg-dark" data-bs-parent="#accordionFlushExample">
-                            <div className="accordion-body">
+
+
+
+                    <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
+                        <div className="accordion-item rounded-5" style={{ background: "#010483" }} >
+                            <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h2 data-aos="fade-right">Clase 1</h2>
+                            </button>
+                            <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                                 <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                 <p className="text-center mx-auto w-75"> Solicitar al usuario que ingrese su nombre y luego imprimir un mensaje de saludo con el nombre proporcionado.
                                 </p>
@@ -76,81 +79,76 @@ const Exercises = () => {
                                 <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
                                 <p className="text-center mx-auto w-75"> Solicitar al usuario que ingrese su nombre y una palabra. Luego imprimir un mensaje que diga "Hola, [nombre]. La longitud de la palabra que ingresaste es [longitud]".
                                 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <h2 data-aos="fade-right" className="text-light">Clase 2</h2>
+                            </button>
+                            <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+            
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <h2 data-aos="fade-right" className="text-light">Clase 3</h2>
+                            </button>
+                            <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <h2 data-aos="fade-right" className="text-light">Clase 4</h2>
+                            </button>
+                            <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                               
+                            </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <h2 data-aos="fade-right" className="text-light">Clase 5</h2>
+                            </button>
+                            <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
+                                <h2 data-aos="fade-right" className="text-light">Clase 6</h2>
+                            </button>
+                            <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                <h2 data-aos="fade-right" className="text-light">Clase 7</h2>
+                            </button>
+                            <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                </div>
+                            </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseEight">
+                                <h2 data-aos="fade-right" className="text-light">Clase 8</h2>
+                            </button>
+                            <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="accordion-item bg-transparent rounded-5 bg-dark" >
-                        <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 data-aos="fade-right" className="text-light">Clase 2</h2>
-                        </button>
-                        <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div className="accordion-body text-light">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="accordion-item  bg-transparent rounded-5 bg-dark">
-                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                            <h2 data-aos="fade-right" className="text-light">Clase 3</h2>
-                        </button>
-                        <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div className="accordion-body text-light">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item bg-transparent rounded-5 bg-dark">
-                        <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 data-aos="fade-right" className="text-light">Clase 4</h2>
-                        </button>
-                        <div id="a4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item bg-transparent rounded-5 bg-dark">
-                        <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 data-aos="fade-right" className="text-light">clase 5</h2>
-                        </button>
-                        <div id="a5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item bg-transparent text-center rounded-5 bg-dark">
-                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 data-aos="fade-right" className="text-light">Clase 6</h2>
-                        </button>
-                        <div id="a6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item bg-transparent text-center rounded-5 bg-dark">
-                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 data-aos="fade-right" className="text-light">Clase 7</h2>
-                        </button>
-                        <div id="a6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item bg-transparent text-center rounded-5 bg-dark">
-                        <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 data-aos="fade-right" className="text-light">Clase 8</h2>
-                        </button>
-                        <div id="a6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
                 </div>
             </section>
 
