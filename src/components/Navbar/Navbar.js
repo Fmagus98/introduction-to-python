@@ -25,7 +25,7 @@ const Navbar = () => {
         <header id="header" className="fixed-top d-flex align-items-center header-transparent" style={{background:backgroundColor}}>
             <div className="container d-flex align-items-center justify-content-between">
                 <div className="logo">
-                    <h1><a href="index.html"><span>Fablab - python</span></a></h1>
+                    <h1><a href="/"><span>Fablab - python</span></a></h1>
                     <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
                 </div>
 
