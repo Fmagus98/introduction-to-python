@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Class1 = () => {
@@ -81,7 +82,7 @@ const Class1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h2 data-aos="fade-right" className="text-light">Perfil de un programador</h2>
                             </button>
@@ -110,7 +111,7 @@ const Class1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                 <h2 data-aos="fade-right" className="text-light">¿Que es python?</h2>
                             </button>
@@ -141,7 +142,7 @@ const Class1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                 <h2 data-aos="fade-right" className="text-light">Caracteristicas de python</h2>
                             </button>
@@ -226,14 +227,13 @@ const Class1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 data-aos="fade-right" className="text-light">Instalación de python</h2>
                             </button>
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <span></span>
-                                        <a href="https://www.python.org/downloads" >https://www.python.org/downloads</a>.<br></br>
+                                    <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link>.<br></br>
                                         En este curso usaremos la version 3.8.3, para descargar una version diferente a la actual dirigete a downloads.</p>
                                     <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python1.jpg"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto"> Luego iremos a "All release" </p>
@@ -247,7 +247,7 @@ const Class1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
                                 <h2 data-aos="fade-right" className="text-light">Entorno de desarrollo integrado (IDE)</h2>
                             </button>
@@ -258,11 +258,28 @@ const Class1 = () => {
                                         entre otras funcionalidades, en una sola aplicación integrada.
                                         Esta integración facilita el trabajo de los programadores al permitirles desarrollar y probar aplicaciones de software en un solo entorno.
                                     </p>
-                                    <p className="text-center mx-auto">Estos son unos de los IDEs más comunes que se utilizan para el lenguaje de programación python</p>
+                                    <p className="text-center mx-auto">Estos son unos de los IDEs más comunes que se utilizan para el lenguaje de programación python:</p>
                                     <img className="w-50 d-block mx-auto" alt="" src="../img/clase1/IDE.png"></img>
-                                    <p className="text-center mx-auto w-75">
+                                    <ul className="intr-ul">
+                                        <li><p className="mt-4 mb-4 text-center mx-auto w-50">JupiterLab: Es una interfaz de usuario web interactiva para el entorno de programación Jupyter. Permite la edición de código en varios lenguajes de programación, incluido Python, y proporciona una variedad de características y extensiones útiles. </p></li>
+                                        <li><p className="mt-4 mb-4 text-center mx-auto w-50">Pycharm: Es un entorno de desarrollo integrado para Python desarrollado por JetBrains. Proporciona una amplia gama de características y herramientas para facilitar el desarrollo de aplicaciones Python.</p></li>
+                                        <li><p className="mt-4 mb-4 text-center mx-auto w-50">Spyder: Es un entorno de desarrollo integrado especialmente diseñado para trabajar con Python en el ámbito científico y de análisis de datos. Está orientado a la programación científica y ofrece una serie de características y herramientas específicas para facilitar el desarrollo de proyectos relacionados con ciencia, matemáticas y análisis de datos.</p></li>
+                                        <li><p className="mt-4 mb-4 text-center mx-auto w-50">Visual Studio Code: Es un entorno de desarrollo de código fuente abierto y gratuito desarrollado por Microsoft. Es un editor de código ligero pero potente que se ha vuelto muy popular entre los desarrolladores por su facilidad de poder programar en diferentes lenguajes de programación, incluido Python.</p></li>
+                                    </ul>
+                                    <p className="text-center mx-auto w-75 mt-4" style={{ marginBottom: "7rem" }}>
                                         En este curso utilizaremos Visual Studio code pero cabe destacar que la elección del IDE dependerá de tus necesidades y preferencias personales.
                                     </p>
+                                    <h2 className=" text-center">Instalación de Visual Studio Code</h2>
+                                    <p className="mt-4 mb-4 text-center mx-auto w-75">1 - Ve al sitio web oficial de Visual Studio Code en <Link to="https://code.visualstudio.com" target="_blank" className="text-info">https://code.visualstudio.com</Link>.<br></br><br></br>En el inicio de la página web van a ver directamente que dice "Donwload for Windows", si su sistema operativo es Windows van hacer click derecho directamante ahi y se les va a descargar el programa.<br></br> Si en su ordenador tienen otro sistema operativo van a la palomita que esta al lado derecho y van a ver los diferentes sistemas operativos en el que pueden descargarlo, lo más importante es que descarguen la version estable, para hacerlo deben hacer click derecho en la columna "stable" de su sistema operativo </p>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide1.jpg"></img>
+                                    <p className="mt-4 mb-4 text-center mx-auto w-75">2 - Al ejecutar el instalador deben aceptar los terminos y condiciones del programa haciendo click derecho en "Acepto el acuerdo" y lugo hacer click derecho en el botón "siguiente" para seguir con la instalación.</p>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide2.jpg"></img>
+                                    <p className="mt-4 mb-4 text-center mx-auto w-75">3 - Activa todas las opciones haciendo click derecho en los checkbox y haz click derecho en el botón "siguiente"</p>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide3.jpg"></img>
+                                    <p className="mt-4 mb-4 text-center mx-auto w-75">4 - Haz click derecho en el boton "siguiente" </p>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide4.jpg"></img>
+                                    <p className="mt-4 mb-4 text-center mx-auto w-75">5 - Al terminar la instalación haz click en "finalizar" para abrir automáticamente el programa Visual Studio Code para empezar a programar! </p>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/ide5.jpg"></img>
                                     <h2 className=" text-center">Extensiones en Visual Studio Code</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">En nuestro Visual Studio Code tenemos bastantes herramientas que nos falicitará a la hora de
                                         programar en python, unas de ellas son las extensiones descargables que se nos va a proporcionar en el programa</p>
@@ -270,7 +287,7 @@ const Class1 = () => {
                                     <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ext1.jpg"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Al tocar el logo veremos que tenemos un buscador para buscar extensiones, un apartado llamado "installed" donde tendrémos todas las extensiones que instalamos y un apartado llamado "recommended" donde vamos a tener extensiones que podría servirnos al utilizar un lenguage en especial</p>
                                     <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ext2.jpg"></img>
-                                    <ul className="intr-ul"><h3 className="mt-4 mb-4 text-center mx-auto w-75">lista de extensiones que utilizaremos en python:</h3>
+                                    <ul className="intr-ul" style={{ marginBottom: "7rem" }}><h3 className="mt-4 mb-4 text-center mx-auto w-75">lista de extensiones que utilizaremos en python:</h3>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Spanish Language Pack for Visual Studio Code: Esta extensión nos facilitará toda la interfaz de usuario de visual studio code a español</p></li>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python: les proporcionará autocompletado avanzado,Análisis estático de código y detección de errores.</p></li>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python Environment Manager: Gestiona entornos virtuales de Python y seleccionar qué entorno virtual se va a utilizar en un proyecto de Python en particular.</p></li>
@@ -287,27 +304,27 @@ const Class1 = () => {
                                     <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t4.jpg"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Ya vimos que podemos ver la version de python escribiendo python, ahora empezaremos a ver pip.<br></br>Pip es un sistema de gestión de paquetes utilizado en Python para instalar y administrar bibliotecas y paquetes de terceros que no están incluidos en la biblioteca estándar de Python.
                                         <br></br>El nombre "pip" se deriva de la frase "Pip Installs Packages" (Pip instala paquetes) y se utiliza para instalar, actualizar y desinstalar paquetes Python y sus dependencias, si escribimos "pip --version" en la terminal nos mostrará la versión del administrador de paquetes.</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t5.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/t5.jpg"></img>
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5"  style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                                 <h2 data-aos="fade-right" className="text-light">Ejecución del primer programa</h2>
                             </button>
                             <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p1.jpg"></img>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
-                                    <img className="w-50 d-block mx-auto" alt="" src="../img/clase1/p2.jpg"></img>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Luego de seleccionar la carpeta veremos que en la parte superior izquierda nos aparecerá el nombre de la carpeta seleccionada y en el lado derecho tendremos varios items, el primer item nos dejará que podamos crear un archivo, el segundo nos dejará que podamos crear una carpeta,
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p1.jpg"></img>
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p2.jpg"></img>
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Luego de seleccionar la carpeta veremos que en la parte superior izquierda nos aparecerá el nombre de la carpeta seleccionada y en el lado derecho tendremos varios items, el primer item nos dejará que podamos crear un archivo, el segundo nos dejará que podamos crear una carpeta,
                                         el tercero refrescará la carpeta, el cuarto item nos dejará contraer o plegar una carpeta. en este caso usaremos el primer item para crear un archivo.</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p3.jpg"></img>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Al crear el archivo le debemos escribir el nombre deseado para el archivo seguido de un ".py" para indicar al programa de que es un archivo de python, por ejemplo: index.py </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p4.jpg"></img>
-                                    <h2 className="mt-4 mb-4">Salida de datos</h2>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p3.jpg"></img>
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Al crear el archivo le debemos escribir el nombre deseado para el archivo seguido de un ".py" para indicar al programa de que es un archivo de python, por ejemplo: index.py </p>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p4.jpg"></img>
+                                    <h2 className=" text-center">Salida de datos - print()</h2>
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
                                         con el objetivo de poder representar la información que el script nos quiere
                                         mostrar o poder ingresar alguna acción al programa por medio del teclado u otra entrada,
                                         en este contenido veremos las instrucciones de entradas y salidas de python más comunes
@@ -317,35 +334,44 @@ const Class1 = () => {
                                         ya que nos permite mostrar información por consola como mensajes, números o valores de una
                                         variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
                                     </p>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "input" escribiremos por ejemplo: input("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p5.jpg"></img>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Para ejecutar el programa debemos escribir en la terminal "python" seguido del nombre del archivo que queramos ejecutar, por ejemplo: python index.py. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p6.jpg"></img>
-                                    <h2 className="mt-4 mb-4">Comentarios</h2>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa. Los comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
-                                        Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa.<br></br>Si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "input" escribiremos por ejemplo: input("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p5.jpg"></img>
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar el programa debemos escribir en la terminal "python" seguido del nombre del archivo que queramos ejecutar, por ejemplo: python index.py. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p6.jpg"></img>
+                                    <h2 className=" text-center">Comentarios - #, """ """</h2>
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
+                                        Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
                                     </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p7.jpg"></img>
-                                    <h2 className="mt-4 mb-4">Entrada de datos</h2>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p7.jpg"></img>
+                                    <h2 className=" text-center">Entrada de datos - input()</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">La función input() permite obtener información
                                         en la terminal desde el teclado, al momento de ejecutarse esta línea en la consola esperara
                                         que ingresemos el texto que necesitemos y demos un enter para continuar y guardar el valor
                                         capturado en una variable de programa.
                                     </p>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                     </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p8.jpg"></img>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p8.jpg"></img>
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                     </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p9.jpg"></img>
-                                    <h2 className="mt-4 mb-4">Función len()</h2>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p9.jpg"></img>
+                                    <h2 className=" text-center">función len()</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">La función len() permite obtener la longitud de caracteres que existen dentro del paréntesis.
                                     </p>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-75">Por ejemplo si queremos mostrar en pantalla cuántos caracteres tiene la palabra "programación", debemos usar un input y dentro la funcion len(): input(len("Programación")), esto nos retornará la cantidad de caracteres que hay.
+                                    <p className="mt-4 mb-2 text-center mx-auto w-75">Por ejemplo si queremos mostrar en pantalla cuántos caracteres tiene la palabra "programación", debemos usar un input y dentro la funcion len(): input(len("Programación")), esto nos retornará la cantidad de caracteres que hay.
                                     </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/p10.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p10.jpg"></img>
                                 </div>
                             </div>
+                        </div>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button">
+                                <Link to="/pythonClassFile/class1.py"
+                                    target={"_blank"}
+                                    download={"class1.py"}>
+                                    <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 1</h2>
+                                </Link>
+                            </button>
                         </div>
                     </div>
                 </div>
