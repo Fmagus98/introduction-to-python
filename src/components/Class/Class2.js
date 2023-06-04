@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const Clase2 = () => {
+const Class2 = () => {
   useEffect(() => {
     AOS.init();
   }, [])
@@ -242,4 +242,4 @@ const Clase2 = () => {
   )
 }
 
-export default Clase2
+export default Class2

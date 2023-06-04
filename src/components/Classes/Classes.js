@@ -65,8 +65,6 @@ const Classes = () => {
           <ItemContainer item={course} />
         </div>
       </section>
-
-
     </>
   )
 }

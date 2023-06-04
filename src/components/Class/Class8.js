@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Clase8 = () => {
+const Class8 = () => {
   return (
     <div>Clase8</div>
   )
 }
 
-export default Clase8
+export default Class8

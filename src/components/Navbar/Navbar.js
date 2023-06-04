@@ -21,16 +21,12 @@ const Navbar = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
-
-
-
-
     return (
         <header id="header" className="fixed-top d-flex align-items-center header-transparent" style={{background:backgroundColor}}>
             <div className="container d-flex align-items-center justify-content-between">
                 <div className="logo">
                     <h1><a href="index.html"><span>Fablab - python</span></a></h1>
-                    <a href="index.html"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
+                    <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
                 </div>
 
                 <nav id="navbar" className="navbar">
