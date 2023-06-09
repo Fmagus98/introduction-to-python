@@ -191,7 +191,7 @@ const Class2 = () => {
                   <h2 className="text-center mx-auto">Repr</h2>
                   <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves { } en la cadena y se reemplazan por los valores correspondientes.
                   </p>
-                  <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/repr.png"></img>
+                  <img className="w-75 d-block mx-auto" alt="" src="../img/clase2/repr.png" style={{ marginBottom: "7rem" }}></img>
                 </div>
               </div>
             </div>

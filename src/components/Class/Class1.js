@@ -78,7 +78,7 @@ const Class1 = () => {
                                         en la programación del juego existe una variable encargada de ser el contador de los niveles del juego, al llegar al nivel 256 el procesador no es capaz de calcularlo y aparece en pantalla este error. </p>
                                     <img className="w-75 mx-auto d-block" alt="" src='../img/clase1/PMg.png' />
                                     <p className="text-center mx-auto">Finalmente, surgen los llamados lenguages de alto nivel. Estos van a ser un proceso intermedio entre el lenguaje máquina(binario) y el lenguaje humano (proceso por compilador o intérprete).</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src='../img/clase1/cvsi.png' />
+                                    <img className="w-75 mx-auto d-block" style={{ marginBottom: "7rem" }} alt="" src='../img/clase1/cvsi.png' />
                                 </div>
                             </div>
                         </div>
@@ -220,7 +220,7 @@ const Class1 = () => {
                                         extraer información de sitios web, como hacen Netflix o Instagram.</p>
                                     <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/g&g3d.png"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DESARROLLO DE VIDEOJUEGOS</h3>
-                                    <p className="mt-4 mb-4 text-center mx-auto w-50">Juegos como Battelfield 2 o los Sims 4, parte de su código está escrito en este lenguaje de programación. <br></br>
+                                    <p className="mt-4 text-center mx-auto w-50" style={{ marginBottom: "7rem" }}>Juegos como Battelfield 2 o los Sims 4, parte de su código está escrito en este lenguaje de programación. <br></br>
                                         A través de librerías como Pygame o Panda 3D, podrás enfocar tu desempeño profesional aparte desarrollo gaming, pero hay otras tantas que están recogidas en wiki python.
                                         Pero Python no tiene la posibilidad de realizarlos al completo, por lo que te animamos a que descubras otros lenguajes para programar videojuegos, como Java o Lua.
                                     </p>
@@ -243,7 +243,7 @@ const Class1 = () => {
                                     <p className="mt-4 mb-4 text-center mx-auto">Elegimos el sistema operativo que utilizamos en nuestro dispositivo</p>
                                     <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python4.jpg"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto">Cuando ejecutamos el instalador tocaremos "add python 3.8 to PATH" y luego tocamos "install now"</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python5.jpg"></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python5.jpg" style={{ marginBottom: "7rem" }}></img>
                                 </div>
                             </div>
                         </div>
@@ -291,7 +291,7 @@ const Class1 = () => {
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Spanish Language Pack for Visual Studio Code: Esta extensión nos facilitará toda la interfaz de usuario de visual studio code a español</p></li>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python: les proporcionará autocompletado avanzado,Análisis estático de código y detección de errores.</p></li>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python Environment Manager: Gestiona entornos virtuales de Python y seleccionar qué entorno virtual se va a utilizar en un proyecto de Python en particular.</p></li>
-                                        <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python: Indentación automática para facilitar la lectura del códigoUna mala indentación puede hacer que el código sea difícil de leer y entender, lo que a su vez puede llevar a errores y problemas en el código.</p></li>
+                                        <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python indent: Indentación automática para facilitar la lectura del códigoUna mala indentación puede hacer que el código sea difícil de leer y entender, lo que a su vez puede llevar a errores y problemas en el código.</p></li>
                                     </ul>
                                     <h2 className="mx-auto text-center">Terminal - Python y pip</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Empecemos a utilizar visual studio code para verificar que se instaló correctamente python, si nos vamos a la parte superior del programa veremos unos "...", presionalo con click derecho y ve a Terminal/New terminal ó simplemente presiona ctrl+shift+ñ </p>

@@ -64,10 +64,6 @@ print(len("matemáticas"))
 
 
 
-
-
-
-
 # Ya sabiendo estas 3 funciones tenemos una cierta cantidad de aplicaciones en la que se puede aplicar en python
 # te daré solo 2 ejemplos ya que deberás ver como hacer los ejercicios que existen en la página, si no los pudiste hacer
 # no te preocues, posiblemente lo veremos en clases pero recuerda que estos ejercicios están echos para que practiques, 
@@ -80,7 +76,7 @@ print("Bienvenido "+ input("dime tu nombre") + " al curso de python!")
 # Como tenemos un input y este lo debe escribir el usuario, primero se tiene que rellenar los inputs para mostrar en pantalla todo el contenido.
 # Entonces lo que hará es ejecutar primero el o los inputs y luego muestra en pantalla todo el contenido.
 
-  
+
 
 print(input("dime tu nombre: ")," contiene ",len(input("escribe de nuevo el nombre: "))," letras")
 # En esta línea de código es un poco diferente, vemos que está haciendo una unión de varios datos pero en vez de usar "+", usamos una coma ",".
