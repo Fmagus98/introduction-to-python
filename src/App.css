@@ -290,6 +290,7 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  height: auto;
 }
 
 .navbar li {
@@ -369,8 +370,8 @@ h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #01036f;
-}
+  color: "##010483"} 
+
 
 .navbar .dropdown ul a i {
   font-size: 12px;
@@ -473,7 +474,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #0205a1;
+  color: #0205a1!important;
 }
 
 .navbar-mobile a:hover,

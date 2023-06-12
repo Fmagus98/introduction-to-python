@@ -61,7 +61,7 @@ const Classes = () => {
             <p>Elige una clase</p>
           </div>
         </div>
-        <div class="row w-100">
+        <div className="row w-100">
           <ItemContainer item={course}/>
         </div>
       </section>
