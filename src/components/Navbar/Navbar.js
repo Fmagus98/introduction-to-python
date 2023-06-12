@@ -35,7 +35,7 @@ const Navbar = () => {
           <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
         </div>
         <nav id="navbar" className={isMobileNavOpen ? 'navbar navbar-mobile h-auto' : 'navbar'}>
-          <ul className={isMobileNavOpen ? 'h-auto' : ''}>
+          <ul onClick={handleMobileNavToggle} className={isMobileNavOpen ? 'h-auto' : ''}>
             <li><Link to="/" style={isMobileNavOpen ? { color: "##010483" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Inicio</Link></li>
             <li><Link to="/classes" style={isMobileNavOpen ? { color: "##010483" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Clases</Link></li>
             <li><Link to="/exercises" style={isMobileNavOpen ? { color: "##010483" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Ejercicios</Link></li>
