@@ -453,7 +453,7 @@ h6 {
 }
 
 .navbar-mobile ul {
-  display: block;
+  display: inline-grid;
   position: absolute;
   top: 55px;
   right: 15px;
@@ -462,6 +462,7 @@ h6 {
   border-radius: 8px;
   background-color: #fff;
   overflow-y: auto;
+  height:auto;
 }
 
 

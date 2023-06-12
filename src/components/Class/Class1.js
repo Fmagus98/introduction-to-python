@@ -23,7 +23,7 @@ const Class1 = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                            <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
+                            <img src="../img/python.webp" className="img-fluid animated vh-60" alt="" />
                         </div>
                     </div>
                 </div>
@@ -65,9 +65,9 @@ const Class1 = () => {
                                     <p className="text-center mx-auto">En los inicios de las computadoras, el código binario era la única forma de representar la información, lo que requería que los programas fueran escritos
                                         en este sistema. Sin embargo, este proceso era lento y propenso a errores ya que los programadores tenían que convertir manualmente cada instrucción y dato en una serie de ceros y unos.</p>
                                     <h4 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>REPRESENTACION DE NÚMEROS EN CÓDIGO BINARIO</h4>
-                                    <img className="mx-auto d-block w-75" alt="" src='../img/clase1/btot.png' />
+                                    <img className="mx-auto d-block w-75" alt="" src='../img/clase1/btot.webp' />
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>REPRESENTACIÓN DE TEXTO EN CÓDIGO BINARIO</h3>
-                                    <img className="mx-auto d-block w-75" alt="" src='../img/clase1/btot2.png' />
+                                    <img className="mx-auto d-block w-75" alt="" src='../img/clase1/btot2.webp' />
                                     <p className="text-center mx-auto w-75"> En las primeras computadoras, el código binario era la única forma de representar la información. Los datos se almacenaban y se procesaban en forma de bits,
                                         lo que significaba que los programas debían ser escritos en código binario. Esto requería que los programadores convirtieran cada instrucción y dato en una
                                         serie de ceros y unos, lo que era un proceso lento y propenso a errores.
@@ -76,9 +76,9 @@ const Class1 = () => {
                                         más legible y fácil de recordar aunque estaba muy alejado aún del lenguage humano.</p>
                                     <p className="text-center mx-auto w-75">Dato curioso, a mediado de los 80 las consolas estaban hechas en 8-bits como la NES de Nintendo y la Master System de SEGA a la cabeza. En el juego "Pac-man" existe un error por estas limitaciones de bits,
                                         en la programación del juego existe una variable encargada de ser el contador de los niveles del juego, al llegar al nivel 256 el procesador no es capaz de calcularlo y aparece en pantalla este error. </p>
-                                    <img className="w-75 mx-auto d-block" alt="" src='../img/clase1/PMg.png' />
+                                    <img className="w-75 mx-auto d-block" alt="" src='../img/clase1/PMg.webp' />
                                     <p className="text-center mx-auto">Finalmente, surgen los llamados lenguages de alto nivel. Estos van a ser un proceso intermedio entre el lenguaje máquina(binario) y el lenguaje humano (proceso por compilador o intérprete).</p>
-                                    <img className="w-75 mx-auto d-block" style={{ marginBottom: "7rem" }} alt="" src='../img/clase1/cvsi.png' />
+                                    <img className="w-75 mx-auto d-block" style={{ marginBottom: "7rem" }} alt="" src='../img/clase1/cvsi.webp' />
                                 </div>
                             </div>
                         </div>
@@ -118,7 +118,7 @@ const Class1 = () => {
                             <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                                     <div id="content">
-                                        <img className="d-block mx-auto w-25" alt="" src="../img/clase1/guido.png"></img>
+                                        <img className="d-block mx-auto w-25" alt="" src="../img/clase1/guido.webp"></img>
                                         <p className="text-center mx-auto">Python es un lenguaje de programación de alto nivel basado en C.
                                             Fue creado en 1989 por Guido Van Rossum, un programador holandés, mientras trabajaba en el Centro de
                                             Investigación para la Informática (CWI) en los Países Bajos. </p>
@@ -137,7 +137,7 @@ const Class1 = () => {
                                             lenguaje y lo hizo más consistente y fácil de aprender. Actualmente, Python es uno de los lenguajes de
                                             programación más populares en todo el mundo y las empresas de alto nivel los están utilizando .
                                         </p>
-                                        <img className="d-block mx-auto w-100" alt="" src="../img/clase1/ep.png"></img>
+                                        <img className="d-block mx-auto w-100" alt="" src="../img/clase1/ep.webp"></img>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ const Class1 = () => {
                                     <p className="text-center mx-auto">Dentro de la programación hay tipos niveles, estos niveles determinan la complejidad en la podemos programar
                                         en dicho lenguaje. Si el nivel es más bajo, este se acercará más al lenguage máquina(código binario) y facilitará a la maquina a interpretar más rápido
                                         pero a la vez es más complejo para los programadores programar en este lenguaje ya que se aleja del lenguage humano.</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/level.png"></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/level.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>CASE SENSITIVE</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto"> Lo que significa que distingue entre mayúsculas y minúsculas en los nombres de variables, funciones, clases, módulos y otros identificadores. Esto significa que
                                         dos identificadores que se diferencian solo en su uso de mayúsculas y minúsculas se consideran diferentes en Python.</p>
@@ -167,9 +167,9 @@ const Class1 = () => {
                                     </ul>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>MULTIPLATAFORMA</h3>
                                     <p className="text-center mx-auto">Python se puede utilizar en una amplia variedad de plataformas, incluyendo Windows, macOS y Linux, lo que lo hace muy versátil y útil en diferentes entornos de trabajo.</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/os.png"></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/os.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>APLICACIONES EN MERCADO LABORAL</h3>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/bd.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/bd.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>BIG DATA</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto w-50">El uso de Python está muy extendido en dos áreas:
                                         el análisis de datos y el big data. Su sencillez y su gran número de bibliotecas de procesamiento
@@ -179,46 +179,46 @@ const Class1 = () => {
                                         software de data analytics, está este lenguaje interpretado de alto nivel, puesto que
                                         Python está especializado en analizar una gran cantidad de datos para transformarlos en
                                         información útil para el big data.</p>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/dm.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/dm.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DATA MINING</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto w-50"> La minería de datos o data mining es un
                                         proceso que permite analizar grandes bases de datos con el objetivo de predecir futuras
                                         tendencias. Se trata de un proceso complejo al que Python puede ayudar, a través de la
                                         limpieza, organización de datos y del uso de algoritmos de aprendizaje automático que
                                         simplifica el análisis de datos.</p>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/ds.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/ds.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DATA SCIENCE</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto w-50"> Los nuevos motores numéricos como “Pandas”
                                         o “NumPy”, Python están dejando atrás a  MATLAB, lenguaje usado por científicos para trabajar
                                         con un gran número de datos. Python vuelve a destacar por su simplicidad y  potencial para trabajar
                                         con un gran número de datos,  el gran número de bibliotecas existentes, hacen que Python sea ideal
                                         para este tipo de tareas.</p>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/ia.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/ia.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>INTELIGENCIA ARTIFICIAL</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto w-50"> Cada vez se habla más de la inteligencia artificial
                                         (IA). Gran parte de su avance se debe a Python. Su facilidad de escritura y su robustez han convertido
                                         a Python en el aliado perfecto de la IA. Su capacidad de plasmar ideas complejas en pocas líneas, unidas
                                         al gran número de frameworks existentes, han hecho que Python sea uno de los lenguajes de programación
                                         que están impulsando a la IA.</p>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/bc.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/bc.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>BLOCKCHAIN</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto w-50">
                                         Blockchain es una tecnología de registro distribuido que se utiliza para registrar transacciones de manera segura y verificable.
                                         Consiste en un registro en línea que se actualiza de manera permanente y que está protegido mediante técnicas criptográficas.</p>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/ml.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/ml.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>MACHINE LEARNING</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto w-50">El machine learning o aprendizaje automático es otra de
                                         las tecnologías que está cambiando el mundo tal y como lo conocemos. La robótica y la IA son ahora capaces
                                         de aprender por sí mismas a medida que van procesando datos. De esta forma, obtienen información relevante
                                         que le permite tomar las decisiones adecuadas. Por supuesto, Python es también muy eficaz en este campo,
                                         en el tratamiento de datos eficaz es esencial.</p>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/dw.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/dw.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DESARROLLO WEB</h3>
                                     <p className="mt-4 mb-4 text-center mx-auto w-50">Python permite desarrollar webs complejas con menos líneas de
                                         código, haciéndolas más ligeras y optimizadas. Django es uno de los frameworks de Python más populares de la actualidad,
                                         que puede ser utilizado para crear webs dinámicas y muy seguras. Python es empleado para hacer scraping, es decir,
                                         extraer información de sitios web, como hacen Netflix o Instagram.</p>
-                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/g&g3d.png"></img>
+                                    <img className="w-50 mx-auto d-block" alt="" src="../img/clase1/g&g3d.webp"></img>
                                     <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DESARROLLO DE VIDEOJUEGOS</h3>
                                     <p className="mt-4 text-center mx-auto w-50" style={{ marginBottom: "7rem" }}>Juegos como Battelfield 2 o los Sims 4, parte de su código está escrito en este lenguaje de programación. <br></br>
                                         A través de librerías como Pygame o Panda 3D, podrás enfocar tu desempeño profesional aparte desarrollo gaming, pero hay otras tantas que están recogidas en wiki python.
@@ -235,15 +235,15 @@ const Class1 = () => {
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                                     <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link>.<br></br>
                                         En este curso usaremos la version 3.8.3, para descargar una version diferente a la actual dirigete a downloads.</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python1.jpg"></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python1.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto"> Luego iremos a "All release" </p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python2.jpg"></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python2.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto">Buscamos la versión  3.8.3 y tocamos "download"</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python3.jpg"></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python3.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto">Elegimos el sistema operativo que utilizamos en nuestro dispositivo</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python4.jpg"></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python4.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto">Cuando ejecutamos el instalador tocaremos "add python 3.8 to PATH" y luego tocamos "install now"</p>
-                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python5.jpg" style={{ marginBottom: "7rem" }}></img>
+                                    <img className="w-75 mx-auto d-block" alt="" src="../img/clase1/python5.webp" style={{ marginBottom: "7rem" }}></img>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +259,7 @@ const Class1 = () => {
                                         Esta integración facilita el trabajo de los programadores al permitirles desarrollar y probar aplicaciones de software en un solo entorno.
                                     </p>
                                     <p className="text-center mx-auto">Estos son unos de los IDEs más comunes que se utilizan para el lenguaje de programación python:</p>
-                                    <img className="w-50 d-block mx-auto" alt="" src="../img/clase1/IDE.png"></img>
+                                    <img className="w-50 d-block mx-auto" alt="" src="../img/clase1/IDE.webp"></img>
                                     <ul className="intr-ul">
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">JupiterLab: Es una interfaz de usuario web interactiva para el entorno de programación Jupyter. Permite la edición de código en varios lenguajes de programación, incluido Python, y proporciona una variedad de características y extensiones útiles. </p></li>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Pycharm: Es un entorno de desarrollo integrado para Python desarrollado por JetBrains. Proporciona una amplia gama de características y herramientas para facilitar el desarrollo de aplicaciones Python.</p></li>
@@ -271,22 +271,22 @@ const Class1 = () => {
                                     </p>
                                     <h2 className=" text-center">Instalación de Visual Studio Code</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">1 - Ve al sitio web oficial de Visual Studio Code en <Link to="https://code.visualstudio.com" target="_blank" className="text-info">https://code.visualstudio.com</Link>.<br></br><br></br>En el inicio de la página web van a ver directamente que dice "Donwload for Windows", si su sistema operativo es Windows van hacer click derecho directamante ahi y se les va a descargar el programa.<br></br> Si en su ordenador tienen otro sistema operativo van a la palomita que esta al lado derecho y van a ver los diferentes sistemas operativos en el que pueden descargarlo, lo más importante es que descarguen la version estable, para hacerlo deben hacer click derecho en la columna "stable" de su sistema operativo </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide1.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide1.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">2 - Al ejecutar el instalador deben aceptar los terminos y condiciones del programa haciendo click derecho en "Acepto el acuerdo" y lugo hacer click derecho en el botón "siguiente" para seguir con la instalación.</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide2.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide2.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">3 - Activa todas las opciones haciendo click derecho en los checkbox y haz click derecho en el botón "siguiente"</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide3.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide3.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">4 - Haz click derecho en el boton "siguiente" </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide4.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ide4.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">5 - Al terminar la instalación haz click en "finalizar" para abrir automáticamente el programa Visual Studio Code para empezar a programar! </p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/ide5.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/ide5.webp"></img>
                                     <h2 className=" text-center">Extensiones en Visual Studio Code</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">En nuestro Visual Studio Code tenemos bastantes herramientas que nos falicitará a la hora de
                                         programar en python, unas de ellas son las extensiones descargables que se nos va a proporcionar en el programa</p>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Para descargar extensiones tendremos que ir a la barra que está en la parte superior izquierda y tocamos el logo indicado en la imagen</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ext1.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ext1.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Al tocar el logo veremos que tenemos un buscador para buscar extensiones, un apartado llamado "installed" donde tendrémos todas las extensiones que instalamos y un apartado llamado "recommended" donde vamos a tener extensiones que podría servirnos al utilizar un lenguage en especial</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ext2.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/ext2.webp"></img>
                                     <ul className="intr-ul" style={{ marginBottom: "7rem" }}><h3 className="mt-4 mb-4 text-center mx-auto w-75">lista de extensiones que utilizaremos en python:</h3>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Spanish Language Pack for Visual Studio Code: Esta extensión nos facilitará toda la interfaz de usuario de visual studio code a español</p></li>
                                         <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python: les proporcionará autocompletado avanzado,Análisis estático de código y detección de errores.</p></li>
@@ -295,16 +295,16 @@ const Class1 = () => {
                                     </ul>
                                     <h2 className="mx-auto text-center">Terminal - Python y pip</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Empecemos a utilizar visual studio code para verificar que se instaló correctamente python, si nos vamos a la parte superior del programa veremos unos "...", presionalo con click derecho y ve a Terminal/New terminal ó simplemente presiona ctrl+shift+ñ </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t1.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t1.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Observamos que se abrirá la terminal en la parte inferior del programa, dentro de la terminal te mostrará la dirección en donde se está ejecutando la terminal. </p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t2.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t2.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Si escribimos en la terminal "python", nos mostrará la versión que estamos utilizando si está instalado.</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t3.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t3.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Para finalizar el proceso de ejecución que muestra la version de python escribiremos "exit()".</p>
-                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t4.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" alt="" src="../img/clase1/t4.webp"></img>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">Ya vimos que podemos ver la version de python escribiendo python, ahora empezaremos a ver pip.<br></br>Pip es un sistema de gestión de paquetes utilizado en Python para instalar y administrar bibliotecas y paquetes de terceros que no están incluidos en la biblioteca estándar de Python.
                                         <br></br>El nombre "pip" se deriva de la frase "Pip Installs Packages" (Pip instala paquetes) y se utiliza para instalar, actualizar y desinstalar paquetes Python y sus dependencias, si escribimos "pip --version" en la terminal nos mostrará la versión del administrador de paquetes.</p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/t5.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/t5.webp"></img>
                                 </div>
                             </div>
                         </div>
@@ -315,14 +315,14 @@ const Class1 = () => {
                             <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p1.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p1.webp"></img>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p2.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p2.webp"></img>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Luego de seleccionar la carpeta veremos que en la parte superior izquierda nos aparecerá el nombre de la carpeta seleccionada y en el lado derecho tendremos varios items, el primer item nos dejará que podamos crear un archivo, el segundo nos dejará que podamos crear una carpeta,
                                         el tercero refrescará la carpeta, el cuarto item nos dejará contraer o plegar una carpeta. en este caso usaremos el primer item para crear un archivo.</p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p3.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p3.webp"></img>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Al crear el archivo le debemos escribir el nombre deseado para el archivo seguido de un ".py" para indicar al programa de que es un archivo de python, por ejemplo: index.py </p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p4.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p4.webp"></img>
                                     <h2 className=" text-center">Salida de datos - print()</h2>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
                                         con el objetivo de poder representar la información que el script nos quiere
@@ -335,14 +335,14 @@ const Class1 = () => {
                                         variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
                                     </p>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "input" escribiremos por ejemplo: input("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p5.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p5.webp"></img>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar el programa debemos escribir en la terminal "python" seguido del nombre del archivo que queramos ejecutar, por ejemplo: python index.py. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p6.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p6.webp"></img>
                                     <h2 className=" text-center">Comentarios - #, """ """</h2>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
                                         Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
                                     </p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p7.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p7.webp"></img>
                                     <h2 className=" text-center">Entrada de datos - input()</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">La función input() permite obtener información
                                         en la terminal desde el teclado, al momento de ejecutarse esta línea en la consola esperara
@@ -351,16 +351,16 @@ const Class1 = () => {
                                     </p>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                     </p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p8.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/clase1/p8.webp"></img>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                     </p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p9.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p9.webp"></img>
                                     <h2 className=" text-center">función len()</h2>
                                     <p className="mt-4 mb-4 text-center mx-auto w-75">La función len() permite obtener la longitud de caracteres que existen dentro del paréntesis.
                                     </p>
                                     <p className="mt-4 mb-2 text-center mx-auto w-75">Por ejemplo si queremos mostrar en pantalla cuántos caracteres tiene la palabra "programación", debemos usar un input y dentro la funcion len(): input(len("Programación")), esto nos retornará la cantidad de caracteres que hay.
                                     </p>
-                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p10.jpg"></img>
+                                    <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase1/p10.webp"></img>
                                 </div>
                             </div>
                         </div>
