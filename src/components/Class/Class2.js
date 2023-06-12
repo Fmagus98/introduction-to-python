@@ -229,10 +229,6 @@ const Class2 = () => {
                   <p className="text-center mx-auto w-75"> El método capitalize() es utilizado en objetos de tipo str (cadenas) y se utiliza para devolver una copia de la cadena con el primer carácter en mayúscula y el resto en minúscula.
                   </p>
                   <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase2/capitalize.png"></img>
-                  <h2 className="text-center mx-auto">Repr( )</h2>
-                  <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves { } en la cadena y se reemplazan por los valores correspondientes.
-                  </p>
-                  <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase2/repr.png"></img>
                   <h2 className="text-center mx-auto">Center( )</h2>
                   <p className="text-center mx-auto w-75">El método center() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para centrar una cadena dentro de un ancho determinado.
                   </p>

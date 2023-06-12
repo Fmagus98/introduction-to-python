@@ -62,7 +62,7 @@ const Classes = () => {
           </div>
         </div>
         <div class="row w-100">
-          <ItemContainer item={course} />
+          <ItemContainer item={course}/>
         </div>
       </section>
     </>
