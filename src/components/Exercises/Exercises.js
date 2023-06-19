@@ -111,7 +111,26 @@ const Exercises = () => {
                             </button>
                             <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario un número e imprima si es positivo, negativo o cero.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que tome dos números como entrada y muestre cuál de ellos es mayor, o si son iguales.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario su edad y determine si es mayor de edad (18 años o más) o menor de edad.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
+                                    <p className="text-center mx-auto w-75">EEscribe un programa que solicite al usuario un número del 1 al 7 y muestre el día de la semana correspondiente (1 - Lunes, 2 - Martes, ..., 7 - Domingo). Si el número está fuera de ese rango, muestra un mensaje de error.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario un número del 1 al 12 y muestre el nombre del mes correspondiente. Si el número está fuera de ese rango, muestra un mensaje de error.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario tres números y determine si forman un triángulo válido. Un triángulo es válido si la suma de las longitudes de dos de sus lados es siempre mayor que la longitud del tercer lado.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 7 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario una palabra y muestre cada letra de la palabra en una línea separada.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que genere una secuencia de números del 1 al 10, pero solo muestre aquellos que sean divisibles por 3.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario un número y muestre la tabla de multiplicar de ese número hasta el 10.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 10 </h3>
+                                    <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario un número y muestre la suma de todos los números pares desde 0 hasta ese número.</p>
                                 </div>
                             </div>
                         </div>

@@ -23,7 +23,7 @@ const Class3 = () => {
               </div>
             </div>
             <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-              <img src="../img/python.webp" className="img-fluid animated vh-60" alt="" />
+              <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
             </div>
           </div>
         </div>
@@ -139,12 +139,14 @@ const Class3 = () => {
                   <img className="w-75 d-block mx-auto" alt="" src="../img/clase3/problem1-2.webp"></img>
                   <p className="text-center mx-auto w-75">Si vemos lo que nos indica el problema, vemos que nos dice que el usuario debe ingresar una contraseña para su cuenta</p>
                   <img className="w-75 d-block mx-auto" alt="" src="../img/clase3/problem1-3.webp"></img>
+                  <p className="text-center mx-auto w-75">En base al análisis que hicimos con el diagrama de flujos, podemos ya identificar a groso modo que aplicaciones debemos hacer para realizar nuestro programa. <br></br>Habrá veces que no realizamos el código tal cual lo hicimos en el diagrama por problemas que surgieron mientras programamos, pero lo bueno de hacer estos diagramas es que tenemos ya pensado una base en la cual programar.<br></br> Acá te muestro una de las posibles soluciones al problema hecho con python.</p>
+                  <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/clase3/problem1-4.webp"></img>
                 </div>
               </div>
             </div>
             <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed bg-transparent" type="button">
-                <Link to="/pythonClassFile/class2.py"
+                <Link to="/pythonClassFile/class3.py"
                   target={"_blank"}
                   download={"class3.py"}>
                   <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 3</h2>

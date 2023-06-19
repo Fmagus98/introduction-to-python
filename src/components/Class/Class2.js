@@ -23,7 +23,7 @@ const Class2 = () => {
               </div>
             </div>
             <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-              <img src="../img/python.webp" className="img-fluid animated vh-60" alt="" />
+              <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
             </div>
           </div>
         </div>

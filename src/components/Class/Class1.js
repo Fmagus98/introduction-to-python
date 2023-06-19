@@ -7,7 +7,7 @@ const Class1 = () => {
         AOS.init();
     }, [])
     return (
-        <>
+        <> 
             <section id="hero">
                 <div className="container">
                     <div className="row justify-content-between">
@@ -23,11 +23,10 @@ const Class1 = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                            <img src="../img/python.webp" className="img-fluid animated vh-60" alt="" />
+                            <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
                         </div>
                     </div>
                 </div>
-
                 <svg id="clase1" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
                     <defs>
                         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
