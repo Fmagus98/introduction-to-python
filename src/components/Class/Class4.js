@@ -50,7 +50,7 @@ const Class4 = () => {
             <p>Contenido</p>
           </div>
           <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-            <div className="accordion-item rounded-5" style={{ background: "#010483" }} >
+            <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
               <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                 <h2 data-aos="fade-right">¿Que es una función?</h2>
               </button>
@@ -65,7 +65,7 @@ const Class4 = () => {
                 </div>
               </div>
             </div>
-            <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+            <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                 <h2 data-aos="fade-right" className="text-light">¿Para que sirve una función?</h2>
               </button>
@@ -84,14 +84,14 @@ const Class4 = () => {
                 </div>
               </div>
             </div>
-            <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+            <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                 <h2 data-aos="fade-right" className="text-light">Sintaxis básica de una función</h2>
               </button>
               <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                <div  className="accordion-body text-light bg-dark rounded-5 rounded-top">
                   <h2 data-aos="fade-right" className="text-light text-center mt-4 mb-4">Concepto y ejemplo de una función/función con parámetros</h2>
-                  <img className="w-75 d-block mx-auto" alt="" src="../img/clase4/function.png" style={{ marginBottom: "7rem" }}></img>
+                  <img className="w-75 d-block mx-auto" alt="" src="../img/class4/function.webp" style={{ marginBottom: "7rem" }}></img>
                   <h2 data-aos="fade-right" className="text-light text-center">Explicación de los elementos en una función</h2>
                   <p className="text-center mx-auto w-75">def: La palabra clave "def" se utiliza para definir una función en Python.</p>
                   <p className="text-center mx-auto w-75">nombre_de_la_funcion: Es el nombre que eliges para tu función. Debes seguir las convenciones de nombrado de Python y elegir un nombre descriptivo que indique la tarea que realiza la función.</p>
@@ -102,7 +102,7 @@ const Class4 = () => {
                 </div>
               </div>
             </div>
-            <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+            <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                 <h2 data-aos="fade-right" className="text-light">¿Que es un módulo?</h2>
               </button>
@@ -113,17 +113,17 @@ const Class4 = () => {
                     Los módulos se utilizan para organizar y modularizar el código, lo que facilita su mantenimiento y reutilización en diferentes programas.</p>
                   <p className="text-center mx-auto">Aquí tienes los pasos básicos para crear y usar módulos en Python:</p>
                   <p className="text-center mx-auto">1_ Crear un archivo de módulo: Crea un archivo Python con extensión .py que contendrá el código del módulo. Por ejemplo, crea un archivo llamado mi_modulo.py</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/module1.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/module1.webp"></img>
                   <p className="text-center mx-auto">2_ Escribir el código del módulo: En el archivo mimodulo.py, escribe el código que deseas incluir en el módulo. Puedes definir funciones, clases, variables u otras estructuras de datos en el archivo. Por ejemplo, el contenido de mimodulo.py podría tener una función llamada saludo() y una variable llamada pi.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/module2.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/module2.webp"></img>
                   <p className="text-center mx-auto">3_ Usar el módulo en otro archivo: Para usar el módulo en otro archivo Python, necesitas importarlo. Puedes importar todo el módulo o solo partes específicas del mismo. Por ejemplo, crea un archivo curso4 y úsalo para importar y utilizar el módulo mi_modulo.py:</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/module3.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/module3.webp"></img>
                   <p className="text-center mx-auto">También puedes importar partes específicas del módulo utilizando la declaración from / import. Por ejemplo:</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/module4.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/module4.webp"></img>
                 </div>
               </div>
             </div>
-            <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+            <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                 <h2 data-aos="fade-right" className="text-light">Módulos nativos de python</h2>
               </button>
@@ -132,48 +132,48 @@ const Class4 = () => {
                   <p className="text-center mx-auto">Python tiene una amplia biblioteca estándar que incluye una serie de módulos nativos para realizar diversas tareas.<br></br>Aquí hay algunos módulos nativos comunes de Python:</p>
                   <h2 data-aos="fade-right" className="text-light text-center">Math</h2>
                   <p className="text-center mx-auto w-75">El módulo math en Python proporciona funciones y constantes matemáticas para realizar cálculos numéricos. Para utilizar el módulo math, debes importarlo al principio de tu script de la siguiente manera:</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/math1.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math1.webp"></img>
                   <p className="text-center mx-auto w-75">A continuación, puedes utilizar las funciones y constantes proporcionadas por el módulo math. Aquí hay algunos ejemplos de cómo puedes usarlo.</p>
                   <p className="text-center mx-auto w-75">Redondeo de números: Cuando tengamos un número con décimal podemos redondearlo con varios métodos (ceil,floor,trunc).</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/math2.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math2.webp"></img>
                   <p className="text-center mx-auto w-75">Funciones trigonométricas: Podemos realizar cálculos trigonométricos para calcular seno,arcoseno,coseno,arcocoseno,tangente y arcotangente de un ángulo con estas funciones (sin,cos,tang).</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/math3.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math3.webp"></img>
                   <p className="text-center mx-auto w-75">Funciones hiperbólicas: Son útiles para describir fenómenos físicos (por ejemplo, velocidad de las olas o el movimiento de un objeto en un fluido) por su conveniencia al resolver ecuaciones diferenciales. Para usar esto se usan estas funciones (sinh,cosh,tanh,asinh,acosh,atanh).</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/math4.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math4.webp"></img>
                   <p className="text-center mx-auto w-75">Funciones exponenciales y logarítmicas: Se puede realizar cálculos logarítmicos y exponenciales con estas funciones (log, exp, pow).</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/math5.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math5.webp"></img>
                   <p className="text-center mx-auto w-75">Estos son solo algunos ejemplos de las funciones y constantes disponibles en el módulo math. Para obtener más detalles y ver todas las funciones y constantes proporcionadas, puedes consultar la documentación oficial de Python: <a className="text-primary" href="https://docs.python.org/3/library/math.html">math - Módulo matemático</a>.</p>
                   <h2 data-aos="fade-right" className="text-light text-center">Random</h2>
                   <p className="text-center mx-auto w-75">El módulo random en Python proporciona funciones para generar números pseudoaleatorios.<br></br>Dentro de este módulo tiene varias funcionalidades como:</p>
                   <p className="text-center mx-auto w-75">random: Podes generar un número aleatorio</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/random1.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random1.webp"></img>
                   <p className="text-center mx-auto w-75">randint: Podes generar un número aleatorio dentro de un rango específico.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/random2.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random2.webp"></img>
                   <p className="text-center mx-auto w-75">uniform: Generar un número aleatorio de punto flotante dentro de un rango específico.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/random3.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random3.webp"></img>
                   <p className="text-center mx-auto w-75">choice: Selecciona un elemento aleatorio de una lista.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/random4.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random4.webp"></img>
                   <p className="text-center mx-auto w-75">shuffle: Mezcla el orden aleatoriamente de los elementos de una lista.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/random5.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random5.webp"></img>
                   <p className="text-center mx-auto w-75">Si quieres ver más sobre el módulo random puedes ir a la documentación oficial <a className="text-primary" href="https://docs.python.org/3/library/random.html">random - número aleatorio</a></p>
                   <h2 data-aos="fade-right" className="text-light text-center">Datetime</h2>
                   <p className="text-center mx-auto w-75">El módulo datetime en Python permite trabajar con fechas, horas y realizar operaciones relacionadas con el tiempo, aquí te mostraré algunos ejemplos.</p>
                   <p className="text-center mx-auto w-75">datetime.datetime.now(): Puedes obtener la fecha y hora actual.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/datetime1.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/datetime1.webp"></img>
                   <p className="text-center mx-auto w-75">datetime.date(): Crea un objeto de fecha específica.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/datetime2.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/datetime2.webp"></img>
                   <p className="text-center mx-auto w-75">datetime.time(): Crear un objeto de tiempo específico.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/datetime3.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/datetime3.webp"></img>
                   <p className="text-center mx-auto w-75">datetime.datetime(): Crear un objeto de fecha y hora específicos:.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/datetime4.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/datetime4.webp"></img>
                   <p className="text-center mx-auto w-75">strtime: Formatear una fecha y hora en una cadena específica.</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/datetime5.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/datetime5.webp"></img>
                   <p className="text-center mx-auto w-75">Tambien puedes obtener la fecha y hora de forma individual</p>
-                  <img className="w-75 mx-auto d-block" alt="" src="../img/clase4/datetime6.jpg"></img>
+                  <img className="w-75 mx-auto d-block" alt="" src="../img/class4/datetime6.webp"></img>
                 </div>
               </div>
             </div>
-            <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+            <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
                 <h2 data-aos="fade-right" className="text-light">Módulos y librerias independientes para python</h2>
               </button>
@@ -214,7 +214,7 @@ const Class4 = () => {
                     Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://requests.readthedocs.io/en/latest/user/install" target="_blank">Requests</Link>
                   </p>
                   <h3 className="text-center">Opencv:</h3>
-                  <p className="text-center mx-auto w-75">Facilita el envío de solicitudes HTTP y la gestión de respuestas, lo que lo hace útil para interactuar con APIs y realizar solicitudes a servidores.
+                  <p className="text-center mx-auto w-75">Es una biblioteca de código abierto muy popular y ampliamente utilizada para aplicaciones de visión por computadora y procesamiento de imágenes.
                     <br></br>
                     Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html" target="_blank">Opencv</Link>
                   </p>
@@ -243,7 +243,7 @@ const Class4 = () => {
                 </div>
               </div>
             </div>
-            <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+            <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed bg-transparent" type="button">
                 <Link to="/pythonClassFile/"
                   target={"_blank"}
