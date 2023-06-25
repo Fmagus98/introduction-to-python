@@ -139,7 +139,24 @@ const Exercises = () => {
                                 <h2 data-aos="fade-right" className="text-light">Clase 4</h2>
                             </button>
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "saludar", esta función de mostrar en pantalla " hola, se está ejecutando la función saludar".</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "sumar", esta función deberá imprimir en pantalla el resultado de una suma de 2 números por medio de parámetros.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "restar", esta función deberá imprimir en pantalla el resultado de una resta de 2 números por medio de parámetros.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "multiplicar", esta función deberá imprimir en pantalla el resultado de una multiplicación de 2 números por medio de parámetros.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "dividir", esta función deberá imprimir en pantalla el resultado de una división de 2 números por medio de parámetros.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "calculadora", esta funcion deberá usar las funciones sumar,restar,multiplicar y dividir, tambien deberá dejar al usuario indicar los 2 números y indicar que tipo de orperacion quiere realizar, tendrás que utilizar condicionales para esto.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 7 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "es_par_o_inpar", esta función deberá indicarle al usuario que escriba un número y retornarle "es par" en el caso de que el número es par ó "es impar" en el caso de no serlo.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
+                                <p className="text-center mx-auto w-75">Crea una funcion llamada "adivina_numero", esta función deberá indicarle al usuario que escriba un número entre el 1 y el 10, con random genera un número random entre 1 y 10 y escribe en pantalla si el numero que eligió al usuario es el mismo que escogió el número random.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
+                                <p className="text-center mx-auto w-75">Crea una función llamada "fecha_y_hora_actual", esta función deberá indicarle al usuario si quiere ver la fecha actual o la hora, al elegir la hora imprime en pantalla la hora, al elegir la fecha imprime en pantalla la fecha.</p>
                             </div>
                         </div>
                         <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
