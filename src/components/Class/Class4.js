@@ -245,7 +245,7 @@ const Class4 = () => {
             </div>
             <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed bg-transparent" type="button">
-                <Link to="/pythonClassFile/"
+                <Link to="/pythonClassFile/class4.py"
                   target={"_blank"}
                   download={"class4.py"}>
                   <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 4</h2>
