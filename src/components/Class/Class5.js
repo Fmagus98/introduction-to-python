@@ -171,8 +171,11 @@ const Class5 = () => {
               </button>
               <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                <p className="text-center mx-auto w-75">El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código.</p>
                   <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en listas</h2>
                   <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for4.webp" style={{ marginBottom: "7rem" }} ></img>
+                  <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en tuplas</h2>
+                  <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                 </div>
               </div>
             </div>

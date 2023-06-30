@@ -120,6 +120,8 @@ const Class3 = () => {
                   <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for3.webp" style={{ marginBottom: "7rem" }} ></img>
                   <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en listas</h2>
                   <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for4.webp" style={{ marginBottom: "7rem" }} ></img>
+                  <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en tuplas</h2>
+                  <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                 </div>
               </div>
             </div>
