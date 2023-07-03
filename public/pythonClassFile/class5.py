@@ -100,6 +100,10 @@
 # print(lista_nueva1) # respuesta ['auto', 'camión', 'moto']
 # lista_nueva2 = sorted(lista_caracteres, reverse = True)
 # print(lista_nueva2) # respuesta ['moto', 'camión', 'auto']
+tupla_en_lista = [("Juan", 25, 170), ("María", 30, 160), ("Pedro", 20, 170)] # tupla en lista
+# resultado = sorted(tupla_en_lista,  key=lambda x: (-x[2], x[1])) # organiza la lista en base al número del índice 2 en cada tupla
+# print(resultado) # [('Pedro', 20, 170), ('Juan', 25, 170), ('María', 30, 160)]
+
 
     # reversed - ordena los elementos de la lista de forma descendente y no modifica la lista original. 
 # lista_invertida = list(reversed(lista_caracteres))
@@ -113,7 +117,7 @@
 # tupla2 = ("perro", "gato", "caballo", "loro") # método 2
 # print(lista2) # respuesta ["perro", "gato", "caballo", "loro"]
 
-# indexación en lista 
+# indexación en tupla
 
 # tuplaIndex = ("Hernan", "Laura", "Pedro", "Kevin", "Maria", "Keila")
 # print(tuplaIndex[0]) # respuesta "Hernan"
@@ -176,3 +180,5 @@
     # viernes
     # sabado
     # domingo
+
+
