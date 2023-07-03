@@ -139,6 +139,7 @@ const Exercises = () => {
                                 <h2 data-aos="fade-right" className="text-light">Clase 4</h2>
                             </button>
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                                 <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                 <p className="text-center mx-auto w-75">Crea una función llamada "saludar", esta función de mostrar en pantalla " hola, se está ejecutando la función saludar".</p>
                                 <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
@@ -157,6 +158,7 @@ const Exercises = () => {
                                 <p className="text-center mx-auto w-75">Crea una funcion llamada "adivina_numero", esta función deberá indicarle al usuario que escriba un número entre el 1 y el 10, con random genera un número random entre 1 y 10 y escribe en pantalla si el numero que eligió al usuario es el mismo que escogió el número random.</p>
                                 <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
                                 <p className="text-center mx-auto w-75">Crea una función llamada "fecha_y_hora_actual", esta función deberá indicarle al usuario si quiere ver la fecha actual o la hora, al elegir la hora imprime en pantalla la hora, al elegir la fecha imprime en pantalla la fecha.</p>
+                                </div>
                             </div>
                         </div>
                         <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
@@ -165,6 +167,22 @@ const Exercises = () => {
                             </button>
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
+                                <p className="text-center mx-auto w-75">Dada una lista de números, escribe un programa que calcule la suma de todos los elementos y la imprima.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
+                                <p className="text-center mx-auto w-75">Dada una tupla que contiene información de una persona en el siguiente formato: (nombre, edad, ciudad), escribe un programa que imprima el nombre, la edad y la ciudad de la persona.<br></br>Ejemplo:<br></br>Input: ("Juan", 25, "Madrid")<br></br>Output: Nombre: Juan, Edad: 25, Ciudad: Madrid</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
+                                <p className="text-center mx-auto w-75">Crea una tupla con 5 elementos y modifica el elemento 3 a otro valor, acuerdate que las tuplas no pueden modificarse, intenta aplicar lo visto en clases para hacerlo.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
+                                <p className="text-center mx-auto w-75">Dada una lista de números, escribe un programa que imprima todos los números pares presentes en la lista.<br></br>Ejemplo:<br></br>Input: [1, 2, 3, 4, 5, 6]<br></br>Output: [2, 4, 6].</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
+                                <p className="text-center mx-auto w-75">Dada una lista de palabras, escribe un programa que encuentre y devuelva la palabra más larga de la lista.<br></br>Ejemplo:<br></br>Input: ["Hola", "Programación", "Python", "Ejercicio"]<br></br>Output: "Programación"</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
+                                <p className="text-center mx-auto w-75">Dada una lista de palabras, escribe un programa que encuentre y devuelva la palabra más alta alfabéticamente de la lista.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 7 </h3>
+                                <p className="text-center mx-auto w-75">Dada una tupla de elementos, escribe un programa que invierta el orden de los elementos y devuelva una nueva tupla invertida.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
+                                <p className="text-center mx-auto w-75">Dada una lista de tuplas que contienen información de personas en el siguiente formato: (nombre, edad, altura), escribe un programa que ordene la lista de personas por altura de forma descendente y, en caso de empate, por edad de forma ascendente.<br></br>Ejemplo:<br></br>Input: [("Juan", 25, 170), ("María", 30, 160), ("Pedro", 20, 170)]<br></br>Output: [("Juan", 25, 170), ("Pedro", 20, 170), ("María", 30, 160)].</p>
 
                                 </div>
                             </div>
