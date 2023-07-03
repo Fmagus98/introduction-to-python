@@ -93,7 +93,7 @@ const Class5 = () => {
                   <p className="text-center mx-auto w-75">Elimina la primera aparición de un elemento en la lista.</p>
                   <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list8.png"></img>
                   <h2 className="text-center mx-auto mt-4 ">pop()</h2>
-                  <p className="text-center mx-auto w-75">Se utiliza para eliminar y devolver el último elemento de una lista, o un elemento en una posición específica de la lista.</p>
+                  <p className="text-center mx-auto w-75">Se utiliza para eliminar el último elemento o un elemento en una posición específica de la lista.</p>
                   <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list9.png"></img>
                   <h2 className="text-center mx-auto mt-4 ">index()</h2>
                   <p className="text-center mx-auto w-75">Devuelve el índice de la primera aparición de un elemento en la lista.</p>
@@ -181,7 +181,7 @@ const Class5 = () => {
             </div>
             <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
               <button className="accordion-button collapsed bg-transparent" type="button">
-                <Link to="/pythonClassFile/"
+                <Link to="/pythonClassFile/class5.py"
                   target={"_blank"}
                   download={"class5.py"}>
                   <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 5</h2>
