@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 const Item = ({ item }) => {
   const handleLinkClick = () => {
     window.scrollTo({
@@ -8,7 +9,7 @@ const Item = ({ item }) => {
   };
   const date = new Date()
   const dateFirebase = new Date(item.date.toDate())
-  const itemDate = date >= dateFirebase ?
+  const itemDate = (date >= dateFirebase)||localStorage.getItem("access") ?
     <Link to={`/classes/${item.id}`} onClick={handleLinkClick} className="mx-auto class-teory card w-75" data-aos="zoom-in" data-aos-delay="100">
       <div className="card-body">
         <h4 className="text-center card-title mb-2">{item.class}</h4>

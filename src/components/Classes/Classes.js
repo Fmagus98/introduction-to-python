@@ -15,6 +15,7 @@ const Classes = () => {
       return (setCourse(getData))
     })
   }, [])
+  
   useEffect(() => {
     AOS.init();
   }, [])
