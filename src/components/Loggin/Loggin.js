@@ -25,7 +25,7 @@ const Loggin = () => {
                         info = true
                         localStorage.setItem("access", "Total access")
                         localStorage.setItem("user", userData.name)
-                        navigate("/")
+                        navigate('/', { replace: true });
                     }
                 });
                 if (!info) {

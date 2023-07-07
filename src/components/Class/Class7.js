@@ -68,16 +68,13 @@ const Class6 = () => {
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
                 <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
                   <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <h2 data-aos="fade-right">Diccionarios</h2>
+                    <h2 data-aos="fade-right">Métodos de archivos en python</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <div className="accordion-body text-light">
-                        <h2 data-aos="fade-right" className="text-light text-center">Definición y uso de diccionarios:</h2>
-                        <p className="text-center mx-auto w-75">Un diccionario es una estructura de datos mutable y sin orden en Python. Está compuesto por pares clave-valor, donde cada clave es única y se utiliza para acceder a su respectivo valor.<br></br>Las claves en un diccionario pueden ser de tipo inmutable, como cadenas de texto, números o tuplas. Los valores pueden ser de cualquier tipo, incluyendo listas, diccionarios e incluso funciones.
-                        </p>
-                        <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class6/dict1.png"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center">Manipulación de elementos en diccionarios</h2>
+                        <p className="text-center mx-auto w-75">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
+                        <h2 data-aos="fade-right" className="text-light text-center">Abrir archivos</h2>
                         <p className="text-center mx-auto w-75">Para acceder a un valor en un diccionario, utilizamos la clave correspondiente.</p>
                         <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class6/dict2.jpg"></img>
                         <h2 data-aos="fade-right" className="text-light text-center mt-4">Modificación de elementos</h2>

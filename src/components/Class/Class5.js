@@ -87,7 +87,7 @@ const Class5 = () => {
                         <p className="text-center mx-auto w-75">Puedes acceder a subconjuntos de elementos en una lista utilizando la técnica de slicing. Esto te permite obtener porciones de una lista basándote en índices.</p>
                         <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list4.png"></img>
                         <h2 data-aos="fade-right" className="text-light text-center">Copia de lista</h2>
-                        <p className="text-center mx-auto w-75">Puedes acceder a los elementos de una lista utilizando índices, donde el primer elemento tiene un índice de 0. Por ejemplo, numeros[7] te daría el octavo elemento de la lista.</p>
+                        <p className="text-center mx-auto w-75">Para crear una copia de un diccionario en Python, puedes utilizar el método copy() o el constructor list(). Ambos métodos crean una nueva copia de la lista original.</p>
                         <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list5.png"></img>
                       </div>
                     </div>
