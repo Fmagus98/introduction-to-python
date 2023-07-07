@@ -154,43 +154,43 @@ const Class6 = () => {
                       <p className="text-center mx-auto w-75">Los conjuntos en Python tienen varios métodos incorporados que puedes utilizar para realizar operaciones y manipulaciones en conjuntos.</p>
                       <h2 className="text-center mx-auto mt-4 ">add()</h2>
                       <p className="text-center mx-auto w-75">El método add() agrega un elemento al conjunto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla2.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">remove(elemento)</h2>
-                      <p className="text-center mx-auto w-75">Elimina un elemento específico del conjunto. Si el elemento no existe, se produce un error.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla3.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">discard(elemento)</h2>
-                      <p className="text-center mx-auto w-75">Elimina un elemento del conjunto si está presente. Si el elemento no existe, no se produce ningún error.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla4.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">pop()</h2>
-                      <p className="text-center mx-auto w-75">Elimina y devuelve un elemento aleatorio del conjunto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla5.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">clear()</h2>
-                      <p className="text-center mx-auto w-75">Elimina todos los elementos del conjunto, dejándolo vacío.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set3.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">copy()</h2>
                       <p className="text-center mx-auto w-75">Crea y devuelve una copia superficial del conjunto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set4.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">update(otro_conjunto)</h2>
                       <p className="text-center mx-auto w-75">Agrega los elementos del otro conjunto al conjunto actual.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set5.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">remove(elemento)</h2>
+                      <p className="text-center mx-auto w-75">Elimina un elemento específico del conjunto. Si el elemento no existe, se produce un error.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set6.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">discard(elemento)</h2>
+                      <p className="text-center mx-auto w-75">Elimina un elemento del conjunto si está presente. Si el elemento no existe, no se produce ningún error.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set7.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">pop()</h2>
+                      <p className="text-center mx-auto w-75">Elimina y devuelve un elemento aleatorio del conjunto.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set8.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">union(otro_conjunto)</h2>
                       <p className="text-center mx-auto w-75">Devuelve un nuevo conjunto que es la unión de dos conjuntos, es decir, contiene todos los elementos de ambos conjuntos sin duplicados.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">Intersection(otro_conjunto)</h2>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set9.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">intersection(otro_conjunto)</h2>
                       <p className="text-center mx-auto w-75">Devuelve un nuevo conjunto que es la intersección de dos conjuntos, es decir, contiene solo los elementos que están presentes en ambos conjuntos.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set10.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">difference(otro_conjunto)</h2>
                       <p className="text-center mx-auto w-75">Devuelve un nuevo conjunto que es la diferencia entre dos conjuntos, es decir, contiene los elementos que están en el conjunto actual pero no en el otro conjunto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set11.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">symmetric_difference(otro_conjunto)</h2>
                       <p className="text-center mx-auto w-75">Devuelve un nuevo conjunto que es la diferencia simétrica entre dos conjuntos, es decir, contiene los elementos que están en uno de los conjuntos pero no en ambos.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set12.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">issubset(otro_conjunto)</h2>
                       <p className="text-center mx-auto w-75">Verifica si el conjunto actual es un subconjunto del otro conjunto, es decir, si todos los elementos del conjunto actual están presentes en el otro conjunto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set13.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">issuperset(otro_conjunto)</h2>
                       <p className="text-center mx-auto w-75">Verifica si el conjunto actual es un superconjunto del otro conjunto, es decir, si contiene todos los elementos del otro conjunto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set14.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">clear()</h2>
+                      <p className="text-center mx-auto w-75">Elimina todos los elementos del conjunto, dejándolo vacío.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/set15.jpg"></img>
                     </div>
                   </div>
                 </div>
