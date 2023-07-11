@@ -192,7 +192,22 @@ const Exercises = () => {
                             </button>
                             <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
+                                <p className="text-center mx-auto w-75">Dados dos conjuntos, encuentra la intersección entre ellos.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
+                                <p className="text-center mx-auto w-75">Dado un conjunto de números, verifica si todos los elementos son pares.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
+                                <p className="text-center mx-auto w-75">Crea un diccionario que represente el inventario de una tienda, donde las claves sean los nombres de los productos y los valores sean las cantidades disponibles.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
+                                <p className="text-center mx-auto w-75">Dado un diccionario de notas de estudiantes, calcula el promedio de las notas.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
+                                <p className="text-center mx-auto w-75">Dado un conjunto de números, encuentra el número más grande y el número más pequeño.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
+                                <p className="text-center mx-auto w-75">Dado un conjunto de palabras, elimina todas las palabras que tengan menos de 5 caracteres.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 7 </h3>
+                                <p className="text-center mx-auto w-75">Dado un diccionario de nombres y edades, crea un nuevo diccionario solo con las personas mayores de 18 años.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
+                                <p className="text-center mx-auto w-75">Dado un diccionario de productos y sus precios, encuentra el producto más caro.</p>
                                 </div>
                             </div>
                         </div>
