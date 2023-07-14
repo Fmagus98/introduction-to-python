@@ -62,158 +62,90 @@ const Class6 = () => {
           <section id="faq" className="faq section-bg">
             <div className="container">
               <div className="section-title" data-aos="fade-up">
-                <h2>Clase 6</h2>
+                <h2>Clase 7</h2>
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
-                  <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <h2 data-aos="fade-right">Métodos de archivos en python</h2>
+                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                  <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <h2 data-aos="fade-right" className="text-light">Tipos de excepciones</h2>
                   </button>
-                  <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <div className="accordion-body text-light">
-                        <p className="text-center mx-auto w-75">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
-                        <h2 data-aos="fade-right" className="text-light text-center">Abrir archivos</h2>
-                        <p className="text-center mx-auto w-75">Para acceder a un valor en un diccionario, utilizamos la clave correspondiente.</p>
-                        <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class6/dict2.jpg"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center mt-4">Modificación de elementos</h2>
-                        <p className="text-center mx-auto w-75">Las claves en un diccionario pueden ser de tipo inmutable, como cadenas de texto, números o tuplas. Los valores pueden ser de cualquier tipo, incluyendo listas, diccionarios e incluso funciones.</p>
-                        <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict3.jpg"></img>
-                      </div>
+                      <p className="text-center mx-auto w-75">
+                        Python tiene una amplia variedad de tipos de excepciones incorporados que cubren diferentes situaciones de error. Algunos ejemplos comunes de tipos de excepciones son:
+                      </p>
+                      <h2 className="text-center mx-auto mt-4 ">SintaxError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando la manera de escribir código no sigue las reglas de sintaxis en Python .</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/indexError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">NameError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/nameError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">TypeError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/typeError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">ValueError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando una función recibe un argumento con un valor inapropiado.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/valueError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">IndentationError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando la indentación (espacios o tabulaciones) no está correctamente alineada.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/indentationError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">AttributeError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta acceder a un atributo o método que no existe en un objeto.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/attributeError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">keyError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta acceder a una clave que no existe en un diccionario.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/keyError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">ZeroDivisionError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta dividir un número entre cero.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/zeroDivisionError.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">FileNotFoundError</h2>
+                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta abrir un archivo que no existe.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/fileNotFound.jpg"></img>
                     </div>
                   </div>
                 </div>
                 <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Métodos de diccionario</h2>
+                    <h2 data-aos="fade-right" className="text-light">Manejo de excepciones</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <h2 className="text-center mx-auto mt-4 ">keys()</h2>
-                      <p className="text-center mx-auto w-75">El método keys() retorna una lista con todas las claves del diccionario.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict4.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">values()</h2>
-                      <p className="text-center mx-auto w-75">El método values() Retorna una lista con todos los valores del diccionario.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict5.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">items()</h2>
-                      <p className="text-center mx-auto w-75">El método items() retorna una lista de tuplas con los pares clave-valor del diccionario.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict6.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">get(clave, valor_predeterminado):</h2>
-                      <p className="text-center mx-auto w-75">El método get() retorna el valor asociado a una clave, o un valor predeterminado si la clave no existe.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict7.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">update(diccionario2)</h2>
-                      <p className="text-center mx-auto w-75">El método update(diccionario2) combina dos diccionarios, actualizando las claves existentes y agregando nuevas claves.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict8.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">pop()</h2>
-                      <p className="text-center mx-auto w-75">el método pop(clave, [valor_predeterminado]) elimina y retorna el valor asociado a una clave. Si la clave no existe, se puede proporcionar un valor predeterminado opcional que se retornará en lugar de generar un error KeyError.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict9.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">popitem()</h2>
-                      <p className="text-center mx-auto w-75">El método popitem() elimina y retorna un par clave-valor arbitrario del diccionario como una tupla. Útil cuando se desea eliminar elementos en un orden no específico.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict10.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">clear()</h2>
-                      <p className="text-center mx-auto w-75">el método clear() elimina todos los pares clave-valor del diccionario, dejándolo vacío.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict11.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">copy()</h2>
-                      <p className="text-center mx-auto w-75">El método copy() retorna una copia superficial del diccionario.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dcit12.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">fromkeys()</h2>
-                      <p className="text-center mx-auto w-75">El método fromkeys(iterable, [valor]) retorna un nuevo diccionario con las claves del iterable proporcionado y el mismo valor opcional para todas las claves.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict13.jpg"></img>
-                    </div>
-                  </div>
-                </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
-                  <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Conjuntos</h2>
-                  </button>
-                  <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <p className="text-center mx-auto w-75">
-                        Además de tener métodos para utilizar en listas, también tenemos funciones que nos ayudan a la hora de manipular datos. Aquí te explicaré algunos de ellos:
-                      </p>
-                      <h2 className="text-center mx-auto mt-4 ">len()</h2>
-                      <p className="text-center mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list13.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">max()</h2>
-                      <p className="text-center mx-auto w-75">max() te devuelve el valor del elemento más alto de la lista.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list14.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">min()</h2>
-                      <p className="text-center mx-auto w-75">min() te devuelve el valor del elemento más bajo de la lista.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list15.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">sum()</h2>
-                      <p className="text-center mx-auto w-75">sum() te devuelve la sumatoria de todos los elementos de la lista </p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list16.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">sort() / sorted / reverse</h2>
-                      <p className="text-center mx-auto w-75">sort() ordena los elementos de la lista de forma ascendente y modifica la lista original.<br></br>Sorted() crea una lista y ordena la lista de forma ascendente <br></br>Si deseas ordenar la lista en orden descendente, puedes utilizar el argumento reverse=True en el método sort() o sorted()</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list17.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">reversed()</h2>
-                      <p className="text-center mx-auto w-75">reversed() ordena los elementos de la lista de forma descendente y no modifica la lista original.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list18.png"></img>
+                      <p className="text-center mx-auto w-75">una excepción es un evento que ocurre durante la ejecución de un programa y puede interrumpir su flujo normal. Cuando ocurre una excepción, el programa se desvía del flujo normal de ejecución y busca un bloque de código especial diseñado para manejar dicha excepción. Este proceso se conoce como "lanzar" (raise) una excepción.</p>
+                      <h2 className="text-center mx-auto mt-4 ">Bloque try - except</h2>
+                      <p className="text-center mx-auto w-75">El bloque try-except es utilizado para manejar excepciones en Python. Dentro del bloque try, se coloca el código que podría generar una excepción. Si ocurre una excepción en este bloque, el flujo del programa se desvía al bloque except, donde podemos manejar la excepción de manera adecuada.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/tryExcept.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">Bloque else</h2>
+                      <p className="text-center mx-auto w-75">El bloque else es opcional y se ejecuta solo si no se ha producido ninguna excepción en el bloque try. Podemos colocar aquí el código que debe ejecutarse si no hay excepciones.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/else.jpg"></img>
+                      <h2 className="text-center mx-auto mt-4 ">bloque finally</h2>
+                      <p className="text-center mx-auto w-75">El bloque finally también es opcional y se ejecuta siempre, independientemente de si se ha producido una excepción o no. Se utiliza para realizar tareas de limpieza o liberación de recursos, como cerrar archivos abiertos, conexiones de bases de datos, etc.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/finally.jpg"></img>
                     </div>
                   </div>
                 </div>
                 <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <h2 data-aos="fade-right" className="text-light">Tuplas</h2>
+                    <h2 data-aos="fade-right" className="text-light">Metodos de archivos en python</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <p className="text-center mx-auto w-75">
-                        Una tupla en Python es una estructura de datos inmutable, lo que significa que no se pueden modificar una vez creadas. <br></br>Se utiliza para almacenar una colección ordenada de elementos heterogéneos, como números, cadenas de texto, booleanos, etc. <br></br>Las tuplas se definen utilizando paréntesis () y los elementos se separan por comas.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla1.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">índice</h2>
-                      <p className="text-center mx-auto w-75">Al igual que las listas, el operador de indexación [ ] permite acceder a elementos individuales de la tupla utilizando su índice. Por ejemplo, tupla[0] devuelve el primer elemento de la tupla.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla2.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">segmentación</h2>
-                      <p className="text-center mx-auto w-75">El operador de segmentación (:) permite acceder a un rango de elementos en la tupla. Por ejemplo, tupla[1:3] devuelve una nueva tupla que contiene los elementos desde el índice 1 hasta el índice 2.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla3.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">concatenación</h2>
-                      <p className="text-center mx-auto w-75">El operador de concatenación (+) permite concatenar dos o más tuplas para crear una nueva tupla que contenga todos los elementos de las tuplas originales en el mismo orden.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla4.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">repetición</h2>
-                      <p className="text-center mx-auto w-75">El operador de multiplicación (*) permite repetir una tupla múltiples veces para crear una nueva tupla que contenga las repeticiones de los elementos originales.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla5.png"></img>
-                      <h2 className="text-center mx-auto mt-4 ">conversión tupla - lista / lista - tupla</h2>
-                      <p className="text-center mx-auto w-75">Si necesitas realizar operaciones más avanzadas con tuplas, como ordenar, filtrar o modificar elementos, es posible convertir la tupla en una lista utilizando el método list(), realizar las operaciones necesarias y luego convertir la lista resultante nuevamente en una tupla utilizando el método tuple().</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class5/tupla6.png"></img>
-                      <p className="text-center mx-auto w-75">Como había explicado anteriormente, las tuplas son estructuras de datos inmutables, lo que significa que no se pueden modificar una vez creadas. Debido a esto, las tuplas tienen un conjunto limitado de métodos incorporados en comparación con las listas. Los únicos métodos disponibles para las tuplas son conunt() y index</p>
-                    </div>
-                  </div>
-                </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
-                  <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                    <h2 data-aos="fade-right" className="text-light">For</h2>
-                  </button>
-                  <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }} > El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
-                      <h2 className="text-center mx-auto mt-4">Bucle for en cadena de texto</h2>
-                      <img className="w-75 d-block mx-auto mb-4 pb-4" alt="" src="../img/class3/for1.webp"></img>
-                      <img className="w-75 d-block mx-auto mt-4 pt-4" alt="" src="../img/class3/for2.webp" style={{ marginBottom: "7rem" }} ></img>
-                      <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en rango de números</h2>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for3.webp" style={{ marginBottom: "7rem" }} ></img>
-                      <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en listas</h2>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for4.webp" style={{ marginBottom: "7rem" }} ></img>
-                    </div>
-                  </div>
-                </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
-                  <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
-                    <h2 data-aos="fade-right" className="text-light">Resolución de problemas</h2>
-                  </button>
-                  <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <p className="text-center mx-auto w-75">En esta instancia del curso de python estamos empezando a implementar con condicionales y bucles, es un buen momento de implementar estas herramientas en problemas reales y empezar a desarrollar la resolución de problemas con lógica</p>
-                      <h2 className="text-center mx-auto">Problema n°1 - validación de contraseña</h2>
-                      <p className="text-center mx-auto w-75">Supongamos que le damos a elegir al usuario una contraseña para su cuenta y como requisito debe tener al menos una letra, un número y debe tener al menos un largo de 8 caracteres.</p>
-                      <p className="text-center mx-auto w-75">Lo primero que podemos hacer es realizar un diagrama de flujo, Un diagrama de flujo es una representación gráfica de un algoritmo o proceso que utiliza símbolos y líneas para mostrar la secuencia de pasos o decisiones necesarios para resolver un problema. Los diagramas de flujo son una herramienta visual utilizada en programación y en otras disciplinas para planificar, analizar y comunicar la lógica de un proceso.</p>
-                      <p className="text-center mx-auto w-75">Si vemos lo que nos indica el problema, vemos que nos dice que el usuario debe ingresar una contraseña para su cuenta.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class3/problem1-1.webp"></img>
-                      <p className="text-center mx-auto w-75">En el problema nos está diciendo que como requisito debe tener al menos una letra, un número y debe tener al menos un largo de 8 caracteres, por lo tanto estas van a ser condiciones que le tenemos que dar a este </p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class3/problem1-2.webp"></img>
-                      <p className="text-center mx-auto w-75">Si vemos lo que nos indica el problema, vemos que nos dice que el usuario debe ingresar una contraseña para su cuenta</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class3/problem1-3.webp"></img>
+                      <p className="text-center mx-auto w-75">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
+                      <h2 data-aos="fade-right" className="text-light text-center">open() - Abrir archivos </h2>
+                      <p className="text-center mx-auto w-75"> Este método se utiliza para abrir un archivo. Toma dos parámetros principales: el nombre del archivo y el modo en el que se abrirá (por ejemplo, lectura, escritura, agregado, etc.).</p>
+                      <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/open.jpg"></img>
+                      <h2 data-aos="fade-right" className="text-light text-center mt-4">read() - lee archivos</h2>
+                      <p className="text-center mx-auto w-75">Este método se utiliza para leer el contenido de un archivo. Puede leer todo el contenido o una cantidad específica de caracteres.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/read.jpg"></img>
+                      <h2 data-aos="fade-right" className="text-light text-center mt-4">write() - escribe archivos</h2>
+                      <p className="text-center mx-auto w-75">Este método se utiliza para escribir datos en un archivo. Puede escribir una cadena de texto o datos formateados en el archivo.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/write.jpg"></img>
+                      <h2 data-aos="fade-right" className="text-light text-center mt-4">adjunto - adjunta archivos</h2>
+                      <p className="text-center mx-auto w-75">Este método se utiliza para Agregar contenido a un archivo existente.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/adjunto.jpg"></img>
+                      <h2 data-aos="fade-right" className="text-light text-center mt-4">close() - cierra archivos</h2>
+                      <p className="text-center mx-auto w-75">Este método se utiliza para cerrar un archivo después de que hayamos terminado de trabajar con él. Es importante cerrar los archivos para liberar los recursos del sistema.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/close.jpg"></img>
                     </div>
                   </div>
                 </div>
@@ -221,7 +153,7 @@ const Class6 = () => {
                   <button className="accordion-button collapsed bg-transparent" type="button">
                     <Link to="/pythonClassFile/"
                       target={"_blank"}
-                      download={"class5.py"}>
+                      download={"class7.py"}>
                       <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 6</h2>
                     </Link>
                   </button>
