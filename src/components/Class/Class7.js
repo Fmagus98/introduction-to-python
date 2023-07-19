@@ -4,7 +4,7 @@ import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const Class6 = () => {
+const Class7 = () => {
   const [date, setDate] = useState()
   const newDate = new Date()
   useEffect(() => {
@@ -146,15 +146,21 @@ const Class6 = () => {
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">close() - cierra archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para cerrar un archivo después de que hayamos terminado de trabajar con él. Es importante cerrar los archivos para liberar los recursos del sistema.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/close.jpg"></img>
+                      <h2 data-aos="fade-right" className="text-light text-center mt-4">rename(nombre_actual, nombre_nuevo) - renombrar archivos</h2>
+                      <p className="text-center mx-auto w-75">Para renombrar archivos debemos utilizar el módulo "os" y con el método rename podremos cambiar el nombre del archivo.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/rename.jpg"></img>
+                      <h2 data-aos="fade-right" className="text-light text-center mt-4">remove(nombre_achivo) - eliminar archivos</h2>
+                      <p className="text-center mx-auto w-75">Para eliminar archivos debemos utilizar el módulo "os" y con el método remove podremos eliminar el archivo.</p>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/remove.jpg"></img>
                     </div>
                   </div>
                 </div>
                 <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button">
-                    <Link to="/pythonClassFile/"
+                  <Link to="/pythonClassFile/class7.py"
                       target={"_blank"}
                       download={"class7.py"}>
-                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 6</h2>
+                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 7</h2>
                     </Link>
                   </button>
                 </div>
@@ -201,4 +207,4 @@ const Class6 = () => {
   )
 }
 
-export default Class6
+export default Class7

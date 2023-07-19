@@ -4,7 +4,7 @@ import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const Class6 = () => {
+const Class8 = () => {
   const [date, setDate] = useState()
   const newDate = new Date()
   useEffect(() => {
@@ -62,7 +62,7 @@ const Class6 = () => {
           <section id="faq" className="faq section-bg">
             <div className="container">
               <div className="section-title" data-aos="fade-up">
-                <h2>Clase 6</h2>
+                <h2>Clase 8</h2>
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
@@ -225,7 +225,7 @@ const Class6 = () => {
                     <Link to="/pythonClassFile/"
                       target={"_blank"}
                       download={"class5.py"}>
-                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 6</h2>
+                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 8</h2>
                     </Link>
                   </button>
                 </div>
@@ -272,4 +272,4 @@ const Class6 = () => {
   )
 }
 
-export default Class6
+export default Class8

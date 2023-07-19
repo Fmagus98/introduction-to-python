@@ -217,7 +217,26 @@ const Exercises = () => {
                             </button>
                             <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                </div>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
+                                <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario dos números enteros y realice la división del primero entre el segundo. Asegúrate de manejar las excepciones que puedan ocurrir, como la división por cero o la entrada de valores no numérico.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
+                                <p className="text-center mx-auto w-75">Crea un programa que lea un archivo de texto llamado "datos.txt" y muestre su contenido en la consola. Maneja las excepciones que puedan surgir en caso de que el archivo no exista o haya algún problema al leerlo.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
+                                <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario que ingrese una serie de frases. Luego, guarda esas frases en un archivo de texto llamado "frases.txt". Asegúrate de manejar las excepciones que puedan ocurrir durante la escritura del archivo.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
+                                <p className="text-center mx-auto w-75">Crea un programa que solicite al usuario que ingrese una nueva frase. Luego, agrega esa frase al final del archivo "frases.txt" creado en el ejercicio anterior. Maneja las excepciones que puedan surgir durante la actualización del archivo.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
+                                <p className="text-center mx-auto w-75">Escribe un programa que permita al usuario eliminar un archivo. El programa debe solicitar el nombre del archivo al usuario y luego eliminarlo. Maneja las excepciones que puedan surgir si el archivo no existe o no se puede eliminar.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
+                                <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario el nombre de un archivo de origen y un archivo de destino. El programa debe copiar el contenido del archivo de origen al archivo de destino. Asegúrate de manejar las excepciones que puedan ocurrir durante el proceso de copia.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 7 </h3>
+                                <p className="text-center mx-auto w-75">Crea un programa que solicite al usuario una palabra clave y un nombre de archivo. El programa debe buscar la palabra clave en el archivo y mostrar todas las líneas que la contengan. Maneja las excepciones que puedan surgir durante la lectura del archivo o si no se encuentra la palabra clave.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
+                                <p className="text-center mx-auto w-75">Escribe un programa que lea un archivo de texto y cuente cuántas veces aparece cada palabra en el archivo. Luego, muestra el resultado en la consola. Maneja las excepciones que puedan ocurrir durante la lectura del archivo.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
+                                <p className="text-center mx-auto w-75">Crea un programa que lea un archivo CSV llamado "datos.csv" que contenga nombres y edades separados por comas. El programa debe mostrar en la consola los nombres de las personas mayores de 18 años. Maneja las excepciones que puedan surgir durante la lectura del archivo o si hay un formato incorrecto en los datos.</p>
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 10 </h3>
+                                <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario ingresar el nombre y la edad de una persona. Luego, guarda esa información como un objeto en un archivo binario llamado "persona.bin". Asegúrate de manejar las excepciones que puedan ocurrir durante la escritura del archivo.</p>  </div>
                             </div>
                         </div>
                         <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
