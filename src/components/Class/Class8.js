@@ -135,7 +135,7 @@ const Class8 = () => {
                 </div>
                 <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button">
-                    <Link to="/pythonClassFile/"
+                    <Link to="/pythonClassFile/class5.py"
                       target={"_blank"}
                       download={"class5.py"}>
                       <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 8</h2>
@@ -152,10 +152,10 @@ const Class8 = () => {
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                 <div data-aos="zoom-out">
-                  <h1>Clase 6: Estructuras de datos II: Diccionarios y conjuntos</h1>
-                  <h2>Diccionarios y conjuntos: definición y uso</h2>
-                  <h2>Manipulación de elementos en diccionarios y conjuntos</h2>
-                  <h2>Métodos de diccionarios y conjuntos</h2>
+                  <h1>Clase 8: Introducción a la programación orientada a objetos</h1>
+                  <h2>Conceptos básicos de la programación orientada a objetos</h2>
+                  <h2>Definición de clases y objetos en python</h2>
+                  <h2>Métodos y atributos de clases y objetos en python</h2>
                   <div className="text-center text-lg-start">
                     <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                   </div>
