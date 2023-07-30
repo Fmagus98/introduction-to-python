@@ -14,6 +14,7 @@ import Class6 from './components/Class/Class6';
 import Class7 from './components/Class/Class7';
 import Class8 from './components/Class/Class8';
 import Exercises from './components/Exercises/Exercises';
+import Projects from './components/Proyects/Projects';
 import Contact from './components/Contact/Contact';
 import Github from './components/Github/Github';
 import ProfessionalCareer from './components/ProfessionalCareer/ProfessionalCareer';
@@ -35,6 +36,7 @@ function App() {
         <Route path="/classes/kgTSxaASCl9vPGuCGC7t" element={<Class7 />} />
         <Route path="/classes/vxbP355jq6oSL1knWI6d" element={<Class8 />} />
         <Route path="/exercises" element={<Exercises />} />
+        <Route path="/projects" element={<Projects/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/github" element={<Github/>} />
         <Route path="/professionalCarrer" element={<ProfessionalCareer/>}/>

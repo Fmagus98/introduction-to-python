@@ -159,7 +159,7 @@ const Class4 = () => {
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math4.webp"></img>
                       <p className="text-center mx-auto w-75">Funciones exponenciales y logarítmicas: Se puede realizar cálculos logarítmicos y exponenciales con estas funciones (log, exp, pow).</p>
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math5.webp"></img>
-                      <p className="text-center mx-auto w-75">Estos son solo algunos ejemplos de las funciones y constantes disponibles en el módulo math. Para obtener más detalles y ver todas las funciones y constantes proporcionadas, puedes consultar la documentación oficial de Python: <a className="text-primary" href="https://docs.python.org/3/library/math.html">math - Módulo matemático</a>.</p>
+                      <p className="text-center mx-auto w-75">Estos son solo algunos ejemplos de las funciones y constantes disponibles en el módulo math. Para obtener más detalles y ver todas las funciones y constantes proporcionadas, puedes consultar la documentación oficial de Python: <Link className="text-primary" to="https://docs.python.org/3/library/math.html">math - Módulo matemático</Link>.</p>
                       <h2 data-aos="fade-right" className="text-light text-center">Random</h2>
                       <p className="text-center mx-auto w-75">El módulo random en Python proporciona funciones para generar números pseudoaleatorios.<br></br>Dentro de este módulo tiene varias funcionalidades como:</p>
                       <p className="text-center mx-auto w-75">random: Podes generar un número aleatorio</p>
@@ -172,7 +172,7 @@ const Class4 = () => {
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random4.webp"></img>
                       <p className="text-center mx-auto w-75">shuffle: Mezcla el orden aleatoriamente de los elementos de una lista.</p>
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random5.webp"></img>
-                      <p className="text-center mx-auto w-75">Si quieres ver más sobre el módulo random puedes ir a la documentación oficial <a className="text-primary" href="https://docs.python.org/3/library/random.html">random - número aleatorio</a></p>
+                      <p className="text-center mx-auto w-75">Si quieres ver más sobre el módulo random puedes ir a la documentación oficial <Link className="text-primary" to="https://docs.python.org/3/library/random.html">random - número aleatorio</Link></p>
                       <h2 data-aos="fade-right" className="text-light text-center">Datetime</h2>
                       <p className="text-center mx-auto w-75">El módulo datetime en Python permite trabajar con fechas, horas y realizar operaciones relacionadas con el tiempo, aquí te mostraré algunos ejemplos.</p>
                       <p className="text-center mx-auto w-75">datetime.datetime.now(): Puedes obtener la fecha y hora actual.</p>
@@ -203,56 +203,56 @@ const Class4 = () => {
                       <h3 className="text-center">Pygame:</h3>
                       <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Es una biblioteca para el desarrollo de juegos y aplicaciones multimedia, que proporciona herramientas para el manejo de gráficos, sonidos y eventos de usuario.
                         <br></br>
-                        Si quieres ver más sobre tensorflow, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://www.tensorflow.org/api_docs" target="_blank">Pygame</Link>
+                        Si quieres ver más sobre pygame, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://www.pygame.org" target="_blank">Pygame</Link>
                       </p>
                       <h3 className="text-center">Flask:</h3>
                       <p className="text-center mx-auto w-75">Es un framework de desarrollo web que facilita la creación de aplicaciones web robustas y escalables, ofreciendo un conjunto de herramientas y una arquitectura MVC.
                         <br></br>
-                        Si quieres ver más sobre Flask, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://flask.palletsprojects.com/en/2.3.x/installation" target="_blank">Flask</Link>
+                        Si quieres ver más sobre Flask, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://flask.palletsprojects.com/en/2.3.x/installation" target="_blank">Flask</Link>
                       </p>
                       <h3 className="text-center">Django:</h3>
                       <p className="text-center mx-auto w-75">Es un framework de desarrollo web que facilita la creación de aplicaciones web robustas y escalables, ofreciendo un conjunto de herramientas y una arquitectura MVC.
                         <br></br>
-                        Si quieres ver más sobre Django, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://www.djangoproject.com/download" target="_blank">Django</Link>
+                        Si quieres ver más sobre Django, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://www.djangoproject.com/download" target="_blank">Django</Link>
                       </p>
                       <h3 className="text-center">Numpy:</h3>
                       <p className="text-center mx-auto w-75">Proporciona soporte para cálculos numéricos eficientes y manipulación de matrices multidimensionales.
                         <br></br>
-                        Si quieres ver más sobre Numpy, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://numpy.org/doc" target="_blank">Numpy</Link>
+                        Si quieres ver más sobre Numpy, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://numpy.org/doc" target="_blank">Numpy</Link>
                       </p>
                       <h3 className="text-center">Pandas:</h3>
                       <p className="text-center mx-auto w-75">Ofrece herramientas para el análisis y la manipulación de datos estructurados, incluyendo estructuras de datos flexibles y potentes para trabajar con tablas y series temporales.
                         <br></br>
-                        Si quieres ver más sobre Pandas, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://pandas.pydata.org/docs" target="_blank">Pandas</Link>
+                        Si quieres ver más sobre Pandas, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://pandas.pydata.org/docs" target="_blank">Pandas</Link>
                       </p>
                       <h3 className="text-center">Requests:</h3>
                       <p className="text-center mx-auto w-75">Facilita el envío de solicitudes HTTP y la gestión de respuestas, lo que lo hace útil para interactuar con APIs y realizar solicitudes a servidores.
                         <br></br>
-                        Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://requests.readthedocs.io/en/latest/user/install" target="_blank">Requests</Link>
+                        Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://requests.readthedocs.io/en/latest/user/install" target="_blank">Requests</Link>
                       </p>
                       <h3 className="text-center">Opencv:</h3>
                       <p className="text-center mx-auto w-75">Es una biblioteca de código abierto muy popular y ampliamente utilizada para aplicaciones de visión por computadora y procesamiento de imágenes.
                         <br></br>
-                        Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html" target="_blank">Opencv</Link>
+                        Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html" target="_blank">Opencv</Link>
                       </p>
                       <h3 className="text-center">Tensorflow:</h3>
                       <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Es una biblioteca de aprendizaje automático de código abierto desarrollada por Google que se utiliza ampliamente para construir y entrenar modelos de redes neuronales.
                         <br></br>
-                        Si quieres ver más sobre tensorflow, lo podrás ver en la documentacion oficial de <Link className="text-primary" href="https://www.tensorflow.org/api_docs" target="_blank">Tensorflow</Link>
+                        Si quieres ver más sobre tensorflow, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://www.tensorflow.org/api_docs" target="_blank">Tensorflow</Link>
                       </p>
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">Paginas de módulos para python</h2>
                       <p className="text-center mx-auto w-75">
                         Existen diferentes lugares donde puedes buscar módulos y bibliotecas para Python. Algunas de las fuentes más populares son:</p>
                       <h3 className="text-center">Python Package Index (PyPI): </h3>
-                      <p className="text-center mx-auto w-75">Es el repositorio oficial de paquetes de Python, donde puedes encontrar una amplia gama de módulos y bibliotecas. Puedes acceder a PyPI en el siguiente enlace: <Link className="text-primary" hfre="https://pypi.org/" target="_blank">https://pypi.org/</Link></p>
+                      <p className="text-center mx-auto w-75">Es el repositorio oficial de paquetes de Python, donde puedes encontrar una amplia gama de módulos y bibliotecas. Puedes acceder a PyPI en el siguiente enlace: <Link className="text-primary" to="https://pypi.org/" target="_blank">https://pypi.org/</Link></p>
                       <h3 className="text-center">Anaconda:</h3>
-                      <p className="text-center mx-auto w-75">Es una distribución de Python que incluye una gran cantidad de módulos y bibliotecas populares para análisis de datos y ciencia computacional. Puedes explorar las bibliotecas disponibles en Anaconda en el siguiente enlace: <Link className="text-primary" href="https://anaconda.org/" target="_blank">https://anaconda.org/</Link></p>
+                      <p className="text-center mx-auto w-75">Es una distribución de Python que incluye una gran cantidad de módulos y bibliotecas populares para análisis de datos y ciencia computacional. Puedes explorar las bibliotecas disponibles en Anaconda en el siguiente enlace: <Link className="text-primary" to="https://anaconda.org/" target="_blank">https://anaconda.org/</Link></p>
                       <h3 className="text-center">GitHub:</h3>
-                      <p className="text-center mx-auto w-75">Es una plataforma de desarrollo colaborativo que alberga repositorios de código fuente, incluidos muchos módulos y bibliotecas de Python. Puedes buscar en GitHub utilizando palabras clave relevantes para encontrar proyectos que se ajusten a tus necesidades en el siguiente enlace: <Link className="text-primary" href="https://github.com/" target="_blank">https://github.com/</Link></p>
+                      <p className="text-center mx-auto w-75">Es una plataforma de desarrollo colaborativo que alberga repositorios de código fuente, incluidos muchos módulos y bibliotecas de Python. Puedes buscar en GitHub utilizando palabras clave relevantes para encontrar proyectos que se ajusten a tus necesidades en el siguiente enlace: <Link className="text-primary" to="https://github.com/" target="_blank">https://github.com/</Link></p>
                       <h3 className="text-center">Documentación oficial de Python:</h3>
-                      <p className="text-center mx-auto w-75">La documentación oficial de Python proporciona una lista de módulos y bibliotecas estándar que están disponibles en la instalación básica de Python. Puedes consultar la documentación en el siguiente enlace: <Link className="text-primary" href="https://docs.python.org/" target="_blank">https://docs.python.org/</Link></p>
+                      <p className="text-center mx-auto w-75">La documentación oficial de Python proporciona una lista de módulos y bibliotecas estándar que están disponibles en la instalación básica de Python. Puedes consultar la documentación en el siguiente enlace: <Link className="text-primary" to="https://docs.python.org/" target="_blank">https://docs.python.org/</Link></p>
                       <h3 className="text-center">Foros y comunidades de Python:</h3>
-                      <p className="text-center mx-auto w-75">Existen comunidades en línea donde los desarrolladores de Python comparten sus proyectos y recomendaciones de módulos y bibliotecas. Algunos ejemplos son el <Link className="text-primary" href="https://www.reddit.com/r/Python/" target="_blank">subreddit r/python</Link>, el foro oficial de Python <Link className="text-primary" href="https://python-forum.io/" target="_blank">Python Forum</Link>, y diversas comunidades en plataformas como <Link className="text-primary" href="https://stackoverflow.com/" target="_blank">Stack Overflow</Link>.</p>
+                      <p className="text-center mx-auto w-75">Existen comunidades en línea donde los desarrolladores de Python comparten sus proyectos y recomendaciones de módulos y bibliotecas. Algunos ejemplos son el <Link className="text-primary" to="https://www.reddit.com/r/Python/" target="_blank">subreddit r/python</Link>, el foro oficial de Python <Link className="text-primary" to="https://python-forum.io/" target="_blank">Python Forum</Link>, y diversas comunidades en plataformas como <Link className="text-primary" to="https://stackoverflow.com/" target="_blank">Stack Overflow</Link>.</p>
                       <p className="text-center mx-auto w-75">Al buscar módulos y bibliotecas, es recomendable verificar la popularidad y la calidad del proyecto, leer las opiniones y reseñas de otros usuarios, y comprobar si el proyecto está activamente mantenido y actualizado.
                         <br></br>
                         Recuerda revisar los requisitos y la compatibilidad del módulo o biblioteca con la versión de Python que estás utilizando en tu proyecto, así como cualquier dependencia adicional que pueda requerir.
