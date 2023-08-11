@@ -15,7 +15,7 @@ const Projects = () => {
                             <div data-aos="zoom-out">
                                 <h1>Proyectos</h1>
                                 <h2>En este apartado encontrarás projectos desarrollados por alumnos de forma individual, en equipo o junto al profesor.</h2>
-                                <h2>Actualmente no existen projectos finalizados.</h2>
+                                <h2>Actualmente no existen proyectos finalizados.</h2>
                                 <div className="text-center text-lg-start">
                                     <a href="#clase1" className="btn-get-started scrollto">Ver Proyectos</a>
                                 </div>
