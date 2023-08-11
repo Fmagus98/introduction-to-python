@@ -77,7 +77,7 @@ const Class1 = () => {
                                                 Con el paso de los años, las computadoras, los lenguajes de programación y los métodos se han ido desarrollando, permitiendo simplificar el proceso de programación.</p>
                                             <p className="text-center mx-auto">El código binario es un sistema de representación de información que utiliza solamente dos dígitos: 0 y 1. Cada dígito se llama bit y puede ser 0 o 1.
                                                 La cantidad de bits en un código binario varía según la información que se necesita representar, siendo los múltiplos de 8 (8, 16, 32, 64 y 128) los números más comunes.
-                                                Por ejemplo, un byte onsta de 8 bits y puede representar 256 valores únicos (2^8).</p>
+                                                Por ejemplo, un byte consta de 8 bits y puede representar 256 valores únicos (2^8).</p>
                                             <p className="text-center mx-auto">En los inicios de las computadoras, el código binario era la única forma de representar la información, lo que requería que los programas fueran escritos
                                                 en este sistema. Sin embargo, este proceso era lento y propenso a errores ya que los programadores tenían que convertir manualmente cada instrucción y dato en una serie de ceros y unos.</p>
                                             <h4 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>REPRESENTACION DE NÚMEROS EN CÓDIGO BINARIO</h4>
