@@ -42,7 +42,7 @@ const Exercises = () => {
             </section>
 
             <section id="faq" className="faq section-bg">
-                <div className="container">
+                <div className="container pt-4 mt-2">
                     <div className="section-title" data-aos="fade-up">
                         <h2>Ejercicios</h2>
                         <p>Contenido</p>
