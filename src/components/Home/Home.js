@@ -47,7 +47,7 @@ const Home = () => {
           </section>
           <section id="details" className="details">
             <div className="container">
-              <div className="row content">
+              <div className="row content mt-2">
                 <div className="col-md-4" data-aos="fade-right">
                   <img src="img/python2.jpg" className="img-fluid" alt="" />
                 </div>
