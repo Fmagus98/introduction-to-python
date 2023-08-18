@@ -207,7 +207,7 @@ const Class2 = () => {
                       </p>
                       <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class2/format.webp"></img>
                       <h2 className="text-center mx-auto">Repr</h2>
-                      <p className="text-center mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves { } en la cadena y se reemplazan por los valores correspondientes.
+                      <p className="text-center mx-auto w-75">El método repr() es una función incorporada que devuelve una representación de cadena "oficial" o "canónica" de un objeto. Cuando llamas a la función repr() en un objeto, Python intenta devolver una cadena que, si se pasara nuevamente como código Python, crearía un objeto idéntico al original. Es decir, la cadena resultante debe ser una representación precisa del estado interno del objeto. 
                       </p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class2/repr.webp" style={{ marginBottom: "7rem" }}></img>
                     </div>
