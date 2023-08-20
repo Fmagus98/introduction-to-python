@@ -156,13 +156,13 @@ const Class7 = () => {
                   </div>
                 </div>
                 <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
-                  <button className="accordion-button collapsed bg-transparent" type="button">
-                  <Link to="/pythonClassFile/class7.py"
+                 <Link to="/pythonClassFile/class7.py"
                       target={"_blank"}
                       download={"class7.py"}>
+                  <button className="accordion-button collapsed bg-transparent" type="button">
                       <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 7</h2>
-                    </Link>
                   </button>
+                 </Link>
                 </div>
               </div>
             </div>
