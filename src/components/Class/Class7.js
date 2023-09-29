@@ -83,25 +83,25 @@ const Class7 = () => {
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/nameError.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">TypeError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/typeError.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/typeError.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">ValueError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando una función recibe un argumento con un valor inapropiado.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/valueError.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/valueError.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">IndentationError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando la indentación (espacios o tabulaciones) no está correctamente alineada.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/indentationError.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/indentationError.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">AttributeError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando se intenta acceder a un atributo o método que no existe en un objeto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/attributeError.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/attributeError.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">keyError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando se intenta acceder a una clave que no existe en un diccionario.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/keyError.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/keyError.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">ZeroDivisionError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando se intenta dividir un número entre cero.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/zeroDivisionError.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/zeroDivisionError.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">FileNotFoundError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando se intenta abrir un archivo que no existe.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/fileNotFound.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/fileNotFound.JPG"></img>
                     </div>
                   </div>
                 </div>
@@ -114,13 +114,13 @@ const Class7 = () => {
                       <p className="text-center mx-auto w-75">una excepción es un evento que ocurre durante la ejecución de un programa y puede interrumpir su flujo normal. Cuando ocurre una excepción, el programa se desvía del flujo normal de ejecución y busca un bloque de código especial diseñado para manejar dicha excepción. Este proceso se conoce como "lanzar" (raise) una excepción.</p>
                       <h2 className="text-center mx-auto mt-4 ">Bloque try - except</h2>
                       <p className="text-center mx-auto w-75">El bloque try-except es utilizado para manejar excepciones en Python. Dentro del bloque try, se coloca el código que podría generar una excepción. Si ocurre una excepción en este bloque, el flujo del programa se desvía al bloque except, donde podemos manejar la excepción de manera adecuada.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/tryExcept.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/tryExcept.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">Bloque else</h2>
                       <p className="text-center mx-auto w-75">El bloque else es opcional y se ejecuta solo si no se ha producido ninguna excepción en el bloque try. Podemos colocar aquí el código que debe ejecutarse si no hay excepciones.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/else.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/else.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">bloque finally</h2>
                       <p className="text-center mx-auto w-75">El bloque finally también es opcional y se ejecuta siempre, independientemente de si se ha producido una excepción o no. Se utiliza para realizar tareas de limpieza o liberación de recursos, como cerrar archivos abiertos, conexiones de bases de datos, etc.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/finally.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/finally.JPG"></img>
                     </div>
                   </div>
                 </div>
@@ -133,25 +133,25 @@ const Class7 = () => {
                       <p className="text-center mx-auto w-75">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
                       <h2 data-aos="fade-right" className="text-light text-center">open() - Abrir archivos </h2>
                       <p className="text-center mx-auto w-75"> Este método se utiliza para abrir un archivo. Toma dos parámetros principales: el nombre del archivo y el modo en el que se abrirá (por ejemplo, lectura, escritura, agregado, etc.).</p>
-                      <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/open.jpg"></img>
+                      <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/open.JPG"></img>
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">read() - lee archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para leer el contenido de un archivo. Puede leer todo el contenido o una cantidad específica de caracteres.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/read.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/read.JPG"></img>
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">write() - escribe archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para escribir datos en un archivo. Puede escribir una cadena de texto o datos formateados en el archivo.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/write.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/write.JPG"></img>
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">adjunto - adjunta archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para Agregar contenido a un archivo existente.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/adjunto.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/adjunto.JPG"></img>
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">close() - cierra archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para cerrar un archivo después de que hayamos terminado de trabajar con él. Es importante cerrar los archivos para liberar los recursos del sistema.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/close.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/close.JPG"></img>
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">rename(nombre_actual, nombre_nuevo) - renombrar archivos</h2>
                       <p className="text-center mx-auto w-75">Para renombrar archivos debemos utilizar el módulo "os" y con el método rename podremos cambiar el nombre del archivo.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/rename.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/rename.JPG"></img>
                       <h2 data-aos="fade-right" className="text-light text-center mt-4">remove(nombre_achivo) - eliminar archivos</h2>
                       <p className="text-center mx-auto w-75">Para eliminar archivos debemos utilizar el módulo "os" y con el método remove podremos eliminar el archivo.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/remove.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/remove.JPG"></img>
                     </div>
                   </div>
                 </div>
