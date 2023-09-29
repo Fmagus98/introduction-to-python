@@ -80,7 +80,7 @@ const Class7 = () => {
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/indexError.jpg"></img>
                       <h2 className="text-center mx-auto mt-4 ">NameError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/nameError.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/nameError.JPG"></img>
                       <h2 className="text-center mx-auto mt-4 ">TypeError</h2>
                       <p className="text-center mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/typeError.JPG"></img>
