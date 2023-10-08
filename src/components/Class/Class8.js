@@ -75,7 +75,7 @@ const Class8 = () => {
                       <div className="accordion-body text-light">
                         <p className="text-center mx-auto w-75">La programación orientada a objetos (POO) es un paradigma de programación que permite organizar y estructurar el código de manera modular, basándose en la idea de objetos que interactúan entre sí. Python es un lenguaje de programación que admite completamente la programación orientada a objetos y proporciona herramientas y sintaxis especiales para trabajar con ella.
                         </p>
-                        <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class8/POO.jpg"></img>
+                        <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class8/poo.jpg"></img>
                         <p className="text-center mx-auto w-75">En la programación orientada a objetos, los objetos son instancias de clases. Una clase es una plantilla o un modelo que define las propiedades y comportamientos que tienen los objetos de ese tipo. Las propiedades se conocen como atributos y los comportamientos se conocen como métodos.</p>
                       </div>
                     </div>
@@ -88,7 +88,7 @@ const Class8 = () => {
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-center mx-auto w-75">Clases y objetos: Una clase es una estructura que define las propiedades y comportamientos comunes a un conjunto de objetos. Para crear un objeto, necesitas instanciar una clase.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class8/class.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class8/class.JPG"></img>
                       <p className="text-center mx-auto w-75">En este ejemplo, se define la clase Perro con un atributo nombre y un método ladrar(). Luego, se crea un objeto mi_perro a partir de la clase Perro y se invoca el método ladrar() del objeto.</p>
                     </div>
                   </div>
