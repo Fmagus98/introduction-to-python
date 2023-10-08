@@ -102,7 +102,7 @@ const Class8 = () => {
                       <p className="text-center mx-auto w-75">
                         Los atributos son variables asociadas a un objeto. Pueden ser variables de instancia (asociadas a cada objeto individualmente) o variables de clase (compartidas por todos los objetos de la clase). Puedes acceder a los atributos utilizando la notación de punto. Por ejemplo:
                       </p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class8/attributes.jpg"></img>
+                      <img className="w-75 d-block mx-auto" alt="" src="../img/class8/attributes.JPG"></img>
                       <p className="text-center mx-auto w-75">En este ejemplo, la clase Persona tiene atributos nombre y edad. Estos atributos se asignan cuando se crea un objeto y se acceden utilizando la notación de punto.</p>
                     </div>
                   </div>
@@ -129,7 +129,7 @@ const Class8 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }} >La herencia en Python es un concepto importante de la programación orientada a objetos (POO) que permite que una clase adquiera propiedades (atributos y métodos) de otra clase. La clase que hereda se denomina "clase hija" o "subclase", y la clase de la cual hereda se llama "clase padre" o "superclase". Esto permite la reutilización de código y la organización jerárquica de las clases.
                         En Python, para definir una clase que herede de otra, se utiliza la siguiente sintaxis:</p>
-                      <img className="w-75 d-block mx-auto mb-4 pb-4" alt="" src="../img/class8/heredity.jpg"></img>
+                      <img className="w-75 d-block mx-auto mb-4 pb-4" alt="" src="../img/class8/heredity.JPG"></img>
                     </div>
                   </div>
                 </div>
