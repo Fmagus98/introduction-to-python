@@ -1,14 +1,18 @@
 import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Projects = () => {
+
+    const location = useLocation() 
+    const title = location.pathname.includes("micropython")?"micropython":"python"
 
     useEffect(() => {
         AOS.init();
     }, [])
     return (
         <>
-            <section section id="hero">
+            <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":"rgba(2, 5, 161, 0.91)"}} >
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -22,7 +26,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                            <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
+                            <img src={`../img/${title}.png`} className="img-fluid animated vh-60" alt="" />
                         </div>
                     </div>
                 </div>

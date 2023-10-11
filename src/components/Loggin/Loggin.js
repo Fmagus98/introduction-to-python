@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,useLocation } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 
@@ -7,7 +7,8 @@ const Loggin = () => {
     const [email, setEmail] = useState("")
     const [emailFail, setEmailFail] = useState("")
 
-    const navigate=useNavigate()
+    const navigate = useNavigate()
+    const location = useLocation()
 
     const handleChange = (e) => {
         setEmail(e.target.value);
@@ -44,7 +45,7 @@ const Loggin = () => {
             !localStorage.getItem("access") ? <li>  <form onSubmit={handleSubmit} className="form-inline mt-2 mt-md-0">
                 <div className="input-group">
                     <input type="email" id="form3Example3" name="email" className="form-control" value={email} onChange={handleChange} />
-                    <button type="submit" className="btn" style={{ background: !emailFail ? "#2f6997" : "red" }}>{!emailFail ? "Acceso Total" : "Correo inválido. Intenta de nuevo"}</button>
+                    <button type="submit" className="btn" style={{ background: emailFail ? "red" :null,backgroundColor:location.pathname.includes("micropython")?"rgb(238, 112, 83)":"#2f6997"}}>{!emailFail ? "Acceso Total" : "Correo inválido. Intenta de nuevo"}</button>
                 </div>
             </form>
             </li> : <li><p className="h6 text-light">Tienes acceso total {localStorage.getItem("user")}!</p></li>

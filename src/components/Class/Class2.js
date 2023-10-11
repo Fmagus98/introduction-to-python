@@ -26,7 +26,7 @@ const Class2 = () => {
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section id="hero">
+          <section section id="hero" style={{ background: "rgba(2, 5, 161, 0.91)" }}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -207,7 +207,7 @@ const Class2 = () => {
                       </p>
                       <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class2/format.webp"></img>
                       <h2 className="text-center mx-auto">Repr</h2>
-                      <p className="text-center mx-auto w-75">El método repr() es una función incorporada que devuelve una representación de cadena "oficial" o "canónica" de un objeto. Cuando llamas a la función repr() en un objeto, Python intenta devolver una cadena que, si se pasara nuevamente como código Python, crearía un objeto idéntico al original. Es decir, la cadena resultante debe ser una representación precisa del estado interno del objeto. 
+                      <p className="text-center mx-auto w-75">El método repr() es una función incorporada que devuelve una representación de cadena "oficial" o "canónica" de un objeto. Cuando llamas a la función repr() en un objeto, Python intenta devolver una cadena que, si se pasara nuevamente como código Python, crearía un objeto idéntico al original. Es decir, la cadena resultante debe ser una representación precisa del estado interno del objeto.
                       </p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class2/repr.webp" style={{ marginBottom: "7rem" }}></img>
                     </div>
@@ -268,8 +268,8 @@ const Class2 = () => {
                 </div>
                 <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
                   <Link to="/pythonClassFile/class2.py"
-                      target={"_blank"}
-                      download={"class2.py"}>
+                    target={"_blank"}
+                    download={"class2.py"}>
                     <button className="accordion-button collapsed bg-transparent" type="button">
                       <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 2</h2>
                     </button>

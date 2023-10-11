@@ -1,30 +1,37 @@
 import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
+import { colorPrimaryMicropython,colorSecondaryMicropython,colorPrimaryPython } from '../../colors';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Exercises = () => {
+
+    const location = useLocation()
+    const title = location.pathname.includes("micropython")?"micropython":"python"
+    const color = location.pathname.includes("micropython")?colorSecondaryMicropython:colorPrimaryPython
+    const color2 = location.pathname.includes("micropython")?colorPrimaryMicropython:colorPrimaryPython
+
     useEffect(() => {
         AOS.init();
     }, [])
     return (
         <>
-            <section id="hero">
+            <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":"rgba(2, 5, 161, 0.91)"}} >
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                             <div data-aos="zoom-out">
                                 <h1>Ejercicios</h1>
-                                <h2> Este apartado proporciona la oportunidad de practicar y aplicar los conceptos aprendidos. Los ejercicios van desde simples hasta desafiantes, permitiendo a los estudiantes resolver problemas y adquirir experiencia en la escritura de código Python. Cada ejercicio se describe brevemente, se brinda un ejemplo de solución y se alienta a los estudiantes a intentar resolverlos por sí mismos antes de revisar la solución. Los ejercicios abarcan temas como impresión en la consola, cálculos matemáticos, entrada y procesamiento de datos, y uso de estructuras de control. El objetivo es fortalecer las habilidades de programación y la comprensión de los conceptos básicos de Python.</h2>
+                                <h2> Este apartado proporciona la oportunidad de practicar y aplicar los conceptos aprendidos. Los ejercicios van desde simples hasta desafiantes, permitiendo a los estudiantes resolver problemas y adquirir experiencia en la escritura de código {title}. Cada ejercicio se describe brevemente, se brinda un ejemplo de solución y se alienta a los estudiantes a intentar resolverlos por sí mismos antes de revisar la solución. Los ejercicios abarcan temas como impresión en la consola, cálculos matemáticos, entrada y procesamiento de datos, y uso de estructuras de control. El objetivo es fortalecer las habilidades de programación y la comprensión de los conceptos básicos de {title}.</h2>
                                 <div className="text-center text-lg-start">
-                                    <a href="#exercises" className="btn-get-started scrollto">Empieza a practicar!</a>
+                                    <a href="#exercises" className="btn-get-started scrollto" style={{backgroundColor:location.pathname.includes("micropython")?"rgb(238, 112, 83)":"#2f6997"}}>Empieza a practicar!</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                            <img src="img/python.png" className="img-fluid animated vh-60" alt="" />
+                            <img src={`../img/${title}.png`} className="img-fluid animated vh-60" alt="" />
                         </div>
                     </div>
                 </div>
-
                 <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
                     <defs>
                         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -43,12 +50,12 @@ const Exercises = () => {
 
             <section id="faq" className="faq section-bg">
                 <div className="container pt-4 mt-2">
-                    <div className="section-title" data-aos="fade-up">
+                    <div className="section-title" style={{color: color}} data-aos="fade-up">
                         <h2>Ejercicios</h2>
                         <p>Contenido</p>
                     </div>
                     <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                        <div className="accordion-item rounded-5" style={{ background: "#010483" }} >
+                        <div className="accordion-item rounded-5" style={{ background: color2}} >
                             <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <h2 data-aos="fade-right">Clase 1</h2>
                             </button>
@@ -75,7 +82,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: color2}}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h2 data-aos="fade-right" className="text-light">Clase 2</h2>
                             </button>
@@ -105,7 +112,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: color2 }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                 <h2 data-aos="fade-right" className="text-light">Clase 3</h2>
                             </button>
@@ -134,7 +141,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: color2 }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                 <h2 data-aos="fade-right" className="text-light">Clase 4</h2>
                             </button>
@@ -161,7 +168,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: color2 }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 data-aos="fade-right" className="text-light">Clase 5</h2>
                             </button>
@@ -186,7 +193,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: color2 }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
                                 <h2 data-aos="fade-right" className="text-light">Clase 6</h2>
                             </button>
@@ -211,7 +218,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: color2 }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                                 <h2 data-aos="fade-right" className="text-light">Clase 7</h2>
                             </button>
@@ -239,7 +246,7 @@ const Exercises = () => {
                                 <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario ingresar el nombre y la edad de una persona. Luego, guarda esa información como un objeto en un archivo binario llamado "persona.bin". Asegúrate de manejar las excepciones que puedan ocurrir durante la escritura del archivo.</p>  </div>
                             </div>
                         </div>
-                        <div className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div className="accordion-item mt-4 rounded-5" style={{ background: color2 }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseEight">
                                 <h2 data-aos="fade-right" className="text-light">Clase 8</h2>
                             </button>

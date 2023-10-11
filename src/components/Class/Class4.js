@@ -26,7 +26,7 @@ const Class4 = () => {
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section id="hero">
+          <section section id="hero" style={{ background: "rgba(2, 5, 161, 0.91)" }}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -261,13 +261,13 @@ const Class4 = () => {
                   </div>
                 </div>
                 <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
-                 <Link to="/pythonClassFile/class4.py"
-                      target={"_blank"}
-                      download={"class4.py"}>
-                  <button className="accordion-button collapsed bg-transparent" type="button">    
+                  <Link to="/pythonClassFile/class4.py"
+                    target={"_blank"}
+                    download={"class4.py"}>
+                    <button className="accordion-button collapsed bg-transparent" type="button">
                       <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 4</h2>
-                  </button>
-                 </Link>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

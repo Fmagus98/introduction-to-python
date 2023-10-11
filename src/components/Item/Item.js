@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Item = ({ item }) => {
+  const location = useLocation()
+  const redirect = location.pathname.includes("micropython")?"/micropython/classes/":"/classes/"
   const handleLinkClick = () => {
     window.scrollTo({
       top: 0
@@ -10,7 +12,7 @@ const Item = ({ item }) => {
   const date = new Date()
   const dateFirebase = new Date(item.date.toDate())
   const itemDate = (date >= dateFirebase)||localStorage.getItem("access") ?
-    <Link to={`/classes/${item.id}`} onClick={handleLinkClick} className="mx-auto class-teory card w-75" data-aos="zoom-in" data-aos-delay="100">
+    <Link to={`${redirect}${item.id}`} onClick={handleLinkClick} className="mx-auto class-teory card w-75" style={{background:location.pathname.includes("micropython")?"#B34229":null}}  data-aos="zoom-in" data-aos-delay="100">
       <div className="card-body">
         <h4 className="text-center card-title mb-2">{item.class}</h4>
         <ul className="intr-ul">
