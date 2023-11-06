@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
@@ -395,17 +395,17 @@ const MicropythonClass8 = () => {
                         <div className="row justify-content-between">
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                 <div data-aos="zoom-out">
-                                    <h1>Clase 1</h1>
-                                    <h2>Introducción a Python y su sintaxis básica, Instalación y configuración del entorno de programación</h2>
-                                    <h2>Instalación y configuración del entorno de programación</h2>
-                                    <h2>Ejecución del primer programa en Python</h2>
+                                    <h1>Clase 8</h1>
+                                    <h2>Diseño y desarrollo de un proyecto completo con MicroPython.</h2>
+                                    <h2>Integración de sensores, actuadores y conectividad.</h2>
+                                    <h2>Prácticas recomendadas y depuración.</h2>
                                     <div className="text-center text-lg-start">
                                         <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }} data-aos="zoom-out" data-aos-delay="300">
-                                <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
+                                <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                             </div>
                         </div>
                     </div>

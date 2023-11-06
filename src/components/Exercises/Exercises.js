@@ -252,6 +252,26 @@ const Exercises = () => {
                             </button>
                             <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
+                                    <p className="text-center mx-auto w-75">Crear una clase "Persona" con atributos como nombre, edad y dirección. Luego, crea varios objetos de persona y muestra sus datos.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
+                                    <p className="text-center mx-auto w-75">Crea una clase "Rectángulo" con atributos "ancho" y "alto". Agrega métodos para calcular el área y el perímetro del rectángulo.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
+                                    <p className="text-center mx-auto w-75">Implementa una clase "Círculo" con un atributo "radio". Agrega métodos para calcular el área y la circunferencia del círculo.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
+                                    <p className="text-center mx-auto w-75">Crea una clase "CuentaBancaria" que tenga atributos como saldo y número de cuenta. Agrega métodos para depositar y retirar dinero, y para consultar el saldo.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
+                                    <p className="text-center mx-auto w-75">Diseña una clase "Estudiante" con atributos como nombre, edad y calificaciones. Agrega métodos para calcular el promedio de calificaciones del estudiante.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
+                                    <p className="text-center mx-auto w-75">Crea una clase "Libro" con atributos como título, autor y año de publicación. Implementa métodos para mostrar la información del libro y para verificar si dos libros son iguales.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 7 </h3>
+                                    <p className="text-center mx-auto w-75">Diseña una clase "Tienda" que administre productos. Cada producto debe tener un nombre, precio y cantidad en stock. Agrega métodos para agregar y vender productos, y para calcular el valor total de la tienda.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
+                                    <p className="text-center mx-auto w-75">Implementa una clase "Coche" con atributos como marca, modelo y año. Agrega métodos para acelerar, frenar y mostrar la información del coche.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
+                                    <p className="text-center mx-auto w-75">Crea una clase "Película" con atributos como título, director y duración. Agrega métodos para mostrar la información de la película y para calcular su duración en minutos y horas.</p>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 10 </h3>
+                                    <p className="text-center mx-auto w-75">Diseña una clase "Mascota" con atributos como nombre, especie y edad. Agrega métodos para mostrar la información de la mascota y para verificar si dos mascotas son de la misma especie.</p>
                                 </div>
                             </div>
                         </div>
