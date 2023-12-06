@@ -1,12 +1,3 @@
-# excepcion en error de sintaxis - SintaxError
-try:
-    # Código que puede generar un SyntaxError
-    x = 10
-    if x == 10
-        print("El valor de x es igual a 10.")
-except SyntaxError as e:
-    print("Se produjo un SyntaxError:", e)
-
 # excepcion en error de nombre - NameError
 try:
     # Código que puede generar un NameError
@@ -29,14 +20,6 @@ try:
     num = int("abc")
 except ValueError as e:
     print("Se produjo un ValueError:", e)
-    
-# excepcion en error de indentación - IndentationError
-try:
-    # Código que puede generar un IndentationError
-    for i in range(5):
-    print(i)
-except IndentationError as e:
-    print("Se produjo un IndentationError:", e)
 
 # excepcion en error de atributos - AtributteError
 try:
