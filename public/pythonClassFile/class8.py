@@ -92,15 +92,17 @@ class Mago(Personaje):
     def daño(self, enemigo):
         return self.inteligencia*self.libro - enemigo.defensa
 
+def realizar_ataque(atacante, defensor):
+    if defensor.esta_vivo():
+        print(">>> Acción de ", atacante.nombre, ":", sep="")
+        atacante.atacar(defensor)
+
 
 def combate(jugador_1, jugador_2):
     turno = 0
     while jugador_1.esta_vivo() and jugador_2.esta_vivo():
-        print("\nTurno", turno)
-        print(">>> Acción de ", jugador_1.nombre,":", sep="")
-        jugador_1.atacar(jugador_2)
-        print(">>> Acción de ", jugador_2.nombre,":", sep="")
-        jugador_2.atacar(jugador_1)
+        realizar_ataque(jugador_1, jugador_2)
+        realizar_ataque(jugador_2, jugador_1)
         turno = turno + 1
     if jugador_1.esta_vivo():
         print("\nHa ganado", jugador_1.nombre)
@@ -110,6 +112,7 @@ def combate(jugador_1, jugador_2):
         print("\nEmpate")
 
 personaje_1 = Guerrero("Guts", 20, 10, 4, 100, 4)
+
 personaje_2 = Mago("Vanessa", 5, 15, 4, 100, 3)
 
 personaje_1.atributos()
@@ -120,30 +123,36 @@ combate(personaje_1, personaje_2)
 
 
 # ejemplo simplificado
-class guerrero1:
+class Guerrero:
     def __init__(self, nombre, vida, daño):
         self.nombre = nombre
         self.vida = vida
         self.daño = daño
 
     def ataque(self, enemigo):
-        if self.vida > 0:
-            enemigo.vida = enemigo.vida - self.daño
-            if enemigo.vida < 0:
-                enemigo.vida = 0
-                print(f"--------------\n{enemigo.nombre} está muerto\n----------------")
-                self.vida += 43
-                print(f"""----------------\naumento de nivel para {self.nombre}\nvida de {self.nombre}: {self.vida}\n----------------""")
-            else:
-                print(
-                    f"----------\n{self.nombre} atacó a {enemigo.nombre}\n vida {self.nombre}: {self.vida} \n vida {enemigo.nombre}:{enemigo.vida}\n--------------")
-        else:
-            print(f"{self.nombre} no puedes atacar, estás muerto")
-            
-p1 = guerrero1("p1", 100, 60)
-p2 = guerrero1("p2", 100, 40)
-p3 = guerrero1("p3", 100, 40)
+        if self.vida > 0 and enemigo.vida > 0:
+            enemigo.vida -= self.daño
+            print(f"{self.nombre} atacó a {enemigo.nombre}. \nVida:\n{self.nombre}: {self.vida}\n{enemigo.nombre}: {enemigo.vida}\n")
+            if enemigo.vida <=0:
+                print(f"{enemigo.nombre} está muerto\n")
+                self.aumentar_nivel()
 
+        # elif self.vida <= 0:
+        #     print(f"{self.nombre} no puede atacar, está muerto\n")
+        
+        # elif enemigo.vida <= 0:
+        #     print(f"no puedes atacar a {enemigo.nombre}, ya está muerto\n")
+        
+    def aumentar_nivel(self):
+        self.vida += 43
+        print(f"Aumento de nivel para {self.nombre}. Vida de {self.nombre}: {self.vida}")
+
+# Crear instancias de guerreros
+p1 = Guerrero("p1", 100, 60)
+p2 = Guerrero("p2", 100, 40)
+p3 = Guerrero("p3", 100, 40) 
+
+# Combate
 p1.ataque(p2)
 p2.ataque(p1)
 p2.ataque(p1)
@@ -151,9 +160,12 @@ p3.ataque(p2)
 p1.ataque(p2)
 p2.ataque(p1)
 p2.ataque(p1)
-p1.ataque(p3)
-p1.ataque(p3)
-p3.ataque(p1)
+p3.ataque(p2)
+p1.ataque(p2)
+p2.ataque(p1)
+p2.ataque(p1)
+p3.ataque(p2)
+
 
 
 
