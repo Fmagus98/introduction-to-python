@@ -138,7 +138,7 @@ p {
   margin-bottom: 40px;
 }
 
-//Slider image
+/*Slider image*/
 
 
 #container{
@@ -353,8 +353,8 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
+/*
+ Desktop Navigation 
 */
 .navbar {
   padding: 0;
@@ -488,8 +488,8 @@ h6 {
   }
 }
 
-/**
-* Mobile Navigation 
+/*
+ Mobile Navigation 
 */
 .mobile-nav-toggle {
   color: #fff;
