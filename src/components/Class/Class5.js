@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { colorPrimaryPython } from '../../colors'
+import useScrollAnimation from '../../useScrollAnimation'
+
 const Class5 = () => {
+
+  const elementVisibility = useScrollAnimation()
   const [date, setDate] = useState()
   const newDate = new Date()
   useEffect(() => {
@@ -18,19 +21,15 @@ const Class5 = () => {
     })
   }, [])
 
-
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section section id="hero" style={{ background: "rgba(2, 5, 161, 0.91)" }}>
+          <section id="hero" style={{ background: colorPrimaryPython }}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                  <div data-aos="zoom-out">
+                  <div>
                     <h1>Clase 5: Estructuras de datos I: Listas y tuplas</h1>
                     <h2>Listas y tuplas: definición y uso</h2>
                     <h2>Manipulación de elementos en listas y tuplas</h2>
@@ -40,7 +39,7 @@ const Class5 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                   <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
                 </div>
               </div>
@@ -62,40 +61,40 @@ const Class5 = () => {
           </section>
           <section id="faq" className="faq section-bg">
             <div className="container">
-              <div className="section-title" data-aos="fade-up">
+              <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`} >
                 <h2>Clase 5</h2>
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
-                  <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <h2 data-aos="fade-right">Listas</h2>
+                <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`}  style={{ background: colorPrimaryPython , borderRadius: "40px" }} >
+                  <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h2>Listas</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <div className="accordion-body text-light">
-                        <h2 data-aos="fade-right" className="text-light text-center">Descripción de lista</h2>
+                        <h2 className="text-light text-center">Descripción de lista</h2>
                         <p className="text-center mx-auto w-75">Una lista en Python es una estructura de datos que permite almacenar múltiples elementos en un solo objeto. <br></br>Puedes considerar una lista como una secuencia ordenada de elementos que pueden ser de diferentes tipos, como números, cadenas de texto, booleanos e incluso otras listas. Se definen utilizando corchetes [ ] y los elementos se separan por comas.</p>
                         <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class5/list1.png"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center">índice</h2>
+                        <h2 className="text-light text-center">índice</h2>
                         <p className="text-center mx-auto w-75">Puedes acceder a los elementos de una lista utilizando índices, donde el primer elemento tiene un índice de 0. Por ejemplo, numeros[7] te daría el octavo elemento de la lista.</p>
                         <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list2.png"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center">Modificación de elementos</h2>
+                        <h2 className="text-light text-center">Modificación de elementos</h2>
                         <p className="text-center mx-auto w-75">Puedes modificar el valor de un elemento en una lista utilizando el índice correspondiente.</p>
                         <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list3.png"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center">segmentación - slicing:</h2>
+                        <h2 className="text-light text-center">segmentación - slicing:</h2>
                         <p className="text-center mx-auto w-75">Puedes acceder a subconjuntos de elementos en una lista utilizando la técnica de slicing. Esto te permite obtener porciones de una lista basándote en índices.</p>
                         <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list4.png"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center">Copia de lista</h2>
+                        <h2  className="text-light text-center">Copia de lista</h2>
                         <p className="text-center mx-auto w-75">Para crear una copia de un diccionario en Python, puedes utilizar el método copy() o el constructor list(). Ambos métodos crean una nueva copia de la lista original.</p>
                         <img className="w-75 d-block mx-auto" alt="" src="../img/class5/list5.png"></img>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Métodos de lista</h2>
+                    <h2 className="text-light">Métodos de lista</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -125,9 +124,9 @@ const Class5 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Funciones en listas</h2>
+                    <h2 className="text-light">Funciones en listas</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -155,9 +154,9 @@ const Class5 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <h2 data-aos="fade-right" className="text-light">Tuplas</h2>
+                    <h2 className="text-light">Tuplas</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -183,26 +182,26 @@ const Class5 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                    <h2 data-aos="fade-right" className="text-light">For</h2>
+                    <h2 className="text-light">For</h2>
                   </button>
                   <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-center mx-auto w-75">El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código.</p>
-                      <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en listas</h2>
+                      <h2 className="text-center mx-auto mt-4">Bucle for en listas</h2>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for4.webp" style={{ marginBottom: "7rem" }} ></img>
-                      <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en tuplas</h2>
+                      <h2 className="text-center mx-auto mt-4">Bucle for en tuplas</h2>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class5.py"
                     target={"_blank"}
                     download={"class5.py"}>
                     <button className="accordion-button collapsed bg-transparent" type="button">
-                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 5</h2>
+                      <h2 className="text-light">Descarga el archivo de la clase 5</h2>
                     </button>
                   </Link>
                 </div>
@@ -215,7 +214,7 @@ const Class5 = () => {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                <div data-aos="zoom-out">
+                <div>
                   <h1>Clase 5: Estructuras de datos I: Listas y tuplas</h1>
                   <h2>Listas y tuplas: definición y uso</h2>
                   <h2>Manipulación de elementos en listas y tuplas</h2>
@@ -225,7 +224,7 @@ const Class5 = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                 <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
               </div>
             </div>

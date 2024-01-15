@@ -1,31 +1,25 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { colorPrimaryPython, colorSecondaryPython, colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
+import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
+import useScrollAnimation from '../../useScrollAnimation'
 
 const Home = () => {
-
+  
+  const elementVisibility = useScrollAnimation();
   const location = useLocation();
-  const color = location.pathname === "/micropython" ? colorPrimaryMicropython : null
+  const color = location.pathname === "/micropython" ? colorPrimaryMicropython : colorPrimaryPython
   const colorSecondary = location.pathname.includes("micropython") ? colorSecondaryMicropython : null
-  console.log(location.pathname.includes("micropython"))
   const title = location.pathname.includes("micropython") ? "micropython" : "python"
   const listPython = ["Introducción a la programación.", "Variables", "Tipos de datos.", "Métodos de tipos de datos.", "Funciones.", "Bucles.", "Módulos.", "Manipulación de datos (Listas y tuplas)", "Programación orientado a objectos (POO)."]
   const listMicroPython = ["Introducción a MicroPython", "Fundamentos de Python en MicroPython", "Entrada y Salida en MicroPython", "Comunicación Serial y Periféricos", "Conectividad Wi-Fi con MicroPython", "MicroPython en Pantallas y Gráficos", "Almacenamiento y Sistemas de Archivos", "Desarrollo de Proyectos Avanzados"]
-  const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li><i className="bi bi-check"></i>{text}</li>) : listPython.map(text => <li><i className="bi bi-check"></i>{text}</li>)
-
-  useEffect(() => {
-    AOS.init();
-  }, [])
-
+  const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : listPython.map(text => <li key={text}>{text}</li>)
   return (
     <>
-      <section id="hero" style={{ background: location.pathname === "/micropython" ? "#B34229" : "rgba(2, 5, 161, 0.91)" }}>
+      <section id="hero" style={{ background: location.pathname === "/micropython" ? colorPrimaryMicropython : colorPrimaryPython }}>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-              <div data-aos="zoom-out">
+              <div >
                 <h1> Introducción a la programacion en {title}</h1>
                 <h2>Este curso está diseñado para introducir a los estudiantes al
                   lenguaje de programación {title}, desde los conceptos básicos hasta
@@ -38,7 +32,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+            <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
               <img src={`img/${title}.png`} className="img-fluid animated vh-60" alt="" />
             </div>
           </div>
@@ -60,11 +54,11 @@ const Home = () => {
       </section>
       <section id="details" className="details">
         <div className="container">
-          <div className="row content mt-2">
-            <div className="col-md-4" data-aos="fade-right">
+          <div id="element1" className={`welcome row mt-2 animated-left ${elementVisibility.element1 ? 'slide-left' : ''}`}>
+            <div className="col-md-4" >
               <img src={`img/${title}2.jpg`} className="img-fluid" alt="" />
             </div>
-            <div className="col-md-8 pt-4" data-aos="fade-up">
+            <div className="col-md-8 pt-4">
               <h3 style={{ color: color }}>Bienvenido al curso de introducción de {title}</h3>
               <p className="fst-italic">
                 Los contenidos básicos que vas aprender en el curso son:
@@ -78,7 +72,7 @@ const Home = () => {
       </section>
       <section id="testimonials" className="testimonials" style={{ backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "rgba(1, 3, 111, 0.8)" }}>
         <div className="container">
-          <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div className="testimonials-slider swiper">
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className="testimonial-item">

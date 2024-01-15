@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { colorPrimaryPython } from '../../colors'
+import useScrollAnimation from '../../useScrollAnimation'
+
 const Class6 = () => {
+
+  const elementVisibility = useScrollAnimation();
   const [date, setDate] = useState()
   const newDate = new Date()
   useEffect(() => {
@@ -18,18 +21,15 @@ const Class6 = () => {
     })
   }, [])
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section section id="hero" style={{ background: "rgba(2, 5, 161, 0.91)" }}>
+          <section id="hero" style={{ background: colorPrimaryPython }}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                  <div data-aos="zoom-out">
+                  <div>
                     <h1>Clase 6: Estructuras de datos II: Diccionarios y conjuntos</h1>
                     <h2>Diccionarios y conjuntos: definición y uso</h2>
                     <h2>Manipulación de elementos en diccionarios y conjuntos</h2>
@@ -39,7 +39,7 @@ const Class6 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                   <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
                 </div>
               </div>
@@ -61,34 +61,34 @@ const Class6 = () => {
           </section>
           <section id="faq" className="faq section-bg">
             <div className="container">
-              <div className="section-title" data-aos="fade-up">
+              <div id="element1" className={`section-title animated-left ${elementVisibility.element1 ? 'slide-left' : ''}`} >
                 <h2>Clase 6</h2>
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
-                  <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <h2 data-aos="fade-right">Diccionarios</h2>
+                <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }} >
+                  <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h2>Diccionarios</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <div className="accordion-body text-light">
-                        <h2 data-aos="fade-right" className="text-light text-center">Definición y uso de diccionarios:</h2>
+                        <h2 className="text-light text-center">Definición y uso de diccionarios:</h2>
                         <p className="text-center mx-auto w-75">Un diccionario es una estructura de datos mutable y sin orden en Python. Está compuesto por pares clave-valor, donde cada clave es única y se utiliza para acceder a su respectivo valor.<br></br>Las claves en un diccionario pueden ser de tipo inmutable, como cadenas de texto, números o tuplas. Los valores pueden ser de cualquier tipo, incluyendo listas, diccionarios e incluso funciones.</p>
                         <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class6/dict1.png"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center">Manipulación de elementos en diccionarios</h2>
+                        <h2 className="text-light text-center">Manipulación de elementos en diccionarios</h2>
                         <p className="text-center mx-auto w-75">Para acceder a un valor en un diccionario, utilizamos la clave correspondiente.</p>
                         <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class6/dict2.jpg"></img>
-                        <h2 data-aos="fade-right" className="text-light text-center mt-4">Modificación de elementos</h2>
+                        <h2 className="text-light text-center mt-4">Modificación de elementos</h2>
                         <p className="text-center mx-auto w-75">Las claves en un diccionario pueden ser de tipo inmutable, como cadenas de texto, números o tuplas. Los valores pueden ser de cualquier tipo, incluyendo listas, diccionarios e incluso funciones.</p>
                         <img className="w-75 d-block mx-auto" alt="" src="../img/class6/dict3.jpg"></img>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Métodos de diccionario</h2>
+                    <h2 className="text-light">Métodos de diccionario</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -125,9 +125,9 @@ const Class6 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element4" className={`accordion-item mt-4 rounded-5  animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Conjuntos - Set</h2>
+                    <h2 className="text-light">Conjuntos - Set</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -145,9 +145,9 @@ const Class6 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <h2 data-aos="fade-right" className="text-light">Métodos en conjuntos</h2>
+                    <h2 className="text-light">Métodos en conjuntos</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -194,12 +194,12 @@ const Class6 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class6.py"
                     target={"_blank"}
                     download={"class6.py"}>
                     <button className="accordion-button collapsed bg-transparent" type="button">
-                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 6</h2>
+                      <h2 className="text-light">Descarga el archivo de la clase 6</h2>
                     </button>
                   </Link>
                 </div>
@@ -212,7 +212,7 @@ const Class6 = () => {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                <div data-aos="zoom-out">
+                <div>
                   <h1>Clase 6: Estructuras de datos II: Diccionarios y conjuntos</h1>
                   <h2>Diccionarios y conjuntos: definición y uso</h2>
                   <h2>Manipulación de elementos en diccionarios y conjuntos</h2>
@@ -222,7 +222,7 @@ const Class6 = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                 <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
               </div>
             </div>

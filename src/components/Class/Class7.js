@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import {colorPrimaryPython} from '../../colors'
+import useScrollAnimation from '../../useScrollAnimation'
+
+
 const Class7 = () => {
+
+  const elementVisibility = useScrollAnimation()
   const [date, setDate] = useState()
   const newDate = new Date()
   useEffect(() => {
@@ -18,18 +22,15 @@ const Class7 = () => {
     })
   }, [])
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section section id="hero" style={{ background: "rgba(2, 5, 161, 0.91)" }}>
+          <section id="hero" style={{ background: colorPrimaryPython}}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                  <div data-aos="zoom-out">
+                  <div>
                     <h1>Clase 7: Archivos y excepciones</h1>
                     <h2>Métodos de archivos en python</h2>
                     <h2>Manejo de excepciones en python</h2>
@@ -39,7 +40,7 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                   <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
                 </div>
               </div>
@@ -61,14 +62,14 @@ const Class7 = () => {
           </section>
           <section id="faq" className="faq section-bg">
             <div className="container">
-              <div className="section-title" data-aos="fade-up">
+              <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`} >
                 <h2>Clase 7</h2>
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element2" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Tipos de excepciones</h2>
+                    <h2 className="text-light">Tipos de excepciones</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -105,9 +106,9 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Manejo de excepciones</h2>
+                    <h2 className="text-light">Manejo de excepciones</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -124,43 +125,43 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <h2 data-aos="fade-right" className="text-light">Metodos de archivos en python</h2>
+                    <h2 className="text-light">Metodos de archivos en python</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-center mx-auto w-75">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
-                      <h2 data-aos="fade-right" className="text-light text-center">open() - Abrir archivos </h2>
+                      <h2 className="text-light text-center">open() - Abrir archivos </h2>
                       <p className="text-center mx-auto w-75"> Este método se utiliza para abrir un archivo. Toma dos parámetros principales: el nombre del archivo y el modo en el que se abrirá (por ejemplo, lectura, escritura, agregado, etc.).</p>
                       <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/open.JPG"></img>
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4">read() - lee archivos</h2>
+                      <h2 className="text-light text-center mt-4">read() - lee archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para leer el contenido de un archivo. Puede leer todo el contenido o una cantidad específica de caracteres.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/read.JPG"></img>
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4">write() - escribe archivos</h2>
+                      <h2 className="text-light text-center mt-4">write() - escribe archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para escribir datos en un archivo. Puede escribir una cadena de texto o datos formateados en el archivo.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/write.JPG"></img>
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4">adjunto - adjunta archivos</h2>
+                      <h2 className="text-light text-center mt-4">adjunto - adjunta archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para Agregar contenido a un archivo existente.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/adjunto.JPG"></img>
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4">close() - cierra archivos</h2>
+                      <h2 className="text-light text-center mt-4">close() - cierra archivos</h2>
                       <p className="text-center mx-auto w-75">Este método se utiliza para cerrar un archivo después de que hayamos terminado de trabajar con él. Es importante cerrar los archivos para liberar los recursos del sistema.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/close.JPG"></img>
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4">rename(nombre_actual, nombre_nuevo) - renombrar archivos</h2>
+                      <h2 className="text-light text-center mt-4">rename(nombre_actual, nombre_nuevo) - renombrar archivos</h2>
                       <p className="text-center mx-auto w-75">Para renombrar archivos debemos utilizar el módulo "os" y con el método rename podremos cambiar el nombre del archivo.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/rename.JPG"></img>
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4">remove(nombre_achivo) - eliminar archivos</h2>
+                      <h2 className="text-light text-center mt-4">remove(nombre_achivo) - eliminar archivos</h2>
                       <p className="text-center mx-auto w-75">Para eliminar archivos debemos utilizar el módulo "os" y con el método remove podremos eliminar el archivo.</p>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class7/remove.JPG"></img>
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class7.py"
                     target={"_blank"}
                     download={"class7.py"}>
                     <button className="accordion-button collapsed bg-transparent" type="button">
-                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 7</h2>
+                      <h2 className="text-light">Descarga el archivo de la clase 7</h2>
                     </button>
                   </Link>
                 </div>
@@ -173,7 +174,7 @@ const Class7 = () => {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                <div data-aos="zoom-out">
+                <div>
                   <h1>Clase 7: Archivos y excepciones</h1>
                   <h2>Métodos de archivos en python</h2>
                   <h2>Manejo de excepciones en python</h2>
@@ -183,7 +184,7 @@ const Class7 = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                 <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
               </div>
             </div>

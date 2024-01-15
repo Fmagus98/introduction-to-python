@@ -3,18 +3,16 @@ import { useLocation} from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import ItemContainer from '../ItemContainer/ItemContainer'
-import {colorPrimaryPython,colorSecondaryMicropython} from '../../colors'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import {colorPrimaryPython,colorPrimaryMicropython,colorSecondaryMicropython} from '../../colors'
+import useScrollAnimation from '../../useScrollAnimation'
 const Classes = () => {
     
   const location = useLocation();
+  const elementVisibility = useScrollAnimation();
   const title = location.pathname.includes("micropython")?"micropython":"python"
   const content = location.pathname==="/micropython/classes"?"courseMicropython":"course"
   const color = location.pathname.includes("micropython")?colorSecondaryMicropython:colorPrimaryPython
   const [course, setCourse] = useState([])
-  
   useEffect(() => {
     getDocs(collection(db, content)).then(response => {
       const getData = response.docs.map(doc => {
@@ -24,16 +22,13 @@ const Classes = () => {
     })
   }, [content])
   
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <>
-      <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":"rgba(2, 5, 161, 0.91)"}} >
+      <section id="hero" style={{background:location.pathname.includes("micropython")?colorPrimaryMicropython:colorPrimaryPython}} >
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-              <div data-aos="zoom-out">
+              <div>
                 <h1>Clases</h1>
                 <h2>En este apartado encontrarás una serie de contenidos estructurados y
                   organizados para aprender los conceptos fundamentales de la programación
@@ -43,7 +38,7 @@ const Classes = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+            <div className="col-lg-4 order-1 order-lg-2 hero-img">
               <img src={`../img/${title}.png`} className="img-fluid animated vh-60" alt="" />
             </div>
           </div>
@@ -65,12 +60,12 @@ const Classes = () => {
       </section>
       <section id="counts" className="counts">
         <div className="container">
-          <div className="section-title" style={{color: color}} data-aos="fade-up">
+          <div id="element2" className={`section-title animated-down ${elementVisibility.element2 ? 'slide-down' : ''}`} style={{color: color}}>
             <h2>Clases</h2>
             <p>Elige una clase</p>
           </div>
         </div>
-        <div className="row w-100">
+        <div id="element3" className={`row w-100 animated-down ${elementVisibility.element3 ? 'slide-down' : ''}`}>
           <ItemContainer item={course}/>
         </div>
       </section>

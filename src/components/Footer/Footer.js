@@ -1,11 +1,11 @@
 import React from 'react'
 import {useLocation} from 'react-router-dom'
-import { colorSecondaryPython, colorSecondaryMicropython } from '../../colors'
+import {colorPrimaryPython} from '../../colors'
 
 const Footer = () => {
   const location = useLocation()
   
-  const color = location.pathname.includes("micropython")?"#B34229":"#010483"
+  const color = location.pathname.includes("micropython")?"#B34229":colorPrimaryPython
 
   return (
     <footer id="footer" style={{backgroundColor:color}}>

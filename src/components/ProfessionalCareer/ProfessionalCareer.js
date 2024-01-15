@@ -1,21 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-const ProfessionalCarrer = () => {
-    const location = useLocation()
+import { colorPrimaryPython } from '../../colors';
+import useScrollAnimation from '../../useScrollAnimation'
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
+const ProfessionalCarrer = () => {
+
+    const elementVisibility = useScrollAnimation()
+    const location = useLocation()
 
     return (
         <>
-            <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":"rgba(2, 5, 161, 0.91)"}} >
+            <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":colorPrimaryPython}} >
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                            <div data-aos="zoom-out">
+                            <div>
                                 <h1>Orientación a carreras profesionales en python</h1>
                                 <h2>Carreras</h2>
                                 <h2>Camino a seguir en cada carrera</h2>
@@ -25,7 +24,7 @@ const ProfessionalCarrer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                        <div className="col-lg-4 order-1 order-lg-2 hero-img">
                             <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
                         </div>
                     </div>
@@ -47,14 +46,14 @@ const ProfessionalCarrer = () => {
             </section>
             <section id="faq" className="faq section-bg">
                 <div className="container">
-                    <div className="section-title" data-aos="fade-up">
+                    <div id="element1" className={`section-title animated-left ${elementVisibility.element1 ? 'slide-left' : ''}`} >
                         <h2>Carreras Profesionales</h2>
                         <p>Contenido</p>
                     </div>
                     <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                        <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
+                        <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`}  style={{ background: colorPrimaryPython }} >
                             <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                <h2 data-aos="fade-right">Ciencias de datos</h2>
+                                <h2>Ciencias de datos</h2>
                             </button>
                             <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -90,9 +89,9 @@ const ProfessionalCarrer = () => {
                                     </div>
                             </div>
                         </div>
-                        <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                        <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`}  style={{ background: colorPrimaryPython }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                <h2 data-aos="fade-right" className="text-light">Inteligencia artificial</h2>
+                                <h2 className="text-light">Inteligencia artificial</h2>
                             </button>
                             <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">

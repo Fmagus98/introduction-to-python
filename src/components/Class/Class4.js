@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { colorPrimaryPython } from '../../colors'
+import useScrollAnimation from '../../useScrollAnimation'
+
 const Class4 = () => {
+
+  const elementVisibility = useScrollAnimation();
   const [date, setDate] = useState()
   const newDate = new Date()
   useEffect(() => {
@@ -18,19 +21,15 @@ const Class4 = () => {
     })
   }, [])
 
-
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section section id="hero" style={{ background: "rgba(2, 5, 161, 0.91)" }}>
+          <section id="hero" style={{ background: colorPrimaryPython }}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                  <div data-aos="zoom-out">
+                  <div>
                     <h1>Clase 4</h1>
                     <h2>Definicion y llamada de funciones en python</h2>
                     <h2>Paso de parámetros a funciones</h2>
@@ -40,7 +39,7 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                   <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
                 </div>
               </div>
@@ -62,14 +61,14 @@ const Class4 = () => {
           </section>
           <section id="faq" className="faq section-bg">
             <div className="container">
-              <div className="section-title" data-aos="fade-up">
+              <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`}>
                 <h2>Clase 4</h2>
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
-                  <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <h2 data-aos="fade-right">¿Que es una función?</h2>
+                <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }} >
+                  <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h2>¿Que es una función?</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -82,9 +81,9 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <h2 data-aos="fade-right" className="text-light">¿Para que sirve una función?</h2>
+                    <h2 className="text-light">¿Para que sirve una función?</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -101,15 +100,15 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Sintaxis básica de una función</h2>
+                    <h2 className="text-light">Sintaxis básica de una función</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4 mb-4">Concepto y ejemplo de una función/función con parámetros</h2>
+                      <h2 className="text-light text-center mt-4 mb-4">Concepto y ejemplo de una función/función con parámetros</h2>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class4/function.webp" style={{ marginBottom: "7rem" }}></img>
-                      <h2 data-aos="fade-right" className="text-light text-center">Explicación de los elementos en una función</h2>
+                      <h2 className="text-light text-center">Explicación de los elementos en una función</h2>
                       <p className="text-center mx-auto w-75">def: La palabra clave "def" se utiliza para definir una función en Python.</p>
                       <p className="text-center mx-auto w-75">nombre_de_la_funcion: Es el nombre que eliges para tu función. Debes seguir las convenciones de nombrado de Python y elegir un nombre descriptivo que indique la tarea que realiza la función.</p>
                       <p className="text-center mx-auto w-75">parámetros: Son los valores que la función puede recibir como entrada. Estos son opcionales y puedes tener cero, uno o más parámetros separados por comas. Si no hay parámetros, se dejan los paréntesis vacíos.</p>
@@ -119,9 +118,9 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <h2 data-aos="fade-right" className="text-light">¿Que es un módulo?</h2>
+                    <h2 className="text-light">¿Que es un módulo?</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -140,14 +139,14 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                    <h2 data-aos="fade-right" className="text-light">Módulos nativos de python</h2>
+                    <h2 className="text-light">Módulos nativos de python</h2>
                   </button>
                   <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-center mx-auto">Python tiene una amplia biblioteca estándar que incluye una serie de módulos nativos para realizar diversas tareas.<br></br>Aquí hay algunos módulos nativos comunes de Python:</p>
-                      <h2 data-aos="fade-right" className="text-light text-center">Math</h2>
+                      <h2 className="text-light text-center">Math</h2>
                       <p className="text-center mx-auto w-75">El módulo math en Python proporciona funciones y constantes matemáticas para realizar cálculos numéricos. Para utilizar el módulo math, debes importarlo al principio de tu script de la siguiente manera:</p>
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math1.webp"></img>
                       <p className="text-center mx-auto w-75">A continuación, puedes utilizar las funciones y constantes proporcionadas por el módulo math. Aquí hay algunos ejemplos de cómo puedes usarlo.</p>
@@ -160,7 +159,7 @@ const Class4 = () => {
                       <p className="text-center mx-auto w-75">Funciones exponenciales y logarítmicas: Se puede realizar cálculos logarítmicos y exponenciales con estas funciones (log, exp, pow).</p>
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/math5.webp"></img>
                       <p className="text-center mx-auto w-75">Estos son solo algunos ejemplos de las funciones y constantes disponibles en el módulo math. Para obtener más detalles y ver todas las funciones y constantes proporcionadas, puedes consultar la documentación oficial de Python: <Link className="text-primary" to="https://docs.python.org/3/library/math.html">math - Módulo matemático</Link>.</p>
-                      <h2 data-aos="fade-right" className="text-light text-center">Random</h2>
+                      <h2 className="text-light text-center">Random</h2>
                       <p className="text-center mx-auto w-75">El módulo random en Python proporciona funciones para generar números pseudoaleatorios.<br></br>Dentro de este módulo tiene varias funcionalidades como:</p>
                       <p className="text-center mx-auto w-75">random: Podes generar un número aleatorio</p>
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random1.webp"></img>
@@ -173,7 +172,7 @@ const Class4 = () => {
                       <p className="text-center mx-auto w-75">shuffle: Mezcla el orden aleatoriamente de los elementos de una lista.</p>
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/random5.webp"></img>
                       <p className="text-center mx-auto w-75">Si quieres ver más sobre el módulo random puedes ir a la documentación oficial <Link className="text-primary" to="https://docs.python.org/3/library/random.html">random - número aleatorio</Link></p>
-                      <h2 data-aos="fade-right" className="text-light text-center">Datetime</h2>
+                      <h2 className="text-light text-center">Datetime</h2>
                       <p className="text-center mx-auto w-75">El módulo datetime en Python permite trabajar con fechas, horas y realizar operaciones relacionadas con el tiempo, aquí te mostraré algunos ejemplos.</p>
                       <p className="text-center mx-auto w-75">datetime.datetime.now(): Puedes obtener la fecha y hora actual.</p>
                       <img className="w-75 mx-auto d-block" alt="" src="../img/class4/datetime1.webp"></img>
@@ -190,9 +189,9 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
-                    <h2 data-aos="fade-right" className="text-light">Módulos y librerias independientes para python</h2>
+                    <h2 className="text-light">Módulos y librerias independientes para python</h2>
                   </button>
                   <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -240,7 +239,7 @@ const Class4 = () => {
                         <br></br>
                         Si quieres ver más sobre tensorflow, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://www.tensorflow.org/api_docs" target="_blank">Tensorflow</Link>
                       </p>
-                      <h2 data-aos="fade-right" className="text-light text-center mt-4">Paginas de módulos para python</h2>
+                      <h2 className="text-light text-center mt-4">Paginas de módulos para python</h2>
                       <p className="text-center mx-auto w-75">
                         Existen diferentes lugares donde puedes buscar módulos y bibliotecas para Python. Algunas de las fuentes más populares son:</p>
                       <h3 className="text-center">Python Package Index (PyPI): </h3>
@@ -260,12 +259,12 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class4.py"
                     target={"_blank"}
                     download={"class4.py"}>
                     <button className="accordion-button collapsed bg-transparent" type="button">
-                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 4</h2>
+                      <h2 className="text-light">Descarga el archivo de la clase 4</h2>
                     </button>
                   </Link>
                 </div>
@@ -278,7 +277,7 @@ const Class4 = () => {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                <div data-aos="zoom-out">
+                <div>
                   <h1>Clase 4</h1>
                   <h2>Definicion y llamada de funciones en python</h2>
                   <h2>Paso de parámetros a funciones</h2>
@@ -288,7 +287,7 @@ const Class4 = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                 <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
               </div>
             </div>

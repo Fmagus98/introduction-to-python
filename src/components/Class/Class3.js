@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { colorPrimaryPython } from '../../colors'
+import useScrollAnimation from '../../useScrollAnimation'
+
 const Class3 = () => {
+
+  const elementVisibility = useScrollAnimation();
   const [date, setDate] = useState()
   const newDate = new Date()
   useEffect(() => {
@@ -18,18 +21,15 @@ const Class3 = () => {
     })
   }, [])
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section section id="hero" style={{ background: "rgba(2, 5, 161, 0.91)" }}>
+          <section id="hero" style={{ background: colorPrimaryPython }}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                  <div data-aos="zoom-out">
+                  <div>
                     <h1>Clase 3: Estructuras de control de flujo</h1>
                     <h2>Estructuras de control de flujo: if, elif, else</h2>
                     <h2>Bucles while y for</h2>
@@ -39,7 +39,7 @@ const Class3 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                <div className="col-lg-4 order-1 order-lg-2 hero-img">
                   <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
                 </div>
               </div>
@@ -61,14 +61,14 @@ const Class3 = () => {
           </section>
           <section id="faq" className="faq section-bg">
             <div className="container">
-              <div className="section-title" data-aos="fade-up">
+              <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`}>
                 <h2>Clase 3</h2>
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: "#010483" }} >
-                  <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <h2 data-aos="fade-right">Condicionales</h2>
+                <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }} >
+                  <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h2 >Condicionales</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -82,9 +82,9 @@ const Class3 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">If else y elif</h2>
+                    <h2 className="text-light">If else y elif</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -100,9 +100,9 @@ const Class3 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 data-aos="fade-right" className="text-light">Bucles</h2>
+                    <h2 className="text-light">Bucles</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -112,9 +112,9 @@ const Class3 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <h2 data-aos="fade-right" className="text-light">While</h2>
+                    <h2 className="text-light">While</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -123,9 +123,9 @@ const Class3 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                    <h2 data-aos="fade-right" className="text-light">For</h2>
+                    <h2 className="text-light">For</h2>
                   </button>
                   <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -133,18 +133,18 @@ const Class3 = () => {
                       <h2 className="text-center mx-auto mt-4">Bucle for en cadena de texto</h2>
                       <img className="w-75 d-block mx-auto mb-4 pb-4" alt="" src="../img/class3/for1.webp"></img>
                       <img className="w-75 d-block mx-auto mt-4 pt-4" alt="" src="../img/class3/for2.webp" style={{ marginBottom: "7rem" }} ></img>
-                      <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en rango de números</h2>
+                      <h2 className="text-center mx-auto mt-4">Bucle for en rango de números</h2>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for3.webp" style={{ marginBottom: "7rem" }} ></img>
-                      <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en listas</h2>
+                      <h2 className="text-center mx-auto mt-4">Bucle for en listas</h2>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for4.webp" style={{ marginBottom: "7rem" }} ></img>
-                      <h2 data-aos="fade-right" className="text-center mx-auto mt-4">Bucle for en tuplas</h2>
+                      <h2 className="text-center mx-auto mt-4">Bucle for en tuplas</h2>
                       <img className="w-75 d-block mx-auto" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
-                    <h2 data-aos="fade-right" className="text-light">Resolución de problemas</h2>
+                    <h2 className="text-light">Resolución de problemas</h2>
                   </button>
                   <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -163,12 +163,12 @@ const Class3 = () => {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: "#010483" }}>
+                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class3.py"
                     target={"_blank"}
                     download={"class3.py"}>
                     <button className="accordion-button collapsed bg-transparent" type="button">
-                      <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 3</h2>
+                      <h2 className="text-light">Descarga el archivo de la clase 3</h2>
                     </button>
                   </Link>
                 </div>
@@ -181,7 +181,7 @@ const Class3 = () => {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                <div data-aos="zoom-out">
+                <div>
                   <h1>Clase 3: Estructuras de control de flujo</h1>
                   <h2>Estructuras de control de flujo: if, elif, else</h2>
                   <h2>Bucles while y for</h2>
@@ -191,7 +191,7 @@ const Class3 = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <div className="col-lg-4 order-1 order-lg-2 hero-img">
                 <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
               </div>
             </div>

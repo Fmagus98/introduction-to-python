@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 import { colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import useScrollAnimation from '../../useScrollAnimation'
+
 const MicropythonClass2 = () => {
+
+    const elementVisibility = useScrollAnimation()
     const [date, setDate] = useState()
     const newDate = new Date()
     useEffect(() => {
@@ -19,9 +21,6 @@ const MicropythonClass2 = () => {
         })
     }, [])
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
     return (
         <>{
             (new Date(date) <= newDate) || localStorage.getItem("access") ?
@@ -30,7 +29,7 @@ const MicropythonClass2 = () => {
                         <div className="container">
                             <div className="row justify-content-between">
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                                    <div data-aos="zoom-out">
+                                    <div >
                                         <h1>Clase 2</h1>
                                         <h2>Sintaxis básica de Python en MicroPython.</h2>
                                         <h2>Variables y tipos de datos.</h2>
@@ -40,7 +39,7 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                                <div className="col-lg-4 order-1 order-lg-2 hero-img">
                                     <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                                 </div>
                             </div>
@@ -62,14 +61,14 @@ const MicropythonClass2 = () => {
                     </section>
                     <section id="faq" className="faq section-bg">
                         <div className="container">
-                            <div className="section-title" style={{ color: colorSecondaryMicropython }} data-aos="fade-up">
+                            <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`} style={{ color: colorSecondaryMicropython }} >
                                 <h2>Clase 2</h2>
                                 <p>Contenido</p>
                             </div>
                             <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample" >
-                                <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2 data-aos="fade-right">Variables</h2>
+                                <div id="element2" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
+                                    <button className="accordion-button collapsed bg-transparent text-light"type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2>Variables</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -84,9 +83,9 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: colorPrimaryMicropython }}>
+                                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}>
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <h2 data-aos="fade-right" className="text-light">Estilo de escritura</h2>
+                                        <h2 className="text-light">Estilo de escritura</h2>
                                     </button>
                                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -116,9 +115,9 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: colorPrimaryMicropython }}>
+                                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}>
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2 data-aos="fade-right" className="text-light">Tipos de datos</h2>
+                                        <h2  className="text-light">Tipos de datos</h2>
                                     </button>
                                     <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light">
@@ -151,9 +150,9 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: colorPrimaryMicropython }}>
+                                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}>
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        <h2 data-aos="fade-right" className="text-light">Operadores y expresiones</h2>
+                                        <h2  className="text-light">Operadores y expresiones</h2>
                                     </button>
                                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -179,9 +178,9 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: colorPrimaryMicropython }} >
+                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2 data-aos="fade-right" className="text-light">Entrada y salida en terminal</h2>
+                                        <h2  className="text-light">Entrada y salida en terminal</h2>
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -212,9 +211,9 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item rounded-5" style={{ background: colorPrimaryMicropython }}  >
-                                    <button className="accordion-button mt-4 collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2 data-aos="fade-right">Condicionales</h2>
+                                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}  >
+                                    <button className="accordion-button mt-4 collapsed bg-transparent text-light"type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2 >Condicionales</h2>
                                     </button>
                                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -228,9 +227,9 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: colorPrimaryMicropython }} >
+                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2 data-aos="fade-right" className="text-light">If else y elif</h2>
+                                        <h2  className="text-light">If else y elif</h2>
                                     </button>
                                     <div id="a6" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -246,9 +245,9 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2 data-aos="fade-right">Ejecución del segundo programa</h2>
+                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
+                                    <button className="accordion-button collapsed bg-transparent text-light"type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2 >Ejecución del segundo programa</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -263,12 +262,12 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div data-aos="fade-right" className="accordion-item mt-4 rounded-5" style={{ background: colorPrimaryMicropython }} >
+                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
                                     <Link to="/pythonClassFile/class1.py"
                                         target={"_blank"}
                                         download={"class1.py"}>
                                         <button className="accordion-button collapsed bg-transparent" type="button">
-                                            <h2 data-aos="fade-right" className="text-light">Descarga el archivo de la clase 2</h2>
+                                            <h2  className="text-light">Descarga el archivo de la clase 2</h2>
                                         </button>
                                     </Link>
                                 </div>
@@ -280,7 +279,7 @@ const MicropythonClass2 = () => {
                     <div className="container">
                         <div className="row justify-content-between">
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                                <div data-aos="zoom-out">
+                                <div >
                                     <h1>Clase 2</h1>
                                     <h2>Sintaxis básica de Python en MicroPython.</h2>
                                     <h2>Variables y tipos de datos.</h2>
@@ -290,7 +289,7 @@ const MicropythonClass2 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }} data-aos="zoom-out" data-aos-delay="300">
+                            <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }}  >
                                 <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                             </div>
                         </div>

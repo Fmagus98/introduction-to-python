@@ -12,7 +12,7 @@ const Item = ({ item }) => {
   const date = new Date()
   const dateFirebase = new Date(item.date.toDate())
   const itemDate = (date >= dateFirebase)||localStorage.getItem("access") ?
-    <Link to={`${redirect}${item.id}`} onClick={handleLinkClick} className="mx-auto class-teory card w-75" style={{background:location.pathname.includes("micropython")?"#B34229":null}}  data-aos="zoom-in" data-aos-delay="100">
+    <Link to={`${redirect}${item.id}`} onClick={handleLinkClick} className='mx-auto class-teory card w-75' style={{background:location.pathname.includes("micropython")?"#B34229":"#012973"}}>
       <div className="card-body">
         <h4 className="text-center card-title mb-2">{item.class}</h4>
         <ul className="intr-ul">
@@ -23,7 +23,7 @@ const Item = ({ item }) => {
       </div>
     </Link>
     :
-    <div className="mx-auto class-teory-null bg-dark text-light card w-75" data-aos="zoom-in" data-aos-delay="100"><div className="card-body">
+    <div className="mx-auto class-teory-null bg-dark text-light card w-75" ><div className="card-body">
       <h4 className="text-center card-title mb-2">{item.class}</h4>
       <ul className="intr-ul">
         <li className="card-text text-center">{item.content[0]}</li>

@@ -1,0 +1,25 @@
+.animated-down {
+    opacity: 0;
+    transform: translateY(
+      200px
+    ); /* Inicia fuera de la pantalla en el lado derecho */
+    transition: opacity 0.7s, transform 0.7s;
+  }
+  
+.slide-down {
+    opacity: 1 !important;
+    transform: translateY(0);
+  }
+
+.animated-left {
+    opacity: 0;
+    transform: translateX(
+      -200px
+    ); /* Inicia fuera de la pantalla en el lado derecho */
+    transition: opacity 0.7s, transform 0.7s;
+  }
+
+.slide-left {
+    opacity: 1 !important;
+    transform: translateX(0);
+  }

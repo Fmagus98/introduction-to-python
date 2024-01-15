@@ -48,7 +48,7 @@ const Loggin = () => {
                     <button type="submit" className="btn" style={{ background: emailFail ? "red" :null,backgroundColor:location.pathname.includes("micropython")?"rgb(238, 112, 83)":"#2f6997"}}>{!emailFail ? "Acceso Total" : "Correo inválido. Intenta de nuevo"}</button>
                 </div>
             </form>
-            </li> : <li><p className="h6 text-light">Tienes acceso total {localStorage.getItem("user")}!</p></li>
+            </li> : <li><p className="h6 text-light">Acceso total</p></li>
         }</>
     )
 }

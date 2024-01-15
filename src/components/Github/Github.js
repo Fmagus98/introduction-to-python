@@ -1,20 +1,16 @@
-import React, { useEffect} from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react'
 import { useLocation } from 'react-router-dom';
+import {colorPrimaryPython} from '../../colors'
 const Github = () => {
     const location = useLocation()
-
-    useEffect(() => {
-        AOS.init();
-    }, [])
+    
     return (
                 <>
-                    <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":"rgba(2, 5, 161, 0.91)"}} >
+                    <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":colorPrimaryPython}} >
                         <div className="container">
                             <div className="row justify-content-between">
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                                    <div data-aos="zoom-out">
+                                    <div>
                                         <h1>Github</h1>
                                         <h2>Que es git / github?</h2>
                                         <h2>Control de versiones</h2>
@@ -24,8 +20,8 @@ const Github = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                                    <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
+                                <div className="col-lg-4 order-1 order-lg-2 hero-img" >
+                                    <img src="../img/github.png" className="img-fluid animated vh-60" alt="" />
                                 </div>
                             </div>
                         </div>

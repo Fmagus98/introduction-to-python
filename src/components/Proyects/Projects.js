@@ -1,22 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import {colorPrimaryPython} from '../../colors'
+
 const Projects = () => {
 
     const location = useLocation() 
     const title = location.pathname.includes("micropython")?"micropython":"python"
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
     return (
         <>
-            <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":"rgba(2, 5, 161, 0.91)"}} >
+            <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":colorPrimaryPython}} >
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                            <div data-aos="zoom-out">
+                            <div>
                                 <h1>Proyectos</h1>
                                 <h2>En este apartado encontrarás projectos desarrollados por alumnos de forma individual, en equipo o junto al profesor.</h2>
                                 <h2>Actualmente no existen proyectos finalizados.</h2>
@@ -25,7 +22,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                        <div className="col-lg-4 order-1 order-lg-2 hero-img" >
                             <img src={`../img/${title}.png`} className="img-fluid animated vh-60" alt="" />
                         </div>
                     </div>
