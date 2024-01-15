@@ -182,7 +182,7 @@ p {
 
 .slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
 .slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
-.slider input:nth-child(3):checked ~ .buttons label:nth-child(3)
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3),
 .slider input:nth-child(4):checked ~ .buttons label:nth-child(4),
 .slider input:nth-child(5):checked ~ .buttons label:nth-child(5),
 
@@ -226,15 +226,8 @@ p {
   left: -400%;
 }
 
-
-
-
-
-
-
-
 a:hover {
-  color: #34e5a6;
+  color: #34e5a6!important;
   text-decoration: none;
 }
 
