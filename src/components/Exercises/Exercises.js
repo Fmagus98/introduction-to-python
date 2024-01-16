@@ -9,8 +9,6 @@ const Exercises = () => {
     const location = useLocation()
     const title = location.pathname.includes("micropython") ? "micropython" : "python"
     const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
-    const color2 = location.pathname.includes("micropython") ? colorPrimaryMicropython : colorPrimaryPython
-
     return (
         <>
             <section id="hero" style={{ background: location.pathname.includes("micropython") ? "#B34229" : colorPrimaryPython }} >
@@ -45,15 +43,14 @@ const Exercises = () => {
                     </g>
                 </svg>
             </section>
-
             <section id="faq" className="faq section-bg">
-                <div className="container pt-4 mt-2">
-                    <div id="element1" className={`section-title animated-down ${elementVisibility.element5 ? 'slide-down' : ''}`} style={{ color: color }} >
+                <div className="container">
+                    <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`} style={{ color: color }} >
                         <h2>Ejercicios</h2>
                         <p>Contenido</p>
                     </div>
                     <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                        <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }} >
+                        <div id="element2" className={`accordion-item animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <h2>Clase 1</h2>
                             </button>
@@ -80,7 +77,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }}>
+                        <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h2 className="text-light">Clase 2</h2>
                             </button>
@@ -110,7 +107,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }}>
+                        <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                 <h2 className="text-light">Clase 3</h2>
                             </button>
@@ -139,7 +136,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }}>
+                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                 <h2 className="text-light">Clase 4</h2>
                             </button>
@@ -166,7 +163,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }}>
+                        <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 className="text-light">Clase 5</h2>
                             </button>
@@ -191,7 +188,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }}>
+                        <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
                                 <h2 className="text-light">Clase 6</h2>
                             </button>
@@ -216,7 +213,7 @@ const Exercises = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }}>
+                        <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                                 <h2 className="text-light">Clase 7</h2>
                             </button>
@@ -244,7 +241,7 @@ const Exercises = () => {
                                     <p className="text-center mx-auto w-75">Escribe un programa que solicite al usuario ingresar el nombre y la edad de una persona. Luego, guarda esa información como un objeto en un archivo binario llamado "persona.bin". Asegúrate de manejar las excepciones que puedan ocurrir durante la escritura del archivo.</p>  </div>
                             </div>
                         </div>
-                        <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: color2 }}>
+                        <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseEight">
                                 <h2 className="text-light">Clase 8</h2>
                             </button>

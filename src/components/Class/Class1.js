@@ -35,7 +35,7 @@ const Class1 = () => {
                                         <h2>Instalación y configuración del entorno de programación</h2>
                                         <h2>Ejecución del primer programa en Python</h2>
                                         <div className="text-center text-lg-start">
-                                            <Link to="/#clase1" className="btn-get-started scrollto">Contenido de la clase 1</Link>
+                                            <a href="/#clase1" className="btn-get-started scrollto">Contenido de la clase 1</a>
                                         </div>
                                     </div>
                                 </div>
