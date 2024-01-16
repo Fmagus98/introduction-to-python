@@ -208,7 +208,7 @@ const Class6 = () => {
           </section>
         </>
         :
-        <section id="hero">
+        <section id="hero" style={{ background: colorPrimaryPython }}>
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">

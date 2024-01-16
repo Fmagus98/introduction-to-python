@@ -404,7 +404,7 @@ const Class1 = () => {
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Para finalizar el proceso de ejecución que muestra la version de python escribiremos "exit()".</p>
                                             <img className="w-75 d-block mx-auto" alt="" src="../img/class1/t4.webp"></img>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Ya vimos que podemos ver la version de python escribiendo python, ahora empezaremos a ver pip.<br></br>Pip es un sistema de gestión de paquetes utilizado en Python para instalar y administrar bibliotecas y paquetes de terceros que no están incluidos en la biblioteca estándar de Python.
-                                                <br></br><r></r>El nombre "pip" se deriva de la frase "Pip Installs Packages" (Pip instala paquetes) y se utiliza para instalar, actualizar y desinstalar paquetes Python y sus dependencias, si escribimos "pip --version" en la terminal nos mostrará la versión del administrador de paquetes.</p>
+                                                <br></br><br></br>El nombre "pip" se deriva de la frase "Pip Installs Packages" (Pip instala paquetes) y se utiliza para instalar, actualizar y desinstalar paquetes Python y sus dependencias, si escribimos "pip --version" en la terminal nos mostrará la versión del administrador de paquetes.</p>
                                             <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/t5.webp"></img>
                                         </div>
                                     </div>
@@ -478,7 +478,7 @@ const Class1 = () => {
                         </div>
                     </section>
                 </> :
-                <section id="hero">
+                <section id="hero" style={{ background: colorPrimaryPython }}>
                     <div className="container">
                         <div className="row justify-content-between">
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
