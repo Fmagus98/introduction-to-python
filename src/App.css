@@ -855,6 +855,13 @@ section {
 .accodion-button{
   border-radius:50px!important;
 }
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.accordion-button:focus {
+  border-color:none !important;
+  box-shadow: none !important;
+}
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
