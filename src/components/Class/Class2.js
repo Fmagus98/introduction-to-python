@@ -234,7 +234,7 @@ const Class2 = () => {
                       <p className="text-break mx-auto w-75">El método islower() verifica si todos los caracteres de la cadena son minúsculas.
                       </p>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/islower.webp"></img>
-                      <h2 className="text-break mx-auto w-75">isupper( )</h2>
+                      <h2 className="text-break mx-auto w-75">Isupper( )</h2>
                       <p className="text-break mx-auto w-75">El método isupper() verifica si todos los caracteres de la cadena son mayúsculas.
                       </p>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/isupper.webp"></img>
