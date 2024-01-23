@@ -14,21 +14,21 @@ const Item = ({ item }) => {
   const itemDate = (date >= dateFirebase)||localStorage.getItem("access") ?
     <Link to={`${redirect}${item.id}`} onClick={handleLinkClick} className='mx-auto class-teory card w-75' style={{background:location.pathname.includes("micropython")?"#B34229":"#012973"}}>
       <div className="card-body">
-        <h4 className="text-center card-title mb-2">{item.class}</h4>
+        <h4 className="text-center mb-2">{item.class}</h4>
         <ul className="intr-ul">
-          <li className="card-text text-center">{item.content[0]}</li>
-          <li className="card-text text-center">{item.content[1]}</li>
-          <li className="card-text text-center">{item.content[2]}</li>
+          <li className="text-center">{item.content[0]}</li>
+          <li className="text-center">{item.content[1]}</li>
+          <li className="text-center">{item.content[2]}</li>
         </ul>
       </div>
     </Link>
     :
     <div className="mx-auto class-teory-null bg-dark text-light card w-75" ><div className="card-body">
-      <h4 className="text-center card-title mb-2">{item.class}</h4>
+      <h4 className="text-center mb-2">{item.class}</h4>
       <ul className="intr-ul">
-        <li className="card-text text-center">{item.content[0]}</li>
-        <li className="card-text text-center">{item.content[1]}</li>
-        <li className="card-text text-center">{item.content[2]}</li>
+        <li className="text-center">{item.content[0]}</li>
+        <li className="text-center">{item.content[1]}</li>
+        <li className="text-center">{item.content[2]}</li>
       </ul>
       <h6 className="text-center mx-auto">Clase disponible el {item.date.toDate().toLocaleDateString()}</h6>
     </div>

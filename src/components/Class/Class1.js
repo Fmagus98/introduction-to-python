@@ -31,7 +31,7 @@ const Class1 = () => {
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                     <div>
                                         <h1>Clase 1</h1>
-                                        <h2>Introducción a Python y su sintaxis básica, Instalación y configuración del entorno de programación</h2>
+                                        <h2>Introducción a Python y su sintaxis básica</h2>
                                         <h2>Instalación y configuración del entorno de programación</h2>
                                         <h2>Ejecución del primer programa en Python</h2>
                                         <div className="text-center text-lg-start">
@@ -434,7 +434,7 @@ const Class1 = () => {
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                 <div >
                                     <h1>Clase 1</h1>
-                                    <h2>Introducción a Python y su sintaxis básica, Instalación y configuración del entorno de programación</h2>
+                                    <h2>Introducción a Python y su sintaxis básica</h2>
                                     <h2>Instalación y configuración del entorno de programación</h2>
                                     <h2>Ejecución del primer programa en Python</h2>
                                     <div className="text-center text-lg-start">

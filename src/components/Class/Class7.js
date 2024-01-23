@@ -73,36 +73,36 @@ const Class7 = () => {
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <p className="text-center mx-auto w-75">
+                      <p className="text-break mx-auto w-75 mt-4">
                         Python tiene una amplia variedad de tipos de excepciones incorporados que cubren diferentes situaciones de error. Algunos ejemplos comunes de tipos de excepciones son:
                       </p>
-                      <h2 className="text-center mx-auto mt-4 ">SintaxError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando la manera de escribir código no sigue las reglas de sintaxis en Python .</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/indexError.jpg"></img>
-                      <h2 className="text-center mx-auto mt-4 ">NameError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/nameError.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">TypeError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/typeError.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">ValueError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando una función recibe un argumento con un valor inapropiado.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/valueError.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">IndentationError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando la indentación (espacios o tabulaciones) no está correctamente alineada.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/indentationError.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">AttributeError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta acceder a un atributo o método que no existe en un objeto.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/attributeError.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">keyError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta acceder a una clave que no existe en un diccionario.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/keyError.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">ZeroDivisionError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta dividir un número entre cero.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/zeroDivisionError.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">FileNotFoundError</h2>
-                      <p className="text-center mx-auto w-75">Ocurre cuando se intenta abrir un archivo que no existe.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/fileNotFound.JPG"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">SintaxError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando la manera de escribir código no sigue las reglas de sintaxis en Python .</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/indexError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">NameError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/nameError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">TypeError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando se realiza una operación en un objeto de un tipo incorrecto.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/typeError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">ValueError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando una función recibe un argumento con un valor inapropiado.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/valueError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">IndentationError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando la indentación (espacios o tabulaciones) no está correctamente alineada.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/indentationError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">AttributeError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando se intenta acceder a un atributo o método que no existe en un objeto.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/attributeError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">keyError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando se intenta acceder a una clave que no existe en un diccionario.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/keyError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">ZeroDivisionError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando se intenta dividir un número entre cero.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/zeroDivisionError.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">FileNotFoundError</h3>
+                      <p className="text-break mx-auto w-75">Ocurre cuando se intenta abrir un archivo que no existe.</p>
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class7/fileNotFound.webp"></img>
                     </div>
                   </div>
                 </div>
@@ -112,16 +112,16 @@ const Class7 = () => {
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <p className="text-center mx-auto w-75">una excepción es un evento que ocurre durante la ejecución de un programa y puede interrumpir su flujo normal. Cuando ocurre una excepción, el programa se desvía del flujo normal de ejecución y busca un bloque de código especial diseñado para manejar dicha excepción. Este proceso se conoce como "lanzar" (raise) una excepción.</p>
-                      <h2 className="text-center mx-auto mt-4 ">Bloque try - except</h2>
-                      <p className="text-center mx-auto w-75">El bloque try-except es utilizado para manejar excepciones en Python. Dentro del bloque try, se coloca el código que podría generar una excepción. Si ocurre una excepción en este bloque, el flujo del programa se desvía al bloque except, donde podemos manejar la excepción de manera adecuada.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/tryExcept.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">Bloque else</h2>
-                      <p className="text-center mx-auto w-75">El bloque else es opcional y se ejecuta solo si no se ha producido ninguna excepción en el bloque try. Podemos colocar aquí el código que debe ejecutarse si no hay excepciones.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/else.JPG"></img>
-                      <h2 className="text-center mx-auto mt-4 ">bloque finally</h2>
-                      <p className="text-center mx-auto w-75">El bloque finally también es opcional y se ejecuta siempre, independientemente de si se ha producido una excepción o no. Se utiliza para realizar tareas de limpieza o liberación de recursos, como cerrar archivos abiertos, conexiones de bases de datos, etc.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/finally.JPG"></img>
+                      <p className="text-break mx-auto w-75 mt-4">Una excepción es un evento que ocurre durante la ejecución de un programa y puede interrumpir su flujo normal. Cuando ocurre una excepción, el programa se desvía del flujo normal de ejecución y busca un bloque de código especial diseñado para manejar dicha excepción. Este proceso se conoce como "lanzar" (raise) una excepción.</p>
+                      <h3 className="text-break mx-auto w-75 mt-4">Bloque try - except</h3>
+                      <p className="text-break mx-auto w-75">El bloque try-except es utilizado para manejar excepciones en Python. Dentro del bloque try, se coloca el código que podría generar una excepción. Si ocurre una excepción en este bloque, el flujo del programa se desvía al bloque except, donde podemos manejar la excepción de manera adecuada.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/tryExcept.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">Bloque else</h3>
+                      <p className="text-break mx-auto w-75">El bloque else es opcional y se ejecuta solo si no se ha producido ninguna excepción en el bloque try. Podemos colocar aquí el código que debe ejecutarse si no hay excepciones.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/else.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">Bloque finally</h3>
+                      <p className="text-break mx-auto w-75">El bloque finally también es opcional y se ejecuta siempre, independientemente de si se ha producido una excepción o no. Se utiliza para realizar tareas de limpieza o liberación de recursos, como cerrar archivos abiertos, conexiones de bases de datos, etc.</p>
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class7/finally.webp"></img>
                     </div>
                   </div>
                 </div>
@@ -131,28 +131,28 @@ const Class7 = () => {
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <p className="text-center mx-auto w-75">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
-                      <h2 className="text-light text-center">open() - Abrir archivos </h2>
-                      <p className="text-center mx-auto w-75"> Este método se utiliza para abrir un archivo. Toma dos parámetros principales: el nombre del archivo y el modo en el que se abrirá (por ejemplo, lectura, escritura, agregado, etc.).</p>
-                      <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/open.JPG"></img>
-                      <h2 className="text-light text-center mt-4">read() - lee archivos</h2>
-                      <p className="text-center mx-auto w-75">Este método se utiliza para leer el contenido de un archivo. Puede leer todo el contenido o una cantidad específica de caracteres.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/read.JPG"></img>
-                      <h2 className="text-light text-center mt-4">write() - escribe archivos</h2>
-                      <p className="text-center mx-auto w-75">Este método se utiliza para escribir datos en un archivo. Puede escribir una cadena de texto o datos formateados en el archivo.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/write.JPG"></img>
-                      <h2 className="text-light text-center mt-4">adjunto - adjunta archivos</h2>
-                      <p className="text-center mx-auto w-75">Este método se utiliza para Agregar contenido a un archivo existente.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/adjunto.JPG"></img>
-                      <h2 className="text-light text-center mt-4">close() - cierra archivos</h2>
-                      <p className="text-center mx-auto w-75">Este método se utiliza para cerrar un archivo después de que hayamos terminado de trabajar con él. Es importante cerrar los archivos para liberar los recursos del sistema.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/close.JPG"></img>
-                      <h2 className="text-light text-center mt-4">rename(nombre_actual, nombre_nuevo) - renombrar archivos</h2>
-                      <p className="text-center mx-auto w-75">Para renombrar archivos debemos utilizar el módulo "os" y con el método rename podremos cambiar el nombre del archivo.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/rename.JPG"></img>
-                      <h2 className="text-light text-center mt-4">remove(nombre_achivo) - eliminar archivos</h2>
-                      <p className="text-center mx-auto w-75">Para eliminar archivos debemos utilizar el módulo "os" y con el método remove podremos eliminar el archivo.</p>
-                      <img className="w-75 d-block mx-auto" alt="" src="../img/class7/remove.JPG"></img>
+                      <p className="text-break mx-auto w-75 mt-4">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
+                      <h3 className="text-break w-75 mx-auto">open() - Abrir archivos </h3>
+                      <p className="text-break mx-auto w-75"> Este método se utiliza para abrir un archivo. Toma dos parámetros principales: el nombre del archivo y el modo en el que se abrirá (por ejemplo, lectura, escritura, agregado, etc.).</p>
+                      <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/open.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">read() - lee archivos</h3>
+                      <p className="text-break mx-auto w-75">Este método se utiliza para leer el contenido de un archivo. Puede leer todo el contenido o una cantidad específica de caracteres.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/read.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4">write() - escribe archivos</h3>
+                      <p className="text-break mx-auto w-75">Este método se utiliza para escribir datos en un archivo. Puede escribir una cadena de texto o datos formateados en el archivo.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/write.webp"></img>
+                      <h3 className=" text-break mx-auto w-75 mt-4">adjunto - adjunta archivos</h3>
+                      <p className="text-break mx-auto w-75">Este método se utiliza para Agregar contenido a un archivo existente.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/adjunto.webp"></img>
+                      <h3 className=" text-break mx-auto w-75 mt-4">close() - cierra archivos</h3>
+                      <p className="text-break mx-auto w-75">Este método se utiliza para cerrar un archivo después de que hayamos terminado de trabajar con él. Es importante cerrar los archivos para liberar los recursos del sistema.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/close.webp"></img>
+                      <h3 className=" text-break mx-auto w-75 mt-4">rename(nombre_actual, nombre_nuevo) - renombrar archivos</h3>
+                      <p className="text-break mx-auto w-75">Para renombrar archivos debemos utilizar el módulo "os" y con el método rename podremos cambiar el nombre del archivo.</p>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/rename.webp"></img>
+                      <h3 className=" text-break mx-auto w-75 mt-4">remove(nombre_achivo) - eliminar archivos</h3>
+                      <p className="text-break mx-auto w-75">Para eliminar archivos debemos utilizar el módulo "os" y con el método remove podremos eliminar el archivo.</p>
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class7/remove.webp"></img>
                     </div>
                   </div>
                 </div>
