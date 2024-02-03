@@ -1,10 +1,11 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation} from 'react-router-dom'
 import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
+import { Link as ScrollLink} from 'react-scroll';
 
 const Home = () => {
-  
+
   const elementVisibility = useScrollAnimation();
   const location = useLocation();
   const color = location.pathname === "/micropython" ? colorPrimaryMicropython : colorPrimaryPython
@@ -13,6 +14,8 @@ const Home = () => {
   const listPython = ["Introducción a la programación.", "Variables", "Tipos de datos.", "Métodos de tipos de datos.", "Funciones.", "Bucles.", "Módulos.", "Manipulación de datos (Listas y tuplas)", "Programación orientado a objectos (POO)."]
   const listMicroPython = ["Introducción a MicroPython", "Fundamentos de Python en MicroPython", "Entrada y Salida en MicroPython", "Comunicación Serial y Periféricos", "Conectividad Wi-Fi con MicroPython", "MicroPython en Pantallas y Gráficos", "Almacenamiento y Sistemas de Archivos", "Desarrollo de Proyectos Avanzados"]
   const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : listPython.map(text => <li key={text}>{text}</li>)
+
+
   return (
     <>
       <section id="hero" style={{ background: location.pathname === "/micropython" ? colorPrimaryMicropython : colorPrimaryPython }}>
@@ -27,9 +30,7 @@ const Home = () => {
                   escribir y depurar programas simples y complejos utilizando {title},
                   y se les presentará a las principales estructuras de datos y
                   algoritmos utilizados en la programación.</h2>
-                <div className="text-center text-lg-start">
-                  <a style={{ backgroundColor:colorSecondary}} href="#index" className="btn-get-started scrollto">¿Que voy aprender?</a>
-                </div>
+                  <ScrollLink to="#index" style={{ backgroundColor: colorSecondary }} className="btn-get-started scrollto">¿Que voy aprender?</ScrollLink>
               </div>
             </div>
             <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
@@ -51,7 +52,7 @@ const Home = () => {
             <use xlinkHref="#wave-path" x="50" y="9" fill="#fff" />
           </g>
         </svg>
-      </section>
+      </section >
       <section id="details" className="details">
         <div className="container">
           <div id="element1" className={`welcome row mt-2 animated-left ${elementVisibility.element1 ? 'slide-left' : ''}`}>

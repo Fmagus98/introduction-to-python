@@ -21,7 +21,7 @@ const MicropythonClass6 = lazy(() => import('./components/MicropythonClass/Micro
 const MicropythonClass7 = lazy(() => import('./components/MicropythonClass/MicropythonClass7'));
 const MicropythonClass8 = lazy(() => import('./components/MicropythonClass/MicropythonClass8'));
 const Exercises = lazy(() => import('./components/Exercises/Exercises'));
-const Projects = lazy(() => import('./components/Proyects/Projects'));
+const Projects = lazy(() => import('./components/Projects/Projects'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
 const Github = lazy(() => import('./components/Github/Github'));
 const ProfessionalCareer = lazy(() => import('./components/ProfessionalCareer/ProfessionalCareer'));

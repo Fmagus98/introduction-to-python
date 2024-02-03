@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { colorPrimaryPython } from '../../colors';
 import useScrollAnimation from '../../useScrollAnimation'
 
@@ -10,7 +10,7 @@ const ProfessionalCarrer = () => {
 
     return (
         <>
-            <section id="hero" style={{background:location.pathname.includes("micropython")?"#B34229":colorPrimaryPython}} >
+            <section id="hero" style={{ background: location.pathname.includes("micropython") ? "#B34229" : colorPrimaryPython }} >
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -51,51 +51,179 @@ const ProfessionalCarrer = () => {
                         <p>Contenido</p>
                     </div>
                     <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                        <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`}  style={{ background: colorPrimaryPython }} >
+                        <div id="element2" className={`accordion-item rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                             <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <h2>Ciencias de datos</h2>
                             </button>
                             <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Aplicaciones en ciencias de datos</h3>
-                                    <p className="text-center mx-auto w-75">Con una librería de visualización de datos de Python, puedes crear una variedad increíble de gráficos y representaciones visuales, tales como:</p>
-                                    <p className="text-center mx-auto w-75">Análisis de sentimiento: La ciencia de datos se utiliza para analizar datos textuales, como comentarios de clientes o publicaciones en redes sociales, y determinar el sentimiento asociado (positivo, negativo o neutro). Esto es útil en la toma de decisiones comerciales y para comprender la percepción del público sobre productos o servicios.</p>
-                                    <p className="text-center mx-auto w-75">Reconocimiento de patrones: La ciencia de datos emplea técnicas de aprendizaje automático y visión por computadora para reconocer patrones en datos, como reconocimiento facial, detección de objetos en imágenes y clasificación de documentos.</p>
-                                    <p className="text-center mx-auto w-75">Bioinformática: En esta área, la ciencia de datos se aplica para analizar secuencias de ADN, proteínas y otros datos biológicos con el fin de entender la genómica, la evolución y el diagnóstico de enfermedades.</p>
-                                    <p className="text-center mx-auto w-75">Pronóstico del tiempo: Los meteorólogos utilizan modelos matemáticos y estadísticos, basados en ciencia de datos, para pronosticar el clima y prever condiciones atmosféricas.</p>
-                                    <p className="text-center mx-auto w-75">Optimización y toma de decisiones: La ciencia de datos se emplea para resolver problemas de optimización, como la asignación de recursos, la programación de tareas y la toma de decisiones estratégicas en la gestión de empresas.</p>
-                                    <p className="text-center mx-auto w-75">Análisis de redes sociales: La ciencia de datos es útil para analizar redes sociales y determinar la influencia de usuarios, identificar comunidades y tendencias, y detectar noticias falsas o contenido inapropiado.</p>
-                                    <p className="text-center mx-auto w-75">Seguridad cibernética: La ciencia de datos se emplea para detectar patrones de comportamiento malicioso en línea, identificar actividades sospechosas y prevenir ataques cibernéticos.</p>
-                                    <p className="text-center mx-auto w-75">Análisis de datos geoespaciales: La ciencia de datos se aplica para analizar datos relacionados con ubicaciones geográficas, como GPS, mapas, sensores de ubicación, y así obtener información valiosa para la planificación urbana, logística, turismo y más.</p>
-                                    <p className="text-center mx-auto w-75">Análisis de grandes volúmenes de datos (Big Data): La ciencia de datos es esencial para procesar, almacenar y analizar grandes conjuntos de datos que superan la capacidad de las herramientas tradicionales.</p>
-                                    <p className="text-center mx-auto w-75">Diagnóstico médico y apoyo a la toma de decisiones clínicas: Se utilizan algoritmos de aprendizaje automático en la ciencia de datos para asistir en el diagnóstico de enfermedades, predecir riesgos y recomendar tratamientos médicos personalizados.</p>
-                                    <p className="text-center mx-auto w-75">Aprendizaje automático (Machine Learning): Es una de las aplicaciones fundamentales de la ciencia de datos que permite a las máquinas aprender patrones a partir de datos y realizar tareas sin intervención humana, como clasificación, regresión, agrupamiento y más.</p>
-                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Librerías y paquetes</h3>
-                                    <p className="text-center mx-auto w-75">Veamos algunos de los paquetes y librerías más populares para trabajar con Python en ciencia de datos:</p>
-                                    <p className="text-center mx-auto w-75">NumPy: este paquete se describe como "el paquete fundamental para computación científica con Python." De acuerdo con el sitio web oficial de este paquete, "casi todos los científicos de datos que trabajan con Python aprovechan el poder de NumPy".</p>
-                                    <p className="text-center mx-auto w-75">Pandas: es una "herramienta de código abierto rápida, poderosa, flexible y fácil de usar para analizar y manipular datos".</p>
-                                    <p className="text-center mx-auto w-75">Matplotlib: es una "librería exhaustiva para crear visualizaciones estáticas, animadas e interactivas en Python". Si tienes curiosidad, puedes encontrar muestras de lo que puedes hacer con esta librería en su galería de ejemplos.</p>
-                                    <p className="text-center mx-auto w-75">Seaborn: es "una librería de Python para visualización de datos basada en matplotlib". Si tienes curiosidad, puedes encontrar muestras de lo que puedes hacer con esta librería en su galería de ejemplos.</p>
-                                    <p className="text-center mx-auto w-75">ggplot2: es "un sistema para crear gráficos declarativamente, basado en La Gramática de los Gráficos". De acuerdo a su sitio web oficial: "tú provees los datos y le dices a ggplot2 cómo transformar las variables a la presentación, qué primitivas de gráficos usar y él se encarga de los detalles".</p>
-                                    <p className="text-center mx-auto w-75">Bokeh: es "una librería interactiva de visualización para navegadores web modernos".</p>
-                                    <p className="text-center mx-auto w-75">Pandas: esta librería tiene muchas herramientas para visualización de datos.</p>
-                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Lenguages para aprender </h3>
-                                    <p className="text-center mx-auto w-75">SQL: Si bien SQL no es un lenguaje de programación en sí, es esencial para interactuar con bases de datos y realizar consultas para extraer datos para su análisis.</p>
-                                    <p className="text-center mx-auto w-75">Julia: Julia es un lenguaje de programación de alto rendimiento diseñado específicamente para el análisis numérico y científico. Es una opción cada vez más popular para el análisis de datos y el cómputo científico.</p>
-                                    <p className="text-center mx-auto w-75">Scala: Scala es un lenguaje que se utiliza comúnmente en entornos de Big Data debido a su integración con Apache Spark, una plataforma de procesamiento de datos en tiempo real y procesamiento de grandes volúmenes de datos.</p>
-                                    <p className="text-center mx-auto w-75">MATLAB: MATLAB es una herramienta ampliamente utilizada en la ingeniería y ciencias para el análisis numérico, la simulación y la visualización de datos.</p>
-                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Camino de aprendizaje - RoadMap</h3>
-                                    <img className="d-block mx-auto w-75" alt="" src="../img/professionalCareer/roadmap.png"></img>
-                                    </div>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Aplicaciones en ciencias de datos</h3>
+                                    <p className="text-break mx-auto w-75">Con una librería de visualización de datos de Python, puedes crear una variedad increíble de gráficos y representaciones visuales, tales como:</p>
+                                    <ul>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Análisis de sentimiento</h6>
+                                            <p className="text-break mx-auto w-75">La ciencia de datos se utiliza para analizar datos textuales, como comentarios de clientes o publicaciones en redes sociales, y determinar el sentimiento asociado (positivo, negativo o neutro). Esto es útil en la toma de decisiones comerciales y para comprender la percepción del público sobre productos o servicios.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Reconocimiento de patrones</h6>
+                                            <p className="text-break mx-auto w-75">Se emplean técnicas de aprendizaje automático y visión por computadora para reconocer patrones en datos, como reconocimiento facial, detección de objetos en imágenes y clasificación de documentos.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Bioinformática</h6>
+                                            <p className="text-break mx-auto w-75">En esta área, la ciencia de datos se aplica para analizar secuencias de ADN, proteínas y otros datos biológicos con el fin de entender la genómica, la evolución y el diagnóstico de enfermedades.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Pronóstico del tiempo</h6>
+                                            <p className="text-break mx-auto w-75">Los meteorólogos utilizan modelos matemáticos y estadísticos, basados en ciencia de datos, para pronosticar el clima y prever condiciones atmosféricas.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Optimización y toma de decisiones</h6>
+                                            <p className="text-break mx-auto w-75">Se utiliza para resolver problemas de optimización, como la asignación de recursos, la programación de tareas y la toma de decisiones estratégicas en la gestión de empresas.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Análisis de redes sociales</h6>
+                                            <p className="text-break mx-auto w-75">Se utiliza para determinar la influencia de usuarios, identificar comunidades y tendencias, y detectar noticias falsas o contenido inapropiado.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Seguridad cibernética</h6>
+                                            <p className="text-break mx-auto w-75">La ciencia de datos se emplea para detectar patrones de comportamiento malicioso en línea, identificar actividades sospechosas y prevenir ataques cibernéticos.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Análisis de datos geoespaciales</h6>
+                                            <p className="text-break mx-auto w-75">La ciencia de datos se aplica para analizar datos relacionados con ubicaciones geográficas, como GPS, mapas, sensores de ubicación, y así obtener información valiosa para la planificación urbana, logística, turismo y más.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Análisis de grandes volúmenes de datos (Big Data)</h6>
+                                            <p className="text-break mx-auto w-75">La ciencia de datos es esencial para procesar, almacenar y analizar grandes conjuntos de datos que superan la capacidad de las herramientas tradicionales.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Diagnóstico médico y apoyo a la toma de decisiones clínicas</h6>
+                                            <p className="text-break mx-auto w-75">Se utilizan algoritmos de aprendizaje automático en la ciencia de datos para asistir en el diagnóstico de enfermedades, predecir riesgos y recomendar tratamientos médicos personalizados.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Aprendizaje automático (Machine Learning)</h6>
+                                            <p className="text-break mx-auto w-75">Es una de las aplicaciones fundamentales de la ciencia de datos que permite a las máquinas aprender patrones a partir de datos y realizar tareas sin intervención humana, como clasificación, regresión, agrupamiento y más.</p>
+                                        </ol>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Librerías y paquetes</h3>
+                                    <p className="text-break mx-auto w-75">Veamos algunos de los paquetes y librerías más populares para trabajar con Python en ciencia de datos:</p>
+                                    <ul>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">NumPy</h6>
+                                            <p className="text-break mx-auto w-75">Este paquete se describe como "el paquete fundamental para computación científica con Python." De acuerdo con el sitio web oficial de este paquete, "casi todos los científicos de datos que trabajan con Python aprovechan el poder de NumPy".<br></br><Link to="https://numpy.org/" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de Numpy</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Pandas</h6>
+                                            <p className="text-break mx-auto w-75">Es una herramienta de código abierto rápida, poderosa, flexible y fácil de usar para analizar y manipular datos.<br></br><Link to="https://pandas.pydata.org/" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de Pandas</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Matplotlib</h6>
+                                            <p className="text-break mx-auto w-75">Es una librería exhaustiva para crear visualizaciones estáticas, animadas e interactivas en Python". Si tienes curiosidad, puedes encontrar muestras de lo que puedes hacer con esta librería en su galería de ejemplos.<br></br><Link to="https://matplotlib.org/" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de Matplotlib</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Seaborn</h6>
+                                            <p className="text-break mx-auto w-75">Es "una librería de Python para visualización de datos basada en matplotlib". Si tienes curiosidad, puedes encontrar muestras de lo que puedes hacer con esta librería en su galería de ejemplos.<br></br><Link to="https://seaborn.pydata.org/" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de Seaborn</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Ggplot2</h6>
+                                            <p className="text-break mx-auto w-75">Es "un sistema para crear gráficos declarativamente, basado en La Gramática de los Gráficos". De acuerdo a su sitio web oficial: "tú provees los datos y le dices a ggplot2 cómo transformar las variables a la presentación, qué primitivas de gráficos usar y él se encarga de los detalles".<br></br><Link to="https://www.rdocumentation.org/packages/ggplot2" className="text-break mx-auto text-primary w-75">Acceder a la documentacion de ggplot2</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Bokeh</h6>
+                                            <p className="text-break mx-auto w-75">Es una librería interactiva de visualización para navegadores web modernos.<br></br><Link to="https://docs.bokeh.org/en/latest/" className="text-break mx-auto text-primary w-75">Acceder a la documentacion de bokeh</Link></p>
+                                        </ol>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Lenguages para aprender </h3>
+                                    <p className="text-break mx-auto w-75">hay varios lenguajes de programación y herramientas que son ampliamente utilizados para realizar análisis, manipulación y visualización de datos, así como para implementar algoritmos de aprendizaje automático.</p>
+                                    <ul>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">SQL</h6>
+                                            <p className="text-break mx-auto w-75">Si bien SQL no es un lenguaje de programación en sí, es esencial para interactuar con bases de datos y realizar consultas para extraer datos para su análisis.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">R</h6>
+                                            <p className="text-break mx-auto w-75">R es conocido por su capacidad estadística y visualización de datos. Es especialmente popular en entornos académicos y en la comunidad estadística.<br></br><Link to="https://www.r-project.org/" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de R</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Julia</h6>
+                                            <p className="text-break mx-auto w-75">Julia es un lenguaje de programación de alto rendimiento diseñado específicamente para el análisis numérico y científico. Es una opción cada vez más popular para el análisis de datos y el cómputo científico.<br></br><Link to="https://julialang.org/" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de Julia</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Scala</h6>
+                                            <p className="text-break mx-auto w-75">Scala es un lenguaje que se utiliza comúnmente en entornos de Big Data debido a su integración con Apache Spark, una plataforma de procesamiento de datos en tiempo real y procesamiento de grandes volúmenes de datos.<br></br><Link to="https://www.scala-lang.org/" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de Scala</Link></p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">MATLAB</h6>
+                                            <p className="text-break mx-auto w-75">MATLAB es una herramienta ampliamente utilizada en la ingeniería y ciencias para el análisis numérico, la simulación y la visualización de datos.<br></br><Link to="https://la.mathworks.com/help/matlab/index.html?s_tid=hc_panel" className="text-break mx-auto text-primary w-75">Acceder a la página oficial de MATLAB</Link></p>
+                                        </ol>
+                                    </ul>
+                                    <h3 className="text-center mx-auto w-75 mt-4">Camino de aprendizaje - RoadMap</h3>
+                                    <img className="d-block mx-auto w-75" style={{ marginBottom: "7rem" }} alt="" src="../img/professionalCareer/roadmap.png"></img>
+                                </div>
                             </div>
                         </div>
-                        <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`}  style={{ background: colorPrimaryPython }}>
+                        <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h2 className="text-light">Inteligencia artificial</h2>
                             </button>
                             <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    
+                                    <h3 className="text-break mx-auto w-75 mt-4">Aplicaciones en ciencias de datos</h3>
+                                    <p className="text-break mx-auto w-75">La inteligencia artificial (IA) se ha convertido en un campo crucial y en constante evolución con diversas aplicaciones que impactan en diversas áreas de la sociedad y la industria. Aquí hay algunas aplicaciones destacadas de la inteligencia artificial:</p>
+                                    <ul>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Reconocimiento de Patrones y Visión por Computadora</h6>
+                                            <p className="text-break mx-auto w-75">Reconocimiento facial, reconocimiento de objetos, clasificación de imágenes, diagnóstico médico a través de imágenes, vehículos autónomos.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Redes neuronales convolucionales (CNN), detección de objetos, segmentación de imágenes.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Procesamiento del Lenguaje Natural (NLP)</h6>
+                                            <p className="text-break mx-auto w-75">Asistentes virtuales (como Siri y Alexa), traducción automática, análisis de sentimientos, chatbots, resumidores de texto.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Modelos de lenguaje, procesamiento de texto, embeddings de palabras, transformers.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Aprendizaje Automático (Machine Learning)</h6>
+                                            <p className="text-break mx-auto w-75">Predicción de series temporales, clasificación y regresión, recomendaciones personalizadas, fraudes financieros, diagnóstico médico.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Algoritmos de aprendizaje supervisado y no supervisado, regresión, árboles de decisión, máquinas de soporte vectorial (SVM), redes neuronales.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Robótica</h6>
+                                            <p className="text-break mx-auto w-75">Robots autónomos, asistentes robóticos en el hogar, cirugía asistida por robots, fabricación automatizada.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Visión por computadora, planificación de trayectorias, aprendizaje por refuerzo.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Sistemas de Recomendación</h6>
+                                            <p className="text-break mx-auto w-75">Plataformas de streaming (Netflix, Spotify), recomendaciones de productos en línea, sistemas de recomendación de noticias.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Filtros colaborativos, sistemas basados en contenido, aprendizaje profundo para recomendaciones.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Sistemas de Diagnóstico Médico</h6>
+                                            <p className="text-break mx-auto w-75">Interpretación de imágenes médicas, predicción de enfermedades, análisis de datos clínicos.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Redes neuronales, aprendizaje profundo, procesamiento de imágenes médicas.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Procesamiento de Datos masivos (Big Data):</h6>
+                                            <p className="text-break mx-auto w-75">Análisis de datos masivos, optimización de procesos empresariales, toma de decisiones basada en datos.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Apache Hadoop, Apache Spark, técnicas de análisis de datos a gran escala.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">IA Ética y Gobernanza:</h6>
+                                            <p className="text-break mx-auto w-75">Desarrollo de políticas de IA ética, evaluación de sesgos en algoritmos, transparencia en la toma de decisiones automáticas.</p>
+                                            <p className="text-break mx-auto w-75">Tecnologías clave: Marco ético para IA, auditoría de algoritmos, explicabilidad de modelos</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Análisis de grandes volúmenes de datos (Big Data)</h6>
+                                            <p className="text-break mx-auto w-75">La ciencia de datos es esencial para procesar, almacenar y analizar grandes conjuntos de datos que superan la capacidad de las herramientas tradicionales.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Diagnóstico médico y apoyo a la toma de decisiones clínicas</h6>
+                                            <p className="text-break mx-auto w-75">Se utilizan algoritmos de aprendizaje automático en la ciencia de datos para asistir en el diagnóstico de enfermedades, predecir riesgos y recomendar tratamientos médicos personalizados.</p>
+                                        </ol>
+                                        <ol>
+                                            <h6 className="text-break mx-auto w-75 fw-bold">Aprendizaje automático (Machine Learning)</h6>
+                                            <p className="text-break mx-auto w-75">Es una de las aplicaciones fundamentales de la ciencia de datos que permite a las máquinas aprender patrones a partir de datos y realizar tareas sin intervención humana, como clasificación, regresión, agrupamiento y más.</p>
+                                        </ol>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
