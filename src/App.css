@@ -688,11 +688,15 @@ h6 {
 
 @media (max-width: 575px) {
   p.w-75,
-  h3.w-75 ,img.w-75{
+  h3.w-75,
+  img.w-75 {
     width: 100% !important;
   }
   .w-50 {
-    width: 90%!important;
+    width: 90% !important;
+  }
+  .access {
+    color: #012973!important;
   }
   .mobile-nav-toggle {
     display: block;

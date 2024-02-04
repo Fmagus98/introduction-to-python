@@ -6,10 +6,8 @@ import { collection, getDocs } from 'firebase/firestore'
 const Loggin = () => {
     const [email, setEmail] = useState("")
     const [emailFail, setEmailFail] = useState("")
-
     const navigate = useNavigate()
     const location = useLocation()
-
     const handleChange = (e) => {
         setEmail(e.target.value);
     };
@@ -48,7 +46,7 @@ const Loggin = () => {
                     <button type="submit" className="btn" style={{ background: emailFail ? "red" :null,backgroundColor:location.pathname.includes("micropython")?"rgb(238, 112, 83)":"#2f6997"}}>{!emailFail ? "Acceso Total" : "Correo inválido. Intenta de nuevo"}</button>
                 </div>
             </form>
-            </li> : <li><p className="h6 text-light">Acceso total</p></li>
+            </li> : <li><p className="access h6 text-light">Acceso total</p></li>
         }</>
     )
 }
