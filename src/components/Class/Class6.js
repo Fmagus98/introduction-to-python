@@ -30,10 +30,10 @@ const Class6 = () => {
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                   <div>
-                    <h1>Clase 6: Estructuras de datos II: Diccionarios y conjuntos</h1>
-                    <h2>Diccionarios y conjuntos: definición y uso</h2>
-                    <h2>Manipulación de elementos en diccionarios y conjuntos</h2>
-                    <h2>Métodos de diccionarios y conjuntos</h2>
+                    <h1>Clase 6: Diccionarios y conjuntos</h1>
+                    <h2>Definición y uso</h2>
+                    <h2>Manipulación de elementos</h2>
+                    <h2>Métodos</h2>
                     <div className="text-center text-lg-start">
                       <a href="#clase6" className="btn-get-started scrollto">Contenido de la clase 6</a>
                     </div>
@@ -132,7 +132,7 @@ const Class6 = () => {
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4">Los conjuntos o llamados set permiten almacenar varios elementos y acceder a ellos de una forma muy similar a las listas pero con ciertas diferencias:</p>
-                      <ul  className="text-break mx-auto w-75 mt-4">
+                      <ul className="text-break mx-auto w-75 mt-4">
                         <li>Los elementos de un set son únicos, lo que significa que no puede haber elementos duplicados.</li>
                         <li>Los set son desordenados, lo que significa que no mantienen el orden de cuando son declarados.</li>
                         <li>Sirven principalmente para eliminar elementos repetidos.</li>
@@ -213,10 +213,10 @@ const Class6 = () => {
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                 <div>
-                  <h1>Clase 6: Estructuras de datos II: Diccionarios y conjuntos</h1>
-                  <h2>Diccionarios y conjuntos: definición y uso</h2>
-                  <h2>Manipulación de elementos en diccionarios y conjuntos</h2>
-                  <h2>Métodos de diccionarios y conjuntos</h2>
+                  <h1>Clase 6: Diccionarios y conjuntos</h1>
+                  <h2>Definición y uso</h2>
+                  <h2>Manipulación de elementos</h2>
+                  <h2>Métodos</h2>
                   <div className="text-center text-lg-start">
                     <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                   </div>

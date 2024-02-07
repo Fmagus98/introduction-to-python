@@ -392,7 +392,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: #1acc8d;
+  background-color: white;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -478,6 +478,11 @@ h6 {
     left: -100%;
   }
 }
+@media (max-width: 1038px) {
+  .class-teory{
+    width:90%!important;
+  }
+}
 
 /*
  Mobile Navigation 
@@ -492,6 +497,7 @@ h6 {
 }
 
 @media (max-width: 991px) {
+
   .mobile-nav-toggle {
     display: block;
   }
@@ -687,6 +693,7 @@ h6 {
 }
 
 @media (max-width: 575px) {
+
   p.w-75,
   h3.w-75,
   img.w-75 {

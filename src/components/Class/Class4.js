@@ -30,8 +30,8 @@ const Class4 = () => {
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                   <div>
-                    <h1>Clase 4</h1>
-                    <h2>Definicion y llamada de funciones en python</h2>
+                    <h1>Clase 4: Funciones y módulos</h1>
+                    <h2>Definicion y llamada de funciones</h2>
                     <h2>Paso de parámetros a funciones</h2>
                     <h2>Creación y uso de módulos</h2>
                     <div className="text-break text-lg-start">
@@ -241,7 +241,7 @@ const Class4 = () => {
                       <p className="text-break mx-auto w-75">La documentación oficial de Python proporciona una lista de módulos y bibliotecas estándar que están disponibles en la instalación básica de Python. Puedes consultar la documentación en el siguiente enlace: <Link className="text-primary" to="https://docs.python.org/" target="_blank">https://docs.python.org/</Link></p>
                       <h3 className="text-break mx-auto w-75">Foros y comunidades de Python:</h3>
                       <p className="text-break mx-auto w-75">Existen comunidades en línea donde los desarrolladores de Python comparten sus proyectos y recomendaciones de módulos y bibliotecas. Algunos ejemplos son el <Link className="text-primary" to="https://www.reddit.com/r/Python/" target="_blank">subreddit r/python</Link>, el foro oficial de Python <Link className="text-primary" to="https://python-forum.io/" target="_blank">Python Forum</Link>, y diversas comunidades en plataformas como <Link className="text-primary" to="https://stackoverflow.com/" target="_blank">Stack Overflow</Link>.</p>
-                      <p className="text-break mx-auto w-75"  style={{ marginBottom: "7rem" }}>Al buscar módulos y bibliotecas, es recomendable verificar la popularidad y la calidad del proyecto, leer las opiniones y reseñas de otros usuarios, y comprobar si el proyecto está activamente mantenido y actualizado.
+                      <p className="text-break mx-auto w-75" style={{ marginBottom: "7rem" }}>Al buscar módulos y bibliotecas, es recomendable verificar la popularidad y la calidad del proyecto, leer las opiniones y reseñas de otros usuarios, y comprobar si el proyecto está activamente mantenido y actualizado.
                         <br></br>
                         Recuerda revisar los requisitos y la compatibilidad del módulo o biblioteca con la versión de Python que estás utilizando en tu proyecto, así como cualquier dependencia adicional que pueda requerir.
                       </p>
@@ -267,8 +267,8 @@ const Class4 = () => {
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                 <div>
-                  <h1>Clase 4</h1>
-                  <h2>Definicion y llamada de funciones en python</h2>
+                  <h1>Clase 4: Funciones y módulos</h1>
+                  <h2>Definicion y llamada de funciones</h2>
                   <h2>Paso de parámetros a funciones</h2>
                   <h2>Creación y uso de módulos</h2>
                   <div className="text-break text-lg-start">

@@ -30,10 +30,10 @@ const Class1 = () => {
                             <div className="row justify-content-between">
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                     <div>
-                                        <h1>Clase 1</h1>
+                                        <h1>Clase 1: Explorando Python</h1>
                                         <h2>Introducción a Python y su sintaxis básica</h2>
-                                        <h2>Instalación y configuración del entorno de programación</h2>
-                                        <h2>Ejecución del primer programa en Python</h2>
+                                        <h2>Instalación y configuración de IDE</h2>
+                                        <h2>Ejecución del primer programa</h2>
                                         <div className="text-center text-lg-start">
                                             <a href="/#clase1" className="btn-get-started scrollto">Contenido de la clase 1</a>
                                         </div>
@@ -402,7 +402,7 @@ const Class1 = () => {
                                             </p>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                             </p>
-                                            <img className="w-75 d-block mx-auto border-content"  alt="" src="../img/class1/p8.webp"></img>
+                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p8.webp"></img>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                             </p>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p9.webp"></img>
@@ -433,10 +433,10 @@ const Class1 = () => {
                         <div className="row justify-content-between">
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                 <div >
-                                    <h1>Clase 1</h1>
+                                    <h1>Clase 1: Explorando Python</h1>
                                     <h2>Introducción a Python y su sintaxis básica</h2>
-                                    <h2>Instalación y configuración del entorno de programación</h2>
-                                    <h2>Ejecución del primer programa en Python</h2>
+                                    <h2>Instalación y configuración de IDE</h2>
+                                    <h2>Ejecución del primer programa</h2>
                                     <div className="text-center text-lg-start">
                                         <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                                     </div>

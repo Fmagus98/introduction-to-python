@@ -30,10 +30,10 @@ const Class5 = () => {
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                   <div>
-                    <h1>Clase 5: Estructuras de datos I: Listas y tuplas</h1>
-                    <h2>Listas y tuplas: definición y uso</h2>
-                    <h2>Manipulación de elementos en listas y tuplas</h2>
-                    <h2>Métodos de listas y tuplas</h2>
+                    <h1>Clase 5: Listas y tuplas</h1>
+                    <h2>Definición y uso de listas y tuplas</h2>
+                    <h2>Manipulación de elementos</h2>
+                    <h2>Métodos</h2>
                     <div className="text-center text-lg-start">
                       <a href="#clase5" className="btn-get-started scrollto">Contenido de la clase 5</a>
                     </div>
@@ -66,7 +66,7 @@ const Class5 = () => {
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div id="element2" className={`rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`}  style={{ background: colorPrimaryPython , borderRadius: "40px" }} >
+                <div id="element2" className={`rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                   <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                     <h2>Listas</h2>
                   </button>
@@ -84,14 +84,14 @@ const Class5 = () => {
                         <h3 className="text-break w-75 mx-auto">Segmentación - slicing:</h3>
                         <p className="text-break mx-auto w-75">Puedes acceder a subconjuntos de elementos en una lista utilizando la técnica de slicing. Esto te permite obtener porciones de una lista basándote en índices.</p>
                         <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list4.webp"></img>
-                        <h3  className="text-break w-75 mx-auto">Copia de lista</h3>
+                        <h3 className="text-break w-75 mx-auto">Copia de lista</h3>
                         <p className="text-break mx-auto w-75">Para crear una copia de un diccionario en Python, puedes utilizar el método copy() o el constructor list(). Ambos métodos crean una nueva copia de la lista original.</p>
                         <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class5/list5.webp"></img>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div id="element3" className={`mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element3" className={`mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h2 className="text-light">Métodos de lista</h2>
                   </button>
@@ -123,7 +123,7 @@ const Class5 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h2 className="text-light">Funciones en listas</h2>
                   </button>
@@ -134,26 +134,26 @@ const Class5 = () => {
                       </p>
                       <h3 className="text-break w-75 mx-auto">len()</h3>
                       <p className="text-break mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/list13.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list13.webp"></img>
                       <h3 className="text-break w-75 mx-auto">max()</h3>
                       <p className="text-break mx-auto w-75">max() te devuelve el valor del elemento más alto de la lista.</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/list14.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list14.webp"></img>
                       <h3 className="text-break w-75 mx-auto">min()</h3>
                       <p className="text-break mx-auto w-75">min() te devuelve el valor del elemento más bajo de la lista.</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/list15.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list15.webp"></img>
                       <h3 className="text-break w-75 mx-auto">sum()</h3>
                       <p className="text-break mx-auto w-75">sum() te devuelve la sumatoria de todos los elementos de la lista </p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/list16.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list16.webp"></img>
                       <h3 className="text-break w-75 mx-auto">sort() / sorted / reverse</h3>
                       <p className="text-break mx-auto w-75">sort() ordena los elementos de la lista de forma ascendente y modifica la lista original.<br></br>Sorted() crea una lista y ordena la lista de forma ascendente <br></br>Si deseas ordenar la lista en orden descendente, puedes utilizar el argumento reverse=True en el método sort() o sorted()</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/list17.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list17.webp"></img>
                       <h3 className="text-break w-75 mx-auto">reversed()</h3>
                       <p className="text-break mx-auto w-75">reversed() ordena los elementos de la lista de forma descendente y no modifica la lista original.</p>
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class5/list18.webp"></img>
                     </div>
                   </div>
                 </div>
-                <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                     <h2 className="text-light">Tuplas</h2>
                   </button>
@@ -161,27 +161,27 @@ const Class5 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4">
                         Una tupla en Python es una estructura de datos inmutable, lo que significa que no se pueden modificar una vez creadas. <br></br>Se utiliza para almacenar una colección ordenada de elementos heterogéneos, como números, cadenas de texto, booleanos, etc. <br></br>Las tuplas se definen utilizando paréntesis () y los elementos se separan por comas.</p>
-                      <img className="w-75 d-block mx-auto border-content"alt="" src="../img/class5/tupla1.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class5/tupla1.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4 ">índice</h3>
                       <p className="text-break mx-auto w-75">Al igual que las listas, el operador de indexación [ ] permite acceder a elementos individuales de la tupla utilizando su índice. Por ejemplo, tupla[0] devuelve el primer elemento de la tupla.</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/tupla2.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla2.webp"></img>
                       <h3 className="text-break w-75 mx-auto">segmentación</h3>
                       <p className="text-break mx-auto w-75">El operador de segmentación (:) permite acceder a un rango de elementos en la tupla. Por ejemplo, tupla[1:3] devuelve una nueva tupla que contiene los elementos desde el índice 1 hasta el índice 2.</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/tupla3.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla3.webp"></img>
                       <h3 className="text-break w-75 mx-auto">concatenación</h3>
                       <p className="text-break mx-auto w-75">El operador de concatenación (+) permite concatenar dos o más tuplas para crear una nueva tupla que contenga todos los elementos de las tuplas originales en el mismo orden.</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/tupla4.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla4.webp"></img>
                       <h3 className="text-break w-75 mx-auto">repetición</h3>
                       <p className="text-break mx-auto w-75">El operador de multiplicación (*) permite repetir una tupla múltiples veces para crear una nueva tupla que contenga las repeticiones de los elementos originales.</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/tupla5.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla5.webp"></img>
                       <h3 className="text-break w-75 mx-auto">conversión tupla - lista / lista - tupla</h3>
                       <p className="text-break mx-auto w-75">Si necesitas realizar operaciones más avanzadas con tuplas, como ordenar, filtrar o modificar elementos, es posible convertir la tupla en una lista utilizando el método list(), realizar las operaciones necesarias y luego convertir la lista resultante nuevamente en una tupla utilizando el método tuple().</p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"alt="" src="../img/class5/tupla6.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla6.webp"></img>
                       <p className="text-break mx-auto w-75" style={{ marginBottom: "7rem" }}>Como había explicado anteriormente, las tuplas son estructuras de datos inmutables, lo que significa que no se pueden modificar una vez creadas. Debido a esto, las tuplas tienen un conjunto limitado de métodos incorporados en comparación con las listas. Los únicos métodos disponibles para las tuplas son conunt() y index</p>
                     </div>
                   </div>
                 </div>
-                <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                     <h2 className="text-light">For</h2>
                   </button>
@@ -189,13 +189,13 @@ const Class5 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4">El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código.</p>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
-                      <img className="w-75 d-block mx-auto border-content"alt="" src="../img/class3/for4.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/for4.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en tuplas</h3>
-                      <img className="w-75 d-block mx-auto border-content"alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                     </div>
                   </div>
                 </div>
-                <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class5.py"
                     target={"_blank"}
                     download={"class5.py"}>
@@ -214,10 +214,10 @@ const Class5 = () => {
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                 <div>
-                  <h1>Clase 5: Estructuras de datos I: Listas y tuplas</h1>
-                  <h2>Listas y tuplas: definición y uso</h2>
-                  <h2>Manipulación de elementos en listas y tuplas</h2>
-                  <h2>Métodos de listas y tuplas</h2>
+                  <h1>Clase 5: Listas y tuplas</h1>
+                  <h2>Definición y uso de listas y tuplas</h2>
+                  <h2>Manipulación de elementos</h2>
+                  <h2>Métodos</h2>
                   <div className="text-center text-lg-start">
                     <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                   </div>

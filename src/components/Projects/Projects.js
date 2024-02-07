@@ -18,7 +18,6 @@ const Projects = () => {
                             <div>
                                 <h1>Proyectos</h1>
                                 <h2>En este apartado encontrarás projectos desarrollados por alumnos de forma individual, en equipo o junto al profesor.</h2>
-                                <h2>Actualmente no existen proyectos finalizados.</h2>
                                 <div className="text-center text-lg-start">
                                     <a href="#clase1" className="btn-get-started scrollto">Ver Proyectos</a>
                                 </div>
@@ -118,15 +117,34 @@ const Projects = () => {
                         </div>
                         <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                                <h2 className="text-light">Atributos</h2>
+                                <h2 className="text-light">Conversor de imágenes</h2>
                             </button>
                             <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <p className="text break mx-auto mt-4 w-75">
-                                        Los atributos son variables asociadas a un objeto. Pueden ser variables de instancia (asociadas a cada objeto individualmente) o variables de clase (compartidas por todos los objetos de la clase). Puedes acceder a los atributos utilizando la notación de punto. Por ejemplo:
-                                    </p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class8/attributes.webp"></img>
-                                    <p className="text break mx-auto w-75" style={{ marginBottom: "7rem" }}>En este ejemplo, la clase Persona tiene atributos nombre y edad. Estos atributos se asignan cuando se crea un objeto y se acceden utilizando la notación de punto.</p>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
+                                    <p className="text break mx-auto mt-4 w-75">Este programa utiliza la biblioteca PIL (Python Imaging Library) para convertir imágenes JPG,JPEG y PNG a un formato WebP.</p>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto - Funciones</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p> Recorrer el directorio especificado.</p></li>
+                                        <li><p> Verificar si es un archivo de imagen.</p></li>
+                                        <li><p> Si es una imagen, convertirla al formato WebP.</p></li>
+                                        <li><p> Guardar la imagen convertida en el mismo directorio con la extensión ".webp".</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Librerias</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p>Pil</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá el archivo index.py desde este link -- <Link to="https://drive.google.com/drive/folders/1N7mxh_oHSv__DowSaaJa-4-_CvB8Nitf?usp=drive_link" target='_blank' className="text-primary">Conversor de imágenes</Link>.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter2.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: python index.py</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter3.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Dentro de la terminal escribe: python index.py</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter4.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter5.webp"></img>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +164,7 @@ const Projects = () => {
                         </div>
                         <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                                <h2 className="text-light">Herencia</h2>
+                                <h2 className="text-light">Buscador de celulares - Mercadolibre (web scraping)</h2>
                             </button>
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -155,15 +173,6 @@ const Projects = () => {
                                     <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class8/heredity.webp"></img>
                                 </div>
                             </div>
-                        </div>
-                        <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                            <Link to="/pythonClassFile/class8.py"
-                                target={"_blank"}
-                                download={"class8.py"}>
-                                <button className="accordion-button collapsed bg-transparent" type="button">
-                                    <h2 className="text-light">Descarga el archivo de la clase 8</h2>
-                                </button>
-                            </Link>
                         </div>
                     </div>
                 </div>

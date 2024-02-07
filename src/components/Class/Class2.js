@@ -30,10 +30,10 @@ const Class2 = () => {
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                   <div>
-                    <h1>Clase 2: Variables y operadores</h1>
-                    <h2>Variables y tipos de datos en Python</h2>
+                    <h1>Clase 2: Variables</h1>
+                    <h2>Variables y tipos de datos</h2>
                     <h2>Operadores aritméticos y de asignación</h2>
-                    <h2>Uso de operadores lógicos y de comparación</h2>
+                    <h2>Operadores lógicos y de comparación</h2>
                     <div className="text-break text-lg-start">
                       <a href="#clase2" className="btn-get-started scrollto">Contenido de la clase 2</a>
                     </div>
@@ -99,13 +99,13 @@ const Class2 = () => {
                       <p className="text-break mx-auto w-75">En el caso de python, tenemos 3 tipos de estilos de escritura<br></br>
                       </p>
                       <p className="text-break mx-auto w-50">
-                      <span className="fw-bold">Upper case:</span> Se utiliza cuando nombramos una variable o función llamada con una palabra.
+                        <span className="fw-bold">Upper case:</span> Se utiliza cuando nombramos una variable o función llamada con una palabra.
                       </p>
                       <p className="text-break mx-auto w-50">
-                      <span className="fw-bold">Snake case:</span> Cuando nombramos una variable llamada con más de 1 palabra se utilizará "snake case".<br></br>
+                        <span className="fw-bold">Snake case:</span> Cuando nombramos una variable llamada con más de 1 palabra se utilizará "snake case".<br></br>
                       </p>
                       <p className="text-break mx-auto w-50">
-                      <span className="fw-bold">Pascal case:</span> Este estilo de escritura se utilizará solamente cuando creamos una clase.
+                        <span className="fw-bold">Pascal case:</span> Este estilo de escritura se utilizará solamente cuando creamos una clase.
                       </p>
                       <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class2/namingConventions.webp"></img>
                       <p className="mt-4 text-break mx-auto w-75">También tenemos que saber que el lenguaje de python es camel sensitive, esto que quiere decir? Al ser camel sensitive python es sensible a las mayúsculas y minúsculas y es importante
@@ -261,11 +261,11 @@ const Class2 = () => {
                       <h2 className="text-break mx-auto w-75">Count( )</h2>
                       <p className="text-break mx-auto w-75">El método count() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para contar el número de apariciones de una subcadena dentro de una cadena.
                       </p>
-                      <img className="w-75 d-block mx-auto mb-4 border-content"  alt="" src="../img/class2/count.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/count.webp"></img>
                       <h2 className="text-break mx-auto w-75">Endswith( )</h2>
                       <p className="text-break mx-auto w-75">El método endswith() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para verificar si una cadena termina con una subcadena específica.
                       </p>
-                      <img className="w-75 d-block mx-auto  border-content"  style={{ marginBottom: "7rem" }} alt="" src="../img/class2/endswith.webp"></img>
+                      <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class2/endswith.webp"></img>
                     </div>
                   </div>
                 </div>
@@ -287,10 +287,10 @@ const Class2 = () => {
             <div className="row justify-content-between">
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                 <div >
-                  <h1>Clase 2: Variables y operadores</h1>
-                  <h2>Variables y tipos de datos en Python</h2>
+                  <h1>Clase 2: Variables</h1>
+                  <h2>Variables y tipos de datos</h2>
                   <h2>Operadores aritméticos y de asignación</h2>
-                  <h2>Uso de operadores lógicos y de comparación</h2>
+                  <h2>Operadores lógicos y de comparación</h2>
                   <div className="text-break text-lg-start">
                     <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                   </div>

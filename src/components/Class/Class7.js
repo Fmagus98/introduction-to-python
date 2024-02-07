@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import {colorPrimaryPython} from '../../colors'
+import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 
@@ -26,14 +26,14 @@ const Class7 = () => {
     <>
       {(new Date(date) <= newDate) || localStorage.getItem("access") ?
         <>
-          <section id="hero" style={{ background: colorPrimaryPython}}>
+          <section id="hero" style={{ background: colorPrimaryPython }}>
             <div className="container">
               <div className="row justify-content-between">
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                   <div>
                     <h1>Clase 7: Archivos y excepciones</h1>
-                    <h2>Métodos de archivos en python</h2>
-                    <h2>Manejo de excepciones en python</h2>
+                    <h2>Métodos de archivos</h2>
+                    <h2>Manejo de excepciones</h2>
                     <h2>Práctica con archivos y excepciones</h2>
                     <div className="text-center text-lg-start">
                       <a href="#clase6" className="btn-get-started scrollto">Contenido de la clase 7</a>
@@ -67,7 +67,7 @@ const Class7 = () => {
                 <p>Contenido</p>
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                <div id="element2" className={`mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element2" className={`mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h2 className="text-light">Tipos de excepciones</h2>
                   </button>
@@ -106,7 +106,7 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element3" className={`mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element3" className={`mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h2 className="text-light">Manejo de excepciones</h2>
                   </button>
@@ -125,7 +125,7 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                     <h2 className="text-light">Metodos de archivos en python</h2>
                   </button>
@@ -156,7 +156,7 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython , borderRadius: "40px" }}>
+                <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class7.py"
                     target={"_blank"}
                     download={"class7.py"}>
@@ -176,8 +176,8 @@ const Class7 = () => {
               <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                 <div>
                   <h1>Clase 7: Archivos y excepciones</h1>
-                  <h2>Métodos de archivos en python</h2>
-                  <h2>Manejo de excepciones en python</h2>
+                  <h2>Métodos de archivos</h2>
+                  <h2>Manejo de excepciones</h2>
                   <h2>Práctica con archivos y excepciones</h2>
                   <div className="text-center text-lg-start">
                     <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
