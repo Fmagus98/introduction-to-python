@@ -32,11 +32,10 @@ const Navbar = () => {
 
   return (
     <>
-      <header id="header" className="fixed-top d-flex align-items-center header-transparent" style={{ background: backgroundColor }}>
+      <header id="header" className="fixed-top d-flex align-items-center header-transparent" style={{ background: color }}>
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
             <h1><a href="/"><span>Fablab - python</span></a></h1>
-            <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" /></a>
           </div>
           <nav id="navbar" className={isMobileNavOpen ? 'navbar navbar-mobile h-auto' : 'navbar'}>
             <ul className={isMobileNavOpen ? 'h-50 ml-6 mr-6' : ''}>

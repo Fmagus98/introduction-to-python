@@ -176,22 +176,61 @@ const Projects = () => {
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping.webp"></img>
                                     <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping2.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install pillow, esto instalará la libreria Pil.</p>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install request, esto instalará la libreria request.</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping3.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> En caso que te indique para actualizar el instalador de paquetes pip, dentro de la terminal escribe: python.exe m pip install --upgrade pip</p>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Luego de instalar request, escribe en la terminal: pip install beautifulsoup, esto instalará la libreria beautifulsoup</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping4.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py, esto ejecutará el programa. Recuerda que debes crear una carpeta llamada "img" en tu directoria, allí vas a dejar todas las imágenes que quieras convertir</p>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py, esto ejecutará el programa.</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping5.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install pillow, esto instalará la libreria Pil.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping6.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> En caso que te indique para actualizar el instalador de paquetes pip, dentro de la terminal escribe: python.exe m pip install --upgrade pip</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping7.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py, esto ejecutará el programa. Recuerda que debes crear una carpeta llamada "img" en tu directoria, allí vas a dejar todas las imágenes que quieras convertir</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping8.webp"></img>
                                     <h3 className="text-break mx-auto w-75 mt-4">Ejemplo de uso</h3>
                                     <ul className="w-75 mx-auto">
                                         <li><p>Escribe el nombre del producto que quieras buscar.</p></li>
                                         <li><p>Escribe un número de las opciones para ordenar los precios del producto.</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <h2 className="text-light">Virtual mouse</h2>
+                            </button>
+                            <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
+                                    <p className="text break mx-auto mt-4 w-75">Este programa utiliza la biblioteca OpenCV (cv2), MediaPipe (mediapipe), NumPy (np), PyAutoGUI (pyautogui) y time para detectar la posición de la mano y simular movimientos del mouse en función de los gestos de la mano detectados.</p>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p><span className="fw-bold">Ejecución del entorno virtual: </span> Este entorno vitual contiene la versión de python 3.8 y las librerias necesarias para ejecutarlo(carpeta "virtualmouse").</p></li>
+                                        <li><p><span className="fw-bold">Detección de manos: </span> Se configura el modelo de detección de manos utilizando la clase Hands de MediaPipe.</p></li>
+                                        <li><p><span className="fw-bold">Capturar el video de la cámara: </span> Se captura el video de la cámara utilizando OpenCV.</p></li>
+                                        <li><p><span className="fw-bold">Procesar cada fotograma del video: </span> Se procesa cada fotograma del video para detectar la posición de la mano y realizar acciones en función de los gestos detectados.</p></li>
+                                        <li><p><span className="fw-bold">Área de interacción: </span> Se dibuja un área de interacción en la pantalla del video.</p></li>
+                                        <li><p><span className="fw-bold">Realizar acciones del mouse: </span> Se mueve el cursor del mouse y se simulan clics y desplazamientos de la rueda del mouse utilizando PyAutoGUI.</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Librerias</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p><span className="fw-bold">OpenCV (cv2):</span> Para la captura de video, procesamiento de imágenes y visualización.</p></li>
+                                        <li><p><span className="fw-bold">MediaPipe (mediapipe):</span> Para la detección de manos y el seguimiento de puntos de referencia en la mano.</p></li>
+                                        <li><p><span className="fw-bold">NumPy (np):</span> Para realizar operaciones numéricas, como cálculos de distancia.</p></li>
+                                        <li><p><span className="fw-bold">PyAutoGUI (pyautogui):</span> Para controlar el cursor del mouse y simular acciones del mouse, como clics y desplazamientos de la rueda del mouse.</p></li>
+                                        <li><p><span className="fw-bold">Time:</span> Para realizar pausas o esperas en el script.</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá la carpeta "mouse" desde este link -- <Link to="https://drive.google.com/drive/u/0/folders/1q-lgvOBQV-xjJQ_tX2uzgnIP2BaJF1MB" target='_blank' className="text-primary">Virtual Mouse</Link>.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse2.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install virtualenv, esto instalará la libreria virtualenv, es la encargada de realizar el entorno virtual.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse3.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Luego de instalar el entorno virtual, escribe en la terminal: virtualmouse\Scripts\activate, esto hará que el entorno virtual este activo.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse4.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python mouse_control_game.py, esto ejecutará el programa. En caso de no ejecutarse, debes instalar la version de python 3.8.3.0 y realizar de nuevo de proceso.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse5.webp"></img>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Instrucciones</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p>Si tu dedo pulgar lo acercas a la palma de la mano, la rueda del mouse se moverá.</p></li>
+                                        <li><p>Si tu dedo indice lo acercas a la palma de la mano, hará click izquierda del mouse.</p></li>
+                                        <li><p>Si tu dedo medio lo acercas a la palma de la mano, hará click derecho del mouse.</p></li>
                                     </ul>
                                 </div>
                             </div>
