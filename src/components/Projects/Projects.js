@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, Link } from 'react-router-dom';
-import { colorPrimaryPython } from '../../colors'
+import { colorPrimaryPython, colorSecondaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 const Projects = () => {
@@ -8,6 +8,7 @@ const Projects = () => {
     const elementVisibility = useScrollAnimation()
     const location = useLocation()
     const title = location.pathname.includes("micropython") ? "micropython" : "python"
+    const colorSecondary = location.pathname.includes("micropython") ? colorSecondaryMicropython : null
 
     return (
         <>
@@ -19,7 +20,7 @@ const Projects = () => {
                                 <h1>Proyectos</h1>
                                 <h2>En este apartado encontrarás projectos desarrollados por alumnos de forma individual, en equipo o junto al profesor.</h2>
                                 <div className="text-center text-lg-start">
-                                    <a href="#clase1" className="btn-get-started scrollto">Ver Proyectos</a>
+                                    <a href="#clase1" style={{ backgroundColor: colorSecondary }} className="btn-get-started scrollto">Ver Proyectos</a>
                                 </div>
                             </div>
                         </div>
@@ -192,9 +193,47 @@ const Projects = () => {
                         </div>
                         <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                                <h2 className="text-light">Virtual mouse</h2>
+                                <h2 className="text-light">Detección de dedos</h2>
                             </button>
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
+                                    <p className="text break mx-auto mt-4 w-75">Este programa reconoce y cuenta los dedos de una mano en tiempo real, se utilza la libreria mediapipe y openCv.</p>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p><span className="fw-bold">Cálculo de distancias de dedos: </span> la función palm_centroid calcula el centroide de la palma de la mano.</p></li>
+                                        <li><p><span className="fw-bold">Captura de video: </span> Se utiliza la función cv2.VideoCapture().</p></li>
+                                        <li><p><span className="fw-bold">Conteo de dedos: </span> Contar y visualizar los dedos levantados en el frame.</p></li>
+                                        <li><p><span className="fw-bold">Procesar cada fotograma del video: </span> Se procesa cada fotograma del video para detectar la posición de la mano y realizar acciones en función de los gestos detectados.</p></li>
+                                        <li><p><span className="fw-bold">Área de interacción: </span> Se dibuja un área de interacción en la pantalla del video.</p></li>
+                                        <li><p><span className="fw-bold">Realizar acciones del mouse: </span> Se mueve el cursor del mouse y se simulan clics y desplazamientos de la rueda del mouse utilizando PyAutoGUI.</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Librerias</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p><span className="fw-bold">OpenCV (cv2):</span> Para la captura de video, procesamiento de imágenes y visualización.</p></li>
+                                        <li><p><span className="fw-bold">MediaPipe (mediapipe):</span> Para la detección de manos y el seguimiento de puntos de referencia en la mano.</p></li>
+                                        <li><p><span className="fw-bold">NumPy (np):</span> Para realizar operaciones numéricas, como cálculos de distancia.</p></li>
+                                        <li><p><span className="fw-bold">math:</span> Para realizar operaciones matemáticas, como el cálculo de ángulos.</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá la carpeta "Detección de dedos" desde este link -- <Link to="https://drive.google.com/drive/u/0/folders/1_bCxbxQRA9Nq2q3u-LGSrdW2NOavmCOg" target='_blank' className="text-primary">Detección de dedos</Link>.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan2.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install virtualenv, esto instalará la libreria virtualenv, es la encargada de realizar el entorno virtual.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan3.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Luego de instalar el entorno virtual, escribe en la terminal: fingerScan\Scripts\activate, esto hará que el entorno virtual este activo.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan4.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python scan.py, esto ejecutará el programa. En caso de no ejecutarse, debes instalar la version de python 3.8.3.0 y realizar de nuevo de proceso.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan5.webp"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <h2 className="text-light">Virtual mouse</h2>
+                            </button>
+                            <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                                     <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
                                     <p className="text break mx-auto mt-4 w-75">Este programa utiliza la biblioteca OpenCV (cv2), MediaPipe (mediapipe), NumPy (np), PyAutoGUI (pyautogui) y time para detectar la posición de la mano y simular movimientos del mouse en función de los gestos de la mano detectados.</p>

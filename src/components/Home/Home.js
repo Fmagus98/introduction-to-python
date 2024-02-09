@@ -1,8 +1,8 @@
 import React from 'react'
-import { useLocation} from 'react-router-dom'
+import { useLocation,Link } from 'react-router-dom'
 import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
-import { Link as ScrollLink} from 'react-scroll';
+
 
 const Home = () => {
 
@@ -30,11 +30,11 @@ const Home = () => {
                   escribir y depurar programas simples y complejos utilizando {title},
                   y se les presentará a las principales estructuras de datos y
                   algoritmos utilizados en la programación.</h2>
-                  <ScrollLink to="#index" style={{ backgroundColor: colorSecondary }} className="btn-get-started scrollto">¿Que voy aprender?</ScrollLink>
+                  <Link to="#index" style={{ backgroundColor: colorSecondary }} className="btn-get-started scrollto">¿Que voy aprender?</Link>
               </div>
             </div>
             <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
-              <img src={`img/${title}.png`} className="img-fluid animated vh-60" alt="" />
+              <img src={`./img/${title}.png`} className="img-fluid animated vh-60" alt="" />
             </div>
           </div>
         </div>
