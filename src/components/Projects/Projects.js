@@ -139,38 +139,60 @@ const Projects = () => {
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter.webp"></img>
                                     <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter2.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: python index.py</p>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install pillow, esto instalará la libreria Pil.</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter3.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Dentro de la terminal escribe: python index.py</p>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> En caso que te indique para actualizar el instalador de paquetes pip, dentro de la terminal escribe: python.exe m pip install --upgrade pip</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter4.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py</p>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py, esto ejecutará el programa. Recuerda que debes crear una carpeta llamada "img" en tu directoria, allí vas a dejar todas las imágenes que quieras convertir</p>
                                     <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/img_converter5.webp"></img>
                                 </div>
                             </div>
                         </div>
                         <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                                <h2 className="text-light">Métodos</h2>
+                                <h2 className="text-light">Buscador de celulares - Mercadolibre (web scraping)</h2>
                             </button>
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <p className="text break mx-auto w-75 mt-4">
-                                        Los métodos son funciones asociadas a un objeto. Pueden acceder y manipular los atributos del objeto. Los métodos pueden ser definidos dentro de la clase y se invocan en los objetos utilizando la notación de punto. Por ejemplo:</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class8/methods.webp"></img>
-                                    <p className="text break mx-auto w-75">En este ejemplo, la clase Rectangulo tiene un método area() que calcula el área del rectángulo basado en los atributos ancho y altura. El método se invoca en el objeto mi_rectangulo.</p>
-                                    <p className="text break mx-auto w-75" style={{ marginBottom: "7rem" }}>La programación orientada a objetos en Python ofrece una forma estructurada y modular de diseñar y desarrollar programas. Permite la reutilización de código, la abstracción de conceptos y la organización de la lógica en entidades coherentes. Esta es solo una introducción básica, pero la POO en Python tiene muchas más características y conceptos avanzados que puedes explorar para construir aplicaciones más complejas y eficientes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                                <h2 className="text-light">Buscador de celulares - Mercadolibre (web scraping)</h2>
-                            </button>
-                            <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <p className="text break mx-auto w-75 mt-4">La herencia en Python es un concepto importante de la programación orientada a objetos (POO) que permite que una clase adquiera propiedades (atributos y métodos) de otra clase. La clase que hereda se denomina "clase hija" o "subclase", y la clase de la cual hereda se llama "clase padre" o "superclase". Esto permite la reutilización de código y la organización jerárquica de las clases.
-                                        En Python, para definir una clase que herede de otra, se utiliza la siguiente sintaxis:</p>
-                                    <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class8/heredity.webp"></img>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
+                                    <p className="text break mx-auto mt-4 w-75">Este programa permite al usuario buscar productos en MercadoLibre ingresando el nombre del producto y seleccionando un criterio de filtrado de precios (de menor a mayor, de mayor a menor, o sin filtrar). Luego, muestra los resultados de la búsqueda ordenados según el criterio elegido.</p>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p><span className="fw-bold">Solicitud de entrada del usuario: </span> El usuario proporciona el nombre del producto que desea buscar y selecciona un criterio de filtrado de precios.</p></li>
+                                        <li><p><span className="fw-bold">Construcción de la URL de búsqueda:</span> Se construye la URL de búsqueda utilizando el nombre del producto y el criterio de filtrado seleccionado.</p></li>
+                                        <li><p><span className="fw-bold">Realización de la solicitud GET:</span> Se realiza una solicitud GET a la URL de búsqueda utilizando la biblioteca Requests.</p></li>
+                                        <li><p><span className="fw-bold">Análisis del contenido HTML:</span> Se analiza el contenido HTML de la página utilizando BeautifulSoup.</p></li>
+                                        <li><p><span className="fw-bold">Extracción de información:</span> Se extraen los nombres y precios de los productos de los elementos HTML analizados.</p></li>
+                                        <li><p><span className="fw-bold">Ordenamiento de los resultados:</span> Los resultados se ordenan según el criterio seleccionado por el usuario.</p></li>
+                                        <li><p><span className="fw-bold">Impresión de los resultados:</span> Se imprimen los nombres, precios y enlaces de los productos encontrados.</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Librerias</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p><span className="fw-bold">Requests:</span> Para realizar solicitudes HTTP.</p></li>
+                                        <li><p><span className="fw-bold">BeautifulSoup:</span> Para analizar el contenido HTML de la página web y extraer información de ella.</p></li>
+                                    </ul>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá el archivo index.py desde este link -- <Link to="https://drive.google.com/drive/u/0/folders/1SHu1PgjdhmdTZUvsf2U0FF9yF9-yEZg6" target='_blank' className="text-primary">Web scraping</Link>.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping2.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install pillow, esto instalará la libreria Pil.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping3.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> En caso que te indique para actualizar el instalador de paquetes pip, dentro de la terminal escribe: python.exe m pip install --upgrade pip</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping4.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py, esto ejecutará el programa. Recuerda que debes crear una carpeta llamada "img" en tu directoria, allí vas a dejar todas las imágenes que quieras convertir</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping5.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install pillow, esto instalará la libreria Pil.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping6.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> En caso que te indique para actualizar el instalador de paquetes pip, dentro de la terminal escribe: python.exe m pip install --upgrade pip</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping7.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py, esto ejecutará el programa. Recuerda que debes crear una carpeta llamada "img" en tu directoria, allí vas a dejar todas las imágenes que quieras convertir</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping8.webp"></img>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Ejemplo de uso</h3>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p>Escribe el nombre del producto que quieras buscar.</p></li>
+                                        <li><p>Escribe un número de las opciones para ordenar los precios del producto.</p></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
