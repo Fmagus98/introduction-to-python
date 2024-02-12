@@ -21,6 +21,7 @@ const MicropythonClass6 = lazy(() => import('./components/MicropythonClass/Micro
 const MicropythonClass7 = lazy(() => import('./components/MicropythonClass/MicropythonClass7'));
 const MicropythonClass8 = lazy(() => import('./components/MicropythonClass/MicropythonClass8'));
 const Exercises = lazy(() => import('./components/Exercises/Exercises'));
+const Algorithms = lazy(() => import('./components/Algorithms/Algorithms'))
 const Projects = lazy(() => import('./components/Projects/Projects'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
 const Github = lazy(() => import('./components/Github/Github'));
@@ -55,7 +56,8 @@ function App() {
         <Route path="/micropython/classes/mqV4nby5dHGGxzcEHVXq" element={<MicropythonClass7 />} />
         <Route path="/micropython/classes/xAZ9Kuxrx9Ve1Kaz7kTN" element={<MicropythonClass8 />} />
         <Route path="/micropython/exercises" element={<Exercises/>} />
-        <Route path="/exercises" element={<Exercises />} />
+        <Route path="/exercises" element={<Exercises/>} />
+        <Route path="/algorithms" element={<Algorithms/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/micropython/projects" element={<Projects/>} />
         <Route path="/contact" element={<Contact/>} />

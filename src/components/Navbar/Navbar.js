@@ -63,18 +63,22 @@ const Navbar = () => {
                   </ul>
                 </li>
                 )) : null}
-              {location.pathname.includes("micropython") ? null : <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/projects" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Proyectos</Link></li>}
-              <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython/contact" : "/contact"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Contacto</Link></li>
+              <li className="nav-item dropdown">
+                  <Link className="dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">+ Contenido</Link>
+                  <ul className={backgroundColor ? "dropdown-menu" : "dropdown-menu bg-transparent"} style={{ "background": backgroundColor }} aria-labelledby="navbarDropdown">
+                    <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/algorithms" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Algoritmos</Link></li>
+                    <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/professionalCarrer" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Salud y productividad</Link></li>
+                    <li><hr className="dropdown-divider text-light"></hr></li>
+                    {location.pathname.includes("micropython") ? null : <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/projects" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Proyectos</Link></li>}
+                  </ul>
+                </li>
+                <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython/contact" : "/contact"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Contacto</Link></li>
             </ul>
             <i className={`mobile-nav-toggle bi ${isMobileNavOpen ? 'bi-x' : 'bi-list'}`}
               onClick={handleMobileNavToggle}></i>
           </nav>
         </div >
       </header >
-
-
-
-
     </>
   )
 }
