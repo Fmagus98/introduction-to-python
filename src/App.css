@@ -31,8 +31,13 @@ h1 {
 }
 
 /* Estilos para la consola */
+.console{
+  width:75%;
+  max-height:50vh;
+}
 .console::-webkit-scrollbar {
   height: 8px;
+  width: 8px;
   background-color: #888;
 }
 
@@ -125,10 +130,6 @@ h1 {
 .item {
   width: 60vw;
   margin-left: 20vw;
-}
-
-.console {
-  border: 1px solid white;
 }
 
 .border-content {
@@ -509,6 +510,10 @@ h6 {
 
 @media (max-width: 991px) {
 
+  .console{
+    font-size:0.71rem!important;
+  }
+
   .mobile-nav-toggle {
     display: block;
   }
@@ -706,7 +711,8 @@ h6 {
 @media (max-width: 575px) {
   p.w-75,
   h3.w-75,
-  img.w-75,pre.w-75, h6.w-75 div.justify-content-between {
+  img.w-75,pre.w-75, h6.w-75,.console, div .justify-content-between
+    {
     width: 100% !important;
   }
   .w-50 {
@@ -1332,9 +1338,6 @@ section {
 }
 
 @media (max-width: 575px) {
-  div .justify-content-between{
-    width: 100%!important;
-  }
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }

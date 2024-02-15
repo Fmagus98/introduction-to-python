@@ -3,18 +3,18 @@ import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { algorithmsSearch } from './algorithmsCode';
+import { SearchAlgorithms,sortingAlgorithms } from './algorithmsCode';
 
 const Algorithms = () => {
     const elementVisibility = useScrollAnimation();
     const algorithmsCode = (algorithm) => {
         return algorithm.map(p =>
             <div key={p.id} style={{ marginTop: "3rem" }}>
-                <p className="text-break mx-auto w-75"><span className="fw-bold">{p.name}</span><br></br>{p.description}</p>
-                <div className="mx-auto w-75 d-flex p-2 flex-row-reverse justify-content-between">
+                <p className="w-75 mx-auto text-break"><span className="fw-bold">{p.name}</span><br></br>{p.description}</p>
+                <div className="w-75 mx-auto d-flex p-2 flex-row-reverse justify-content-between">
                     <span><button className="btn btn-sm text-light" style={{ backgroundColor: "#234A91" }} onClick={() => navigator.clipboard.writeText(p.code)}><i className="bi bi-clipboard" /> Copiar</button></span>
                 </div>
-                <SyntaxHighlighter className="mx-auto w-75 border-content console" language="python" style={nightOwl}>
+                <SyntaxHighlighter className="mx-auto border-content console" language="python" style={nightOwl}>
                     {p.code}
                 </SyntaxHighlighter>
                 <h6 className="w-75 mt-4 text-break mx-auto">Descripción paso a paso del código</h6>
@@ -23,13 +23,15 @@ const Algorithms = () => {
                         <li key={index}>
                             <>
                                 {item.split('\n').map((line, index) => (
-                                    <p key={index} className="mt-4 mb-4 text-break mx-auto w-75">{line}</p>
+                                    <p key={index} className="w-75 mx-auto mt-4 mb-4 text-break">{line}</p>
                                 ))}
                             </>
                         </li>
                     ))}
                 </ul>
-            </div>)
+                <hr></hr>
+            </div>
+            )
     }
 
     return (
@@ -107,7 +109,7 @@ const Algorithms = () => {
                                         <p className="text-break mx-auto w-75">Los algoritmos de búsqueda son conjuntos de reglas y procedimientos diseñados para encontrar uno o más elementos específicos dentro de un conjunto de datos. Estos algoritmos son esenciales en informática y se utilizan en una variedad de aplicaciones, desde la búsqueda de un elemento en una lista hasta la exploración de un espacio de soluciones en problemas de inteligencia artificial.</p>
                                         <p className="text-break mx-auto w-75">Los algoritmos de búsqueda pueden variar en complejidad y eficiencia, y su elección depende del tamaño de los datos, la estructura de los datos y la velocidad requerida para encontrar el elemento deseado.</p>
                                         <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Lista de algoritmos de búsqueda</h3>
-                                        {algorithmsCode(algorithmsSearch)}
+                                        {algorithmsCode( SearchAlgorithms )}
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +120,11 @@ const Algorithms = () => {
                                 <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                     <div className="accordion-body text-light bg-dark  ">
                                         <div id="content">
-
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Descripción</h3>
+                                            <p className="text-break mx-auto w-75">Los algoritmos de ordenamiento son algoritmos diseñados para organizar los elementos de una lista en un orden específico, generalmente ascendente o descendente, según un criterio definido.</p>
+                                            <p className="text-break mx-auto w-75">La tarea principal de estos algoritmos es reorganizar los elementos de una lista de manera que estén dispuestos de acuerdo con un criterio de ordenamiento predefinido, lo que facilita su búsqueda, acceso y manipulación.</p>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Lista de algoritmos de ordenamiento</h3>
+                                            {algorithmsCode( sortingAlgorithms )}
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +195,7 @@ const Algorithms = () => {
                                 </button>
                                 <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                     <div className="accordion-body text-light bg-dark  ">
-                                    
+
                                     </div>
                                 </div>
                             </div>
