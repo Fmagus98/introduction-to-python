@@ -3,7 +3,7 @@ import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { SearchAlgorithms,sortingAlgorithms } from './algorithmsCode';
+import { searchAlgorithms,sortingAlgorithms,graphAlgorithms } from './algorithmsCode';
 
 const Algorithms = () => {
     const elementVisibility = useScrollAnimation();
@@ -109,7 +109,7 @@ const Algorithms = () => {
                                         <p className="text-break mx-auto w-75">Los algoritmos de búsqueda son conjuntos de reglas y procedimientos diseñados para encontrar uno o más elementos específicos dentro de un conjunto de datos. Estos algoritmos son esenciales en informática y se utilizan en una variedad de aplicaciones, desde la búsqueda de un elemento en una lista hasta la exploración de un espacio de soluciones en problemas de inteligencia artificial.</p>
                                         <p className="text-break mx-auto w-75">Los algoritmos de búsqueda pueden variar en complejidad y eficiencia, y su elección depende del tamaño de los datos, la estructura de los datos y la velocidad requerida para encontrar el elemento deseado.</p>
                                         <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Lista de algoritmos de búsqueda</h3>
-                                        {algorithmsCode( SearchAlgorithms )}
+                                        {algorithmsCode( searchAlgorithms )}
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +135,11 @@ const Algorithms = () => {
                                 </button>
                                 <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                     <div className="accordion-body text-light bg-dark  ">
-
+                                    <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Descripción</h3>
+                                        <p className="text-break mx-auto w-75">Un grafo es una colección de nodos (también llamados vértices) conectados entre sí mediante enlaces (también llamados aristas). Los algoritmos de grafos son ampliamente utilizados en diversas áreas, como redes de computadoras, sistemas de transporte, redes sociales, modelado de relaciones, entre otros.</p>
+                                        <p className="text-break mx-auto w-75">Estos algoritmos pueden abordar una variedad de problemas, como encontrar rutas más cortas, determinar la conectividad entre nodos, identificar ciclos, realizar búsquedas en profundidad o amplitud, y mucho más.</p>
+                                        <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Lista de algoritmos de grafos</h3>
+                                        {algorithmsCode( graphAlgorithms )}
                                     </div>
                                 </div>
                             </div>

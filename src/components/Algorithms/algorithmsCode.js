@@ -366,90 +366,229 @@ export const sortingAlgorithms = [
     },
     {
         "id": "7",
-        "name": "Ordenamiento por Inserción (Insertion Sort)",
-        "description": "El algoritmo de inserción es eficiente para listas pequeñas o casi ordenadas. Sin embargo, su rendimiento puede disminuir significativamente para listas grandes o completamente desordenadas, ya que tiene una complejidad temporal de O(n^2) en el peor de los casos.",
+        "name": "Ordenamiento por conteo (Counting sort)",
+        "description": "Este algoritmo cuenta el número de elementos distintos en la lista y los organiza en función de su frecuencia de aparición.",
         "steps": [
-            "1_ Itera sobre todos los elementos de la lista, comenzando desde el segundo elemento (índice 1).",
-            "2_ En cada iteración, guarda el valor del elemento actual en la variable key para su inserción posterior",
-            "3_ Inicializa el índice j como el índice del elemento anterior al valor actual.",
-            "4_ Dentro de un bucle while, mueve los elementos mayores que key una posición hacia adelante para hacer espacio para la inserción del valor key.",
-            "5_ Inserta el valor key en la posición adecuada en la lista ordenada.",
-            "6_ Repite este proceso hasta que todos los elementos estén en su posición correcta.",
+            "1_ Encontrar el rango de valores en el array: El algoritmo comienza encontrando el valor máximo y mínimo en el array para determinar el rango de elementos presentes.",
+            "2_ Inicializar un array de conteo: Se crea un array de conteo con ceros, donde cada índice representa un valor en el rango de elementos.",
+            "3_ Contabilizar la frecuencia de cada elemento: Se recorre el array de entrada y se incrementa el conteo de cada elemento en el array de conteo.",
+            "4_ Reconstruir el array ordenado: Se itera sobre el array de conteo y se reconstruye el array original en orden ascendente utilizando la información del array de conteo. Se actualiza el índice de forma adecuada para manejar elementos con frecuencia mayor que uno.",
         ],
         "code": `
-def insertion_sort(arr):
-    # Itera sobre todos los elementos de la lista
-    for i in range(1, len(arr)):
-        key = arr[i]  # Guarda el valor actual para inserción
-        j = i - 1  # Inicializa el índice del elemento anterior al valor actual
-
-        # Mueve los elementos de arr[0..i-1] que son mayores que key
-        # a una posición adelante de su posición actual
-        while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key  # Inserta el valor guardado en la posición adecuada
-
-# Ejemplo de uso
-arr = [12, 11, 13, 5, 6]
-print("Lista original:", arr)
-insertion_sort(arr)
-print("Lista ordenada:", arr)
+    def counting_sort(arr):
+        # Encuentra el rango de valores en el array
+        max_value = max(arr)
+        min_value = min(arr)
+        range_of_elements = max_value - min_value + 1
     
+        # Inicializa un array de conteo con ceros
+        count = [0] * range_of_elements
+    
+        # Contabiliza la frecuencia de cada elemento
+        for num in arr:
+            count[num - min_value] += 1
+    
+        # Reconstruye el array ordenado
+        index = 0
+        for i in range(range_of_elements):
+            for j in range(count[i]):
+                arr[index] = i + min_value
+                index += 1
+    
+    # Ejemplo de uso
+    arr = [4, 2, 2, 8, 3, 3, 1]
+    print("Lista original:", arr)
+    counting_sort(arr)
+    print("Lista ordenada:", arr)
+    
+
 `
     },
     {
         "id": "8",
-        "name": "Ordenamiento por fusión (Merge sort)",
-        "description": "El algoritmo de fusión es eficiente porque divide la lista en mitades logarítmicas y luego fusiona las sublistas en tiempo lineal. Su complejidad temporal es O(n log n) en el peor y en el mejor de los casos, lo que lo hace adecuado para ordenar grandes conjuntos de datos. Además, es estable, lo que significa que conserva el orden relativo de elementos con claves iguales.",
+        "name": "Radix (Radix sort)",
+        "description": "Este algoritmo organiza los elementos de la lista en base al valor de sus dígitos individuales, comenzando por el dígito menos significativo y avanzando hasta el más significativo.",
         "steps": [
-            "1_ División de la lista: La función divide la lista de entrada en dos mitades aproximadamente iguales, encontrando el punto medio 'mid'. Esto se hace utilizando el operador de división entera '//'.",
-            "2_ Ordenamiento recursivo: Llama recursivamente a merge_sort en las dos mitades de la lista, L y R, para ordenarlas.",
-            "3_ Fusión de sublistas: Después de que las dos mitades estén ordenadas, fusiona las sublistas ordenadas 'L' y 'R' en una sola lista ordenada 'arr'. Utiliza tres índices 'i', 'j' y 'k' para rastrear los elementos de las sublistas.",
-            "4_ Comparación y fusión: Itera sobre las sublistas 'L' y 'R' simultáneamente. En cada paso, compara los elementos actuales de 'L' y 'R', y coloca el elemento más pequeño en la posición 'k' de 'arr'. Incrementa los índices 'i', 'j' o 'k' según corresponda.",
-            "5_ Manejo de elementos sobrantes: Después de que una de las sublistas se haya agotado, copia los elementos restantes de la otra sublista a 'arr'.",
-            "6_ Ejemplo de uso: Se proporciona un ejemplo de uso al final del código, donde se crea una lista desordenada 'arr', se aplica 'merge_sort' para ordenarla y luego se imprime la lista ordenada."
+            "1_ Encontrar el número máximo: Se encuentra el número máximo en la lista para determinar el número de dígitos.",
+            "2_ Aplicar counting sort: Se aplica counting_sort para cada dígito, comenzando por el dígito menos significativo (exp = 1), hasta que se haya procesado el dígito más significativo de todos los números.",
+            "3_ Inicialización: Se inicializan listas para almacenar la salida (output) y el conteo de cada dígito (count).",
+            "4_ Conteo de frecuencia: Se itera sobre los elementos de arr y se cuenta la frecuencia de cada dígito en el rango dado.",
+            "5_ Modificación del conteo: Se modifica el conteo para tener la posición real de cada dígito en la salida.",
+            "6_ Construcción de la lista de salida: Se construye la lista de salida utilizando los conteos acumulados.",
+            "7_ Copia de la lista de salida: Se copia la lista de salida a la lista original arr."
         ],
         "code": `
-def merge_sort(arr):
-    if len(arr) > 1:
-        mid = len(arr) // 2  # Encuentra el punto medio de la lista
-        L = arr[:mid]        # Divide la lista en dos mitades
-        R = arr[mid:]
+    def counting_sort(arr, exp):
+        n = len(arr)
+        output = [0] * n
+        count = [0] * 10
 
-        merge_sort(L)        # Ordena la primera mitad de la lista
-        merge_sort(R)        # Ordena la segunda mitad de la lista
+        # Contar la frecuencia de los dígitos en el rango dado
+        for i in range(n):
+            index = arr[i] // exp
+            count[index % 10] += 1
 
-        i = j = k = 0
+        # Modificar el conteo para tener la posición real de este dígito en la salida
+        for i in range(1, 10):
+            count[i] += count[i - 1]
 
-        # Fusiona las dos sublistas en una lista ordenada
-        while i < len(L) and j < len(R):
-            if L[i] < R[j]:
-                arr[k] = L[i]
-                i += 1
-            else:
-                arr[k] = R[j]
-                j += 1
-            k += 1
+        # Construir la lista de salida
+        i = n - 1
+        while i >= 0:
+            index = arr[i] // exp
+            output[count[index % 10] - 1] = arr[i]
+            count[index % 10] -= 1
+            i -= 1
 
-        # Asegúrate de que no queden elementos sin fusionar en L
-        while i < len(L):
-            arr[k] = L[i]
-            i += 1
-            k += 1
+        # Copiar la lista de salida a la lista original
+        for i in range(n):
+            arr[i] = output[i]
 
-        # Asegúrate de que no queden elementos sin fusionar en R
-        while j < len(R):
-            arr[k] = R[j]
-            j += 1
-            k += 1
 
-# Ejemplo de uso
-arr = [12, 11, 13, 5, 6, 7]
-print("Lista original:", arr)
-merge_sort(arr)
-print("Lista ordenada:", arr)
+    def radix_sort(arr):
+        # Encontrar el número máximo para determinar el número de dígitos
+        max_value = max(arr)
+    
+        # Aplicar counting sort para cada dígito, comenzando por el dígito menos significativo
+        exp = 1
+        while max_value // exp > 0:
+            counting_sort(arr, exp)
+            exp *= 10
+
+
+    # Ejemplo de uso
+    arr = [170, 45, 75, 90, 802, 24, 2, 66]
+    print("Lista original:", arr)
+    radix_sort(arr)
+    print("Lista ordenada:", arr)
+
+
+`
+    },
+    {
+        "id": "8",
+        "name": "Radix (Radix sort)",
+        "description": "Este algoritmo organiza los elementos de la lista en base al valor de sus dígitos individuales, comenzando por el dígito menos significativo y avanzando hasta el más significativo.",
+        "steps": [
+            "1_ Encontrar el número máximo: Se encuentra el número máximo en la lista para determinar el número de dígitos.",
+            "2_ Aplicar counting sort: Se aplica counting_sort para cada dígito, comenzando por el dígito menos significativo (exp = 1), hasta que se haya procesado el dígito más significativo de todos los números.",
+            "3_ Inicialización: Se inicializan listas para almacenar la salida (output) y el conteo de cada dígito (count).",
+            "4_ Conteo de frecuencia: Se itera sobre los elementos de arr y se cuenta la frecuencia de cada dígito en el rango dado.",
+            "5_ Modificación del conteo: Se modifica el conteo para tener la posición real de cada dígito en la salida.",
+            "6_ Construcción de la lista de salida: Se construye la lista de salida utilizando los conteos acumulados.",
+            "7_ Copia de la lista de salida: Se copia la lista de salida a la lista original arr."
+        ],
+        "code": `
+    def counting_sort(arr, exp):
+        n = len(arr)
+        output = [0] * n
+        count = [0] * 10
+
+        # Contar la frecuencia de los dígitos en el rango dado
+        for i in range(n):
+            index = arr[i] // exp
+            count[index % 10] += 1
+
+        # Modificar el conteo para tener la posición real de este dígito en la salida
+        for i in range(1, 10):
+            count[i] += count[i - 1]
+
+        # Construir la lista de salida
+        i = n - 1
+        while i >= 0:
+            index = arr[i] // exp
+            output[count[index % 10] - 1] = arr[i]
+            count[index % 10] -= 1
+            i -= 1
+
+        # Copiar la lista de salida a la lista original
+        for i in range(n):
+            arr[i] = output[i]
+
+
+    def radix_sort(arr):
+        # Encontrar el número máximo para determinar el número de dígitos
+        max_value = max(arr)
+    
+        # Aplicar counting sort para cada dígito, comenzando por el dígito menos significativo
+        exp = 1
+        while max_value // exp > 0:
+            counting_sort(arr, exp)
+            exp *= 10
+
+
+    # Ejemplo de uso
+    arr = [170, 45, 75, 90, 802, 24, 2, 66]
+    print("Lista original:", arr)
+    radix_sort(arr)
+    print("Lista ordenada:", arr)
+
 
 `
     }
+]
+
+export const graphAlgorithms = [
+    {
+        "id": "1",
+        "name": "Búsqueda en profundidad (Depth-First Search, DFS)",
+        "description": "Este algoritmo organiza los elementos de la lista en base al valor de sus dígitos individuales, comenzando por el dígito menos significativo y avanzando hasta el más significativo.",
+        "steps": [
+            "1_ Encontrar el número máximo: Se encuentra el número máximo en la lista para determinar el número de dígitos.",
+            "2_ Aplicar counting sort: Se aplica counting_sort para cada dígito, comenzando por el dígito menos significativo (exp = 1), hasta que se haya procesado el dígito más significativo de todos los números.",
+            "3_ Inicialización: Se inicializan listas para almacenar la salida (output) y el conteo de cada dígito (count).",
+            "4_ Conteo de frecuencia: Se itera sobre los elementos de arr y se cuenta la frecuencia de cada dígito en el rango dado.",
+            "5_ Modificación del conteo: Se modifica el conteo para tener la posición real de cada dígito en la salida.",
+            "6_ Construcción de la lista de salida: Se construye la lista de salida utilizando los conteos acumulados.",
+            "7_ Copia de la lista de salida: Se copia la lista de salida a la lista original arr."
+        ],
+        "code": `
+    def counting_sort(arr, exp):
+        n = len(arr)
+        output = [0] * n
+        count = [0] * 10
+
+        # Contar la frecuencia de los dígitos en el rango dado
+        for i in range(n):
+            index = arr[i] // exp
+            count[index % 10] += 1
+
+        # Modificar el conteo para tener la posición real de este dígito en la salida
+        for i in range(1, 10):
+            count[i] += count[i - 1]
+
+        # Construir la lista de salida
+        i = n - 1
+        while i >= 0:
+            index = arr[i] // exp
+            output[count[index % 10] - 1] = arr[i]
+            count[index % 10] -= 1
+            i -= 1
+
+        # Copiar la lista de salida a la lista original
+        for i in range(n):
+            arr[i] = output[i]
+
+
+    def radix_sort(arr):
+        # Encontrar el número máximo para determinar el número de dígitos
+        max_value = max(arr)
+    
+        # Aplicar counting sort para cada dígito, comenzando por el dígito menos significativo
+        exp = 1
+        while max_value // exp > 0:
+            counting_sort(arr, exp)
+            exp *= 10
+
+
+    # Ejemplo de uso
+    arr = [170, 45, 75, 90, 802, 24, 2, 66]
+    print("Lista original:", arr)
+    radix_sort(arr)
+    print("Lista ordenada:", arr)
+
+
+`
+    }
+
 ]
