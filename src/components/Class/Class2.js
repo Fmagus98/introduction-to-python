@@ -4,6 +4,7 @@ import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
+import { classCode2 } from './classCode';
 
 const Class2 = () => {
 
@@ -20,6 +21,14 @@ const Class2 = () => {
       })
     })
   }, [])
+
+  const copyButton = (code) => {
+    return (
+      <div className="w-75 mx-auto d-flex p-2 flex-row-reverse justify-content-between">
+        <span><button className="btn btn-sm text-light" style={{ backgroundColor: "#234A91" }} onClick={() => navigator.clipboard.writeText(code)}><i className="bi bi-clipboard" /> Copiar</button></span>
+      </div>
+    )
+  }
 
   return (
     <>
@@ -131,12 +140,14 @@ const Class2 = () => {
                       <p className="text-break mx-auto w-75">Este es el primer tipo de dato que vamos a ver y se asemeja al lenguaje máquina, ya que su comportamiento es de forma binaria
                         como la máquina (0,1) pero tiene la particularidad de que no vamos a escribir 0 y 1,  sino que utilizaremos la palabra False para representar el 0 y True para representar el 1.
                       </p>
+                      {copyButton(classCode2[0]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/boolean.webp"></img>
                       <h3 className="text-break mx-auto w-75" >Integer/float</h3>
                       <p className="text-break mx-auto w-75">Cuando queramos representar números vamos a usar el tipo dato "int" o el tipo de dato "float".
                         El tipo de dato Int representará todos los números enteros, estos pueden ser tanto positivos como negativos;
                         El tipo de dato Float representará todos los números fraccionarios, estos pueden ser positivos, negativos y mostrados como decimales también.
                       </p>
+                      {copyButton(classCode2[1]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/int.webp"></img>
                       <h3 className="text-break mx-auto w-75">String</h3>
                       <p className="text-break mx-auto w-75">String: Este tipo de datos representa letras o texto, hay que tener en cuenta que podemos tipear

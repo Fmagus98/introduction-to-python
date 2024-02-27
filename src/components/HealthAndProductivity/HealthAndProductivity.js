@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { colorPrimaryPython, colorSecondaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
@@ -169,126 +169,119 @@ const HealthAndProductivity = () => {
                         </div>
                         <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                                <h2 className="text-light">Buscador de celulares - Mercadolibre (web scraping)</h2>
+                                <h2 className="text-light">El mobiliario</h2>
                             </button>
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
-                                    <p className="text break mx-auto mt-4 w-75">Este programa permite al usuario buscar productos en MercadoLibre ingresando el nombre del producto y seleccionando un criterio de filtrado de precios (de menor a mayor, de mayor a menor, o sin filtrar). Luego, muestra los resultados de la búsqueda ordenados según el criterio elegido.</p>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
+                                    <p className="text break mx-auto mt-4 w-75">De nada sirve contar con un equipo ergonómicamente preparado, si luego trabajamos sobre una mesa en la que no nos caben las piernas, o nos sentamos en una silla sin respaldo. Las malas posturas representan, en general, el 75% de las lesiones: dolores de espalda, molestias cervicales, lumbalgias… El mobiliario del puesto de trabajo es, pues, fundamental para no dañar nuestra salud.</p>
+                                    <h3 className="text-break mx-auto w-75 mt-4">La mesa</h3>
                                     <ul className="w-75 mx-auto">
-                                        <li><p><span className="fw-bold">Solicitud de entrada del usuario: </span> El usuario proporciona el nombre del producto que desea buscar y selecciona un criterio de filtrado de precios.</p></li>
-                                        <li><p><span className="fw-bold">Construcción de la URL de búsqueda:</span> Se construye la URL de búsqueda utilizando el nombre del producto y el criterio de filtrado seleccionado.</p></li>
-                                        <li><p><span className="fw-bold">Realización de la solicitud GET:</span> Se realiza una solicitud GET a la URL de búsqueda utilizando la biblioteca Requests.</p></li>
-                                        <li><p><span className="fw-bold">Análisis del contenido HTML:</span> Se analiza el contenido HTML de la página utilizando BeautifulSoup.</p></li>
-                                        <li><p><span className="fw-bold">Extracción de información:</span> Se extraen los nombres y precios de los productos de los elementos HTML analizados.</p></li>
-                                        <li><p><span className="fw-bold">Ordenamiento de los resultados:</span> Los resultados se ordenan según el criterio seleccionado por el usuario.</p></li>
-                                        <li><p><span className="fw-bold">Impresión de los resultados:</span> Se imprimen los nombres, precios y enlaces de los productos encontrados.</p></li>
+                                        <li><p>Superficie de color claro y mate.</p></li>
+                                        <li><p>Estable. Que soporte el peso del equipo y de cualquier persona que se apoye sobre alguno de sus bordes.</p></li>
+                                        <li><p>De dimensiones suficientes como para permitir una colocación flexible de todo el material de trabajo. Se recomiendan unas medidas mínimas de 120 x 90 centímetros.</p></li>
+                                        <li><p>Altura regulable. Esta condición no es imprescindible. En su defecto,la silla sí debe tenerla, o se debe usar un reposapies para aquellos que lo precisen. Si es regulable, la altura debe poder oscilar entre los 65 y 75 centímetros. Si no lo es, 75 centímetros es una buena medida.</p></li>
+                                        <li><p>Espacio interior suficiente. Para evitar que las rodillas choquen o que no se puedan estirar un poco las piernas. 60 centímetros de ancho y 65-70 centímetros de profundidad son las medidas más aconsejables.</p></li>
                                     </ul>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Librerias</h3>
+                                    <h3 className="text-break mx-auto w-75 mt-4">La Silla</h3>
                                     <ul className="w-75 mx-auto">
-                                        <li><p><span className="fw-bold">Requests:</span> Para realizar solicitudes HTTP.</p></li>
-                                        <li><p><span className="fw-bold">BeautifulSoup:</span> Para analizar el contenido HTML de la página web y extraer información de ella.</p></li>
+                                        <li><p>Estable. Frente a las cuatro patas convencionales, son mejores las sillas con cinco apoyos y de ruedas antideslizantes, que eviten desplazamientos involuntarios. Éstas permiten mayor libertad de movimiento, evitando, a la vez, algunas posturas forzadas.</p></li>
+                                        <li><p>Graduable en cuanto a altura. Los pies han de apoyarse en el suelo. En caso de personas bajas o niños es aconsejable utilizar un reposapies que, además, evita la comprensión de la circulación en los muslos.</p></li>
+                                        <li><p>Respaldo regulable en altura, profundidad e inclinación. Con la forma de una S suave, cóncavo a nivel torácico y convexo a nivel lumbar, para que se adapte a la estructura de la espalda.</p></li>
+                                        <li><p>Los reposabrazos no son imprescindibles. De tenerlos, su altura no debe obstaculizar la movilidad.</p></li>
+                                        <li><p>La base del asiento ha de ser flexible pero firme. Con una distancia suficiente entre el borde del asiento y la cara posterior de la rodilla, para facilitar la circulación sanguínea.</p></li>
+                                        <li><p>Los controles de ajuste deben ser accesibles desde la posición habitual de trabajo, sin que requieran demasiado esfuerzo para accionarlos.</p></li>
+                                        <li><p>Es preferible una tapicería rugosa, que contribuya a mantener la postura escogida. Mejor si es transpirable.</p></li>
                                     </ul>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá el archivo index.py desde este link -- <Link to="https://drive.google.com/drive/u/0/folders/1SHu1PgjdhmdTZUvsf2U0FF9yF9-yEZg6" target='_blank' className="text-primary">Web scraping</Link>.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping2.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install request, esto instalará la libreria request.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping3.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Luego de instalar request, escribe en la terminal: pip install beautifulsoup, esto instalará la libreria beautifulsoup</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping4.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python index.py, esto ejecutará el programa.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/web_scraping5.webp"></img>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Ejemplo de uso</h3>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Iluminación, ruido y temperatura</h3>
                                     <ul className="w-75 mx-auto">
-                                        <li><p>Escribe el nombre del producto que quieras buscar.</p></li>
-                                        <li><p>Escribe un número de las opciones para ordenar los precios del producto.</p></li>
+                                        <li><p>Una iluminación correcta aumenta la eficacia y la comodidad de su trabajo. En el apartado del monitor ya hemos hablado de la disposición de la computadora respecto a las fuentes de luz natural.</p></li>
+                                        <li><p>Es preferible una iluminación tenue, que no provoque deslumbramientos o reflejos.</p></li>
+                                        <li><p>Para los documentos, es recomendable utilizar un flexo destinado especialmente para ellos, manteniendo un nivel adecuado de iluminación general.</p></li>
+                                        <li><p>Son preferibles las bombillas incandescentes normales a los tubos fluorescentes. Estos, por muy buenos que sean, suelen emitir cierto centelleo apenas perceptible, pero que provoca molestias.</p></li>
+                                        <li><p>Combine la iluminación general e iluminación específica para la tarea, evitando luces intensas en su campo de visión.</p></li>
                                     </ul>
+                                    <p className="text break mx-auto mt-4 w-75">El ruido es un contaminante ambiental que puede producir ansiedad, irritación… La maquinaria informática (impresoras, fax…) emite además sonidos agudos especialmente perturbadores.</p>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p>Alejar lo máximo posible los focos de ruido.</p></li>
+                                        <li><p>Usar encerramientos acústicos para las impresoras.</p></li>
+                                    </ul>
+                                    <p className="text break mx-auto mt-4 w-75">Un excesivo calor o frío produce incomodidad, pero también somnolencia o ansiedad e inquietud. La humedad relativa del aire puede provocar sequedad de las mucosas respiratorias y molestias.</p>
+                                    <ul className="w-75 mx-auto">
+                                        <li><p>Una temperatura ambiental entre 19º y 24ºC.</p></li>
+                                        <li><p>Una humedad relativa entre el 40% y 70%.</p></li>
+                                    </ul>
+                                    <img className="w-50 d-block mx-auto mb-4 border-content bg-light" alt="" src="../img/healthAndProductivity/postura2.webp"></img>
                                 </div>
                             </div>
                         </div>
                         <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                                <h2 className="text-light">Detección de dedos</h2>
+                                <h2 className="text-light">Postura corporal</h2>
                             </button>
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
-                                    <p className="text break mx-auto mt-4 w-75">Este programa reconoce y cuenta los dedos de una mano en tiempo real, se utilza la libreria mediapipe y openCv.</p>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
+                                    <p className="text break mx-auto mt-4 w-75">El diseño del puesto de trabajo debe permitir que se pueda adoptar la siguiente postura, que ha de tenerse en cuenta como referencia. Cualquier otra que no suponga un sobre esfuerzo es también válida.</p>
                                     <ul className="w-75 mx-auto">
-                                        <li><p><span className="fw-bold">Cálculo de distancias de dedos: </span> la función palm_centroid calcula el centroide de la palma de la mano.</p></li>
-                                        <li><p><span className="fw-bold">Captura de video: </span> Se utiliza la función cv2.VideoCapture().</p></li>
-                                        <li><p><span className="fw-bold">Conteo de dedos: </span> Contar y visualizar los dedos levantados en el frame.</p></li>
-                                        <li><p><span className="fw-bold">Procesar cada fotograma del video: </span> Se procesa cada fotograma del video para detectar la posición de la mano y realizar acciones en función de los gestos detectados.</p></li>
-                                        <li><p><span className="fw-bold">Área de interacción: </span> Se dibuja un área de interacción en la pantalla del video.</p></li>
-                                        <li><p><span className="fw-bold">Realizar acciones del mouse: </span> Se mueve el cursor del mouse y se simulan clics y desplazamientos de la rueda del mouse utilizando PyAutoGUI.</p></li>
+                                        <li><p>Muslos horizontales y piernas verticales, formando un ángulo de 90º.</p></li>
+                                        <li><p>Entre el ángulo que forma la rodilla y el borde de la silla debe haber, más o menos, una cuarta.</p></li>
+                                        <li><p>Brazos verticales y antebrazos horizontales, formando un ángulo recto desde el codo.</p></li>
+                                        <li><p>Antebrazo y mano en línea recta, paralelos al suelo.</p></li>
+                                        <li><p>Los codos pueden tocar ligeramente el costado pero no los oprima contra su cuerpo.</p></li>
+                                        <li><p>La muñecas en una posición natural y sin doblarlas excesivamente.</p></li>
+                                        <li><p>Manos relajadas, sin extensión ni desviación lateral. Preocúpese especialmente de mantener los pulgares y los dedos en una postura relajada y natural.</p></li>
+                                        <li><p>Columna vertebral recta. Sin torsión del tronco. La zona lumbar debe quedar cómodamente apoyada.</p></li>
+                                        <li><p>Plantas de los pies apoyadas. Si la silla es demasiado alta para poder colocar los pies sobre el suelo, utilice un reposapiés.</p></li>
+                                        <li><p>Línea de visión paralela a la superficie de trabajo.</p></li>
+                                        <li><p>Ángulo de visión menor de 60º en el plano horizontal, y entre los cinco y los 35º en el vertical.</p></li>
+                                        <li><p>Cuerpo no aprisionado entre la silla y la mesa.</p></li>
+                                        <li><p>Adopte una postura relajada erguida. Evite inclinarse demasiado hacia adelante o hacia atrás.</p></li>
+                                        <li><p>Coloque los materiales que utiliza con frecuencia al alcance de la mano.</p></li>
                                     </ul>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Librerias</h3>
-                                    <ul className="w-75 mx-auto">
-                                        <li><p><span className="fw-bold">OpenCV (cv2):</span> Para la captura de video, procesamiento de imágenes y visualización.</p></li>
-                                        <li><p><span className="fw-bold">MediaPipe (mediapipe):</span> Para la detección de manos y el seguimiento de puntos de referencia en la mano.</p></li>
-                                        <li><p><span className="fw-bold">NumPy (np):</span> Para realizar operaciones numéricas, como cálculos de distancia.</p></li>
-                                        <li><p><span className="fw-bold">math:</span> Para realizar operaciones matemáticas, como el cálculo de ángulos.</p></li>
-                                    </ul>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá la carpeta "Detección de dedos" desde este link -- <Link to="https://drive.google.com/drive/u/0/folders/1_bCxbxQRA9Nq2q3u-LGSrdW2NOavmCOg" target='_blank' className="text-primary">Detección de dedos</Link>.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan2.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install virtualenv, esto instalará la libreria virtualenv, es la encargada de realizar el entorno virtual.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan3.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Luego de instalar el entorno virtual, escribe en la terminal: fingerScan\Scripts\activate, esto hará que el entorno virtual este activo.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan4.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python scan.py, esto ejecutará el programa. En caso de no ejecutarse, debes instalar la version de python 3.8.3.0 y realizar de nuevo de proceso.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/fingerscan5.webp"></img>
+                                    <img className="w-50 d-block mx-auto mb-4 border-content bg-light" alt="" src="../img/healthAndProductivity/postura3.webp"></img>
                                 </div>
                             </div>
                         </div>
                         <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
-                                <h2 className="text-light">Virtual mouse</h2>
+                                <h2 className="text-light">Cuidado de la vista</h2>
                             </button>
                             <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
-                                    <p className="text break mx-auto mt-4 w-75">Este programa utiliza la biblioteca OpenCV (cv2), MediaPipe (mediapipe), NumPy (np), PyAutoGUI (pyautogui) y time para detectar la posición de la mano y simular movimientos del mouse en función de los gestos de la mano detectados.</p>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
+                                    <p className="text break mx-auto mt-4 w-75">Existe cierta discrepancia entre los expertos sobre si los trastornos oculares derivados de trabajar con ordenadores son sólo transitorios o se pueden convertir en patológicos. Lo que sí está demostrado es que, al trabajar con pantallas de forma prolongada y habitual, algunas deficiencias oculares sin importancia como ser irritación o fatiga , se pueden convertir en lesiones más o menos graves.</p>
                                     <ul className="w-75 mx-auto">
-                                        <li><p><span className="fw-bold">Ejecución del entorno virtual: </span> Este entorno vitual contiene la versión de python 3.8 y las librerias necesarias para ejecutarlo(carpeta "virtualmouse").</p></li>
-                                        <li><p><span className="fw-bold">Detección de manos: </span> Se configura el modelo de detección de manos utilizando la clase Hands de MediaPipe.</p></li>
-                                        <li><p><span className="fw-bold">Capturar el video de la cámara: </span> Se captura el video de la cámara utilizando OpenCV.</p></li>
-                                        <li><p><span className="fw-bold">Procesar cada fotograma del video: </span> Se procesa cada fotograma del video para detectar la posición de la mano y realizar acciones en función de los gestos detectados.</p></li>
-                                        <li><p><span className="fw-bold">Área de interacción: </span> Se dibuja un área de interacción en la pantalla del video.</p></li>
-                                        <li><p><span className="fw-bold">Realizar acciones del mouse: </span> Se mueve el cursor del mouse y se simulan clics y desplazamientos de la rueda del mouse utilizando PyAutoGUI.</p></li>
+                                        <li><p>Por ello, la primera recomendación a la hora de trabajar con computadoras es someterse a una revisión oftalmológica. Algunas veces se llega a la consulta del especialista con un trastorno de visión que se atribuye al uso del ordenador, cuando lo que en realidad ocurre es que existía un problema de base sin tratar que se manifiesta tras muchas horas frente a la pantalla.</p></li>
+                                        <li><p>Si sufre algún problema en la visión, es mejor utilizar lentes especialmente destinados al uso de la computadora. Consulte al oftalmólogo. Las gafas de sol reducen la capacidad de lectura.</p></li>
+                                        <li><p>Efectúe pausas frecuentes y descanse la vista.</p></li>
+                                        <li><p>Mantenga limpios sus lentes, sus lentes de contacto y la pantalla.</p></li>
+                                        <li><p>Si utiliza un filtro de pantalla, límpielo siguiendo sus instrucciones.</p></li>
+                                        <li><p>Lleve a cabo revisiones periódicas de la vista por parte de un especialista.</p></li>
+                                        <li><p>Descansos de cinco minutos cada hora. Durante estas breves pausas hay que recrear la vista mirando escenas lejanas.</p></li>
+                                        <li><p>Ejercicios oculares. Se puede simplemente cerrar los ojos con la ayuda de las palmas de las manos, pero sin presionar. Otro muy efectivo es, sentarse correctamente y mirar al frente. Después, sin mover la cabeza, desviar la mirada todo lo posible hacia la izquierda y luego a la derecha.</p></li>
                                     </ul>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Librerias</h3>
+                                    <img className="w-50 d-block mx-auto mb-4 border-content bg-light" alt="" src="../img/healthAndProductivity/ojos.webp"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <h2 className="text-light">Hábitos de trabajo y ejercicios saludables</h2>
+                            </button>
+                            <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                    <p className="text break mx-auto mt-4 w-75">La colocación del mobiliario, los equipos de la oficina y la iluminación no son los únicos factores que determinan la forma de sentirse a lo largo de la jornada laboral. Sus hábitos de trabajo también son muy importantes.</p>
                                     <ul className="w-75 mx-auto">
-                                        <li><p><span className="fw-bold">OpenCV (cv2):</span> Para la captura de video, procesamiento de imágenes y visualización.</p></li>
-                                        <li><p><span className="fw-bold">MediaPipe (mediapipe):</span> Para la detección de manos y el seguimiento de puntos de referencia en la mano.</p></li>
-                                        <li><p><span className="fw-bold">NumPy (np):</span> Para realizar operaciones numéricas, como cálculos de distancia.</p></li>
-                                        <li><p><span className="fw-bold">PyAutoGUI (pyautogui):</span> Para controlar el cursor del mouse y simular acciones del mouse, como clics y desplazamientos de la rueda del mouse.</p></li>
-                                        <li><p><span className="fw-bold">Time:</span> Para realizar pausas o esperas en el script.</p></li>
+                                        <li><p>Trabaje en una postura relajada y natural. Evite las posturas forzadas que pueden producir cansancio muscular.</p></li>
+                                        <li><p>Examine sus hábitos de trabajo y los tipos de tarea que lleva a cabo. Interrumpa la rutina e intente variar las tareas a lo largo del día de forma que no trabaje en la misma posición ni realice las mismas actividades con sus manos durante varias horas.</p></li>
+                                        <li><p>Es mejor hacer pausas cortas y frecuentes que pocas y prolongadas.</p></li>
+                                        <li><p>En cualquier caso, no conviene pasar más de una hora sin moverse. Levántese y tómese algunos minutos para estirar los músculos.</p></li>
+                                        <li><p>Ciertos ejercicios que mejoran la circulación se pueden hacer mientras se trabaja. Con los pies juntos, levantar primero los talones y luego las puntas, o mover en círculos los hombros delante y atrás, son algunos de ellos..</p></li>
+                                        <li><p>Utilice la fuerza mínima necesaria para pulsar las teclas. Evite golpear las teclas ejerciendo una fuerza superior a la necesaria.</p></li>
+                                        <li><p>Tome el ratón con la mano relajada. No lo sujete con fuerza. Utilice todo el brazo para moverlo.</p></li>
                                     </ul>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá la carpeta "mouse" desde este link -- <Link to="https://drive.google.com/drive/u/0/folders/1q-lgvOBQV-xjJQ_tX2uzgnIP2BaJF1MB" target='_blank' className="text-primary">Virtual Mouse</Link>.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse2.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: pip install virtualenv, esto instalará la libreria virtualenv, es la encargada de realizar el entorno virtual.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse3.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Luego de instalar el entorno virtual, escribe en la terminal: virtualmouse\Scripts\activate, esto hará que el entorno virtual este activo.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse4.webp"></img>
-                                    <p className="text-break mx-auto w-75"><span className="fw-bold">5_ </span> Dentro de la terminal escribe: python mouse_control_game.py, esto ejecutará el programa. En caso de no ejecutarse, debes instalar la version de python 3.8.3.0 y realizar de nuevo de proceso.</p>
-                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/virtualmouse5.webp"></img>
-                                    <h3 className="text-break mx-auto w-75 mt-4">Instrucciones</h3>
-                                    <ul className="w-75 mx-auto">
-                                        <li><p>Si tu dedo pulgar lo acercas a la palma de la mano, la rueda del mouse se moverá.</p></li>
-                                        <li><p>Si tu dedo indice lo acercas a la palma de la mano, hará click izquierda del mouse.</p></li>
-                                        <li><p>Si tu dedo medio lo acercas a la palma de la mano, hará click derecho del mouse.</p></li>
-                                    </ul>
+                                    <img className="w-50 d-block mx-auto mb-4 border-content bg-light" alt="" src="../img/healthAndProductivity/flexion-silla.webp"></img>
+                                    <p className="text break mx-auto mt-4 w-75">La comodidad y la seguridad al trabajar en su computadora puede verse afectada por su estado general de salud. Las personas tienen distintos niveles de tolerancia física frente al trabajo intenso durante períodos prolongados. Supervise sus niveles personales de tolerancia y evite sobrepasarlos de forma regular.</p>
+                                    <p className="text break mx-auto mt-4 w-75">La salud general y la tolerancia frente a las condiciones del trabajo se pueden mejorar mediante una prevención adecuada, haciéndose chequeos periódicos de salud y practicando ejercicio regularmente.</p>
+                                    <img className="w-50 d-block mx-auto mb-4 border-content bg-light" alt="" src="../img/healthAndProductivity/flexion-silla2.webp"></img>
                                 </div>
                             </div>
                         </div>
