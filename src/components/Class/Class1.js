@@ -5,6 +5,7 @@ import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
+
 const Class1 = () => {
 
     const elementVisibility = useScrollAnimation();

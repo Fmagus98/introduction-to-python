@@ -155,12 +155,14 @@ const Class2 = () => {
                         que el tipo de dato es un string debemos poner el texto entre comillas o doble comillas(" ", "" "") si es que va a estar escrito en una
                         linea de código y triple comillas(""" """) en el caso de que queramos escribir en varias líneas de código".
                       </p>
+                      {copyButton(classCode2[2]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/str.webp"></img>
                       <h3 className="text-break mx-auto w-75">Type()</h3>
                       <p className="text-break mx-auto w-75">A la hora de no saber qué tipo de dato contiene una variable podemos utilizar una función type,
                         para esto debemos escribir de la siguiente forma:  type(var), "var" va a representar el nombre de la variable que contenga el dato que queremos saber,
                         acá te mostraré un ejemplo de ello:
                       </p>
+                      {copyButton(classCode2[3]["code"])}
                       <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class2/type.webp"></img>
                     </div>
                   </div>
@@ -181,14 +183,17 @@ const Class2 = () => {
                       <p className="text-break mx-auto w-75">Estos operadores se utilizan para realizar operaciones matemáticas básicas como la suma (+),
                         la resta (-), la multiplicación (*), la división (/), el módulo (%) y la potencia (**).
                       </p>
+                      {copyButton(classCode2[4]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/opArit.webp"></img>
                       <h3 className="text-break mx-auto w-75">Operadores de comparación</h3>
                       <p className="text-break mx-auto w-75">Se utilizan para comparar dos valores y devolver un valor booleano (verdadero o falso) como resultado. Algunos operadores de comparación comunes son el igual a (==), el distinto a (!=), mayor que (&gt;), menor que (&lt;), mayor o igual que (&gt;=) y menor o igual que (&lt;=).
                       </p>
+                      {copyButton(classCode2[5]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/opComp.webp"></img>
                       <h3 className="text-break mx-auto w-75">Operadores lógicos</h3>
                       <p className="text-break mx-auto w-75">Se utilizan para combinar valores booleanos y devolver un valor booleano como resultado. Los operadores lógicos más comunes son "and", "or" y "not".
                       </p>
+                      {copyButton(classCode2[6]["code"])}
                       <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class2/opLog.webp"></img>
                     </div>
                   </div>
@@ -201,6 +206,7 @@ const Class2 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4">La conversión de tipos de datos en Python se refiere al proceso de cambiar el tipo de un valor de una clase de datos a otra. En Python, esto se puede hacer mediante el uso de funciones incorporadas llamadas "funciones de conversión" que toman un valor y lo convierten en otro tipo de dato.
                       </p>
+                      {copyButton(classCode2[7]["code"])}
                       <img className="w-75 d-block mx-auto  border-content" alt="" src="../img/class2/convType.webp"></img>
                       <p className="text-break mx-auto w-75 mt-4" style={{ marginBottom: "7rem" }} >También es importante tener en cuenta que algunas conversiones pueden no ser posibles o pueden producir resultados inesperados. Por ejemplo, la conversión de una cadena de texto que no representa un número válido a un número puede producir un error en tiempo de ejecución. Por lo tanto, es importante ser cuidadoso al realizar conversiones de tipo en Python y asegurarse de que los valores sean compatibles con el tipo de destino.</p>
                     </div>
@@ -215,14 +221,17 @@ const Class2 = () => {
                       <h2 className="text-break mx-auto w-75 mt-4">F-string</h2>
                       <p className="text-break mx-auto w-75">F-strings (cadenas formateadas) son una forma conveniente y legible de formatear y construir cadenas en Python a partir de expresiones y variables. Se introdujeron en Python 3.6 y son muy populares debido a su sintaxis sencilla y su capacidad para incorporar valores de manera directa en las cadenas.<br></br>Un f-string se crea precediendo una cadena con el prefijo f o F. Dentro de un f-string, puedes incluir expresiones Python encerradas entre llaves { }. Estas expresiones se evalúan y se insertan en la cadena final.
                       </p>
+                      {copyButton(classCode2[8]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/f-string.webp"></img>
                       <h2 className="text-break mx-auto w-75">Format</h2>
                       <p className="text-break mx-auto w-75">El método format() se llama en una cadena y toma uno o más argumentos que se utilizan para completar marcadores de posición dentro de la cadena. Estos marcadores de posición se definen utilizando llaves { } en la cadena y se reemplazan por los valores correspondientes.
                       </p>
+                      {copyButton(classCode2[9]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/format.webp"></img>
                       <h2 className="text-break mx-auto w-75">Repr</h2>
                       <p className="text-break mx-auto w-75">El método repr() es una función incorporada que devuelve una representación de cadena "oficial" o "canónica" de un objeto. Cuando llamas a la función repr() en un objeto, Python intenta devolver una cadena que, si se pasara nuevamente como código Python, crearía un objeto idéntico al original. Es decir, la cadena resultante debe ser una representación precisa del estado interno del objeto.
                       </p>
+                      {copyButton(classCode2[10]["code"])}
                       <img className="w-75 d-block mx-auto  border-content" alt="" src="../img/class2/repr.webp" style={{ marginBottom: "7rem" }}></img>
                     </div>
                   </div>
@@ -236,46 +245,57 @@ const Class2 = () => {
                       <h2 className="text-break mx-auto mt-4 w-75">Lower( )</h2>
                       <p className="text-break mx-auto w-75">El método lower() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para convertir una cadena a minúsculas.
                       </p>
+                      {copyButton(classCode2[11]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/lower.webp"></img>
                       <h2 className="text-break mx-auto w-75">Upper( )</h2>
                       <p className="text-break mx-auto w-75">El método upper() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para convertir una cadena a mayúsculas.
                       </p>
+                      {copyButton(classCode2[12]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/upper.webp"></img>
                       <h2 className="text-break mx-auto w-75">Islower( )</h2>
                       <p className="text-break mx-auto w-75">El método islower() verifica si todos los caracteres de la cadena son minúsculas.
                       </p>
+                      {copyButton(classCode2[13]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/islower.webp"></img>
                       <h2 className="text-break mx-auto w-75">Isupper( )</h2>
                       <p className="text-break mx-auto w-75">El método isupper() verifica si todos los caracteres de la cadena son mayúsculas.
                       </p>
+                      {copyButton(classCode2[14]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/isupper.webp"></img>
                       <h2 className="text-break mx-auto w-75">Isdigit( )</h2>
                       <p className="text-break mx-auto w-75">El método isdigit() Verifica si todos los caracteres de la cadena son dígitos.
                       </p>
+                      {copyButton(classCode2[15]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/isdigit.webp"></img>
                       <h2 className="text-break mx-auto w-75">Isalpha( )</h2>
                       <p className="text-break mx-auto w-75">El método isalpha() Verifica si todos los caracteres de la cadena son letras.
                       </p>
+                      {copyButton(classCode2[16]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/isalpha.webp"></img>
                       <h2 className="text-break mx-auto w-75">Capitalize( )</h2>
                       <p className="text-break mx-auto w-75"> El método capitalize() es utilizado en objetos de tipo str (cadenas) y se utiliza para devolver una copia de la cadena con el primer carácter en mayúscula y el resto en minúscula.
                       </p>
+                      {copyButton(classCode2[17]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/capitalize.webp"></img>
                       <h2 className="text-break mx-auto w-75">Center( )</h2>
                       <p className="text-break mx-auto w-75">El método center() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para centrar una cadena dentro de un ancho determinado.
                       </p>
+                      {copyButton(classCode2[18]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/center.webp"></img>
                       <h2 className="text-break mx-auto w-75">Strip( )</h2>
                       <p className="text-break mx-auto w-75">El método strip() elimina los espacios en blanco al inicio y al final de la cadena, si quieres eliminar solo un lado debes usar la terminación lstrip o rstrip (l=left , r=right).
                       </p>
+                      {copyButton(classCode2[19]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/strip.webp"></img>
                       <h2 className="text-break mx-auto w-75">Count( )</h2>
                       <p className="text-break mx-auto w-75">El método count() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para contar el número de apariciones de una subcadena dentro de una cadena.
                       </p>
+                      {copyButton(classCode2[20]["code"])}
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class2/count.webp"></img>
                       <h2 className="text-break mx-auto w-75">Endswith( )</h2>
                       <p className="text-break mx-auto w-75">El método endswith() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para verificar si una cadena termina con una subcadena específica.
                       </p>
+                      {copyButton(classCode2[21]["code"])}
                       <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class2/endswith.webp"></img>
                     </div>
                   </div>
