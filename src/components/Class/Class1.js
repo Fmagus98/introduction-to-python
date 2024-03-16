@@ -24,8 +24,6 @@ const Class1 = () => {
         })
     }, [])
 
-
-
     return (
         <>{
             (new Date(date) <= newDate) || localStorage.getItem("access") ?
@@ -390,7 +388,8 @@ const Class1 = () => {
                                                 ya que nos permite mostrar información por consola como mensajes, números o valores de una
                                                 variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
                                             </p>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "input" escribiremos por ejemplo: input("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "print" escribiremos por ejemplo: print("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
+                                            <CopyButton code={classCode[0]["code"]}/>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p5.webp"></img>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Para ejecutar el programa debemos escribir en la terminal "python" seguido del nombre del archivo que queramos ejecutar, por ejemplo: python index.py. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p6.webp"></img>
@@ -398,6 +397,7 @@ const Class1 = () => {
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
                                                 Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
                                             </p>
+                                            <CopyButton code={classCode[1]["code"]}/>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p7.webp"></img>
                                             <h3 className="mt-4 text-break mx-auto w-75">Entrada de datos - input()</h3>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">La función input() permite obtener información
@@ -407,6 +407,7 @@ const Class1 = () => {
                                             </p>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                             </p>
+                                            <CopyButton code={classCode[2]["code"]}/>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p8.webp"></img>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                             </p>
@@ -416,6 +417,7 @@ const Class1 = () => {
                                             </p>
                                             <p className="mb-2 text-break mx-auto w-75">Por ejemplo si queremos mostrar en pantalla cuántos caracteres tiene la palabra "programación", debemos usar un input y dentro la funcion len(): input(len("Programación")), esto nos retornará la cantidad de caracteres que hay.
                                             </p>
+                                            <CopyButton code={classCode[3]["code"]}/>
                                             <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p10.webp"></img>
                                         </div>
                                     </div>
