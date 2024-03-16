@@ -1,4 +1,4 @@
-export const classCode2 = [
+export const classCode = [
     {
         "code": `
 print("Bienvenido al curso de introducción a python")

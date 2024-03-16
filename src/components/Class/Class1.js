@@ -4,6 +4,8 @@ import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
+import { CopyButton } from '../CopyButton/CopyButton'
+import { classCode } from './classCode'
 
 
 const Class1 = () => {
@@ -21,6 +23,8 @@ const Class1 = () => {
             })
         })
     }, [])
+
+
 
     return (
         <>{
