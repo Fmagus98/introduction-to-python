@@ -433,24 +433,52 @@ texto4 = "!!!texto4!!!"
 # variable con método strip
 
 texto1_strip = texto1.strip()
-texto2_strip = texto2.strip("?!")
-texto3_strip = texto3.strip("!")
-texto3_strip = texto3.strip("!")
+texto2_strip = texto2.strip("-")
+texto3_strip = texto3.strip("?!")
+texto4_lstrip = texto3.lstrip("!")
+texto4_rstrip = texto3.rstrip("!")
 
-
+print(texto1_strip)  # salida: "texto1"
+print(texto2_strip)  # salida: "texto2"
+print(texto3_strip)  # salida: "texto3"
+print(texto4_lstrip) # salida: "texto4!!!"
+print(texto4_rstrip) # salida: "!!!texto4"
 
 
 ` },
     {
         "code": `
 
+Count()
 
+# variable con tipo de dato string
+texto = "ana ana ana ana ana agustina"
+subcadena = "ana"
+
+# variable con método count
+cantidad = texto.count(subcadena)
+
+print(cantidad) # resultado 5
 
 
 ` },
-    { "code": `` },
-    { "code": `` },
+    { "code": `
 
+Endswith()
 
+# variable con tipo de dato strinh
+
+texto = "agustina"
+subcadena = "ina"
+subcadena2 = "agus"
+
+# variable con método endswith
+texto_end1 = texto.endswith(subcadena)
+texto_end2 = texto.endswith(subcadena2)
+
+print(texto_end1) # resultado True
+print(texto_end2) # resultado False
+
+    ` }
 
 ]
