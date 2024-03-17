@@ -1,11 +1,12 @@
-export const classCode = [
-    {
-        "code": `
+export const class1Code = [
+
+    `
+
 print("Bienvenido al curso de introducción a python")
-    
-`},
-    {
-        "code": `
+
+`,
+`
+
 # comentario en una sola linea de código
 
 """
@@ -23,19 +24,24 @@ lineas
 de
 código
 '''
-`},
-    {
-        "code": `
+
+`,
+`
+
 input("Escribe tu nombre: ")
     
-`},
-    {
-        "code": `
+`,
+`
+
 print(len("Programación"))
     
-`},
-    {
-        "code": `
+`
+]
+
+export const class2Code = [
+    
+    `
+
 # booleano/boolean - bool
 # True  --> 1
 # False --> 0
@@ -52,9 +58,9 @@ edad_válidar = edad>=edad_minima
 
 # la variable edad_valida conrtiene internamente "False" ya que edad no es mayor o igual a edad_minima
 
-`},
-    {
-        "code": `
+`,
+`
+
 # int - integer (número entero) / float - decimal (número decimal)
 
 # int
@@ -71,10 +77,9 @@ float3 = 14 - 23.4
 float4 = 14 / 23
 float5 = 54 * 0.4
 
+`,
 `
-    },
-    {
-        "code": `
+
 # Str - string - cadena de texto
 
 # string ''
@@ -90,10 +95,9 @@ string = "cadena de texto con comillas dobles"
 
 # las comillas triples se utilizará cuando queramos escribir un string en varias lineas de texto.
 
+`,
 `
-    },
-    {
-        "code": `
+
 # código de python
 
 variable1 = "cadena de texto"
@@ -105,10 +109,9 @@ print(type(variable2)) # salida de terminal --> <class 'int'>
 print(type(variable3)) # salida de terminal --> <class 'float'>
 print(type(variable4)) # salida de terminal --> <class 'bool'>
 
+`,
 `
-    },
-    {
-        "code": `
+
 # Operadores aritméticos
 
 # Suma
@@ -145,11 +148,9 @@ num1 = 5
 num2 = 3
 resultado = num1**num2 # resultado = 125
 
+`,
 `
 
-
-    }, {
-        "code": `
 # Operadores de comparación
 
 # variables
@@ -176,10 +177,8 @@ resultado = num2 >= num3 # True
 # menor o igual que
 resultado = num1 <= num2 # False
     
-    
-    `},
-    {
-        "code": `
+`,
+`
 
 # Operadores logicos
 
@@ -192,10 +191,8 @@ resultado1 = condicion1 and condicion2  # False
 resultado1 = condicion1 or condicion2  # True
 resultado1 = not condicion2  # False
         
-
-        `},
-    {
-        "code": `
+`,
+`
             
 # Conversiones comunes en tipos de datos
 
@@ -216,10 +213,8 @@ variable = 0
 variable = bool(variable) # resultado = False
 
 
-            
-            `},
-    {
-        "code": `
+`,
+`
                 
 # F-string
 
@@ -235,9 +230,8 @@ print(f'la suma de {numero1} + {numero2} es {numero1 + numero2}')
 
                 
                 
-                `},
-    {
-        "code": `
+`,
+`
     
 # format
 
@@ -251,10 +245,8 @@ edad = 35
 print('me llamo {} y tengo {} anios'.format(variable, edad)) # salida: me llamo Rodrigo y tengo 35 años")
 
 
-    `
-    },
-    {
-        "code": `
+`,
+`
     
 # Repr
 
@@ -277,9 +269,8 @@ print(repr(string))  # salida: 'horas'
 print(repr(float))  # salida: '35.7'
     
     
-    `},
-    {
-        "code": `
+`,
+`
 
 # Lower ()
 
@@ -294,9 +285,8 @@ print(estado_civil_lower) # salida: soltero
 print(documento_lower)   # salida: dni
 
 
-        `},
-    {
-        "code": `
+`,
+`
         
 # Upper()
 
@@ -311,9 +301,8 @@ print(texto1_upper) # salida: BIENVENIDOS
 print(texto2_upper) # salida: HOLA A TODOS!
         
 
-        `},
-    {
-        "code": `
+`,
+`
         
 # isLower()
 
@@ -328,9 +317,8 @@ print(texto1_islower) # salida: False
 print(texto2_islower) # salida: True
 
         
-        `},
-    {
-        "code": `
+`,
+`
 
 # isUpper()
 
@@ -343,10 +331,9 @@ texto2_isupper = texto2.isupper()
 # print
 print(texto1_isupper) # salida: True
 print(texto2_isupper) # salida: False
+
+`,
 `
-    },
-    {
-        "code": `
 
 # isDigit()
 
@@ -365,10 +352,8 @@ print(texto3.isdigit()) # salida: False
 print(texto4.isdigit()) # salida: False
 
 
+`,
 `
-    },
-    {
-        "code": `
 
 # isAlpha()
 
@@ -381,9 +366,8 @@ texto4 = "bienvenido!"
 # print
 
 
-` },
-    {
-        "code": `
+`,
+`
 
 # Capitalize()
 
@@ -400,9 +384,8 @@ print(pais_capitalize) # salida: Argentina
 print(nombre_capitalize) # salida: Rodrigo
 
 
-` },
-    {
-        "code": `
+`,
+`
 
 # Center()
 
@@ -418,9 +401,8 @@ print(titulo_centrado) # salida: "     Clase2 - Variables      "
 print(titulo_centrado2) # salida: "-----Clase2 - Variables-----" 
 
 
-` },
-    {
-        "code": `
+`,
+`
 
 # Strip()
 
@@ -445,9 +427,8 @@ print(texto4_lstrip) # salida: "texto4!!!"
 print(texto4_rstrip) # salida: "!!!texto4"
 
 
-` },
-    {
-        "code": `
+`,
+`
 
 Count()
 
@@ -461,8 +442,8 @@ cantidad = texto.count(subcadena)
 print(cantidad) # resultado 5
 
 
-` },
-    { "code": `
+`,
+`
 
 Endswith()
 
@@ -479,6 +460,60 @@ texto_end2 = texto.endswith(subcadena2)
 print(texto_end1) # resultado True
 print(texto_end2) # resultado False
 
-    ` }
+`,
+`
+    
+numero1 = 32
+numero2 = 53
+
+if numero1<numero2:
+    print(f"{numero1} es menor que {numero2}") 
+    
+# resultado 32 es menor que 53
+
+`
+]
+
+export const class3Code =
+[
+    `
+    
+numero1 = 75
+numero2 = 53
+
+if numero1<numero2:
+    print(f"{numero1} es menor que {numero2}") 
+else:
+    print(f"{numero1} no es menor que {numero2}") 
+
+    # resultado 75 no es menor que 53
+
+`,
+`
+    
+numero1 = 75
+numero2 = 53
+
+if numero1<numero2:
+    print(f"{numero1} es menor que {numero2}") 
+else:
+    print(f"{numero1} no es menor que {numero2}") 
+
+    # resultado 75 no es menor que 53
+
+`,
+`
+    
+    numero1 = 75
+    numero2 = 53
+    
+    if numero1<numero2:
+        print(f"{numero1} es menor que {numero2}") 
+    else:
+        print(f"{numero1} no es menor que {numero2}") 
+    
+        # resultado 75 no es menor que 53
+
+`,
 
 ]
