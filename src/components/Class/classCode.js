@@ -528,7 +528,20 @@ while numero1 < 10:
 
 `,
 `
+
+while True:
+    numero1 = int(input("ingrese el primer numero: "))
+    numero2 = int(input("ingrese el segundo numero: "))
+    print("la suma de los dos numeros es: ", numero1 + numero2)
     
+    respuesta = input("desea continuar? (s/n): ") # pide una respuesta (s/n)
+    
+    if respuesta == "n":
+        break    # break hace que el bucle se detenga
+
+`,
+`
+
 mensaje = "Hola mundo!"
 
 for caracter in mensaje:
@@ -536,7 +549,7 @@ for caracter in mensaje:
 
 `,
 `
-    
+
 frase = "hola como estás?"
 
 buscador_letra = any( letra =="e" for letra in frase )
@@ -557,7 +570,7 @@ numeros = [0,124,41,62,32,43]
 
 for numero in numeros:
     print(numero)
-    
+
 `,
 `
 

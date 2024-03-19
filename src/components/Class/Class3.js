@@ -125,7 +125,9 @@ const Class3 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto mt-4 w-75">Bucle while (mientras): El bucle while ejecuta repetidamente un bloque de código siempre que una condición sea verdadera. La condición se verifica antes de cada iteración, y si es verdadera, se ejecuta el bloque de código. Si la condición se vuelve falsa en algún momento, se sale del bucle y se continúa con la siguiente instrucción después del bucle. Aquí tienes un ejemplo de un bucle while:</p>
                       <CopyButton code={class3Code[3]} />
-                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class3/while.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/while.webp"></img>
+                      <CopyButton code={class3Code[4]} />
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class3/while2.webp"></img>
                     </div>
                   </div>
                 </div>
@@ -137,18 +139,18 @@ const Class3 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en cadena de texto</h3>
-                      <CopyButton code={class3Code[4]} />
-                      <img className="w-75 d-block mx-auto mb-4 pb-4 border-content" alt="" src="../img/class3/for1.webp"></img>
                       <CopyButton code={class3Code[5]} />
+                      <img className="w-75 d-block mx-auto mb-4 pb-4 border-content" alt="" src="../img/class3/for1.webp"></img>
+                      <CopyButton code={class3Code[6]} />
                       <img className="w-75 d-block mx-auto pt-4 border-content" alt="" src="../img/class3/for2.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en rango de números</h3>
-                      <CopyButton code={class3Code[6]} />
+                      <CopyButton code={class3Code[7]} />
                       <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/for3.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
-                      <CopyButton code={class3Code[7]} />
+                      <CopyButton code={class3Code[8]} />
                       <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/for4.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en tuplas</h3>
-                      <CopyButton code={class3Code[8]} />
+                      <CopyButton code={class3Code[9]} />
                       <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                     </div>
                   </div>
@@ -171,7 +173,7 @@ const Class3 = () => {
                       <p className="text-break mx-auto mb-4 w-75">Si vemos lo que nos indica el problema, vemos que nos dice que el usuario debe ingresar una contraseña para su cuenta</p>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class3/problem1-3.webp"></img>
                       <p className="text-break mx-auto w-75">En base al análisis que hicimos con el diagrama de flujos, podemos ya identificar a groso modo que aplicaciones debemos hacer para realizar nuestro programa. <br></br>Habrá veces que no realizamos el código tal cual lo hicimos en el diagrama por problemas que surgieron mientras programamos, pero lo bueno de hacer estos diagramas es que tenemos ya pensado una base en la cual programar.<br></br> Acá te muestro una de las posibles soluciones al problema hecho con python.</p>
-                      <CopyButton code={class3Code[9]} />
+                      <CopyButton code={class3Code[10]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class3/problem1-4.webp"></img>
                     </div>
                   </div>
