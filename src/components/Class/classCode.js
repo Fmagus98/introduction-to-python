@@ -603,111 +603,272 @@ print ("Contraseña válida")
 export const class4Code =
 [
     `
-    
-numero1 = 75
-numero2 = 53
+# Funciones
 
-if numero1<numero2:
-    print(f"{numero1} es menor que {numero2}") 
-else:
-    print(f"{numero1} no es menor que {numero2}") 
+"""Concepto
 
-    # resultado 75 no es menor que 53
+Función básica
 
-`,
-`
-    
-numero1 = 75
-numero2 = 53
+def nombre_de_la_funcion():
+    ejecución de código
+    return # return es opcional
 
-if numero1<numero2:
-    print(f"{numero1} es menor que {numero2}") 
-else:
-    print(f"{numero1} no es menor que {numero2}") 
+nombre_de_la_función()
 
-    # resultado 75 no es menor que 53
 
-`,
-`
-    
-numero1 = 75
-numero2 = 53
-    
-if numero1<numero2:
-    print(f"{numero1} es menor que {numero2}") 
-elif numero1 == numero2:
-    print(f"{numero1} es igual a {numero2}")    
-else:
-    print(f"{numero1} no es menor que {numero2}") 
-    
-# resultado 75 no es menor que 53
+Función con parámetros
 
-`,
-`
-    
-numero1 = 1
-    
-while numero1 < 10:
-    print(numero1) 
-    numero1 += 1 # esto hace incrementar el valor de la variable numero1
-    
+def nombre_de_la_funcion(parametros):
+    ejecución de código
+    return # return es opcional
 
-`,
-`
-    
-mensaje = "Hola mundo!"
+nombre_de_la_función(parametros)
+"""
 
-for caracter in mensaje:
-    print(caracter)
+# ejemplo
 
-`,
-`
-    
-frase = "hola como estás?"
+# Función básica
 
-buscador_letra = any( letra =="e" for letra in frase )
-    print(buscador_letra)
+def saludo():
+    nombre = "gustavo" # esta variable solo existe dentro de la función, por fuera no.
+    return print("hola", nombre)
+
+saludo() #llamada de la función
+
+# Función con parámetros
+num1 = 39
+num2 = 42
+
+def suma(n1, n2):
+    return print(n1+n2)
+
+suma(num1,num2)
 
 
 `,
 `
-
-for i in range(1,5):
-    print(i)
-
+    
+def saludar(nombre):
+    print("!Hola, " + nombre + "!")
+    
+pi = 3.14159    
 
 `,
 `
 
-numeros = [0,124,41,62,32,43]
+import mi_modulo
 
-for numero in numeros:
-    print(numero)
+mi_modulo.saludar("juan")
+print(mi_modulo.pi)
+
+
+`,
+`
+    
+from mi_modulo import saludar, pi
+
+saludar("Juan")
+print(pi)
+
+`,
+`
+import math
+
+`,
+`
+import math
+
+x = 3.7
+print(math.ceil(x)) # Redondeohacia arriba: 4
+print(math.floor(x)) # Redondeo hacia abajo: 3
+print(math.trunc(x)) # Truncamiento: 3
+
+`,
+`
+    
+import math
+
+angulo = math.pi / 4
+
+print(math.sin(angulo))  # seno
+print(math.asin(angulo)) # arcoseno
+print(math.cos(angulo))  # coseno
+print(math.acos(angulo))  # arcocoseno
+print(math.tan(angulo))  # tangente
+print(math.atan(angulo))  # arcotangente
+
+`,
+`
+
+import math # importanción del módulo math
+
+# Seno hiperbólico
+result = math.sinh(x)
+print(result)
+
+# Coseno hiperbólico
+result = math.cosh(x)
+print(result)
+
+# Tangente hiperbólico
+result = math.tanh(x)
+print(result)
+
+# Arcoseno hiperbólico
+result = math.asinh(x)
+print(result)
+
+# Arcocoseno hiperbólico
+result = math.acosh(x)
+print(result)
+
+# Arcotangente hiperbólico
+result = math.atanh(x)
+print(result)
+
+`,
+`
+
+import math # importación del módulo math
+
+# exponencial
+x = 2.0
+result = math.exp(x)
+print(result)
+
+# exponencial personalizado
+x = 2.0
+y = 3.0
+result = math.pow(x, y)
+print(result)
+
+# logaritmo natural
+x = 10.0
+result = math.log(x)
+
+# logaritmo en base 10
+x = 100.0
+result = math.log10(x)
+print(result)
+
+# logaritmo en base personalizada
+x = 16.0
+base = 2.0
+result = math.log(x, base)
+print(result)
+
+# raiz cuadrada
+x = 16.0
+result = math.sqrt(x)
+print(result)
     
 `,
 `
 
-tupla = (1,2,3,4,5)
+import random
 
-for elemento in tupla:
-    print(elemento)
+random_number = random.random()
+print(random_number) # Resultado: un número aleatorio de punto flotante entre 1.0 y 10.0
 
 `,
 `
 
-contrasena = ""
-mayus = False
-minus = False
-num = False
+import random # importar módulo random
 
-while (mayus == False) or (minus ==False) or (num == False) or contrasena == "":
-    print("Tu contraseña debe contener al menos una mayúscula, un minúscula y un número, por favor ingreses de nuevo la contraseña")
-    contrasena = input("Escriba su contraseña: ")
-    mayus = any(caracter.isupper() for caracter in contrasena)
-    minus = any(caracter.islower() for caracter in contrasena)
-    num = any(caracter.isdigit() for caracter in contrasena)
+# Generar un número aleatorio dentro de un rango específico
 
-print ("Contraseña válida")
+random_number = random.randint(1, 100)
+print(random_number) # Resultado: un número aleatorio entre 1 y 100 (incluidos).
+
+
+`,
+`
+
+import random # importar módulo random
+
+# Generar un número aleatorio del punto flotante dentro de un rango específico.
+
+random_number = random.uniform(1.0,10.0)
+print(random_number) # Resultado: un número aleatorio de punto flotante entre 1.0 y 10.0
+
+`,
+`
+
+import random # importar módulo random
+
+# Elegir un elemento aleatorio de una lista.
+
+my_list = ['manzana', 'banana', 'naranja', 'pera']
+random_element = random.choice(my_list)
+print(random_element) # Resultado: un número aleatorio de la lista
+
+`,
+`
+
+import random # importar módulo random
+
+# Barajar (mezclar) una lista
+
+my_list = [1, 2, 3, 4, 5]
+random.shuffle(my_list)
+print(my_list) # Resultado: una lista de elementos aleatorios
+
+`,
+`
+
+import datetime
+
+# Obtener la fecha y hora actuales
+
+current_Datetime = datetime.datetime.now()
+print(current_Datetime) # Resultado: la fecha y hora actuales
+
+`,
+`
+
+import datetime
+
+date = datetime.date(2023, 6, 8)
+print(date) # Resultado: 2023-06-08
+
+`,
+`
+
+import datetime
+
+time = datetime.time(12, 30, 45)
+print(time) # Resultado: 12:30:45
+
+`,
+`
+
+import datetime
+
+datetime_obj = datetime.datetime(2023, 6, 8, 12, 30, 45)
+print(datetime_obj) # Resultado: 2023-06-08 12:30:45
+
+`,
+`
+
+import datetime
+
+datetime_obj = datetime.datetime(2023, 6, 8, 12, 30, 45)
+formatted_datetime = datetime_obj.strftime("%Y-%m-%d %H:%M:%S")
+print(formatted_datetime) # Resultado: 2023-06-08 12:30:45
+
+`,
+`
+
+import datetime
+
+datetime_obj = datetime.datetime(2023, 6, 8, 12, 30, 45)
+print(datetime_obj.year)  # year - año. Resultado: 2023
+print(datetime_obj.month) # month - mes. Resultado: 6
+print(datetime_obj.day)   # day - día. Resultado: 8
+print(datetime_obj.hour)  # hour - hora. Resultado: 12
+print(datetime_obj.minute) # minute - minuto. Resultado: 30
+print(datetime_obj.second) # second - segundo. Resultado: 45
+print(datetime_obj.microsecond) # microsecond - microsegundo. Resultado: 0
 
 `
 ]

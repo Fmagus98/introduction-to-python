@@ -4,6 +4,8 @@ import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
+import { CopyButton } from '../CopyButton/CopyButton'
+import { class4Code } from './classCode'
 
 const Class4 = () => {
 
@@ -96,7 +98,8 @@ const Class4 = () => {
                   </button>
                   <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <img className="w-75 d-block mx-auto mt-4 mb-4 border-content" alt="" src="../img/class4/function.webp"></img>
+                      <CopyButton code={class4Code[0]} />
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/function.webp"></img>
                       <h2 className="text-break mx-auto w-75">Explicación de los elementos en una función</h2>
                       <p className="text-break mx-auto w-75">def: La palabra clave "def" se utiliza para definir una función en Python.</p>
                       <p className="text-break mx-auto w-75">nombre_de_la_funcion: Es el nombre que eliges para tu función. Debes seguir las convenciones de nombrado de Python y elegir un nombre descriptivo que indique la tarea que realiza la función.</p>
@@ -120,10 +123,13 @@ const Class4 = () => {
                       <p className="text-break mx-auto w-75"><span className="fw-bold">1_ Crear un archivo de módulo:</span> Crea un archivo Python con extensión .py que contendrá el código del módulo. Por ejemplo, crea un archivo llamado mi_modulo.py</p>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/module1.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">2_ Escribir el código del módulo:</span> En el archivo mimodulo.py, escribe el código que deseas incluir en el módulo. Puedes definir funciones, clases, variables u otras estructuras de datos en el archivo. Por ejemplo, el contenido de mimodulo.py podría tener una función llamada saludo() y una variable llamada pi.</p>
+                      <CopyButton code={class4Code[1]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/module2.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">3_ Usar el módulo en otro archivo:</span> Para usar el módulo en otro archivo Python, necesitas importarlo. Puedes importar todo el módulo o solo partes específicas del mismo. Por ejemplo, crea un archivo curso4 y úsalo para importar y utilizar el módulo mi_modulo.py:</p>
+                      <CopyButton code={class4Code[2]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/module3.webp"></img>
                       <p className="text-break mx-auto w-75">También puedes importar partes específicas del módulo utilizando la declaración from / import. Por ejemplo:</p>
+                      <CopyButton code={class4Code[3]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class4/module4.webp"></img>
                     </div>
                   </div>
@@ -137,43 +143,59 @@ const Class4 = () => {
                       <p className="text-break mx-auto w-75 mt-4">Python tiene una amplia biblioteca estándar que incluye una serie de módulos nativos para realizar diversas tareas.<br></br>Aquí hay algunos módulos nativos comunes de Python:</p>
                       <h3 className="text-light text-break mx-auto w-75">Math</h3>
                       <p className="text-break mx-auto w-75">El módulo math en Python proporciona funciones y constantes matemáticas para realizar cálculos numéricos. Para utilizar el módulo math, debes importarlo al principio de tu script de la siguiente manera:</p>
+                      <CopyButton code={class4Code[4]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/math1.webp"></img>
                       <p className="text-break mx-auto w-75">A continuación, puedes utilizar las funciones y constantes proporcionadas por el módulo math. Aquí hay algunos ejemplos de cómo puedes usarlo.</p>
                       <p className="text-break mx-auto w-75">Redondeo de números: Cuando tengamos un número con décimal podemos redondearlo con varios métodos (ceil,floor,trunc).</p>
+                      <CopyButton code={class4Code[5]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/math2.webp"></img>
                       <p className="text-break mx-auto w-75">Funciones trigonométricas: Podemos realizar cálculos trigonométricos para calcular seno,arcoseno,coseno,arcocoseno,tangente y arcotangente de un ángulo con estas funciones (sin,cos,tang).</p>
+                      <CopyButton code={class4Code[6]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/math3.webp"></img>
                       <p className="text-break mx-auto w-75">Funciones hiperbólicas: Son útiles para describir fenómenos físicos (por ejemplo, velocidad de las olas o el movimiento de un objeto en un fluido) por su conveniencia al resolver ecuaciones diferenciales. Para usar esto se usan estas funciones (sinh,cosh,tanh,asinh,acosh,atanh).</p>
+                      <CopyButton code={class4Code[7]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/math4.webp"></img>
                       <p className="text-break mx-auto w-75">Funciones exponenciales y logarítmicas: Se puede realizar cálculos logarítmicos y exponenciales con estas funciones (log, exp, pow).</p>
+                      <CopyButton code={class4Code[8]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/math5.webp"></img>
                       <p className="text-break mx-auto w-75">Estos son solo algunos ejemplos de las funciones y constantes disponibles en el módulo math. Para obtener más detalles y ver todas las funciones y constantes proporcionadas, puedes consultar la documentación oficial de Python: <Link className="text-primary" to="https://docs.python.org/3/library/math.html">math - Módulo matemático</Link>.</p>
                       <h3 className="text-break w-75 mx-auto">Random</h3>
                       <p className="text-break mx-auto w-75">El módulo random en Python proporciona funciones para generar números pseudoaleatorios.<br></br>Dentro de este módulo tiene varias funcionalidades como:</p>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Random: </span>Podes generar un número aleatorio</p>
+                      <CopyButton code={class4Code[9]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/random1.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Randint: </span>Podes generar un número aleatorio dentro de un rango específico.</p>
+                      <CopyButton code={class4Code[10]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/random2.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Uniform: </span>Generar un número aleatorio de punto flotante dentro de un rango específico.</p>
+                      <CopyButton code={class4Code[11]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/random3.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Choice: </span>Selecciona un elemento aleatorio de una lista.</p>
+                      <CopyButton code={class4Code[12]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/random4.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Shuffle: </span>Mezcla el orden aleatoriamente de los elementos de una lista.</p>
+                      <CopyButton code={class4Code[13]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/random5.webp"></img>
                       <p className="text-break mx-auto w-75">Si quieres ver más sobre el módulo random puedes ir a la documentación oficial <Link className="text-primary" to="https://docs.python.org/3/library/random.html">Random</Link></p>
                       <h3 className="text-break w-75 mx-auto">Datetime</h3>
                       <p className="text-break mx-auto w-75">El módulo datetime en Python permite trabajar con fechas, horas y realizar operaciones relacionadas con el tiempo, aquí te mostraré algunos ejemplos.</p>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Datetime.datetime.now(): </span>Puedes obtener la fecha y hora actual.</p>
+                      <CopyButton code={class4Code[14]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/datetime1.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Datetime.date(): </span>Crea un objeto de fecha específica.</p>
+                      <CopyButton code={class4Code[15]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/datetime2.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Datetime.time(): </span>Crear un objeto de tiempo específico.</p>
+                      <CopyButton code={class4Code[16]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/datetime3.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Datetime.datetime(): </span>Crear un objeto de fecha y hora específicos:.</p>
+                      <CopyButton code={class4Code[17]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/datetime4.webp"></img>
                       <p className="text-break mx-auto w-75"><span className="fw-bold">Strftime(): </span>Formatear una fecha y hora en una cadena específica.</p>
+                      <CopyButton code={class4Code[18]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/datetime5.webp"></img>
                       <p className="text-break mx-auto w-75">Tambien puedes obtener la fecha y hora de forma individual</p>
+                      <CopyButton code={class4Code[19]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class4/datetime6.webp"></img>
                     </div>
                   </div>
