@@ -504,16 +504,85 @@ else:
 `,
 `
     
-    numero1 = 75
-    numero2 = 53
+numero1 = 75
+numero2 = 53
     
-    if numero1<numero2:
-        print(f"{numero1} es menor que {numero2}") 
-    else:
-        print(f"{numero1} no es menor que {numero2}") 
+if numero1<numero2:
+    print(f"{numero1} es menor que {numero2}") 
+elif numero1 == numero2:
+    print(f"{numero1} es igual a {numero2}")    
+else:
+    print(f"{numero1} no es menor que {numero2}") 
     
-        # resultado 75 no es menor que 53
+# resultado 75 no es menor que 53
 
 `,
+`
+    
+numero1 = 1
+    
+while numero1 < 10:
+    print(numero1) 
+    numero1 += 1 # esto hace incrementar el valor de la variable numero1
+    
 
+`,
+`
+    
+mensaje = "Hola mundo!"
+
+for caracter in mensaje:
+    print(caracter)
+
+`,
+`
+    
+frase = "hola como estás?"
+
+buscador_letra = any( letra =="e" for letra in frase )
+    print(buscador_letra)
+
+
+`,
+`
+
+for i in range(1,5):
+    print(i)
+
+
+`,
+`
+
+numeros = [0,124,41,62,32,43]
+
+for numero in numeros:
+    print(numero)
+    
+`,
+`
+
+tupla = (1,2,3,4,5)
+
+for elemento in tupla:
+    print(elemento)
+
+`,
+`
+
+contrasena = ""
+mayus = False
+minus = False
+num = False
+
+while (mayus == False) or (minus ==False) or (num == False) or contrasena == "":
+    print("Tu contraseña debe contener al menos una mayúscula, un minúscula y un número, por favor ingreses de nuevo la contraseña")
+    contrasena = input("Escriba su contraseña: ")
+    mayus = any(caracter.isupper() for caracter in contrasena)
+    minus = any(caracter.islower() for caracter in contrasena)
+    num = any(caracter.isdigit() for caracter in contrasena)
+
+print ("Contraseña válida")
+
+`
 ]
+
