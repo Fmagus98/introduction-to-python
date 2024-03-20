@@ -873,3 +873,270 @@ print(datetime_obj.microsecond) # microsecond - microsegundo. Resultado: 0
 `
 ]
 
+export const class5Code =
+[
+    `
+# Estructura de lista
+
+lista = ["Argentina", "Colombia", "Brasil", "Venezuela", "Honduras"]
+#           0             1          2           3            4      <--- indices
+
+`,
+`
+    
+animales = ["cabra", "delfin", "tigre", "koala", "jirafa", "elefante" ]
+print(animales) # resultado ["cabra", "delfin", "tigre", "koala", "jirafa", "elefante"]
+print(animales[0]) # resultado cabra
+print(animales[1]) # resultado delfin
+print(animales[2]) # resultado tigre
+print(animales[3]) # resultado koala
+print(animales[4]) # resultado jirafa
+print(animales[5]) # resultado elefante 
+
+`,
+`
+
+plataformas = ["netflix", "HBO MAX", "prime Video", "disney+", "star+"]
+plataformas[4] = "Paramount" # reemplazo de elemento del indice 4 "star+" a "Paramount"
+print(plataformas)
+
+`,
+`
+
+# slicing
+
+numeros = [1,2,3,4,5,6,7,8,9,10]
+sublista = numeros[2:6] # obtiene los elementos desde el indice 2 hasta el indice 5 (excluyendo el 6)
+print(sublista) # resultado: [3,4,5,6]
+
+`,
+`
+
+lista = [1,5,3]
+lista_2 = lista.copy() # 1° método para copiar una lista
+lista_3 = lista[:] # 2° método para copiar una lista
+lista.extend(lista_2) # agrega lo que contiene lista_2
+lista_2[0] = 543 # modificación del indice 0 en lista_2
+lista_3.append(4) # agrega un elemento al final de la lista_3
+print(lista) # resultado: [1, 5, 3, 1, 5, 3]
+print(lista_2) # resultado: [543, 5, 3]
+print(lista_3) # resultado: [1, 5, 3, 4]
+
+`,
+`
+
+# append
+numeros = [56,3,6,14,343,412,52,1,53]
+numeros.append(4) # agrega un elemento al final de la lista, en este caso es un tipo de dato int (4)
+print(numeros) # resultado: [56, 3, 6, 14, 343, 412, 52, 1, 53, 4]
+
+# extend
+numeros2 = [56,3,6,14,343,412,52,1,53]
+numeros2.extend((51,85,76,738,28,2364)) # agrega varios elementos al final de la lista
+print(numeros2) # respuesta [56, 3, 6, 14, 343, 412, 52, 1, 53 4, 51, 85, 76, 738, 28, 2364]
+
+`,
+`
+    
+lista = [72,95,86,576,75,35,6,47]
+lista.insert(3,5) # inserta el elemento 5 en el indice 3 de la lista.
+print(lista) # resultado: [72, 95, 86, 5, 576, 75, 35, 6, 47]
+
+# El método insert no elimina el elemento original de la lista
+# solo reemplaza la posicion del indice y los elementos siguientes a este elemento se posicionan al siguiente índice
+
+`,
+`
+
+# remove
+
+nombre = ["Hernán", "Jorge", "Julieta", "Luis", "Oriana", "Diego", "Tamara", "Jorge"]
+nombre.remove("Jorge") # recorre la lista y el primer elemento que encuentre "Jorge" lo elimina pero solo ese elemento 
+print(nombre) # resultado: ["Hernán", "Julieta", "Luis", "Oriana", "Diego", "Tamara", "Jorge"]
+
+# El método remove tienes que tener cuidado,
+# ya que si no encuentra el elemento, esto nos provocará un error grave en el programa y dejará de ejecutar (ValueError).
+
+`,
+`
+
+# pop
+
+telefonos = ["Samsung S23+", "Motorola G9 plus", "Samsung A01", "Motorola E13", "Alcatel 3H plus", "Samsung A23"]
+telefonos.pop() # elimina el último elemento de la lista
+print(telefonos) # resultado: ["Samsung S23+", "Motorola G9 plus", "Samsung A01", "Motorola E13", "Alcatel 3H plus"]
+telefonos.pop(1) # elimina el elemento del indice 1 de la lista
+print(telefonos) # resultado: ["Samsung S23+", "Samsung A01", "Motorola E13", "Alcatel 3H plus"]
+    
+# El método pop tienes que tener cuidado,
+# ya que si no encuentra el elemento, esto nos provocará un error grave en el programa y dejará de ejecutar (IndexError).
+
+`,
+`
+
+# clear
+
+fruta = ["cereza", "jacarandá", "manzana", "granada", "arandano", "pera", "frutilla"]
+indice = fruta.index("pera") # devuelve el número del índice que contiene el elemento "pera"
+print(indice) # resultado: 5
+
+indice2 = fruta.index("manzana",0,3) # devuelve el número del índice que contiene el elemento "manzana"
+print(indice2) # resultado: 2
+
+`,
+`
+
+# Count
+
+frutas = ["manzana", "platano", "naranja", "manzana", "uva", "manzana"]
+contador = frutas.count("manzana")
+print(contador) # resultado: 3
+
+`,
+`
+
+# clear
+
+lista = ["manzana", "frutilla", "manzana", "limon"] # lista
+lsita.clear() # este elemento elimina todo el contenido de la lista
+print(lista)
+
+`,
+`
+
+# len
+
+autos = ["Audi", "Mercedez Benz", "Toyota", "Nissan", "Fiat", "Volkswagen", "Renault"]
+longitud = len(autos)
+print(longitud) # resultado: 7
+
+`,
+`
+
+# max
+
+lista = [1,5,42,27,457,34,5,754,75,5] # lista de números
+print(max(lista)) # encuentra el valor más alto de la lista. respuesta: 754
+
+lista =["a","b","c","d","e"] # lista de caracteres
+print(max(lista)) # encuentra el valor más alto de la lista de caracteres (ASCII). respuesta: "e"
+
+`,
+`
+
+# min
+
+lista = [41,54,36,53,47,264,6,1,0,463] # lista de números
+print(min(lista)) # encuentra el valor más bajo de la lista. respuesta: 0
+
+lista = ["ferrari","hyundai","suzuki","lamborghini"] # lista de caracteres
+print(min(lista)) # encuentra el valor más bajo de la lista de caracteres. respuesta ferrari
+
+`,
+`
+
+# sum
+
+lista = [1,5,42,27,457,34,5,754,75,5] # lista de números
+print(sum(lista)) # suma todos los valores de la lista. respuesta 1405
+
+`,
+`
+
+# sort / sorted
+
+generos = ["jazz", "rock nacional", "trap", "tango", "barroco", "ballenato", "bossa nova" ]
+
+generos.sort() # ordena la lista de forma ascendente
+print(generos) # resultado: ["ballenato", "barroco", "bossa nova", "jazz", "rock nacional", "tango", "trap"]
+
+generos.sort(reverse=True) # ordena la lista de forma descendente
+print(generos) # resultado: ["trap", "tango", "rock nacional", "jazz", "bossa nova", "barroco", "ballenato"]
+
+generos_sorted = sorted(generos) # crea una nueva lista y ordena la lista de forma ascendente
+print(generos_sorted) # resultado: ["ballenato", "barroco", "bossa nova", "jazz", "rock nacional", "tango", "trap"]
+generos_sorted2 = sorted(generos , reverse = True) # crea una nueva lista y ordena la lista de forma descendente
+print(generos_sorted2) # resultado: ["trap", "tango", "rock nacional", "jazz", "bossa nova", "barroco", "ballenato"]
+
+# Método sort
+# Si intentas ordenar una ilsta con elementos de diferentes tipos, se generará un error TypeError.
+
+# Método sorted
+# se utiliza para ordenar los elementos de una lista y devuelve una nueva lista ordenada sin modificar la lista original
+
+`,
+`
+
+# reversed
+
+lista = ["hernan", "matilda", "julian", "Matias", "pablo"] # lista de nombres
+lista_invertida = list(reversed(lista))
+print(lista_invertida) # invierte la posicion de los elementos de la lista
+print(lista) # la lista original no se invierte
+
+`,
+`
+
+# Tupla
+
+tupla = ("router CNC", "cortadora laser", "impresora 3d" )
+#             0                1                 2         <---- posicionamiento
+
+`,
+`
+
+# indexación
+
+tupla = ("3", "84", "43", "81", "63", "57")
+print([0]) # resultado: 3
+print([1]) # resultado: 84
+print([2]) # resultado: 43
+print([3]) # resultado: 81
+print([4]) # resultado: 63
+print([5]) # resultado: 57
+
+`,
+`
+
+# segmentación
+
+tupla = ("3", "84", "43", "81", "63", "57")
+print(tupla[:]) # resultado: ("3", "84", "43", "81", "63", "57")
+print(tupla[1:3]) # resultado ("84", "43")
+print(tupla[0:5]) # resultado ("3", "84", "43", "81", "63")
+print(tupla[3:6]) # resultado ("81", "63", "57")
+
+`,
+`
+
+# Concatenación
+
+tupla = ("3", "84", "43", "81", "63", "57")
+tupla2 = ("63", "38", "37", "14", "33", "75")
+tupla_concat = tupla + tupla2
+print(tupla_concat) # resultado: ("3", "84", "43", "81", "63", "57", "63", "38", "37", "14", "33", "75")
+
+`,
+`
+
+# repetición
+
+tupla = ("3", "84")
+print(tupla*2) # resultado: ("3", "84", "3", "84")
+print(tupla*3) # resultado: ("3", "84", "3", "84", "3", "84")
+
+`,
+`
+
+# Conversión
+
+tupla = ("23", "84", "67", "45" )
+print(tupla) # respuesta ("23", "84", "67", "45")
+lista = list(tupla) # conversión de tupla a lista
+lista.pop() # respuesta [ "23", "84", "67" ]
+tupla = tuple(lista) # conversión de lista a tupla
+print(tupla) # respuesta ("23", "84", "67")
+
+`
+]
+
