@@ -1,12 +1,10 @@
 export const class1Code = [
 
     `
-
 print("Bienvenido al curso de introducción a python")
 
 `,
 `
-
 # comentario en una sola linea de código
 
 """
@@ -27,12 +25,10 @@ código
 
 `,
 `
-
 input("Escribe tu nombre: ")
     
 `,
 `
-
 print(len("Programación"))
     
 `
@@ -41,7 +37,6 @@ print(len("Programación"))
 export const class2Code = [
     
     `
-
 # booleano/boolean - bool
 # True  --> 1
 # False --> 0
@@ -60,7 +55,6 @@ edad_válidar = edad>=edad_minima
 
 `,
 `
-
 # int - integer (número entero) / float - decimal (número decimal)
 
 # int
@@ -79,7 +73,6 @@ float5 = 54 * 0.4
 
 `,
 `
-
 # Str - string - cadena de texto
 
 # string ''
@@ -97,7 +90,6 @@ string = "cadena de texto con comillas dobles"
 
 `,
 `
-
 # código de python
 
 variable1 = "cadena de texto"
@@ -111,7 +103,6 @@ print(type(variable4)) # salida de terminal --> <class 'bool'>
 
 `,
 `
-
 # Operadores aritméticos
 
 # Suma
@@ -150,7 +141,6 @@ resultado = num1**num2 # resultado = 125
 
 `,
 `
-
 # Operadores de comparación
 
 # variables
@@ -179,7 +169,6 @@ resultado = num1 <= num2 # False
     
 `,
 `
-
 # Operadores logicos
 
 # variables
@@ -192,8 +181,7 @@ resultado1 = condicion1 or condicion2  # True
 resultado1 = not condicion2  # False
         
 `,
-`
-            
+`     
 # Conversiones comunes en tipos de datos
 
 # conversion a int
@@ -214,8 +202,7 @@ variable = bool(variable) # resultado = False
 
 
 `,
-`
-                
+`         
 # F-string
 
 # variable con tipo de dato int
@@ -232,7 +219,6 @@ print(f'la suma de {numero1} + {numero2} es {numero1 + numero2}')
                 
 `,
 `
-    
 # format
 
 # variable con tipo de dato str
@@ -247,7 +233,6 @@ print('me llamo {} y tengo {} anios'.format(variable, edad)) # salida: me llamo 
 
 `,
 `
-    
 # Repr
 
 # variable con tipo de dato int
@@ -271,7 +256,6 @@ print(repr(float))  # salida: '35.7'
     
 `,
 `
-
 # Lower ()
 
 # variable con tipo de dato str
@@ -286,8 +270,7 @@ print(documento_lower)   # salida: dni
 
 
 `,
-`
-        
+`      
 # Upper()
 
 # variable con tipo de dato str
@@ -302,8 +285,7 @@ print(texto2_upper) # salida: HOLA A TODOS!
         
 
 `,
-`
-        
+`     
 # isLower()
 
 # variable con tipo de dato str
@@ -319,7 +301,6 @@ print(texto2_islower) # salida: True
         
 `,
 `
-
 # isUpper()
 
 # variable con tipo de dato string
@@ -334,7 +315,6 @@ print(texto2_isupper) # salida: False
 
 `,
 `
-
 # isDigit()
 
 # variable con tipo de dato str
@@ -354,7 +334,6 @@ print(texto4.isdigit()) # salida: False
 
 `,
 `
-
 # isAlpha()
 
 # variable con tipo de dato str
@@ -368,7 +347,6 @@ texto4 = "bienvenido!"
 
 `,
 `
-
 # Capitalize()
 
 # variable con tipo de dato str 
@@ -386,7 +364,6 @@ print(nombre_capitalize) # salida: Rodrigo
 
 `,
 `
-
 # Center()
 
 # variable con tipo de dato str     
@@ -403,7 +380,6 @@ print(titulo_centrado2) # salida: "-----Clase2 - Variables-----"
 
 `,
 `
-
 # Strip()
 
 # variable con tipo de dato str
@@ -429,7 +405,6 @@ print(texto4_rstrip) # salida: "!!!texto4"
 
 `,
 `
-
 Count()
 
 # variable con tipo de dato string
@@ -444,7 +419,6 @@ print(cantidad) # resultado 5
 
 `,
 `
-
 Endswith()
 
 # variable con tipo de dato strinh
@@ -462,7 +436,6 @@ print(texto_end2) # resultado False
 
 `,
 `
-    
 numero1 = 32
 numero2 = 53
 
@@ -477,7 +450,6 @@ if numero1<numero2:
 export const class3Code =
 [
     `
-    
 numero1 = 75
 numero2 = 53
 
@@ -490,7 +462,6 @@ else:
 
 `,
 `
-    
 numero1 = 75
 numero2 = 53
 
@@ -503,7 +474,6 @@ else:
 
 `,
 `
-    
 numero1 = 75
 numero2 = 53
     
@@ -518,7 +488,6 @@ else:
 
 `,
 `
-    
 numero1 = 1
     
 while numero1 < 10:
@@ -528,7 +497,6 @@ while numero1 < 10:
 
 `,
 `
-
 while True:
     numero1 = int(input("ingrese el primer numero: "))
     numero2 = int(input("ingrese el segundo numero: "))
@@ -541,7 +509,6 @@ while True:
 
 `,
 `
-
 mensaje = "Hola mundo!"
 
 for caracter in mensaje:
@@ -549,7 +516,6 @@ for caracter in mensaje:
 
 `,
 `
-
 frase = "hola como estás?"
 
 buscador_letra = any( letra =="e" for letra in frase )
@@ -558,14 +524,12 @@ buscador_letra = any( letra =="e" for letra in frase )
 
 `,
 `
-
 for i in range(1,5):
     print(i)
 
 
 `,
 `
-
 numeros = [0,124,41,62,32,43]
 
 for numero in numeros:
@@ -573,7 +537,6 @@ for numero in numeros:
 
 `,
 `
-
 tupla = (1,2,3,4,5)
 
 for elemento in tupla:
@@ -581,7 +544,6 @@ for elemento in tupla:
 
 `,
 `
-
 contrasena = ""
 mayus = False
 minus = False
@@ -647,7 +609,6 @@ suma(num1,num2)
 
 `,
 `
-    
 def saludar(nombre):
     print("!Hola, " + nombre + "!")
     
@@ -655,7 +616,6 @@ pi = 3.14159
 
 `,
 `
-
 import mi_modulo
 
 mi_modulo.saludar("juan")
@@ -664,7 +624,6 @@ print(mi_modulo.pi)
 
 `,
 `
-    
 from mi_modulo import saludar, pi
 
 saludar("Juan")
@@ -685,7 +644,6 @@ print(math.trunc(x)) # Truncamiento: 3
 
 `,
 `
-    
 import math
 
 angulo = math.pi / 4
@@ -699,7 +657,6 @@ print(math.atan(angulo))  # arcotangente
 
 `,
 `
-
 import math # importanción del módulo math
 
 # Seno hiperbólico
@@ -728,7 +685,6 @@ print(result)
 
 `,
 `
-
 import math # importación del módulo math
 
 # exponencial
@@ -764,7 +720,6 @@ print(result)
     
 `,
 `
-
 import random
 
 random_number = random.random()
@@ -772,7 +727,6 @@ print(random_number) # Resultado: un número aleatorio de punto flotante entre 1
 
 `,
 `
-
 import random # importar módulo random
 
 # Generar un número aleatorio dentro de un rango específico
@@ -783,7 +737,6 @@ print(random_number) # Resultado: un número aleatorio entre 1 y 100 (incluidos)
 
 `,
 `
-
 import random # importar módulo random
 
 # Generar un número aleatorio del punto flotante dentro de un rango específico.
@@ -793,7 +746,6 @@ print(random_number) # Resultado: un número aleatorio de punto flotante entre 1
 
 `,
 `
-
 import random # importar módulo random
 
 # Elegir un elemento aleatorio de una lista.
@@ -804,7 +756,6 @@ print(random_element) # Resultado: un número aleatorio de la lista
 
 `,
 `
-
 import random # importar módulo random
 
 # Barajar (mezclar) una lista
@@ -815,7 +766,6 @@ print(my_list) # Resultado: una lista de elementos aleatorios
 
 `,
 `
-
 import datetime
 
 # Obtener la fecha y hora actuales
@@ -825,7 +775,6 @@ print(current_Datetime) # Resultado: la fecha y hora actuales
 
 `,
 `
-
 import datetime
 
 date = datetime.date(2023, 6, 8)
@@ -833,7 +782,6 @@ print(date) # Resultado: 2023-06-08
 
 `,
 `
-
 import datetime
 
 time = datetime.time(12, 30, 45)
@@ -841,7 +789,6 @@ print(time) # Resultado: 12:30:45
 
 `,
 `
-
 import datetime
 
 datetime_obj = datetime.datetime(2023, 6, 8, 12, 30, 45)
@@ -849,7 +796,6 @@ print(datetime_obj) # Resultado: 2023-06-08 12:30:45
 
 `,
 `
-
 import datetime
 
 datetime_obj = datetime.datetime(2023, 6, 8, 12, 30, 45)
@@ -858,7 +804,6 @@ print(formatted_datetime) # Resultado: 2023-06-08 12:30:45
 
 `,
 `
-
 import datetime
 
 datetime_obj = datetime.datetime(2023, 6, 8, 12, 30, 45)
@@ -882,8 +827,7 @@ lista = ["Argentina", "Colombia", "Brasil", "Venezuela", "Honduras"]
 #           0             1          2           3            4      <--- indices
 
 `,
-`
-    
+` 
 animales = ["cabra", "delfin", "tigre", "koala", "jirafa", "elefante" ]
 print(animales) # resultado ["cabra", "delfin", "tigre", "koala", "jirafa", "elefante"]
 print(animales[0]) # resultado cabra
@@ -895,14 +839,12 @@ print(animales[5]) # resultado elefante
 
 `,
 `
-
 plataformas = ["netflix", "HBO MAX", "prime Video", "disney+", "star+"]
 plataformas[4] = "Paramount" # reemplazo de elemento del indice 4 "star+" a "Paramount"
 print(plataformas)
 
 `,
 `
-
 # slicing
 
 numeros = [1,2,3,4,5,6,7,8,9,10]
@@ -911,7 +853,6 @@ print(sublista) # resultado: [3,4,5,6]
 
 `,
 `
-
 lista = [1,5,3]
 lista_2 = lista.copy() # 1° método para copiar una lista
 lista_3 = lista[:] # 2° método para copiar una lista
@@ -924,7 +865,6 @@ print(lista_3) # resultado: [1, 5, 3, 4]
 
 `,
 `
-
 # append
 numeros = [56,3,6,14,343,412,52,1,53]
 numeros.append(4) # agrega un elemento al final de la lista, en este caso es un tipo de dato int (4)
@@ -937,7 +877,6 @@ print(numeros2) # respuesta [56, 3, 6, 14, 343, 412, 52, 1, 53 4, 51, 85, 76, 73
 
 `,
 `
-    
 lista = [72,95,86,576,75,35,6,47]
 lista.insert(3,5) # inserta el elemento 5 en el indice 3 de la lista.
 print(lista) # resultado: [72, 95, 86, 5, 576, 75, 35, 6, 47]
@@ -947,7 +886,6 @@ print(lista) # resultado: [72, 95, 86, 5, 576, 75, 35, 6, 47]
 
 `,
 `
-
 # remove
 
 nombre = ["Hernán", "Jorge", "Julieta", "Luis", "Oriana", "Diego", "Tamara", "Jorge"]
@@ -959,7 +897,6 @@ print(nombre) # resultado: ["Hernán", "Julieta", "Luis", "Oriana", "Diego", "Ta
 
 `,
 `
-
 # pop
 
 telefonos = ["Samsung S23+", "Motorola G9 plus", "Samsung A01", "Motorola E13", "Alcatel 3H plus", "Samsung A23"]
@@ -973,7 +910,6 @@ print(telefonos) # resultado: ["Samsung S23+", "Samsung A01", "Motorola E13", "A
 
 `,
 `
-
 # clear
 
 fruta = ["cereza", "jacarandá", "manzana", "granada", "arandano", "pera", "frutilla"]
@@ -985,7 +921,6 @@ print(indice2) # resultado: 2
 
 `,
 `
-
 # Count
 
 frutas = ["manzana", "platano", "naranja", "manzana", "uva", "manzana"]
@@ -994,7 +929,6 @@ print(contador) # resultado: 3
 
 `,
 `
-
 # clear
 
 lista = ["manzana", "frutilla", "manzana", "limon"] # lista
@@ -1003,7 +937,6 @@ print(lista)
 
 `,
 `
-
 # len
 
 autos = ["Audi", "Mercedez Benz", "Toyota", "Nissan", "Fiat", "Volkswagen", "Renault"]
@@ -1012,7 +945,6 @@ print(longitud) # resultado: 7
 
 `,
 `
-
 # max
 
 lista = [1,5,42,27,457,34,5,754,75,5] # lista de números
@@ -1023,7 +955,6 @@ print(max(lista)) # encuentra el valor más alto de la lista de caracteres (ASCI
 
 `,
 `
-
 # min
 
 lista = [41,54,36,53,47,264,6,1,0,463] # lista de números
@@ -1034,7 +965,6 @@ print(min(lista)) # encuentra el valor más bajo de la lista de caracteres. resp
 
 `,
 `
-
 # sum
 
 lista = [1,5,42,27,457,34,5,754,75,5] # lista de números
@@ -1042,7 +972,6 @@ print(sum(lista)) # suma todos los valores de la lista. respuesta 1405
 
 `,
 `
-
 # sort / sorted
 
 generos = ["jazz", "rock nacional", "trap", "tango", "barroco", "ballenato", "bossa nova" ]
@@ -1066,7 +995,6 @@ print(generos_sorted2) # resultado: ["trap", "tango", "rock nacional", "jazz", "
 
 `,
 `
-
 # reversed
 
 lista = ["hernan", "matilda", "julian", "Matias", "pablo"] # lista de nombres
@@ -1076,7 +1004,6 @@ print(lista) # la lista original no se invierte
 
 `,
 `
-
 # Tupla
 
 tupla = ("router CNC", "cortadora laser", "impresora 3d" )
@@ -1084,7 +1011,6 @@ tupla = ("router CNC", "cortadora laser", "impresora 3d" )
 
 `,
 `
-
 # indexación
 
 tupla = ("3", "84", "43", "81", "63", "57")
@@ -1097,7 +1023,6 @@ print([5]) # resultado: 57
 
 `,
 `
-
 # segmentación
 
 tupla = ("3", "84", "43", "81", "63", "57")
@@ -1108,7 +1033,6 @@ print(tupla[3:6]) # resultado ("81", "63", "57")
 
 `,
 `
-
 # Concatenación
 
 tupla = ("3", "84", "43", "81", "63", "57")
@@ -1118,7 +1042,6 @@ print(tupla_concat) # resultado: ("3", "84", "43", "81", "63", "57", "63", "38",
 
 `,
 `
-
 # repetición
 
 tupla = ("3", "84")
@@ -1127,7 +1050,6 @@ print(tupla*3) # resultado: ("3", "84", "3", "84", "3", "84")
 
 `,
 `
-
 # Conversión
 
 tupla = ("23", "84", "67", "45" )
@@ -1140,3 +1062,496 @@ print(tupla) # respuesta ("23", "84", "67")
 `
 ]
 
+export const class6Code =
+[
+    `
+# Estructura de diccionarios
+
+diccionario = {"curso": "python", "clase": "clase 6", "titulo": "diccionarios" }    1
+#                 |         |
+#              clave      valor
+
+`,
+`
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+print(diccionario) # devuelve todo el diccionario
+print(diccionario["nombre"]) # trae el valor que contiene la clave "nombre"
+print(diccionario["apellido"]) # trae el valor que contiene la clave "apellido"
+print(diccionario["edad"]) # trae el valor que contiene la clave "edad"
+print(diccionario["profesion"]) # trae el valor que contiene la clave "profesion"
+
+`,
+`
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+print(diccionario) # respuesta {"nombre": "agustina", "apellido": "Martinez", "edad": 42, "profesion": "RRHH"}
+diccionario["edad"] = 32 # modifico el valor de la clave "edad"
+print(diccionario) # respuesta {"nombre": "agustina", "apellido": "Martinez", "edad": 32, "profesion": "RRHH"}
+
+`,
+`
+# keys
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+print(diccionario.keys()) # devuelve todas las claves del diccionario
+# respuesta dict_keys(['nombre', 'apellido', 'edad', 'profesion'])
+
+`,
+`
+# values
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+print(diccionario.values()) # devuelve todas las claves del diccionario
+# respuesta dict_values(['agustina', 'Martinez', 42, 'RRHH'])
+
+`,
+`
+# items
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+items = diccionario.items()
+print(diccionario.items()) # devuelve todas los valores y claves del diccionario separadas en listas
+# respuesta dict_items([('nombre', 'agustina'), ('apellido', 'Martinez'), ('edad', 42), ('profesion', 'RRHH')])
+
+`,
+`
+# get
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+print(diccionario.get("nombre","no existe la clave nombre")) # trae el valor de la clave "nombre" del diccionario
+# si no existe la clave, devuelve el valor "no existe la clave nombre".
+print(diccionario.get("documento","no existe la clave documento")) # trae el valor de la clave "documento" del diccionario
+# si no existe la clave devuelve el valor "no existe la clave documento".
+
+`,
+`
+# update
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+print(diccionario) # respuesta {'nombre': 'agustina', 'apellido': 'Martinez', 'edad': 42, 'profesion': 'RRHH'}
+diccionario.update({"nombre":"fernanda", "estado_civil": "casada"}) # update modifica los valores de la clave.
+print(diccionario.get("nombre","no existe la clave nombre")) # trae el valor de la clave "nombre" del diccionario
+# En el caso de que no exista la clave en el diccionario, agrega la clave y el valor en el diccionario.
+print(diccionario) # respuesta {'nombre': 'fernanda', 'apellido': 'Martinez', 'edad': 42, 'profesion': 'RRHH', 'estado_civil': 'casada'}
+
+`,
+`
+# pop
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+print(diccionario.pop("apellido", "no existe")) # elimina la clave "apellido"
+# En el caso de no existir, retorna un valor que en este caso es "no existe"
+diccionario.pop({"estado_civil", "no existe") # elimina la clave "estado_civil"
+# En el caso de no existir, retorna un valor que en este caso es "no existe"
+print(diccionario) # devuelve el diccionario sin las claves puestas en el método pop
+# respuesta {'nombre': 'agustina', 'edad': 42, 'profesion': 'RRHH'}
+
+`,
+`
+# popitem
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+print(diccionario.popitem()) # Elimina el último elemento del diccionario y devuelve clave - valor del elemento eliminado.
+print(diccionario) # diccionario modificado. resultado {'nombre': 'agustina', 'apellido': 'Martinez', 'edad': 42 }
+
+`,
+`
+# Clear
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+diccionario.clear() # Elimina todos los elementos del diccionario.
+print(diccionario) # resultado {}
+
+`,
+`
+# Copy
+
+diccionario = {
+    "nombre": "agustina",
+    "apellido": "Martinez",
+    "edad": 42,
+    "profesion": "RRHH"
+}
+
+dic_copia = diccionario.copy() # copia el diccionario en la variable sin modificar el original.
+
+dic_copia.clear() # Elimina todos los elementos de la copia del diccionario
+
+print(diccionario) # resultado devuelve el diccionario original intacto. resultado {'nombre': 'agustina', 'apellido': 'Martinez', 'edad': 42, 'profesion': 'RRHH'}
+print(dic_copia) # devuelve el diccionario modificado. resultado {}
+`,
+`
+# fromkeys
+
+claves = ["a", "b", "c"] # lista de claves
+
+valor = 0 # variable con valores
+
+diccionario = dict.fromkeys(claves, 0) # creación de diccionario con claves del mismo valor.
+print(diccionario) # resultado: {"a": 0, "b": 0, "c": 0}
+
+`,
+`
+
+# Estructura de conjunto
+
+conjunto = [75,6,47,38,16,58,94,63,29,28,1,24,83,5,90]
+
+`,
+`
+# conjunto
+conjunto = {1,5,4,7,9}
+
+# iteración mediante bucle for
+for numero in conjunto:
+    print(numero)
+# print a todos los números
+
+# conversión a una lista
+conversion_a_lista = list(conjunto)
+print(conversion_a_lista[0])  
+print(conversion_a_lista[1])
+print(conversion_a_lista[2])
+print(conversion_a_lista[3])
+print(conversion_a_lista[4])
+
+# utilizar el método pop
+copia_conjunto = conjunto.copy()
+
+print(copia_conjunto.pop())
+print(copia_conjunto.pop())
+print(copia_conjunto.pop())
+print(copia_conjunto.pop())
+print(copia_conjunto.pop())
+
+`,
+`
+# add
+conjunto = { 3 ,5 ,6 }
+conjunto.add(4)
+print(conjunto)
+
+`,
+`
+# copy
+
+conjunto = { 3 ,5 ,6 }
+conjunto_copia = conjunto.copy()
+conjunto_copia.add(7)
+print(conjunto) # resultado { 3, 5, 6 }
+print(conjunto_copia) # resultado { 3, 5, 6, 7 }
+
+`,
+`
+# update(otro conjunto)
+
+conjunto = { 3 ,5 ,6 }
+conjunto.update({964,63,64,2347,57})
+print(conjunto) # respuesta {64,3,5,6,964,63,2347,57} # el orden no es el mismo siempre
+
+`,
+`
+# Remove
+
+conjunto = { 3 ,5 ,6 }
+conjunto.remove(3)
+print(conjunto) # respuesta {64,3,5,6,964,63,2347,57} # respuesta { 5, 6}
+
+`,
+`
+# Discard
+
+conjunto = { 3 ,5 ,6 }
+conjunto.discard(53)
+print(conjunto) # respuesta {3, 5, 6} 
+
+`,
+`
+# pop
+
+conjunto = { 34 , 437 , 576 , 5 , 6 }
+conjunto.pop()
+print(conjunto) # respuesta { 34 , 437 , 576 , 5 }
+
+`,
+`
+# Union
+
+conjunto = { 34 , 437 , 576 , 5 , 6 }
+union = conjunto.union({62,75,17,78})
+print(union) # respuesta {576, 34, 5, 6, 75, 78, 17, 437, 62} # el orden no es el mismo siempre { 576, 34, 5, 6, 75, 78 }
+
+`,
+`
+# Intersection
+
+conjunto = {"patricia", "karolina", "luis", "roberto"}
+conjunto2 = {"karolina", "gustavo", "mariana", "luis"} 
+interseccion = conjunto.intersection(conjunto2)
+print(interseccion) # respuesta {"karolina", "luis"}
+
+`,
+`
+# Difference
+
+conjunto = {"patricia", "karolina", "luis", "roberto"}
+conjunto2 = {"karolina", "gustavo", "mariana", "luis"}
+diferencia = conjunto.difference(conjunto2)
+print(diferencia) # respuesta {"patricia", "roberto"}
+
+`,
+`
+# Symmetric difference
+
+conjunto = {"patricia", "karolina", "luis", "roberto"}
+conjunto2 = {"karolina", "gustavo", "mariana", "luis"}
+diferencia_simetrica = conjunto.symmetric_difference(conjunto2)
+print(diferencia_simetrica) # respuesta {"patricia", "mariana", "gustavo", "roberto"}
+
+`,
+`
+# issubset
+
+conjunto = {"patricia", "karolina", "luis", "roberto"}
+conjunto2 = {"patricia", "karolina", "luis", "roberto","gustavo" , "mariana"}
+diferencia_booleano = conjunto.issubset(conjunto2)
+print(diferencia_booleano) # respuesta True
+
+`,
+`
+# Issuperset(otro_conjunto) - verifica si el conjunto actual es un superconjunto del otro conjunto.
+
+conjunto = {"patricia", "karolina", "luis", "roberto"}
+conjunto2 = {"karolina", "gustavo", "mariana", "luis"}
+print(conjunto.issuperset(conjunto2)) # respuesta False
+
+
+`,
+`
+# Clear
+
+conjunto = {"patricia", "karolina", "luis", "roberto"}
+conjunto.clear()
+print(conjunto) # respuesta set()
+
+`
+]
+
+export const class7Code =
+[
+    `
+# SintaxError
+
+print("hola)
+`,
+`
+# NameError
+
+y = 5
+print(x)
+`,
+`
+# TypeError
+
+x = "5"
+y = 2
+z = x + y
+print(z)
+`,
+`
+# ValueError
+
+edad = input("Ingrese su edad: ")
+edad_entera = int(edad)
+`,
+`
+# IndentationError
+
+for i in range(5):
+print(i)
+`,
+`
+# AttributeError
+
+lista = [1, 2, 3]
+print(lista.size())
+`,
+`
+# KeyError
+
+diccionario = {"a": 1, "b": 2}
+print(diccionario["c"])
+`,
+`
+# ZeroDivisionError
+
+x = 10
+y = 0
+z = x / y
+print(z)
+`,
+`
+# FileNotFoundError
+file = open("archivo.txt", "r")
+`,
+`
+# Bloque try - except
+
+try:
+    x = int(input("Ingrese un numero: "))
+    resultado = 10/ x
+    print("El resultado es:", resultado)
+except ValueError:
+    print("Error: Ingrese un número válido.")
+except ZeroDivisionError:
+    print("Error: No se puede dividir entre cero."
+
+`,
+`
+# Bloque else
+
+try:
+    x = int(input("Ingrese un numero: "))
+    resultado = 10/ x
+    print("El resultado es:", resultado)
+except ValueError:
+    print("Error: Ingrese un número válido.")
+except ZeroDivisionError:
+    print("Error: No se puede dividir entre cero."
+else:
+    print("El código se ejecutó sin errores.")
+`,
+`
+# Bloque Finally
+
+try:
+    x = int(input("Ingrese un numero: "))
+    resultado = 10/ x
+    print("El resultado es:", resultado)
+except ValueError:
+    print("Error: Ingrese un número válido.")
+except ZeroDivisionError:
+    print("Error: No se puede dividir entre cero."
+else:
+    print("El código se ejecutó sin errores.")
+finally:
+    print("Siempre se ejecutará este bloque, ocurra o no una excepción.")
+`,
+`
+# Abre el archivo en modo lectura
+archivo = open("nuevo documento de texto.txt", "r") # Antes debes crear un archivo txt llamado "nuevo documento de texto"
+`,
+`
+# Abre el archivo en modo lectura
+archivo = open("nuevo documento de texto.txt", "r") # Antes debes crear un archivo txt llamado "nuevo documento de texto"
+# Lee el archivo
+contenido = archivo.read()
+# imprime el contenido
+print(contenido)
+`,
+`
+# Abre el archivo en modo escritura
+archivo = open("nuevo documento de texto.txt", "w") # Antes debes crear un archivo txt llamado "nuevo documento de texto"
+# Lee el archivo
+contenido = archivo.write("hola, este es un ejemplo de escritura en un archivo de texto")
+# Abre el archivo en modo lectura
+archivo = open("nuevo documento de texto.txt", "r") # Antes debes crear un archivo txt llamado "nuevo documento de texto"
+# Lee el archivo
+contenido = adrchivo.read()
+# imprime el contenido
+print(contenido)
+`,
+`
+# Abre el archivo en modo adjunto
+archivo = open("nuevo documento de texto.txt", "a") # Antes debes crear un archivo txt llamado "nuevo documento de texto"
+
+# Agrega contenido al archivo
+contenido = archivo.write("\nEste es un nuevo contenido agregado al archivo de texto")
+
+# Cierra el archivo
+archivo.close()
+`,
+`
+# Abre el archivo en modo escritura
+archivo = open("nuevo documento de texto.txt", "w") # Antes debes crear un archivo txt llamado "nuevo documento de texto"
+# Lee el archivo
+contenido = archivo.write("hola, este es un ejemplo de escritura en un archivo de texto")
+# Abre el archivo en modo lectura
+archivo = open("nuevo documento de texto.txt", "r") # Antes debes crear un archivo txt llamado "nuevo documento de texto"
+# Lee el archivo
+contenido = adrchivo.read()
+# imprime el contenido
+print(contenido)
+# cierra el archivo
+archivo.close()
+`,
+`
+# renombrar un archivo
+import os
+os.rename("archivo.txt", "archivos.txt")
+`,
+`
+# remover archivo
+import os
+os.remove("archivos.txt")
+`
+
+]
