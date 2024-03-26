@@ -179,6 +179,15 @@ const Class3 = () => {
                   </div>
                 </div>
                 <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <Link to="/pythonClassFile/miniproject2.py"
+                    target={"_blank"}
+                    download={"miniproject2.py"}>
+                    <button className="accordion-button collapsed bg-transparent" type="button">
+                      <h2 className="text-light">Descarga mini proyecto: Adivina el número</h2>
+                    </button>
+                  </Link>
+                </div>
+                <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class3.py"
                     target={"_blank"}
                     download={"class3.py"}>

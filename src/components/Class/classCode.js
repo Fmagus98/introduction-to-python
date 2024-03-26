@@ -1555,3 +1555,71 @@ os.remove("archivos.txt")
 `
 
 ]
+
+export const class8Code =
+[
+    `
+# Clase de POO
+
+class Perro: # creación de clase
+    def __init__(self, nombre):
+        self.nombre = nombre
+    
+    def ladrar(self):
+        print("¡Guau!")
+
+mi_perro = Perro("Max")
+mi_perro.ladrar()
+
+`,
+`
+# Atributos
+class Persona:
+    def __init__(self, nombre, edad): # función de atributos
+        self.nombre = nombre
+        self.edad = edad
+
+    def saludar(self):
+        print(f"Hola, soy" {self.nombre} y tengo {self.edad} años.")
+
+persona1 = Persona("Juan", 25)
+persona1.saludar()
+
+`,
+`
+# Métodos
+
+class Rectangulo:
+    def __init__(self, ancho, altura):
+        self.ancho = ancho
+        self.altura = altura
+
+    def area(self): # método
+        return self.ancho * self.altura
+
+mi_rectangulo = Rectangulo(5, 3)
+print(mi_rectangulo.area()) # ejecución de método
+
+`,
+`
+# Herencia
+
+class Personaje:
+    def __init__(self, nombre,vida):
+        self.nombre = nombre
+        self.vida = vida
+
+class Guerrero(Personaje): # clase heredada
+    def __init__(self,nombre, vida,poder): 
+        super().__init__(nombre,vida) # llamado al constructor de la clase padre
+        self.poder = poder
+    
+    def ataque(self):
+        print("ataca")
+
+guerrero = Guerrero("julio", 100, 32)
+guerrero.ataque() 
+
+`
+
+]

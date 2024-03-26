@@ -4,6 +4,8 @@ import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
+import { CopyButton } from '../CopyButton/CopyButton'
+import { class8Code } from './classCode'
 
 const Class8 = () => {
 
@@ -88,6 +90,7 @@ const Class8 = () => {
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text break mx-auto mt-4 w-75">Clases y objetos: Una clase es una estructura que define las propiedades y comportamientos comunes a un conjunto de objetos. Para crear un objeto, necesitas instanciar una clase.</p>
+                      <CopyButton code={class8Code[0]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class8/class.webp"></img>
                       <p className="text break mx-auto w-75" style={{ marginBottom: "7rem" }}>En este ejemplo, se define la clase Perro con un atributo nombre y un método ladrar(). Luego, se crea un objeto mi_perro a partir de la clase Perro y se invoca el método ladrar() del objeto.</p>
                     </div>
@@ -102,6 +105,7 @@ const Class8 = () => {
                       <p className="text break mx-auto mt-4 w-75">
                         Los atributos son variables asociadas a un objeto. Pueden ser variables de instancia (asociadas a cada objeto individualmente) o variables de clase (compartidas por todos los objetos de la clase). Puedes acceder a los atributos utilizando la notación de punto. Por ejemplo:
                       </p>
+                      <CopyButton code={class8Code[1]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class8/attributes.webp"></img>
                       <p className="text break mx-auto w-75" style={{ marginBottom: "7rem" }}>En este ejemplo, la clase Persona tiene atributos nombre y edad. Estos atributos se asignan cuando se crea un objeto y se acceden utilizando la notación de punto.</p>
                     </div>
@@ -115,6 +119,7 @@ const Class8 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text break mx-auto w-75 mt-4">
                         Los métodos son funciones asociadas a un objeto. Pueden acceder y manipular los atributos del objeto. Los métodos pueden ser definidos dentro de la clase y se invocan en los objetos utilizando la notación de punto. Por ejemplo:</p>
+                        <CopyButton code={class8Code[2]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class8/methods.webp"></img>
                       <p className="text break mx-auto w-75">En este ejemplo, la clase Rectangulo tiene un método area() que calcula el área del rectángulo basado en los atributos ancho y altura. El método se invoca en el objeto mi_rectangulo.</p>
                       <p className="text break mx-auto w-75" style={{ marginBottom: "7rem" }}>La programación orientada a objetos en Python ofrece una forma estructurada y modular de diseñar y desarrollar programas. Permite la reutilización de código, la abstracción de conceptos y la organización de la lógica en entidades coherentes. Esta es solo una introducción básica, pero la POO en Python tiene muchas más características y conceptos avanzados que puedes explorar para construir aplicaciones más complejas y eficientes.</p>
@@ -129,6 +134,7 @@ const Class8 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text break mx-auto w-75 mt-4">La herencia en Python es un concepto importante de la programación orientada a objetos (POO) que permite que una clase adquiera propiedades (atributos y métodos) de otra clase. La clase que hereda se denomina "clase hija" o "subclase", y la clase de la cual hereda se llama "clase padre" o "superclase". Esto permite la reutilización de código y la organización jerárquica de las clases.
                         En Python, para definir una clase que herede de otra, se utiliza la siguiente sintaxis:</p>
+                        <CopyButton code={class8Code[3]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class8/heredity.webp"></img>
                     </div>
                   </div>
