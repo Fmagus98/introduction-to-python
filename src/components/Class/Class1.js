@@ -425,15 +425,35 @@ const Class1 = () => {
                                     </button>
                                     <div id="a11" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
-                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
+                                            <h3 className="mt-4 text-break mx-auto w-75">Crea un proyecto en Visual Studio Code</h3>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">1_ Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
                                             <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/p1.webp"></img>
-                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">2_ Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
                                             <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/p2.webp"></img>
-                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Luego de seleccionar la carpeta veremos que en la parte superior izquierda nos aparecerá el nombre de la carpeta seleccionada y en el lado derecho tendremos varios items, el primer item nos dejará que podamos crear un archivo, el segundo nos dejará que podamos crear una carpeta,
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">3_ Luego de seleccionar la carpeta veremos que en la parte superior izquierda nos aparecerá el nombre de la carpeta seleccionada y en el lado derecho tendremos varios items, el primer item nos dejará que podamos crear un archivo, el segundo nos dejará que podamos crear una carpeta,
                                                 el tercero refrescará la carpeta, el cuarto item nos dejará contraer o plegar una carpeta. en este caso usaremos el primer item para crear un archivo.</p>
                                             <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/p3.webp"></img>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Al crear el archivo le debemos escribir el nombre deseado para el archivo seguido de un ".py" para indicar al programa de que es un archivo de python, por ejemplo: index.py </p>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">4_ Al crear el archivo le debemos escribir el nombre deseado para el archivo seguido de un ".py" para indicar al programa de que es un archivo de python, por ejemplo: index.py </p>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p4.webp"></img>
+                                            <h3 className="mt-4 text-break mx-auto w-75">Crea proyecto en Pycharm</h3>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">1_ Abre Pycharm y selecciona "Open".</p>
+                                            <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/pych7.webp"></img>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">2_ Selecciona la carpeta de tu escritorio (Desktop) y selecciona el logo de una carpeta.</p>
+                                            <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/pych8.webp"></img>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">3_ Escribí el nombre de la carpeta que deseas crear en en escritorio(en este caso es "Clase1") y selecciona "OK".</p>
+                                            <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/pych9.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">4_ Selecciona "OK".</p>
+                                            <img className="w-75 d-block d-block mx-auto border-content" alt="" src="../img/class1/pych10.webp"></img>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">5_ Selecciona "Close".</p>
+                                            <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/pych11.webp"></img>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">6_ Ahora debemos crear el archivo de python, para hacerlo haz click derecho con el mouse a la carpeta que creaste(Clase1) y dirigete a New/Pyhon File.</p>
+                                            <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/pych12.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">7_ Escribe el nombre del archivo de python(en este caso es "programa1") y selecciona "OK".</p>
+                                            <img className="w-75 d-block d-block mx-auto border-content" alt="" src="../img/class1/pych13.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Cuando quieras ejecutar el programa debes abrir la terminal y ejecutar, para esto debes hacer click derecho con el mouse al archivo de python que creaste y dirigirte a "open to terminal".</p>
+                                            <img className="w-75 d-block d-block mx-auto border-content" alt="" src="../img/class1/pych14.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Al abrir la terminal escribe dentro "python" seguido del nombre del archivo, en este caso es "python programa1.py".</p>
+                                            <img className="w-75 d-block d-block mx-auto border-content" alt="" src="../img/class1/pych15.webp"></img>
                                             <h3 className="mt-4 text-break mx-auto w-75">Salida de datos - print()</h3>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
                                                 con el objetivo de poder representar la información que el script nos quiere
