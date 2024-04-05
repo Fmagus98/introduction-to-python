@@ -126,7 +126,7 @@ const Class1 = () => {
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tener pensamiento analítico</h3>
                                             <p className="text-break mx-auto w-75">Los programadores tienen la capacidad de analizar y comprender problemas complejos, descomponerlos en partes más pequeñas y aplicar soluciones lógicas y estructuradas.</p>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Ser creativo</h3>
-                                            <p className="text-break mx-auto w-75">La programación también requiere creatividad para encontrar soluciones innovadoras y eficientes. Los programadores pueden encontrar diferentes enfoques y perspectivas para resolver problemas.</p>
+                                            <p className="text-break mx-auto w-75" style={{ marginBottom: "7rem" }}>La programación también requiere creatividad para encontrar soluciones innovadoras y eficientes. Los programadores pueden encontrar diferentes enfoques y perspectivas para resolver problemas.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -257,7 +257,7 @@ const Class1 = () => {
                                                 extraer información de sitios web, como hacen Netflix o Instagram.</p>
                                             <h3 className="mt-4 mb-4 fw-bold text-center">DESARROLLO DE VIDEOJUEGOS</h3>
                                             <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/g&g3d.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50">Juegos como Battelfield 2 o los Sims 4, parte de su código está escrito en este lenguaje de programación. <br></br>
+                                            <p className="mt-4 mb-7 text-break mx-auto w-50" style={{ marginBottom: "7rem" }}>Juegos como Battelfield 2 o los Sims 4, parte de su código está escrito en este lenguaje de programación. <br></br>
                                                 A través de librerías como Pygame o Panda 3D, podrás enfocar tu desempeño profesional aparte desarrollo gaming, pero hay otras tantas que están recogidas en wiki python.
                                                 Pero Python no tiene la posibilidad de realizarlos al completo, por lo que te animamos a que descubras otros lenguajes para programar videojuegos, como Java o Lua.
                                             </p>
@@ -266,9 +266,50 @@ const Class1 = () => {
                                 </div>
                                 <div id="element7" className={`accordion-item mt-4  animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        <h2 className="text-light">Instalación de python</h2>
+                                        <h2 className="text-light">¿Que arquitectura tengo en mi pc?</h2>
                                     </button>
                                     <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark">
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">La arquitectura de 32 bits y 64 bits se refiere a cómo un procesador maneja la información. Estos términos se refieren a la cantidad de datos que un procesador puede procesar en un solo ciclo de reloj y la cantidad máxima de memoria que puede direccionar el procesador.</p>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">Es importante saberlo ya que vamos a instalar una versión diferente de python e IDE para cada caso. Para saber que tipo de arquitectura tengo en mi pc debemos hacer lo siguiente:</p>
+                                            <ul className="intr-ul"><p className='mx-auto w-75'><b>En Windows</b></p>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_</span>Toca la tecla windows, escribe en el buscador "sistema" y selecciona el primero que aparezca.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/w1.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Dentro del sistema verás la información de tu computadora, allí encontrarás que tipo de arquitectura tiene tu pc.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/w2.webp"></img>
+                                                </li>
+                                            </ul>
+                                            <ul className="intr-ul"><p className='mx-auto w-75'><b>En MacOS</b></p>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_ </span>Pulsamos el icono de la manzana y seleccionamos en "Sobre este Mac".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/m1.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Dentro de la pantalla que se abrió, seleccionamos "informe del sistema".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/m2.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">3_ </span>Ingresa a "Extensiones" y dentro verás la información de tu procesador, en el caso que diga "x86_64" en arquitectura y "Si" en 64 bits(intel) será de 64 bits, en caso contrario es de 32 bits.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/m3.webp"></img>
+                                                </li>
+                                            </ul>
+                                            <ul className="intr-ul"><p className='mx-auto w-75'><b>En Linux</b></p>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_ </span>Abre el terminal con las teclas Ctrl + Alt + T, o desde Aplicaciones/Accesorios/Terminal (Estos atajos se basan en Linux/Ubuntu) y luego escribe "lscpu", ejecutalo y te mostrará que tipo de arquitectura es. Si esta marca “32-bits, 64-bits” es de 64 bits, por el contrario si te marca solo 32-bits, tu ordenador es de 32 bits.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/l1.webp"></img>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element8" className={`accordion-item mt-4  animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <h2 className="text-light">Instalación de python</h2>
+                                    </button>
+                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark">
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">1. Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link> y selecciona "Downloads"</p>
                                             <img className="w-75 mx-auto d-block border-content " alt="" src="../img/class1/python1.webp"></img>
@@ -276,18 +317,18 @@ const Class1 = () => {
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/python2.webp"></img>
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">3. Buscamos la versión  3.8.3 y tocamos "download"</p>
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/python3.webp"></img>
-                                            <p className="mt-7 mb-4 text-break mx-auto w-75">4. Elegimos el sistema operativo que utilizamos en nuestro dispositivo</p>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">4. Elegimos el sistema operativo que utilizamos en nuestro dispositivo y la arquitectura que tengamos sea 64 bits(86x_64 / x64) ó 32 bits(86x).</p>
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/python4.webp"></img>
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">5. Al instalar selecciona "add python 3.8 to PATH" y "install now"</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/python5.webp"></img>
+                                            <img className="w-75 mx-auto d-block border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/python5.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element8" className={`accordion-item mt-4  animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSix">
+                                <div id="element9" className={`accordion-item mt-4  animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSix">
                                         <h2 className="text-light">Entorno de desarrollo integrado (IDE)</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Para programar en un lenguaje de programación debemos tener en nuestro ordenador un entorno de desarrollo integrado, más conocido como IDE,
                                                 Un IDE combina un editor de código, un compilador o intérprete, herramientas de depuración, un sistema de gestión de versiones,
@@ -303,35 +344,51 @@ const Class1 = () => {
                                                 <li><p className="mt-4 mb-4 text-break mx-auto w-50"><span className="fw-bold">Visual Studio Code:</span> Es un entorno de desarrollo de código fuente abierto y gratuito desarrollado por Microsoft. Es un editor de código ligero pero potente que se ha vuelto muy popular entre los desarrolladores por su facilidad de poder programar en diferentes lenguajes de programación, incluido Python.</p></li>
                                             </ul>
                                             <p className="text-break mx-auto w-75 mt-4" style={{ marginBottom: "7rem" }}>
-                                                En este curso utilizaremos Visual Studio code pero cabe destacar que la elección del IDE dependerá de tus necesidades y preferencias personales.
+                                                En este curso utilizaremos Visual Studio code, en el caso que tengas 32 bits podes usar Pycharm 2018.1.6 pero cabe destacar que la elección del IDE dependerá de tus necesidades y preferencias personales.
                                             </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="element9" className={`accordion-item mt-4  animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                        <h2 className="text-light">Instalación de Visual Studio Code</h2>
-                                    </button>
-                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark  ">
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">1 - Ve al sitio web oficial de Visual Studio Code en <Link to="https://code.visualstudio.com" target="_blank" className="text-info">https://code.visualstudio.com</Link>.<br></br>En "Download for Windows"  van a la palomita que esta al lado derecho y van a ver los diferentes sistemas operativos en el que pueden descargarlo</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide1.webp"></img>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">2 - Selecciona "Acepto el acuerdo" y luego "siguiente" para seguir con la instalación.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide2.webp"></img>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">3 - Selecciona todos los checkbox y haz click derecho en el botón "siguiente"</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide3.webp"></img>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">4 - Haz click derecho en el boton "siguiente" </p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide4.webp"></img>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">5 - Al terminar la instalación haz click en "finalizar" y abrirá Visual Studio Code! </p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide5.webp"></img>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="element10" className={`accordion-item mt-4  animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                        <h2 className="text-light">Visual Studio Code (IDE)</h2>
+                                        <h2 className="text-light">Instalación de IDE</h2>
                                     </button>
                                     <div id="a9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark  ">
+                                            <h3 className="mt-4 text-break w-75 mx-auto">Instalación de IDE para sistema operativo de 64 bits</h3>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">En este curso utilizaremos Visual Studio Code, es un editor de código ligero pero potente que se ha vuelto muy popular entre los desarrolladores por su facilidad de poder programar en diferentes lenguajes de programación, incluido Python.</p>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">1 - Para instalarlo ve al sitio web oficial de Visual Studio Code en <Link to="https://code.visualstudio.com" target="_blank" className="text-info">https://code.visualstudio.com</Link>.<br></br>En "Download for Windows"  van a la palomita que esta al lado derecho y van a ver los diferentes sistemas operativos en el que pueden descargarlo</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide1.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">2 - Selecciona "Acepto el acuerdo" y luego "siguiente" para seguir con la instalación.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide2.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">3 - Selecciona todos los checkbox y haz click derecho en el botón "siguiente".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide3.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">4 - Haz click derecho en el boton "siguiente".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide4.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">5 - Al terminar la instalación haz click en "finalizar" y abrirá Visual Studio Code!.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/ide5.webp"></img>
+                                            <h3 className="mt-4 text-break w-75 mx-auto">Instalación de IDE para sistema operativo de 32 bits</h3>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">En el caso que dispongas de una arquitectura de 32 bits, Visual Studio Code no es compatible y deberás ver otras alternativas, en este caso te daré una guía de como instalar Pycharm 2018.1.6(última version compatible con 32 bits).</p>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">1 - Para instalarlo ve al sitio web oficial de Pycharm en <Link to="https://www.jetbrains.com/pycharm/download/other.html" target="_blank" className="text-info">https://www.jetbrains.com/pycharm/download/other.html</Link> y selecciona el sistema operativo que utilizas.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/pych1.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">2 - Ejecuta el instalador que descargaste y selecciona "Next".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/pych2.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">3 - Selecciona "Next".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/pych3.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">4 - Presiona en "32-bit launcher", ".py" y selecciona "Next".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/pych4.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">5 - Selecciona "Install" y espera a que se instale.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/pych5.webp"></img>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">4 - Selecciona "Finish". </p>
+                                            <img className="w-75 mx-auto d-block border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/pych6.webp"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element11" className={`accordion-item mt-4  animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        <h2 className="text-light">Herramientas de Visual Studio Code (IDE)</h2>
+                                    </button>
+                                    <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
                                             <h3 className="mt-4 text-break w-75 mx-auto">Extensiones en Visual Studio Code</h3>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">En nuestro Visual Studio Code tenemos bastantes herramientas que nos falicitará a la hora de
@@ -362,11 +419,11 @@ const Class1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element11" className={`accordion-item mt-4  animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                <div id="element12" className={`accordion-item mt-4  animated-left ${elementVisibility.element12 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a11" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Ejecución del primer programa</h2>
                                     </button>
-                                    <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a11" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
                                             <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/p1.webp"></img>
@@ -389,7 +446,7 @@ const Class1 = () => {
                                                 variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
                                             </p>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "print" escribiremos por ejemplo: print("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
-                                            <CopyButton code={class1Code[0]}/>
+                                            <CopyButton code={class1Code[0]} />
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p5.webp"></img>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Para ejecutar el programa debemos escribir en la terminal "python" seguido del nombre del archivo que queramos ejecutar, por ejemplo: python index.py. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p6.webp"></img>
@@ -397,7 +454,7 @@ const Class1 = () => {
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
                                                 Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
                                             </p>
-                                            <CopyButton code={class1Code[1]}/>
+                                            <CopyButton code={class1Code[1]} />
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p7.webp"></img>
                                             <h3 className="mt-4 text-break mx-auto w-75">Entrada de datos - input()</h3>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">La función input() permite obtener información
@@ -407,7 +464,7 @@ const Class1 = () => {
                                             </p>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                             </p>
-                                            <CopyButton code={class1Code[2]}/>
+                                            <CopyButton code={class1Code[2]} />
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p8.webp"></img>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
                                             </p>
@@ -417,12 +474,12 @@ const Class1 = () => {
                                             </p>
                                             <p className="mb-2 text-break mx-auto w-75">Por ejemplo si queremos mostrar en pantalla cuántos caracteres tiene la palabra "programación", debemos usar un input y dentro la funcion len(): input(len("Programación")), esto nos retornará la cantidad de caracteres que hay.
                                             </p>
-                                            <CopyButton code={class1Code[3]}/>
+                                            <CopyButton code={class1Code[3]} />
                                             <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p10.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element12" className={`accordion-item mt-4  animated-left ${elementVisibility.element12 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                                <div id="element13" className={`accordion-item mt-4  animated-left ${elementVisibility.element13 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                                     <Link to="/pythonClassFile/class1.py"
                                         target={"_blank"}
                                         download={"class1.py"}>
