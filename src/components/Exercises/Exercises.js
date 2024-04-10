@@ -101,7 +101,7 @@ const Exercises = () => {
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
                                     <p className="text-break mx-auto w-50"> Solicita al usuario 2 números y imprime en pantalla de forma booleana(True - False) si el primer número es mayor o igual al segundo número.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
-                                    <p className="text-break mx-auto w-50"> Solicita al usuario 2 números y imprime en pantalla de forma booleana(True - False) si el primer número es mayor o igual al segundo número.</p>
+                                    <p className="text-break mx-auto w-50"> Escribe un programa que solicite al usuario dos números y le indique si el primero es divisible por el segundo(True - False).</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 10 </h3>
                                     <p className="text-break mx-auto w-50"> Situacion: Un auto pasa por un control policial, el policia le pide el permiso de conducir, papeles del auto y su documentacion, el policia no debe detenerlo si es mayor de edad y tiene el permiso de conducir y los papeles en regla.<br></br><br></br>Solicita al usuario que escriba "True" o "False" a las siguientes preguntas:<br></br>1_ ¿Es mayor de edad?.<br></br>2_Tiene permiso de conducir y los papeles en regla?. <br></br>Luego imprime en pantalla de forma booleana (True - False), si cumple con las 2 preguntas o no (true = cumple, false = no cumple).</p>
                                 </div>
