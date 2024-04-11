@@ -44,6 +44,11 @@ const Navbar = () => {
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/" : "/micropython"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>{title}</Link></li>
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython/classes" : "/classes"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Clases</Link></li>
               {location.pathname.includes("micropython") ? null : <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/exercises" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Ejercicios</Link></li>}
+              {!location.pathname.includes("micropython") && !localStorage.getItem("access") ?
+                <>
+                  <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/algorithms" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Algoritmos</Link></li>
+                  <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/healthAndProductivity" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Salud y productividad</Link></li>
+                </> : null} 
               {!location.pathname.includes("micropython") && localStorage.getItem("access") ? (isMobileNavOpen ?
                 (<>
                   <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/digitalPortfolio" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Django</Link></li>
