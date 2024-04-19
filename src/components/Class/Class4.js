@@ -270,7 +270,7 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+              {/*   <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSix">
                     <h2 className="text-light">Mini Proyecto: Calculadora avanzada</h2>
                   </button>
@@ -344,6 +344,7 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
+                */}
                 <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class4.py"
                     target={"_blank"}
