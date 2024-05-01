@@ -184,7 +184,7 @@ const Exercises = () => {
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 7 </h3>
                                     <p className="text-break mx-auto w-50">Dada una tupla de elementos, escribe un programa que invierta el orden de los elementos y devuelva una nueva tupla invertida.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
-                                    <p className="text-break mx-auto w-50">Dada una lista de tuplas que contienen información de personas en el siguiente formato: (nombre, edad, altura), escribe un programa que ordene la lista de personas por altura de forma descendente y, en caso de empate, por edad de forma descendente.<br></br>Ejemplo:<br></br>Input: [("Juan", 25, 170), ("María", 30, 160), ("Pedro", 20, 170)]<br></br>Output: [("Juan", 25, 170), ("Pedro", 20, 170), ("María", 30, 160)].</p>
+                                    <p className="text-break mx-auto w-50">Dada una lista de tuplas que contienen información de personas en el siguiente formato: (nombre, edad, altura), escribe un programa que ordene la lista de personas por altura de forma descendente y, en caso de empate, por edad de forma ascendente.<br></br>Ejemplo:<br></br>Input: [("Juan", 25, 170), ("María", 30, 160), ("Pedro", 20, 170)]<br></br>Output: [("Juan", 25, 170), ("Pedro", 20, 170), ("María", 30, 160)].</p>
                                 </div>
                             </div>
                         </div>
