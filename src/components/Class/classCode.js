@@ -1496,7 +1496,7 @@ try:
 except ValueError:
     print("Error: Ingrese un número válido.")
 except ZeroDivisionError:
-    print("Error: No se puede dividir entre cero."
+    print("Error: No se puede dividir entre cero.")
 
 `,
 `
@@ -1509,7 +1509,7 @@ try:
 except ValueError:
     print("Error: Ingrese un número válido.")
 except ZeroDivisionError:
-    print("Error: No se puede dividir entre cero."
+    print("Error: No se puede dividir entre cero.")
 else:
     print("El código se ejecutó sin errores.")
 `,
@@ -1523,7 +1523,7 @@ try:
 except ValueError:
     print("Error: Ingrese un número válido.")
 except ZeroDivisionError:
-    print("Error: No se puede dividir entre cero."
+    print("Error: No se puede dividir entre cero.")
 else:
     print("El código se ejecutó sin errores.")
 finally:
