@@ -11,7 +11,7 @@ const Item = ({ item }) => {
   };
   const date = new Date()
   const dateFirebase = new Date(item.date.toDate())
-  const itemDate = (date >= dateFirebase)||localStorage.getItem("access") ?
+  const itemDate = (date >= dateFirebase)||(localStorage.getItem("access") && !location.pathname.includes("micropython"))?
     <Link to={`${redirect}${item.id}`} onClick={handleLinkClick} className='mx-auto class-teory card w-75' style={{background:location.pathname.includes("micropython")?"#B34229":"#012973"}}>
       <div className="card-body">
         <h4 className="text-center mb-2">{item.class}</h4>
