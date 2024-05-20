@@ -42,7 +42,7 @@ const Loggin = () => {
         <>{
             !localStorage.getItem("access") ? <li>  <form onSubmit={handleSubmit} className="form-inline mt-2 mt-md-0">
                 <div className="input-group">
-                    <input type="email" id="form3Example3" name="email" className="form-control" value={email} onChange={handleChange} />
+                    <input type="text" id="form3Example3" name="email" className="form-control" value={email} onChange={handleChange} />
                     <button type="submit" className="btn" style={{ background: emailFail ? "red" :null,backgroundColor:location.pathname.includes("micropython")?"rgb(238, 112, 83)":"#2f6997"}}>{!emailFail ? "Acceso Total" : "Correo inválido. Intenta de nuevo"}</button>
                 </div>
             </form>
