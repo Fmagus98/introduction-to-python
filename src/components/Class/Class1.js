@@ -186,13 +186,13 @@ const Class1 = () => {
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">CPython</span> Es la implementación más común de Python y está escrita en C. CPython es la implementación predeterminada de Python y es utilizada por la mayoría de los programadores de Python.</p>
                                                 </ol>
                                                 <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">EJython</span> Es una implementación de Python escrita en Java. Jython permite a los programadores utilizar Python en una máquina virtual Java y acceder a las librerías y frameworks de Java.</p>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Jython</span> Es una implementación de Python escrita en Java. Jython permite a los programadores utilizar Python en una máquina virtual Java y acceder a las librerías y frameworks de Java.</p>
                                                 </ol>
                                                 <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">EIronPython</span> Es una implementación de Python escrita en C# y diseñada para el entorno .NET. IronPython permite a los programadores utilizar Python en el entorno .NET y acceder a las librerías y frameworks de .NET.</p>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">IronPython</span> Es una implementación de Python escrita en C# y diseñada para el entorno .NET. IronPython permite a los programadores utilizar Python en el entorno .NET y acceder a las librerías y frameworks de .NET.</p>
                                                 </ol>
                                                 <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">EPyPy</span> Es una implementación de Python escrita en Python. PyPy es conocido por ser mucho más rápido que CPython, especialmente en aplicaciones que requieren mucho cálculo.</p>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">PyPy</span> Es una implementación de Python escrita en Python. PyPy es conocido por ser mucho más rápido que CPython, especialmente en aplicaciones que requieren mucho cálculo.</p>
                                                 </ol>
                                                 <ol>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">MicroPython</span> Es una implementación de Python diseñada para ser utilizada en microcontroladores y dispositivos de baja potencia. MicroPython es una versión reducida de Python que incluye un conjunto limitado de librerías y frameworks.</p>
