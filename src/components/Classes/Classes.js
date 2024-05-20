@@ -3,15 +3,15 @@ import { useLocation} from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import ItemContainer from '../ItemContainer/ItemContainer'
-import {colorPrimaryPython,colorPrimaryMicropython,colorSecondaryMicropython} from '../../colors'
+import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 const Classes = () => {
-    
+
   const location = useLocation();
   const elementVisibility = useScrollAnimation();
-  const title = location.pathname.includes("micropython")?"micropython":"python"
-  const content = location.pathname==="/micropython/classes"?"courseMicropython":"course"
-  const color = location.pathname.includes("micropython")?colorSecondaryMicropython:colorPrimaryPython
+  const title = location.pathname.includes("micropython") ? "micropython" : "python"
+  const content = location.pathname === "/micropython/classes" ? "courseMicropython" : "course"
+  const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
   const [course, setCourse] = useState([])
   useEffect(() => {
     getDocs(collection(db, content)).then(response => {
@@ -21,10 +21,10 @@ const Classes = () => {
       return (setCourse(getData))
     })
   }, [content])
-  
+
   return (
     <>
-      <section id="hero" style={{background:location.pathname.includes("micropython")?colorPrimaryMicropython:colorPrimaryPython}} >
+      <section id="hero" style={{ background: location.pathname.includes("micropython") ? colorPrimaryMicropython : colorPrimaryPython }} >
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -34,7 +34,7 @@ const Classes = () => {
                   organizados para aprender los conceptos fundamentales de la programación
                   utilizando {title} como lenguaje de referencia.</h2>
                 <div className="text-center text-lg-start">
-                  <a href="#class" className="btn-get-started scrollto" style={{backgroundColor:location.pathname.includes("micropython")?"rgb(238, 112, 83)":"#2f6997"}}>Empieza a cursar!</a>
+                  <a href="/" className="btn-get-started scrollto" style={{ behavior: 'smooth', backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>Empieza a cursar!</a>
                 </div>
               </div>
             </div>
@@ -60,13 +60,13 @@ const Classes = () => {
       </section>
       <section id="counts" className="counts">
         <div className="container">
-          <div id="element2" className={`section-title animated-down ${elementVisibility.element2 ? 'slide-down' : ''}`} style={{color: color}}>
+          <div id="element2" className={`section-title animated-down ${elementVisibility.element2 ? 'slide-down' : ''}`} style={{ color: color }}>
             <h2>Clases</h2>
             <p>Elige una clase</p>
           </div>
         </div>
         <div id="element3" className={`row w-100 animated-down ${elementVisibility.element3 ? 'slide-down' : ''}`}>
-          <ItemContainer item={course}/>
+          <ItemContainer item={course} />
         </div>
       </section>
     </>

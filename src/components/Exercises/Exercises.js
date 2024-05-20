@@ -237,8 +237,7 @@ const Exercises = () => {
                                     <p className="text-break mx-auto w-50">Escribe un programa que lea un archivo de texto y cuente cuántas veces aparece cada palabra en el archivo. Luego, muestra el resultado en la consola. Maneja las excepciones que puedan ocurrir durante la lectura del archivo.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
                                     <p className="text-break mx-auto w-50">Crea un programa que lea un archivo CSV llamado "datos.csv" que contenga nombres y edades separados por comas. El programa debe mostrar en la consola los nombres de las personas mayores de 18 años. Maneja las excepciones que puedan surgir durante la lectura del archivo o si hay un formato incorrecto en los datos.</p>
-                                    <h3 className="text-center mx-auto mt-4">Ejercicio 10 </h3>
-                                    <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario ingresar el nombre y la edad de una persona. Luego, guarda esa información como un objeto en un archivo binario llamado "persona.bin". Asegúrate de manejar las excepciones que puedan ocurrir durante la escritura del archivo.</p>  </div>
+                                </div>
                             </div>
                         </div>
                         <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
