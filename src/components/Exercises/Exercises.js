@@ -101,7 +101,7 @@ const Exercises = () => {
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 8 </h3>
                                     <p className="text-break mx-auto w-50"> Solicita al usuario 2 números y imprime en pantalla de forma booleana(True - False) si el primer número es mayor o igual al segundo número.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
-                                    <p className="text-break mx-auto w-50"> Escribe un programa que solicite al usuario dos números y le indique si el primero es divisible por el segundo(True - False).</p>
+                                    <p className="text-break mx-auto w-50"> Solicita al usuario 2 números y imprime en pantalla de forma booleana(True - False) si el primer número es mayor o igual al segundo número.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 10 </h3>
                                     <p className="text-break mx-auto w-50"> Situacion: Un auto pasa por un control policial, el policia le pide el permiso de conducir, papeles del auto y su documentacion, el policia no debe detenerlo si es mayor de edad y tiene el permiso de conducir y los papeles en regla.<br></br><br></br>Solicita al usuario que escriba "True" o "False" a las siguientes preguntas:<br></br>1_ ¿Es mayor de edad?.<br></br>2_Tiene permiso de conducir y los papeles en regla?. <br></br>Luego imprime en pantalla de forma booleana (True - False), si cumple con las 2 preguntas o no (true = cumple, false = no cumple).</p>
                                 </div>
@@ -120,7 +120,7 @@ const Exercises = () => {
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
                                     <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario su edad y determine si es mayor de edad (18 años o más) o menor de edad.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
-                                    <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario un número del 1 al 7 y muestre el día de la semana correspondiente (1 - Lunes, 2 - Martes, ..., 7 - Domingo). Si el número está fuera de ese rango, muestra un mensaje de error.</p>
+                                    <p className="text-break mx-auto w-50">EEscribe un programa que solicite al usuario un número del 1 al 7 y muestre el día de la semana correspondiente (1 - Lunes, 2 - Martes, ..., 7 - Domingo). Si el número está fuera de ese rango, muestra un mensaje de error.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
                                     <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario un número del 1 al 12 y muestre el nombre del mes correspondiente. Si el número está fuera de ese rango, muestra un mensaje de error.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
@@ -237,7 +237,8 @@ const Exercises = () => {
                                     <p className="text-break mx-auto w-50">Escribe un programa que lea un archivo de texto y cuente cuántas veces aparece cada palabra en el archivo. Luego, muestra el resultado en la consola. Maneja las excepciones que puedan ocurrir durante la lectura del archivo.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 9 </h3>
                                     <p className="text-break mx-auto w-50">Crea un programa que lea un archivo CSV llamado "datos.csv" que contenga nombres y edades separados por comas. El programa debe mostrar en la consola los nombres de las personas mayores de 18 años. Maneja las excepciones que puedan surgir durante la lectura del archivo o si hay un formato incorrecto en los datos.</p>
-                                </div>
+                                    <h3 className="text-center mx-auto mt-4">Ejercicio 10 </h3>
+                                    <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario ingresar el nombre y la edad de una persona. Luego, guarda esa información como un objeto en un archivo binario llamado "persona.bin". Asegúrate de manejar las excepciones que puedan ocurrir durante la escritura del archivo.</p>  </div>
                             </div>
                         </div>
                         <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
@@ -272,11 +273,6 @@ const Exercises = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
         </>
     )
 }
