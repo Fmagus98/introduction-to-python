@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation} from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import ItemContainer from '../ItemContainer/ItemContainer'
@@ -10,7 +10,7 @@ const Classes = () => {
   const location = useLocation();
   const elementVisibility = useScrollAnimation();
   const title = location.pathname.includes("micropython") ? "micropython" : "python"
-  const content = location.pathname === "/micropython/classes" ? "courseMicropython" : "course"
+  const content = location.pathname === "/micropython/classes" ? "courseMicropython" :location.pathname.includes("github")?"courseGithub": "course"
   const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
   const [course, setCourse] = useState([])
   useEffect(() => {
@@ -27,20 +27,37 @@ const Classes = () => {
       <section id="hero" style={{ background: location.pathname.includes("micropython") ? colorPrimaryMicropython : colorPrimaryPython }} >
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-              <div>
-                <h1>Clases</h1>
-                <h2>En este apartado encontrarás una serie de contenidos estructurados y
-                  organizados para aprender los conceptos fundamentales de la programación
-                  utilizando {title} como lenguaje de referencia.</h2>
-                <div className="text-center text-lg-start">
-                  <a href="/" className="btn-get-started scrollto" style={{ behavior: 'smooth', backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>Empieza a cursar!</a>
+            {location.pathname.includes("github") ?
+              <>
+                <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                  <div>
+                    <h1>Github</h1>
+                    <h2>Este curso está diseñado para proporcionar una comprensión completa y práctica de Git y GitHub, herramientas esenciales para el desarrollo de software y la gestión de proyectos.</h2>
+                    <div className="text-center text-lg-start">
+                      <a href="/" className="btn-get-started scrollto" style={{ behavior: 'smooth', backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>Empieza a cursar!</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4 order-1 order-lg-2 hero-img">
-              <img src={`../img/${title}.png`} className="img-fluid animated vh-60" alt="" />
-            </div>
+                <div className="col-lg-4 order-1 order-lg-2 hero-img">
+                  <img src={`../img/${title}.png`} className="img-fluid animated vh-60" alt="" />
+                </div>
+              </> :
+              <>
+                <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                  <div>
+                    <h1>Clases</h1>
+                    <h2>En este apartado encontrarás una serie de contenidos estructurados y
+                      organizados para aprender los conceptos fundamentales de la programación
+                      utilizando {title} como lenguaje de referencia.</h2>
+                    <div className="text-center text-lg-start">
+                      <a href="/" className="btn-get-started scrollto" style={{ behavior: 'smooth', backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>Empieza a cursar!</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4 order-1 order-lg-2 hero-img">
+                  <img src={`../img/${title}.png`} className="img-fluid animated vh-60" alt="" />
+                </div>
+              </>}
           </div>
         </div>
         <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">

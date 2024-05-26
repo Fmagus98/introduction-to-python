@@ -61,7 +61,7 @@ const Navbar = () => {
                 (<>
                   <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/digitalPortfolio" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Django</Link></li>
                   <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/professionalCarrer" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Carrera Profesional</Link></li>
-                  <li><Link to="/github" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Github</Link></li>
+                  <li><Link to="/github/classes" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Github</Link></li>
                   <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/algorithms" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Algoritmos</Link></li>
                   <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/healthAndProductivity" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Salud y productividad</Link></li>
                   {location.pathname.includes("micropython") ? null : <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/projects" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Proyectos</Link></li>}
@@ -76,7 +76,7 @@ const Navbar = () => {
                     <ul className={backgroundColor ? "dropdown-menu" : "dropdown-menu bg-transparent"} style={{ "background": backgroundColor }} aria-labelledby="navbarDropdown">
                       <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/digitalPortfolio" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Django</Link></li>
                       <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/professionalCarrer" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Carrera Profesional</Link></li>
-                      <li><Link to="/github" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Github</Link></li>
+                      <li><Link to="/github/classes" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Github</Link></li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
