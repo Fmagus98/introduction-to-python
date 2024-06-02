@@ -65,7 +65,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/micropython/contact" element={<Contact/>} />
         <Route path="/github/classes" element={<Classes/>} />
-        <Route path="/micropython/classes/DGNVKaHVIjv8RsBsi1yD" element={<GithubClass1 />} />
+        <Route path="/github/classes/26FRYWt99U3HPuaCfGky" element={<GithubClass1 />} />
         {/* <Route path="/microPython/github" element={<Github/>} /> */}
         <Route path="/professionalCarrer" element={<ProfessionalCareer/>}/>
         <Route path="/digitalPortfolio" element={<DigitalPortfolio/>}/>

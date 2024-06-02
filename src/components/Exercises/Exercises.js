@@ -69,7 +69,7 @@ const Exercises = () => {
                                     <p className="text-break mx-auto w-50"> Pedir al usuario que ingrese su nombre y su edad. Luego imprimir un mensaje que diga "Hola, [nombre]. Tienes [edad] años".
                                     </p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
-                                    <p className="text-break mx-auto w-50"> Solicitar al usuario que ingrese su nombre y luego imprimir un mensaje de saludo con el nombre proporcionado.
+                                    <p className="text-break mx-auto w-50"> Solicitar al usuario que ingrese su nombre y su color favorito. Luego imprimir un mensaje que diga "Hola, [nombre]. Tu color favorito es [color]".
                                     </p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
                                     <p className="text-break mx-auto w-50"> Solicitar al usuario que ingrese su nombre y una palabra. Luego imprimir un mensaje que diga "Hola, [nombre]. La longitud de la palabra que ingresaste es [longitud]".

@@ -14,9 +14,9 @@ const GithubClass1 = () => {
     const [date, setDate] = useState()
     const newDate = new Date()
     useEffect(() => {
-        getDocs(collection(db, "course")).then(response => {
+        getDocs(collection(db, "classGithub")).then(response => {
             response.docs.map(doc => {
-                if (doc.id === "0yKRrkDNEiFiv7K326tk") {
+                if (doc.id === "26FRYWt99U3HPuaCfGky") {
                     return setDate(doc.data().date.toDate())
                 }
                 return null
@@ -33,10 +33,10 @@ const GithubClass1 = () => {
                             <div className="row justify-content-between">
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                     <div>
-                                        <h1>Clase 1: Explorando Python</h1>
-                                        <h2>Introducción a Python y su sintaxis básica</h2>
-                                        <h2>Instalación y configuración de IDE</h2>
-                                        <h2>Ejecución del primer programa</h2>
+                                        <h1>Clase 1: Introducción a Git y GitHub</h1>
+                                        <h2>Diferencia entre Git y GitHub, importancia del control de versiones.</h2>
+                                        <h2>Instalación de Git, configuración de nombre de usuario y correo electrónico.</h2>
+                                        <h2>Creación y configuración inicial</h2>
                                         <div className="text-center text-lg-start">
                                             <a href="/#clase1" className="btn-get-started scrollto">Contenido de la clase 1</a>
                                         </div>
@@ -71,13 +71,13 @@ const GithubClass1 = () => {
                             <div className="accordion accordion-flush w-100 mx-auto" id="accordionFlushExample">
                                 <div id="element2" className={`accordion-item animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2>Historia de la programación</h2>
+                                        <h2>¿Que es git?</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className=" accordion-body text-light bg-dark">
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">El inicio..</h3>
-                                            <p className="text-break mx-auto w-75">En los comienzos de la programación los programadores se veían obligados a escribir en código binario, lo que resultaba en una gran cantidad de código para lograr incluso las funcionalidades más simples.
-                                                Con el paso de los años, las computadoras, los lenguajes de programación y los métodos se han ido desarrollando, permitiendo simplificar el proceso de programación.</p>
+                                            <img className="mx-auto d-block w-25 border-content" alt="Representación binaria en letras" src='../../img/classGithub/github1.png' />
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Definición de Git</h3>
+                                            <p className="text-break mx-auto w-75">Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear y gestionar los cambios en el código fuente de un proyecto a lo largo del tiempo. Fue creado por Linus Torvalds en 2005, principalmente para el desarrollo del kernel de Linux.</p>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Código binario</h3>
                                             <p className="text-break mx-auto w-75">El código binario es un sistema de representación de información que utiliza solamente dos dígitos: 0 y 1. Cada dígito se llama bit y puede ser 0 o 1.
                                                 La cantidad de bits en un código binario varía según la información que se necesita representar, siendo los múltiplos de 8 (8, 16, 32, 64 y 128) los números más comunes.
