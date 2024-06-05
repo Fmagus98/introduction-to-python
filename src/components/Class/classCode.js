@@ -530,6 +530,10 @@ for i in range(1,5):
 
 `,
 `
+for i in range(5, 0, -1):
+    print(i)
+`,
+`
 numeros = [0,124,41,62,32,43]
 
 for numero in numeros:
