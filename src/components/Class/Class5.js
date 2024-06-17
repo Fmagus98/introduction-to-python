@@ -215,10 +215,10 @@ const Class5 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4">El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código.</p>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
-                      <CopyButton code={class3Code[9]} />
+                      <CopyButton code={class3Code[8]} />
                       <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/for4.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en tuplas</h3>
-                      <CopyButton code={class3Code[10]} />
+                      <CopyButton code={class3Code[9]} />
                       <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                     </div>
                   </div>

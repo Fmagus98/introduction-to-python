@@ -29,6 +29,7 @@ const Contact = lazy(() => import('./components/Contact/Contact'));
 const ProfessionalCareer = lazy(() => import('./components/ProfessionalCareer/ProfessionalCareer'));
 const DigitalPortfolio = lazy(() => import('./components/DigitalPortfolio/DigitalPortfolio'));
 
+
 function App() {
   return (
     <BrowserRouter>
