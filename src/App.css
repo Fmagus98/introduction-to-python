@@ -621,6 +621,7 @@ h6 {
   width: 100%;
   position: relative;
   padding: 120px 0 0 0;
+  z-index: -1;
 }
 
 #hero:before {
@@ -1423,4 +1424,96 @@ section {
   .faq .faq-list {
     padding: 0;
   }
+}
+
+
+// chatbot assistance
+.virtual-assistant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+}
+
+.chat-button, .chat-button img {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 20;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 260px;
+  height: 400px;
+  z-index: 20;
+  border-radius: 20px;
+}
+
+.chat-body {
+  height: 300px;
+  z-index: 20;
+}
+
+.chat-body::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background-color: #888;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background-color: #234a91;
+  border-radius: 10px;
+}
+.bot-message{
+  background: #3872a4;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  border: solid 1px black;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.user-message{
+  background: #515151;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  border: solid 1px black;
+  border-top-left-radius: 20px;
+}
+.item-bot{
+  color: #cccc;
+  width:36px;
+  height:36px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.item-user{
+  width:36px;
+  height:36px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  align-self: flex-end;
+  color: #cccc;
+}
+.input-group button{
+  background: #ffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 40px
+}
+.input-group img{
+  width: 20px;
+  
 }
