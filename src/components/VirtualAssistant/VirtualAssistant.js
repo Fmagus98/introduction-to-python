@@ -1,4 +1,4 @@
-import { React, useState,useEffect } from 'react'
+import { React, useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import ReactMarkdown from "react-markdown";
 
@@ -29,54 +29,57 @@ const VirtualAssistant = () => {
 
     const handleSend = async () => {
         let userInput = input.trim();
-        setDisabledButton(true);
-        setLoadingLLM("Por favor espera, estoy procesando tu consulta...")
+        if (userInput !== ""){
+            setDisabledButton(true);
+            setLoadingLLM("Por favor espera, estoy procesando tu consulta...")
 
-        const existingMessage = messages.find(message => message.role === 'user' && message.text === userInput);
+            const existingMessage = messages.find(message => message.role === 'user' && message.text === userInput);
 
-        if (existingMessage) {
-            const botResponse = messages.find((message, index) => 
-                messages[index - 1] && 
-                messages[index - 1].text === userInput && 
-                messages[index - 1].role === 'user' &&
-                message.role === 'bot'
-            );
+            if (existingMessage) {
+                const botResponse = messages.find((message, index) =>
+                    messages[index - 1] &&
+                    messages[index - 1].text === userInput &&
+                    messages[index - 1].role === 'user' &&
+                    message.role === 'bot'
+                );
 
-            if (botResponse) {
-                setMessages(prevMessages => [...prevMessages, { text: userInput, role: 'user' }, botResponse]);
-                setInput('');
-                setDisabledButton(false);
-                setLoadingLLM("");
-                return;
-            }
-        }
-        else{
-            try {
-                const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDY61QLJdNNeon3DM83Qj4AgifolaAY3Bk', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: promptDefault + userInput }] }],
-                    }),
-                });
-    
-                if (!response.ok) {
-                    throw new Error('Lo siento, Pybot está en mantenimiento, inténtelo más tarde.');
+                if (botResponse) {
+                    setMessages(prevMessages => [...prevMessages, { text: userInput, role: 'user' }, botResponse]);
+                    setInput('');
+                    setDisabledButton(false);
+                    setLoadingLLM("");
+                    return;
                 }
-    
-                const data = await response.json();
-                setMessages(prevMessages => [...prevMessages, { text: userInput, role: 'user' }]);
-                setInput('');
-                setMessages(prevMessages => [...prevMessages, { text: data.candidates[0].content.parts[0].text, role: 'bot' }]);
-            } catch (error) {
-                console.log(error);
-                setMessages(prevMessages => [...prevMessages, { text: "Lo siento, Pybot está en mantenimiento, inténtelo más tarde.", role: 'bot' }]);
             }
-            setDisabledButton(false);
-            setLoadingLLM("")
-        }
+
+            else {
+                try {
+                    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDY61QLJdNNeon3DM83Qj4AgifolaAY3Bk', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            contents: [{ parts: [{ text: promptDefault + userInput }] }],
+                        }),
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Lo siento, Pybot está en mantenimiento, inténtelo más tarde.');
+                    }
+
+                    const data = await response.json();
+                    setMessages(prevMessages => [...prevMessages, { text: userInput, role: 'user' }]);
+                    setInput('');
+                    setMessages(prevMessages => [...prevMessages, { text: data.candidates[0].content.parts[0].text, role: 'bot' }]);
+                } catch (error) {
+                    console.log(error);
+                    setMessages(prevMessages => [...prevMessages, { text: "Lo siento, Pybot está en mantenimiento, inténtelo más tarde.", role: 'bot' }]);
+                }
+                setDisabledButton(false);
+                setLoadingLLM("")
+            }
+        } 
     }
 
     return (
