@@ -1427,7 +1427,7 @@ section {
 }
 
 
-// chatbot assistance
+/* chatbot assistance */
 .virtual-assistant {
   position: fixed;
   bottom: 20px;
