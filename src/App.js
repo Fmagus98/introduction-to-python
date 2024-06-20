@@ -28,12 +28,13 @@ const Projects = lazy(() => import('./components/Projects/Projects'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
 const ProfessionalCareer = lazy(() => import('./components/ProfessionalCareer/ProfessionalCareer'));
 const DigitalPortfolio = lazy(() => import('./components/DigitalPortfolio/DigitalPortfolio'));
-
+const VirtualAssistance = lazy(()=> import('./components/VirtualAssistant/VirtualAssistant'))
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <VirtualAssistance/>
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { Link, useLocation } from 'react-router-dom';
-import { colorPrimaryPython, colorSecondaryPython, colorPrimaryMicropython, colorSecondaryMicropython} from '../../colors'
+import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython} from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 const Contact = () => {

@@ -450,10 +450,22 @@ if numero1<numero2:
 export const class3Code =
 [
     `
+# condicional if
+
 numero1 = 75
 numero2 = 53
 
-if numero1<numero2:
+if numero1 < numero2:
+    print(f"{numero1} es menor que {numero2}") 
+
+`,
+`
+# condicional if - else
+
+numero1 = 75
+numero2 = 53
+
+if numero1 < numero2:
     print(f"{numero1} es menor que {numero2}") 
 else:
     print(f"{numero1} no es menor que {numero2}") 
@@ -462,18 +474,8 @@ else:
 
 `,
 `
-numero1 = 75
-numero2 = 53
+# condicional if - elif - else
 
-if numero1<numero2:
-    print(f"{numero1} es menor que {numero2}") 
-else:
-    print(f"{numero1} no es menor que {numero2}") 
-
-    # resultado 75 no es menor que 53
-
-`,
-`
 numero1 = 75
 numero2 = 53
     
@@ -488,6 +490,8 @@ else:
 
 `,
 `
+# Bucle while
+
 numero1 = 1
     
 while numero1 < 10:
@@ -497,6 +501,8 @@ while numero1 < 10:
 
 `,
 `
+# Bucle while True
+
 while True:
     numero1 = int(input("ingrese el primer numero: "))
     numero2 = int(input("ingrese el segundo numero: "))
@@ -509,6 +515,8 @@ while True:
 
 `,
 `
+# Bucle for
+
 mensaje = "Hola mundo!"
 
 for caracter in mensaje:
@@ -516,6 +524,8 @@ for caracter in mensaje:
 
 `,
 `
+# Bucle for - any
+
 frase = "hola como estás?"
 
 buscador_letra = any( letra =="e" for letra in frase )
@@ -524,16 +534,22 @@ buscador_letra = any( letra =="e" for letra in frase )
 
 `,
 `
+# Bucle for - range
+
 for i in range(1,5):
     print(i)
 
 
 `,
 `
+# Bucle for - range inverso
+
 for i in range(5, 0, -1):
     print(i)
 `,
 `
+# Bucle for - lista
+
 numeros = [0,124,41,62,32,43]
 
 for numero in numeros:
@@ -541,6 +557,8 @@ for numero in numeros:
 
 `,
 `
+# Bucle for - Tupla
+
 tupla = (1,2,3,4,5)
 
 for elemento in tupla:
@@ -548,6 +566,8 @@ for elemento in tupla:
 
 `,
 `
+# Bucle while - for - any
+
 contrasena = ""
 mayus = False
 minus = False

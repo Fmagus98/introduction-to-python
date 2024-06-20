@@ -621,6 +621,7 @@ h6 {
   width: 100%;
   position: relative;
   padding: 120px 0 0 0;
+  z-index: -1;
 }
 
 #hero:before {
@@ -1423,4 +1424,128 @@ section {
   .faq .faq-list {
     padding: 0;
   }
+}
+
+
+// chatbot assistance
+.virtual-assistant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+}
+
+.chat-button, .chat-button img {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 20;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 500px;
+  height: 400px;
+  z-index: 20;
+  border-radius: 20px;
+}
+
+.chat-body {
+  height: 300px;
+  z-index: 20;
+}
+
+.chat-body::-webkit-scrollbar,bot-message pre code::-webkit-scrollbar  {
+  height: 8px;
+  width: 8px;
+  background-color: #888;
+}
+
+.chat-body::-webkit-scrollbar-thumb, bot-message pre code::-webkit-thumb  {
+  background-color: #234a91;
+  border-radius: 10px;
+}
+.bot-message{
+  max-width: 450px;
+  background: #3872a4;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  border: solid 1px black;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.user-message{
+  max-width: 200px;
+  background: #515151;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  border: solid 1px black;
+  border-top-left-radius: 20px;
+}
+.item-bot{
+  color: #cccc;
+  width:36px;
+  height:36px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.item-user{
+  width:36px;
+  height:36px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  align-self: flex-end;
+  color: #cccc;
+}
+.btn-send{
+  background: #ffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 40px
+}
+.input-group img{
+  width: 20px;
+  
+}
+
+small{
+  font-size: 12px;
+  color: #cccc;
+  width:200px;
+  padding: 5px;
+
+}
+
+.disabled{
+  background: #cccc;
+}
+
+@media (width < 600px) {
+  .chat-window {
+    width: 300px;
+  }
+  .item-bot, .item-user{
+    width:15px;
+    height:15px;
+    font-size:13px;
+    margin-bottom: 4px;
+  }
+  
+  .user-message, .bot-message{
+    max-width: 300px;
+    font-size:11px;
+  }
+
 }

@@ -1,0 +1,131 @@
+import { React, useState,useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import ReactMarkdown from "react-markdown";
+
+const VirtualAssistant = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [messages, setMessages] = useState([]);
+    const [input, setInput] = useState('');
+    const location = useLocation();
+    const [loadingLLM, setLoadingLLM] = useState('');
+    const [disabledButton, setDisabledButton] = useState(false);
+    let promptDefault = "Te llamas PyBot y eres un asistente virtual amigable ayudando a un usuario a resolver solo y unicamente cosas relaciona a python, en el caso que no sea sobre python(saludar si es valido), diles explicitamente: 'Perdon, Estoy  no puedo responder una consulta no relacionada a python'. Al usuario hablale en español. El mensaje del usuario es:"
+
+    useEffect(() => {
+        const savedMessages = localStorage.getItem('messages');
+        if (savedMessages) {
+            setMessages(JSON.parse(savedMessages));
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('messages', JSON.stringify(messages));
+    }, [messages]);
+
+    const toggleChat = () => {
+        setIsOpen(!isOpen);
+    };
+
+
+    const handleSend = async () => {
+        let userInput = input.trim();
+        setDisabledButton(true);
+        setLoadingLLM("Por favor espera, estoy procesando tu consulta...")
+
+        const existingMessage = messages.find(message => message.role === 'user' && message.text === userInput);
+
+        if (existingMessage) {
+            const botResponse = messages.find((message, index) => 
+                messages[index - 1] && 
+                messages[index - 1].text === userInput && 
+                messages[index - 1].role === 'user' &&
+                message.role === 'bot'
+            );
+
+            if (botResponse) {
+                setMessages(prevMessages => [...prevMessages, { text: userInput, role: 'user' }, botResponse]);
+                setInput('');
+                setDisabledButton(false);
+                setLoadingLLM("");
+                return;
+            }
+        }
+        else{
+            try {
+                const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDY61QLJdNNeon3DM83Qj4AgifolaAY3Bk', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: promptDefault + userInput }] }],
+                    }),
+                });
+    
+                if (!response.ok) {
+                    throw new Error('Lo siento, Pybot está en mantenimiento, inténtelo más tarde.');
+                }
+    
+                const data = await response.json();
+                setMessages(prevMessages => [...prevMessages, { text: userInput, role: 'user' }]);
+                setInput('');
+                setMessages(prevMessages => [...prevMessages, { text: data.candidates[0].content.parts[0].text, role: 'bot' }]);
+            } catch (error) {
+                console.log(error);
+                setMessages(prevMessages => [...prevMessages, { text: "Lo siento, Pybot está en mantenimiento, inténtelo más tarde.", role: 'bot' }]);
+            }
+            setDisabledButton(false);
+            setLoadingLLM("")
+        }
+    }
+
+    return (
+        <div className="virtual-assistant">
+            <button
+                className="btn rounded-circle chat-button"
+                onClick={toggleChat}
+            >
+                {location.pathname.includes("micropython") ? <img src="../img/virtualAssistant2.png" alt="VirtualAssistant" /> : <img src="../img/virtualAssistant.png" alt="VirtualAssistant" />}
+            </button>
+            {isOpen && (
+                <div className="card chat-window bg-dark">
+                    <div className="card-header"><b className="text-light">PyBot</b></div>
+                    <div className="card-body overflow-auto chat-body">
+                        <ul className="list-group list-group-flush">
+                            {messages.map((msg, index) => (
+                                <div key={index} className="list-group list-group-flush">
+                                    {msg.role === "user" ? (
+                                        <>
+                                            <span className="item item-user">Tu</span>
+                                            <li className='list-group-item text-light user-message'>{msg.text}</li>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <span className="item-bot">Bot</span>
+                                            <ReactMarkdown className="list-group-item text-light bot-message">{msg.text}</ReactMarkdown>
+                                        </>
+                                    )}
+                                </div>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="card-footer">
+                        <div className="input-group">
+                            <input
+                                type="text"
+                                className="form-control"
+                                value={input}
+                                onChange={(e) => setInput(e.target.value)}
+                                onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+                            />
+                            {disabledButton ? <button className="btn btn-send disabled"><img src="img/send.png" alt="send" /></button> : <button className="btn btn-send" onClick={handleSend}><img src="img/send.png" alt="send" /></button>}
+                        </div>
+                    </div>
+                    <small>{loadingLLM}</small>
+                </div>
+            )}
+        </div>
+    )
+}
+
+export default VirtualAssistant
