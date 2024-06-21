@@ -32,7 +32,6 @@ const VirtualAssistant = () => {
         if (userInput !== ""){
             setDisabledButton(true);
             setLoadingLLM("Por favor espera, estoy procesando tu consulta...")
-
             const existingMessage = messages.find(message => message.role === 'user' && message.text === userInput);
 
             if (existingMessage) {

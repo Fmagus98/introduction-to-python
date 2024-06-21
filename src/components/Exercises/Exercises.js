@@ -120,7 +120,7 @@ const Exercises = () => {
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 3 </h3>
                                     <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario su edad y determine si es mayor de edad (18 años o más) o menor de edad.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 4 </h3>
-                                    <p className="text-break mx-auto w-50">EEscribe un programa que solicite al usuario un número del 1 al 7 y muestre el día de la semana correspondiente (1 - Lunes, 2 - Martes, ..., 7 - Domingo). Si el número está fuera de ese rango, muestra un mensaje de error.</p>
+                                    <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario un número del 1 al 7 y muestre el día de la semana correspondiente (1 - Lunes, 2 - Martes, ..., 7 - Domingo). Si el número está fuera de ese rango, muestra un mensaje de error.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 5 </h3>
                                     <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario un número del 1 al 12 y muestre el nombre del mes correspondiente. Si el número está fuera de ese rango, muestra un mensaje de error.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 6 </h3>
