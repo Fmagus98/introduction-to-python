@@ -37,7 +37,8 @@ const Navbar = () => {
           <div className="logo">
             <h1><a href="/"><span>Fablab - python</span></a></h1>
           </div>
-          <nav id="navbar" className={isMobileNavOpen ? 'navbar navbar-mobile h-auto' : 'navbar'}>
+          {/* <nav id="navbar" className={isMobileNavOpen ? 'navbar navbar-mobile h-auto' : 'navbar'}> */}
+          <nav id="navbar" className={isMobileNavOpen ? `navbar navbar-mobile h-auto ${location.pathname.includes("micropython")?'navbar-mobile-micropython': ''}`: `navbar`}>
             <ul className={isMobileNavOpen ? 'h-50 ml-6 mr-6' : ''}>
               <Loggin />
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython" : "/"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Inicio</Link></li>

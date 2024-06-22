@@ -534,7 +534,16 @@ h6 {
   transition: 0.3s;
   z-index: 999 !important;
 }
-
+.navbar-mobile-micropython{
+  background: rgba(179, 66, 41, 0.9);
+  color: rgb(179, 66, 41)
+}
+.navbar-mobile-micropython li a, .navbar-mobile-micropython li p{
+  color: rgb(179, 66, 41)!important
+}
+.navbar-mobile-micropython li a::hover{
+  color: rgb(179, 66, 41)!important
+}
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
