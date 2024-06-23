@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const location = useLocation();
   const color = location.pathname.includes("micropython") ? colorPrimaryMicropython : colorPrimaryPython
-  const title = location.pathname.includes("micropython") ? "python" : "micropython"
+  const title = location.pathname.includes("micropython") ? "Python" : "Micropython"
 
   useEffect(() => {
     const handleScroll = () => {
