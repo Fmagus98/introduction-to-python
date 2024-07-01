@@ -1,49 +1,63 @@
 import React, { useState } from 'react'
-import { useNavigate,useLocation } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 
 const Loggin = () => {
-    const [email, setEmail] = useState("")
-    const [emailFail, setEmailFail] = useState("")
+    const [password, setPassword] = useState("")
+    const [passwordFail, setPasswordFail] = useState("")
     const navigate = useNavigate()
     const location = useLocation()
     const handleChange = (e) => {
-        setEmail(e.target.value);
+        e.preventDefault();
+        setPassword(e.target.value);
     };
 
+    let data = location.pathname.includes("micropython") ? "passwordMicropython" : "passwordPython"
+
+    const failStatus = () => {
+        setPasswordFail(true)
+        setPassword("")
+        setTimeout(() => {
+            setPasswordFail(false)
+        }, 2000);
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Consulta la colección de usuarios para buscar el email
-        getDocs(collection(db, 'users'))
-            .then((querySnapshot) => {
-                let info = false
-                querySnapshot.forEach((doc) => {
-                    const userData = doc.data();
-                    if (userData.email === email) {
-                        info = true
-                        localStorage.setItem("access", "Total access")
-                        localStorage.setItem("user", userData.name)
-                        navigate('/', { replace: true });
+        if (password.length === 16) {
+            getDocs(collection(db, data))
+                .then((querySnapshot) => {
+                    let info = false
+                    querySnapshot.forEach((doc) => {
+                        const pythonData = doc.data();
+                        if (pythonData.password === password) {
+                            info = true
+                            localStorage.setItem("access", "Total access")
+                            localStorage.setItem(data, pythonData.password)
+                            !location.pathname.includes("micropython") ? navigate('/', { replace: true }) : navigate('/micropython', { replace: true })
+                            setPassword("")
+                        }
+                    });
+                    if (!info) {
+                        failStatus()
+                        console.log("cargó firestore")
                     }
+                })
+                .catch((error) => {
+                    console.log('Error al buscar en la colección "users":', error);
                 });
-                if (!info) {
-                    setEmailFail(true)
-                    setTimeout(() => {
-                        setEmailFail(false)
-                    }, 2000);
-                }
-            })
-            .catch((error) => {
-                console.log('Error al buscar en la colección "users":', error);
-            });
+        }
+        else {
+            failStatus()
+            console.log("status")
+        }
     };
     return (
         <>{
-            !localStorage.getItem("access") ? <li>  <form onSubmit={handleSubmit} className="form-inline mt-2 mt-md-0">
+            !localStorage.getItem(data) ? <li>  <form onSubmit={handleSubmit} className="form-inline mt-2 mt-md-0">
                 <div className="input-group">
-                    <input type="text" id="form3Example3" name="email" className="form-control" value={email} onChange={handleChange} />
-                    <button type="submit" className="btn" style={{ background: emailFail ? "red" :null,backgroundColor:location.pathname.includes("micropython")?"rgb(238, 112, 83)":"#2f6997"}}>{!emailFail ? "Acceso Total" : "Correo inválido. Intenta de nuevo"}</button>
+                    <input type="text" id="form3Example3" name="password" className="form-control" value={password} onChange={handleChange} />
+                    <button type="submit" className="btn" style={{ backgroundColor: passwordFail ? "red" : location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>{!passwordFail ? "Acceso Total" : "Código inválido. Intenta de nuevo"}</button>
                 </div>
             </form>
             </li> : <li><p className="access h6 text-light">Acceso total</p></li>

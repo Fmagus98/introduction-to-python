@@ -103,7 +103,7 @@ const VirtualAssistant = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <span className="item-bot">Bot</span>
+                                            <span className="item-bot">PyBot</span>
                                             <ReactMarkdown className="list-group-item text-light bot-message">{msg.text}</ReactMarkdown>
                                         </>
                                     )}

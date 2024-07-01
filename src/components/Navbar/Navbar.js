@@ -37,7 +37,6 @@ const Navbar = () => {
           <div className="logo">
             <h1><a href="/"><span>Fablab - python</span></a></h1>
           </div>
-          {/* <nav id="navbar" className={isMobileNavOpen ? 'navbar navbar-mobile h-auto' : 'navbar'}> */}
           <nav id="navbar" className={isMobileNavOpen ? `navbar navbar-mobile h-auto ${location.pathname.includes("micropython") ? 'navbar-mobile-micropython' : ''}` : `navbar`}>
             <ul className={isMobileNavOpen ? 'h-50 ml-6 mr-6' : ''}>
               <Loggin />
@@ -45,7 +44,7 @@ const Navbar = () => {
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/" : "/micropython"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>{title}</Link></li>
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython/classes" : "/classes"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Clases</Link></li>
               {location.pathname.includes("micropython") ? null : <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/exercises" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Ejercicios</Link></li>}
-              {!location.pathname.includes("micropython") && !localStorage.getItem("access") ? (isMobileNavOpen ? (<>
+              {!location.pathname.includes("micropython") && !localStorage.getItem("passwordMicropython") ? (isMobileNavOpen ? (<>
                 <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/algorithms" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Algoritmos</Link></li>
                 <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/healthAndProductivity" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Salud y productividad</Link></li>
                 <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/projects" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Proyectos</Link></li> </>)
@@ -58,7 +57,7 @@ const Navbar = () => {
                   </ul>
                 </li>)
                 : null}
-              {!location.pathname.includes("micropython") && localStorage.getItem("access") ? (isMobileNavOpen ?
+              {!location.pathname.includes("micropython") && localStorage.getItem("passwordPython") ? (isMobileNavOpen ?
                 (<>
                   <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/digitalPortfolio" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Django</Link></li>
                   <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/professionalCarrer" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Carrera Profesional</Link></li>
