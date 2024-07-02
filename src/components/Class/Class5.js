@@ -166,10 +166,12 @@ const Class5 = () => {
                       <p className="text-break mx-auto w-75">sort() ordena los elementos de la lista de forma ascendente y modifica la lista original.<br></br>Sorted() crea una lista y ordena la lista de forma ascendente <br></br>Si deseas ordenar la lista en orden descendente, puedes utilizar el argumento reverse=True en el método sort() o sorted()</p>
                       <CopyButton code={class5Code[16]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list17.webp"></img>
+                      <CopyButton code={class5Code[17]} />
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list18.webp"></img>
                       <h3 className="text-break w-75 mx-auto">reversed()</h3>
                       <p className="text-break mx-auto w-75">reversed() ordena los elementos de la lista de forma descendente y no modifica la lista original.</p>
-                      <CopyButton code={class5Code[17]} />
-                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class5/list18.webp"></img>
+                      <CopyButton code={class5Code[18]} />
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class5/list19.webp"></img>
                     </div>
                   </div>
                 </div>
@@ -181,27 +183,27 @@ const Class5 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4">
                         Una tupla en Python es una estructura de datos inmutable, lo que significa que no se pueden modificar una vez creadas. <br></br>Se utiliza para almacenar una colección ordenada de elementos heterogéneos, como números, cadenas de texto, booleanos, etc. <br></br>Las tuplas se definen utilizando paréntesis () y los elementos se separan por comas.</p>
-                        <CopyButton code={class5Code[18]} />
+                        <CopyButton code={class5Code[19]} />
                       <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class5/tupla1.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4 ">índice</h3>
                       <p className="text-break mx-auto w-75">Al igual que las listas, el operador de indexación [ ] permite acceder a elementos individuales de la tupla utilizando su índice. Por ejemplo, tupla[0] devuelve el primer elemento de la tupla.</p>
-                      <CopyButton code={class5Code[19]} />
+                      <CopyButton code={class5Code[20]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla2.webp"></img>
                       <h3 className="text-break w-75 mx-auto">segmentación</h3>
                       <p className="text-break mx-auto w-75">El operador de segmentación (:) permite acceder a un rango de elementos en la tupla. Por ejemplo, tupla[1:3] devuelve una nueva tupla que contiene los elementos desde el índice 1 hasta el índice 2.</p>
-                      <CopyButton code={class5Code[20]} />
+                      <CopyButton code={class5Code[21]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla3.webp"></img>
                       <h3 className="text-break w-75 mx-auto">concatenación</h3>
                       <p className="text-break mx-auto w-75">El operador de concatenación (+) permite concatenar dos o más tuplas para crear una nueva tupla que contenga todos los elementos de las tuplas originales en el mismo orden.</p>
-                      <CopyButton code={class5Code[21]} />
+                      <CopyButton code={class5Code[22]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla4.webp"></img>
                       <h3 className="text-break w-75 mx-auto">repetición</h3>
                       <p className="text-break mx-auto w-75">El operador de multiplicación (*) permite repetir una tupla múltiples veces para crear una nueva tupla que contenga las repeticiones de los elementos originales.</p>
-                      <CopyButton code={class5Code[22]} />
+                      <CopyButton code={class5Code[23]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla5.webp"></img>
                       <h3 className="text-break w-75 mx-auto">conversión tupla - lista / lista - tupla</h3>
                       <p className="text-break mx-auto w-75">Si necesitas realizar operaciones más avanzadas con tuplas, como ordenar, filtrar o modificar elementos, es posible convertir la tupla en una lista utilizando el método list(), realizar las operaciones necesarias y luego convertir la lista resultante nuevamente en una tupla utilizando el método tuple().</p>
-                      <CopyButton code={class5Code[23]} />
+                      <CopyButton code={class5Code[24]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/tupla6.webp"></img>
                       <p className="text-break mx-auto w-75" style={{ marginBottom: "7rem" }}>Como había explicado anteriormente, las tuplas son estructuras de datos inmutables, lo que significa que no se pueden modificar una vez creadas. Debido a esto, las tuplas tienen un conjunto limitado de métodos incorporados en comparación con las listas. Los únicos métodos disponibles para las tuplas son conunt() y index</p>
                     </div>

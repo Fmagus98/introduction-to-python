@@ -1053,6 +1053,16 @@ print(generos_sorted2) # resultado: ["trap", "tango", "rock nacional", "jazz", "
 
 `,
 `
+frutas = [("Manzana", 50, 2000), ("Naranja", 60, 1300), ("Pera", 20, 1700)]
+lista_tuplas_organizada = sorted(frutas, key=lambda x: (-x[1], x[2]))
+# El parámetro key permite especificar una función que se aplicará a cada elemento de la lista,
+# esto es para obtener un valor que se utilizará como clave de ordenación
+# Una lambda es una pequeña función anónima definida con la palabra clave lambda. 
+# En el ejemplo, lambda x: (-x[1], x[2]) significa que la función toma un argumento x 
+# y devuelve una tupla con dos elementos: -x[1] y x[2].
+print(lista_tuplas_organizada)
+`,
+`
 # reversed
 
 lista = ["hernan", "matilda", "julian", "Matias", "pablo"] # lista de nombres
