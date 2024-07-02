@@ -1520,18 +1520,16 @@ print(z)
 # FileNotFoundError
 file = open("archivo.txt", "r")
 `,
-`
-# Bloque try - except
+`# Bloque try - except
 
 try:
     x = int(input("Ingrese un numero: "))
     resultado = 10/ x
     print("El resultado es:", resultado)
-except ValueError:
-    print("Error: Ingrese un número válido.")
 except ZeroDivisionError:
     print("Error: No se puede dividir entre cero.")
-
+except Exception as e:
+    print(e)
 `,
 `
 # Bloque else
