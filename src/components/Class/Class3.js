@@ -33,7 +33,7 @@ const Class3 = () => {
                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                   <div>
                     <h1>Clase 3: Control de flujo</h1>
-                    <h2>Estructuras de control de flujo: if, elif, else</h2>
+                    <h2>Estructuras de control de flujo: if, elif, else y match</h2>
                     <h2>Bucles while y for</h2>
                     <h2>Uso de break y continue en bucles</h2>
                     <div className="text-center text-lg-start">
@@ -86,7 +86,7 @@ const Class3 = () => {
                 </div>
                 <div id="element3" className={`mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <h2 className="text-light">If else y elif</h2>
+                    <h2 className="text-light">If, else, elif y match</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -102,6 +102,10 @@ const Class3 = () => {
                       <p className="text-break mx-auto w-75">La palabra clave elif es una abreviatura de "else if" y se utiliza para agregar condiciones adicionales después del if. Se utiliza cuando hay múltiples condiciones que queremos evaluar secuencialmente. Si alguna de las condiciones anteriores es verdadera, se omite el bloque de código bajo el elif y se continúa con la siguiente instrucción después de la estructura condicional. Aquí tienes un ejemplo:</p>
                       <CopyButton code={class3Code[2]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class3/elif.webp"></img>
+                      <h3 className="text-break mx-auto w-75 mt-4 ">Match</h3>
+                      <p className="text-break mx-auto w-75">Match es una nueva estructura de control introducida en Python 3.10, que permite la coincidencia de patrones. Esta estructura es similar a switch en otros lenguajes de programación, pero es más poderosa y flexible. match permite comparar un valor con una serie de patrones y ejecutar el bloque de código correspondiente al primer patrón que coincida.</p>
+                      <CopyButton code={class3Code[3]} />
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class3/match.webp"></img>
                     </div>
                   </div>
                 </div>
@@ -124,9 +128,9 @@ const Class3 = () => {
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto mt-4 w-75">Bucle while (mientras): El bucle while ejecuta repetidamente un bloque de código siempre que una condición sea verdadera. La condición se verifica antes de cada iteración, y si es verdadera, se ejecuta el bloque de código. Si la condición se vuelve falsa en algún momento, se sale del bucle y se continúa con la siguiente instrucción después del bucle. Aquí tienes un ejemplo de un bucle while:</p>
-                      <CopyButton code={class3Code[3]} />
-                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/while.webp"></img>
                       <CopyButton code={class3Code[4]} />
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/while.webp"></img>
+                      <CopyButton code={class3Code[5]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class3/while2.webp"></img>
                     </div>
                   </div>
@@ -139,20 +143,20 @@ const Class3 = () => {
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
                       <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en cadena de texto</h3>
-                      <CopyButton code={class3Code[5]} />
-                      <img className="w-75 d-block mx-auto mb-4 pb-4 border-content" alt="" src="../img/class3/for1.webp"></img>
                       <CopyButton code={class3Code[6]} />
+                      <img className="w-75 d-block mx-auto mb-4 pb-4 border-content" alt="" src="../img/class3/for1.webp"></img>
+                      <CopyButton code={class3Code[7]} />
                       <img className="w-75 d-block mx-auto pt-4 border-content" alt="" src="../img/class3/for2.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en rango de números</h3>
-                      <CopyButton code={class3Code[7]} />
-                      <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/for3.webp"></img>
                       <CopyButton code={class3Code[8]} />
+                      <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/for3.webp"></img>
+                      <CopyButton code={class3Code[9]} />
                       <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/range.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
-                      <CopyButton code={class3Code[9]} />
+                      <CopyButton code={class3Code[10]} />
                       <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/for4.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en tuplas</h3>
-                      <CopyButton code={class3Code[10]} />
+                      <CopyButton code={class3Code[11]} />
                       <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../img/class3/for5.webp" style={{ marginBottom: "7rem" }} ></img>
                     </div>
                   </div>
@@ -175,7 +179,7 @@ const Class3 = () => {
                       <p className="text-break mx-auto mb-4 w-75">Si vemos lo que nos indica el problema, vemos que nos dice que el usuario debe ingresar una contraseña para su cuenta</p>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class3/problem1-3.webp"></img>
                       <p className="text-break mx-auto w-75">En base al análisis que hicimos con el diagrama de flujos, podemos ya identificar a groso modo que aplicaciones debemos hacer para realizar nuestro programa. <br></br>Habrá veces que no realizamos el código tal cual lo hicimos en el diagrama por problemas que surgieron mientras programamos, pero lo bueno de hacer estos diagramas es que tenemos ya pensado una base en la cual programar.<br></br> Acá te muestro una de las posibles soluciones al problema hecho con python.</p>
-                      <CopyButton code={class3Code[11]} />
+                      <CopyButton code={class3Code[12]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class3/problem1-4.webp"></img>
                     </div>
                   </div>

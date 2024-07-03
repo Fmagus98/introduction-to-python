@@ -490,6 +490,23 @@ else:
 
 `,
 `
+numero = int(input("introduce un número: "))
+match numero:
+    case 0:
+        print("Cero")
+    case 1:
+        print("Uno")
+    case 2 | 3:
+        print("Dos o tres")
+    case 4:
+        print("Cuatro")
+    case _ if numero < 0:
+        print("Es un número negativo")
+    case _:
+        print("No es 0,1,2,3,4 o un número negativo")
+
+`,
+`
 # Bucle while
 
 numero1 = 1
