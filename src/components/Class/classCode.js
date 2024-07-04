@@ -1635,6 +1635,128 @@ os.rename("archivo.txt", "archivos.txt")
 # remover archivo
 import os
 os.remove("archivos.txt")
+
+`,
+`
+import csv
+
+file = open("archivo.csv", mode='r', newline='')
+try:
+    reader = csv.DictReader(file)
+    lista = list(reader)
+    print("lista: ", lista)
+finally:
+    file.close()
+    
+# Crea un archivo llamado "archivo.csv" e ingresa esto (sin el #):
+#id,nombre,edad
+#1,Agustina,26
+#2,Esteban,18
+#3,Lucas,64
+#4,Tamara,26
+
+`,
+`
+import csv
+
+numero_id = int(input("ingrese el id: "))
+file = open("archivo.csv", mode='r', newline='')
+try:
+    reader = csv.DictReader(file)
+    lista = list(reader)
+    for dato in lista:
+        if dato['id'] == str(numero_id):
+            print(dato)
+finally:
+    file.close()
+
+# Crea un archivo llamado "archivo.csv" e ingresa esto (sin el #):
+#id,nombre,edad
+#1,Agustina,26
+#2,Esteban,18
+#3,Lucas,64
+#4,Tamara,26
+`,
+`
+import csv
+
+# Entrada del usuario
+nombre = input("Ingrese un nombre: ")
+edad = input("Ingrese la edad: ")
+
+# Leer los datos existentes
+file_read = open("archivo.csv", mode='r', newline='')
+try:
+    datos = list(csv.DictReader(file_read))
+    id = str(int(datos[-1]['id']) + 1 if datos else 1) # con el if se comprueba que el archivo no este vacio
+finally:
+    file_read.close()
+    
+# Nuevo dato a agregar
+nuevo_dato = {'id': id, 'nombre': nombre, 'edad': edad}
+
+# Escribir los datos existentes y el nuevo dato
+file_write = open("archivo.csv", mode='w', newline='')
+try:
+    fieldnames = ['id', 'nombre', 'edad']
+    writer = csv.DictWriter(file_write, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(datos + [nuevo_dato])
+finally:
+    file_write.close()
+
+`,
+`
+import csv
+
+# Entrada del usuario
+id = input("ingrese el ID que querés eliminar: ")
+# Leer los datos existentes
+file_read = open("archivo.csv", mode='r', newline='')
+try:
+    datos = list(csv.DictReader(file_read))
+    datos_sin_un_elemento = [dato for dato in datos if dato['id'] != id]
+finally:
+    file_read.close()
+
+# Escribir los datos existentes y el nuevo dato
+file_write = open("archivo.csv", mode='w', newline='')
+try:
+    fieldnames = ['id', 'nombre', 'edad']
+    writer = csv.DictWriter(file_write, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(datos_sin_un_elemento)
+finally:
+    file_write.close()
+
+`,
+`
+import csv
+
+# Entrada del usuario
+id = input("ingrese el ID que querés actualizar: ")
+nombre = input("ingrese el nuevo nombre: ")
+# Leer los datos existentes
+file_read = open("archivo.csv", mode='r', newline='')
+try:
+    datos = list(csv.DictReader(file_read))
+    # Reemplazo el dato por el nuevo en la lista
+    for dato in datos:
+        if dato['id'] == id:
+            dato['nombre'] = nombre
+finally:
+    file_read.close()
+
+# Sobreescribir los datos
+file_write = open("archivo.csv", mode='w', newline='')
+try:
+    fieldnames = ['id', 'nombre', 'edad']
+    writer = csv.DictWriter(file_write, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(datos)
+finally:
+    file_write.close()
+    
 `
 
 ]
