@@ -171,7 +171,7 @@ const Class5 = () => {
                       <h3 className="text-break w-75 mx-auto">reversed()</h3>
                       <p className="text-break mx-auto w-75">reversed() ordena los elementos de la lista de forma descendente y no modifica la lista original.</p>
                       <CopyButton code={class5Code[18]}/>
-                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class5/list19.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class5/list19.webp"></img>
                     </div>
                   </div>
                 </div>
