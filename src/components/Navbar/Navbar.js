@@ -94,8 +94,8 @@ const Navbar = () => {
                 </>
                 :
                 <li className="nav-item dropdown">
-                  <Link className="dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">+ Contenido</Link>
-                  <ul className={backgroundColor ? "dropdown-menu" : "dropdown-menu bg-transparent"} style={{ background: backgroundColor }} aria-labelledby="navbarDropdown">
+                  <Link className="dropdown-toggle" to="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">+ Contenido</Link>
+                  <ul className={backgroundColor ? "dropdown-menu" : "dropdown-menu bg-transparent"} style={{ background: backgroundColor }} aria-labelledby="navbarDropdown2">
                     <li>
                       <Link to="/algorithms" style={{ color: "#012973" }} className="nav-link scrollto active">Algoritmos</Link>
                     </li>
