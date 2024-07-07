@@ -96,14 +96,14 @@ const Navbar = () => {
                 <li className="nav-item dropdown">
                   <Link className="dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">+ Contenido</Link>
                   <ul className={backgroundColor ? "dropdown-menu" : "dropdown-menu bg-transparent"} style={{ background: backgroundColor }} aria-labelledby="navbarDropdown">
-                    <li onClick={handleMobileNavToggle}>
+                    <li>
                       <Link to="/algorithms" style={{ color: "#012973" }} className="nav-link scrollto active">Algoritmos</Link>
                     </li>
-                    <li onClick={handleMobileNavToggle}>
+                    <li>
                       <Link to="/healthAndProductivity" style={{ color: "#012973" }} className="nav-link scrollto active">Salud y productividad</Link>
                     </li>
                     <li><hr className="dropdown-divider text-light" /></li>
-                    <li onClick={handleMobileNavToggle}>
+                    <li>
                       <Link to="/projects" style={{ color: "#012973" }} className="nav-link scrollto active">Proyectos</Link>
                     </li>
                   </ul>
