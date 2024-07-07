@@ -148,30 +148,30 @@ const Class5 = () => {
                       </p>
                       <h3 className="text-break w-75 mx-auto">len()</h3>
                       <p className="text-break mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
-                      <CopyButton code={class5Code[12]} />
+                      <CopyButton code={class5Code[12]}/>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list13.webp"></img>
                       <h3 className="text-break w-75 mx-auto">max()</h3>
                       <p className="text-break mx-auto w-75">max() te devuelve el valor del elemento más alto de la lista.</p>
-                      <CopyButton code={class5Code[13]} />
+                      <CopyButton code={class5Code[13]}/>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list14.webp"></img>
                       <h3 className="text-break w-75 mx-auto">min()</h3>
                       <p className="text-break mx-auto w-75">min() te devuelve el valor del elemento más bajo de la lista.</p>
-                      <CopyButton code={class5Code[14]} />
+                      <CopyButton code={class5Code[14]}/>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list15.webp"></img>
                       <h3 className="text-break w-75 mx-auto">sum()</h3>
                       <p className="text-break mx-auto w-75">sum() te devuelve la sumatoria de todos los elementos de la lista </p>
-                      <CopyButton code={class5Code[15]} />
+                      <CopyButton code={class5Code[15]}/>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list16.webp"></img>
                       <h3 className="text-break w-75 mx-auto">sort() / sorted / reverse</h3>
                       <p className="text-break mx-auto w-75">sort() ordena los elementos de la lista de forma ascendente y modifica la lista original.<br></br>Sorted() crea una lista y ordena la lista de forma ascendente <br></br>Si deseas ordenar la lista en orden descendente, puedes utilizar el argumento reverse=True en el método sort() o sorted()</p>
-                      <CopyButton code={class5Code[16]} />
+                      <CopyButton code={class5Code[16]}/>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list17.webp"></img>
-                      <CopyButton code={class5Code[17]} />
+                      <CopyButton code={class5Code[17]}/>
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list18.webp"></img>
                       <h3 className="text-break w-75 mx-auto">reversed()</h3>
                       <p className="text-break mx-auto w-75">reversed() ordena los elementos de la lista de forma descendente y no modifica la lista original.</p>
-                      <CopyButton code={class5Code[18]} />
-                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class5/list19.webp"></img>
+                      <CopyButton code={class5Code[18]}/>
+                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class5/list19.webp"></img>
                     </div>
                   </div>
                 </div>

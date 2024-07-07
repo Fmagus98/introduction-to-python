@@ -148,7 +148,7 @@ const Class7 = () => {
                       <h3 className="text-break w-75 mx-auto">open() - Abrir archivos </h3>
                       <p className="text-break mx-auto w-75"> Este método se utiliza para abrir un archivo. Toma dos parámetros principales: el nombre del archivo y el modo en el que se abrirá (por ejemplo, lectura, escritura, agregado, etc.).</p>
                       <CopyButton code={class7Code[12]} />
-                      <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/open.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content mb-4" alt="" src="../img/class7/open.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">read() - lee archivos</h3>
                       <p className="text-break mx-auto w-75">Este método se utiliza para leer el contenido de un archivo. Puede leer todo el contenido o una cantidad específica de caracteres.</p>
                       <CopyButton code={class7Code[13]} />
@@ -186,23 +186,23 @@ const Class7 = () => {
                       <h3 className="text-break w-75 mx-auto">Leer csv</h3>
                       <p className="text-break mx-auto w-75">El método csv.DictReader() Se utiliza para leer archivos CSV y convertir cada fila del archivo en un diccionario. La clave de cada diccionario corresponde a los nombres de las columnas, y los valores corresponden a los datos de cada fila. </p>
                       <CopyButton code={class7Code[19]} />
-                      <img className="w-75 d-block mx-auto mb-4" alt="" src="../img/class7/dictReader.webp"></img>
+                      <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class7/dictReader.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Encontrar un dato desde un csv</h3>
                       <p className="text-break mx-auto w-75">Para encontrar una fila en un archivo csv por una columna, puedes utilizar el mismo método para leer el csv y recorrer la lista de diccionarios hasta encontrar la fila correspondiente.</p>
                       <CopyButton code={class7Code[20]} />
-                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/dictReaderFind.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class7/dictReaderFind.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4">Añadir un dato en un csv</h3>
                       <p className="text-break mx-auto w-75">Se agrega un nuevo registro con un nuevo ID y los datos ingresados por el usuario, y luego sobrescribe el archivo con todos los datos actualizados. Utiliza csv.DictReader y csv.DictWriter para manejar los datos como diccionarios y asegura el cierre adecuado de los archivos con bloques try-finally.</p>
                       <CopyButton code={class7Code[21]} />
-                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/writeCsv.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class7/writeCsv.webp"></img>
                       <h3 className=" text-break mx-auto w-75 mt-4">Eliminar un dato en un csv</h3>
                       <p className="text-break mx-auto w-75">Se filtran los registros para excluir el que coincide con el ID proporcionado por el usuario, y luego sobrescribe el archivo con los datos actualizados. Utiliza csv.DictReader y csv.DictWriter para manejar los datos como diccionarios y asegura el cierre adecuado de los archivos con bloques try-finally.</p>
                       <CopyButton code={class7Code[22]} />
-                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/deleteCsv.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class7/deleteCsv.webp"></img>
                       <h3 className=" text-break mx-auto w-75 mt-4">Actualizar un dato en un csv</h3>
                       <p className="text-break mx-auto w-75">Se busca un registro por su ID y actualiza el nombre asociado, luego sobrescribe el archivo con los datos actualizados. Utiliza csv.DictReader y csv.DictWriter para manejar los datos en formato de diccionarios y garantiza el cierre adecuado de los archivos con bloques try-finally.</p>
                       <CopyButton code={class7Code[23]} />
-                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class7/updateCsv.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class7/updateCsv.webp"></img>
                     </div>
                   </div>
                 </div>
