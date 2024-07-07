@@ -105,7 +105,7 @@ const Class3 = () => {
                       <h3 className="text-break mx-auto w-75 mt-4 ">Match</h3>
                       <p className="text-break mx-auto w-75">Match es una nueva estructura de control introducida en Python 3.10, que permite la coincidencia de patrones. Esta estructura es similar a switch en otros lenguajes de programación, pero es más poderosa y flexible. match permite comparar un valor con una serie de patrones y ejecutar el bloque de código correspondiente al primer patrón que coincida.</p>
                       <CopyButton code={class3Code[3]} />
-                      <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class3/match.webp"></img>
+                      <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class3/match.webp"></img>
                     </div>
                   </div>
                 </div>
