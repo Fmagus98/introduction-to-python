@@ -65,13 +65,13 @@ const Navbar = () => {
                           Contenido Adicional
                         </Link>
                         <ul className={backgroundColor ? "dropdown-menu" : "dropdown-menu bg-transparent"} style={{ background: backgroundColor }} aria-labelledby="navbarDropdown">
-                          <li onClick={handleMobileNavToggle}>
+                          <li>
                             <Link to="/digitalPortfolio" style={{ color: "#012973" }} className="nav-link scrollto active">Django</Link>
                           </li>
-                          <li onClick={handleMobileNavToggle}>
+                          <li>
                             <Link to="/professionalCarrer" style={{ color: "#012973" }} className="nav-link scrollto active">Carrera Profesional</Link>
                           </li>
-                          <li onClick={handleMobileNavToggle}>
+                          <li>
                             <Link to="/github/classes" style={{ color: "#012973" }} className="nav-link scrollto active">Github</Link>
                           </li>
                         </ul>
