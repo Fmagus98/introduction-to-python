@@ -26,7 +26,8 @@ const GithubClass1 = () => {
 
     return (
         <>{
-            (new Date(date) <= newDate) || localStorage.getItem("access") ?
+            // (new Date(date) <= newDate) || 
+            localStorage.getItem("passwordPython") ?
                 <>
                     <section id="hero" style={{ background: colorPrimaryPython }}>
                         <div className="container">
@@ -34,8 +35,8 @@ const GithubClass1 = () => {
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                     <div>
                                         <h1>Clase 1: Introducción a Git y GitHub</h1>
-                                        <h2>Diferencia entre Git y GitHub, importancia del control de versiones.</h2>
-                                        <h2>Instalación de Git, configuración de nombre de usuario y correo electrónico.</h2>
+                                        <h2 className="mb-3 mt-4">Que es Git y GitHub?</h2>
+                                        <h2 className="mb-3">Instalación de Git, configuración de nombre de usuario y correo electrónico.</h2>
                                         <h2>Creación y configuración inicial</h2>
                                         <div className="text-center text-lg-start">
                                             <a href="/#clase1" className="btn-get-started scrollto">Contenido de la clase 1</a>
@@ -43,7 +44,7 @@ const GithubClass1 = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-4 order-1 order-lg-2 hero-img">
-                                    <img src="../img/python.png" className="img-fluid animated vh-60" alt="" />
+                                    <img src="../img/github.png" className="img-fluid animated vh-60" alt="github" />
                                 </div>
                             </div>
                         </div>
@@ -75,192 +76,169 @@ const GithubClass1 = () => {
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className=" accordion-body text-light bg-dark">
-                                            <img className="mx-auto d-block w-25 border-content" alt="Representación binaria en letras" src='../../img/classGithub/github1.png' />
+                                            <img className="mx-auto d-block w-25 border-content" alt="Git" src='../../img/classGithub/git.png' />
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Definición de Git</h3>
                                             <p className="text-break mx-auto w-75">Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear y gestionar los cambios en el código fuente de un proyecto a lo largo del tiempo. Fue creado por Linus Torvalds en 2005, principalmente para el desarrollo del kernel de Linux.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Código binario</h3>
-                                            <p className="text-break mx-auto w-75">El código binario es un sistema de representación de información que utiliza solamente dos dígitos: 0 y 1. Cada dígito se llama bit y puede ser 0 o 1.
-                                                La cantidad de bits en un código binario varía según la información que se necesita representar, siendo los múltiplos de 8 (8, 16, 32, 64 y 128) los números más comunes.
-                                                Por ejemplo, un byte consta de 8 bits y puede representar 256 valores únicos (2^8).</p>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Para que sirve?</h3>
+                                            <p className="text-break mx-auto w-75">En términos simples, Git permite a los desarrolladores llevar un registro de los cambios realizados en el código fuente de un proyecto a lo largo del tiempo. Esto facilita el trabajo colaborativo, ya que múltiples personas pueden trabajar en el mismo proyecto simultáneamente sin pisarse los cambios. Además, Git ofrece herramientas para la gestión de ramas (branches), lo cual permite experimentar con nuevas características o realizar correcciones sin afectar la rama principal del proyecto (normalmente llamada "master" o "main").</p>
                                             <p className="text-break mx-auto w-75">En los inicios de las computadoras, el código binario era la única forma de representar la información, lo que requería que los programas fueran escritos
                                                 en este sistema. Sin embargo, este proceso era lento y propenso a errores ya que los programadores tenían que convertir manualmente cada instrucción y dato en una serie de ceros y unos.</p>
-                                            <h3 className="text-center mt-4 mb-4 mx-auto w-75 fw-bold">Representación de números en código binario</h3>
-                                            <img className="text-center mx-auto d-block w-75 border-content" alt="Representación binaria en números" src='../img/class1/btot.webp' />
-                                            <h3 className="text-center mt-4 mb-4 mx-auto w-75 fw-bold">Representación de letras en código binario</h3>
-                                            <img className="mx-auto d-block w-75 border-content" alt="Representación binaria en letras" src='../img/class1/btot2.webp' />
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Comienzos de la computación</h3>
-                                            <p className="text-break mx-auto w-75">En las primeras computadoras, el código binario era la única forma de representar la información. Los datos se almacenaban y se procesaban en forma de bits,
-                                                lo que significaba que los programas debían ser escritos en código binario. Esto requería que los programadores convirtieran cada instrucción y dato en una
-                                                serie de ceros y unos, lo que era un proceso lento y propenso a errores.
-                                            </p>
-                                            <p className="text-break mx-auto w-75">Más adelante se empezó a utilizar programas como Ensamblador, este lenguaje empezaba a utilizar letras y números en vez de 0 y 1, esto ocasionó que sea un poco
-                                                más legible y fácil de recordar aunque estaba muy alejado aún del lenguaje humano.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Limitaciones de los 8 bits</h3>
-                                            <p className="text-break mx-auto w-75">A mediado de los 80' las consolas estaban hechas en 8-bits como la NES de Nintendo y la Master System de SEGA a la cabeza. En el juego "Pac-man" existe un error por estas limitaciones de bits,
-                                                en la programación del juego existe una variable encargada de ser el contador de los niveles del juego, al llegar al nivel 256 el procesador no es capaz de calcularlo y aparece en pantalla este error. </p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src='../img/class1/PMg.webp' />
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Programación actual</h3>
-                                            <p className="text-break mx-auto w-75">Finalmente, surgen los llamados lenguajes de alto nivel. Estos van a ser un proceso intermedio entre el lenguaje máquina(binario) y el lenguaje humano (proceso por compilador o intérprete).</p>
-                                            <img className="w-75 mx-auto d-block border-content" style={{ marginBottom: "7rem" }} alt="" src='../img/class1/cvsi.webp' />
+                                            <img className="mx-auto d-block w-50 border-content" alt="Representación binaria en letras" src='../../img/classGithub/master.webp' />
+                                            <h3 className="text-break mt-4 mb-4 mx-auto w-75 fw-bold">Caracteristicas de git</h3>
+                                            <p className="text-break mx-auto w-75">Git tiene varias características distintivas que lo hacen extremadamente útil y popular en el desarrollo de software:</p>
+                                            <ul>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Distribuido:</span> Git es un sistema de control de versiones distribuido, lo que significa que cada desarrollador tiene una copia completa del repositorio de código en su máquina local. Esto permite trabajar de manera independiente y realizar operaciones como commit, branch, merge y revert sin necesidad de una conexión constante a un servidor central.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Rápido y Eficiente:</span> Git está optimizado para manejar proyectos grandes y complejos de manera rápida y eficiente. Las operaciones como commit, branch y merge son generalmente muy rápidas, lo que mejora la productividad del desarrollo.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Gestión eficiente de ramas (branching):</span> Git hace que sea fácil y eficiente trabajar con ramas (branches). Las ramas permiten a los desarrolladores trabajar en paralelo en nuevas características o correcciones sin interferir con el código en la rama principal. La capacidad de fusionar ramas de manera limpia y resolver conflictos automáticamente es una característica clave de Git.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Seguimiento de cambios (tracking):</span> Git realiza un seguimiento de todos los cambios realizados en el código a lo largo del tiempo. Cada cambio se registra como un commit con un mensaje descriptivo, lo que permite a los desarrolladores entender qué cambios se realizaron, cuándo y por qué.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Gestión robusta de historial:</span> Git mantiene un historial completo y detallado de todos los cambios realizados en el código. Esto facilita la revisión de cambios anteriores, la recuperación de versiones antiguas del código (mediante el uso de commits específicos) y la auditoría del desarrollo.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Soporte para trabajo offline:</span> Como cada desarrollador tiene una copia completa del repositorio en su máquina local, Git permite trabajar sin conexión a internet. Los cambios pueden ser realizados y luego sincronizados con el repositorio central cuando se establece la conexión.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Integridad de los datos:</span> Git utiliza un sistema de hashes criptográficos (SHA-1) para garantizar la integridad de los datos almacenados en el repositorio. Esto significa que cada archivo y cada versión del archivo están protegidos contra corrupción y modificaciones no autorizadas.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Compatibilidad con flujos de trabajo diversos:</span> Git es muy flexible y puede adaptarse a una amplia variedad de flujos de trabajo de desarrollo, desde el modelo de ramificación simple hasta modelos más complejos como Gitflow. Esto hace que Git sea adecuado para proyectos pequeños y grandes, así como para equipos distribuidos.</p>
+                                                </ol>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="element3" className={`accordion-item mt-4  animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <h2 className="text-light">Perfil de un programador</h2>
+                                        <h2 className="text-light">Que es Github?</h2>
                                     </button>
                                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
-                                            <p className="text-break mx-auto mt-7 w-75">El perfil de un programador puede variar dependiendo de sus habilidades, experiencia y especialización. Sin embargo, hay algunas características y habilidades comunes que suelen definir a un programador.
+                                            <p className="text-break mx-auto mt-7 w-75">GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. En términos simples, Git es un sistema que permite gestionar y rastrear cambios en el código fuente durante el desarrollo de software, facilitando el trabajo colaborativo entre programadores.
                                             </p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tener conocimientos básicos de programación</h3>
-                                            <p className="text-break mx-auto w-75">Los programadores tienen un conocimiento sólido de al menos un lenguaje de programación y están familiarizados con los conceptos fundamentales de la programación, como variables, estructuras de control, funciones, algoritmos, etc.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Ser resolutivo a los problemas</h3>
-                                            <p className="text-break mx-auto w-75">Los programadores son buenos para analizar problemas, identificar soluciones y desarrollar algoritmos eficientes para resolverlos. Tienen habilidades de pensamiento lógico y capacidad para descomponer problemas complejos en partes más pequeñas y manejables.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Estar activamente aprendiendo</h3>
-                                            <p className="text-break mx-auto w-75">Los programadores están dispuestos a aprender nuevas tecnologías, lenguajes de programación y herramientas para mantenerse actualizados en un campo en constante evolución. Están abiertos a la mejora continua y se adaptan rápidamente a nuevos desafíos.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Prestar atención a los detalles</h3>
-                                            <p className="text-break mx-auto w-75">Los programadores prestan atención a los detalles y son precisos en su trabajo. Un pequeño error en el código puede tener un gran impacto, por lo que son cuidadosos al escribir, probar y depurar su código.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tener buena comunicación con el equipo</h3>
-                                            <p className="text-break mx-auto w-75">Los programadores suelen trabajar en equipo, colaborando con otros desarrolladores, diseñadores y profesionales de TI. Tienen habilidades de comunicación efectivas y pueden trabajar en proyectos colaborativos.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tener pensamiento analítico</h3>
-                                            <p className="text-break mx-auto w-75">Los programadores tienen la capacidad de analizar y comprender problemas complejos, descomponerlos en partes más pequeñas y aplicar soluciones lógicas y estructuradas.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Ser creativo</h3>
-                                            <p className="text-break mx-auto w-75" style={{ marginBottom: "7rem" }}>La programación también requiere creatividad para encontrar soluciones innovadoras y eficientes. Los programadores pueden encontrar diferentes enfoques y perspectivas para resolver problemas.</p>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funciones y beneficios de github</h3>
+                                            <p className="text-break mx-auto w-75">GitHub proporciona varias funciones y beneficios clave para desarrolladores y equipos de desarrollo de software:</p>
+                                            <ul>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Alojamiento de Repositorios:</span> GitHub permite almacenar y gestionar repositorios de código fuente utilizando Git, facilitando el control de versiones y la colaboración en proyectos.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Colaboración:</span> Permite a múltiples desarrolladores trabajar juntos en el mismo proyecto de manera simultánea. Cada desarrollador puede clonar un repositorio, realizar cambios locales y luego enviar esos cambios de vuelta al repositorio central en GitHub.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Control de Versiones:</span> Utiliza Git para controlar y gestionar versiones del código fuente. Esto permite realizar un seguimiento de los cambios realizados en el código, revertir a versiones anteriores si es necesario y colaborar de manera efectiva en el desarrollo de software.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Seguimiento de Problemas y Tareas:</span> GitHub proporciona herramientas integradas para gestionar y hacer un seguimiento de problemas (bugs), solicitudes de funciones y otras tareas relacionadas con el desarrollo de software. Los equipos pueden comentar, asignar y priorizar problemas para facilitar la coordinación y la resolución eficiente de problemas.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Despliegue e Integración Continua:</span> GitHub ofrece integración con servicios de integración continua (como GitHub Actions) que permiten automatizar pruebas, compilaciones y despliegues de código, lo cual es crucial para mantener la calidad del software y acelerar el ciclo de desarrollo.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Revisión de Código:</span> Facilita la revisión de código mediante pull requests, donde los desarrolladores pueden solicitar la revisión de cambios específicos antes de fusionarlos con el repositorio principal. Esto fomenta la colaboración y mejora la calidad del código.</p>
+                                                </ol>
+                                                <ol>
+                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Visibilidad y Comunidad:</span> GitHub es una plataforma social donde los desarrolladores pueden mostrar su trabajo, colaborar con otros en proyectos de código abierto y aprender de la comunidad global de desarrolladores.</p>
+                                                </ol>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="element4" className={`accordion-item mt-4  animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2 className="text-light">¿Que es python?</h2>
+                                        <h2 className="text-light">Instalación de Git</h2>
                                     </button>
                                     <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
                                             <div id="content">
-                                                <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Guido Van Rossum</h3>
-                                                <img className="d-block mx-auto w-25 border-content" alt="" src="../img/class1/guido.webp"></img>
-                                                <p className="text-break mx-auto w-75">Python es un lenguaje de programación de alto nivel basado en C.
-                                                    Fue creado en 1989 por Guido Van Rossum, un programador holandés, mientras trabajaba en el Centro de
-                                                    Investigación para la Informática (CWI) en los Países Bajos. </p>
-                                                <h3 className="mt-4 text-break mx-auto w-75 fw-bold">El objetivo de python</h3>
-                                                <p className="text-break mx-auto w-75">La idea detrás de Python era crear un lenguaje de programación que fuera fácil de aprender, legible
-                                                    y que permitiera a los programadores escribir código rápidamente.
-                                                </p>
-                                                <p className="text-break mx-auto w-75">Van Rossum quería un lenguaje que fuera más poderoso que el lenguaje de script Unix shell, pero que
-                                                    fuera más fácil de usar que otros lenguajes de programación de la época, como C++ y Perl.
-                                                </p>
-                                                <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Origen de su nombre</h3>
-                                                <p className="text-break mx-auto w-75">El nombre "Python" fue inspirado por el grupo de comedia británico Monty Python, y muchos de
-                                                    los términos en el lenguaje, como "spam" y "egg", también se tomaron de los sketches de Monty Python.
-                                                    Desde su lanzamiento inicial, Python ha evolucionado y se ha utilizado en una amplia variedad de aplicaciones.
-                                                </p>
-                                                <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Python actualmente</h3>
-                                                <p className="text-break mx-auto w-75">Este lenguaje es muy popular en la comunidad de programación debido a su sintaxis simple y legible, así como
-                                                    a su enfoque en la legibilidad del código. En 2008, Python 3 fue lanzado, lo que mejoró aún más el
-                                                    lenguaje y lo hizo más consistente y fácil de aprender. Actualmente, Python es uno de los lenguajes de
-                                                    programación más populares en todo el mundo y las empresas de alto nivel los están utilizando .
-                                                </p>
-                                                <img className="d-block mx-auto w-75 border-content mb-7" alt="" src="../img/class1/ep.webp"></img>
+                                                <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Instalación en Windows</h3>
+                                                <ul className="intr-ul">
+                                                    <li>
+                                                        <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_</span>Dirigete a la página oficial de Git en <Link to="https://git-scm.com/downloads" target="_blank" className="text-info">https://git-scm.com/downloads</Link> y selecciona "Windows".</p>
+                                                        <img className="w-75 mx-auto d-block border-content" alt="Paso 1 de instalación de github" src="../../img/class1Github/gitInstall.webp"></img>
+                                                    </li>
+                                                    <li>
+                                                        <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Elige el instalador de 32bit para computadoras más antiguas o 64bit para computadoras más recientes.</p>
+                                                        <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/gitInstall2.webp"></img>
+                                                    </li>
+                                                    <li>
+                                                        <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">3_ </span>Cuando ejecutes el instalador selecciona el botón "Install".</p>
+                                                        <img className="w-50 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/gitInstall3.webp"></img>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="element5" className={`accordion-item mt-4  animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        <h2 className="text-light">Caracteristicas de python</h2>
+                                        <h2 className="text-light">Crear una cuenta en github</h2>
                                     </button>
                                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">lenguaje de alto nivel</h3>
-                                            <p className="text-break mx-auto w-75">Dentro de la programación hay tipos niveles, estos niveles determinan la complejidad en la podemos programar
-                                                en dicho lenguaje. Si el nivel es más bajo, este se acercará más al lenguaje máquina(código binario) y facilitará a la maquina a interpretar más rápido
-                                                pero a la vez es más complejo para los programadores programar en este lenguaje ya que se aleja del lenguaje humano.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/level.webp"></img>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Case sensitive</h3>
-                                            <p className="text-break mx-auto w-75"> Lo que significa que distingue entre mayúsculas y minúsculas en los nombres de variables, funciones, clases, módulos y otros identificadores. Esto significa que
-                                                dos identificadores que se diferencian solo en su uso de mayúsculas y minúsculas se consideran diferentes en Python.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Implementación</h3>
-                                            <p className="text-break mx-auto w-75">La implementación de Python se refiere a la forma en que se ejecuta el código de Python. Hay varias implementaciones de Python disponibles, aquí hay algunas de las más populares:</p>
-                                            <ul>
-                                                <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">CPython</span> Es la implementación más común de Python y está escrita en C. CPython es la implementación predeterminada de Python y es utilizada por la mayoría de los programadores de Python.</p>
-                                                </ol>
-                                                <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">Jython</span> Es una implementación de Python escrita en Java. Jython permite a los programadores utilizar Python en una máquina virtual Java y acceder a las librerías y frameworks de Java.</p>
-                                                </ol>
-                                                <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">IronPython</span> Es una implementación de Python escrita en C# y diseñada para el entorno .NET. IronPython permite a los programadores utilizar Python en el entorno .NET y acceder a las librerías y frameworks de .NET.</p>
-                                                </ol>
-                                                <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">PyPy</span> Es una implementación de Python escrita en Python. PyPy es conocido por ser mucho más rápido que CPython, especialmente en aplicaciones que requieren mucho cálculo.</p>
-                                                </ol>
-                                                <ol>
-                                                    <p className="text-break mx-auto w-75"><span className="fw-bold">MicroPython</span> Es una implementación de Python diseñada para ser utilizada en microcontroladores y dispositivos de baja potencia. MicroPython es una versión reducida de Python que incluye un conjunto limitado de librerías y frameworks.</p>
-                                                </ol>
+                                            <ul className="intr-ul">
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_</span>Dirigete a la página oficial de Github en <Link to="https://github.com/signup?source=login" target="_blank" className="text-info">https://github.com/signup?source=login</Link>, escribe tu correo y selecciona "Continuar".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 1 de instalación de github" src="../../img/class1Github/githubAccount.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Ingresa la contraseña y selecciona "Continuar".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount2.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">3_ </span>Ingresa el nombre de usuario y selecciona "Continuar".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount3.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">4_ </span>Es opcional pero podes seleccionar el check para recibir correos de actualizaciones y anuncios ocasionales de productos. Luego selecciona "Continuar".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount4.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">5_ </span>Completa el puzzle y selecciona "Enviar".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount5.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">5_ </span>Completa el puzzle y selecciona "Enviar".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount5.webp"></img>
+                                                </li>
                                             </ul>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">MULTIPLATAFORMA</h3>
-                                            <p className="text-break mx-auto w-75">Python se puede utilizar en una amplia variedad de plataformas, incluyendo Windows, macOS y Linux, lo que lo hace muy versátil y útil en diferentes entornos de trabajo.</p>
-                                            <img className="w-75 mx-auto mb-7 d-block border-content" alt="" src="../img/class1/os.webp"></img>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="element6" className={`accordion-item mt-4  animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        <h2 className="text-light">Python en el mercado laboral</h2>
+                                        <h2 className="text-light">Configuración de Git</h2>
                                     </button>
                                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
-                                            <h3 className="mt-7 mb-4 fw-bold text-center">BIG DATA</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/bd.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50">El uso de Python está muy extendido en dos áreas:
-                                                el análisis de datos y el big data. Su sencillez y su gran número de bibliotecas de procesamiento
-                                                de datos hacen que Python sea ideal a la hora de analizar y gestionar una gran cantidad de
-                                                datos en tiempo real.</p>
-                                            <h3 className="mt-4 mb-4 fw-bold text-center">DATA MINING</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/dm.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50"> La minería de datos o data mining es un
-                                                proceso que permite analizar grandes bases de datos con el objetivo de predecir futuras
-                                                tendencias. Se trata de un proceso complejo al que Python puede ayudar, a través de la
-                                                limpieza, organización de datos y del uso de algoritmos de aprendizaje automático que
-                                                simplifica el análisis de datos.</p>
-                                            <h3 className="mt-4 mb-4 fw-bold text-center">DATA SCIENCIE</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/ds.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50">Los nuevos motores numéricos como “Pandas”
-                                                o “NumPy”, Python están dejando atrás a  MATLAB, lenguaje usado por científicos para trabajar
-                                                con un gran número de datos. Python vuelve a destacar por su simplicidad y  potencial para trabajar
-                                                con un gran número de datos,  el gran número de bibliotecas existentes, hacen que Python sea ideal
-                                                para este tipo de tareas.</p>
-                                            <h3 className="mt-4 mb-4 fw-bold text-center">INTELIGENCIA ARTIFICIAL</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/ia.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50">Cada vez se habla más de la inteligencia artificial
-                                                (IA). Gran parte de su avance se debe a Python. Su facilidad de escritura y su robustez han convertido
-                                                a Python en el aliado perfecto de la IA. Su capacidad de plasmar ideas complejas en pocas líneas, unidas
-                                                al gran número de frameworks existentes, han hecho que Python sea uno de los lenguajes de programación
-                                                que están impulsando a la IA.</p>
-                                            <h3 className="mt-4 mb-4 fw-bold text-center">BLOCKCHAIN</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/bc.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50">
-                                                Blockchain es una tecnología de registro distribuido que se utiliza para registrar transacciones de manera segura y verificable.
-                                                Consiste en un registro en línea que se actualiza de manera permanente y que está protegido mediante técnicas criptográficas.</p>
-                                            <h3 className="mt-4 mb-4 fw-bold text-center">MACHINE LEARNING</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/ml.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50">El machine learning o aprendizaje automático es otra de
-                                                las tecnologías que está cambiando el mundo tal y como lo conocemos. La robótica y la IA son ahora capaces
-                                                de aprender por sí mismas a medida que van procesando datos. De esta forma, obtienen información relevante
-                                                que le permite tomar las decisiones adecuadas. Por supuesto, Python es también muy eficaz en este campo,
-                                                en el tratamiento de datos eficaz es esencial.</p>
-                                            <h3 className="mt-4 mb-4 fw-bold text-center">DESARROLLO WEB</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/dw.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50">Python permite desarrollar webs complejas con menos líneas de
-                                                código, haciéndolas más ligeras y optimizadas. Django es uno de los frameworks de Python más populares de la actualidad,
-                                                que puede ser utilizado para crear webs dinámicas y muy seguras. Python es empleado para hacer scraping, es decir,
-                                                extraer información de sitios web, como hacen Netflix o Instagram.</p>
-                                            <h3 className="mt-4 mb-4 fw-bold text-center">DESARROLLO DE VIDEOJUEGOS</h3>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../img/class1/g&g3d.webp"></img>
-                                            <p className="mt-4 mb-7 text-break mx-auto w-50" style={{ marginBottom: "7rem" }}>Juegos como Battelfield 2 o los Sims 4, parte de su código está escrito en este lenguaje de programación. <br></br>
-                                                A través de librerías como Pygame o Panda 3D, podrás enfocar tu desempeño profesional aparte desarrollo gaming, pero hay otras tantas que están recogidas en wiki python.
-                                                Pero Python no tiene la posibilidad de realizarlos al completo, por lo que te animamos a que descubras otros lenguajes para programar videojuegos, como Java o Lua.
-                                            </p>
+                                            <p className="mt-4 mb-7 text-break mx-auto w-75">Ya habiendo instalado Git, vamos a verificar si realmente está instalado correctamente en nuestra maquina, para esto vamos a tener que utilizar la terminal que tenga tu sistema operativo.</p>
+                                            <h5 className= "mt-4 text-break mx-auto w-75 bold">Comprobar instalación de git dentro de la terminal</h5>
+                                            <p className="mt-4 text-break mx-auto w-75">1_ Escribe en el buscador "CMD" y selecciona "Simbolo de sistema".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig1.webp"></img>
+                                            <p className="mt-4 text-break mx-auto w-75">2_ Dentro de la terminal escribe "git", "git -h" ó "git --help", esto te debe mostrar todos los comandos que puedes hacer con git, si no te aparece es posible que no esté instalado correctamente Git, debes instalarlo nuevamente.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig2.webp"></img>
+                                            <h5 className= "mt-4 text-break mx-auto w-75 bold">Crea una carpeta en el escritorio</h5>
+                                            <p className="mt-4 text-break mx-auto w-75">1_ Para ubicarnos en el escritorio, vamos a tener que utilizar el comando "cd" seguido de "desktop".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig3.webp"></img>
+                                            <p className="mt-4 text-break mx-auto w-75">2_ Escribe en la terminal: mkdir "Nuevo repositorio", al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig4.webp"></img>
+                                            <p className="mt-4 text-break mx-auto w-75">3_ Ahora para posicionarnos en la carpeta que creamos, debemos escribe en la terminal: cd Nuevo repositorio, al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig5.webp"></img>
+                                            <h5 className= "mt-4 text-break mx-auto w-75 bold">Utiliza git en una carpeta</h5>
+                                            <p className="mt-4 text-break mx-auto w-75">1_ Para ubicarnos en el escritorio, vamos a tener que utilizar el comando "cd" seguido de "desktop".</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig3.webp"></img>
+                                            <p className="mt-4 text-break mx-auto w-75">2_ Escribe en la terminal: mkdir "Nuevo repositorio", al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig4.webp"></img>
+                                            <p className="mt-4 text-break mx-auto w-75">3_ Ahora para posicionarnos en la carpeta que creamos, debemos escribe en la terminal: cd Nuevo repositorio, al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig5.webp"></img>
+
                                         </div>
                                     </div>
                                 </div>
@@ -466,7 +444,7 @@ const GithubClass1 = () => {
                                                 variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
                                             </p>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "print" escribiremos por ejemplo: print("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
-                                         
+
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p5.webp"></img>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Para ejecutar el programa debemos escribir en la terminal "python" seguido del nombre del archivo que queramos ejecutar, por ejemplo: python index.py. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
                                             <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class1/p6.webp"></img>
