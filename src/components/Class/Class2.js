@@ -6,6 +6,7 @@ import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { class2Code } from './classCode';
 import { CopyButton } from '../CopyButton/CopyButton'
+import QuizForm from '../QuizForm/QuizForm';
 
 const Class2 = () => {
 
@@ -295,6 +296,16 @@ const Class2 = () => {
                   </div>
                 </div>
                 <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h2 className="text-light">Evaluación de Conocimientos: Clase 2 - Variables en Python</h2>
+                  </button>
+                  <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <QuizForm/>
+                    </div>
+                  </div>
+                </div>
+                <div id="element10" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/miniproject1.py"
                     target={"_blank"}
                     download={"miniproject1.py"}>
@@ -303,15 +314,15 @@ const Class2 = () => {
                     </button>
                   </Link>
                 </div>
-                <div id="element10" className={`mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                  <Link to="/pythonClassFile/class2.py"
-                    target={"_blank"}
-                    download={"class2.py"}>
-                    <button className="accordion-button collapsed bg-transparent" type="button">
-                      <h2 className="text-light">Descarga el archivo de la clase 2</h2>
-                    </button>
-                  </Link>
-                </div>
+              </div>
+              <div id="element11" className={`mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                <Link to="/pythonClassFile/class2.py"
+                  target={"_blank"}
+                  download={"class2.py"}>
+                  <button className="accordion-button collapsed bg-transparent" type="button">
+                    <h2 className="text-light">Descarga el archivo de la clase 2</h2>
+                  </button>
+                </Link>
               </div>
             </div>
           </section>

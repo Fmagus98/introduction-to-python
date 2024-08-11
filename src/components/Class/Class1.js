@@ -424,7 +424,7 @@ const Class1 = () => {
                                         <h2 className="text-light">Ejecución del primer programa</h2>
                                     </button>
                                     <div id="a11" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark  ">
+                                        <div className="accordion-body text-light bg-dark">
                                             <h3 className="mt-4 text-break mx-auto w-75">Crea un proyecto en Visual Studio Code</h3>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">1_ Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
                                             <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/p1.webp"></img>

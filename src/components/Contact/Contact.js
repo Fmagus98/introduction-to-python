@@ -18,6 +18,7 @@ const Contact = () => {
         emailjs.sendForm('service_om6xbij', 'template_szjk8z4', form.current, 'CxCHtiHIgRGkMAL1C')
             .then((result) => {
                 setFormularioView(false)
+                console.log(form.current)
             }, (error) => {
                 console.log(error.text);
             });
