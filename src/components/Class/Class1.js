@@ -113,8 +113,8 @@ const Class1 = () => {
                                         <div className="accordion-body text-light bg-dark  ">
                                             <p className="text-break mx-auto mt-7 w-75">El perfil de un programador puede variar dependiendo de sus habilidades, experiencia y especialización. Sin embargo, hay algunas características y habilidades comunes que suelen definir a un programador.
                                             </p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tener conocimientos básicos de programación</h3>
-                                            <p className="text-break mx-auto w-75">Los programadores tienen un conocimiento sólido de al menos un lenguaje de programación y están familiarizados con los conceptos fundamentales de la programación, como variables, estructuras de control, funciones, algoritmos, etc.</p>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Adaptabilidad</h3>
+                                            <p className="text-break mx-auto w-75">Cada vez mas nuevas tecnologias estan saliendo y debemos tener la versatilidad de adaptarnos a diferentes lenguajes de programacion, frameworks, librerias, etc.</p>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Ser resolutivo a los problemas</h3>
                                             <p className="text-break mx-auto w-75">Los programadores son buenos para analizar problemas, identificar soluciones y desarrollar algoritmos eficientes para resolverlos. Tienen habilidades de pensamiento lógico y capacidad para descomponer problemas complejos en partes más pequeñas y manejables.</p>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Estar activamente aprendiendo</h3>
