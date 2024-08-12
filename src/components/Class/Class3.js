@@ -6,7 +6,7 @@ import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
 import { class3Code } from './classCode'
-import { QuizForm } from '../QuizForm/QuizForm';
+import QuizForm from '../QuizForm/QuizForm';
 
 const Class3 = () => {
 
