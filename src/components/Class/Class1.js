@@ -315,9 +315,9 @@ const Class1 = () => {
                                             <img className="w-75 mx-auto d-block border-content " alt="" src="../img/class1/python1.webp"></img>
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">2. Luego iremos a "All releases" </p>
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/python2.webp"></img>
-                                            <p className="mt-7 mb-4 text-break mx-auto w-75">3. Buscamos la versión  3.8.3 y tocamos "download"</p>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">3. Buscamos la versión más reciente o alguna versión superior o igual a 3.8, aunque lo más recomendable es que instalen 3.10 en adelante y tocamos "download"</p>
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/python3.webp"></img>
-                                            <p className="mt-7 mb-4 text-break mx-auto w-75">4. Elegimos el sistema operativo que utilizamos en nuestro dispositivo y la arquitectura que tengamos sea 64 bits(86x_64 / x64) ó 32 bits(86x).</p>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">4. Elegimos el sistema operativo que utilizamos en nuestro dispositivo y la arquitectura que tengamos sea 64 bits(86x_64 / x64) ó 32 bits(86x). <br/>Si no sabes cual descargar, estan los pasos a seguir en esta página para saber cual. Sube hacia arriba y toca el botón "¿Que arquitectura tengo en mi pc?"</p>
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../img/class1/python4.webp"></img>
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">5. Al instalar selecciona "add python 3.8 to PATH" y "install now"</p>
                                             <img className="w-75 mx-auto d-block border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/python5.webp"></img>
@@ -426,7 +426,7 @@ const Class1 = () => {
                                     <div id="a11" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark">
                                             <h3 className="mt-4 text-break mx-auto w-75">Crea un proyecto en Visual Studio Code</h3>
-                                            <p className="mt-4 mb-2 text-break mx-auto w-75">1_ Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">1_ Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder"-"Abrir carpeta" </p>
                                             <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/p1.webp"></img>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">2_ Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
                                             <img className="w-75 mt-4 d-block mx-auto border-content" alt="" src="../img/class1/p2.webp"></img>

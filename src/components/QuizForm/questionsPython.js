@@ -330,7 +330,7 @@ export const questionsPythonClass2 = [
         answer: "and"
     }
 ]
-export const questionsPythonClass3 = [ 
+export const questionsPythonClass3 = [
     {
         question: "1. ¿Cuál es el propósito del uso de la estructura if en Python?",
         options: [
@@ -610,5 +610,258 @@ export const questionsPythonClass3 = [
             "Error de sintaxis"
         ],
         answer: "Cero\nUno\nDos"
+    }
+]
+
+export const questionsPythonClass4 = [
+    {
+        question: "1. ¿Cómo se define una función en Python?",
+        options: [
+            "def nombre_funcion():",
+            "function nombre_funcion():",
+            "crear_funcion():",
+            "definir_funcion()"
+        ],
+        answer: "def nombre_funcion():"
+    },
+    {
+        question: "2. ¿Cuál es la sintaxis correcta para llamar a una función llamada 'calcular'?",
+        options: [
+            "llamar calcular()",
+            "calcular",
+            "def calcular",
+            "calcular()"
+        ],
+        answer: "calcular()"
+    },
+    {
+        question: "3. ¿Qué palabra clave se utiliza para devolver un valor desde una función en Python?",
+        options: [
+            "return",
+            "yield",
+            "output",
+            "result"
+        ],
+        answer: "return"
+    },
+    {
+        question: "4. ¿Cómo se pasan parámetros a una función en Python?",
+        options: [
+            "def funcion(parametro1, parametro2):",
+            "funcion(parametro1, parametro2)",
+            "crear funcion(parametro1, parametro2):",
+            "parametro1, parametro2 = funcion()"
+        ],
+        answer: "def funcion(parametro1, parametro2):"
+    },
+    {
+        question: "5. ¿Cuál es el valor de retorno de una función en Python si no se especifica 'return'?",
+        options: [
+            "None",
+            "0",
+            "False",
+            "'' (cadena vacía)"
+        ],
+        answer: "None"
+    },
+    {
+        question: "6. ¿Qué es un módulo en Python?",
+        options: [
+            "Un archivo que contiene definiciones y declaraciones de funciones y variables.",
+            "Una función específica en Python.",
+            "Un bucle especial en Python.",
+            "Una clase predefinida en Python."
+        ],
+        answer: "Un archivo que contiene definiciones y declaraciones de funciones y variables."
+    },
+    {
+        question: "7. ¿Cómo se importa un módulo en Python?",
+        options: [
+            "import nombre_modulo",
+            "incluir nombre_modulo",
+            "usar nombre_modulo",
+            "llamar nombre_modulo"
+        ],
+        answer: "import nombre_modulo"
+    },
+    {
+        question: "8. ¿Cómo se accede a una función 'sumar' desde un módulo llamado 'operaciones'?",
+        options: [
+            "operaciones.sumar()",
+            "sumar.operaciones()",
+            "modulo.operaciones.sumar()",
+            "funcion.operaciones.sumar()"
+        ],
+        answer: "operaciones.sumar()"
+    },
+    {
+        question: "9. ¿Cuál es el propósito de la declaración 'if __name__ == \"__main__\":' en un módulo?",
+        options: [
+            "Permitir que el código dentro de ese bloque se ejecute solo cuando el módulo se ejecuta directamente.",
+            "Definir una función principal en un módulo.",
+            "Importar otros módulos dentro de un módulo.",
+            "Comprobar si un módulo tiene una función principal."
+        ],
+        answer: "Permitir que el código dentro de ese bloque se ejecute solo cuando el módulo se ejecuta directamente."
+    },
+    {
+        question: "10. ¿Cómo se llama a una función anónima en Python?",
+        options: [
+            "lambda",
+            "def",
+            "func",
+            "anon"
+        ],
+        answer: "lambda"
+    },
+    {
+        question: "11. ¿Cuál es la salida del siguiente código: 'def saludo(): return \"Hola\" print(saludo())'?",
+        options: [
+            "Hola",
+            "None",
+            "Error",
+            "saludo"
+        ],
+        answer: "Hola"
+    },
+    {
+        question: "12. ¿Qué es un argumento por defecto en una función?",
+        options: [
+            "Un valor que se asigna automáticamente si no se proporciona un argumento.",
+            "Un argumento que siempre se debe proporcionar.",
+            "Un tipo de error en una función.",
+            "Una variable interna de la función."
+        ],
+        answer: "Un valor que se asigna automáticamente si no se proporciona un argumento."
+    },
+    {
+        question: "13. ¿Cómo se define un argumento por defecto en una función?",
+        options: [
+            "def funcion(parametro='valor'):",
+            "def funcion(default parametro='valor'):",
+            "def funcion('valor' parametro=):",
+            "def funcion(parametro por defecto='valor'):"
+        ],
+        answer: "def funcion(parametro='valor'):"
+    },
+    {
+        question: "14. ¿Qué se necesita para crear un módulo en Python?",
+        options: [
+            "Un archivo .py con funciones y variables definidas.",
+            "Un archivo .txt con funciones y variables definidas.",
+            "Un proyecto en un IDE específico.",
+            "Un archivo .mod con una función principal."
+        ],
+        answer: "Un archivo .py con funciones y variables definidas."
+    },
+    {
+        question: "15. ¿Qué módulo se usa para trabajar con fechas y horas en Python?",
+        options: [
+            "datetime",
+            "time",
+            "calendar",
+            "os"
+        ],
+        answer: "datetime"
+    },
+    {
+        question: "16. ¿Cuál es el propósito de la función 'dir()' cuando se aplica a un módulo?",
+        options: [
+            "Listar todos los atributos y métodos de ese módulo.",
+            "Ejecutar una función específica del módulo.",
+            "Eliminar un módulo.",
+            "Guardar cambios en un módulo."
+        ],
+        answer: "Listar todos los atributos y métodos de ese módulo."
+    },
+    {
+        question: "17. ¿Qué se entiende por 'namespace' en Python?",
+        options: [
+            "El espacio donde los nombres de variables y funciones son almacenados.",
+            "El nombre de un módulo específico.",
+            "El rango de valores que una variable puede tomar.",
+            "Un bucle de funciones."
+        ],
+        answer: "El espacio donde los nombres de variables y funciones son almacenados."
+    },
+    {
+        question: "18. ¿Qué diferencia hay entre un argumento y un parámetro en Python?",
+        options: [
+            "Un parámetro es una variable en la definición de la función; un argumento es el valor pasado a la función.",
+            "No hay diferencia; son lo mismo.",
+            "Un argumento es una variable en la definición de la función; un parámetro es el valor pasado a la función.",
+            "Un parámetro solo se usa en funciones anónimas."
+        ],
+        answer: "Un parámetro es una variable en la definición de la función; un argumento es el valor pasado a la función."
+    },
+    {
+        question: "19. ¿Cómo se puede evitar que una función modifique una variable global?",
+        options: [
+            "Pasando una copia de la variable a la función.",
+            "Definiendo la variable como 'local'.",
+            "Usando la palabra clave 'nonlocal'.",
+            "No se puede evitar."
+        ],
+        answer: "Pasando una copia de la variable a la función."
+    },
+    {
+        question: "20. ¿Qué hace la función 'globals()' en Python?",
+        options: [
+            "Devuelve un diccionario que representa el espacio de nombres global.",
+            "Importa todos los módulos globales.",
+            "Elimina todas las variables globales.",
+            "Define una variable global."
+        ],
+        answer: "Devuelve un diccionario que representa el espacio de nombres global."
+    },
+    {
+        question: "21. ¿Cuál es la salida del siguiente código: 'def multiplica(x, y=2): return x * y print(multiplica(5))'?",
+        options: [
+            "10",
+            "5",
+            "7",
+            "Error"
+        ],
+        answer: "10"
+    },
+    {
+        question: "22. ¿Qué función se utiliza para importar módulos en Python si no se conoce el nombre del módulo de antemano?",
+        options: [
+            "importlib.import_module()",
+            "exec()",
+            "eval()",
+            "import()"
+        ],
+        answer: "importlib.import_module()"
+    },
+    {
+        question: "23. ¿Cuál es el propósito de la función 'help()' cuando se aplica a un módulo?",
+        options: [
+            "Proporcionar información detallada sobre el módulo.",
+            "Listar todos los atributos y métodos del módulo.",
+            "Ejecutar una función específica del módulo.",
+            "Eliminar el módulo."
+        ],
+        answer: "Proporcionar información detallada sobre el módulo."
+    },
+    {
+        question: "24. ¿Qué módulo nativo se utiliza para manejar archivos JSON en Python?",
+        options: [
+            "json",
+            "os",
+            "pickle",
+            "csv"
+        ],
+        answer: "json"
+    },
+    {
+        question: "25. ¿Cómo se puede importar solo una función específica de un módulo?",
+        options: [
+            "from modulo import funcion",
+            "import funcion from modulo",
+            "incluir funcion en modulo",
+            "modulo.funcion"
+        ],
+        answer: "from modulo import funcion"
     }
 ]

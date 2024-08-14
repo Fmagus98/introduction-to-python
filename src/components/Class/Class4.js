@@ -6,6 +6,7 @@ import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
 import { class4Code } from './classCode'
+import QuizForm from '../QuizForm/QuizForm';
 
 const Class4 = () => {
 
@@ -349,7 +350,17 @@ const Class4 = () => {
                   </div>
                 </div>
                 */}
-                <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                 <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h2 className="text-light">Evaluación de Conocimientos: Clase 3 - Control de flujo en Python</h2>
+                  </button>
+                  <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <QuizForm/>
+                    </div>
+                  </div>
+                </div>
+                <div id="element10" className={`mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class4.py"
                     target={"_blank"}
                     download={"class4.py"}>
