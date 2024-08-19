@@ -181,22 +181,22 @@ const Class1 = () => {
                                                 dos identificadores que se diferencian solo en su uso de mayúsculas y minúsculas se consideran diferentes en Python.</p>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Implementación</h3>
                                             <p className="text-break mx-auto w-75">La implementación de Python se refiere a la forma en que se ejecuta el código de Python. Hay varias implementaciones de Python disponibles, aquí hay algunas de las más populares:</p>
-                                            <ul>
-                                                <ol>
+                                            <ul className= "text-break mx-auto w-75 list-unstyled">
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">CPython</span> Es la implementación más común de Python y está escrita en C. CPython es la implementación predeterminada de Python y es utilizada por la mayoría de los programadores de Python.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Jython</span> Es una implementación de Python escrita en Java. Jython permite a los programadores utilizar Python en una máquina virtual Java y acceder a las librerías y frameworks de Java.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">IronPython</span> Es una implementación de Python escrita en C# y diseñada para el entorno .NET. IronPython permite a los programadores utilizar Python en el entorno .NET y acceder a las librerías y frameworks de .NET.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">PyPy</span> Es una implementación de Python escrita en Python. PyPy es conocido por ser mucho más rápido que CPython, especialmente en aplicaciones que requieren mucho cálculo.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">MicroPython</span> Es una implementación de Python diseñada para ser utilizada en microcontroladores y dispositivos de baja potencia. MicroPython es una versión reducida de Python que incluye un conjunto limitado de librerías y frameworks.</p>
-                                                </ol>
+                                                </li>
                                             </ul>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">MULTIPLATAFORMA</h3>
                                             <p className="text-break mx-auto w-75">Python se puede utilizar en una amplia variedad de plataformas, incluyendo Windows, macOS y Linux, lo que lo hace muy versátil y útil en diferentes entornos de trabajo.</p>

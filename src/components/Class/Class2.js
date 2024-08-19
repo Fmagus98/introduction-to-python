@@ -297,32 +297,72 @@ const Class2 = () => {
                 </div>
                 <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSeven">
-                    <h2 className="text-light">Evaluación de Conocimientos: Clase 2 - Variables en Python</h2>
+                    <h2 className="text-light">Mini proyecto 1: Calculadora de propinas</h2>
                   </button>
                   <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
-                      <QuizForm/>
+                      <p className="text-break mx-auto w-75">Crear una calculadora que permita a los usuarios ingresar el total de su cuenta y el porcentaje de propina que desean dejar. El objetivo es calcular y mostrar tanto la propina como el total a pagar.</p>
+                      <ul className="text-break mx-auto w-75">
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Entrada de Datos:</span> ¿Cómo recogerás la información del usuario (total de la cuenta y porcentaje de propina)?</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Cálculo:</span> ¿Cómo calcularás el monto de la propina y el total de la cuenta incluyendo la propina?</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold"> Salida de Datos:</span> ¿Cómo mostrarás los resultados al usuario?</p>
+                        </li>
+                      </ul>
+                      <p className="text-break mx-auto w-75">Descarga un ejemplo del mini proyecto desde acá --
+                        <Link to="/pythonClassFile/miniproject1.py" target={"_blank"} download={"miniproject1.py"} className="text-primary" > Calculadora de propinas</Link>
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div id="element10" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                  <Link to="/pythonClassFile/miniproject1.py"
+                <div id="element10" className={`mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h2 className="text-light">Mini proyecto 2: Conversor de unidades</h2>
+                  </button>
+                  <div id="a9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <h3 className="text-break mx-auto mt-4 w-75">Consignas del proyecto</h3>
+                      <p className="text-break mx-auto w-75">El objetivo es crear un programa que convierta entre diferentes unidades de medida. (kilómetros a millas) - (kilogramos a libras).</p>
+                      <ul className="text-break mx-auto w-75">
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Entrada de Datos:</span> Determinen cómo van a pedir al usuario que ingrese el valor que quiere convertir y la unidad de medida en la que se encuentra.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Conversión:</span> Define las fórmulas necesarias para realizar las conversiones.<br></br>1 kg = 2.20462 libras<br></br>1 Km = 0.621371 millas<br></br>1 litro = 0.264172 galones</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold"> Salida de Datos:</span> Piensen en cómo mostrar el resultado de una manera clara y comprensible para el usuario.</p>
+                        </li>
+                      </ul>
+                      <p className="text-break mx-auto w-75">Descarga un ejemplo del mini proyecto desde acá --
+                        <Link to="/pythonClassFile/miniproject2.py" target={"_blank"} download={"miniproject2.py"} className="text-primary" > Conversor de unidades</Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="element11" className={`mt-4 rounded-5 animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h2 className="text-light">Evaluación de Conocimientos: Clase 2 - Variables en Python</h2>
+                  </button>
+                  <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <QuizForm />
+                    </div>
+                  </div>
+                </div>
+                <div id="element11" className={`mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <Link to="/pythonClassFile/class2.py"
                     target={"_blank"}
-                    download={"miniproject1.py"}>
+                    download={"class2.py"}>
                     <button className="accordion-button collapsed bg-transparent" type="button">
-                      <h2 className="text-light">Descarga Mini proyecto 1: Calculadora de propinas</h2>
+                      <h2 className="text-light">Descarga el archivo de la clase 2</h2>
                     </button>
                   </Link>
                 </div>
-              </div>
-              <div id="element11" className={`mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                <Link to="/pythonClassFile/class2.py"
-                  target={"_blank"}
-                  download={"class2.py"}>
-                  <button className="accordion-button collapsed bg-transparent" type="button">
-                    <h2 className="text-light">Descarga el archivo de la clase 2</h2>
-                  </button>
-                </Link>
               </div>
             </div>
           </section>

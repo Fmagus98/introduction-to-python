@@ -86,31 +86,31 @@ const GithubClass1 = () => {
                                             <img className="mx-auto d-block w-50 border-content" alt="Representación binaria en letras" src='../../img/classGithub/master.webp' />
                                             <h3 className="text-break mt-4 mb-4 mx-auto w-75 fw-bold">Caracteristicas de git</h3>
                                             <p className="text-break mx-auto w-75">Git tiene varias características distintivas que lo hacen extremadamente útil y popular en el desarrollo de software:</p>
-                                            <ul>
-                                                <ol>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Distribuido:</span> Git es un sistema de control de versiones distribuido, lo que significa que cada desarrollador tiene una copia completa del repositorio de código en su máquina local. Esto permite trabajar de manera independiente y realizar operaciones como commit, branch, merge y revert sin necesidad de una conexión constante a un servidor central.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Rápido y Eficiente:</span> Git está optimizado para manejar proyectos grandes y complejos de manera rápida y eficiente. Las operaciones como commit, branch y merge son generalmente muy rápidas, lo que mejora la productividad del desarrollo.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Gestión eficiente de ramas (branching):</span> Git hace que sea fácil y eficiente trabajar con ramas (branches). Las ramas permiten a los desarrolladores trabajar en paralelo en nuevas características o correcciones sin interferir con el código en la rama principal. La capacidad de fusionar ramas de manera limpia y resolver conflictos automáticamente es una característica clave de Git.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Seguimiento de cambios (tracking):</span> Git realiza un seguimiento de todos los cambios realizados en el código a lo largo del tiempo. Cada cambio se registra como un commit con un mensaje descriptivo, lo que permite a los desarrolladores entender qué cambios se realizaron, cuándo y por qué.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Gestión robusta de historial:</span> Git mantiene un historial completo y detallado de todos los cambios realizados en el código. Esto facilita la revisión de cambios anteriores, la recuperación de versiones antiguas del código (mediante el uso de commits específicos) y la auditoría del desarrollo.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Soporte para trabajo offline:</span> Como cada desarrollador tiene una copia completa del repositorio en su máquina local, Git permite trabajar sin conexión a internet. Los cambios pueden ser realizados y luego sincronizados con el repositorio central cuando se establece la conexión.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Integridad de los datos:</span> Git utiliza un sistema de hashes criptográficos (SHA-1) para garantizar la integridad de los datos almacenados en el repositorio. Esto significa que cada archivo y cada versión del archivo están protegidos contra corrupción y modificaciones no autorizadas.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Compatibilidad con flujos de trabajo diversos:</span> Git es muy flexible y puede adaptarse a una amplia variedad de flujos de trabajo de desarrollo, desde el modelo de ramificación simple hasta modelos más complejos como Gitflow. Esto hace que Git sea adecuado para proyectos pequeños y grandes, así como para equipos distribuidos.</p>
-                                                </ol>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -125,28 +125,28 @@ const GithubClass1 = () => {
                                             </p>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funciones y beneficios de github</h3>
                                             <p className="text-break mx-auto w-75">GitHub proporciona varias funciones y beneficios clave para desarrolladores y equipos de desarrollo de software:</p>
-                                            <ul>
-                                                <ol>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Alojamiento de Repositorios:</span> GitHub permite almacenar y gestionar repositorios de código fuente utilizando Git, facilitando el control de versiones y la colaboración en proyectos.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Colaboración:</span> Permite a múltiples desarrolladores trabajar juntos en el mismo proyecto de manera simultánea. Cada desarrollador puede clonar un repositorio, realizar cambios locales y luego enviar esos cambios de vuelta al repositorio central en GitHub.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Control de Versiones:</span> Utiliza Git para controlar y gestionar versiones del código fuente. Esto permite realizar un seguimiento de los cambios realizados en el código, revertir a versiones anteriores si es necesario y colaborar de manera efectiva en el desarrollo de software.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Seguimiento de Problemas y Tareas:</span> GitHub proporciona herramientas integradas para gestionar y hacer un seguimiento de problemas (bugs), solicitudes de funciones y otras tareas relacionadas con el desarrollo de software. Los equipos pueden comentar, asignar y priorizar problemas para facilitar la coordinación y la resolución eficiente de problemas.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Despliegue e Integración Continua:</span> GitHub ofrece integración con servicios de integración continua (como GitHub Actions) que permiten automatizar pruebas, compilaciones y despliegues de código, lo cual es crucial para mantener la calidad del software y acelerar el ciclo de desarrollo.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Revisión de Código:</span> Facilita la revisión de código mediante pull requests, donde los desarrolladores pueden solicitar la revisión de cambios específicos antes de fusionarlos con el repositorio principal. Esto fomenta la colaboración y mejora la calidad del código.</p>
-                                                </ol>
-                                                <ol>
+                                                </li>
+                                                <li>
                                                     <p className="text-break mx-auto w-75"><span className="fw-bold">Visibilidad y Comunidad:</span> GitHub es una plataforma social donde los desarrolladores pueden mostrar su trabajo, colaborar con otros en proyectos de código abierto y aprender de la comunidad global de desarrolladores.</p>
-                                                </ol>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -159,20 +159,20 @@ const GithubClass1 = () => {
                                         <div className="accordion-body text-light bg-dark  ">
                                             <div id="content">
                                                 <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Instalación en Windows</h3>
-                                                <ul className="intr-ul">
+                                                <ol className="text-break mx-auto w-75">
                                                     <li>
-                                                        <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_</span>Dirigete a la página oficial de Git en <Link to="https://git-scm.com/downloads" target="_blank" className="text-info">https://git-scm.com/downloads</Link> y selecciona "Windows".</p>
-                                                        <img className="w-75 mx-auto d-block border-content" alt="Paso 1 de instalación de github" src="../../img/class1Github/gitInstall.webp"></img>
+                                                        <p>Dirigete a la página oficial de Git en <Link to="https://git-scm.com/downloads" target="_blank" className="text-info">https://git-scm.com/downloads</Link> y selecciona "Windows".</p>
+                                                        <img className="w-100 mx-auto d-block border-content" alt="Paso 1 de instalación de github" src="../../img/class1Github/gitInstall.webp"></img>
                                                     </li>
-                                                    <li>
-                                                        <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Elige el instalador de 32bit para computadoras más antiguas o 64bit para computadoras más recientes.</p>
-                                                        <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/gitInstall2.webp"></img>
+                                                    <li className="mt-4">
+                                                        <p>Elige el instalador de 32bit para computadoras más antiguas o 64bit para computadoras más recientes.</p>
+                                                        <img className="w-100 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/gitInstall2.webp"></img>
                                                     </li>
-                                                    <li>
-                                                        <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">3_ </span>Cuando ejecutes el instalador selecciona el botón "Install".</p>
-                                                        <img className="w-50 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/gitInstall3.webp"></img>
+                                                    <li className="mt-4">
+                                                        <p>Cuando ejecutes el instalador selecciona el botón "Install".</p>
+                                                        <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/gitInstall3.webp"></img>
                                                     </li>
-                                                </ul>
+                                                </ol>
                                             </div>
                                         </div>
                                     </div>
@@ -183,32 +183,32 @@ const GithubClass1 = () => {
                                     </button>
                                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
-                                            <ul className="intr-ul">
+                                            <ol className="text-break mx-auto w-75">
                                                 <li>
-                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_</span>Dirigete a la página oficial de Github en <Link to="https://github.com/signup?source=login" target="_blank" className="text-info">https://github.com/signup?source=login</Link>, escribe tu correo y selecciona "Continuar".</p>
-                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 1 de instalación de github" src="../../img/class1Github/githubAccount.webp"></img>
+                                                    <p>Dirigete a la página oficial de Github en <Link to="https://github.com/signup?source=login" target="_blank" className="text-info">https://github.com/signup?source=login</Link>, escribe tu correo y selecciona "Continuar".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="Paso 1 de instalación de github" src="../../img/class1Github/githubAccount.webp"></img>
                                                 </li>
-                                                <li>
-                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Ingresa la contraseña y selecciona "Continuar".</p>
-                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount2.webp"></img>
+                                                <li className="mt-4">
+                                                    <p>Ingresa la contraseña y selecciona "Continuar".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount2.webp"></img>
                                                 </li>
-                                                <li>
-                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">3_ </span>Ingresa el nombre de usuario y selecciona "Continuar".</p>
-                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount3.webp"></img>
+                                                <li className="mt-4">
+                                                    <p>Ingresa el nombre de usuario y selecciona "Continuar".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount3.webp"></img>
                                                 </li>
-                                                <li>
-                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">4_ </span>Es opcional pero podes seleccionar el check para recibir correos de actualizaciones y anuncios ocasionales de productos. Luego selecciona "Continuar".</p>
-                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount4.webp"></img>
+                                                <li className="mt-4">
+                                                    <p>Es opcional pero podes seleccionar el check para recibir correos de actualizaciones y anuncios ocasionales de productos. Luego selecciona "Continuar".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount4.webp"></img>
                                                 </li>
-                                                <li>
-                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">5_ </span>Completa el puzzle y selecciona "Enviar".</p>
-                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount5.webp"></img>
+                                                <li className="mt-4">
+                                                    <p>Completa el puzzle y selecciona "Enviar".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount5.webp"></img>
                                                 </li>
-                                                <li>
-                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">5_ </span>Completa el puzzle y selecciona "Enviar".</p>
-                                                    <img className="w-75 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount5.webp"></img>
+                                                <li className="mt-4">
+                                                    <p>Completa el puzzle y selecciona "Enviar".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="Paso 2 de instalación de github" src="../../img/class1Github/githubAccount5.webp"></img>
                                                 </li>
-                                            </ul>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
@@ -219,26 +219,32 @@ const GithubClass1 = () => {
                                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark  ">
                                             <p className="mt-4 mb-7 text-break mx-auto w-75">Ya habiendo instalado Git, vamos a verificar si realmente está instalado correctamente en nuestra maquina, para esto vamos a tener que utilizar la terminal que tenga tu sistema operativo.</p>
-                                            <h5 className= "mt-4 text-break mx-auto w-75 bold">Comprobar instalación de git dentro de la terminal</h5>
-                                            <p className="mt-4 text-break mx-auto w-75">1_ Escribe en el buscador "CMD" y selecciona "Simbolo de sistema".</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig1.webp"></img>
-                                            <p className="mt-4 text-break mx-auto w-75">2_ Dentro de la terminal escribe "git", "git -h" ó "git --help", esto te debe mostrar todos los comandos que puedes hacer con git, si no te aparece es posible que no esté instalado correctamente Git, debes instalarlo nuevamente.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig2.webp"></img>
-                                            <h5 className= "mt-4 text-break mx-auto w-75 bold">Crea una carpeta en el escritorio</h5>
-                                            <p className="mt-4 text-break mx-auto w-75">1_ Para ubicarnos en el escritorio, vamos a tener que utilizar el comando "cd" seguido de "desktop".</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig3.webp"></img>
-                                            <p className="mt-4 text-break mx-auto w-75">2_ Escribe en la terminal: mkdir "Nuevo repositorio", al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig4.webp"></img>
-                                            <p className="mt-4 text-break mx-auto w-75">3_ Ahora para posicionarnos en la carpeta que creamos, debemos escribe en la terminal: cd Nuevo repositorio, al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig5.webp"></img>
-                                            <h5 className= "mt-4 text-break mx-auto w-75 bold">Utiliza git en una carpeta</h5>
-                                            <p className="mt-4 text-break mx-auto w-75">1_ Para ubicarnos en el escritorio, vamos a tener que utilizar el comando "cd" seguido de "desktop".</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig3.webp"></img>
-                                            <p className="mt-4 text-break mx-auto w-75">2_ Escribe en la terminal: mkdir "Nuevo repositorio", al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig4.webp"></img>
-                                            <p className="mt-4 text-break mx-auto w-75">3_ Ahora para posicionarnos en la carpeta que creamos, debemos escribe en la terminal: cd Nuevo repositorio, al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig5.webp"></img>
-
+                                            <h5 className="mt-4 text-break mx-auto w-75 bold">Comprobar instalación de git dentro de la terminal</h5>
+                                            <ol className="text-break mx-auto w-75">
+                                                <li className="mt-4">
+                                                    <p>Escribe en el buscador "CMD" y selecciona "Simbolo de sistema".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig1.webp"></img>
+                                                </li>
+                                                <li className="mt-4">
+                                                    <p>Dentro de la terminal escribe "git", "git -h" ó "git --help", esto te debe mostrar todos los comandos que puedes hacer con git, si no te aparece es posible que no esté instalado correctamente Git, debes instalarlo nuevamente.</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig2.webp"></img>
+                                                </li>
+                                            </ol>
+                                            <h5 className="mt-4 text-break mx-auto w-75 bold">Crea una carpeta en el escritorio</h5>
+                                            <ol className="text-break mx-auto w-75">
+                                                <li className="mt-4">
+                                                    <p>Para ubicarnos en el escritorio, vamos a tener que utilizar el comando "cd" seguido de "desktop".</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig3.webp"></img>
+                                                </li>
+                                                <li className="mt-4">
+                                                    <p>Escribe en la terminal: mkdir "Nuevo repositorio", al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig4.webp"></img>
+                                                </li>
+                                                <li className="mt-4">
+                                                    <p>Ahora para posicionarnos en la carpeta que creamos, debemos escribe en la terminal: cd Nuevo repositorio, al hacer esto creará una carpeta llamada "Nuevo repositorio" dentro de tu escritorio.</p>
+                                                    <img className="w-100 mx-auto d-block border-content" alt="" src="../../img/class1Github/gitConfig5.webp"></img>
+                                                </li>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
