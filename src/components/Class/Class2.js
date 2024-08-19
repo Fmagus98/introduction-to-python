@@ -354,7 +354,7 @@ const Class2 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element11" className={`mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                <div id="element12" className={`mt-4 rounded-5 animated-left ${elementVisibility.element12 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class2.py"
                     target={"_blank"}
                     download={"class2.py"}>
