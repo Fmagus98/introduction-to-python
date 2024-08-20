@@ -79,7 +79,8 @@ print("Bienvenido "+ input("dime tu nombre") + " al curso de python!")
 
 
 print(input("dime tu nombre: ")," contiene ",len(input("escribe de nuevo el nombre: "))," letras")
-# En esta línea de código es un poco diferente, vemos que está haciendo una unión de varios datos pero en vez de usar "+", usamos una coma ",".
-# Si lo hacemos de la forma anterior nos va a provocar un error, esto es porque la función len() nos retorna un tipo de dato number(número) 
+# En esta línea de código es un poco diferente, vemos que se está utilizando una coma "," en vez de un "+".
+# Si lo hacemos de la forma anterior con un "+" nos va a provocar un error, esto es porque la función len() nos retorna un tipo de dato number(número) 
 # cuando queremos unir tipos de datos diferentes con "+" el programa de python no va a entender que es lo que tiene que hacer para unirlos.
-# esto lo van a entender mejor en la clase 2.
+# esto lo van a entender mejor en la clase 2, van a ver que con la coma en realidad no estamos uniendo el texto, sino que estamos separando 
+# los datos en una "tupla", esto lo vamos a ver mejor en la clase 5.
