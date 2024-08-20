@@ -67,7 +67,7 @@ export const questionsPythonClass2 = [
             "&lt;class 'float'&gt;",
             "&lt;class 'bool'&gt;"
         ],
-        answer: "<class 'int'>"
+        answer: "&lt;class 'int'&gt;"
     },
     {
         question: "8.¿Cuál es el valor de la variable 'a' en el siguiente código: a = '5' + '3'?",
