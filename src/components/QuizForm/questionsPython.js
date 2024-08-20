@@ -62,10 +62,10 @@ export const questionsPythonClass2 = [
     {
         question: "7. ¿Cuál es la salida de print(type(5))?",
         options: [
-            "<class 'str'>",
-            "<class 'int'>",
-            "<class 'float'>",
-            "<class 'bool'>"
+            "&lt;class 'str'&gt;",
+            "&lt;class 'int'&gt;",
+            "&lt;class 'float'&gt;",
+            "&lt;class 'bool'&gt;"
         ],
         answer: "<class 'int'>"
     },
