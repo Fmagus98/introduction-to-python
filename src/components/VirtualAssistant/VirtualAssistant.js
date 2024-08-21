@@ -135,7 +135,7 @@ const VirtualAssistant = () => {
                                 onChange={(e) => setInput(e.target.value)}
                                 onKeyDown={(e) => e.key === 'Enter' && handleSend()}
                             />
-                            {disabledButton ? <button className="btn btn-send disabled"><img src="img/send.png" alt="send" /></button> : <button className="btn btn-send" onClick={handleSend}><img src="img/send.png" alt="send" /></button>}
+                            {disabledButton ? <button className="btn btn-send disabled"><img src="../img/send.png" alt="send" /></button> : <button className="btn btn-send" onClick={handleSend}><img src="img/send.png" alt="send" /></button>}
                         </div>
                     </div>
                     <small>{loadingLLM}</small>
