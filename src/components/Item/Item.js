@@ -9,9 +9,10 @@ const Item = ({ item }) => {
       top: 0
     });
   };
-  const date = new Date()
-  const dateFirebase = new Date(item.date.toDate())
-  const itemDate = (date >= dateFirebase)||(localStorage.getItem("access") && !location.pathname.includes("micropython") && !location.pathname.includes("github"))?
+
+  let dateClass = new Date(item.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long' })
+
+  const itemDate = (new Date >= new Date(item.date))||(localStorage.getItem("access") && !location.pathname.includes("micropython") && !location.pathname.includes("github"))?
     <Link to={`${redirect}${item.id}`} onClick={handleLinkClick} className='mx-auto class-teory card w-75' style={{background:location.pathname.includes("micropython")?"#B34229":"#012973"}}>
       <div className="card-body">
         <h4 className="text-center mb-2">{item.class}</h4>
@@ -30,7 +31,7 @@ const Item = ({ item }) => {
         <li className="text-center">{item.content[1]}</li>
         <li className="text-center">{item.content[2]}</li>
       </ul>
-      <h6 className="text-center mx-auto">Clase disponible el {item.date.toDate().toLocaleDateString()}</h6>
+      <h6 className="text-center mx-auto">Clase disponible el {dateClass}</h6>
     </div>
     </div>
 

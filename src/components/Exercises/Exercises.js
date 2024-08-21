@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { useLocation } from 'react-router-dom';
 import { colorSecondaryMicropython, colorPrimaryPython } from '../../colors';
 import useScrollAnimation from '../../useScrollAnimation'
@@ -7,47 +7,46 @@ import { collection, getDocs } from 'firebase/firestore'
 
 const Exercises = () => {
 
-    const elementVisibility = useScrollAnimation()
-    const location = useLocation()
-    const title = location.pathname.includes("micropython") ? "micropython" : "python"
-    const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
-    const idDates = ['0yKRrkDNEiFiv7K326tk', '2KLc4SOyBBSsZ3MvrydE', 'Ok0Mm7iHM1fIw69Twf4o', 'atVa7k6EyWDn7tZV7v1b', 'gHRanIzZrKbdu1K8Qb4x', 'id2wolQKcDk77qxdG24W', 'kgTSxaASCl9vPGuCGC7t', 'vxbP355jq6oSL1knWI6d']
-    const [dates, setDates] = useState([]);
+    const elementVisibility = useScrollAnimation();
+    const location = useLocation();
+    const title = location.pathname.includes("micropython") ? "micropython" : "python";
+    const content = location.pathname === "/micropython/classes" ? "courseMicropython" : location.pathname.includes("github") ? "courseGithub" : "course";
+    const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython;
+    const [course, setCourse] = useState([]);
+
+    const callFirebase = useCallback(() => {
+        getDocs(collection(db, content)).then(response => {
+            const getData = response.docs.map(doc => {
+                const data = doc.data();
+                data.date = data.date.toDate();
+                return { id: doc.id, ...data };
+            });
+            localStorage.removeItem('dataCourse');
+            localStorage.setItem('dataCourse', JSON.stringify(getData));
+            setCourse(getData);
+        });
+    }, [content]);
 
     useEffect(() => {
-        const savedDates = localStorage.getItem('datesExercises');
-        if (savedDates) {
-            const parsedDates = JSON.parse(savedDates);
-            const firstDate = new Date(parsedDates[1]);
-            const currentDate = new Date();
+        const savedCourse = localStorage.getItem('dataCourse');
+        if (savedCourse) {
+            const parsedDates = JSON.parse(savedCourse);
+            if (parsedDates.length > 0 && parsedDates[1].date) {
+                const firstDate = new Date(parsedDates[1].date);
+                const currentDate = new Date();
 
-            if ((currentDate - firstDate) <= 5272576239) {
-                setDates(parsedDates);
-                console.log("if", currentDate - firstDate)
-
+                if ((currentDate - firstDate) <= 4742590612) {
+                    setCourse(parsedDates);
+                } else {
+                    callFirebase();
+                }
             } else {
                 callFirebase();
-                console.log("else", currentDate - firstDate)
-                console.log("hola2")
             }
         } else {
             callFirebase();
-            console.log("hola")
         }
-    }, []);
-
-    const callFirebase = async () => {
-        const response = await getDocs(collection(db, "course"));
-        const fetchedDates = [];
-        response.docs.forEach(doc => {
-            if (idDates.includes(doc.id)) {
-                fetchedDates.push(doc.data().date.toDate());
-            }
-        });
-
-        setDates(fetchedDates);
-        localStorage.setItem('datesExercises', JSON.stringify(fetchedDates));
-    };
+    }, [callFirebase]);
 
     return (
         <>
@@ -118,13 +117,13 @@ const Exercises = () => {
                             </div>
                         </div>
                         <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
-                            {new Date() >= new Date(dates[1]) || (localStorage.getItem("access")) ?
+                            {new Date() >= new Date(course[1]?.date || '') || (localStorage.getItem("access")) ?
                                 <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     <h2 className="text-light">Clase 2</h2>
                                 </button>
                                 :
                                 <button className="accordion-button collapsed bg-dark text-light" style={{ borderRadius: "40px" }} type="button">
-                                    <h2>Clase 2 - {new Date(dates[1]).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' })}</h2>
+                                    <h2>Clase 2 {course[1]?.date ? "- " + new Date(course[1].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -153,13 +152,13 @@ const Exercises = () => {
                             </div>
                         </div>
                         <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
-                            {new Date() >= new Date(dates[2]) || (localStorage.getItem("access")) ?
+                            {new Date() >= new Date(course[2]?.date || '') || (localStorage.getItem("access")) ?
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                     <h2 className="text-light">Clase 3</h2>
                                 </button>
                                 :
                                 <button className="accordion-button collapsed bg-dark text-light" style={{ borderRadius: "40px" }} type="button">
-                                    <h2>Clase 3 - {new Date(dates[2]).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' })}</h2>
+                                    <h2>Clase 3 {course[2]?.date ? "- " + new Date(course[2].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -187,13 +186,13 @@ const Exercises = () => {
                             </div>
                         </div>
                         <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
-                            {new Date() >= new Date(dates[3]) || (localStorage.getItem("access")) ?
+                            {new Date() >= new Date(course[3]?.date || '') || (localStorage.getItem("access")) ?
                                 <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                     <h2 className="text-light">Clase 4</h2>
                                 </button>
                                 :
                                 <button className="accordion-button collapsed bg-dark text-light" style={{ borderRadius: "40px" }} type="button">
-                                    <h2>Clase 4 - {new Date(dates[3]).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' })}</h2>
+                                    <h2>Clase 4 {course[3]?.date ? "- " + new Date(course[3].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -219,13 +218,13 @@ const Exercises = () => {
                             </div>
                         </div>
                         <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
-                            {new Date() >= new Date(dates[4]) || (localStorage.getItem("access")) ?
+                            {new Date() >= new Date(course[4]?.date || '') || (localStorage.getItem("access")) ?
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                     <h2 className="text-light">Clase 5</h2>
                                 </button>
                                 :
                                 <button className="accordion-button collapsed bg-dark text-light" style={{ borderRadius: "40px" }} type="button">
-                                    <h2>Clase 5 - {new Date(dates[4]).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' })}</h2>
+                                    <h2>Clase 5 {course[4]?.date ? "- " + new Date(course[4].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -249,13 +248,13 @@ const Exercises = () => {
                             </div>
                         </div>
                         <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
-                            {(new Date() >= new Date(dates[5])) || (localStorage.getItem("access")) ?
+                            {(new Date() >= new Date(course[5]?.date || '')) || (localStorage.getItem("access")) ?
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
                                     <h2 className="text-light">Clase 6</h2>
                                 </button>
                                 :
                                 <button className="accordion-button collapsed bg-dark text-light" style={{ borderRadius: "40px" }} type="button">
-                                    <h2>Clase 6 - {new Date(dates[5]).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' })}</h2>
+                                    <h2>Clase 6 {course[5]?.date ? "- " + new Date(course[5].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -279,13 +278,13 @@ const Exercises = () => {
                             </div>
                         </div>
                         <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
-                            {new Date() >= new Date(dates[6]) || (localStorage.getItem("access")) ?
+                            {new Date() >= new Date(course[6]?.date || '') || (localStorage.getItem("access")) ?
                                 <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                                     <h2 className="text-light">Clase 7</h2>
                                 </button>
                                 :
                                 <button className="accordion-button collapsed bg-dark text-light" style={{ borderRadius: "40px" }} type="button">
-                                    <h2>Clase 7 - {new Date(dates[6]).toLocaleDateString('es-ES', {month: 'long', day: 'numeric' })}</h2>
+                                    <h2>Clase 7 {course[6]?.date ? "- " + new Date(course[6].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
@@ -312,13 +311,13 @@ const Exercises = () => {
                             </div>
                         </div>
                         <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }} >
-                            {new Date() >= new Date(dates[7]) || (localStorage.getItem("access")) ?
+                            {new Date() >= new Date(course[7]?.date || '') || (localStorage.getItem("access")) ?
                                 <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                                     <h2 className="text-light">Clase 8</h2>
                                 </button>
                                 :
                                 <button className="accordion-button collapsed bg-dark text-light" style={{ borderRadius: "40px" }} type="button">
-                                    <h2>Clase 8 - {new Date(dates[7]).toLocaleDateString('es-ES', {month: 'long', day: 'numeric' })}</h2>
+                                    <h2>Clase 8 {course[7]?.date ? "- " + new Date(course[7].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body text-light bg-dark rounded-5 rounded-top">

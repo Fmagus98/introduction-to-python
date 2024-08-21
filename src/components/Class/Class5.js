@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
@@ -8,24 +8,46 @@ import { CopyButton } from '../CopyButton/CopyButton'
 import { class3Code, class5Code } from './classCode'
 
 const Class5 = () => {
+  const elementVisibility = useScrollAnimation();
+  const [course, setCourse] = useState()
 
-  const elementVisibility = useScrollAnimation()
-  const [date, setDate] = useState()
-  const newDate = new Date()
-  useEffect(() => {
+  const callFirebase = useCallback(() => {
     getDocs(collection(db, "course")).then(response => {
-      response.docs.map(doc => {
-        if (doc.id === "gHRanIzZrKbdu1K8Qb4x") {
-          return setDate(doc.data().date.toDate())
+      const getData = response.docs.map(doc => {
+        const data = doc.data();
+        data.date = data.date.toDate();
+        return { id: doc.id, ...data };
+      });
+      localStorage.removeItem('dataCourse');
+      localStorage.setItem('dataCourse', JSON.stringify(getData));
+      setCourse(getData);
+    });
+  }, []);
+
+  useEffect(() => {
+    const savedCourse = localStorage.getItem('dataCourse');
+    if (savedCourse) {
+      const parsedDates = JSON.parse(savedCourse);
+      if (parsedDates.length > 0 && parsedDates[1].date) {
+        const firstDate = new Date(parsedDates[1].date);
+        const currentDate = new Date();
+
+        if ((currentDate - firstDate) <= 4742590612) {
+          setCourse(parsedDates);
+        } else {
+          callFirebase();
         }
-        return null
-      })
-    })
-  }, [])
+      } else {
+        callFirebase();
+      }
+    } else {
+      callFirebase();
+    }
+  }, [callFirebase]);
 
   return (
     <>
-      {(new Date(date) <= newDate) || localStorage.getItem("access") ?
+      {(new Date() >= new Date(course?.[4]?.date || '')) || localStorage.getItem("access") ?
         <>
           <section id="hero" style={{ background: colorPrimaryPython }}>
             <div className="container">
@@ -249,7 +271,7 @@ const Class5 = () => {
                   <h2>Manipulación de elementos</h2>
                   <h2>Métodos</h2>
                   <div className="text-center text-lg-start">
-                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
+                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(course?.[4]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                   </div>
                 </div>
               </div>

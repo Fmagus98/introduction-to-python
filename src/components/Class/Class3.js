@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useCallback } from 'react'
 import { Link } from 'react-router-dom';
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
@@ -11,22 +11,45 @@ import QuizForm from '../QuizForm/QuizForm';
 const Class3 = () => {
 
   const elementVisibility = useScrollAnimation();
-  const [date, setDate] = useState()
-  const newDate = new Date()
-  useEffect(() => {
+  const [course, setCourse] = useState()
+
+  const callFirebase = useCallback(() => {
     getDocs(collection(db, "course")).then(response => {
-      response.docs.map(doc => {
-        if (doc.id === "Ok0Mm7iHM1fIw69Twf4o") {
-          return setDate(doc.data().date.toDate())
+      const getData = response.docs.map(doc => {
+        const data = doc.data();
+        data.date = data.date.toDate();
+        return { id: doc.id, ...data };
+      });
+      localStorage.removeItem('dataCourse');
+      localStorage.setItem('dataCourse', JSON.stringify(getData));
+      setCourse(getData);
+    });
+  }, []);
+
+  useEffect(() => {
+    const savedCourse = localStorage.getItem('dataCourse');
+    if (savedCourse) {
+      const parsedDates = JSON.parse(savedCourse);
+      if (parsedDates.length > 0 && parsedDates[1].date) {
+        const firstDate = new Date(parsedDates[1].date);
+        const currentDate = new Date();
+
+        if ((currentDate - firstDate) <= 4742590612) {
+          setCourse(parsedDates);
+        } else {
+          callFirebase();
         }
-        return null
-      })
-    })
-  }, [])
+      } else {
+        callFirebase();
+      }
+    } else {
+      callFirebase();
+    }
+  }, [callFirebase]);
 
   return (
     <>
-      {(new Date(date) <= newDate) || localStorage.getItem("access") ?
+      {(new Date() >= new Date(course?.[2]?.date || '')) || localStorage.getItem("access") ?
         <>
           <section id="hero" style={{ background: colorPrimaryPython }}>
             <div className="container">
@@ -228,7 +251,7 @@ const Class3 = () => {
                   <h2>Bucles while y for</h2>
                   <h2>Uso de break y continue en bucles</h2>
                   <div className="text-center text-lg-start">
-                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
+                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(course?.[2]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                   </div>
                 </div>
               </div>
