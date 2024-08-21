@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import ReactMarkdown from "react-markdown";
 
@@ -11,6 +11,16 @@ const VirtualAssistant = () => {
     const [disabledButton, setDisabledButton] = useState(false);
     let promptDefault = "Te llamas PyBot y eres un asistente virtual amigable ayudando a un usuario a resolver solo y unicamente cosas relaciona a python, en el caso que no sea sobre python(saludar si es valido), diles explicitamente: 'Perdon, Estoy  no puedo responder una consulta no relacionada a python'. Al usuario hablale en español. El mensaje del usuario es:"
 
+    const messagesEndRef = useRef(null);
+    const scrollSendMessage = () => {
+        if (messagesEndRef.current) {
+            messagesEndRef.current.scrollTo({
+                top: messagesEndRef.current.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    }
+
     useEffect(() => {
         const savedMessages = localStorage.getItem('messages');
         if (savedMessages) {
@@ -19,7 +29,12 @@ const VirtualAssistant = () => {
     }, []);
 
     useEffect(() => {
+        const savedMessages = localStorage.getItem('messages');
+        if (!savedMessages) {
+            messages.push({ 'text': '¡Hola! Soy PyBot, tu asistente virtual para ayudarte con Python. ¿Tienes alguna pregunta sobre Python que pueda resolver?', 'role': 'bot' })
+        }
         localStorage.setItem('messages', JSON.stringify(messages));
+       scrollSendMessage()
     }, [messages]);
 
     const toggleChat = () => {
@@ -29,7 +44,7 @@ const VirtualAssistant = () => {
 
     const handleSend = async () => {
         let userInput = input.trim();
-        if (userInput !== ""){
+        if (userInput !== "") {
             setDisabledButton(true);
             setLoadingLLM("Por favor espera, estoy procesando tu consulta...")
             const existingMessage = messages.find(message => message.role === 'user' && message.text === userInput);
@@ -78,7 +93,7 @@ const VirtualAssistant = () => {
                 setDisabledButton(false);
                 setLoadingLLM("")
             }
-        } 
+        }
     }
 
     return (
@@ -92,7 +107,7 @@ const VirtualAssistant = () => {
             {isOpen && (
                 <div className="card chat-window bg-dark">
                     <div className="card-header"><b className="text-light">PyBot</b></div>
-                    <div className="card-body overflow-auto chat-body">
+                    <div className="card-body overflow-auto chat-body" ref={messagesEndRef}>
                         <ul className="list-group list-group-flush">
                             {messages.map((msg, index) => (
                                 <div key={index} className="list-group list-group-flush">
@@ -110,7 +125,7 @@ const VirtualAssistant = () => {
                                 </div>
                             ))}
                         </ul>
-                    </div>
+                    </div >
                     <div className="card-footer">
                         <div className="input-group">
                             <input

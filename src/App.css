@@ -1457,7 +1457,7 @@ section {
   position: fixed;
   bottom: 80px;
   right: 20px;
-  width: 500px;
+  width: 400px;
   height: 400px;
   z-index: 20;
   border-radius: 20px;
@@ -1479,23 +1479,49 @@ section {
   border-radius: 10px;
 }
 .bot-message{
-  max-width: 450px;
+  max-width: 80%;
   background: #3872a4;
-  margin-bottom: 10px;
   align-self: flex-start;
   border: solid 1px black;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius:15px!important;
+  margin-bottom: 1rem;
 }
 
 .user-message{
-  max-width: 200px;
+  max-width: 80%;
   background: #515151;
-  margin-bottom: 10px;
   align-self: flex-end;
   border: solid 1px black;
-  border-top-left-radius: 20px;
+  border-radius:15px!important;
+  margin-bottom: 1rem;
 }
+
+.bot-message p, .user-message p {
+  margin: 0px
+}
+
+.bot-message code{
+  color: #fde362;
+}
+.bot-message pre{
+  padding: 10px;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius:10px;
+  background-color:#343a40;
+}
+.bot-message pre::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background-color: #888;
+}
+
+.bot-message pre::-webkit-scrollbar-thumb {
+  background-color: #fde362;
+  border-radius: 10px;
+  width: 10%;
+}
+
 .item-bot{
   color: #cccc;
   width:36px;
