@@ -158,7 +158,7 @@ const Class4 = () => {
                       <p className="text-break mx-auto w-75">En el caso que tengas que importar un archivo que está dentro de una carpeta ajena a tu dirección local del archivo donde estás llamando la importación, podés hacerlo de la siguiente manera:</p>
                       <CopyButton code={class4Code[3]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class4/module5.webp"></img>
-                 
+
                     </div>
                   </div>
                 </div>
@@ -298,88 +298,52 @@ const Class4 = () => {
                     </div>
                   </div>
                 </div>
-              {/*   <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSix">
-                    <h2 className="text-light">Mini Proyecto: Calculadora avanzada</h2>
+                    <h2 className="text-light">Mini Proyecto 4: Calculadora avanzada</h2>
                   </button>
                   <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
-                      <p className="text-break mx-auto w-75 mt-4">Para realizar este mini proyecto debemos crear un archivo para poder almacenar todas nuestras funciones con operaciones que vamos a utilizar en nuestra calculadora, en este caso el nombre del archivo vamos asignale "funciones_calculadora.py".</p>
-                      <p className="text-break mx-auto w-75 mt-4">Además vamos a utilizar el módulo "math", este nos proporcionará una serie de métodos para realizar operaciones matemáticas y debemos crear funciones para ejecutar estas operaciones.</p>
-                      <div className="mx-auto w-75">
-                        <button
-                          className="btn btn-sm text-light"
-                          style={{ backgroundColor: "#234A91" }}
-                          onClick={() => navigator.clipboard.writeText(class4Code[20])}
-                        >Copiar código de funciones_calculadora.py</button>
-                      </div>
-                      <p className="text-break mx-auto w-75 mt-4">Además de crear el archivo, vamos a crear otro llamado "calculadora.py", este archivo va a ser el archivo principal y encargado de llamar a las funciones que creamos en el archivo "funciones_calculadora.py".</p>
-                      <div className="mx-auto w-75">
-                        <button
-                          className="btn btn-sm text-light"
-                          style={{ backgroundColor: "#234A91" }}
-                          onClick={() => navigator.clipboard.writeText(class4Code[20])}
-                        >Copiar código de calculadora.py
-                        </button>
-                      </div>
-                      <h3 className="text-break mx-auto w-75">Django:</h3>
-                      <p className="text-break mx-auto w-75">Es un framework de desarrollo web que facilita la creación de aplicaciones web robustas y escalables, ofreciendo un conjunto de herramientas y una arquitectura MVC.
-                        <br></br>
-                        Si quieres ver más sobre Django, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://www.djangoproject.com/download" target="_blank">Django</Link>
+                      <h3 className="text-break mx-auto w-75">Objetivo:</h3>
+                      <p className="text-break mx-auto w-75">Crear una calculadora avanzada que permita a los usuarios realizar diversas operaciones matemáticas, utilizando un módulo importado que contiene las funciones necesarias para los cálculos.</p>
+                      <ul className="text-break mx-auto w-75"> Entrada de Datos:
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Operación:</span> Permitir al usuario seleccionar la operación matemática que desea realizar (suma, resta, multiplicación, división, potencia, raíz cuadrada).</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Números:</span> Solicitar al usuario ingresar uno o dos números según la operación seleccionada.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75 mt-4">Calculo:
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Operación Matemática:</span> Dependiendo de la operación seleccionada, llamar a la función correspondiente desde el módulo importado.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75 mt-4">Salida de Datos:
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Resultado:</span> Mostrar el resultado de la operación seleccionada al usuario.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Errores:</span> En caso de errores (como división por cero o logaritmo indefinido), mostrar un mensaje de error claro.</p>
+                        </li>
+                      </ul>
+                      <p className="text-break mx-auto w-75">Descarga un ejemplo del archivo principal del mini proyecto desde acá --
+                        <Link to="/pythonClassFile/miniproject4-1.py" target={"_blank"} download={"main.py"} className="text-primary" > Calculadora</Link>
                       </p>
-                      <h3 className="text-break mx-auto w-75">Numpy:</h3>
-                      <p className="text-break mx-auto w-75">Proporciona soporte para cálculos numéricos eficientes y manipulación de matrices multidimensionales.
-                        <br></br>
-                        Si quieres ver más sobre Numpy, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://numpy.org/doc" target="_blank">Numpy</Link>
-                      </p>
-                      <h3 className="text-break mx-auto w-75">Pandas:</h3>
-                      <p className="text-break mx-auto w-75">Ofrece herramientas para el análisis y la manipulación de datos estructurados, incluyendo estructuras de datos flexibles y potentes para trabajar con tablas y series temporales.
-                        <br></br>
-                        Si quieres ver más sobre Pandas, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://pandas.pydata.org/docs" target="_blank">Pandas</Link>
-                      </p>
-                      <h3 className="text-break mx-auto w-75">Requests:</h3>
-                      <p className="text-break mx-auto w-75">Facilita el envío de solicitudes HTTP y la gestión de respuestas, lo que lo hace útil para interactuar con APIs y realizar solicitudes a servidores.
-                        <br></br>
-                        Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://requests.readthedocs.io/en/latest/user/install" target="_blank">Requests</Link>
-                      </p>
-                      <h3 className="text-break mx-auto w-75">Opencv:</h3>
-                      <p className="text-break mx-auto w-75">Es una biblioteca de código abierto muy popular y ampliamente utilizada para aplicaciones de visión por computadora y procesamiento de imágenes.
-                        <br></br>
-                        Si quieres ver más sobre requests, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html" target="_blank">Opencv</Link>
-                      </p>
-                      <h3 className="text-break mx-auto w-75">Tensorflow:</h3>
-                      <p className="text-break mx-auto w-75" style={{ marginBottom: "7rem" }}>Es una biblioteca de aprendizaje automático de código abierto desarrollada por Google que se utiliza ampliamente para construir y entrenar modelos de redes neuronales.
-                        <br></br>
-                        Si quieres ver más sobre tensorflow, lo podrás ver en la documentacion oficial de <Link className="text-primary" to="https://www.tensorflow.org/api_docs" target="_blank">Tensorflow</Link>
-                      </p>
-                      <h2 className="text-break mx-auto mt-4 w-75">Páginas de módulos para python</h2>
-                      <p className="text-break mx-auto w-75">
-                        Existen diferentes lugares donde puedes buscar módulos y bibliotecas para Python. Algunas de las fuentes más populares son:</p>
-                      <h3 className="text-break mx-auto w-75">Python Package Index (PyPI): </h3>
-                      <p className="text-break mx-auto w-75">Es el repositorio oficial de paquetes de Python, donde puedes encontrar una amplia gama de módulos y bibliotecas. Puedes acceder a PyPI en el siguiente enlace: <Link className="text-primary" to="https://pypi.org/" target="_blank">https://pypi.org/</Link></p>
-                      <h3 className="text-break mx-auto w-75">Anaconda:</h3>
-                      <p className="text-break mx-auto w-75">Es una distribución de Python que incluye una gran cantidad de módulos y bibliotecas populares para análisis de datos y ciencia computacional. Puedes explorar las bibliotecas disponibles en Anaconda en el siguiente enlace: <Link className="text-primary" to="https://anaconda.org/" target="_blank">https://anaconda.org/</Link></p>
-                      <h3 className="text-break mx-auto w-75">GitHub:</h3>
-                      <p className="text-break mx-auto w-75">Es una plataforma de desarrollo colaborativo que alberga repositorios de código fuente, incluidos muchos módulos y bibliotecas de Python. Puedes buscar en GitHub utilizando palabras clave relevantes para encontrar proyectos que se ajusten a tus necesidades en el siguiente enlace: <Link className="text-primary" to="https://github.com/" target="_blank">https://github.com/</Link></p>
-                      <h3 className="text-break mx-auto w-75">Documentación oficial de Python:</h3>
-                      <p className="text-break mx-auto w-75">La documentación oficial de Python proporciona una lista de módulos y bibliotecas estándar que están disponibles en la instalación básica de Python. Puedes consultar la documentación en el siguiente enlace: <Link className="text-primary" to="https://docs.python.org/" target="_blank">https://docs.python.org/</Link></p>
-                      <h3 className="text-break mx-auto w-75">Foros y comunidades de Python:</h3>
-                      <p className="text-break mx-auto w-75">Existen comunidades en línea donde los desarrolladores de Python comparten sus proyectos y recomendaciones de módulos y bibliotecas. Algunos ejemplos son el <Link className="text-primary" to="https://www.reddit.com/r/Python/" target="_blank">subreddit r/python</Link>, el foro oficial de Python <Link className="text-primary" to="https://python-forum.io/" target="_blank">Python Forum</Link>, y diversas comunidades en plataformas como <Link className="text-primary" to="https://stackoverflow.com/" target="_blank">Stack Overflow</Link>.</p>
-                      <p className="text-break mx-auto w-75" style={{ marginBottom: "7rem" }}>Al buscar módulos y bibliotecas, es recomendable verificar la popularidad y la calidad del proyecto, leer las opiniones y reseñas de otros usuarios, y comprobar si el proyecto está activamente mantenido y actualizado.
-                        <br></br>
-                        Recuerda revisar los requisitos y la compatibilidad del módulo o biblioteca con la versión de Python que estás utilizando en tu proyecto, así como cualquier dependencia adicional que pueda requerir.
+                      <p className="text-break mx-auto w-75">Descarga un ejemplo del módulo que se utiliza en el archivo principal del proyecto desde acá --
+                        <Link to="/pythonClassFile/miniproject4-2.py" target={"_blank"} download={"funciones_operaciones.py"} className="text-primary" > Módulo de la calculadora</Link>
                       </p>
                     </div>
                   </div>
                 </div>
-                */}
-                 <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+
+                <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSeven">
-                    <h2 className="text-light">Evaluación de Conocimientos: Clase 3 - Control de flujo en Python</h2>
+                    <h2 className="text-light">Evaluación de Conocimientos: Clase 4 - Funciones y módulos</h2>
                   </button>
                   <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
-                      <QuizForm/>
+                      <QuizForm />
                     </div>
                   </div>
                 </div>
