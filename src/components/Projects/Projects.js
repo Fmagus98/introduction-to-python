@@ -56,7 +56,7 @@ const Projects = () => {
                                 <h2>Resumidor de texto</h2>
                             </button>
                             <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
                                     <p className="text break mx-auto mt-4 w-75">El Resumidor de Texto implementado en Python es una aplicación que utiliza la biblioteca Natural Language Toolkit (NLTK) para generar resúmenes concisos a partir de un texto de entrada proporcionado por el usuario. El código se encarga de procesar el texto, identificar oraciones clave y producir un resumen significativo que destaque la información más relevante.
                                     </p>
@@ -87,7 +87,7 @@ const Projects = () => {
                                 <h2 className="text-light">Analizador de texto</h2>
                             </button>
                             <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
                                     <p className="text break mx-auto mt-4 w-75">Este código es un programa simple que realiza algunas operaciones de análisis de texto. <br></br>Define varias funciones para contar palabras, contar frases, contar la frecuencia de una palabra específica y calcular la frecuencia de todas las palabras en un texto dado.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto - Funciones</h3>
@@ -121,7 +121,7 @@ const Projects = () => {
                                 <h2 className="text-light">Conversor de imágenes</h2>
                             </button>
                             <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
                                     <p className="text break mx-auto mt-4 w-75">Este programa utiliza la biblioteca PIL (Python Imaging Library) para convertir imágenes JPG,JPEG y PNG a un formato WebP.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto - Funciones</h3>
@@ -154,7 +154,7 @@ const Projects = () => {
                                 <h2 className="text-light">Buscador de celulares - Mercadolibre (web scraping)</h2>
                             </button>
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
                                     <p className="text break mx-auto mt-4 w-75">Este programa permite al usuario buscar productos en MercadoLibre ingresando el nombre del producto y seleccionando un criterio de filtrado de precios (de menor a mayor, de mayor a menor, o sin filtrar). Luego, muestra los resultados de la búsqueda ordenados según el criterio elegido.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
@@ -196,7 +196,7 @@ const Projects = () => {
                                 <h2 className="text-light">Detección de dedos</h2>
                             </button>
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
                                     <p className="text break mx-auto mt-4 w-75">Este programa reconoce y cuenta los dedos de una mano en tiempo real, se utilza la libreria mediapipe y openCv.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>
@@ -234,7 +234,7 @@ const Projects = () => {
                                 <h2 className="text-light">Virtual mouse</h2>
                             </button>
                             <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
                                     <p className="text break mx-auto mt-4 w-75">Este programa utiliza la biblioteca OpenCV (cv2), MediaPipe (mediapipe), NumPy (np), PyAutoGUI (pyautogui) y time para detectar la posición de la mano y simular movimientos del mouse en función de los gestos de la mano detectados.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">Pasos Clave del proyecto</h3>

@@ -71,7 +71,7 @@ const MicropythonClass1 = () => {
                                         <h2 >¿Que es micropython?</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <img className="d-block mx-auto w-25" alt="" src="../../img/class1Micropython/damien.jpg"></img>
                                             <p className="text-center">MicroPython es una implementación del lenguaje de programación Python 3 diseñada específicamente para ser ejecutada en microcontroladores y sistemas embebidos. Fue creado por Damien George en 2013 y desde entonces ha ganado una gran popularidad en la comunidad de desarrollo de hardware y proyectos electrónicos.</p>
                                             <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
@@ -99,7 +99,7 @@ const MicropythonClass1 = () => {
                                         <h2 className="text-light">Aplicaciones en el ámbito laboral</h2>
                                     </button>
                                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <p className="text-center mx-auto w-75">MicroPython tiene aplicaciones en una variedad de campos y desempeña un papel importante en el mundo laboral en varias áreas. A continuación, se presentan algunas de las aplicaciones y casos de uso más comunes de MicroPython en el mundo laboral:
                                             </p>
                                             <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
@@ -128,7 +128,7 @@ const MicropythonClass1 = () => {
                                         <h2 className="text-light">Plataformas de hardware compatibles con MicroPython</h2>
                                     </button>
                                     <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <div id="content">
                                                 <p className="text-center mx-auto"> MicroPython es compatible con una amplia variedad de plataformas de hardware, especialmente aquellas que utilizan microcontroladores y microprocesadores. Algunas de las plataformas de hardware compatibles con MicroPython más populares incluyen:</p>
                                                 <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
@@ -181,7 +181,7 @@ const MicropythonClass1 = () => {
                                         <h2  className="text-light">Raspberry pi pico</h2>
                                     </button>
                                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Familia de raspberry pi pico</h3>
                                             <p className="text-center mx-auto">La familia Raspberry Pi Pico consta actualmente de cuatro placas; Raspberry Pi Pico (extremo izquierdo), Pico H (centro izquierda), Pico W (centro derecha) y Pico WH (extremo derecho).<br></br>Raspberry Pi Pico es una placa microcontroladora de alto rendimiento y bajo costo con interfaces digitales flexibles.</p>
                                             <img className="d-block mx-auto w-75" alt="" src="../../img/class1Micropython/picos.png"></img>
@@ -221,7 +221,7 @@ const MicropythonClass1 = () => {
                                         <h2 className="text-light">IDE - thonny</h2>
                                     </button>
                                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Instalación de thonny</h3>
                                             <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <Link to="https://thonny.org/" target="_blank" className="text-info">https://thonny.org/</Link> e instala el programa dependiendo tu sistema operativo.</p>
                                             <img className="w-75 mx-auto d-block" alt="" src="../../img/class1Micropython/IDE1.jpg"></img>
@@ -260,7 +260,7 @@ const MicropythonClass1 = () => {
                                         <h2  className="text-light">Ejecución del primer programa</h2>
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Primer programa: parpadeo en LED incorporado</h3>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para crear un archivo nuevo debemos tocar en el "+"</p>
                                             <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject1.jpg"></img>

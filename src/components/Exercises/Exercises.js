@@ -94,7 +94,7 @@ const Exercises = () => {
                                 <h2>Clase 1</h2>
                             </button>
                             <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50"> Solicitar al usuario que ingrese su nombre y luego imprimir un mensaje de saludo con el nombre proporcionado.
                                     </p>
@@ -126,7 +126,7 @@ const Exercises = () => {
                                     <h2>Clase 2 {course[1]?.date ? "- " + new Date(course[1].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50"> Solicitar al usuario que ingrese un número y guardarlo en una variable, convertir este número a un tipo de dato "float" y luego mostrar en la terminal el resultado de 5 + el número que escribió el usuario.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
@@ -161,7 +161,7 @@ const Exercises = () => {
                                     <h2>Clase 3 {course[2]?.date ? "- " + new Date(course[2].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario un número e imprima si es positivo, negativo o cero.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
@@ -195,7 +195,7 @@ const Exercises = () => {
                                     <h2>Clase 4 {course[3]?.date ? "- " + new Date(course[3].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50">Crea una función llamada "saludar", esta función de mostrar en pantalla " hola, se está ejecutando la función saludar".</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
@@ -227,7 +227,7 @@ const Exercises = () => {
                                     <h2>Clase 5 {course[4]?.date ? "- " + new Date(course[4].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50">Dada una lista de números, escribe un programa que calcule la suma de todos los elementos y la imprima.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
@@ -257,7 +257,7 @@ const Exercises = () => {
                                     <h2>Clase 6 {course[5]?.date ? "- " + new Date(course[5].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50">Dados dos conjuntos, encuentra la intersección entre ellos.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
@@ -287,7 +287,7 @@ const Exercises = () => {
                                     <h2>Clase 7 {course[6]?.date ? "- " + new Date(course[6].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50">Escribe un programa que solicite al usuario dos números enteros y realice la división del primero entre el segundo. Asegúrate de manejar las excepciones que puedan ocurrir, como la división por cero o la entrada de valores no numérico.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>
@@ -320,7 +320,7 @@ const Exercises = () => {
                                     <h2>Clase 8 {course[7]?.date ? "- " + new Date(course[7].date).toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }) : ''}</h2>
                                 </button>}
                             <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 1 </h3>
                                     <p className="text-break mx-auto w-50">Crear una clase "Persona" con atributos como nombre, edad y dirección. Luego, crea varios objetos de persona y muestra sus datos.</p>
                                     <h3 className="text-center mx-auto mt-4">Ejercicio 2 </h3>

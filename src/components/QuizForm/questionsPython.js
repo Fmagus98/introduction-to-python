@@ -432,17 +432,7 @@ export const questionsPythonClass3 = [
         answer: "break"
     },
     {
-        question: "11. ¿Cuál es la salida del siguiente código?\n\nfor i in range(3):\n   print(i)\n   if i == 1:\n       break",
-        options: [
-            "0\n1\n2",
-            "0\n1",
-            "1\n2",
-            "Error de sintaxis"
-        ],
-        answer: "0\n1"
-    },
-    {
-        question: "12. ¿Cuál es la salida del siguiente código?\n\nx = 0\nwhile x < 3:\n   x += 1\n   if x == 2:\n       continue\n   print(x)",
+        question: "11. ¿Cuál es la salida del siguiente código?\n\nx = 0\nwhile x < 3:\n   x += 1\n   if x == 2:\n       continue\n   print(x)",
         options: [
             "1\n2\n3",
             "1\n3",
@@ -452,7 +442,7 @@ export const questionsPythonClass3 = [
         answer: "1\n3"
     },
     {
-        question: "13. ¿Cuál es la salida del siguiente código?\n\nfor i in range(5):\n   if i == 3:\n       continue\n   print(i)",
+        question: "12. ¿Cuál es la salida del siguiente código?\n\nfor i in range(5):\n   if i == 3:\n       continue\n   print(i)",
         options: [
             "0\n1\n2\n3\n4",
             "0\n1\n2\n4",
@@ -462,7 +452,7 @@ export const questionsPythonClass3 = [
         answer: "0\n1\n2\n4"
     },
     {
-        question: "14. ¿Cuál es la salida del siguiente código?\n\nfor x in range(2, 5):\n   print(x)",
+        question: "13. ¿Cuál es la salida del siguiente código?\n\nfor x in range(2, 5):\n   print(x)",
         options: [
             "2\n3\n4",
             "2\n3\n4\n5",
@@ -472,7 +462,7 @@ export const questionsPythonClass3 = [
         answer: "2\n3\n4"
     },
     {
-        question: "15. ¿Cuál es la salida del siguiente código?\n\nfor x in range(3):\n   for y in range(2):\n       print(x, y)",
+        question: "14. ¿Cuál es la salida del siguiente código?\n\nfor x in range(3):\n   for y in range(2):\n       print(x, y)",
         options: [
             "0 0\n1 0\n2 0",
             "0 0\n0 1\n1 0\n1 1\n2 0\n2 1",
@@ -482,7 +472,7 @@ export const questionsPythonClass3 = [
         answer: "0 0\n0 1\n1 0\n1 1\n2 0\n2 1"
     },
     {
-        question: "16. ¿Cuál es la salida del siguiente código?\n\nfor i in range(3):\n   if i == 1:\n       break\n   print(i)\nelse:\n   print('Completo')",
+        question: "15. ¿Cuál es la salida del siguiente código?\n\nfor i in range(3):\n   if i == 1:\n       break\n   print(i)\nelse:\n   print('Completo')",
         options: [
             "0\n1\nCompleto",
             "0\nCompleto",
@@ -492,7 +482,7 @@ export const questionsPythonClass3 = [
         answer: "IndentationError"
     },
     {
-        question: "17. ¿Cuál es la diferencia principal entre los bucles while y for en Python?",
+        question: "16. ¿Cuál es la diferencia principal entre los bucles while y for en Python?",
         options: [
             "while se utiliza para iterar un número específico de veces, for para condiciones indeterminadas",
             "for se utiliza para iterar un número específico de veces, while para condiciones indeterminadas",
@@ -502,7 +492,7 @@ export const questionsPythonClass3 = [
         answer: "for se utiliza para iterar un número específico de veces, while para condiciones indeterminadas"
     },
     {
-        question: "18. ¿Qué palabra clave se utiliza para definir un caso por defecto en una estructura match-case?",
+        question: "17. ¿Qué palabra clave se utiliza para definir un caso por defecto en una estructura match-case?",
         options: [
             "default",
             "_",
@@ -512,7 +502,7 @@ export const questionsPythonClass3 = [
         answer: "_"
     },
     {
-        question: "19. ¿Cuál es la salida del siguiente código?\n\nx = 2\nmatch x:\n   case 1:\n       print('Es 1')\n   case 2:\n       print('Es 2')\n   case _: \n       print('Otro valor')",
+        question: "18. ¿Cuál es la salida del siguiente código?\n\nx = 2\nmatch x:\n   case 1:\n       print('Es 1')\n   case 2:\n       print('Es 2')\n   case _: \n       print('Otro valor')",
         options: [
             "Es 1",
             "Es 2",
@@ -522,7 +512,7 @@ export const questionsPythonClass3 = [
         answer: "Es 2"
     },
     {
-        question: "20. ¿Qué ocurre si un bucle while nunca cumple su condición de finalización?",
+        question: "19. ¿Qué ocurre si un bucle while nunca cumple su condición de finalización?",
         options: [
             "El programa se cuelga",
             "El bucle se detiene automáticamente",
@@ -532,7 +522,7 @@ export const questionsPythonClass3 = [
         answer: "El bucle continúa indefinidamente"
     },
     {
-        question: "21. ¿Cuál es la salida del siguiente código?\n\nfor i in range(1, 4):\n   print(i)\nelse:\n   print('Finalizado')",
+        question: "20. ¿Cuál es la salida del siguiente código?\n\nfor i in range(1, 4):\n   print(i)\nelse:\n   print('Finalizado')",
         options: [
             "1\n2\n3",
             "1\n2\n3\nFinalizado",
@@ -542,7 +532,7 @@ export const questionsPythonClass3 = [
         answer: "1\n2\n3\nFinalizado"
     },
     {
-        question: "22. ¿Qué sucede cuando se utiliza la palabra clave continue en un bucle?",
+        question: "21. ¿Qué sucede cuando se utiliza la palabra clave continue en un bucle?",
         options: [
             "El bucle se detiene",
             "La iteración actual se interrumpe y se pasa a la siguiente",
@@ -552,7 +542,7 @@ export const questionsPythonClass3 = [
         answer: "La iteración actual se interrumpe y se pasa a la siguiente"
     },
     {
-        question: "23. ¿Qué palabra clave se utiliza para crear un bucle infinito intencionalmente?",
+        question: "22. ¿Qué palabra clave se utiliza para crear un bucle infinito intencionalmente?",
         options: [
             "for",
             "while",
@@ -562,7 +552,7 @@ export const questionsPythonClass3 = [
         answer: "while"
     },
     {
-        question: "24. ¿Cuál es la salida del siguiente código?\n\nfor i in range(3):\n   for j in range(2):\n       if j == 1:\n           break\n       print(i, j)",
+        question: "23. ¿Cuál es la salida del siguiente código?\n\nfor i in range(3):\n   for j in range(2):\n       if j == 1:\n           break\n       print(i, j)",
         options: [
             "0 0\n1 0\n2 0",
             "0 0\n0 1\n1 0\n1 1\n2 0\n2 1",
@@ -572,7 +562,7 @@ export const questionsPythonClass3 = [
         answer: "0 0\n1 0\n2 0"
     },
     {
-        question: "25. ¿Cuál es la salida del siguiente código?\n\nfor x in 'python':\n   if x == 't':\n       continue\n   print(x)",
+        question: "24. ¿Cuál es la salida del siguiente código?\n\nfor x in 'python':\n   if x == 't':\n       continue\n   print(x)",
         options: [
             "p\ny\nt\nh\no\nn",
             "pyon",
@@ -582,7 +572,7 @@ export const questionsPythonClass3 = [
         answer: "p\ny\nh\no\nn"
     },
     {
-        question: "26. ¿Cuál es la salida del siguiente código?\n\nfor i in range(4):\n   if i % 2 == 0:\n       continue\n   print(i)",
+        question: "25. ¿Cuál es la salida del siguiente código?\n\nfor i in range(4):\n   if i % 2 == 0:\n       continue\n   print(i)",
         options: [
             "0\n2",
             "1\n3",
@@ -592,7 +582,7 @@ export const questionsPythonClass3 = [
         answer: "1\n3"
     },
     {
-        question: "27. ¿Cuál es la salida del siguiente código?\n\nfor i in range(5):\n   print(i)\n   if i == 3:\n       break",
+        question: "26. ¿Cuál es la salida del siguiente código?\n\nfor i in range(5):\n   print(i)\n   if i == 3:\n       break",
         options: [
             "0\n1\n2\n3\n4",
             "0\n1\n2\n3",
@@ -602,7 +592,7 @@ export const questionsPythonClass3 = [
         answer: "0\n1\n2\n3"
     },
     {
-        question: "28. ¿Cuál es la salida del siguiente código?\n\nfor x in range(3):\n   match x:\n       case 0:\n           print('Cero')\n       case 1:\n           print('Uno')\n       case 2:\n           print('Dos')",
+        question: "27. ¿Cuál es la salida del siguiente código?\n\nfor x in range(3):\n   match x:\n       case 0:\n           print('Cero')\n       case 1:\n           print('Uno')\n       case 2:\n           print('Dos')",
         options: [
             "Cero\nUno\nDos",
             "Cero\nUno",

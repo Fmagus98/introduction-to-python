@@ -96,7 +96,7 @@ const Class6 = () => {
                     <h2>Diccionarios</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <div className="accordion-body text-light">
                         <h3 className="text-break w-75 mx-auto mt-4">Definición y uso de diccionarios:</h3>
                         <p className="text-break mx-auto w-75">Un diccionario es una estructura de datos mutable y sin orden en Python. Está compuesto por pares clave-valor, donde cada clave es única y se utiliza para acceder a su respectivo valor.<br></br>Las claves en un diccionario pueden ser de tipo inmutable, como cadenas de texto, números o tuplas. Los valores pueden ser de cualquier tipo, incluyendo listas, diccionarios e incluso funciones.</p>
@@ -119,7 +119,7 @@ const Class6 = () => {
                     <h2 className="text-light">Métodos de diccionario</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <h3 className="text-break mx-auto w-75 mt-4">keys()</h3>
                       <p className="text-break mx-auto w-75">El método keys() retorna una lista con todas las claves del diccionario.</p>
                       <CopyButton code={class6Code[3]}/>
@@ -168,7 +168,7 @@ const Class6 = () => {
                     <h2 className="text-light">Conjuntos - Set</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">Los conjuntos o llamados set permiten almacenar varios elementos y acceder a ellos de una forma muy similar a las listas pero con ciertas diferencias:</p>
                       <ul className="text-break mx-auto w-75 mt-4">
                         <li>Los elementos de un set son únicos, lo que significa que no puede haber elementos duplicados.</li>
@@ -190,7 +190,7 @@ const Class6 = () => {
                     <h2 className="text-light">Métodos en conjuntos</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">Los conjuntos en Python tienen varios métodos incorporados que puedes utilizar para realizar operaciones y manipulaciones en conjuntos.</p>
                       <h3 className="text-break mx-auto w-75 mt-4 ">add()</h3>
                       <p className="text-break mx-auto w-75">El método add() agrega un elemento al conjunto.</p>

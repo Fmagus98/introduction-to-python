@@ -97,7 +97,7 @@ const Class4 = () => {
                     <h2>¿Que es una función?</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break w-75 mx-auto mt-4">Una función en programación es un conjunto de lineas de código agrupadas ( bloque de código ) que funcionan como una unidad realizando una tarea específica.
                       </p>
                       <p className="text-break w-75 mx-auto mt-4">
@@ -121,7 +121,7 @@ const Class4 = () => {
                     <h2 className="text-light">Sintaxis básica de una función</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <CopyButton code={class4Code[0]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class4/function.webp"></img>
                       <h2 className="text-break mx-auto w-75">Explicación de los elementos en una función</h2>
@@ -139,7 +139,7 @@ const Class4 = () => {
                     <h2 className="text-light">¿Que es un módulo?</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">En Python, los módulos son archivos que contiene extensión .py .pyc ( código Python ) reutilizable, que posee su propio espacio de nombres y que puede contener variables, funciones, clases e incluso otros módulos.
                         <br></br>
                         Los módulos se utilizan para organizar y modularizar el código, lo que facilita su mantenimiento y reutilización en diferentes programas.</p>
@@ -167,7 +167,7 @@ const Class4 = () => {
                     <h2 className="text-light">Módulos nativos de python</h2>
                   </button>
                   <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">Python tiene una amplia biblioteca estándar que incluye una serie de módulos nativos para realizar diversas tareas.<br></br>Aquí hay algunos módulos nativos comunes de Python:</p>
                       <h3 className="text-light text-break mx-auto w-75">Math</h3>
                       <p className="text-break mx-auto w-75">El módulo math en Python proporciona funciones y constantes matemáticas para realizar cálculos numéricos. Para utilizar el módulo math, debes importarlo al principio de tu script de la siguiente manera:</p>
@@ -233,7 +233,7 @@ const Class4 = () => {
                     <h2 className="text-light">Módulos y librerias independientes para python</h2>
                   </button>
                   <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">Hay una amplia gama de módulos y bibliotecas disponibles para integrar en proyectos de Python, según los requisitos y objetivos específicos del proyecto.
                         <br></br>
                         Algunos de los módulos más populares que podrías considerar son estos:
@@ -303,7 +303,7 @@ const Class4 = () => {
                     <h2 className="text-light">Mini Proyecto: Calculadora avanzada</h2>
                   </button>
                   <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">Para realizar este mini proyecto debemos crear un archivo para poder almacenar todas nuestras funciones con operaciones que vamos a utilizar en nuestra calculadora, en este caso el nombre del archivo vamos asignale "funciones_calculadora.py".</p>
                       <p className="text-break mx-auto w-75 mt-4">Además vamos a utilizar el módulo "math", este nos proporcionará una serie de métodos para realizar operaciones matemáticas y debemos crear funciones para ejecutar estas operaciones.</p>
                       <div className="mx-auto w-75">
@@ -378,7 +378,7 @@ const Class4 = () => {
                     <h2 className="text-light">Evaluación de Conocimientos: Clase 3 - Control de flujo en Python</h2>
                   </button>
                   <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <QuizForm/>
                     </div>
                   </div>

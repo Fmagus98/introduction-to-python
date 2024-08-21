@@ -95,7 +95,7 @@ const Class5 = () => {
                     <h2>Listas</h2>
                   </button>
                   <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <div className="accordion-body text-light">
                         <p className="text-break mx-auto mt-4 w-75">Una lista en Python es una estructura de datos que permite almacenar múltiples elementos en un solo objeto. <br></br>Puedes considerar una lista como una secuencia ordenada de elementos que pueden ser de diferentes tipos, como números, cadenas de texto, booleanos e incluso otras listas. Se definen utilizando corchetes [ ] y los elementos se separan por comas.</p>
                         <CopyButton code={class5Code[0]} />
@@ -125,7 +125,7 @@ const Class5 = () => {
                     <h2 className="text-light">Métodos de lista</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75">Las listas en Python tienen varios métodos integrados que facilitan su manipulación.</p>
                       <h3 className="text-break w-75 mx-auto">append() / extend()</h3>
                       <p className="text-break mx-auto w-75">El método append() es una función incorporada de Python que se utiliza para agregar un elemento al final de una lista existente. Toma un argumento y lo agrega como un nuevo elemento al final de la lista.</p>
@@ -164,7 +164,7 @@ const Class5 = () => {
                     <h2 className="text-light">Funciones en listas</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75">
                         Además de tener métodos para utilizar en listas, también tenemos funciones que nos ayudan a la hora de manipular datos. Aquí te explicaré algunos de ellos:
                       </p>
@@ -202,7 +202,7 @@ const Class5 = () => {
                     <h2 className="text-light">Tuplas</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">
                         Una tupla en Python es una estructura de datos inmutable, lo que significa que no se pueden modificar una vez creadas. <br></br>Se utiliza para almacenar una colección ordenada de elementos heterogéneos, como números, cadenas de texto, booleanos, etc. <br></br>Las tuplas se definen utilizando paréntesis () y los elementos se separan por comas.</p>
                         <CopyButton code={class5Code[19]} />
@@ -236,7 +236,7 @@ const Class5 = () => {
                     <h2 className="text-light">For</h2>
                   </button>
                   <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código.</p>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
                       <CopyButton code={class3Code[9]} />

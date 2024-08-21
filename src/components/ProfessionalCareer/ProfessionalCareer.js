@@ -56,7 +56,7 @@ const ProfessionalCarrer = () => {
                                 <h2>Ciencias de datos</h2>
                             </button>
                             <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Aplicaciones en ciencias de datos</h3>
                                     <p className="text-break mx-auto w-75">Con una librería de visualización de datos de Python, puedes crear una variedad increíble de gráficos y representaciones visuales, tales como:</p>
                                     <ul className= "list-unstyled w-75 mx-auto">
@@ -167,7 +167,7 @@ const ProfessionalCarrer = () => {
                                 <h2 className="text-light">Inteligencia artificial</h2>
                             </button>
                             <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Aplicaciones en ciencias de datos</h3>
                                     <p className="text-break mx-auto w-75">La inteligencia artificial (IA) se ha convertido en un campo crucial y en constante evolución con diversas aplicaciones que impactan en diversas áreas de la sociedad y la industria. Aquí hay algunas aplicaciones destacadas de la inteligencia artificial:</p>
                                     <ul className= "text-break mx-auto w-75 list-unstyled">

@@ -56,7 +56,7 @@ const HealthAndProductivity = () => {
                                 <h2>¿Que es esta sección?</h2>
                             </button>
                             <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">En esta sección exploraremos una serie de prácticas diseñadas para mejorar el bienestar físico y mental de aquellos que pasan largas horas frente a una computadora. Ser un programador puede ser gratificante, pero también puede traer consigo desafíos como la tensión muscular, fatiga visual y estrés mental.</p>
                                     <p className="text break mx-auto mt-4 w-75">Aprenderemos una variedad de técnicas, desde estiramientos simples hasta consejos ergonómicos y estrategias para mejorar la concentración y el rendimiento. Estas prácticas no solo pueden aliviar las molestias físicas comunes asociadas con el trabajo de programación, sino que también pueden aumentar la eficiencia y la creatividad.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">Problemas al no realizar estiramientos:</h3>
@@ -79,7 +79,7 @@ const HealthAndProductivity = () => {
                                 <h2 className="text-light">Estiramientos</h2>
                             </button>
                             <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Estiramiento de bíceps braquial</h3>
                                     <p className="text break mx-auto mt-4 w-75">El estiramiento  tanto del pectoral y bíceps como de toda la cadena anterior del brazo son importantísimos ya que tienden a estar acortados y por su continuo trabajo y su función principal en las funciones hegemónicas  del ser humano. En la realización de este estiramiento, realizaremos una extensión de hombro manteniendo una pronación del antebrazo, llevando la palma de la mano hacia arriba y evitando una excesiva antepulsión del hombro (movimiento del hombro hacia delante).</p>
                                     <img className="w-25 d-block mx-auto mb-4 border-content bg-light" alt="" src="../img/healthAndProductivity/brazo1.webp"></img>
@@ -129,7 +129,7 @@ const HealthAndProductivity = () => {
                                 <h2 className="text-light">Equipo</h2>
                             </button>
                             <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Monitor</h3>
                                     <ul className="w-75 mx-auto">
                                         <li><p>Trabaje con monitores que lleven un tratamiento antirreflejo o incorporen un filtro especial. Los monitores reflejan en su mayoria la luz que le llega. Estos destellos son molestos para el ojo, porque reducen la legibilidad y obligan a una constante acomodación de la visión. Hay que tener un especial cuidado en que el filtro no oscurezca demasiado el monitor.</p></li>
@@ -172,7 +172,7 @@ const HealthAndProductivity = () => {
                                 <h2 className="text-light">El mobiliario</h2>
                             </button>
                             <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">De nada sirve contar con un equipo ergonómicamente preparado, si luego trabajamos sobre una mesa en la que no nos caben las piernas, o nos sentamos en una silla sin respaldo. Las malas posturas representan, en general, el 75% de las lesiones: dolores de espalda, molestias cervicales, lumbalgias… El mobiliario del puesto de trabajo es, pues, fundamental para no dañar nuestra salud.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">La mesa</h3>
                                     <ul className="w-75 mx-auto">
@@ -219,7 +219,7 @@ const HealthAndProductivity = () => {
                                 <h2 className="text-light">Postura corporal</h2>
                             </button>
                             <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">El diseño del puesto de trabajo debe permitir que se pueda adoptar la siguiente postura, que ha de tenerse en cuenta como referencia. Cualquier otra que no suponga un sobre esfuerzo es también válida.</p>
                                     <ul className="w-75 mx-auto">
                                         <li><p>Muslos horizontales y piernas verticales, formando un ángulo de 90º.</p></li>
@@ -246,7 +246,7 @@ const HealthAndProductivity = () => {
                                 <h2 className="text-light">Cuidado de la vista</h2>
                             </button>
                             <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">Existe cierta discrepancia entre los expertos sobre si los trastornos oculares derivados de trabajar con ordenadores son sólo transitorios o se pueden convertir en patológicos. Lo que sí está demostrado es que, al trabajar con pantallas de forma prolongada y habitual, algunas deficiencias oculares sin importancia como ser irritación o fatiga , se pueden convertir en lesiones más o menos graves.</p>
                                     <ul className="w-75 mx-auto">
                                         <li><p>Por ello, la primera recomendación a la hora de trabajar con computadoras es someterse a una revisión oftalmológica. Algunas veces se llega a la consulta del especialista con un trastorno de visión que se atribuye al uso del ordenador, cuando lo que en realidad ocurre es que existía un problema de base sin tratar que se manifiesta tras muchas horas frente a la pantalla.</p></li>
@@ -267,7 +267,7 @@ const HealthAndProductivity = () => {
                                 <h2 className="text-light">Hábitos de trabajo y ejercicios saludables</h2>
                             </button>
                             <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">La colocación del mobiliario, los equipos de la oficina y la iluminación no son los únicos factores que determinan la forma de sentirse a lo largo de la jornada laboral. Sus hábitos de trabajo también son muy importantes.</p>
                                     <ul className="w-75 mx-auto">
                                         <li><p>Trabaje en una postura relajada y natural. Evite las posturas forzadas que pueden producir cansancio muscular.</p></li>

@@ -71,7 +71,7 @@ const MicropythonClass2 = () => {
                                         <h2>Variables</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
                                                 <p className="text-center mx-auto w-75">En el contexto de la programación, una variable es un contenedor para almacenar y manipular datos. Imagina una variable como una caja etiquetada en la memoria del equipo, donde puedes guardar diferentes tipos de información, como números, texto o valores booleanos. En un programa, puedes declarar una variable y asignarle un valor para luego utilizarlo en diferentes partes del código.</p>
                                                 <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Cuando declaras una variable en un lenguaje de programación, se reserva un espacio en la memoria para almacenar su valor. La ubicación exacta en la memoria puede variar dependiendo del lenguaje y del entorno de ejecución. Sin embargo, el proceso general para acceder al valor de una variable implica el uso de la CPU y la RAM del equipo.</p>
@@ -88,7 +88,7 @@ const MicropythonClass2 = () => {
                                         <h2 className="text-light">Estilo de escritura</h2>
                                     </button>
                                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <p className="text-center mx-auto w-75">Un estilo de escritura en programación es una convención de codificación que se utiliza para dar formato y estructurar el código
                                                 fuente. Estas convenciones de estilo de codificación ayudan a que el código sea más legible y entendible para los programadores.</p>
                                             <p className="text-center mx-auto w-75">Las convenciones de estilo de codificación incluyen reglas para nombrar variables, funciones, clases, métodos, constantes, etc.
@@ -155,7 +155,7 @@ const MicropythonClass2 = () => {
                                         <h2  className="text-light">Operadores y expresiones</h2>
                                     </button>
                                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <p className="text-center mx-auto w-75">En Python, los operadores son símbolos especiales que realizan operaciones en valores y variables.
                                                 Las expresiones, por otro lado, son combinaciones de valores, variables y operadores que Python puede evaluar y dar un resultado.
                                             </p>
@@ -183,7 +183,7 @@ const MicropythonClass2 = () => {
                                         <h2  className="text-light">Entrada y salida en terminal</h2>
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <h2 className=" text-center">Salida de datos - print()</h2>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
                                                 con el objetivo de poder representar la información que el script nos quiere
@@ -216,7 +216,7 @@ const MicropythonClass2 = () => {
                                         <h2 >Condicionales</h2>
                                     </button>
                                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
                                                 <p className="text-center mx-auto w-75">En programación, las condicionales son estructuras que nos permiten tomar decisiones basadas en ciertas condiciones. Podemos pensar en ellas como una forma de emular el proceso de toma de decisiones que ocurre en la vida real.<br></br><br></br>
                                                     Te daré un ejemplo: Supongamos que una persona está por salir a la mañana desde su casa y hay probabilidad de que llueva a la tarde, en este caso tenemos la decisión de décidir si llevamos nuestro paraguas o no, cada decisión que hagamos nos va a provocar una situación diferente.</p>
@@ -232,7 +232,7 @@ const MicropythonClass2 = () => {
                                         <h2  className="text-light">If else y elif</h2>
                                     </button>
                                     <div id="a6" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <h2 className="text-center mx-auto mt-4 ">If</h2>
                                             <p className="text-center mx-auto w-75">La palabra clave if se utiliza para iniciar una estructura condicional. Nos permite especificar una condición que se evalúa como verdadera o falsa. Si la condición es verdadera, se ejecuta el bloque de código indentado bajo el if. Si la condición es falsa, se omite ese bloque y el programa continúa con la siguiente instrucción después del if. Aquí tienes un ejemplo:</p>
                                             <img className="w-75 d-block mx-auto" alt="" src="../../img/class3/if.webp"></img>
@@ -250,7 +250,7 @@ const MicropythonClass2 = () => {
                                         <h2 >Ejecución del segundo programa</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
                                                 <p className="text-center mx-auto w-75">En el contexto de la programación, una variable es un contenedor para almacenar y manipular datos. Imagina una variable como una caja etiquetada en la memoria del equipo, donde puedes guardar diferentes tipos de información, como números, texto o valores booleanos. En un programa, puedes declarar una variable y asignarle un valor para luego utilizarlo en diferentes partes del código.</p>
                                                 <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Cuando declaras una variable en un lenguaje de programación, se reserva un espacio en la memoria para almacenar su valor. La ubicación exacta en la memoria puede variar dependiendo del lenguaje y del entorno de ejecución. Sin embargo, el proceso general para acceder al valor de una variable implica el uso de la CPU y la RAM del equipo.</p>

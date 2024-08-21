@@ -71,7 +71,7 @@ const MicropythonClass6 = () => {
                                         <h2 >¿Que es micropython?</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <img className="d-block mx-auto w-25" alt="" src="../../img/class1Micropython/damien.jpg"></img>
                                             <p className="text-center">MicroPython es una implementación del lenguaje de programación Python 3 diseñada específicamente para ser ejecutada en microcontroladores y sistemas embebidos. Fue creado por Damien George en 2013 y desde entonces ha ganado una gran popularidad en la comunidad de desarrollo de hardware y proyectos electrónicos.</p>
                                             <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
@@ -99,7 +99,7 @@ const MicropythonClass6 = () => {
                                         <h2 className="text-light">Aplicaciones en el ámbito laboral</h2>
                                     </button>
                                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <p className="text-center mx-auto w-100">El perfil de un programador puede variar dependiendo de sus habilidades, experiencia y especialización. Sin embargo, hay algunas características y habilidades comunes que suelen definir a un programador y son:
                                             </p>
                                             <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
@@ -128,7 +128,7 @@ const MicropythonClass6 = () => {
                                         <h2  className="text-light">¿Que es python?</h2>
                                     </button>
                                     <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <div id="content">
                                                 <img className="d-block mx-auto w-25" alt="" src="../img/class1/guido.webp"></img>
                                                 <p className="text-center mx-auto">Python es un lenguaje de programación de alto nivel basado en C.
@@ -159,7 +159,7 @@ const MicropythonClass6 = () => {
                                         <h2  className="text-light">Caracteristicas de python</h2>
                                     </button>
                                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>NIVEL ALTO</h3>
                                             <p className="text-center mx-auto">Dentro de la programación hay tipos niveles, estos niveles determinan la complejidad en la podemos programar
                                                 en dicho lenguaje. Si el nivel es más bajo, este se acercará más al lenguage máquina(código binario) y facilitará a la maquina a interpretar más rápido
@@ -244,7 +244,7 @@ const MicropythonClass6 = () => {
                                         <h2  className="text-light">Instalación de python</h2>
                                     </button>
                                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link>.<br></br>
                                                 En este curso usaremos la version 3.8.3, para descargar una version diferente a la actual dirigete a downloads.</p>
                                             <img className="w-75 mx-auto d-block" alt="" src="../img/class1/python1.webp"></img>
@@ -264,7 +264,7 @@ const MicropythonClass6 = () => {
                                         <h2  className="text-light">Entorno de desarrollo integrado (IDE)</h2>
                                     </button>
                                     <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <p className="mt-4 mb-4 text-center mx-auto w-75">Para programar en un lenguaje de programación debemos tener en nuestro ordenador un entorno de desarrollo integrado, más conocido como IDE,
                                                 Un IDE combina un editor de código, un compilador o intérprete, herramientas de depuración, un sistema de gestión de versiones,
                                                 entre otras funcionalidades, en una sola aplicación integrada.
@@ -325,7 +325,7 @@ const MicropythonClass6 = () => {
                                         <h2  className="text-light">Ejecución del primer programa</h2>
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                                        <div className="accordion-body text-light bg-dark ">
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
                                             <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/class1/p1.webp"></img>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>

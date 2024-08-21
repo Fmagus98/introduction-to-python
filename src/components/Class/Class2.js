@@ -98,7 +98,7 @@ const Class2 = () => {
                       <h2>Variables</h2>
                     </button>
                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <div className="accordion-body text-light">
                           <h3 className="text-break mx-auto w-75 mt-4">¿Que es una variable?</h3>
                           <p className="text-break mx-auto w-75">En el contexto de la programación, una variable es un contenedor para almacenar y manipular datos. Imagina una variable como una caja etiquetada en la memoria del equipo, donde puedes guardar diferentes tipos de información, como números, texto o valores booleanos. En un programa, puedes declarar una variable y asignarle un valor para luego utilizarlo en diferentes partes del código.</p>
@@ -116,7 +116,7 @@ const Class2 = () => {
                       <h2 className="text-light">Estilo de escritura</h2>
                     </button>
                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <h3 className="text-break mx-auto w-75 mt-4">Convenciones de Estilo de Escritura en Python</h3>
                         <p className="text-break mx-auto w-75">Las convenciones de estilo de codificación incluyen reglas para nombrar variables, funciones, clases, métodos, constantes, etc.
                           También pueden incluir reglas para la indentación, el espaciado, la longitud máxima de línea, entre otros aspectos.</p>
@@ -190,7 +190,7 @@ const Class2 = () => {
                       <h2 className="text-light">Operadores y expresiones</h2>
                     </button>
                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <p className="text-break mx-auto w-75 mt-4">En Python, los operadores son símbolos especiales que realizan operaciones en valores y variables.
                           Las expresiones, por otro lado, son combinaciones de valores, variables y operadores que Python puede evaluar y dar un resultado.
                         </p>
@@ -221,7 +221,7 @@ const Class2 = () => {
                       <h2 className="text-light">Conversión común de tipos de datos</h2>
                     </button>
                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <p className="text-break mx-auto w-75 mt-4">La conversión de tipos de datos en Python se refiere al proceso de cambiar el tipo de un valor de una clase de datos a otra. En Python, esto se puede hacer mediante el uso de funciones incorporadas llamadas "funciones de conversión" que toman un valor y lo convierten en otro tipo de dato.
                         </p>
                         <CopyButton code={class2Code[7]} />
@@ -235,7 +235,7 @@ const Class2 = () => {
                       <h2 className="text-light">Conversión de tipos de datos - String</h2>
                     </button>
                     <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <h2 className="text-break mx-auto w-75 mt-4">F-string</h2>
                         <p className="text-break mx-auto w-75">F-strings (cadenas formateadas) son una forma conveniente y legible de formatear y construir cadenas en Python a partir de expresiones y variables. Se introdujeron en Python 3.6 y son muy populares debido a su sintaxis sencilla y su capacidad para incorporar valores de manera directa en las cadenas.<br></br>Un f-string se crea precediendo una cadena con el prefijo f o F. Dentro de un f-string, puedes incluir expresiones Python encerradas entre llaves { }. Estas expresiones se evalúan y se insertan en la cadena final.
                         </p>
@@ -259,7 +259,7 @@ const Class2 = () => {
                       <h2 className="text-light">Métodos de string</h2>
                     </button>
                     <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <h2 className="text-break mx-auto mt-4 w-75">Lower( )</h2>
                         <p className="text-break mx-auto w-75">El método lower() se utiliza en objetos de tipo str (cadenas) en Python y se utiliza para convertir una cadena a minúsculas.
                         </p>
@@ -323,7 +323,7 @@ const Class2 = () => {
                       <h2 className="text-light">Mini proyecto 1: Calculadora de propinas</h2>
                     </button>
                     <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <p className="text-break mx-auto w-75">Crear una calculadora que permita a los usuarios ingresar el total de su cuenta y el porcentaje de propina que desean dejar. El objetivo es calcular y mostrar tanto la propina como el total a pagar.</p>
                         <ul className="text-break mx-auto w-75">
                           <li className="text-break mx-auto w-75">
@@ -347,7 +347,7 @@ const Class2 = () => {
                       <h2 className="text-light">Mini proyecto 2: Conversor de unidades</h2>
                     </button>
                     <div id="a9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <h3 className="text-break mx-auto mt-4 w-75">Consignas del proyecto</h3>
                         <p className="text-break mx-auto w-75">El objetivo es crear un programa que convierta entre diferentes unidades de medida. (kilómetros a millas) - (kilogramos a libras).</p>
                         <ul className="text-break mx-auto w-75">
@@ -372,7 +372,7 @@ const Class2 = () => {
                       <h2 className="text-light">Evaluación de Conocimientos: Clase 2 - Variables en Python</h2>
                     </button>
                     <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                      <div className="accordion-body text-light bg-dark ">
                         <QuizForm />
                       </div>
                     </div>

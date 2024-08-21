@@ -96,7 +96,7 @@ const Class7 = () => {
                     <h2 className="text-light">Tipos de excepciones</h2>
                   </button>
                   <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">
                         Python tiene una amplia variedad de tipos de excepciones incorporados que cubren diferentes situaciones de error. Algunos ejemplos comunes de tipos de excepciones son:
                       </p>
@@ -144,7 +144,7 @@ const Class7 = () => {
                     <h2 className="text-light">Manejo de excepciones</h2>
                   </button>
                   <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">Una excepción es un evento que ocurre durante la ejecución de un programa y puede interrumpir su flujo normal. Cuando ocurre una excepción, el programa se desvía del flujo normal de ejecución y busca un bloque de código especial diseñado para manejar dicha excepción. Este proceso se conoce como "lanzar" (raise) una excepción.</p>
                       <h3 className="text-break mx-auto w-75 mt-4">Bloque try - except</h3>
                       <p className="text-break mx-auto w-75">El bloque try-except es utilizado para manejar excepciones en Python. Dentro del bloque try, se coloca el código que podría generar una excepción. Si ocurre una excepción en este bloque, el flujo del programa se desvía al bloque except, donde podemos manejar la excepción de manera adecuada.</p>
@@ -166,7 +166,7 @@ const Class7 = () => {
                     <h2 className="text-light">Metodos de archivos en python</h2>
                   </button>
                   <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
                       <h3 className="text-break w-75 mx-auto">open() - Abrir archivos </h3>
                       <p className="text-break mx-auto w-75"> Este método se utiliza para abrir un archivo. Toma dos parámetros principales: el nombre del archivo y el modo en el que se abrirá (por ejemplo, lectura, escritura, agregado, etc.).</p>
@@ -204,7 +204,7 @@ const Class7 = () => {
                     <h2 className="text-light">Metodos de archivos en python(csv)</h2>
                   </button>
                   <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div className="accordion-body text-light bg-dark rounded-5 rounded-top">
+                    <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">En Python, puedes también abrir, leer, escribir y cerrar archivos también con csv, en este caso debemos importar el módulo csv.</p>
                       <h3 className="text-break w-75 mx-auto">Leer csv</h3>
                       <p className="text-break mx-auto w-75">El método csv.DictReader() Se utiliza para leer archivos CSV y convertir cada fila del archivo en un diccionario. La clave de cada diccionario corresponde a los nombres de las columnas, y los valores corresponden a los datos de cada fila. </p>
