@@ -90,10 +90,10 @@ const QuizForm = () => {
 
     return (
         <div className="container mt-5 w-75 ">
-            <form onSubmit={handleSubmit}>
-                <h2 className="text-break mx-auto mt-4">Refuerza tus conocimientos de la clase</h2>
+              <h2 className="text-break mx-auto mt-4">Refuerza tus conocimientos de la clase</h2>
                 <p className="text-break mx-auto mb-4">Completa este formulario para revisar y afianzar los conceptos claves de esta clase. Asegúrate de leer cada pregunta detenidamente antes de responder.</p>
-                {questions.map((question, index) => (
+            <form onSubmit={handleSubmit}>
+                 {questions.map((question, index) => (
                     <div className="mb-4" key={index}>
                         <h5> <span className="text-break mx-auto w-75 mb-4" dangerouslySetInnerHTML={{ __html: question.question.replace(/\n/g, '<br/>').replace(/ /g, '&nbsp;') }} /></h5>
                         {question.options.map((option, i) => (
@@ -102,11 +102,12 @@ const QuizForm = () => {
                                     className="form-check-input"
                                     type="radio"
                                     name={`question-${index}`}
+                                    id={`id-${i}${index}`}
                                     value={option}
                                     onChange={(e) => handleChange(e, index)}
                                     required
                                 />
-                                <label className="form-check-label">
+                                <label className="form-check-label" htmlFor={`id-${i}${index}`}>
                                     <span className="text-break mx-auto w-75 mb-3" style={{ whiteSpace: 'pre-line' }} dangerouslySetInnerHTML={{ __html: option.replace(/\n/g, '<br/>').replace(/ /g, '&nbsp;') }} />
                                 </label>
                             </div>
