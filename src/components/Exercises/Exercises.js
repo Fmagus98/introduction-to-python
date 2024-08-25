@@ -82,7 +82,7 @@ const Exercises = () => {
                     </g>
                 </svg>
             </section>
-            <section id="faq" className="faq section-bg">
+            <section className="section-bg">
                 <div className="container">
                     <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`} style={{ color: color }} >
                         <h2>Ejercicios</h2>

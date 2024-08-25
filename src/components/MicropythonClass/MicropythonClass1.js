@@ -59,7 +59,7 @@ const MicropythonClass1 = () => {
                             </g>
                         </svg>
                     </section>
-                    <section id="faq" className="faq section-bg">
+                    <section className="section-bg">
                         <div className="container">
                             <div id="element1" className={`section-title animated-left ${elementVisibility.element1 ? 'slide-left' : ''}`} style={{ color: colorSecondaryMicropython }} >
                                 <h2>Clase 1</h2>

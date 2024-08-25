@@ -84,7 +84,7 @@ const Class6 = () => {
               </g>
             </svg>
           </section>
-          <section id="faq" className="faq section-bg">
+          <section className="section-bg">
             <div className="container">
               <div id="element1" className={`section-title animated-left ${elementVisibility.element1 ? 'slide-left' : ''}`} >
                 <h2>Clase 6</h2>

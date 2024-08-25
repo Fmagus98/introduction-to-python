@@ -83,7 +83,6 @@ const Home = () => {
                   <p>
                     <i className="bx bxs-quote-alt-left quote-icon-left"></i>
                     “El trabajo del maestro no es tanto enseñar todo lo que se puede aprender, sino producir en el alumno amor y estima por el conocimiento”
-                    <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
               </div>
