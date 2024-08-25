@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from '@emailjs/browser';
 import { questionsPythonClass2, questionsPythonClass3, questionsPythonClass4 } from './questionsPython'
 
@@ -67,7 +66,6 @@ const QuizForm = () => {
 
             emailjs.send('service_om6xbij', 'template_szjk8z4', templateParams, 'CxCHtiHIgRGkMAL1C')
                 .then((response) => {
-                    console.log('Email enviado con éxito!', response.status, response.text);
                     setMessageSubmit("Tu respuesta fue enviada con éxito");
                 }, (error) => {
                     console.error('Error al enviar el email:', error);

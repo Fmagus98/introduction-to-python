@@ -87,7 +87,7 @@ const VirtualAssistant = () => {
                     setInput('');
                     setMessages(prevMessages => [...prevMessages, { text: data.candidates[0].content.parts[0].text, role: 'bot' }]);
                 } catch (error) {
-                    console.log(error);
+                    console.error(error);
                     setMessages(prevMessages => [...prevMessages, { text: "Lo siento, Pybot está en mantenimiento, inténtelo más tarde.", role: 'bot' }]);
                 }
                 setDisabledButton(false);

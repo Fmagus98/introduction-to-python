@@ -40,16 +40,14 @@ const Loggin = () => {
                     });
                     if (!info) {
                         failStatus()
-                        console.log("cargó firestore")
                     }
                 })
                 .catch((error) => {
-                    console.log('Error al buscar en la colección "users":', error);
+                    console.error('Error al buscar en la colección "users":', error);
                 });
         }
         else {
             failStatus()
-            console.log("status")
         }
     };
     return (
