@@ -756,3 +756,187 @@ export const questionsPythonClass4 = [
         answer: "from modulo import funcion"
     }
 ]
+
+export const questionsPythonClass5 = [
+        {
+            question: "1. ¿Cómo se define una lista en Python?",
+            options: [
+                "list = ()",
+                "list = []",
+                "list = {}",
+                "list = <>"
+            ],
+            answer: "list = []"
+        },
+        {
+            question: "2. ¿Cómo se define una tupla en Python?",
+            options: [
+                "tuple = []",
+                "tuple = ()",
+                "tuple = {}",
+                "tuple = <>"
+            ],
+            answer: "tuple = ()"
+        },
+        {
+            question: "3. ¿Cuál es la diferencia principal entre una lista y una tupla?",
+            options: [
+                "Las listas son mutables, las tuplas no",
+                "Las tuplas son mutables, las listas no",
+                "No hay diferencia",
+                "Las listas solo pueden contener números"
+            ],
+            answer: "Las listas son mutables, las tuplas no"
+        },
+        {
+            question: "4. ¿Cómo accedes al tercer elemento de una lista llamada 'mi_lista'?",
+            options: [
+                "mi_lista[2]",
+                "mi_lista[3]",
+                "mi_lista[1]",
+                "mi_lista(2)"
+            ],
+            answer: "mi_lista[2]"
+        },
+        {
+            question: "5. ¿Qué sucede si intentas modificar un elemento en una tupla?",
+            options: [
+                "Se modifica correctamente",
+                "Se produce un error",
+                "Se agrega un nuevo elemento",
+                "La tupla se convierte en una lista"
+            ],
+            answer: "Se produce un error"
+        },
+        {
+            question: "6. ¿Cómo se agrega un elemento a una lista llamada 'mi_lista'?",
+            options: [
+                "mi_lista.add(elemento)",
+                "mi_lista.append(elemento)",
+                "mi_lista.insert(elemento)",
+                "mi_lista.push(elemento)"
+            ],
+            answer: "mi_lista.append(elemento)"
+        },
+        {
+            question: "7. ¿Cómo eliminas un elemento de una lista por su valor?",
+            options: [
+                "mi_lista.remove(valor)",
+                "mi_lista.delete(valor)",
+                "mi_lista.pop(valor)",
+                "mi_lista.clear(valor)"
+            ],
+            answer: "mi_lista.remove(valor)"
+        },
+        {
+            question: "8. ¿Cómo puedes concatenar dos listas en Python?",
+            options: [
+                "lista1 + lista2",
+                "concatenate(lista1, lista2)",
+                "lista1.concat(lista2)",
+                "union(lista1, lista2)"
+            ],
+            answer: "lista1 + lista2"
+        },
+        {
+            question: "9. ¿Qué método usas para encontrar la longitud de una lista o tupla?",
+            options: [
+                "length()",
+                "size()",
+                "count()",
+                "len()"
+            ],
+            answer: "len()"
+        },
+        {
+            question: "10. ¿Cuál es la función correcta para ordenar una lista en Python?",
+            options: [
+                "lista.sort()",
+                "sort(lista)",
+                "lista.order()",
+                "order(lista)"
+            ],
+            answer: "lista.sort()"
+        },
+        {
+            question: "11. ¿Qué hace el método 'pop()' en una lista?",
+            options: [
+                "Elimina y devuelve el último elemento",
+                "Elimina el primer elemento",
+                "Elimina todos los elementos",
+                "Elimina un elemento específico por valor"
+            ],
+            answer: "Elimina y devuelve el último elemento"
+        },
+        {
+            question: "12. ¿Cómo conviertes una lista en una tupla?",
+            options: [
+                "tuple(mi_lista)",
+                "convert_tuple(mi_lista)",
+                "mi_lista.toTuple()",
+                "mi_lista = ()"
+            ],
+            answer: "tuple(mi_lista)"
+        },
+        {
+            question: "13. ¿Cómo conviertes una tupla en una lista?",
+            options: [
+                "list(mi_tupla)",
+                "convert_list(mi_tupla)",
+                "mi_tupla.toList()",
+                "mi_tupla = []"
+            ],
+            answer: "list(mi_tupla)"
+        },
+        {
+            question: "14. ¿Qué método usarías para contar cuántas veces aparece un valor en una lista?",
+            options: [
+                "lista.count(valor)",
+                "lista.find(valor)",
+                "lista.index(valor)",
+                "lista.search(valor)"
+            ],
+            answer: "lista.count(valor)"
+        },
+        {
+            question: "15. ¿Qué hace el método 'index()' en una lista?",
+            options: [
+                "Devuelve la posición de un elemento",
+                "Elimina un elemento",
+                "Agrega un elemento",
+                "Reemplaza un elemento"
+            ],
+            answer: "Devuelve la posición de un elemento"
+        },
+        {
+            question: "16. ¿Es posible tener listas dentro de listas?",
+            options: [
+                "Sí, se llaman listas anidadas",
+                "No, no es posible",
+                "Sí, pero solo hasta 2 niveles",
+                "Sí, pero solo si son del mismo tipo"
+            ],
+            answer: "Sí, se llaman listas anidadas"
+        },
+        {
+            question: "17. ¿Cómo se accede al segundo elemento de la primera lista en una lista anidada?",
+            options: [
+                "lista[0][1]",
+                "lista[1][0]",
+                "lista[1,0]",
+                "lista[0,1]"
+            ],
+            answer: "lista[0][1]"
+        },
+        {
+            question: "18. ¿Cuál de las siguientes opciones no es un método de listas?",
+            options: [
+                "append()",
+                "remove()",
+                "sort()",
+                "split()"
+            ],
+            answer: "split()"
+        }
+    ];
+    

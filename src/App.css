@@ -592,8 +592,7 @@ section {
 }
 
 .section-bg {
-background: linear(200deg, white, #acaa19)
-/* background: gradient(from 315deg, white, #acaa19) */
+  background-color: #fff;
 }
 
 .section-title {
