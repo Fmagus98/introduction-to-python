@@ -419,7 +419,7 @@ export const questionsPythonClass3 = [
             "while x > 0: { \n    print(x); x--; \n}",
             "while x > 0 \n    then print(x); x--; \nend\n"
         ],
-        answer: "while x > 0:\n   print(x)\n   x -= 1"
+        answer: "while x > 0:\n    print(x)\n    x -= 1"
     },
     {
         question: "10. ¿Qué palabra clave se utiliza para detener un bucle antes de que finalice normalmente?",
@@ -472,7 +472,7 @@ export const questionsPythonClass3 = [
         answer: "0 0\n0 1\n1 0\n1 1\n2 0\n2 1"
     },
     {
-        question: "15. ¿Cuál es la salida del siguiente código?\n\nfor i in range(3):\n   if i == 1:\n       break\n   print(i)\nelse:\n   print('Completo')\n\n",
+        question: "15. ¿Cuál es la salida del siguiente código?\n\nfor i in range(3):\n    if i == 1:\n       break\n   print(i)\n   else:\n       print('Completo')\n\n",
         options: [
             "0\n1\nCompleto",
             "0\nCompleto",
@@ -514,7 +514,7 @@ export const questionsPythonClass3 = [
     {
         question: "19. ¿Qué ocurre si un bucle while nunca cumple su condición de finalización?",
         options: [
-            "El programa se cuelga",
+            "Python indentifica que estás haciendo un bucle infinito y te lo reporta",
             "El bucle se detiene automáticamente",
             "El bucle ejecuta solo una vez",
             "El bucle continúa indefinidamente"
