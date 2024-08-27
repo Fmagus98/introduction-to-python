@@ -21,15 +21,22 @@ const Classes = () => {
                 data.date = data.date.toDate();
                 return { id: doc.id, ...data };
             });
-            localStorage.removeItem('dataCourse');
-            localStorage.setItem('dataCourse', JSON.stringify(getData));
-            setCourse(getData);
+            if (content === "courseMicropython"){
+                localStorage.removeItem('dataCourseMicropython');
+                localStorage.setItem('dataCourseMicropython', JSON.stringify(getData));
+                setCourse(getData);
+            }
+            else{
+                localStorage.removeItem('dataCourse');
+                localStorage.setItem('dataCourse', JSON.stringify(getData));
+                setCourse(getData);
+            }
         });
     }, [content]);
 
     useEffect(() => {
         const savedCourse = localStorage.getItem('dataCourse');
-        if (savedCourse) {
+        if (savedCourse && content === "course") {
             const parsedDates = JSON.parse(savedCourse);
             const firstDate = new Date(parsedDates[1].date);
             const currentDate = new Date();
@@ -42,7 +49,7 @@ const Classes = () => {
         } else {
             callFirebase();
         }
-    }, [callFirebase])
+    }, [callFirebase,content])
 
     return (
         <>

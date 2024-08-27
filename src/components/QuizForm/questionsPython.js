@@ -939,4 +939,208 @@ export const questionsPythonClass5 = [
             answer: "split()"
         }
     ];
+
+    export const questionsPythonClass6 = [
+        {
+            question: "1. ¿Cómo se define un diccionario en Python?",
+            options: [
+                "dicc = {}",
+                "dicc = []",
+                "dicc = ()",
+                "dicc = <>"
+            ],
+            answer: "dicc = {}"
+        },
+        {
+            question: "2. ¿Qué tipo de datos se utilizan como claves en un diccionario?",
+            options: [
+                "Cualquier tipo inmutable",
+                "Solo cadenas",
+                "Solo enteros",
+                "Cualquier tipo de datos"
+            ],
+            answer: "Cualquier tipo inmutable"
+        },
+        {
+            question: "3. ¿Cómo accedes al valor asociado con una clave específica en un diccionario llamado 'mi_dicc'?",
+            options: [
+                "mi_dicc['clave']",
+                "mi_dicc.clave",
+                "mi_dicc.get('clave')",
+                "mi_dicc['valor']"
+            ],
+            answer: "mi_dicc['clave']"
+        },
+        {
+            question: "4. ¿Qué sucede si intentas acceder a una clave inexistente en un diccionario usando corchetes?",
+            options: [
+                "Se devuelve None",
+                "Se lanza una excepción KeyError",
+                "Se crea la clave",
+                "Se devuelve un valor por defecto"
+            ],
+            answer: "Se lanza una excepción KeyError"
+        },
+        {
+            question: "5. ¿Cómo eliminas una clave y su valor asociado de un diccionario?",
+            options: [
+                "del mi_dicc['clave']",
+                "mi_dicc.pop('clave')",
+                "mi_dicc.remove('clave')",
+                "Ambas A y B"
+            ],
+            answer: "Ambas A y B"
+        },
+        {
+            question: "6. ¿Cómo verificas si una clave existe en un diccionario?",
+            options: [
+                "'clave' in mi_dicc",
+                "'clave' exists mi_dicc",
+                "'clave' has mi_dicc",
+                "'clave' find mi_dicc"
+            ],
+            answer: "'clave' in mi_dicc"
+        },
+        {
+            question: "7. ¿Cómo puedes obtener todas las claves de un diccionario?",
+            options: [
+                "mi_dicc.keys()",
+                "mi_dicc.claves()",
+                "mi_dicc.all_keys()",
+                "mi_dicc.get_keys()"
+            ],
+            answer: "mi_dicc.keys()"
+        },
+        {
+            question: "8. ¿Cómo puedes obtener todos los valores de un diccionario?",
+            options: [
+                "mi_dicc.values()",
+                "mi_dicc.valores()",
+                "mi_dicc.all_values()",
+                "mi_dicc.get_values()"
+            ],
+            answer: "mi_dicc.values()"
+        },
+        {
+            question: "9. ¿Cuál es la forma correcta de iterar sobre un diccionario para obtener tanto claves como valores?",
+            options: [
+                "for clave, valor in mi_dicc.items():",
+                "for clave, valor in mi_dicc:",
+                "for clave, valor in mi_dicc.pares():",
+                "for clave, valor in mi_dicc.iter():"
+            ],
+            answer: "for clave, valor in mi_dicc.items():"
+        },
+        {
+            question: "10. ¿Cómo se define un conjunto en Python?",
+            options: [
+                "conj = set()",
+                "conj = {}",
+                "conj = []",
+                "conj = ()"
+            ],
+            answer: "conj = set()"
+        },
+        {
+            question: "11. ¿Qué hace el método 'add()' en un conjunto?",
+            options: [
+                "Agrega un nuevo elemento",
+                "Elimina un elemento",
+                "Verifica si un elemento existe",
+                "Ordena los elementos"
+            ],
+            answer: "Agrega un nuevo elemento"
+        },
+        {
+            question: "12. ¿Cómo verificas si un elemento pertenece a un conjunto?",
+            options: [
+                "elemento in conj",
+                "conj.contains(elemento)",
+                "elemento.has(conj)",
+                "elemento.exists(conj)"
+            ],
+            answer: "elemento in conj"
+        },
+        {
+            question: "13. ¿Cuál es la principal diferencia entre un conjunto y una lista?",
+            options: [
+                "Los conjuntos no permiten elementos duplicados",
+                "Los conjuntos están ordenados",
+                "Los conjuntos son mutables",
+                "Los conjuntos permiten valores nulos"
+            ],
+            answer: "Los conjuntos no permiten elementos duplicados"
+        },
+        {
+            question: "14. ¿Qué operador se usa para encontrar la unión de dos conjuntos?",
+            options: [
+                "|",
+                "&",
+                "-",
+                "+"
+            ],
+            answer: "|"
+        },
+        {
+            question: "15. ¿Qué operador se usa para encontrar la intersección de dos conjuntos?",
+            options: [
+                "&",
+                "|",
+                "-",
+                "+",
+            ],
+            answer: "&"
+        },
+        {
+            question: "16. ¿Cómo se elimina un elemento de un conjunto sin causar un error si el elemento no existe?",
+            options: [
+                "conj.discard(elemento)",
+                "conj.remove(elemento)",
+                "conj.pop(elemento)",
+                "conj.delete(elemento)"
+            ],
+            answer: "conj.discard(elemento)"
+        },
+        {
+            question: "17. ¿Qué método se utiliza para eliminar un elemento específico de un conjunto?",
+            options: [
+                "remove()",
+                "discard()",
+                "pop()",
+                "del()"
+            ],
+            answer: "remove()"
+        },
+        {
+            question: "18. ¿Cómo conviertes una lista en un conjunto?",
+            options: [
+                "set(mi_lista)",
+                "convert_set(mi_lista)",
+                "mi_lista.toSet()",
+                "mi_lista = {}"
+            ],
+            answer: "set(mi_lista)"
+        },
+        {
+            question: "19. ¿Qué sucede si intentas agregar un elemento duplicado a un conjunto?",
+            options: [
+                "No se agrega el elemento",
+                "El conjunto se duplica",
+                "Se produce un error",
+                "Se reemplaza el elemento"
+            ],
+            answer: "No se agrega el elemento"
+        },
+        {
+            question: "20. ¿Cuál es la salida de 'len({'a', 'b', 'a'})'?",
+            options: [
+                "2",
+                "3",
+                "1",
+                "4"
+            ],
+            answer: "2"
+        },
+    ];
+    
     

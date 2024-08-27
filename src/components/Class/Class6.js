@@ -6,6 +6,7 @@ import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
 import { class6Code } from './classCode'
+import QuizForm from '../QuizForm/QuizForm';
 
 const Class6 = () => {
 
@@ -248,6 +249,16 @@ const Class6 = () => {
                   </div>
                 </div>
                 <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      <h2 className="text-light">Evaluación de Conocimientos: Clase 6 - Diccionarios y conjuntos</h2>
+                    </button>
+                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div className="accordion-body text-light bg-dark ">
+                        <QuizForm />
+                      </div>
+                    </div>
+                  </div>
+                <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class6.py"
                     target={"_blank"}
                     download={"class6.py"}>

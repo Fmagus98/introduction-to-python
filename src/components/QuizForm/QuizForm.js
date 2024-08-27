@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
-import { questionsPythonClass2, questionsPythonClass3, questionsPythonClass4,questionsPythonClass5 } from './questionsPython'
+import { questionsPythonClass2, questionsPythonClass3, questionsPythonClass4,questionsPythonClass5, questionsPythonClass6 } from './questionsPython'
 
 const QuizForm = () => {
 
@@ -10,7 +10,7 @@ const QuizForm = () => {
     const [score, setScore] = useState(0);
     const [feedback, setFeedback] = useState([]);
     const location = useLocation();
-    const url = { "/classes/2KLc4SOyBBSsZ3MvrydE": questionsPythonClass2, "/classes/Ok0Mm7iHM1fIw69Twf4o": questionsPythonClass3, "/classes/atVa7k6EyWDn7tZV7v1b": questionsPythonClass4 , "/classes/gHRanIzZrKbdu1K8Qb4x": questionsPythonClass5}
+    const url = { "/classes/2KLc4SOyBBSsZ3MvrydE": questionsPythonClass2, "/classes/Ok0Mm7iHM1fIw69Twf4o": questionsPythonClass3, "/classes/atVa7k6EyWDn7tZV7v1b": questionsPythonClass4 , "/classes/gHRanIzZrKbdu1K8Qb4x": questionsPythonClass5, "/classes/id2wolQKcDk77qxdG24W": questionsPythonClass6}
     let questions = url[location.pathname]
     const [messageSubmit, setMessageSubmit] = useState("");
     const [email, setEmail] = useState("");
