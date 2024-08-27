@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 const VirtualAssistant = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [maximizeChat, setMaximizeChat] = useState(false);
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
     const location = useLocation();
@@ -41,6 +42,10 @@ const VirtualAssistant = () => {
         setIsOpen(!isOpen);
     };
 
+    const toggleMaximizeChat = () => {
+        setMaximizeChat(!maximizeChat)
+        console.log("active")
+    };
 
     const handleSend = async () => {
         let userInput = input.trim();
@@ -105,8 +110,8 @@ const VirtualAssistant = () => {
                 {location.pathname.includes("micropython") ? <img src="../img/virtualAssistant2.png" alt="VirtualAssistant" /> : <img src="../img/virtualAssistant.png" alt="VirtualAssistant" />}
             </button>
             {isOpen && (
-                <div className="card chat-window bg-dark">
-                    <div className="card-header"><b className="text-light">PyBot</b></div>
+                <div className={`card chat-window bg-dark chat-size ${maximizeChat?'':'chat-max-size'}`}>
+                    <div className="card-header d-flex justify-content-between align-items-center "><b className="text-light">PyBot</b><i className={`bi ${maximizeChat === false ? 'bi-arrows-angle-contract': 'bi-arrows-angle-expand'} text-white maximize-chat`} onClick={toggleMaximizeChat}></i></div>
                     <div className="card-body overflow-auto chat-body" ref={messagesEndRef}>
                         <ul className="list-group list-group-flush">
                             {messages.map((msg, index) => (
@@ -114,7 +119,7 @@ const VirtualAssistant = () => {
                                     {msg.role === "user" ? (
                                         <>
                                             <span className="item item-user">Tu</span>
-                                            <li className='list-group-item text-light user-message'>{msg.text}</li>
+                                            <li className='list-group-item text-light user-message'><p>{msg.text}</p></li>
                                         </>
                                     ) : (
                                         <>

@@ -831,9 +831,10 @@ section {
   bottom: 80px;
   right: 20px;
   width: 400px;
-  height: 400px;
+  height: 380px;
   z-index: 20;
   border-radius: 20px;
+  transition: width 0.5s ease, height 0.5s ease;
 }
 
 .chat-body {
@@ -869,8 +870,9 @@ section {
   margin-bottom: 1rem;
 }
 
-.bot-message p, .user-message p {
-  margin: 0px
+.bot-message p, .user-message p, .bot-message h1, .bot-message h2, .user-message h1, .user-message h2 {
+  margin: 0px;
+  font-size: 16px
 }
 
 .bot-message code{
@@ -904,6 +906,7 @@ section {
   align-items: center;
   border-radius: 50%;
   align-self: flex-start;
+  padding-left:20px;
 }
 
 .item-user{
@@ -928,16 +931,28 @@ section {
   
 }
 
-small{
-  font-size: 12px;
-  color: #cccc;
-  width:200px;
-  padding: 5px;
-
-}
-
 .disabled{
   background: #cccc;
+}
+
+.chat-size i {
+  cursor: pointer;
+}
+
+.chat-size i:hover {
+  scale: 1.1
+}
+
+.chat-max-size {
+width: 60%;
+height: 73%;
+transition: width 0.5s ease, height 0.5s ease;
+}
+
+@media (width < 700px) {
+  .chat-size i {
+    display: none;
+  }
 }
 
 @media (width < 600px) {
@@ -947,13 +962,11 @@ small{
   .item-bot, .item-user{
     width:15px;
     height:15px;
-    font-size:13px;
     margin-bottom: 4px;
   }
   
   .user-message, .bot-message{
-    max-width: 300px;
-    font-size:11px;
+    max-width: 270px;
   }
 
 }
