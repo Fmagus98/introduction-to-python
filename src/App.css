@@ -276,7 +276,7 @@ h6 {
   }
 }
 @media (max-width: 1038px) {
-  .class-teory {
+  .class-teory, .class-teory-null {
     width: 90% !important;
   }
 }
