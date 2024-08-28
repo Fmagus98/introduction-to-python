@@ -967,7 +967,7 @@ export const questionsPythonClass5 = [
                 "mi_dicc['clave']",
                 "mi_dicc.clave",
                 "mi_dicc.get('clave')",
-                "mi_dicc['valor']"
+                "mi_dicc('valor')"
             ],
             answer: "mi_dicc['clave']"
         },
@@ -984,12 +984,12 @@ export const questionsPythonClass5 = [
         {
             question: "5. ¿Cómo eliminas una clave y su valor asociado de un diccionario?",
             options: [
-                "del mi_dicc['clave']",
+                "delete mi_dicc['clave']",
                 "mi_dicc.pop('clave')",
                 "mi_dicc.remove('clave')",
                 "Ambas A y B"
             ],
-            answer: "Ambas A y B"
+            answer: "mi_dicc.pop('clave')"
         },
         {
             question: "6. ¿Cómo verificas si una clave existe en un diccionario?",
@@ -1035,9 +1035,9 @@ export const questionsPythonClass5 = [
             question: "10. ¿Cómo se define un conjunto en Python?",
             options: [
                 "conj = set()",
-                "conj = {}",
                 "conj = []",
-                "conj = ()"
+                "conj = ()",
+                "cont = [{}]"
             ],
             answer: "conj = set()"
         },
@@ -1072,27 +1072,7 @@ export const questionsPythonClass5 = [
             answer: "Los conjuntos no permiten elementos duplicados"
         },
         {
-            question: "14. ¿Qué operador se usa para encontrar la unión de dos conjuntos?",
-            options: [
-                "|",
-                "&",
-                "-",
-                "+"
-            ],
-            answer: "|"
-        },
-        {
-            question: "15. ¿Qué operador se usa para encontrar la intersección de dos conjuntos?",
-            options: [
-                "&",
-                "|",
-                "-",
-                "+",
-            ],
-            answer: "&"
-        },
-        {
-            question: "16. ¿Cómo se elimina un elemento de un conjunto sin causar un error si el elemento no existe?",
+            question: "14. ¿Cómo se elimina un elemento de un conjunto sin causar un error si el elemento no existe?",
             options: [
                 "conj.discard(elemento)",
                 "conj.remove(elemento)",
@@ -1102,17 +1082,17 @@ export const questionsPythonClass5 = [
             answer: "conj.discard(elemento)"
         },
         {
-            question: "17. ¿Qué método se utiliza para eliminar un elemento específico de un conjunto?",
+            question: "15. ¿Qué método se utiliza para eliminar un elemento específico de un conjunto?",
             options: [
                 "remove()",
-                "discard()",
+                "delete()",
                 "pop()",
                 "del()"
             ],
             answer: "remove()"
         },
         {
-            question: "18. ¿Cómo conviertes una lista en un conjunto?",
+            question: "16. ¿Cómo conviertes una lista en un conjunto?",
             options: [
                 "set(mi_lista)",
                 "convert_set(mi_lista)",
@@ -1122,7 +1102,7 @@ export const questionsPythonClass5 = [
             answer: "set(mi_lista)"
         },
         {
-            question: "19. ¿Qué sucede si intentas agregar un elemento duplicado a un conjunto?",
+            question: "17. ¿Qué sucede si intentas agregar un elemento duplicado a un conjunto?",
             options: [
                 "No se agrega el elemento",
                 "El conjunto se duplica",
@@ -1132,7 +1112,7 @@ export const questionsPythonClass5 = [
             answer: "No se agrega el elemento"
         },
         {
-            question: "20. ¿Cuál es la salida de 'len({'a', 'b', 'a'})'?",
+            question: "18. ¿Cuál es la salida de 'len({'a', 'b', 'a'})'?",
             options: [
                 "2",
                 "3",

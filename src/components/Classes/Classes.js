@@ -10,7 +10,7 @@ const Classes = () => {
     const location = useLocation();
     const elementVisibility = useScrollAnimation();
     const title = location.pathname.includes("micropython") ? "micropython" : "python"
-    const content = location.pathname === "/micropython/classes" ? "courseMicropython" : location.pathname.includes("github") ? "courseGithub" : "course"
+    const content = location.pathname === "/micropython/classes" ? "courseMicropython" : location.pathname === "/github/classes" ? "courseGithub" : "course"
     const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
     const [course, setCourse] = useState([])
     
@@ -25,6 +25,11 @@ const Classes = () => {
             if (content === "courseMicropython"){
                 localStorage.removeItem('dataCourseMicropython');
                 localStorage.setItem('dataCourseMicropython', JSON.stringify(getData));
+                setCourse(getData);
+            }
+            else if (content === "courseGithub") {
+                localStorage.removeItem('dataCourseGithub');
+                localStorage.setItem('dataCourseGithub', JSON.stringify(getData));
                 setCourse(getData);
             }
             else{
@@ -44,6 +49,7 @@ const Classes = () => {
 
             if ((currentDate - firstDate) <= 4742590612) {
                 setCourse(parsedDates);  
+                console.log(content)
             } else {
                 callFirebase();
             }
