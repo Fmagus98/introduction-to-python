@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, Link } from 'react-router-dom';
-import { colorPrimaryPython, colorSecondaryMicropython } from '../../colors'
+import { colorPrimaryPython} from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 const Projects = () => {
@@ -8,7 +8,6 @@ const Projects = () => {
     const elementVisibility = useScrollAnimation()
     const location = useLocation()
     const title = location.pathname.includes("micropython") ? "micropython" : "python"
-    const colorSecondary = location.pathname.includes("micropython") ? colorSecondaryMicropython : null
 
     return (
         <>
@@ -20,8 +19,7 @@ const Projects = () => {
                                 <h1>Proyectos</h1>
                                 <h2>En este apartado encontrarás projectos desarrollados por alumnos de forma individual, en equipo o junto al profesor.</h2>
                                 <div className="text-center text-lg-start">
-                                    <a href="#clase1" style={{ backgroundColor: colorSecondary }} className="btn-get-started scrollto">Ver Proyectos</a>
-                                </div>
+                                 <a href="#projects" className={`btn-get-started scrollto python-theme`}>Ver proyectos</a></div>
                             </div>
                         </div>
                         <div className="col-lg-4 order-1 order-lg-2 hero-img" >
@@ -29,14 +27,14 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <svg id="clase1" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+                <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
                     <defs>
                         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                     </defs>
                     <g className="wave1">
                         <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
                     </g>
-                    <g className="wave2">
+                    <g id="projects" className="wave2">
                         <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
                     </g>
                     <g className="wave3">

@@ -60,7 +60,7 @@ const Class8 = () => {
                     <h2>Definición de clases y objetos</h2>
                     <h2>Métodos y atributos de clases y objetos</h2>
                     <div className="text-center text-lg-start">
-                      <a href="#clase6" className="btn-get-started scrollto">Contenido de la clase 8</a>
+                    <a href="#class8" className={`btn-get-started scrollto python-theme`}>Contenido de la Clase 8</a>
                     </div>
                   </div>
                 </div>
@@ -69,14 +69,14 @@ const Class8 = () => {
                 </div>
               </div>
             </div>
-            <svg id="clase6" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
               <defs>
                 <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
               </defs>
               <g className="wave1">
                 <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
               </g>
-              <g className="wave2">
+              <g id="class8" className="wave2">
                 <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
               </g>
               <g className="wave3">
@@ -142,7 +142,7 @@ const Class8 = () => {
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text break mx-auto w-75 mt-4">
                         Los métodos son funciones asociadas a un objeto. Pueden acceder y manipular los atributos del objeto. Los métodos pueden ser definidos dentro de la clase y se invocan en los objetos utilizando la notación de punto. Por ejemplo:</p>
-                        <CopyButton code={class8Code[2]} />
+                      <CopyButton code={class8Code[2]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class8/methods.webp"></img>
                       <p className="text break mx-auto w-75">En este ejemplo, la clase Rectangulo tiene un método area() que calcula el área del rectángulo basado en los atributos ancho y altura. El método se invoca en el objeto mi_rectangulo.</p>
                       <p className="text break mx-auto w-75" style={{ marginBottom: "7rem" }}>La programación orientada a objetos en Python ofrece una forma estructurada y modular de diseñar y desarrollar programas. Permite la reutilización de código, la abstracción de conceptos y la organización de la lógica en entidades coherentes. Esta es solo una introducción básica, pero la POO en Python tiene muchas más características y conceptos avanzados que puedes explorar para construir aplicaciones más complejas y eficientes.</p>
@@ -157,7 +157,7 @@ const Class8 = () => {
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text break mx-auto w-75 mt-4">La herencia en Python es un concepto importante de la programación orientada a objetos (POO) que permite que una clase adquiera propiedades (atributos y métodos) de otra clase. La clase que hereda se denomina "clase hija" o "subclase", y la clase de la cual hereda se llama "clase padre" o "superclase". Esto permite la reutilización de código y la organización jerárquica de las clases.
                         En Python, para definir una clase que herede de otra, se utiliza la siguiente sintaxis:</p>
-                        <CopyButton code={class8Code[3]} />
+                      <CopyButton code={class8Code[3]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class8/heredity.webp"></img>
                     </div>
                   </div>
@@ -186,7 +186,7 @@ const Class8 = () => {
                   <h2>Definición de clases y objetos</h2>
                   <h2>Métodos y atributos de clases y objetos</h2>
                   <div className="text-center text-lg-start">
-                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(course?.[7]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
+                    <Link to="#" className="btn-get-started scrollto python-theme">Tendrás acceso al curso el {new Date(course?.[3]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</Link>
                   </div>
                 </div>
               </div>

@@ -61,8 +61,8 @@ const Class2 = () => {
                       <h2>Variables y tipos de datos</h2>
                       <h2>Operadores aritméticos y de asignación</h2>
                       <h2>Operadores lógicos y de comparación</h2>
-                      <div className="text-break text-lg-start">
-                        <a href="#clase2" className="btn-get-started scrollto">Contenido de la clase 2</a>
+                      <div className="text-center text-lg-start">
+                        <a href="#class2" className={`btn-get-started scrollto python-theme`}>Contenido de la Clase 2</a>
                       </div>
                     </div>
                   </div>
@@ -71,14 +71,14 @@ const Class2 = () => {
                   </div>
                 </div>
               </div>
-              <svg id="clase2" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+              <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
                 <defs>
                   <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g className="wave1">
                   <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
                 </g>
-                <g className="wave2">
+                <g id="class2" className="wave2">
                   <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
                 </g>
                 <g className="wave3">
@@ -400,7 +400,7 @@ const Class2 = () => {
                     <h2>Operadores aritméticos y de asignación</h2>
                     <h2>Operadores lógicos y de comparación</h2>
                     <div className="text-break text-lg-start">
-                      <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(course?.[1]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
+                      <Link to="#" className="btn-get-started scrollto python-theme">Tendrás acceso al curso el {new Date(course?.[3]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</Link>
                     </div>
                   </div>
                 </div>

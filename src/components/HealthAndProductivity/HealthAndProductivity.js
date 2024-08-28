@@ -8,7 +8,6 @@ const HealthAndProductivity = () => {
     const elementVisibility = useScrollAnimation()
     const location = useLocation()
     const title = location.pathname.includes("micropython") ? "micropython" : "python"
-    const colorSecondary = location.pathname.includes("micropython") ? colorSecondaryMicropython : null
 
     return (
         <>
@@ -20,8 +19,7 @@ const HealthAndProductivity = () => {
                                 <h1>Salud y productividad</h1>
                                 <h2>Descubre cómo estiramientos simples y cuidados visuales pueden potenciar tu bienestar y eficiencia en el desarrollo de software</h2>
                                 <div className="text-center text-lg-start">
-                                    <a href="#clase1" style={{ backgroundColor: colorSecondary }} className="btn-get-started scrollto">Ver Contenido</a>
-                                </div>
+                                <a href="#class2" className={`btn-get-started scrollto python-theme`}>Ver contenido</a></div>
                             </div>
                         </div>
                         <div className="col-lg-4 order-1 order-lg-2 hero-img" >

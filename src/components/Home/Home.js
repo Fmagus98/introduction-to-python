@@ -1,6 +1,6 @@
-import React from 'react'
-import { useLocation,Link } from 'react-router-dom'
-import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
+import React, {useEffect} from 'react'
+import { useLocation,Link} from 'react-router-dom'
+import { colorPrimaryPython, colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 
@@ -9,12 +9,19 @@ const Home = () => {
   const elementVisibility = useScrollAnimation();
   const location = useLocation();
   const color = location.pathname === "/micropython" ? colorPrimaryMicropython : colorPrimaryPython
-  const colorSecondary = location.pathname.includes("micropython") ? colorSecondaryMicropython : null
   const title = location.pathname.includes("micropython") ? "micropython" : "python"
   const listPython = ["Introducción a la programación.", "Variables", "Tipos de datos.", "Métodos de tipos de datos.", "Funciones.", "Bucles.", "Módulos.", "Manipulación de datos (Listas y tuplas)", "Programación orientado a objectos (POO)."]
   const listMicroPython = ["Introducción a MicroPython", "Fundamentos de Python en MicroPython", "Entrada y Salida en MicroPython", "Comunicación Serial y Periféricos", "Conectividad Wi-Fi con MicroPython", "MicroPython en Pantallas y Gráficos", "Almacenamiento y Sistemas de Archivos", "Desarrollo de Proyectos Avanzados"]
   const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : listPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>)
 
+  useEffect(() => {
+    if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+}, [location]);
 
   return (
     <>
@@ -30,7 +37,7 @@ const Home = () => {
                   escribir y depurar programas simples y complejos utilizando {title},
                   y se les presentará a las principales estructuras de datos y
                   algoritmos utilizados en la programación.</h2>
-                  <Link to="#index" style={{ backgroundColor: colorSecondary }} className="btn-get-started scrollto">¿Que voy aprender?</Link>
+                  <Link to="#index" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`}>¿Que voy aprender?</Link>
               </div>
             </div>
             <div className="col-lg-4 order-1 order-lg-2 hero-img"  >

@@ -399,19 +399,11 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  position: relative;
   padding: 120px 0 0 0;
   z-index: -1;
 }
 
-#hero:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+
 
 #hero h1 {
   margin: 0 0 20px 0;
@@ -441,16 +433,6 @@ h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: dark !important;
-  background: #2f6997;
-}
-
-#hero .btn-get-started:hover {
-  background: #4b4b4b;
-}
-
-#hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (min-width: 1024px) {
@@ -487,6 +469,22 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+.python-theme {
+background: #2f6997;
+}
+
+.micropython-theme {
+  background: rgb(238, 112, 83);
+}
+.python-theme:hover, .micropython-theme:hover {
+  background: #4b4b4b!important;
+}
+
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 575px) {

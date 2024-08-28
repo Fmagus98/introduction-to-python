@@ -1,4 +1,4 @@
-import React, { useEffect, useState , useCallback} from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
@@ -60,7 +60,7 @@ const Class7 = () => {
                     <h2>Manejo de excepciones</h2>
                     <h2>Práctica con archivos y excepciones</h2>
                     <div className="text-center text-lg-start">
-                      <a href="#clase6" className="btn-get-started scrollto">Contenido de la clase 7</a>
+                    <a href="#class7" className={`btn-get-started scrollto python-theme`}>Contenido de la Clase 7</a>
                     </div>
                   </div>
                 </div>
@@ -69,14 +69,14 @@ const Class7 = () => {
                 </div>
               </div>
             </div>
-            <svg id="clase6" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
               <defs>
                 <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
               </defs>
               <g className="wave1">
                 <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
               </g>
-              <g className="wave2">
+              <g id="class7" className="wave2">
                 <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
               </g>
               <g className="wave3">
@@ -253,7 +253,7 @@ const Class7 = () => {
                   <h2>Manejo de excepciones</h2>
                   <h2>Práctica con archivos y excepciones</h2>
                   <div className="text-center text-lg-start">
-                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(course?.[6]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
+                    <Link to="#" className="btn-get-started scrollto python-theme">Tendrás acceso al curso el {new Date(course?.[3]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</Link>
                   </div>
                 </div>
               </div>
@@ -262,7 +262,7 @@ const Class7 = () => {
               </div>
             </div>
           </div>
-          <svg id="clase6" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+          <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
             <defs>
               <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>

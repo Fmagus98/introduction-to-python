@@ -58,7 +58,7 @@ const Exercises = () => {
                                 <h1>Ejercicios</h1>
                                 <h2> Este apartado proporciona la oportunidad de practicar y aplicar los conceptos aprendidos. <br></br><br></br>Los ejercicios van desde simples hasta desafiantes, permitiendo a los estudiantes resolver problemas y adquirir experiencia en la escritura de código {title}.</h2>
                                 <div className="text-center text-lg-start">
-                                    <a href="#exercises" className="btn-get-started scrollto" style={{ backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>Empieza a practicar!</a>
+                                    <a href="#exercises" className={`btn-get-started scrollto ${title === "micropython" ? "micropython-theme" : "python-theme"}`}>Empieza a practicar!</a>
                                 </div>
                             </div>
                         </div>
@@ -74,10 +74,10 @@ const Exercises = () => {
                     <g className="wave1">
                         <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
                     </g>
-                    <g className="wave2">
+                    <g id="exercises" className="wave2">
                         <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
                     </g>
-                    <g id="exercises" className="wave3">
+                    <g className="wave3">
                         <use xlinkHref="#wave-path" x="50" y="9" fill="#fff" />
                     </g>
                 </svg>

@@ -56,7 +56,7 @@ const Contact = () => {
                                     <br></br> <br></br>También pueden consultarme directamente por correo electrónico para abordar dudas personalizadas. Estoy aquí para ayudarles en su proceso de aprendizaje en Python.
                                     ¡Nos vemos en Discord y en nuestros intercambios de correo electrónico!</h2>
                                 <div className="text-center text-lg-start">
-                                    <a href="#contact" style={{ backgroundColor: color }} className="btn-get-started scrollto">Contactame</a>
+                                <a href="#contact" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`}>Contactame</a>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                     <g className="wave1">
                         <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
                     </g>
-                    <g className="wave2">
+                    <g id="contact" className="wave2">
                         <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
                     </g>
                     <g className="wave3">
@@ -81,7 +81,7 @@ const Contact = () => {
                     </g>
                 </svg>
             </section>
-            <section id="contact" className="contact">
+            <section className="contact">
                 <div className="container">
                     <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`}>
                         <h2>Contactos</h2>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useCallback } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { Link } from 'react-router-dom';
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
@@ -61,7 +61,7 @@ const Class3 = () => {
                     <h2>Bucles while y for</h2>
                     <h2>Uso de break y continue en bucles</h2>
                     <div className="text-center text-lg-start">
-                      <a href="#clase3" className="btn-get-started scrollto">Contenido de la clase 3</a>
+                    <a href="#class3" className={`btn-get-started scrollto python-theme`}>Contenido de la Clase 3</a>
                     </div>
                   </div>
                 </div>
@@ -70,14 +70,14 @@ const Class3 = () => {
                 </div>
               </div>
             </div>
-            <svg id="clase3" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
               <defs>
                 <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
               </defs>
               <g className="wave1">
                 <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
               </g>
-              <g className="wave2">
+              <g id="class3" className="wave2">
                 <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
               </g>
               <g className="wave3">
@@ -214,41 +214,41 @@ const Class3 = () => {
                   </button>
                   <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
-                       <h3 className="text-break mx-auto w-75">Objetivo:</h3>
-                       <p className="text-break mx-auto w-75">Crear un simulador que permita a los usuarios seleccionar productos para comprar, ingresar la cantidad deseada de ese producto y mostrar el total a pagar, incluyendo impuestos si es necesario.</p>
-                       <ul className="text-break mx-auto w-75"> Entrada de Datos:
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Productos Disponibles:</span> Definir una lista de productos con sus respectivos precios.</p>
-                          </li>
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Selección del Producto:</span> ¿Cómo permitirá el programa al usuario seleccionar un producto? (Por ejemplo, mediante un número asociado a cada producto).</p>
-                          </li>
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Cantidad:</span> ¿Cómo ingresará el usuario la cantidad de productos que desea comprar?</p>
-                          </li>
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Impuesto (Opcional):</span> ¿Se incluirá el cálculo del impuesto? Si es así, ¿cómo se recogerá la información (por ejemplo, porcentaje de impuesto)?</p>
-                          </li>
-                        </ul>
-                        <ul className="text-break mx-auto w-75 mt-4">Calculo:
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Subtotal:</span> Multiplicar el precio del producto seleccionado por la cantidad ingresada.</p>
-                          </li>
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Impuesto:</span> Si se incluye, calcular el monto del impuesto sobre el subtotal.</p>
-                          </li>
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Total:</span> Sumar el subtotal y el impuesto (si lo hay) para obtener el total a pagar.</p>
-                          </li>
-                        </ul>
-                        <ul className="text-break mx-auto w-75 mt-4">Salida de Datos:
-                          <li className="text-break mx-auto w-75">
-                            <p><span className="fw-bold">Detalle de la Compra:</span> Mostrar un resumen con el nombre del producto, la cantidad comprada, el precio unitario, el subtotal, el impuesto (si aplica) y el total a pagar.</p>
-                          </li>
-                        </ul>
-                        <p className="text-break mx-auto w-75">Descarga un ejemplo del mini proyecto desde acá --
-                          <Link to="/pythonClassFile/miniproject3.py" target={"_blank"} download={"miniproject3.py"} className="text-primary" > Simulador de compra</Link>
-                        </p>
+                      <h3 className="text-break mx-auto w-75">Objetivo:</h3>
+                      <p className="text-break mx-auto w-75">Crear un simulador que permita a los usuarios seleccionar productos para comprar, ingresar la cantidad deseada de ese producto y mostrar el total a pagar, incluyendo impuestos si es necesario.</p>
+                      <ul className="text-break mx-auto w-75"> Entrada de Datos:
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Productos Disponibles:</span> Definir una lista de productos con sus respectivos precios.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Selección del Producto:</span> ¿Cómo permitirá el programa al usuario seleccionar un producto? (Por ejemplo, mediante un número asociado a cada producto).</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Cantidad:</span> ¿Cómo ingresará el usuario la cantidad de productos que desea comprar?</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Impuesto (Opcional):</span> ¿Se incluirá el cálculo del impuesto? Si es así, ¿cómo se recogerá la información (por ejemplo, porcentaje de impuesto)?</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75 mt-4">Calculo:
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Subtotal:</span> Multiplicar el precio del producto seleccionado por la cantidad ingresada.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Impuesto:</span> Si se incluye, calcular el monto del impuesto sobre el subtotal.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Total:</span> Sumar el subtotal y el impuesto (si lo hay) para obtener el total a pagar.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75 mt-4">Salida de Datos:
+                        <li className="text-break mx-auto w-75">
+                          <p><span className="fw-bold">Detalle de la Compra:</span> Mostrar un resumen con el nombre del producto, la cantidad comprada, el precio unitario, el subtotal, el impuesto (si aplica) y el total a pagar.</p>
+                        </li>
+                      </ul>
+                      <p className="text-break mx-auto w-75">Descarga un ejemplo del mini proyecto desde acá --
+                        <Link to="/pythonClassFile/miniproject3.py" target={"_blank"} download={"miniproject3.py"} className="text-primary" > Simulador de compra</Link>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ const Class3 = () => {
                   </button>
                   <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
-                      <QuizForm/>
+                      <QuizForm />
                     </div>
                   </div>
                 </div>
@@ -286,7 +286,7 @@ const Class3 = () => {
                   <h2>Bucles while y for</h2>
                   <h2>Uso de break y continue en bucles</h2>
                   <div className="text-center text-lg-start">
-                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(course?.[2]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
+                    <Link to="#" className="btn-get-started scrollto python-theme">Tendrás acceso al curso el {new Date(course?.[3]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</Link>
                   </div>
                 </div>
               </div>

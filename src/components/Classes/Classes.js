@@ -13,6 +13,7 @@ const Classes = () => {
     const content = location.pathname === "/micropython/classes" ? "courseMicropython" : location.pathname.includes("github") ? "courseGithub" : "course"
     const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
     const [course, setCourse] = useState([])
+    
 
     const callFirebase = useCallback(() => {
         getDocs(collection(db, content)).then(response => {
@@ -63,7 +64,7 @@ const Classes = () => {
                                         <h1>Github</h1>
                                         <h2>Este curso está diseñado para proporcionar una comprensión completa y práctica de Git y GitHub, herramientas esenciales para el desarrollo de software y la gestión de proyectos.</h2>
                                         <div className="text-center text-lg-start">
-                                            <a href="/" className="btn-get-started scrollto" style={{ behavior: 'smooth', backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>Empieza a cursar!</a>
+                                            <a href="#classes" className={`btn-get-started scrollto python-theme`}>Empieza a cursar!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +80,7 @@ const Classes = () => {
                                             organizados para aprender los conceptos fundamentales de la programación
                                             utilizando {title} como lenguaje de referencia.</h2>
                                         <div className="text-center text-lg-start">
-                                            <a href="/" className="btn-get-started scrollto" style={{ behavior: 'smooth', backgroundColor: location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : "#2f6997" }}>Empieza a cursar!</a>
+                                            <a href="#classes" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`}>Empieza a cursar!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +100,7 @@ const Classes = () => {
                     <g className="wave2">
                         <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
                     </g>
-                    <g id="class" className="wave3">
+                    <g id="classes" className="wave3">
                         <use xlinkHref="#wave-path" x="50" y="9" fill="#fff" />
                     </g>
                 </svg>

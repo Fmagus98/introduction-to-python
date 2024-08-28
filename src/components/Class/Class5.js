@@ -60,7 +60,7 @@ const Class5 = () => {
                     <h2>Manipulación de elementos</h2>
                     <h2>Métodos</h2>
                     <div className="text-center text-lg-start">
-                      <a href="#clase5" className="btn-get-started scrollto">Contenido de la clase 5</a>
+                    <a href="#class5" className={`btn-get-started scrollto python-theme`}>Contenido de la Clase 5</a>
                     </div>
                   </div>
                 </div>
@@ -69,14 +69,14 @@ const Class5 = () => {
                 </div>
               </div>
             </div>
-            <svg id="clase5" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <svg  className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
               <defs>
                 <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
               </defs>
               <g className="wave1">
                 <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
               </g>
-              <g className="wave2">
+              <g id="class5" className="wave2">
                 <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
               </g>
               <g className="wave3">
@@ -171,29 +171,29 @@ const Class5 = () => {
                       </p>
                       <h3 className="text-break w-75 mx-auto">len()</h3>
                       <p className="text-break mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
-                      <CopyButton code={class5Code[12]}/>
+                      <CopyButton code={class5Code[12]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list13.webp"></img>
                       <h3 className="text-break w-75 mx-auto">max()</h3>
                       <p className="text-break mx-auto w-75">max() te devuelve el valor del elemento más alto de la lista.</p>
-                      <CopyButton code={class5Code[13]}/>
+                      <CopyButton code={class5Code[13]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list14.webp"></img>
                       <h3 className="text-break w-75 mx-auto">min()</h3>
                       <p className="text-break mx-auto w-75">min() te devuelve el valor del elemento más bajo de la lista.</p>
-                      <CopyButton code={class5Code[14]}/>
+                      <CopyButton code={class5Code[14]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list15.webp"></img>
                       <h3 className="text-break w-75 mx-auto">sum()</h3>
                       <p className="text-break mx-auto w-75">sum() te devuelve la sumatoria de todos los elementos de la lista </p>
-                      <CopyButton code={class5Code[15]}/>
+                      <CopyButton code={class5Code[15]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list16.webp"></img>
                       <h3 className="text-break w-75 mx-auto">sort() / sorted / reverse</h3>
                       <p className="text-break mx-auto w-75">sort() ordena los elementos de la lista de forma ascendente y modifica la lista original.<br></br>Sorted() crea una lista y ordena la lista de forma ascendente <br></br>Si deseas ordenar la lista en orden descendente, puedes utilizar el argumento reverse=True en el método sort() o sorted()</p>
-                      <CopyButton code={class5Code[16]}/>
+                      <CopyButton code={class5Code[16]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list17.webp"></img>
-                      <CopyButton code={class5Code[17]}/>
+                      <CopyButton code={class5Code[17]} />
                       <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/class5/list18.webp"></img>
                       <h3 className="text-break w-75 mx-auto">reversed()</h3>
                       <p className="text-break mx-auto w-75">reversed() ordena los elementos de la lista de forma descendente y no modifica la lista original.</p>
-                      <CopyButton code={class5Code[18]}/>
+                      <CopyButton code={class5Code[18]} />
                       <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../img/class5/list19.webp"></img>
                     </div>
                   </div>
@@ -206,7 +206,7 @@ const Class5 = () => {
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">
                         Una tupla en Python es una estructura de datos inmutable, lo que significa que no se pueden modificar una vez creadas. <br></br>Se utiliza para almacenar una colección ordenada de elementos heterogéneos, como números, cadenas de texto, booleanos, etc. <br></br>Las tuplas se definen utilizando paréntesis () y los elementos se separan por comas.</p>
-                        <CopyButton code={class5Code[19]} />
+                      <CopyButton code={class5Code[19]} />
                       <img className="w-75 d-block mx-auto border-content" alt="" src="../img/class5/tupla1.webp"></img>
                       <h3 className="text-break mx-auto w-75 mt-4 ">índice</h3>
                       <p className="text-break mx-auto w-75">Al igual que las listas, el operador de indexación [ ] permite acceder a elementos individuales de la tupla utilizando su índice. Por ejemplo, tupla[0] devuelve el primer elemento de la tupla.</p>
@@ -254,8 +254,8 @@ const Class5 = () => {
                   </button>
                   <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
-                     <QuizForm />
-                        </div>
+                      <QuizForm />
+                    </div>
                   </div>
                 </div>
                 <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
@@ -282,7 +282,7 @@ const Class5 = () => {
                   <h2>Manipulación de elementos</h2>
                   <h2>Métodos</h2>
                   <div className="text-center text-lg-start">
-                    <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(course?.[4]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
+                    <Link to="#" className="btn-get-started scrollto python-theme">Tendrás acceso al curso el {new Date(course?.[3]?.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</Link>
                   </div>
                 </div>
               </div>
@@ -291,7 +291,7 @@ const Class5 = () => {
               </div>
             </div>
           </div>
-          <svg id="clase4" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+          <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
             <defs>
               <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>

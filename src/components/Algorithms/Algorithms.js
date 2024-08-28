@@ -44,7 +44,7 @@ const Algorithms = () => {
                                 <h1>Algoritmos</h1>
                                 <h2>En este apartado verás una serie de algoritmos que te ayudará a comprender la programación</h2>
                                 <div className="text-center text-lg-start">
-                                    <a href="/#algorithms" className="btn-get-started scrollto">Mira los algoritmos</a>
+                                    <a href="#algorithms" className={`btn-get-started scrollto python-theme`}>Aprende algoritmos</a>
                                 </div>
                             </div>
                         </div>
@@ -53,14 +53,14 @@ const Algorithms = () => {
                         </div>
                     </div>
                 </div>
-                <svg id="algorithms" className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+                <svg className="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
                     <defs>
                         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                     </defs>
                     <g className="wave1">
                         <use xlinkHref="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)" />
                     </g>
-                    <g className="wave2">
+                    <g id="algorithms" className="wave2">
                         <use xlinkHref="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)" />
                     </g>
                     <g className="wave3">
