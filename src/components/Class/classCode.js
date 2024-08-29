@@ -650,6 +650,55 @@ suma(num1,num2)
 
 `,
 `
+# print() - Retorna un mensaje por la terminal --> Hola!
+print("Hola!") 
+
+# int() - Convierte un tipo de dato a int --> 5 
+int("5")
+
+# len() - Retorna el largo del valor del dato --> 9
+len("Funciones")
+
+# type() - Retorna el tipo de dato que contiene --> <class 'int'>
+type(8)
+
+# input() - Almacena el dato que introdujo el usuario en un string
+input("Escribe una palabra")
+`,
+`
+def saludar(nombre):
+    return f"Hola, {nombre}!"
+
+print(saludar("Carlos"))
+# Salida: Hola, Carlos!
+`,
+`
+suma = lambda a, b: a + b
+print(suma(3, 5))
+# Salida: 8
+`,
+`
+def contador(max):
+    n = 1
+    while n <= max:
+        yield n
+        n += 1
+
+for numero in contador(5):
+    print(numero)
+# Salida: 1 2 3 4 5
+`,
+`
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(5))
+# Salida: 120
+`,
+`
 def saludar(nombre):
     print("!Hola, " + nombre + "!")
     
