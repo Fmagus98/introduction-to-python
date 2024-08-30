@@ -6,6 +6,7 @@ import { colorPrimaryPython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
 import { class7Code } from './classCode'
+import QuizForm from '../QuizForm/QuizForm';
 
 const Class7 = () => {
 
@@ -92,10 +93,10 @@ const Class7 = () => {
               </div>
               <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
                 <div id="element2" className={`mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                  <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h2 className="text-light">Tipos de excepciones</h2>
                   </button>
-                  <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                  <div id="a1" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">
                         Python tiene una amplia variedad de tipos de excepciones incorporados que cubren diferentes situaciones de error. Algunos ejemplos comunes de tipos de excepciones son:
@@ -162,10 +163,10 @@ const Class7 = () => {
                   </div>
                 </div>
                 <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseFour">
                     <h2 className="text-light">Metodos de archivos en python</h2>
                   </button>
-                  <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">En Python, puedes realizar operaciones de lectura y escritura de archivos utilizando las funciones y métodos proporcionados por el lenguaje.</p>
                       <h3 className="text-break w-75 mx-auto">open() - Abrir archivos </h3>
@@ -199,11 +200,11 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFour">
+                <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                     <h2 className="text-light">Metodos de archivos en python(csv)</h2>
                   </button>
-                  <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">En Python, puedes también abrir, leer, escribir y cerrar archivos también con csv, en este caso debemos importar el módulo csv.</p>
                       <h3 className="text-break w-75 mx-auto">Leer csv</h3>
@@ -229,7 +230,17 @@ const Class7 = () => {
                     </div>
                   </div>
                 </div>
-                <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h2 className="text-light">Evaluación de Conocimientos: Clase 7 - Archivos y excepciones</h2>
+                  </button>
+                  <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body text-light bg-dark ">
+                      <QuizForm />
+                    </div>
+                  </div>
+                </div>
+                <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class7.py"
                     target={"_blank"}
                     download={"class7.py"}>

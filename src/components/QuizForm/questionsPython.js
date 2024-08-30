@@ -940,7 +940,7 @@ export const questionsPythonClass5 = [
         }
     ];
 
-    export const questionsPythonClass6 = [
+export const questionsPythonClass6 = [
         {
             question: "1. ¿Cómo se define un diccionario en Python?",
             options: [
@@ -1123,4 +1123,105 @@ export const questionsPythonClass5 = [
         },
     ];
     
-    
+export const questionsPythonClass7 = [
+        {
+            question: "1. ¿Cuál es la forma correcta de abrir un archivo en modo lectura en Python?",
+            options: [
+                "file = open('archivo.txt', 'r')",
+                "file = open('archivo.txt', 'w')",
+                "file = open('archivo.txt', 'a')",
+                "file = open('archivo.txt', 'x')"
+            ],
+            answer: "file = open('archivo.txt', 'r')"
+        },
+        {
+            question: "2. ¿Qué método se usa para leer el contenido completo de un archivo en Python?",
+            options: [
+                "file.read()",
+                "file.readline()",
+                "file.readlines()",
+                "file.write()"
+            ],
+            answer: "file.read()"
+        },
+        {
+            question: "3. ¿Cuál es la excepción que se lanza cuando un archivo no se encuentra en Python?",
+            options: [
+                "FileNotFoundError",
+                "IndexError",
+                "KeyError",
+                "NameError"
+            ],
+            answer: "FileNotFoundError"
+        },
+        {
+            question: "4. ¿Cómo se debe cerrar un archivo en Python después de trabajar con él?",
+            options: [
+                "file.close()",
+                "file.end()",
+                "file.stop()",
+                "file.exit()"
+            ],
+            answer: "file.close()"
+        },
+        {
+            question: "5. ¿Qué estructura se utiliza para manejar excepciones en Python?",
+            options: [
+                "try-except",
+                "if-else",
+                "for-while",
+                "switch-case"
+            ],
+            answer: "try-except"
+        },
+        {
+            question: "6. ¿Qué modo de apertura de archivos permite escribir en un archivo pero no modificar el contenido existente?",
+            options: [
+                "'w'",
+                "'a'",
+                "'r'",
+                "'x'"
+            ],
+            answer: "'a'"
+        },
+        {
+            question: "7. ¿Qué método se utiliza para leer una sola línea de un archivo en Python?",
+            options: [
+                "file.read()",
+                "file.readline()",
+                "file.readlines()",
+                "file.read_line()"
+            ],
+            answer: "file.readline()"
+        },
+        {
+            question: "8. ¿Qué método se usa para escribir contenido en un archivo en Python?",
+            options: [
+                "file.write()",
+                "file.insert()",
+                "file.append()",
+                "file.add()"
+            ],
+            answer: "file.write()"
+        },
+        {
+            question: "9. ¿Cuál de las siguientes excepciones se lanza cuando se intenta dividir por cero?",
+            options: [
+                "ZeroDivisionError",
+                "ValueError",
+                "TypeError",
+                "OverflowError"
+            ],
+            answer: "ZeroDivisionError"
+        },
+        {
+            question: "10. ¿Qué excepción se lanza cuando se intenta acceder a un índice inexistente en una lista?",
+            options: [
+                "IndexError",
+                "KeyError",
+                "NameError",
+                "AttributeError"
+            ],
+            answer: "IndexError"
+        }
+    ];
