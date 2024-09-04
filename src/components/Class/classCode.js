@@ -721,6 +721,23 @@ print(pi)
 
 `,
 `
+# Opción 1
+# Para llamar el modulo "modulo.py", podemos escribir en el from el nombre de la carpeta 
+# seguido del nombre del módulo que quieras extraer.
+from carpeta import modulo
+
+# Opción 2
+# Para llamar el modulo "modulo2.py", podemos escribir en el from el nombre de la carpeta, un punto y el nombre
+# de la siguiente carpeta seguido del nombre del módulo que quieras extraer.
+from carpeta.carpeta2 import modulo2
+
+# Llamado de funciones de los módulos
+
+modulo.ejecucion()
+modulo2.ejecucion()
+
+`,
+`
 import math
 
 `,
