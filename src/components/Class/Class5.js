@@ -250,36 +250,39 @@ const Class5 = () => {
                 </div>
                 <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
-                    <h2 className="text-light">Mini Proyecto 5: Inventario de productos</h2>
+                    <h2 className="text-light">Mini Proyecto 5: Sistema de Gestión de Usuarios y Roles</h2>
                   </button>
                   <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
                       <h3 className="text-break mx-auto w-75">Objetivo:</h3>
-                      <p className="text-break mx-auto w-75">Crear un sistema que permita gestionar un inventario de productos utilizando listas y tuplas. El sistema permitirá agregar productos, listar todos los productos, buscar productos por nombre y calcular el valor total del inventario.</p>
-                      <ul className="text-break mx-auto w-75">Agregar Producto:
+                      <p className="text-break mx-auto w-75">Desarrollar un sistema que permita gestionar usuarios y sus roles utilizando una lista de tuplas, donde cada tupla representa un usuario con su nombre y rol.</p>
+                      <ul className="text-break mx-auto w-75">Agregar Usuario:
                         <li className="text-break mx-auto w-75">
-                          <p>Permitir al usuario agregar un nuevo producto al inventario.</p>
+                          <p>Permitir al usuario agregar un nuevo usuario con un rol asignado.</p>
                         </li>
                         <li className="text-break mx-auto w-75">
-                          <p>Cada producto se representará como una tupla con el formato: (nombre, cantidad, precio por unidad).</p>
-                        </li>
-                        <li className="text-break mx-auto w-75">
-                          <p>La lista de productos será el inventario.</p>
+                          <p>El sistema debe verificar si el rol es válido antes de agregar el usuario.</p>
                         </li>
                       </ul>
-                      <ul className="text-break mx-auto w-75 mt-4">Listar productos:
+                      <ul className="text-break mx-auto w-75 mt-4">Listar Usuarios:
                         <li className="text-break mx-auto w-75">
-                          <p>Mostrar todos los productos en el inventario con su nombre, cantidad y precio por unidad.</p>
+                          <p>Mostrar todos los usuarios con sus roles.</p>
                         </li>
                       </ul>
-                      <ul className="text-break mx-auto w-75 mt-4">Buscar Producto:
+                      <ul className="text-break mx-auto w-75 mt-4">Listar Roles Disponibles:
                         <li className="text-break mx-auto w-75">
-                          <p>Permitir al usuario buscar un producto por su nombre y mostrar los detalles del producto si se encuentra en el inventario.</p>
+                          <p>Mostrar todos los roles disponibles en el sistema.</p>
                         </li>
                       </ul>
-                      <ul className="text-break mx-auto w-75 mt-4">Calcular Valor Total del Inventario:
+                      <ul className="text-break mx-auto w-75 mt-4">Estructuras de Datos:
                         <li className="text-break mx-auto w-75">
-                          <p>Calcular y mostrar el valor total de todos los productos en el inventario (cantidad * precio por unidad para cada producto, sumado para todos los productos).</p>
+                        <p><span className="fw-bold">Lista:</span>Se utiliza para almacenar las tuplas de usuarios y sus roles..</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                        <p><span className="fw-bold">Tupla:</span>Cada tupla contiene dos elementos: el nombre del usuario y su rol.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                        <p><span className="fw-bold">Lista de roles:</span> Para manejar los diferentes roles disponibles en el sistema.</p>
                         </li>
                       </ul>
                       <p className="text-break mx-auto w-75">El programa debe tener un bucle para que no termine de consultar el inventario hasta que no lo diga el usuario.</p>

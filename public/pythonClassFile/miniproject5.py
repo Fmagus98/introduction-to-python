@@ -1,56 +1,46 @@
-# Inicializar el inventario como una lista vacía
-inventario = []
+usuarios = []
+roles_disponibles = ["Jefe", "Encargado", "Operador"]
 
-def agregar_producto(nombre, cantidad, precio):
-    # Crear una tupla para el nuevo producto
-    producto = (nombre, cantidad, precio)
-    # Agregar la tupla a la lista del inventario
-    inventario.append(producto)
-    print(f"Producto '{nombre}' agregado con éxito.")
-
-def listar_productos():
-    if inventario:
-        print("\nInventario de Productos:")
-        for producto in inventario:
-            print(f"Nombre: {producto[0]}, Cantidad: {producto[1]}, Precio por unidad: ${producto[2]:.2f}")
+def agregar_usuario(nombre, rol):
+    if rol.capitalize() in roles_disponibles:
+        usuario = (nombre, rol)
+        usuarios.append(usuario)
+        print(f"Usuario '{nombre}' con rol '{rol}' agregado con éxito.")
     else:
-        print("\nEl inventario está vacío.")
+        print(f"Error: El rol '{rol}' no es válido. Roles válidos: {roles_disponibles}")
 
-def buscar_producto(nombre):
-    for producto in inventario:
-        if producto[0].lower() == nombre.lower():
-            print(f"\nProducto encontrado: Nombre: {producto[0]}, Cantidad: {producto[1]}, Precio por unidad: ${producto[2]:.2f}")
-            return
-    print(f"\nProducto '{nombre}' no encontrado en el inventario.")
+def listar_usuarios():
+    if usuarios:
+        print("\nLista de Usuarios y Roles:")
+        for usuario in usuarios:
+            print(f"Usuario: {usuario[0]}, Rol: {usuario[1]}")
+    else:
+        print("\nNo hay usuarios en el sistema.")
 
-def calcular_valor_total():
-    valor_total = sum(producto[1] * producto[2] for producto in inventario)
-    print(f"\nEl valor total del inventario es: ${valor_total:.2f}")
+def listar_roles():
+    print("\nRoles Disponibles:")
+    for rol in roles_disponibles:
+        print(f"- {rol}")
 
 def menu():
     while True:
-        print("\n--- Menú del Inventario ---")
-        print("1. Agregar Producto")
-        print("2. Listar Productos")
-        print("3. Buscar Producto")
-        print("4. Calcular Valor Total del Inventario")
-        print("5. Salir")
-        opcion = input("Selecciona una opción (1-5): ")
+        print("\n--- Menú de Gestión de Usuarios ---")
+        print("1. Agregar Usuario")
+        print("2. Listar Usuarios")
+        print("3. Listar Roles Disponibles")
+        print("4. Salir")
+        opcion = input("Selecciona una opción (1-4): ")
 
         if opcion == '1':
-            nombre = input("Ingresa el nombre del producto: ")
-            cantidad = int(input("Ingresa la cantidad: "))
-            precio = float(input("Ingresa el precio por unidad: "))
-            agregar_producto(nombre, cantidad, precio)
+            nombre = input("Ingresa el nombre del usuario: ")
+            rol = input("Ingresa el rol del usuario: ")
+            agregar_usuario(nombre, rol)
         elif opcion == '2':
-            listar_productos()
+            listar_usuarios()
         elif opcion == '3':
-            nombre = input("Ingresa el nombre del producto a buscar: ")
-            buscar_producto(nombre)
+            listar_roles()
         elif opcion == '4':
-            calcular_valor_total()
-        elif opcion == '5':
-            print("Saliendo del sistema de inventario.")
+            print("Saliendo del sistema de gestión de usuarios.")
             break
         else:
             print("Opción no válida. Inténtalo de nuevo.")

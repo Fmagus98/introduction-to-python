@@ -249,16 +249,73 @@ const Class6 = () => {
                   </div>
                 </div>
                 <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
-                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseSeven">
-                    <h2 className="text-light">Evaluación de Conocimientos: Clase 6 - Diccionarios y conjuntos</h2>
+                  <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseSix">
+                    <h2 className="text-light">Mini Proyecto 6: Inventario de productos</h2>
                   </button>
                   <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div className="accordion-body text-light bg-dark ">
+                      <h3 className="text-break mx-auto w-75">Objetivo:</h3>
+                      <p className="text-break mx-auto w-75">Crear un sistema que permita gestionar un inventario de productos. El sistema permitirá agregar,actualizar y eliminar productos, listar todos los productos, buscar productos por nombre y calcular el valor total del inventario.</p>
+                      <ul className="text-break mx-auto w-75">Agregar Producto:
+                        <li className="text-break mx-auto w-75">
+                          <p>Permitir al usuario agregar un nuevo producto al inventario.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p>Cada producto se representará como un diccionario con el formato: {'{"nombre": "xxxx", "cantidad":00, "precio por unidad":0000}'}.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p>La lista de productos será el inventario.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75">Actualizar Producto:
+                        <li className="text-break mx-auto w-75">
+                          <p>Permitir al usuario actualizar los productos del inventario.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p>En cada producto se puede modificar: Nombre, cantidad y el precio del producto.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75">Eliminar Producto:
+                        <li className="text-break mx-auto w-75">
+                          <p>Permitir al usuario eliminar el producto del inventario.</p>
+                        </li>
+                        <li className="text-break mx-auto w-75">
+                          <p>Se puede eliminar un producto por medio del nombre del producto.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75 mt-4">Listar productos:
+                        <li className="text-break mx-auto w-75">
+                          <p>Mostrar todos los productos en el inventario con su nombre, cantidad y precio por unidad.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75 mt-4">Buscar Producto:
+                        <li className="text-break mx-auto w-75">
+                          <p>Permitir al usuario buscar un producto por su nombre y mostrar los detalles del producto si se encuentra en el inventario.</p>
+                        </li>
+                      </ul>
+                      <ul className="text-break mx-auto w-75 mt-4">Calcular Valor Total del Inventario:
+                        <li className="text-break mx-auto w-75">
+                          <p>Calcular y mostrar el valor total de todos los productos en el inventario (cantidad * precio por unidad para cada producto, sumado para todos los productos).</p>
+                        </li>
+                      </ul>
+                      <p className="text-break mx-auto w-75">El programa debe tener un bucle para que no termine de consultar el inventario hasta que no lo diga el usuario.</p>
+                      <p className="text-break mx-auto w-75">Descarga un ejemplo del mini proyecto desde acá --
+                        <Link to="/pythonClassFile/miniproject6.py" target={"_blank"} download={"miniproject6.py"} className="text-primary" > Calculadora</Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                  <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <h2 className="text-light">Evaluación de Conocimientos: Clase 6 - Diccionarios y conjuntos</h2>
+                  </button>
+                  <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body text-light bg-dark ">
                       <QuizForm />
                     </div>
                   </div>
                 </div>
-                <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                   <Link to="/pythonClassFile/class6.py"
                     target={"_blank"}
                     download={"class6.py"}>
