@@ -287,7 +287,7 @@ const Class5 = () => {
                       </ul>
                       <p className="text-break mx-auto w-75">El programa debe tener un bucle para que no termine de consultar el inventario hasta que no lo diga el usuario.</p>
                       <p className="text-break mx-auto w-75">Descarga un ejemplo del mini proyecto desde acá --
-                        <Link to="/pythonClassFile/miniproject5.py" target={"_blank"} download={"miniproject5.py"} className="text-primary" > Calculadora</Link>
+                        <Link to="/pythonClassFile/miniproject5.py" target={"_blank"} download={"miniproject5.py"} className="text-primary" > Sistema de gestion de usuarios y roles</Link>
                       </p>
                     </div>
                   </div>
