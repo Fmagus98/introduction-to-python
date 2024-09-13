@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { colorPrimaryPython, colorPrimaryMicropython } from '../../colors'
-import Loggin from '../Loggin/Loggin';
+import Access from '../Access/Access';
 const Navbar = () => {
   const [backgroundColor, setBackgroundColor] = useState('');
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
           <nav id="navbar" className={isMobileNavOpen ? `navbar navbar-mobile h-auto ${location.pathname.includes("micropython") ? 'navbar-mobile-micropython' : ''}` : `navbar`}>
             <ul className={isMobileNavOpen ? 'h-50 ml-6 mr-6' : ''}>
-              <Loggin />
+              <Access />
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython" : "/"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Inicio</Link></li>
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/" : "/micropython"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>{title}</Link></li>
               <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython/classes" : "/classes"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Clases</Link></li>

@@ -23,7 +23,7 @@ const MicropythonClass1 = () => {
 
     return (
         <>{
-            (new Date(date) <= newDate) || localStorage.getItem("access") ?
+            (new Date(date) <= newDate) || localStorage.getItem("access - micropython") ?
                 <>
                     <section section id="hero" style={{ background: colorPrimaryMicropython }} >
                         <div className="container">

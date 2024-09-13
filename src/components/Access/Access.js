@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 
-const Loggin = () => {
+const Access = () => {
     const [password, setPassword] = useState("")
     const [passwordFail, setPasswordFail] = useState("")
     const navigate = useNavigate()
@@ -14,7 +14,6 @@ const Loggin = () => {
     };
 
     let data = location.pathname.includes("micropython") ? "passwordMicropython" : "passwordPython"
-
     const failStatus = () => {
         setPasswordFail(true)
         setPassword("")
@@ -32,7 +31,7 @@ const Loggin = () => {
                         const pythonData = doc.data();
                         if (pythonData.password === password) {
                             info = true
-                            localStorage.setItem("access", "Total access")
+                            localStorage.setItem(`access${location.pathname.includes("micropython")?" - micropython":null}`, "Total access")
                             localStorage.setItem(data, pythonData.password)
                             !location.pathname.includes("micropython") ? navigate('/', { replace: true }) : navigate('/micropython', { replace: true })
                             setPassword("")
@@ -63,4 +62,4 @@ const Loggin = () => {
     )
 }
 
-export default Loggin
+export default Access
