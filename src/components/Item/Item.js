@@ -15,7 +15,7 @@ const Item = ({ item }) => {
   const itemDate = (new Date >= new Date(item.date))||(localStorage.getItem("access") && !location.pathname.includes("micropython") && !location.pathname.includes("github"))?
     <Link to={`${redirect}${item.id}`} onClick={handleLinkClick} className='mx-auto class-teory card w-75' style={{background:location.pathname.includes("micropython")?"#B34229":"#012973"}}>
       <div className="card-body">
-        <h4 className="text-center mb-2">{item.class}</h4>
+        <h3 className="text-center mb-2">{item.class}</h3>
         <ul className="intr-ul">
           <li className="text-center">{item.content[0]}</li>
           <li className="text-center">{item.content[1]}</li>
@@ -25,7 +25,7 @@ const Item = ({ item }) => {
     </Link>
     :
     <div className="mx-auto class-teory-null bg-dark text-light card w-75" ><div className="card-body">
-      <h4 className="text-center mb-2">{item.class}</h4>
+      <h3 className="text-center mb-2">{item.class}</h3>
       <ul className="intr-ul">
         <li className="text-center">{item.content[0]}</li>
         <li className="text-center">{item.content[1]}</li>

@@ -30,6 +30,9 @@ h1 {
   font-size: 3.8vw;
 }
 
+h3 {
+  font-size: calc(1.275rem + .3vw);
+}
 /* Estilos para la consola */
 .console{
   width:75%;
