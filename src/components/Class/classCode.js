@@ -1304,7 +1304,7 @@ diccionario = {
 }
 print(diccionario.pop("apellido", "no existe")) # elimina la clave "apellido"
 # En el caso de no existir, retorna un valor que en este caso es "no existe"
-diccionario.pop({"estado_civil", "no existe") # elimina la clave "estado_civil"
+diccionario.pop({"estado_civil", "no existe"}) # elimina la clave "estado_civil"
 # En el caso de no existir, retorna un valor que en este caso es "no existe"
 print(diccionario) # devuelve el diccionario sin las claves puestas en el método pop
 # respuesta {'nombre': 'agustina', 'edad': 42, 'profesion': 'RRHH'}
@@ -1370,7 +1370,7 @@ print(diccionario) # resultado: {"a": 0, "b": 0, "c": 0}
 
 # Estructura de conjunto
 
-conjunto = [75,6,47,38,16,58,94,63,29,28,1,24,83,5,90]
+conjunto = {75,6,47,38,16,58,94,63,29,28,1,24,83,5,90}
 
 `,
 `
