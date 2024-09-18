@@ -392,7 +392,7 @@ export const questionsPythonClass3 = [
         answer: "match"
     },
     {
-        question: "7. ¿Cuál es la salida del siguiente código?\n\nx = 'a'\nmatch x:\n   case 'a':\n       print('Es a')\n   case 'b':\n       print('Es b')\n   case _: \n       print('Otro valor')\n\n",
+        question: "7. ¿Cuál es la salida del siguiente código?\n\nx = 'a'\nmatch x:\n    case 'a':\n        print('Es a')\n    case 'b':\n        print('Es b')\n    case _: \n        print('Otro valor')\n\n",
         options: [
             "Es a",
             "Es b",
@@ -405,7 +405,7 @@ export const questionsPythonClass3 = [
         question: "8. ¿Qué se imprime si ninguna coincidencia se cumple en una declaración match-case?",
         options: [
             "Se lanza un error",
-            "No se imprime nada",
+            "Se ejecuta el segundo caso",
             "Se ejecuta el caso por defecto (_) si existe",
             "Se ejecuta el primer caso"
         ],
@@ -592,7 +592,7 @@ export const questionsPythonClass3 = [
         answer: "0\n1\n2\n3"
     },
     {
-        question: "27. ¿Cuál es la salida del siguiente código?\n\nfor x in range(3):\n   match x:\n       case 0:\n           print('Cero')\n       case 1:\n           print('Uno')\n       case 2:\n           print('Dos')\n\n",
+        question: "27. ¿Cuál es la salida del siguiente código?\n\nfor x in range(3):\n    match x:\n        case 0:\n            print('Cero')\n        case 1:\n            print('Uno')\n        case 2:\n            print('Dos')\n\n",
         options: [
             "Cero\nUno\nDos",
             "Cero\nUno",
@@ -966,7 +966,7 @@ export const questionsPythonClass6 = [
             options: [
                 "mi_dicc['clave']",
                 "mi_dicc.clave",
-                "mi_dicc.get('clave')",
+                "mi_dicc.getme('valor')",
                 "mi_dicc('valor')"
             ],
             answer: "mi_dicc['clave']"

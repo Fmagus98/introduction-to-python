@@ -4,6 +4,9 @@ import { colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import useScrollAnimation from '../../useScrollAnimation'
+import { class2Code, class3Code } from '../Class/classCode'
+import { class2MCode } from './MicropythonClassCode'
+import CopyButton from '../CopyButton/CopyButton'
 
 const MicropythonClass2 = () => {
 
@@ -66,153 +69,168 @@ const MicropythonClass2 = () => {
                                 <p>Contenido</p>
                             </div>
                             <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample" >
-                                <div id="element2" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent text-light"type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element2" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Variables</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
-                                                <p className="text-center mx-auto w-75">En el contexto de la programación, una variable es un contenedor para almacenar y manipular datos. Imagina una variable como una caja etiquetada en la memoria del equipo, donde puedes guardar diferentes tipos de información, como números, texto o valores booleanos. En un programa, puedes declarar una variable y asignarle un valor para luego utilizarlo en diferentes partes del código.</p>
-                                                <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Cuando declaras una variable en un lenguaje de programación, se reserva un espacio en la memoria para almacenar su valor. La ubicación exacta en la memoria puede variar dependiendo del lenguaje y del entorno de ejecución. Sin embargo, el proceso general para acceder al valor de una variable implica el uso de la CPU y la RAM del equipo.</p>
-                                                <h2 className="text-center mx-auto">Funcionamiento de hardware</h2>
-                                                <p className="text-center mx-auto w-75">CPU (Unidad Central de Procesamiento): La CPU es el componente principal del hardware que ejecuta las instrucciones de un programa. Cuando accedes a una variable, la CPU utiliza registros internos para almacenar temporalmente el valor de la variable que se va a procesar. Los registros son ubicaciones de memoria extremadamente rápidas y cercanas a la CPU, lo que permite un acceso más rápido a los datos.</p>
-                                                <p className="text-center mx-auto w-75">RAM (Memoria de Acceso Aleatorio): La RAM es un tipo de memoria de almacenamiento temporal que almacena tanto el programa en ejecución como los datos necesarios para el programa. Cuando se necesita el valor de una variable, la CPU busca en la RAM la ubicación de memoria reservada para esa variable y recupera el valor almacenado allí. Esto implica acceder a la dirección de memoria correspondiente a la variable y obtener los datos almacenados en esa ubicación.</p>
-                                                <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/variable.webp"></img>
+                                                <h3 className="text-break mx-auto w-75 mt-4">¿Que es una variable?</h3>
+                                                <p className="text-break mx-auto w-75">En el contexto de la programación, una variable es un contenedor para almacenar y manipular datos. Imagina una variable como una caja etiquetada en la memoria del equipo, donde puedes guardar diferentes tipos de información, como números, texto o valores booleanos. En un programa, puedes declarar una variable y asignarle un valor para luego utilizarlo en diferentes partes del código.</p>
+                                                <p className="text-break mb-4 mx-auto w-75">Cuando declaras una variable en un lenguaje de programación, se reserva un espacio en la memoria para almacenar su valor. La ubicación exacta en la memoria puede variar dependiendo del lenguaje y del entorno de ejecución. Sin embargo, el proceso general para acceder al valor de una variable implica el uso de la CPU y la RAM del equipo.</p>
+                                                <h3 className="text-break mt-4 mx-auto w-75">Funcionamiento de hardware</h3>
+                                                <p className="text-break mx-auto w-75">CPU (Unidad Central de Procesamiento): La CPU es el componente principal del hardware que ejecuta las instrucciones de un programa. Cuando accedes a una variable, la CPU utiliza registros internos para almacenar temporalmente el valor de la variable que se va a procesar. Los registros son ubicaciones de memoria extremadamente rápidas y cercanas a la CPU, lo que permite un acceso más rápido a los datos.</p>
+                                                <p className="text-break mx-auto w-75">RAM (Memoria de Acceso Aleatorio): La RAM es un tipo de memoria de almacenamiento temporal que almacena tanto el programa en ejecución como los datos necesarios para el programa. Cuando se necesita el valor de una variable, la CPU busca en la RAM la ubicación de memoria reservada para esa variable y recupera el valor almacenado allí. Esto implica acceder a la dirección de memoria correspondiente a la variable y obtener los datos almacenados en esa ubicación.</p>
+                                                <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/variable.webp"></img>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}>
+                                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Estilo de escritura</h2>
                                     </button>
                                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
-                                            <p className="text-center mx-auto w-75">Un estilo de escritura en programación es una convención de codificación que se utiliza para dar formato y estructurar el código
-                                                fuente. Estas convenciones de estilo de codificación ayudan a que el código sea más legible y entendible para los programadores.</p>
-                                            <p className="text-center mx-auto w-75">Las convenciones de estilo de codificación incluyen reglas para nombrar variables, funciones, clases, métodos, constantes, etc.
+                                            <h3 className="text-break mx-auto w-75 mt-4">Convenciones de Estilo de Escritura en Python</h3>
+                                            <p className="text-break mx-auto w-75">Las convenciones de estilo de codificación incluyen reglas para nombrar variables, funciones, clases, métodos, constantes, etc.
                                                 También pueden incluir reglas para la indentación, el espaciado, la longitud máxima de línea, entre otros aspectos.</p>
-                                            <p className="text-center mx-auto w-75">En general, las convenciones de estilo de codificación se utilizan para estandarizar la forma en que se escribe el código dentro
+                                            <p className="text-break mx-auto w-75">En general, las convenciones de estilo de codificación se utilizan para estandarizar la forma en que se escribe el código dentro
                                                 de un proyecto o una organización, lo que facilita la colaboración y el mantenimiento del código a largo plazo. Además, siguiendo estas convenciones, el código puede
                                                 ser más fácilmente legible y comprensible por otros programadores, lo que es especialmente importante en proyectos de equipo.</p>
-                                            <p className="text-center mx-auto w-75">En el caso de python, tenemos 3 tipos de estilos de escritura<br></br>
-                                                upper case: Se utiliza cuando nombramos una variable o función llamada con una palabra.<br></br>
-                                                snake case: Cuando nombramos una variable llamada con más de 1 palabra se utilizará "snake case".<br></br>
-                                                pascal case: Este estilo de escritura se utilizará solamente cuando creamos una clase.
+                                            <p className="text-break mx-auto w-75">En el caso de python, tenemos 3 tipos de estilos de escritura<br></br>
                                             </p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../../img/class2/namingConventions.webp"></img>
-                                            <p className="text-center mx-auto w-75">También tenemos que saber que el lenguaje de python es camel sensitive, esto que quiere decir? Al ser camel sensitive python es sensible a las mayúsculas y minúsculas y es importante
+                                            <p className="text-break mx-auto w-50">
+                                                <span className="fw-bold">Upper case:</span> Se utiliza cuando nombramos una variable o función llamada con una palabra.
+                                            </p>
+                                            <p className="text-break mx-auto w-50">
+                                                <span className="fw-bold">Snake case:</span> Cuando nombramos una variable llamada con más de 1 palabra se utilizará "snake case".<br></br>
+                                            </p>
+                                            <p className="text-break mx-auto w-50">
+                                                <span className="fw-bold">Pascal case:</span> Este estilo de escritura se utilizará solamente cuando creamos una clase.
+                                            </p>
+                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class2/namingConventions.webp"></img>
+                                            <p className="mt-4 text-break mx-auto w-75">También tenemos que saber que el lenguaje de python es camel sensitive, esto que quiere decir? Al ser camel sensitive python es sensible a las mayúsculas y minúsculas y es importante
                                                 evitar nombrar dos o más variables con el mismo nombre en un mismo ámbito en la programación, incluso si se utilizan diferentes tipos de escritura (como mayúsculas y minúsculas o
                                                 snake case vs. camel case), ya que esto puede llevar a confusiones y dificultades para identificar qué variable contiene qué valor.
                                             </p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../../img/class2/practice.webp"></img>
-                                            <p className="text-center mx-auto w-75">Nombrar variables con nombres distintos y descriptivos ayudará a mantener un código más organizado y fácil de leer y entender, lo que será beneficioso para la mantenibilidad y escalabilidad del código a largo plazo.
+                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class2/practice.webp"></img>
+                                            <p className="mt-4 text-break mx-auto w-75">Nombrar variables con nombres distintos y descriptivos ayudará a mantener un código más organizado y fácil de leer y entender, lo que será beneficioso para la mantenibilidad y escalabilidad del código a largo plazo.
                                             </p>
-                                            <p className="text-center mx-auto w-75">También en python existen palabras reservadas que debemos evitar al nombrar variables, ya que podrías tener problemas en el código.
+                                            <p className="text-break mx-auto w-75">También en python existen palabras reservadas que debemos evitar al nombrar variables, ya que podrías tener problemas en el código.
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/letterNot.webp"></img>
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/letterNot.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}>
+                                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2  className="text-light">Tipos de datos</h2>
+                                        <h2 className="text-light">Tipos de datos</h2>
                                     </button>
                                     <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light">
-                                            <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Vamos a ver entonces cuáles son los tipos de datos que Python nos provee.<br></br>Por el momento vamos a hablar de 4 tipos de datos básicos que también
-                                                llamamos tipos primitivos (Boolean - Integer - Float - String).</p>
-                                            <h2 className="text-center mx-auto">Booleano</h2>
-                                            <p className="text-center mx-auto w-75">Este es el primer tipo de dato que vamos a ver y se asemeja al lenguaje máquina, ya que su comportamiento es de forma binaria
+                                            <h3 className="text-break mx-auto w-75 mt-4">Booleano</h3>
+                                            <p className="text-break mx-auto w-75">Este es el primer tipo de dato que vamos a ver y se asemeja al lenguaje máquina, ya que su comportamiento es de forma binaria
                                                 como la máquina (0,1) pero tiene la particularidad de que no vamos a escribir 0 y 1,  sino que utilizaremos la palabra False para representar el 0 y True para representar el 1.
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/boolean.webp"></img>
-                                            <h2 className="text-center mx-auto">Integer/float</h2>
-                                            <p className="text-center mx-auto w-75">Cuando queramos representar números vamos a usar el tipo dato "int" o el tipo de dato "float".
+                                            <CopyButton code={class2Code[0]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class2/boolean.webp"></img>
+                                            <h3 className="text-break mx-auto w-75" >Integer/float</h3>
+                                            <p className="text-break mx-auto w-75">Cuando queramos representar números vamos a usar el tipo dato "int" o el tipo de dato "float".
                                                 El tipo de dato Int representará todos los números enteros, estos pueden ser tanto positivos como negativos;
                                                 El tipo de dato Float representará todos los números fraccionarios, estos pueden ser positivos, negativos y mostrados como decimales también.
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/int.webp"></img>
-                                            <h2 className="text-center mx-auto">String</h2>
-                                            <p className="text-center mx-auto w-75">String: Este tipo de datos representa letras o texto, hay que tener en cuenta que podemos tipear
+                                            <CopyButton code={class2Code[1]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class2/int.webp"></img>
+                                            <h3 className="text-break mx-auto w-75">String</h3>
+                                            <p className="text-break mx-auto w-75">String: Este tipo de datos representa letras o texto, hay que tener en cuenta que podemos tipear
                                                 también números pero estos no se comportarán como números y no podremos realizar operaciones matemáticas dentro de ella, para describir
                                                 que el tipo de dato es un string debemos poner el texto entre comillas o doble comillas(" ", "" "") si es que va a estar escrito en una
                                                 linea de código y triple comillas(""" """) en el caso de que queramos escribir en varias líneas de código".
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/str.webp"></img>
-                                            <h2 className="text-center mx-auto">type()</h2>
-                                            <p className="text-center mx-auto w-75">A la hora de no saber qué tipo de dato contiene una variable podemos utilizar una función type,
+                                            <CopyButton code={class2Code[2]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class2/str.webp"></img>
+                                            <h3 className="text-break mx-auto w-75">Type()</h3>
+                                            <p className="text-break mx-auto w-75">A la hora de no saber qué tipo de dato contiene una variable podemos utilizar una función type,
                                                 para esto debemos escribir de la siguiente forma:  type(var), "var" va a representar el nombre de la variable que contenga el dato que queremos saber,
                                                 acá te mostraré un ejemplo de ello:
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/type.webp"></img>
+                                            <CopyButton code={class2Code[3]} />
+                                            <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/type.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}>
+                                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        <h2  className="text-light">Operadores y expresiones</h2>
+                                        <h2 className="text-light">Operadores y expresiones</h2>
                                     </button>
                                     <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
-                                            <p className="text-center mx-auto w-75">En Python, los operadores son símbolos especiales que realizan operaciones en valores y variables.
+                                            <p className="text-break mx-auto w-75 mt-4">En Python, los operadores son símbolos especiales que realizan operaciones en valores y variables.
                                                 Las expresiones, por otro lado, son combinaciones de valores, variables y operadores que Python puede evaluar y dar un resultado.
                                             </p>
-                                            <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Existen varios tipos de operadores en Python, entre los más comunes se encuentran operadores:
+                                            <p className="text-break mx-auto w-75 mb-4">Existen varios tipos de operadores en Python, entre los más comunes se encuentran operadores:
                                                 aritméticos, de comparación, lógicos y de asignación.
                                             </p>
-                                            <h2 className="text-center mx-auto">Operadores aritméticos</h2>
-                                            <p className="text-center mx-auto w-75">Estos operadores se utilizan para realizar operaciones matemáticas básicas como la suma (+),
+                                            <h3 className="text-break mx-auto w-75">Operadores aritméticos</h3>
+                                            <p className="text-break mx-auto w-75">Estos operadores se utilizan para realizar operaciones matemáticas básicas como la suma (+),
                                                 la resta (-), la multiplicación (*), la división (/), el módulo (%) y la potencia (**).
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/opArit.webp"></img>
-                                            <h2 className="text-center mx-auto">Operadores de comparación</h2>
-                                            <p className="text-center mx-auto w-75">Se utilizan para comparar dos valores y devolver un valor booleano (verdadero o falso) como resultado. Algunos operadores de comparación comunes son el igual a (==), el distinto a (!=), mayor que (&gt;), menor que (&lt;), mayor o igual que (&gt;=) y menor o igual que (&lt;=).
+                                            <CopyButton code={class2Code[4]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class2/opArit.webp"></img>
+                                            <h3 className="text-break mx-auto w-75">Operadores de comparación</h3>
+                                            <p className="text-break mx-auto w-75">Se utilizan para comparar dos valores y devolver un valor booleano (verdadero o falso) como resultado. Algunos operadores de comparación comunes son el igual a (==), el distinto a (!=), mayor que (&gt;), menor que (&lt;), mayor o igual que (&gt;=) y menor o igual que (&lt;=).
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/opComp.webp"></img>
-                                            <h2 className="text-center mx-auto">Operadores lógicos</h2>
-                                            <p className="text-center mx-auto w-75">Se utilizan para combinar valores booleanos y devolver un valor booleano como resultado. Los operadores lógicos más comunes son "and", "or" y "not".
+                                            <CopyButton code={class2Code[5]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class2/opComp.webp"></img>
+                                            <h3 className="text-break mx-auto w-75">Operadores lógicos</h3>
+                                            <p className="text-break mx-auto w-75">Se utilizan para combinar valores booleanos y devolver un valor booleano como resultado. Los operadores lógicos más comunes son "and", "or" y "not".
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/opLog.webp"></img>
+                                            <CopyButton code={class2Code[6]} />
+                                            <img className="w-75 d-block mx-auto  border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/opLog.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
+                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2  className="text-light">Entrada y salida en terminal</h2>
+                                        <h2 className="text-light">Entrada y salida en terminal</h2>
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h2 className=" text-center">Salida de datos - print()</h2>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
                                                 con el objetivo de poder representar la información que el script nos quiere
                                                 mostrar o poder ingresar alguna acción al programa por medio del teclado u otra entrada,
                                                 en este contenido veremos las instrucciones de entradas y salidas de python más comunes
                                                 que usaremos a lo largo del curso.
                                             </p>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Salida de datos: La función print() es sin duda una de las instrucciones más sencillas y que usaremos en el curso,
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Salida de datos: La función print() es sin duda una de las instrucciones más sencillas y que usaremos en el curso,
                                                 ya que nos permite mostrar información por consola como mensajes, números o valores de una
                                                 variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
                                             </p>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar el programa debemos tocar f5. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/print.jpg"></img>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Para ejecutar el programa debemos tocar f5. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
+                                            <CopyButton code={class2MCode[0]} />
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/print.webp"></img>
                                             <h2 className=" text-center">Comentarios - #, """ """</h2>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
                                                 Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
                                             </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p7.webp"></img>
+                                            <CopyButton code={class2MCode[1]} />
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/comment.webp"></img>
                                             <h2 className=" text-center">Entrada de datos - input()</h2>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">La función input() permite obtener información
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">La función input() permite obtener información
                                                 en la terminal desde el teclado, al momento de ejecutarse esta línea en la consola esperara
                                                 que ingresemos el texto que necesitemos y demos un enter para continuar y guardar el valor
                                                 capturado en una variable de programa.
                                             </p>
+                                            <CopyButton code={class2MCode[2]} />
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/input.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }}  >
-                                    <button className="accordion-button mt-4 collapsed bg-transparent text-light"type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button mt-4 collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >Condicionales</h2>
                                     </button>
                                     <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -227,47 +245,50 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
+                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2  className="text-light">If else y elif</h2>
+                                        <h2 className="text-light">If else elif y match</h2>
                                     </button>
                                     <div id="a6" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
-                                            <h2 className="text-center mx-auto mt-4 ">If</h2>
-                                            <p className="text-center mx-auto w-75">La palabra clave if se utiliza para iniciar una estructura condicional. Nos permite especificar una condición que se evalúa como verdadera o falsa. Si la condición es verdadera, se ejecuta el bloque de código indentado bajo el if. Si la condición es falsa, se omite ese bloque y el programa continúa con la siguiente instrucción después del if. Aquí tienes un ejemplo:</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../../img/class3/if.webp"></img>
-                                            <h2 className="text-center mx-auto mt-4 ">Else</h2>
-                                            <p className="text-center mx-auto w-75">La palabra clave else se utiliza junto con if y nos permite especificar un bloque de código que se ejecuta cuando la condición del if es falsa. Si la condición del if es verdadera, se omite el bloque de código bajo el else. Aquí tienes un ejemplo:</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../../img/class3/else.webp"></img>
-                                            <h2 className="text-center mx-auto mt-4 ">Elif</h2>
-                                            <p className="text-center mx-auto w-75">La palabra clave elif es una abreviatura de "else if" y se utiliza para agregar condiciones adicionales después del if. Se utiliza cuando hay múltiples condiciones que queremos evaluar secuencialmente. Si alguna de las condiciones anteriores es verdadera, se omite el bloque de código bajo el elif y se continúa con la siguiente instrucción después de la estructura condicional. Aquí tienes un ejemplo:</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../../img/class3/elif.webp"></img>
+                                            <h3 className="text-break mx-auto w-75 mt-4">If</h3>
+                                            <p className="text-break mx-auto w-75">La palabra clave if se utiliza para iniciar una estructura condicional. Nos permite especificar una condición que se evalúa como verdadera o falsa. Si la condición es verdadera, se ejecuta el bloque de código indentado bajo el if. Si la condición es falsa, se omite ese bloque y el programa continúa con la siguiente instrucción después del if. Aquí tienes un ejemplo:</p>
+                                            <CopyButton code={class3Code[0]} />
+                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class3/if.webp"></img>
+                                            <h3 className="text-break mx-auto w-75 mt-4 ">Else</h3>
+                                            <p className="text-break mx-auto w-75">La palabra clave else se utiliza junto con if y nos permite especificar un bloque de código que se ejecuta cuando la condición del if es falsa. Si la condición del if es verdadera, se omite el bloque de código bajo el else. Aquí tienes un ejemplo:</p>
+                                            <CopyButton code={class3Code[1]} />
+                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class3/else.webp"></img>
+                                            <h3 className="text-break mx-auto w-75 mt-4 ">Elif</h3>
+                                            <p className="text-break mx-auto w-75">La palabra clave elif es una abreviatura de "else if" y se utiliza para agregar condiciones adicionales después del if. Se utiliza cuando hay múltiples condiciones que queremos evaluar secuencialmente. Si alguna de las condiciones anteriores es verdadera, se omite el bloque de código bajo el elif y se continúa con la siguiente instrucción después de la estructura condicional. Aquí tienes un ejemplo:</p>
+                                            <CopyButton code={class3Code[2]} />
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class3/elif.webp"></img>
+                                            <h3 className="text-break mx-auto w-75 mt-4 ">Match</h3>
+                                            <p className="text-break mx-auto w-75">Match es una nueva estructura de control introducida en Python 3.10, que permite la coincidencia de patrones. Esta estructura es similar a switch en otros lenguajes de programación, pero es más poderosa y flexible. match permite comparar un valor con una serie de patrones y ejecutar el bloque de código correspondiente al primer patrón que coincida.</p>
+                                            <CopyButton code={class3Code[3]} />
+                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class3/match.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent text-light"type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >Ejecución del segundo programa</h2>
                                     </button>
                                     <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
-                                                <p className="text-center mx-auto w-75">En el contexto de la programación, una variable es un contenedor para almacenar y manipular datos. Imagina una variable como una caja etiquetada en la memoria del equipo, donde puedes guardar diferentes tipos de información, como números, texto o valores booleanos. En un programa, puedes declarar una variable y asignarle un valor para luego utilizarlo en diferentes partes del código.</p>
-                                                <p className="text-center mx-auto w-75" style={{ marginBottom: "7rem" }}>Cuando declaras una variable en un lenguaje de programación, se reserva un espacio en la memoria para almacenar su valor. La ubicación exacta en la memoria puede variar dependiendo del lenguaje y del entorno de ejecución. Sin embargo, el proceso general para acceder al valor de una variable implica el uso de la CPU y la RAM del equipo.</p>
-                                                <h2 className="text-center mx-auto">Funcionamiento de hardware</h2>
-                                                <p className="text-center mx-auto w-75">CPU (Unidad Central de Procesamiento): La CPU es el componente principal del hardware que ejecuta las instrucciones de un programa. Cuando accedes a una variable, la CPU utiliza registros internos para almacenar temporalmente el valor de la variable que se va a procesar. Los registros son ubicaciones de memoria extremadamente rápidas y cercanas a la CPU, lo que permite un acceso más rápido a los datos.</p>
-                                                <p className="text-center mx-auto w-75">RAM (Memoria de Acceso Aleatorio): La RAM es un tipo de memoria de almacenamiento temporal que almacena tanto el programa en ejecución como los datos necesarios para el programa. Cuando se necesita el valor de una variable, la CPU busca en la RAM la ubicación de memoria reservada para esa variable y recupera el valor almacenado allí. Esto implica acceder a la dirección de memoria correspondiente a la variable y obtener los datos almacenados en esa ubicación.</p>
-                                                <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/variable.webp"></img>
+                                                <h2 className="text-center mx-auto">Esquema del programa</h2>
+                                                <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/program1.webp"></img>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
+                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <Link to="/pythonClassFile/class1.py"
                                         target={"_blank"}
                                         download={"class1.py"}>
                                         <button className="accordion-button collapsed bg-transparent" type="button">
-                                            <h2  className="text-light">Descarga el archivo de la clase 2</h2>
+                                            <h2 className="text-light">Descarga el archivo de la clase 2</h2>
                                         </button>
                                     </Link>
                                 </div>

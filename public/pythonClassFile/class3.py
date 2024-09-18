@@ -40,6 +40,23 @@ elif x < 0: # condicion elif, en el caso de que si if es falso y sea x >0, ejecu
 else: # condicion else, en el caso de que si if y elif sea falso, ejecuta la siguiente linea de código
     print("x es cero") # ejecución de código si ninguna de las otras condiciones no se cumplen.
 
+# Match
+numero = int(input("introduce un número: "))
+match numero:
+    case 0:
+        print("Cero")
+    case 1:
+        print("Uno")
+    case 2 | 3:
+        print("Dos o tres")
+    case 4:
+        print("Cuatro")
+    case _ if numero < 0:
+        print("Es un número negativo")
+    case _:
+        print("No es 0,1,2,3,4 o un número negativo")
+
+
 
 # ---- bucles ----
 
