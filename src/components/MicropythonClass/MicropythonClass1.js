@@ -94,11 +94,11 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element9" className={`accordion-item animated-left mt-4 ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element3" className={`accordion-item animated-left mt-4 ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >Caracteristicas de Micropython</h2>
                                     </button>
-                                    <div id="a9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Lenguaje Python</h3>
                                             <p className="text-break mx-auto w-75">MicroPython es compatible con el lenguaje de programación Python 3, lo que significa que puedes escribir código en Python estándar para controlar hardware y dispositivos embebidos.</p>
@@ -115,11 +115,11 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Aplicaciones en el ámbito laboral</h2>
                                     </button>
-                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="text-break mx-auto w-75">MicroPython tiene aplicaciones en una variedad de campos y desempeña un papel importante en el mundo laboral en varias áreas. A continuación, se presentan algunas de las aplicaciones y casos de uso más comunes de MicroPython en el mundo laboral:</p>
                                             <h3 className="mt-7 mb-4 fw-bold text-center">Desarrollo de dispositivos IoT (Internet de las cosas)</h3>
@@ -146,11 +146,11 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">Plataformas de hardware compatibles con MicroPython</h2>
                                     </button>
-                                    <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <div id="content">
                                                 <p className="text-break mx-auto w-75"> MicroPython es compatible con una amplia variedad de plataformas de hardware, especialmente aquellas que utilizan microcontroladores y microprocesadores. Algunas de las plataformas de hardware compatibles con MicroPython más populares incluyen:</p>
@@ -279,10 +279,10 @@ const MicropythonClass1 = () => {
                                     </div>
                                 </div>
                                 <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Ejecución del primer programa</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Primer programa: parpadeo en LED incorporado</h3>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para crear un archivo nuevo debemos tocar en el "+"</p>
@@ -314,7 +314,45 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        <h2 className="text-light">Simulador de Raspberry pi pico</h2>
+                                    </button>
+                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark ">
+                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>WOKWI - Simulador de raspberry pi pico</h3>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">En el caso que no dispongan de un microcontrolador Raspberry pi pico, pueden crear una simulación del microcontrolador desde la página Wokwi</p>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Para acceder a la página ingresa acá -- <a href="https://wokwi.com/projects/new/micropython-pi-pico" className="text-primary">https://wokwi.com/projects/new/micropython-pi-pico</a></p>
+                                         
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject1.jpg"></img>
+                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Machine - Pin</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-75">"machine" es un módulo que proporciona una interfaz para interactuar con hardware en dispositivos que ejecutan MicroPython, como placas de desarrollo basadas en microcontroladores o microprocesadores. <br></br> Este módulo "machine" facilita el control y la configuración de hardware, como pines GPIO, comunicación serial, temporizadores y otros periféricos.</p>
+                                            <p className="mt-4 mb-2 text-center mx-auto w-75">En este primer programa utilizaremos la función "Pin" del módulo "machine", este será el encargado de controlar los pines de nuestro controlador, para utilizarlo debemos escribir "from machine import Pin".</p>
+                                            <CopyButton code={class1MCode[0]} />
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject2.jpg"></img>
+                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Time</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-75">"time" es un módulo estándar que proporciona funciones relacionadas con la gestión del tiempo y la medición del tiempo en microsegundos, milisegundos y segundos. Este módulo es útil para trabajar con temporizadores, realizar mediciones de tiempo y programar tareas basadas en el tiempo en dispositivos que ejecutan MicroPython.</p>
+                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para empezar a usar este módulo debemos escribir "import time".</p>
+                                            <CopyButton code={class1MCode[1]} />
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject3.jpg"></img>
+                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Print()</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-75">"Print" es una función para mostrar por consola como mensajes, números o valores de una variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.</p>
+                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Esta función la usaremos para informar al usuario que el led está encendido o apagado, para ello debemos escribir en el argumento del print el mensaje entre comillas.</p>
+                                            <CopyButton code={class1MCode[2]} />
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject4.jpg"></img>
+                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para indicar que vamos a usar el LED incorporado que nos provee el raspberry Pi Pico W debemos escribir "Pin("LED",Pin.OUT)".</p>
+                                            <CopyButton code={class1MCode[3]} />
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject5.jpg"></img>
+                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para indicar que vamos a usar el LED incorporado que nos provee el raspberry Pi Pico W debemos escribir "Pin("LED",Pin.OUT)".</p>
+                                            <CopyButton code={class1MCode[4]} />
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject6.jpg"></img>
+                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Escribiremos las veces que queramos apagar y encender nuestro led y ejecutaremos el codigo en el microcontrolador con el botón verde (play), en el caso de querer parar el codigo debemos tocar el botón rojo (stop).</p>
+                                            <CopyButton code={class1MCode[5]} />
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject7.jpg"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <Link to="/micropythonClassFile/class1.py"
                                         target={"_blank"}
                                         download={"class1.py"}>

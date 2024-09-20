@@ -227,7 +227,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                        <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 className="text-light">Virtual mouse</h2>
                             </button>
@@ -269,6 +269,26 @@ const Projects = () => {
                                         <li><p>Si tu dedo indice lo acercas a la palma de la mano, hará click izquierda del mouse.</p></li>
                                         <li><p>Si tu dedo medio lo acercas a la palma de la mano, hará click derecho del mouse.</p></li>
                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
+                            <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <h2 className="text-light">Gestión de estudiantes con base de datos</h2>
+                            </button>
+                            <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div className="accordion-body text-light bg-dark ">
+                                    <h3 className="text-break mx-auto w-75 mt-4">Descripción</h3>
+                                    <p className="text break mx-auto mt-4 w-75">Este programa utiliza SQLite para crear una base de datos local en donde se podrá listar los estudiantes, agregar,eliminar y actualizar los estudiantes.</p>
+                                    <h3 className="text-break mx-auto w-75 mt-4">Instalación</h3>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">1_  </span> Descargá el archivo "gestion_de_estudiantes" desde este link -- <Link to="https://drive.google.com/drive/folders/16LfqFBIRpXk2RpnSp_0emaKwYdbfC9BH" target='_blank' className="text-primary">Gestión de estudiantes</Link>.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/students.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">2_ </span> Después de abrir el archivo desde Visual Studio Code, abre la terminal desde "Terminal/New terminal.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/students2.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">3_ </span> Dentro de la terminal escribe: python gestion_de_estudiantes.py</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/students3.webp"></img>
+                                    <p className="text-break mx-auto w-75"><span className="fw-bold">4_ </span> Al ejecutar en la terminal, se creará la base de datos. En caso que ya esté creada, no será afectada.</p>
+                                    <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../img/projects/students4.webp"></img>
                                 </div>
                             </div>
                         </div>
