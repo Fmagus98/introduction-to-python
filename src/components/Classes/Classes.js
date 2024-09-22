@@ -49,7 +49,6 @@ const Classes = () => {
 
             if ((currentDate - firstDate) <= 4742590612) {
                 setCourse(parsedDates);  
-                console.log(content)
             } else {
                 callFirebase();
             }

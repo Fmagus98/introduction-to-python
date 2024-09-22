@@ -44,7 +44,6 @@ const VirtualAssistant = () => {
 
     const toggleMaximizeChat = () => {
         setMaximizeChat(!maximizeChat)
-        console.log("active")
     };
 
     const handleSend = async () => {

@@ -31,7 +31,7 @@ const Access = () => {
                         const pythonData = doc.data();
                         if (pythonData.password === password) {
                             info = true
-                            localStorage.setItem(`access${location.pathname.includes("micropython")?" - micropython":null}`, "Total access")
+                            localStorage.setItem(`access${location.pathname.includes("micropython")?" - micropython":""}`, "Total access")
                             localStorage.setItem(data, pythonData.password)
                             !location.pathname.includes("micropython") ? navigate('/', { replace: true }) : navigate('/micropython', { replace: true })
                             setPassword("")
