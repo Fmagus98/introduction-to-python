@@ -192,43 +192,6 @@ const MicropythonClass2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2 className="text-light">Entrada y salida en terminal</h2>
-                                    </button>
-                                    <div id="a5" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h2 className=" text-center">Salida de datos - print()</h2>
-                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
-                                                con el objetivo de poder representar la información que el script nos quiere
-                                                mostrar o poder ingresar alguna acción al programa por medio del teclado u otra entrada,
-                                                en este contenido veremos las instrucciones de entradas y salidas de python más comunes
-                                                que usaremos a lo largo del curso.
-                                            </p>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Salida de datos: La función print() es sin duda una de las instrucciones más sencillas y que usaremos en el curso,
-                                                ya que nos permite mostrar información por consola como mensajes, números o valores de una
-                                                variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
-                                            </p>
-                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Para ejecutar el programa debemos tocar f5. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
-                                            <CopyButton code={class2MCode[0]} />
-                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/print.webp"></img>
-                                            <h2 className=" text-center">Comentarios - #, """ """</h2>
-                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
-                                                Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
-                                            </p>
-                                            <CopyButton code={class2MCode[1]} />
-                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/comment.webp"></img>
-                                            <h2 className=" text-center">Entrada de datos - input()</h2>
-                                            <p className="mt-4 mb-4 text-break mx-auto w-75">La función input() permite obtener información
-                                                en la terminal desde el teclado, al momento de ejecutarse esta línea en la consola esperara
-                                                que ingresemos el texto que necesitemos y demos un enter para continuar y guardar el valor
-                                                capturado en una variable de programa.
-                                            </p>
-                                            <CopyButton code={class2MCode[2]} />
-                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/input.webp"></img>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button mt-4 collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >Condicionales</h2>
@@ -284,9 +247,9 @@ const MicropythonClass2 = () => {
                                     </div>
                                 </div>
                                 <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <Link to="/pythonClassFile/class1.py"
+                                    <Link to="/pythonClassFile/class2.py"
                                         target={"_blank"}
-                                        download={"class1.py"}>
+                                        download={"class2.py"}>
                                         <button className="accordion-button collapsed bg-transparent" type="button">
                                             <h2 className="text-light">Descarga el archivo de la clase 2</h2>
                                         </button>

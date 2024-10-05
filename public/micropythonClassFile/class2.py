@@ -174,3 +174,6 @@ match numero:
         print("Es un número negativo")
     case _:
         print("No es 0,1,2,3,4 o un número negativo")
+
+# Machine
+# Este módulo servirá para conectar los puertos del microcontrolador 

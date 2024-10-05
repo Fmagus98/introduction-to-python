@@ -5,7 +5,7 @@ import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
-import { class1MCode } from './MicropythonClassCode'
+import { class1MCode,class2MCode } from './MicropythonClassCode'
 
 const MicropythonClass1 = () => {
 
@@ -200,11 +200,11 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <div id="element11" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseFour">
                                         <h2 className="text-light">Raspberry pi pico</h2>
                                     </button>
-                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Familia de raspberry pi pico</h3>
                                             <p className="text-break mx-auto w-75">La familia Raspberry Pi Pico consta actualmente de cuatro placas; Raspberry Pi Pico (extremo izquierdo), Pico H (centro izquierda), Pico W (centro derecha) y Pico WH (extremo derecho).<br></br>Raspberry Pi Pico es una placa microcontroladora de alto rendimiento y bajo costo con interfaces digitales flexibles.</p>
@@ -278,6 +278,43 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <h2 className="text-light">Entrada y salida en terminal</h2>
+                                    </button>
+                                    <div id="a9" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark ">
+                                            <h2 className=" text-center">Salida de datos - print()</h2>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
+                                                con el objetivo de poder representar la información que el script nos quiere
+                                                mostrar o poder ingresar alguna acción al programa por medio del teclado u otra entrada,
+                                                en este contenido veremos las instrucciones de entradas y salidas de python más comunes
+                                                que usaremos a lo largo del curso.
+                                            </p>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">Salida de datos: La función print() es sin duda una de las instrucciones más sencillas y que usaremos en el curso,
+                                                ya que nos permite mostrar información por consola como mensajes, números o valores de una
+                                                variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
+                                            </p>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Para ejecutar el programa debemos tocar f5. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
+                                            <CopyButton code={class2MCode[0]} />
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/print.webp"></img>
+                                            <h2 className=" text-center">Comentarios - #, """ """</h2>
+                                            <p className="mt-4 mb-2 text-break mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
+                                                Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
+                                            </p>
+                                            <CopyButton code={class2MCode[1]} />
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/comment.webp"></img>
+                                            <h2 className=" text-center">Entrada de datos - input()</h2>
+                                            <p className="mt-4 mb-4 text-break mx-auto w-75">La función input() permite obtener información
+                                                en la terminal desde el teclado, al momento de ejecutarse esta línea en la consola esperara
+                                                que ingresemos el texto que necesitemos y demos un enter para continuar y guardar el valor
+                                                capturado en una variable de programa.
+                                            </p>
+                                            <CopyButton code={class2MCode[2]} />
+                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2Micropython/input.webp"></img>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Ejecución del primer programa</h2>
@@ -314,7 +351,7 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Simulador de Raspberry pi pico</h2>
                                     </button>
@@ -323,36 +360,11 @@ const MicropythonClass1 = () => {
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>WOKWI - Simulador de raspberry pi pico</h3>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En el caso que no dispongan de un microcontrolador Raspberry pi pico, pueden crear una simulación del microcontrolador desde la página Wokwi</p>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">Para acceder a la página ingresa acá -- <a href="https://wokwi.com/projects/new/micropython-pi-pico" className="text-primary">https://wokwi.com/projects/new/micropython-pi-pico</a></p>
-                                         
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject1.jpg"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Machine - Pin</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">"machine" es un módulo que proporciona una interfaz para interactuar con hardware en dispositivos que ejecutan MicroPython, como placas de desarrollo basadas en microcontroladores o microprocesadores. <br></br> Este módulo "machine" facilita el control y la configuración de hardware, como pines GPIO, comunicación serial, temporizadores y otros periféricos.</p>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">En este primer programa utilizaremos la función "Pin" del módulo "machine", este será el encargado de controlar los pines de nuestro controlador, para utilizarlo debemos escribir "from machine import Pin".</p>
-                                            <CopyButton code={class1MCode[0]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject2.jpg"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Time</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">"time" es un módulo estándar que proporciona funciones relacionadas con la gestión del tiempo y la medición del tiempo en microsegundos, milisegundos y segundos. Este módulo es útil para trabajar con temporizadores, realizar mediciones de tiempo y programar tareas basadas en el tiempo en dispositivos que ejecutan MicroPython.</p>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para empezar a usar este módulo debemos escribir "import time".</p>
-                                            <CopyButton code={class1MCode[1]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject3.jpg"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Print()</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">"Print" es una función para mostrar por consola como mensajes, números o valores de una variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.</p>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Esta función la usaremos para informar al usuario que el led está encendido o apagado, para ello debemos escribir en el argumento del print el mensaje entre comillas.</p>
-                                            <CopyButton code={class1MCode[2]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject4.jpg"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para indicar que vamos a usar el LED incorporado que nos provee el raspberry Pi Pico W debemos escribir "Pin("LED",Pin.OUT)".</p>
-                                            <CopyButton code={class1MCode[3]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject5.jpg"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para indicar que vamos a usar el LED incorporado que nos provee el raspberry Pi Pico W debemos escribir "Pin("LED",Pin.OUT)".</p>
-                                            <CopyButton code={class1MCode[4]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject6.jpg"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Escribiremos las veces que queramos apagar y encender nuestro led y ejecutaremos el codigo en el microcontrolador con el botón verde (play), en el caso de querer parar el codigo debemos tocar el botón rojo (stop).</p>
-                                            <CopyButton code={class1MCode[5]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject7.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/simulator.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <Link to="/micropythonClassFile/class1.py"
                                         target={"_blank"}
                                         download={"class1.py"}>
