@@ -5,29 +5,37 @@ import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
-import { class1MCode,class2MCode } from './MicropythonClassCode'
+import { class1MCode, class2MCode } from './MicropythonClassCode'
 
 const MicropythonClass1 = () => {
 
     const elementVisibility = useScrollAnimation()
-    const [date, setDate] = useState()
+    const [date, setDate] = useState(null)
     const newDate = new Date()
+
     useEffect(() => {
-        getDocs(collection(db, "courseMicropython")).then(response => {
-            response.docs.map(doc => {
-                if (doc.id === "DGNVKaHVIjv8RsBsi1yD") {
-                    return setDate(doc.data().date.toDate())
-                }
-                return null
+        if (localStorage.getItem("dataCourseMicropython") === null) {
+            console.log("llamado")
+            getDocs(collection(db, "courseMicropython")).then(response => {
+                response.docs.map(doc => {
+                    if (doc.id === "DGNVKaHVIjv8RsBsi1yD") {
+                        return setDate(doc.data().date.toDate())
+                    }
+                    return null
+                })
             })
-        })
+        }
+        else{
+            const dateCourse = JSON.parse(localStorage.getItem("dataCourseMicropython"))
+            setDate(dateCourse)
+        }
     }, [])
 
     return (
         <>{
-            (new Date(date) <= newDate) || localStorage.getItem("access - micropython") ?
+            (new Date(date?.[0]?.date) <= newDate) || localStorage.getItem("access - micropython") ?
                 <>
-                    <section section id="hero" style={{ background: colorPrimaryMicropython }} >
+                    <section id="hero" style={{ background: colorPrimaryMicropython }} >
                         <div className="container">
                             <div className="row justify-content-between">
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -377,7 +385,7 @@ const MicropythonClass1 = () => {
                         </div>
                     </section>
                 </> :
-                <section section id="hero" style={{ background: colorPrimaryMicropython }} >
+                <section id="hero" style={{ background: colorPrimaryMicropython }} >
                     <div className="container">
                         <div className="row justify-content-between">
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">

@@ -13,7 +13,7 @@ const Classes = () => {
     const content = location.pathname === "/micropython/classes" ? "courseMicropython" : location.pathname === "/github/classes" ? "courseGithub" : "course"
     const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
     const [course, setCourse] = useState([])
-    
+    const savedCourse = location.pathname === "/classes" ? localStorage.getItem('dataCourse'): location.pathname === "/micropython/classes" ? localStorage.getItem('dataCourseMicropython'):null
 
     const callFirebase = useCallback(() => {
         getDocs(collection(db, content)).then(response => {
@@ -41,12 +41,11 @@ const Classes = () => {
     }, [content]);
 
     useEffect(() => {
-        const savedCourse = localStorage.getItem('dataCourse');
-        if (savedCourse && content === "course") {
+        if (savedCourse) {
             const parsedDates = JSON.parse(savedCourse);
             const firstDate = new Date(parsedDates[1].date);
             const currentDate = new Date();
-
+            console.log(savedCourse)
             if ((currentDate - firstDate) <= 4742590612) {
                 setCourse(parsedDates);  
             } else {

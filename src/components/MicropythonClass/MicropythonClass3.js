@@ -14,21 +14,27 @@ const MicropythonClass3 = () => {
     const [date, setDate] = useState()
     const newDate = new Date()
     useEffect(() => {
-        getDocs(collection(db, "courseMicropython")).then(response => {
-            response.docs.map(doc => {
-                if (doc.id === "DGNVKaHVIjv8RsBsi1yD") {
-                    return setDate(doc.data().date.toDate())
-                }
-                return null
+        if (!localStorage.getItem("dataCourseMicropython")){
+            getDocs(collection(db, "courseMicropython")).then(response => {
+                response.docs.map(doc => {
+                    if (doc.id === "NSSBz68HqHvwFtPEtNrX") {
+                        return setDate(doc.data().date.toDate())
+                    }
+                    return null
+                })
             })
-        })
+        }
+        else{
+            const dateCourse = JSON.parse(localStorage.getItem("dataCourseMicropython"))
+            setDate(dateCourse)
+        }
     }, [])
 
     return (
         <>{
-            (new Date(date) <= newDate) || localStorage.getItem("access") ?
+            (new Date(date?.[2]?.date) <= newDate) || localStorage.getItem("access - micropython") ?
                 <>
-                    <section section id="hero" style={{ background: colorPrimaryMicropython }} >
+                    <section id="hero" style={{ background: colorPrimaryMicropython }} >
                         <div className="container">
                             <div className="row justify-content-between">
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -271,7 +277,7 @@ const MicropythonClass3 = () => {
                         </div>
                     </section>
                 </> :
-                <section section id="hero" style={{ background: colorPrimaryMicropython }} >
+                <section id="hero" style={{ background: colorPrimaryMicropython }} >
                     <div className="container">
                         <div className="row justify-content-between">
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
