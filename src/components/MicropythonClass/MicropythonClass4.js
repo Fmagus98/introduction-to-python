@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import { colorPrimaryMicropython} from '../../colors'
+import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
-import { class3MCode } from './MicropythonClassCode'
+import { class3MCode, class4MCode } from './MicropythonClassCode'
 import { class3Code } from '../Class/classCode'
 
 const MicropythonClass4 = () => {
@@ -34,7 +34,7 @@ const MicropythonClass4 = () => {
         <>{
             (new Date(date?.[3]?.date) <= newDate) || localStorage.getItem("access - micropython") ?
                 <>
-                      <section id="hero" style={{ background: colorPrimaryMicropython }} >
+                    <section id="hero" style={{ background: colorPrimaryMicropython }} >
                         <div className="container">
                             <div className="row justify-content-between">
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -83,55 +83,90 @@ const MicropythonClass4 = () => {
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">¿Qué es PWM?</h3>
                                             <p className="text-break mx-auto w-75 mt-4">PWM (Modulación por Ancho de Pulso) es una técnica utilizada para controlar la potencia entregada a dispositivos electrónicos. En lugar de aplicar un voltaje constante, PWM alterna rápidamente entre encendido y apagado, lo que permite simular un voltaje variable.</p>
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Que es un Pin GPIO</h3>
-                                            <p className="text-break mx-auto w-75 mt-4">Un pin GPIO es una interfaz física en el microcontrolador que puede configurarse tanto para entrada como para salida, dependiendo de lo que se quiera lograr. A través de estos pines, el microcontrolador puede recibir señales del entorno (como un botón presionado) o enviar señales para controlar dispositivos (como encender un LED). En esencia, los GPIO son la forma más básica de interacción del microcontrolador con su entorno físico.</p>
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Modos de funcionamiento de un GPIO</h3>
-                                            <p className="text-break mx-auto w-75 mt-4">Los GPIO se pueden programar en 2 modos:</p>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span className="fw-bold">Modo de Entrada (Input):</span>
-                                                <li><p className="text-break mx-auto w-75">En este modo, el pin GPIO actúa como receptor de señales. Es utilizado para leer el estado de dispositivos externos, como botones o sensores.</p></li>
-                                                <li><p className="text-break mx-auto w-75">Un pin configurado como entrada detecta si hay una señal de alto voltaje (normalmente 3.3V o 5V) o bajo voltaje (0V), lo que se traduce en valores booleanos de 1 (alto) o 0 (bajo).</p></li>
-                                                <li><p className="text-break mx-auto w-75">Por ejemplo, si conectas un botón a un pin configurado como entrada, puedes programar tu microcontrolador para que realice una acción cuando el botón esté presionado (cuando el pin reciba una señal alta o baja).</p></li>
+                                            <p className="text-break mx-auto w-75 mt-4">En PWM solo tenemos 2 estados, HIGH(3.3V - alto) y LOW(0V - bajo).</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Dentro del gráfico veremos también "ciclo de trabajo"(duty cycle), es un concepto fundamental en PWM (modulación por ancho de pulso), que se refiere al porcentaje de tiempo que una señal está en estado alto (encendida) durante un ciclo completo de la señal.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">El valor máximo del ciclo de trabajo(duty cycle) que tiene internamente un potenciometro es de "65535", esto es porque está en 16bits y la cantidad de valores que puede procesar son 65536(es uno más porque se incluye el 0 como valor)</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Ejemplo: Si una señal PWM tiene un duty cycle del 50%(65535/2 = 32768), significa que la señal está activa (en alto) el 50% del tiempo y en bajo el otro 50%, Si el duty cycle es del 25% (65535/4 = 16383), la señal estará activa solo el 25% del tiempo y en bajo el 75%.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Frecuencia</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">La frecuencia en el contexto de PWM (modulación por ancho de pulso) se refiere a la cantidad de ciclos completos que ocurren en un segundo. Se mide en hercios (Hz), donde 1 Hz equivale a un ciclo completo por segundo.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Ejemplo: Si la frecuencia es 1 Hz, entonces el ciclo completo (tiempo en alto más tiempo en bajo) ocurre una vez por segundo, Si la frecuencia es 1000 Hz (1 kHz), el ciclo completo ocurre 1000 veces en un segundo.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/Hz.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Relación entre Frecuencia y Duty Cycle</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Es importante entender que, aunque el duty cycle y la frecuencia son conceptos distintos, ambos determinan el comportamiento de la señal PWM:</span>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Duty cycle: </span>controla el tiempo que la señal está activa dentro de cada ciclo.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Frecuencia: </span>determina cuántos ciclos ocurren por segundo.</p></li>
                                             </ul>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span className="fw-bold">Modo de Salida (Output):</span>
-                                                <li><p className="text-break mx-auto w-75">En este modo, el pin GPIO envía señales eléctricas a otros dispositivos. Se utiliza para controlar actuadores como LEDs, motores, o incluso otros microcontroladores.</p></li>
-                                                <li><p className="text-break mx-auto w-75">Cuando el pin está en modo de salida, puedes configurar su valor a 1 (alto) o 0 (bajo), lo que encenderá o apagará el dispositivo conectado.</p></li>
-                                                <li><p className="text-break mx-auto w-75">Por ejemplo, si conectas un LED a un pin de salida, puedes encender o apagar el LED escribiendo 1 o 0 en el pin desde tu código.</p></li>
+                                            <p className="text-break mx-auto w-75 mt-4">Por ejemplo, si tienes una señal PWM con una frecuencia de 1 kHz (1000 ciclos por segundo) y un duty cycle del 50%, la señal estará en estado alto durante 0.5 ms (milisegundos) y en estado bajo durante otros 0.5 ms en cada ciclo. Si aumentas la frecuencia, los ciclos serán más rápidos, pero el tiempo que la señal permanece en alto y bajo por ciclo también será menor.</p>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Importancia de la frecuencia en PWM</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>La frecuencia del PWM es clave en aplicaciones como el control de motores y el brillo de LEDs:</span>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Motores eléctricos: </span>Si la frecuencia es demasiado baja, el motor puede vibrar o producir un zumbido debido a la conmutación lenta. Por eso, frecuencias más altas (a menudo en el rango de kHz) se usan para controlar motores de manera más suave.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Control de brillo de LEDs: </span> Si la frecuencia es baja, el LED puede parpadear perceptiblemente, lo que es indeseable. A frecuencias más altas, el parpadeo se vuelve imperceptible, logrando una variación suave en el brillo.</p></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="element3" className={`accordion-item animated-left mt-4 ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2>Pin Digital</h2>
+                                        <h2>Potenciometro</h2>
                                     </button>
                                     <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
-                                            <p className="text-break mx-auto w-75">Un pin digital es un pin en un microcontrolador o microprocesador que puede manejar señales digitales, es decir, señales que solo tienen dos estados posibles: alto (HIGH) o bajo (LOW). Los pines digitales son fundamentales para la comunicación entre el microcontrolador y dispositivos externos, como sensores, botones, LEDs, motores, entre otros.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Estados de un pin digital</h3>
-                                            <p className="text-break mx-auto w-75">Un pin digital solo puede tener uno de estos dos estados:</p>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span className="fw-bold">Alto (HIGH):</span>
-                                                <li><p className="text-break mx-auto w-75">El pin está en un estado de voltaje alto.</p></li>
-                                                <li><p className="text-break mx-auto w-75">En la mayoría de los microcontroladores, este valor es típicamente de 3.3V o 5V, dependiendo del sistema. En la Raspberry Pi Pico W, el voltaje alto es de 3.3V.</p></li>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Potenciometro en Raspberry pi pico w (potenciometro)</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">Para poder utilizar un Potenciometro debemos utilizar desde la libreria "machine" la clase "ADC"</p>
+                                            <CopyButton code={class4MCode[0]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2paso1.webp"></img>
+                                            <p className="text-break mx-auto w-75 mt-4">Luego debemos crear una variable y almacenar la clase ADC junto al pin donde se quiere recibir la señal, en este caso es en el GP28</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Además de esto debemos conectar nuestro potenciómetro a la raspberry pi pico w de la siguiente manera:</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">VCC :</span> La debemos conectar al puerto 3V3 para que nos proporcione el voltaje de 3V (+)</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">SIG : </span> La debemos conectar al Pin GP28 para que podamos comunicar la señal de nuestro potenciometro</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">GND : </span> La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
                                             </ul>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span className="fw-bold">Bajo (LOW):</span>
-                                                <li><p className="text-break mx-auto w-75">El pin está en un estado de voltaje bajo.</p></li>
-                                                <li><p className="text-break mx-auto w-75">En este caso, el valor es 0V, lo que significa que no hay corriente o que está conectado a tierra (GND).</p></li>
-                                            </ul>
-                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../../img/class3Micropython/DigitalSignal.webp"></img>
+                                            <CopyButton code={class4MCode[1]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2paso2.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Visualizar duty Cycle y voltaje en potenciometro</h4>
+                                            <CopyButton code={class4MCode[2]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <h2 className="text-light">Bucle While</h2>
+                                <div id="element4" className={`accordion-item animated-left mt-4 ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2>Led</h2>
                                     </button>
                                     <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
-                                            <p className="text-break mx-auto mt-4 w-75">Bucle while (mientras): El bucle while ejecuta repetidamente un bloque de código siempre que una condición sea verdadera. La condición se verifica antes de cada iteración, y si es verdadera, se ejecuta el bloque de código. Si la condición se vuelve falsa en algún momento, se sale del bucle y se continúa con la siguiente instrucción después del bucle. Aquí tienes un ejemplo de un bucle while:</p>
-                                            <CopyButton code={class3Code[4]} />
-                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class3/while.webp"></img>
-                                            <CopyButton code={class3Code[5]} />
-                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class3/while2.webp"></img>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funcionamiento de PWM en LEDs</h3>
+                                            <p className="text-break mx-auto w-75">Los LEDs son dispositivos semiconductores que convierten energía eléctrica en luz, y su brillo depende de la cantidad de corriente que pasa a través de ellos. Sin embargo, en lugar de ajustar directamente la corriente, lo que podría ser ineficiente y producir calor, el PWM ofrece un enfoque eficiente para regular el brillo mediante el control del tiempo que el LED está encendido o apagado durante un ciclo.</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Cuando se usa PWM:</span>
+                                                <li><p className="text-break mx-auto w-75">El LED es encendido y apagado rápidamente a una frecuencia constante.</p></li>
+                                                <li><p className="text-break mx-auto w-75">El ojo humano no percibe este parpadeo si la frecuencia es lo suficientemente alta, por lo que el LED parece estar atenuado en lugar de encendido y apagado.</p></li>
+                                                <li><p className="text-break mx-auto w-75">El brillo percibido del LED es ajustado variando el duty cycle, es decir, cuánto tiempo está encendido en cada ciclo de la señal PWM.</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Frecuencia y Percepción Visual</h3>
+                                            <p className="text-break mx-auto w-75">La frecuencia es otro parámetro clave en el control del brillo de LEDs mediante PWM. La frecuencia es la cantidad de veces por segundo que se repite el ciclo de encendido y apagado. Si la frecuencia es demasiado baja, el parpadeo del LED será perceptible para el ojo humano, lo que puede ser incómodo o distraer.</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Frecuencias altas y bajas</span>
+                                                <li><p className="text-break mx-auto w-75">Frecuencia baja (&lt;100 Hz): A frecuencias bajas, el parpadeo puede ser claramente visible. Un parpadeo inferior a 60 Hz será notorio, ya que es la frecuencia mínima que el ojo humano puede procesar sin notar el parpadeo.</p></li>
+                                                <li><p className="text-break mx-auto w-75">Frecuencia alta (&gt;500 Hz a 1 kHz): A frecuencias más altas, el parpadeo se vuelve imperceptible para el ojo humano. Los LEDs parecen emitir una luz continua y estable.</p></li>
+                                            </ul>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Efecto de la frecuencia en LEDs:</h4>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75">Para aplicaciones comunes, como la iluminación o pantallas LED, una frecuencia mínima de PWM de 500 Hz es recomendable.</p></li>
+                                                <li><p className="text-break mx-auto w-75">Para aplicaciones de mayor precisión, como pantallas LED de alta calidad o iluminación que se graba en cámaras, frecuencias mucho más altas (2 kHz a 5 kHz o más) son necesarias para evitar efectos de parpadeo o interferencias visuales con la grabación.</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Ejecución de Potenciómetro en LEDs(PWM)</h3>
+                                            <p className="text-break mx-auto w-75">Para poder manipular LEDs con un potenciometro vamos a utilizar lo mismo que vimos anteriormente con el potenciómetro, pero añadimos también la clase "PWM" de libreria machine.</p>
+                                            <CopyButton code={class4MCode[3]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed1.webp"></img>
+                                            <p className="text-break mx-auto w-75 mt-4">Agregamos una variable llamada "pwm" y le asignamos la clase PWM() indicandole dentro del paréntesis(parámetro) el Pin que vamos a conectar nuestro led, en este caso va a ser el pin 15.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">También le añadiremos la frecuencia que va a tener el PWM. Para hacerlo debemos llamar a la variable "pwm" y le asignamos el método freq(), en este caso va a ser de 1000Hz(.freq(1000)) y mostramos la frecuencia en la terminal con print(pwm.freq()) </p>
+                                            <p className="text-break mx-auto w-75 mt-4">Para asignarle ahora el duty cycle al PWM en nuestro led, vamos a tener que poner pwm.duty_u16(analog_value)</p>
+                                            <CopyButton code={class4MCode[4]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed2.webp"></img>
+                                            <p className="text-break mx-auto w-75">Ahora conectamos el ánodo(+) del led a una resistencia y en el extremo al Pin GP15 y el cátodo(-) a GND</p>
+                                            <CopyButton code={class4MCode[5]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed3.webp"></img>
                                         </div>
                                     </div>
                                 </div>

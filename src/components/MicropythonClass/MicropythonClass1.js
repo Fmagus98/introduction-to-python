@@ -25,7 +25,7 @@ const MicropythonClass1 = () => {
                 })
             })
         }
-        else{
+        else {
             const dateCourse = JSON.parse(localStorage.getItem("dataCourseMicropython"))
             setDate(dateCourse)
         }
@@ -208,11 +208,11 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element11" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFour">
                                         <h2 className="text-light">Raspberry pi pico</h2>
                                     </button>
-                                    <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Familia de raspberry pi pico</h3>
                                             <p className="text-break mx-auto w-75">La familia Raspberry Pi Pico consta actualmente de cuatro placas; Raspberry Pi Pico (extremo izquierdo), Pico H (centro izquierda), Pico W (centro derecha) y Pico WH (extremo derecho).<br></br>Raspberry Pi Pico es una placa microcontroladora de alto rendimiento y bajo costo con interfaces digitales flexibles.</p>
@@ -247,11 +247,71 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <div id="element7" className={`accordion-item mt-4  animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <h2 className="text-light">¿Que arquitectura tengo en mi pc?</h2>
+                                    </button>
+                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark">
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">La arquitectura de 32 bits y 64 bits se refiere a cómo un procesador maneja la información. Estos términos se refieren a la cantidad de datos que un procesador puede procesar en un solo ciclo de reloj y la cantidad máxima de memoria que puede direccionar el procesador.</p>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">Es importante saberlo ya que vamos a instalar una versión diferente de python e IDE para cada caso. Para saber que tipo de arquitectura tengo en mi pc debemos hacer lo siguiente:</p>
+                                            <ul className="intr-ul"><p className='mx-auto w-75'><b>En Windows</b></p>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_</span>Toca la tecla windows, escribe en el buscador "sistema" y selecciona el primero que aparezca.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/w1.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Dentro del sistema verás la información de tu computadora, allí encontrarás que tipo de arquitectura tiene tu pc.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/w2.webp"></img>
+                                                </li>
+                                            </ul>
+                                            <ul className="intr-ul"><p className='mx-auto w-75'><b>En MacOS</b></p>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_ </span>Pulsamos el icono de la manzana y seleccionamos en "Sobre este Mac".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/m1.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">2_ </span>Dentro de la pantalla que se abrió, seleccionamos "informe del sistema".</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/m2.webp"></img>
+                                                </li>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">3_ </span>Ingresa a "Extensiones" y dentro verás la información de tu procesador, en el caso que diga "x86_64" en arquitectura y "Si" en 64 bits(intel) será de 64 bits, en caso contrario es de 32 bits.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/m3.webp"></img>
+                                                </li>
+                                            </ul>
+                                            <ul className="intr-ul"><p className='mx-auto w-75'><b>En Linux</b></p>
+                                                <li>
+                                                    <p className="mt-4 mb-4 text-break mx-auto w-75"><span className="fw-bold">1_ </span>Abre el terminal con las teclas Ctrl + Alt + T, o desde Aplicaciones/Accesorios/Terminal (Estos atajos se basan en Linux/Ubuntu) y luego escribe "lscpu", ejecutalo y te mostrará que tipo de arquitectura es. Si esta marca “32-bits, 64-bits” es de 64 bits, por el contrario si te marca solo 32-bits, tu ordenador es de 32 bits.</p>
+                                                    <img className="w-75 mx-auto d-block border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class1/l1.webp"></img>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element8" className={`accordion-item mt-4  animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <h2 className="text-light">Instalación de python</h2>
+                                    </button>
+                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark">
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">1. Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link> y selecciona "Downloads"</p>
+                                            <img className="w-75 mx-auto d-block border-content " alt="" src="../../img/class1/python1.webp"></img>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">2. Luego iremos a "All releases" </p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/python2.webp"></img>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">3. Buscamos la versión más reciente o alguna versión superior o igual a 3.8, aunque lo más recomendable es que instalen 3.10 en adelante y tocamos "download"</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/python3.webp"></img>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">4. Elegimos el sistema operativo que utilizamos en nuestro dispositivo y la arquitectura que tengamos sea 64 bits(86x_64 / x64) ó 32 bits(86x). <br />Si no sabes cual descargar, estan los pasos a seguir en esta página para saber cual. Sube hacia arriba y toca el botón "¿Que arquitectura tengo en mi pc?"</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class1/python4.webp"></img>
+                                            <p className="mt-7 mb-4 text-break mx-auto w-75">5. Al instalar selecciona "add python 3.8 to PATH" y "install now"</p>
+                                            <img className="w-75 mx-auto d-block border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class1/python5.webp"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">IDE - thonny</h2>
                                     </button>
-                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Instalación de thonny</h3>
                                             <p className="mt-4 mb-4 text-center mx-auto w-50">1_ Dirígete a <Link to="https://thonny.org/" target="_blank" className="text-info">https://thonny.org/</Link> e instala el programa dependiendo tu sistema operativo.</p>
@@ -323,56 +383,74 @@ const MicropythonClass1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                <div id="element11" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2>Variables</h2>
+                                    </button>
+                                    <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark ">
+                                            <div className="accordion-body text-light">
+                                                <h3 className="text-break mx-auto w-75 mt-4">¿Que es una variable?</h3>
+                                                <p className="text-break mx-auto w-75">En el contexto de la programación, una variable es un contenedor para almacenar y manipular datos. Imagina una variable como una caja etiquetada en la memoria del equipo, donde puedes guardar diferentes tipos de información, como números, texto o valores booleanos. En un programa, puedes declarar una variable y asignarle un valor para luego utilizarlo en diferentes partes del código.</p>
+                                                <p className="text-break mb-4 mx-auto w-75">Cuando declaras una variable en un lenguaje de programación, se reserva un espacio en la memoria para almacenar su valor. La ubicación exacta en la memoria puede variar dependiendo del lenguaje y del entorno de ejecución. Sin embargo, el proceso general para acceder al valor de una variable implica el uso de la CPU y la RAM del equipo.</p>
+                                                <h3 className="text-break mt-4 mx-auto w-75">Funcionamiento de hardware</h3>
+                                                <p className="text-break mx-auto w-75">CPU (Unidad Central de Procesamiento): La CPU es el componente principal del hardware que ejecuta las instrucciones de un programa. Cuando accedes a una variable, la CPU utiliza registros internos para almacenar temporalmente el valor de la variable que se va a procesar. Los registros son ubicaciones de memoria extremadamente rápidas y cercanas a la CPU, lo que permite un acceso más rápido a los datos.</p>
+                                                <p className="text-break mx-auto w-75">RAM (Memoria de Acceso Aleatorio): La RAM es un tipo de memoria de almacenamiento temporal que almacena tanto el programa en ejecución como los datos necesarios para el programa. Cuando se necesita el valor de una variable, la CPU busca en la RAM la ubicación de memoria reservada para esa variable y recupera el valor almacenado allí. Esto implica acceder a la dirección de memoria correspondiente a la variable y obtener los datos almacenados en esa ubicación.</p>
+                                                <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class2/variable.webp"></img>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element12" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element12 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a11" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Ejecución del primer programa</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a11" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Primer programa: parpadeo en LED incorporado</h3>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para crear un archivo nuevo debemos tocar en el "+"</p>
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject1.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/class1Micropython/eject1.jpg"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Machine - Pin</h3>
                                             <p className="mt-4 mb-4 text-center mx-auto w-75">"machine" es un módulo que proporciona una interfaz para interactuar con hardware en dispositivos que ejecutan MicroPython, como placas de desarrollo basadas en microcontroladores o microprocesadores. <br></br> Este módulo "machine" facilita el control y la configuración de hardware, como pines GPIO, comunicación serial, temporizadores y otros periféricos.</p>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">En este primer programa utilizaremos la función "Pin" del módulo "machine", este será el encargado de controlar los pines de nuestro controlador, para utilizarlo debemos escribir "from machine import Pin".</p>
                                             <CopyButton code={class1MCode[0]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject2.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/class1Micropython/eject2.jpg"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Time</h3>
                                             <p className="mt-4 mb-4 text-center mx-auto w-75">"time" es un módulo estándar que proporciona funciones relacionadas con la gestión del tiempo y la medición del tiempo en microsegundos, milisegundos y segundos. Este módulo es útil para trabajar con temporizadores, realizar mediciones de tiempo y programar tareas basadas en el tiempo en dispositivos que ejecutan MicroPython.</p>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para empezar a usar este módulo debemos escribir "import time".</p>
                                             <CopyButton code={class1MCode[1]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/eject3.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/class1Micropython/eject3.jpg"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Print()</h3>
                                             <p className="mt-4 mb-4 text-center mx-auto w-75">"Print" es una función para mostrar por consola como mensajes, números o valores de una variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.</p>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Esta función la usaremos para informar al usuario que el led está encendido o apagado, para ello debemos escribir en el argumento del print el mensaje entre comillas.</p>
                                             <CopyButton code={class1MCode[2]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject4.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class1Micropython/eject4.jpg"></img>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para indicar que vamos a usar el LED incorporado que nos provee el raspberry Pi Pico W debemos escribir "Pin("LED",Pin.OUT)".</p>
                                             <CopyButton code={class1MCode[3]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject5.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class1Micropython/eject5.jpg"></img>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para indicar que vamos a usar el LED incorporado que nos provee el raspberry Pi Pico W debemos escribir "Pin("LED",Pin.OUT)".</p>
                                             <CopyButton code={class1MCode[4]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject6.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class1Micropython/eject6.jpg"></img>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Escribiremos las veces que queramos apagar y encender nuestro led y ejecutaremos el codigo en el microcontrolador con el botón verde (play), en el caso de querer parar el codigo debemos tocar el botón rojo (stop).</p>
                                             <CopyButton code={class1MCode[5]} />
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/Class1Micropython/eject7.jpg"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class1Micropython/eject7.jpg"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                <div id="element13" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element13 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a12" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Simulador de Raspberry pi pico</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a12" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>WOKWI - Simulador de raspberry pi pico</h3>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En el caso que no dispongan de un microcontrolador Raspberry pi pico, pueden crear una simulación del microcontrolador desde la página Wokwi</p>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">Para acceder a la página ingresa acá -- <a href="https://wokwi.com/projects/new/micropython-pi-pico" className="text-primary">https://wokwi.com/projects/new/micropython-pi-pico</a></p>
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/Class1Micropython/simulator.webp"></img>
+                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/class1Micropython/simulator.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <div id="element14" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element14 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <Link to="/micropythonClassFile/class1.py"
                                         target={"_blank"}
                                         download={"class1.py"}>
