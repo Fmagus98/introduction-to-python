@@ -273,7 +273,7 @@ const MicropythonClass4 = () => {
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tipos de servomotores</h3>
                                             <ul className="text-break mx-auto w-75 list-unstyled">
                                                 <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 180 grados: </span> Suelen rotar en un rango de 0 a 180 grados.</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 180 grados: </span> Pueden girar continuamente en ambas direcciones.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 360 grados: </span> Pueden girar continuamente en ambas direcciones.</p></li>
                                             </ul>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Conexión de servomotor</h3>
                                             <ul className="text-break mx-auto w-75 list-unstyled">
@@ -281,8 +281,16 @@ const MicropythonClass4 = () => {
                                                 <li><p className="text-break mx-auto w-75"><span className="fw-bold">SIG : </span> La debemos conectar al Pin GP28 para que podamos comunicar la señal de nuestro servomotor</p></li>
                                                 <li><p className="text-break mx-auto w-75"><span className="fw-bold">GND : </span> La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
                                             </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Valores típicos en un servomotor</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Los servomotores se controlan mediante señales PWM (Modulación por Ancho de Pulso), y el valor que utilizan para moverse se refiere a la duración del pulso en microsegundos (µs) o nanosegundos (ns). </p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Rango de pulsos:</span> La mayoría de los servomotores estándar se mueven en un rango de pulso entre aproximadamente 1 ms (1000 µs) y 2 ms (2000 µs). Este rango suele corresponder a posiciones de 0° a 180°.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Posiciones Comunes: </span> 1 ms (1000 µs)Generalmente se asocia con la posición mínima (0°). 1.5 ms (1500 µs): Comúnmente se considera la posición central (90°) y 2 ms (2000 µs): Se asocia con la posición máxima (180°).</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Frecuencia : </span> La frecuencia típica para la señal PWM es de 50 Hz. Esto significa que se repite un ciclo cada 20 ms (20,000 µs).</p></li>
+                                            </ul>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Potenciometro en servomotor 180°</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Para utilizar este tipo de servomotores vamos a empezar a </p>
+                                            <p className="text-break mx-auto mt-4 w-75">Para utilizar este tipo de servomotores vamos a tener que mapear el angulo que puede dar este servomotor en el potenciometro, para ello multiplicamos por 180(angulo) dividido 65535(valor máximo del potenciómetro), así cada vez que giremos el potenciómetro indique el angulo de giro</p>
+                                            <p className="text-break mx-auto mt-4 w-75">También vamos a tener que asignarle el valor al servomotor de la siguiente forma: int((el calculo anterior para mapear el potenciometro + 45) * 100000 / 9), esto se hace para que devuelva un valor en nanosegundos, lo que se necesita para mover el servomotor </p>
                                             <CopyButton code={class4MCode[9]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo2.webp"></img>
                                         </div>
