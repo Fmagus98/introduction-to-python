@@ -5,8 +5,8 @@ import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
-import { class3MCode, class4MCode } from './MicropythonClassCode'
-import { class3Code } from '../Class/classCode'
+import { class4MCode } from './MicropythonClassCode'
+import { class3Code, class5Code } from '../Class/classCode'
 
 const MicropythonClass4 = () => {
 
@@ -40,7 +40,7 @@ const MicropythonClass4 = () => {
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                     <div >
                                         <h1>Clase 4</h1>
-                                        <h2>Introducción a PWM y su aplicación en MicroPython."</h2>
+                                        <h2>Introducción a PWM y su aplicación en MicroPython.</h2>
                                         <h2>Control de LED mediante PWM.</h2>
                                         <h2>Control de motor mediante PWM.</h2>
                                         <div className="text-center text-lg-start">
@@ -74,12 +74,92 @@ const MicropythonClass4 = () => {
                                 <h2>Clase 4</h2>
                                 <p>Contenido</p>
                             </div>
-                            <div className="accordion accordion-flush w-100 mx-auto" id="accordionFlushExample">
-                                <div id="element2" className={`accordion-item animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <div id="element2" className={`rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <h2>Listas</h2>
+                                </button>
+                                <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <div className="accordion-body text-light">
+                                            <p className="text-break mx-auto mt-4 w-75">Una lista en Python es una estructura de datos que permite almacenar múltiples elementos en un solo objeto. <br></br>Puedes considerar una lista como una secuencia ordenada de elementos que pueden ser de diferentes tipos, como números, cadenas de texto, booleanos e incluso otras listas. Se definen utilizando corchetes [ ] y los elementos se separan por comas.</p>
+                                            <CopyButton code={class5Code[0]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list1.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto">índice</h3>
+                                            <p className="text-break mx-auto w-75">Puedes acceder a los elementos de una lista utilizando índices, donde el primer elemento tiene un índice de 0. Por ejemplo, numeros[7] te daría el octavo elemento de la lista.</p>
+                                            <CopyButton code={class5Code[1]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list2.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto">Modificación de elementos</h3>
+                                            <p className="text-break mx-auto w-75">Puedes modificar el valor de un elemento en una lista utilizando el índice correspondiente.</p>
+                                            <CopyButton code={class5Code[2]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list3.webp"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="element3" className={`mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h2 className="text-light">Métodos de lista</h2>
+                                </button>
+                                <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <p className="text-break mx-auto w-75">Las listas en Python tienen varios métodos integrados que facilitan su manipulación.</p>
+                                        <h3 className="text-break w-75 mx-auto">append() / extend()</h3>
+                                        <p className="text-break mx-auto w-75">El método append() es una función incorporada de Python que se utiliza para agregar un elemento al final de una lista existente. Toma un argumento y lo agrega como un nuevo elemento al final de la lista.</p>
+                                        <p className="text-break mx-auto w-75">Ten en cuenta que append() modifica la lista existente y no devuelve una nueva lista. Si deseas agregar múltiples elementos a la lista al mismo tiempo, puedes utilizar el método extend(). Aquí tiene un ejemplo de estos métodos:</p>
+                                        <CopyButton code={class5Code[5]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list6.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">insert()</h3>
+                                        <p className="text-break mx-auto w-75">Inserta un elemento en una posición específica de la lista.</p>
+                                        <CopyButton code={class5Code[6]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list7.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">pop()</h3>
+                                        <p className="text-break mx-auto w-75">Se utiliza para eliminar el último elemento o un elemento en una posición específica de la lista.</p>
+                                        <CopyButton code={class5Code[8]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list9.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">clear()</h3>
+                                        <p className="text-break mx-auto w-75">Elimina todos los elementos en la lista.</p>
+                                        <CopyButton code={class5Code[11]} />
+                                        <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class5/list12.webp"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h2 className="text-light">Funciones en listas</h2>
+                                </button>
+                                <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <p className="text-break mx-auto w-75">
+                                            Además de tener métodos para utilizar en listas, también tenemos funciones que nos ayudan a la hora de manipular datos.:
+                                        </p>
+                                        <h3 className="text-break w-75 mx-auto">len()</h3>
+                                        <p className="text-break mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
+                                        <CopyButton code={class5Code[12]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list13.webp"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    <h2 className="text-light">For</h2>
+                                </button>
+                                <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
+                                        <CopyButton code={class3Code[9]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class3/range.webp"></img>
+                                        <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
+                                        <CopyButton code={class3Code[10]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class3/for4.webp"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion accordion-flush w-100 mx-auto mt-4" id="accordionFlushExample">
+                                <div id="element6" className={`accordion-item animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>PWM</h2>
                                     </button>
-                                    <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">¿Qué es PWM?</h3>
                                             <p className="text-break mx-auto w-75 mt-4">PWM (Modulación por Ancho de Pulso) es una técnica utilizada para controlar la potencia entregada a dispositivos electrónicos. En lugar de aplicar un voltaje constante, PWM alterna rápidamente entre encendido y apagado, lo que permite simular un voltaje variable.</p>
@@ -106,11 +186,11 @@ const MicropythonClass4 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element3" className={`accordion-item animated-left mt-4 ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element7" className={`accordion-item animated-left mt-4 ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Potenciometro</h2>
                                     </button>
-                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Potenciometro en Raspberry pi pico w (potenciometro)</h3>
                                             <p className="text-break mx-auto w-75 mt-4">Para poder utilizar un Potenciometro debemos utilizar desde la libreria "machine" la clase "ADC"</p>
@@ -131,11 +211,11 @@ const MicropythonClass4 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element4" className={`accordion-item animated-left mt-4 ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element8" className={`accordion-item animated-left mt-4 ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Led</h2>
                                     </button>
-                                    <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funcionamiento de PWM en LEDs</h3>
                                             <p className="text-break mx-auto w-75">Los LEDs son dispositivos semiconductores que convierten energía eléctrica en luz, y su brillo depende de la cantidad de corriente que pasa a través de ellos. Sin embargo, en lugar de ajustar directamente la corriente, lo que podría ser ineficiente y producir calor, el PWM ofrece un enfoque eficiente para regular el brillo mediante el control del tiempo que el LED está encendido o apagado durante un ciclo.</p>
@@ -167,144 +247,53 @@ const MicropythonClass4 = () => {
                                             <p className="text-break mx-auto w-75">Ahora conectamos el ánodo(+) del led a una resistencia y en el extremo al Pin GP15 y el cátodo(-) a GND</p>
                                             <CopyButton code={class4MCode[5]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed3.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Activación de luces Led con Potenciómetro</h4>
+                                            <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
+                                            <CopyButton code={class4MCode[6]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed4.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro</h4>
+                                            <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
+                                            <CopyButton code={class4MCode[7]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed5.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro(Código optimizado)</h4>
+                                            <CopyButton code={class4MCode[8]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed6.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <h2 className="text-light">Resistencia</h2>
-                                    </button>
-                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">¿Qué es una resistencia?</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Una resistencia es un componente electrónico diseñado para limitar el flujo de corriente en un circuito. Se utiliza para proteger otros componentes sensibles de sobrecargas o para controlar la cantidad de corriente que pasa por ellos. El valor de una resistencia se mide en ohmios (Ω), y su principal función es oponerse al paso de la corriente eléctrica.</p>
-                                            <p className="text-break mx-auto mt-4 w-75">La ley de Ohm, que establece la relación entre el voltaje (V), la corriente (I) y la resistencia (R), se expresa como: V=I×R</p>
-                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class3Micropython/ohm.webp"></img>
-                                            <p className="text-break mx-auto mt-4 w-75">Esto significa que el voltaje en un circuito es igual a la corriente multiplicada por la resistencia.</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">¿Cómo se mide una resistencia?</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Las resistencias se miden en ohmios (Ω) utilizando un multímetro. En el multímetro, debes seleccionar la opción para medir resistencia (indicada por el símbolo Ω) y luego conectar las puntas del multímetro a los extremos de la resistencia.</p>
-                                            <p className="text-break mx-auto mt-4 w-75">Las resistencias también tienen un código de colores en sus cuerpos que indica su valor en ohmios. Cada color corresponde a un número, y la secuencia de colores te permite calcular el valor de la resistencia.</p>
-                                            <img className="w-75 d-block mx-auto border-content" alt="" src="../../img/class3Micropython/resistance.webp"></img>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">¿Para qué se utiliza una resistencia con LEDs en Raspberry Pi Pico?</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Cuando conectas un LED a la Raspberry Pi Pico, se debe usar una resistencia para limitar la cantidad de corriente que pasa a través del LED. Si no se usa una resistencia, la corriente puede ser demasiado alta y dañar tanto el LED como la Raspberry Pi Pico.</p>
-                                            <p className="text-break mx-auto mt-4 w-75">Los LEDs son componentes que solo permiten el paso de la corriente en una dirección y requieren una cantidad específica de corriente para funcionar correctamente. Si reciben demasiada corriente, se quemarán rápidamente. La resistencia actúa como un limitador, asegurando que solo fluya la cantidad adecuada de corriente.</p>
-                                            <h4 className="mt-4 text-break mx-auto w-75">Ejemplo con un LED</h4>
-                                            <p className="text-break mx-auto mt-4 w-75">Si conectas un LED a un pin GPIO de la Raspberry Pi Pico (por ejemplo, el GPIO 15), necesitarás una resistencia en serie con el LED para limitar la corriente. Una resistencia común para un LED estándar es de 220Ω.</p>
-                                            <h4 className="mt-4 text-break mx-auto w-75">Cálculo de la resistencia para un LED</h4>
-                                            <p className="text-break mx-auto mt-4 w-75">Supongamos que estás utilizando un LED que necesita 2V y la Raspberry Pi Pico suministra 3.3V en los pines GPIO. Queremos limitar la corriente a 20 mA (0.02 A) para proteger el LED.</p>
-                                            <ol className="text-break mx-auto w-75">
-                                                <li><p className="text-break mx-auto">La diferencia de voltaje entre la fuente y el LED es: <span className='fw-bold'>V=3.3V−2V=1.3V</span></p></li>
-                                                <li><p className="text-break mx-auto">Usamos la ley de Ohm para calcular la resistencia necesaria: <span className='fw-bold'>R= V/I = 1.3V / 0.02A = 65Ω</span></p>
-                                                    <p className="text-break mx-auto">Las resistencias tienen valores standard, en este caso podriamos utilizar una resitencia de 68Ω, 100Ω para proteger el Led. Puedes utilizar de más ohmios pero ten en cuenta que mientras más ohms tenga, menor intensidad tendrá.</p></li>
-                                            </ol>
-                                            <img className="w-75 d-block mx-auto border-content" style={{ marginBottom: "7rem" }} alt="" src="../../img/class3Micropython/68ohm.webp"></img>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2 className="text-light">Botones</h2>
-                                    </button>
-                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <p className="text-break mx-auto w-75">Para utilizar un botón en un raspberri pi pico, vamos a tener que utilizar de la libreria "machine" la función "Pin"</p>
-                                            <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button1.webp"></img>
-                                            <p className="text-break mx-auto w-75 mt-4">Con la función Pin vas a indicar que pin quieres utilizar en tu raspberry pi pico para utilizar un botón, en este ejemplo utilizaré el pin GPIO3 y debemos indicar que este Pin es un puerto de entrada ( Pin.IN )</p>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Acción Pull DOWN</h3>
-                                            <p className="text-break mx-auto w-75">Debemos indicarle que acción queremos capturar del botón. En este caso va a ser la acción al dejar de presionar el botón. (Pin.PULL_DOWN), cuando no está pulsado tendrá un valor 0, en caso contrario un 1</p>
-                                            <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button4.webp"></img>
-                                            <p className="text-break mx-auto w-75 mt-4">Para detectar si el botón está pulsado o no, debemos utilizar el método "value", para detectar constantemente el estado debemos utilizar el bucle while y también la libreria utime para que detecte el estado de forma detenida.</p>
-                                            <p className="text-break mx-auto w-75 mt-4">Además de esto, la acción Pull down se comporta de otra manera, cuando accionas el botón se envía voltaje 3v/5v(HIGH), si no está presionado no envía voltaje(LOW). Por lo tanto debemos conectar también el pin 3V3 y también podemos añadirle una resistencia de 10k, esto es para que no haya un efecto llamado "Bounce", este efecto puede provocar acciones involuntarias del botón haciendo que no sea estable.</p>
-                                            <h4 className="mt-4 text-break mx-auto w-75">¿Por qué se elige específicamente 10kΩ?</h4>
-                                            <p className="text-break mx-auto w-75 mt-4">Además de esto, la acción Pull down se comporta de otra manera, cuando accionas el botón se envía voltaje 3v/5v(HIGH), si no está presionado no envía voltaje(LOW). Por lo tanto debemos conectar también el pin 3V3 y también podemos añadirle una resistencia de 10k, esto es para que no haya un efecto llamado "Bounce", este efecto puede provocar acciones involuntarias del botón haciendo que no sea estable.</p>
-                                            <ol className="text-break mx-auto w-75">
-                                                <li>
-                                                    <p className="text-break mx-auto"><span className='fw-bold'>Estabilidad:</span> Proporciona un nivel adecuado de corriente para mantener el pin GPIO en un estado lógico alto o bajo sin que haya interferencia. Esto evita problemas de "ruido" en el pin, donde el pin podría cambiar de estado sin presionar el botón.</p>
-                                                </li>
-                                                <li>
-                                                    <p className="text-break mx-auto"><span className='fw-bold'>Bajo consumo de corriente: </span> La resistencia de 10kΩ permite que solo una pequeña cantidad de corriente fluya entre el pin GPIO y la alimentación (o tierra). En una configuración pull-up, cuando el pin GPIO está en estado alto, la corriente que pasa a través de la resistencia es: I = V / R = 3.3V / 10000Ω = 0.00033A = 0.33ma</p>
-                                                    <p className="text-break mx-auto">Esto es suficiente para mantener el estado lógico sin consumir demasiada energía.</p>
-                                                </li>
-                                                <li>
-                                                    <p className="text-break mx-auto"><span className='fw-bold'>Resistencia estándar:</span> 10kΩ es un valor común que proporciona un buen equilibrio entre estabilidad y bajo consumo de corriente. Valores más bajos (como 1kΩ) podrían permitir más corriente, lo que no es necesario en aplicaciones de botones, mientras que valores más altos (como 100kΩ) podrían hacer que el circuito sea más susceptible a interferencias.</p>
-                                                </li>
-                                            </ol>
-                                            <CopyButton code={class3MCode[1]} />
-                                            <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button5.webp"></img>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Acción Pull UP</h3>
-                                            <p className="text-break mx-auto w-75">Debemos indicarle que acción queremos capturar del botón. En este caso va a ser la acción al presionar el botón. (Pin.PULL_UP), cuando no está pulsado tendrá un valor 1, en caso contrario un 0</p>
-                                            <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button2.webp"></img>
-                                            <p className="text-break mx-auto w-75 mt-4">Para detectar si el botón está pulsado o no, debemos utilizar el método "value", para detectar constantemente el estado debemos utilizar el bucle while y también la libreria utime para que detecte el estado de forma detenida.</p>
-                                            <CopyButton code={class3MCode[0]} />
-                                            <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button3.webp"></img>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        <h2 className="text-light">Led</h2>
-                                    </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Control Básico de LED</h3>
-                                            <p className="text-break mx-auto w-75">Los LEDs básicos son dispositivos de dos pines: un ánodo (+) y un cátodo (-). Para encender y apagar un LED en MicroPython, simplemente se conecta el ánodo a un pin GPIO configurado como salida y el cátodo a tierra (GND). Se puede controlar encendiéndolo o apagándolo con comandos sencillos.</p>
-                                            <img className="d-block mx-auto w-50 border-content" alt="" src="../../img/class3Micropython/Led1.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica con led</h3>
-                                            <CopyButton code={class3MCode[2]} />
-                                            <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led2.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led con botones de forma directa</h3>
-                                            <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led4.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led con botones de forma indirecta</h3>
-                                            <CopyButton code={class3MCode[3]} />
-                                            <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led3.webp"></img>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        <h2 className="text-light">Ejecución del tercer programa</h2>
-                                    </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Instalación de thonny</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">1_ Dirígete a <Link to="https://thonny.org/" target="_blank" className="text-info">https://thonny.org/</Link> e instala el programa dependiendo tu sistema operativo.</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE1.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">2_Al ejecutar el instalador oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE2.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">3_Acepta el acuerdo y oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE3.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">4_oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE4.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">5_Nuevamente oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE5.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">6_Selecciona "create desktop icon" para tener esta aplicación en tu escritorio y oprime el botón "next</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE6.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">7_Seleccionamos el botón "install"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE7.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">8_Seleccionamos el botón "finish"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE8.jpg"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Configuración de thonny</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto">1_Seleccionamos el lenguaje, dejamos en configuración "standard" y seleccionamos el botón "Lets go!"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE9.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">2_Al estar dentro del programa accede a Ejecutar/configurar intérprete</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE10.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">3_Elige "micropython (raspberry pi pico)" y presiona "instala o actualiza micropython"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE11.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">4_Debemos conectar nuestro microcontrolador y presionar el botón blanco</p>
-                                            <img className="w-25 mx-auto d-block" alt="" src="../../img/class1Micropython/IDE12.jpg"></img>
-                                            <p className="mt-4 mb-4 w-75 text-center mx-auto">5_Automáticamente nos aparecerá el microcontrolador que conectamos, en este caso vamos a configurarlo de la siguiente manera y le damos a "instalar"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE13.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">Si en la consola te muestra el nombre del microcontrolador, está bien configurado</p>
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/class1Micropython/IDE14.jpg"></img>
-                                        </div>
-                                    </div>
-                                </div> */}
                                 <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <Link to="/micropythonClassFile/class3.py"
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <h2 className="text-light">Servomotores</h2>
+                                    </button>
+                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div className="accordion-body text-light bg-dark ">
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Qué es un servomotor?</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Un servomotor es un tipo de motor que permite un control preciso de la posición, la velocidad y el movimiento. A menudo se utiliza en aplicaciones como robótica, automatización y modelos a escala.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo.webp"></img>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tipos de servomotores</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 180 grados: </span> Suelen rotar en un rango de 0 a 180 grados.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 180 grados: </span> Pueden girar continuamente en ambas direcciones.</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Conexión de servomotor</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">VCC/VBUS :</span> La debemos conectar al puerto 3V3 para que nos proporcione el voltaje de 3V (+), aunque usualmente se conecta a 5V por medio del VBUS.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">SIG : </span> La debemos conectar al Pin GP28 para que podamos comunicar la señal de nuestro servomotor</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">GND : </span> La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Potenciometro en servomotor 180°</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Para utilizar este tipo de servomotores vamos a empezar a </p>
+                                            <CopyButton code={class4MCode[9]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo2.webp"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <Link to="/micropythonClassFile/class4.py"
                                         target={"_blank"}
-                                        download={"class3.py"}>
+                                        download={"class4.py"}>
                                         <button className="accordion-button collapsed bg-transparent" type="button">
-                                            <h2 className="text-light">Descarga el archivo de la clase 3</h2>
+                                            <h2 className="text-light">Descarga el archivo de la clase 4</h2>
                                         </button>
                                     </Link>
                                 </div>
@@ -318,9 +307,9 @@ const MicropythonClass4 = () => {
                             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
                                 <div >
                                     <h1>Clase 4</h1>
-                                    <h2>Comunicación UART y SPI.</h2>
-                                    <h2>Protocolo I2C en MicroPython.</h2>
-                                    <h2>Uso de sensores y actuadores externos/ Proyectos con sensores.</h2>
+                                    <h2>Introducción a PWM y su aplicación en MicroPython.</h2>
+                                    <h2>Control de LED mediante PWM.</h2>
+                                    <h2>Control de motor mediante PWM.</h2>
                                     <div className="text-center text-lg-start">
                                         <a href="#clase1" className="btn-get-started scrollto">tendrás acceso al curso el {new Date(date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</a>
                                     </div>
