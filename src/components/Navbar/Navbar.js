@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { colorPrimaryPython, colorPrimaryMicropython, colorPrimaryPythonKids, colorSecondaryPythonKids } from '../../colors'
+import { colorPrimaryPython, colorPrimaryMicropython, colorPrimaryPythonKids} from '../../colors'
 import Access from '../Access/Access';
 const Navbar = () => {
   const [backgroundColor, setBackgroundColor] = useState('');
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const location = useLocation();
-  const color = location.pathname.includes("micropython") ? colorPrimaryMicropython : location.pathname.includes("pythonKids")? colorPrimaryPythonKids : colorPrimaryPython
+  const color = location.pathname.includes("micropython") ? colorPrimaryMicropython : location.pathname.includes("pythonKids") ? colorPrimaryPythonKids : colorPrimaryPython
   const title = location.pathname.includes("micropython") ? "Python" : "Micropython"
 
   useEffect(() => {
@@ -40,10 +40,11 @@ const Navbar = () => {
           <nav id="navbar" className={isMobileNavOpen ? `navbar navbar-mobile h-auto ${location.pathname.includes("micropython") ? 'navbar-mobile-micropython' : ''}` : `navbar`} >
             <ul className={isMobileNavOpen ? 'h-50 ml-6 mr-6' : ''}>
               <Access />
-              <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython" : location.pathname.includes("pythonKids") ? "/pythonKids" :"/"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Inicio</Link></li>
+              <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython" : location.pathname.includes("pythonKids") ? "/pythonKids" : "/"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Inicio</Link></li>
               {<li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/" : "/micropython"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>{title}</Link></li>}
-              <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython/classes" :location.pathname.includes("pythonKids") ? "/pythonKids/classes" : "/classes"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Clases</Link></li>
-              {(!location.pathname.includes("micropython") || !location.pathname.includes("pythonKids")) ? null : <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/exercises" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Ejercicios</Link></li>}
+              {location.pathname.includes("micropython") ? <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={"/pythonKids"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>PythonKids</Link></li>: null}
+              <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to={location.pathname.includes("micropython") ? "/micropython/classes" : location.pathname.includes("pythonKids") ? "/pythonKids/classes" : "/classes"} style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Clases</Link></li>
+              {(location.pathname.includes("micropython") || location.pathname.includes("pythonKids")) ? null : <li onClick={isMobileNavOpen ? handleMobileNavToggle : null}><Link to="/exercises" style={isMobileNavOpen ? { color: "#012973", fontSize: "1.4rem" } : null} className={isMobileNavOpen ? 'nav-link scrollto active' : ''}>Ejercicios</Link></li>}
               {localStorage.getItem("passwordPython") && !location.pathname.includes("micropython") ?
                 <>
                   {isMobileNavOpen ? (
@@ -82,6 +83,12 @@ const Navbar = () => {
               }
               {(!location.pathname.includes("micropython") && !location.pathname.includes("pythonKids")) ? isMobileNavOpen ?
                 <>
+                  {location.pathname.includes("pythonKids") ? <li>
+                    <Link to="/" style={{ color: "#012973", fontSize: "1.4rem" }} className="nav-link scrollto active">Python</Link>
+                  </li> : <li>
+                    <Link to="/pythonKids" style={{ color: "#012973", fontSize: "1.4rem" }} className="nav-link scrollto active">Python kids</Link>
+                  </li>
+                  }
                   <li onClick={handleMobileNavToggle}>
                     <Link to="/algorithms" style={{ color: "#012973", fontSize: "1.4rem" }} className="nav-link scrollto active">Algoritmos</Link>
                   </li>
@@ -96,9 +103,9 @@ const Navbar = () => {
                 <li className="nav-item dropdown">
                   <Link className="dropdown-toggle" to="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">+ Contenido</Link>
                   <ul className={backgroundColor ? "dropdown-menu" : "dropdown-menu bg-transparent"} style={{ background: backgroundColor }} aria-labelledby="navbarDropdown2">
-                    {location.pathname.includes("pythonKids")?<li>
+                    {location.pathname.includes("pythonKids") ? <li>
                       <Link to="/" style={{ color: "#012973" }} className="nav-link scrollto active">Python</Link>
-                    </li>:<li>
+                    </li> : <li>
                       <Link to="/pythonKids" style={{ color: "#012973" }} className="nav-link scrollto active">Python kids</Link>
                     </li>
                     }
