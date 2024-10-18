@@ -79,7 +79,7 @@ const MicropythonClass3 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>GPIO</h2>
                                     </button>
-                                    <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a1" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Que es GPIO?</h3>
                                             <p className="text-break mx-auto w-75 mt-4">Los GPIO (General Purpose Input/Output) son pines de propósito general que se encuentran en muchos microcontroladores y dispositivos como la Raspberry Pi Pico W. Estos pines permiten la comunicación entre el microcontrolador y el mundo exterior, es decir, pueden enviar o recibir señales eléctricas para interactuar con otros componentes electrónicos como LEDs, botones, motores, sensores, y más.</p>
@@ -104,7 +104,7 @@ const MicropythonClass3 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Pin Digital</h2>
                                     </button>
-                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a2" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="text-break mx-auto w-75">Un pin digital es un pin en un microcontrolador o microprocesador que puede manejar señales digitales, es decir, señales que solo tienen dos estados posibles: alto (HIGH) o bajo (LOW). Los pines digitales son fundamentales para la comunicación entre el microcontrolador y dispositivos externos, como sensores, botones, LEDs, motores, entre otros.</p>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Estados de un pin digital</h3>
@@ -125,7 +125,7 @@ const MicropythonClass3 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Bucle While</h2>
                                     </button>
-                                    <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a3" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="text-break mx-auto mt-4 w-75">Bucle while (mientras): El bucle while ejecuta repetidamente un bloque de código siempre que una condición sea verdadera. La condición se verifica antes de cada iteración, y si es verdadera, se ejecuta el bloque de código. Si la condición se vuelve falsa en algún momento, se sale del bucle y se continúa con la siguiente instrucción después del bucle. Aquí tienes un ejemplo de un bucle while:</p>
                                             <CopyButton code={class3Code[4]} />
@@ -139,7 +139,7 @@ const MicropythonClass3 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Resistencia</h2>
                                     </button>
-                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a4" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">¿Qué es una resistencia?</h3>
                                             <p className="text-break mx-auto mt-4 w-75">Una resistencia es un componente electrónico diseñado para limitar el flujo de corriente en un circuito. Se utiliza para proteger otros componentes sensibles de sobrecargas o para controlar la cantidad de corriente que pasa por ellos. El valor de una resistencia se mide en ohmios (Ω), y su principal función es oponerse al paso de la corriente eléctrica.</p>
@@ -170,7 +170,7 @@ const MicropythonClass3 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">Botones</h2>
                                     </button>
-                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a5" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="text-break mx-auto w-75">Para utilizar un botón en un raspberri pi pico, vamos a tener que utilizar de la libreria "machine" la función "Pin"</p>
                                             <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button1.webp"></img>
@@ -209,7 +209,7 @@ const MicropythonClass3 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFour">
                                         <h2 className="text-light">Led</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Control Básico de LED</h3>
                                             <p className="text-break mx-auto w-75">Los LEDs básicos son dispositivos de dos pines: un ánodo (+) y un cátodo (-). Para encender y apagar un LED en MicroPython, simplemente se conecta el ánodo a un pin GPIO configurado como salida y el cátodo a tierra (GND). Se puede controlar encendiéndolo o apagándolo con comandos sencillos.</p>
@@ -229,7 +229,7 @@ const MicropythonClass3 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">Ejecución del tercer programa</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Instalación de thonny</h3>
                                             <p className="mt-4 mb-4 text-center mx-auto w-50">1_ Dirígete a <Link to="https://thonny.org/" target="_blank" className="text-info">https://thonny.org/</Link> e instala el programa dependiendo tu sistema operativo.</p>

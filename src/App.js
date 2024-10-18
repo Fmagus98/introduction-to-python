@@ -20,6 +20,12 @@ const MicropythonClass5 = lazy(() => import('./components/MicropythonClass/Micro
 const MicropythonClass6 = lazy(() => import('./components/MicropythonClass/MicropythonClass6'));
 const MicropythonClass7 = lazy(() => import('./components/MicropythonClass/MicropythonClass7'));
 const MicropythonClass8 = lazy(() => import('./components/MicropythonClass/MicropythonClass8'));
+const PythonKidsClass1 = lazy(() => import('./components/PythonKids/PythonKidsClass1'));
+const PythonKidsClass2 = lazy(() => import('./components/PythonKids/PythonKidsClass2'));
+const PythonKidsClass3 = lazy(() => import('./components/PythonKids/PythonKidsClass3'));
+const PythonKidsClass4 = lazy(() => import('./components/PythonKids/PythonKidsClass4'));
+const PythonKidsClass5 = lazy(() => import('./components/PythonKids/PythonKidsClass5'));
+const PythonKidsClass6 = lazy(() => import('./components/PythonKids/PythonKidsClass6'));
 const GithubClass1 = lazy(() => import('./components/GithubClass/GithubClass1'));
 const Exercises = lazy(() => import('./components/Exercises/Exercises'));
 const Algorithms = lazy(() => import('./components/Algorithms/Algorithms'))
@@ -39,8 +45,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/micropython" element={<Home />} />
+        <Route path="/pythonkids" element={<Home />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/micropython/classes" element={<Classes />} />
+        <Route path="/pythonkids/classes" element={<Classes />} />
         <Route path="/classes/0yKRrkDNEiFiv7K326tk" element={<Class1 />} />
         <Route path="/classes/2KLc4SOyBBSsZ3MvrydE" element={<Class2 />} />
         <Route path="/classes/Ok0Mm7iHM1fIw69Twf4o" element={<Class3 />} />
@@ -57,6 +65,12 @@ function App() {
         <Route path="/micropython/classes/biHDw8gF0oV14msUfiD5" element={<MicropythonClass6 />} />
         <Route path="/micropython/classes/mqV4nby5dHGGxzcEHVXq" element={<MicropythonClass7 />} />
         <Route path="/micropython/classes/xAZ9Kuxrx9Ve1Kaz7kTN" element={<MicropythonClass8 />} />
+        <Route path="/pythonKids/classes/564WM1eWea8DgKIZUZVU" element={<PythonKidsClass1 />} />
+        <Route path="/pythonKids/classes/5Km33wbYS7hONMtuaOfj" element={<PythonKidsClass2 />} />
+        <Route path="/pythonKids/classes/CSAgDDIO4Aqtlce76A2R" element={<PythonKidsClass3 />} />
+        <Route path="/pythonKids/classes/GrXBR5kLBjELXVm5X6Bj" element={<PythonKidsClass4 />} />
+        <Route path="/pythonKids/classes/dJDZzbJCAXo4E9I1SgUT" element={<PythonKidsClass5 />} />
+        <Route path="/pythonKids/classes/dncQtkAWJYQ8YqipLSvK" element={<PythonKidsClass6 />} />
         <Route path="/micropython/exercises" element={<Exercises/>} />
         <Route path="/exercises" element={<Exercises/>} />
         <Route path="/algorithms" element={<Algorithms/>} />
@@ -65,6 +79,7 @@ function App() {
         <Route path="/micropython/projects" element={<Projects/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/micropython/contact" element={<Contact/>} />
+        <Route path="/pythonKids/contact" element={<Contact/>} />
         <Route path="/github/classes" element={<Classes/>} />
         <Route path="/github/classes/26FRYWt99U3HPuaCfGky" element={<GithubClass1 />} />
         {/* <Route path="/microPython/github" element={<Github/>} /> */}

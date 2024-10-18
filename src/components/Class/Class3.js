@@ -96,7 +96,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                     <h2 >Condicionales</h2>
                   </button>
-                  <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a1" className="accordion-collapse collapse" >
                     <div className="accordion-body text-light bg-dark ">
                       <div className="accordion-body text-light">
                         <p className="text-break mx-auto w-75 mt-4">En programación, las condicionales son estructuras que nos permiten tomar decisiones basadas en ciertas condiciones. Podemos pensar en ellas como una forma de emular el proceso de toma de decisiones que ocurre en la vida real.<br></br><br></br>
@@ -112,7 +112,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h2 className="text-light">If, else, elif y match</h2>
                   </button>
-                  <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                  <div id="a2" className="accordion-collapse collapse bg-dark" >
                     <div className="accordion-body text-light bg-dark ">
                       <h3 className="text-break mx-auto w-75 mt-4">If</h3>
                       <p className="text-break mx-auto w-75">La palabra clave if se utiliza para iniciar una estructura condicional. Nos permite especificar una condición que se evalúa como verdadera o falsa. Si la condición es verdadera, se ejecuta el bloque de código indentado bajo el if. Si la condición es falsa, se omite ese bloque y el programa continúa con la siguiente instrucción después del if. Aquí tienes un ejemplo:</p>
@@ -137,7 +137,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h2 className="text-light">Bucles</h2>
                   </button>
-                  <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                  <div id="a3" className="accordion-collapse collapse bg-dark" >
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4">En programación, los bucles son estructuras que nos permiten repetir un bloque de código varias veces. Estos bloques de código se ejecutan repetidamente hasta que se cumpla una condición específica.</p>
                       <p className="text-break mx-auto w-75">Los bucles son especialmente útiles cuando queremos automatizar tareas repetitivas o cuando necesitamos procesar una colección de elementos. En lugar de escribir líneas de código individuales para cada elemento o repetición, podemos utilizar bucles para hacerlo de manera más eficiente y concisa.</p>
@@ -149,7 +149,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                     <h2 className="text-light">While</h2>
                   </button>
-                  <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a4" className="accordion-collapse collapse" >
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto mt-4 w-75">Bucle while (mientras): El bucle while ejecuta repetidamente un bloque de código siempre que una condición sea verdadera. La condición se verifica antes de cada iteración, y si es verdadera, se ejecuta el bloque de código. Si la condición se vuelve falsa en algún momento, se sale del bucle y se continúa con la siguiente instrucción después del bucle. Aquí tienes un ejemplo de un bucle while:</p>
                       <CopyButton code={class3Code[4]} />
@@ -163,7 +163,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                     <h2 className="text-light">For</h2>
                   </button>
-                  <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a5" className="accordion-collapse collapse" >
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
                       <h3 className="text-break mx-auto w-75 mt-4">Bucle for en cadena de texto</h3>
@@ -189,7 +189,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
                     <h2 className="text-light">Resolución de problemas</h2>
                   </button>
-                  <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a6" className="accordion-collapse collapse" >
                     <div className="accordion-body text-light bg-dark ">
                       <p className="text-break mx-auto mt-4 w-75">En esta instancia del curso de python estamos empezando a implementar con condicionales y bucles, es un buen momento de implementar estas herramientas en problemas reales y empezar a desarrollar la resolución de problemas con lógica</p>
                       <h3 className="text-break mx-auto w-75">Problema n°1 - validación de contraseña</h3>
@@ -212,7 +212,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                     <h2 className="text-light">Mini projecto 3 - Simulador de compra</h2>
                   </button>
-                  <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a7" className="accordion-collapse collapse" >
                     <div className="accordion-body text-light bg-dark ">
                       <h3 className="text-break mx-auto w-75">Objetivo:</h3>
                       <p className="text-break mx-auto w-75">Crear un simulador que permita a los usuarios seleccionar productos para comprar, ingresar la cantidad deseada de ese producto y mostrar el total a pagar, incluyendo impuestos si es necesario.</p>
@@ -256,7 +256,7 @@ const Class3 = () => {
                   <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSeven">
                     <h2 className="text-light">Evaluación de Conocimientos: Clase 3 - Control de flujo en Python</h2>
                   </button>
-                  <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div id="a8" className="accordion-collapse collapse" >
                     <div className="accordion-body text-light bg-dark ">
                       <QuizForm />
                     </div>

@@ -79,7 +79,7 @@ const MicropythonClass2 = () => {
                                     <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Variables</h2>
                                     </button>
-                                    <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a1" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
                                                 <h3 className="text-break mx-auto w-75 mt-4">¿Que es una variable?</h3>
@@ -97,7 +97,7 @@ const MicropythonClass2 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Estilo de escritura</h2>
                                     </button>
-                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a2" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-break mx-auto w-75 mt-4">Convenciones de Estilo de Escritura en Python</h3>
                                             <p className="text-break mx-auto w-75">Las convenciones de estilo de codificación incluyen reglas para nombrar variables, funciones, clases, métodos, constantes, etc.
@@ -134,7 +134,7 @@ const MicropythonClass2 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">Tipos de datos</h2>
                                     </button>
-                                    <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                    <div id="a3" className="accordion-collapse collapse bg-dark" >
                                         <div className="accordion-body text-light">
                                             <h3 className="text-break mx-auto w-75 mt-4">Booleano</h3>
                                             <p className="text-break mx-auto w-75">Este es el primer tipo de dato que vamos a ver y se asemeja al lenguaje máquina, ya que su comportamiento es de forma binaria
@@ -171,7 +171,7 @@ const MicropythonClass2 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                         <h2 className="text-light">Operadores y expresiones</h2>
                                     </button>
-                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a4" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="text-break mx-auto w-75 mt-4">En Python, los operadores son símbolos especiales que realizan operaciones en valores y variables.
                                                 Las expresiones, por otro lado, son combinaciones de valores, variables y operadores que Python puede evaluar y dar un resultado.
@@ -202,7 +202,7 @@ const MicropythonClass2 = () => {
                                     <button className="accordion-button mt-4 collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >Condicionales</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
                                                 <p className="text-center mx-auto w-75">En programación, las condicionales son estructuras que nos permiten tomar decisiones basadas en ciertas condiciones. Podemos pensar en ellas como una forma de emular el proceso de toma de decisiones que ocurre en la vida real.<br></br><br></br>
@@ -218,7 +218,7 @@ const MicropythonClass2 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">If else elif y match</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                    <div id="a7" className="accordion-collapse collapse bg-dark" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-break mx-auto w-75 mt-4">If</h3>
                                             <p className="text-break mx-auto w-75">La palabra clave if se utiliza para iniciar una estructura condicional. Nos permite especificar una condición que se evalúa como verdadera o falsa. Si la condición es verdadera, se ejecuta el bloque de código indentado bajo el if. Si la condición es falsa, se omite ese bloque y el programa continúa con la siguiente instrucción después del if. Aquí tienes un ejemplo:</p>
@@ -243,7 +243,7 @@ const MicropythonClass2 = () => {
                                     <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >Ejecución del segundo programa</h2>
                                     </button>
-                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a8" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
                                                 <h2 className="text-center mx-auto">Esquema del programa</h2>

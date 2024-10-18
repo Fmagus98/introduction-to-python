@@ -73,7 +73,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>¿Que es git?</h2>
                                     </button>
-                                    <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a1" className="accordion-collapse collapse" >
                                         <div className=" accordion-body text-light bg-dark">
                                             <img className="mx-auto d-block w-25 border-content" alt="Git" src='../../img/classGithub/git.png' />
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Definición de Git</h3>
@@ -118,7 +118,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Que es Github?</h2>
                                     </button>
-                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a2" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <p className="text-break mx-auto mt-7 w-75">GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. En términos simples, Git es un sistema que permite gestionar y rastrear cambios en el código fuente durante el desarrollo de software, facilitando el trabajo colaborativo entre programadores.
                                             </p>
@@ -154,7 +154,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">Instalación de Git</h2>
                                     </button>
-                                    <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a3" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <div id="content">
                                                 <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Instalación en Windows</h3>
@@ -180,7 +180,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                         <h2 className="text-light">Crear una cuenta en github</h2>
                                     </button>
-                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a4" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <ol className="text-break mx-auto w-75">
                                                 <li>
@@ -215,7 +215,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">Configuración de Git</h2>
                                     </button>
-                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a5" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <p className="mt-4 mb-7 text-break mx-auto w-75">Ya habiendo instalado Git, vamos a verificar si realmente está instalado correctamente en nuestra maquina, para esto vamos a tener que utilizar la terminal que tenga tu sistema operativo.</p>
                                             <h5 className="mt-4 text-break mx-auto w-75 bold">Comprobar instalación de git dentro de la terminal</h5>
@@ -251,7 +251,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">¿Que arquitectura tengo en mi pc?</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark">
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">La arquitectura de 32 bits y 64 bits se refiere a cómo un procesador maneja la información. Estos términos se refieren a la cantidad de datos que un procesador puede procesar en un solo ciclo de reloj y la cantidad máxima de memoria que puede direccionar el procesador.</p>
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">Es importante saberlo ya que vamos a instalar una versión diferente de python e IDE para cada caso. Para saber que tipo de arquitectura tengo en mi pc debemos hacer lo siguiente:</p>
@@ -292,7 +292,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">Instalación de python</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark">
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">1. Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link> y selecciona "Downloads"</p>
                                             <img className="w-75 mx-auto d-block border-content " alt="" src="../img/class1/python1.webp"></img>
@@ -311,7 +311,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseSix">
                                         <h2 className="text-light">Entorno de desarrollo integrado (IDE)</h2>
                                     </button>
-                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a8" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">Para programar en un lenguaje de programación debemos tener en nuestro ordenador un entorno de desarrollo integrado, más conocido como IDE,
                                                 Un IDE combina un editor de código, un compilador o intérprete, herramientas de depuración, un sistema de gestión de versiones,
@@ -336,7 +336,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Instalación de IDE</h2>
                                     </button>
-                                    <div id="a9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a9" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <h3 className="mt-4 text-break w-75 mx-auto">Instalación de IDE para sistema operativo de 64 bits</h3>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">En este curso utilizaremos Visual Studio Code, es un editor de código ligero pero potente que se ha vuelto muy popular entre los desarrolladores por su facilidad de poder programar en diferentes lenguajes de programación, incluido Python.</p>
@@ -371,7 +371,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Herramientas de Visual Studio Code (IDE)</h2>
                                     </button>
-                                    <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a10" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <h3 className="mt-4 text-break w-75 mx-auto">Extensiones en Visual Studio Code</h3>
                                             <p className="mt-4 mb-4 text-break mx-auto w-75">En nuestro Visual Studio Code tenemos bastantes herramientas que nos falicitará a la hora de
@@ -406,7 +406,7 @@ const GithubClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a11" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Ejecución del primer programa</h2>
                                     </button>
-                                    <div id="a11" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a11" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark  ">
                                             <h3 className="mt-4 text-break mx-auto w-75">Crea un proyecto en Visual Studio Code</h3>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">1_ Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>

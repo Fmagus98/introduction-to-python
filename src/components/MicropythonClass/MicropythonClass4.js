@@ -78,7 +78,7 @@ const MicropythonClass4 = () => {
                                 <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                     <h2>Listas</h2>
                                 </button>
-                                <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div id="a1" className="accordion-collapse collapse" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <div className="accordion-body text-light">
                                             <p className="text-break mx-auto mt-4 w-75">Una lista en Python es una estructura de datos que permite almacenar múltiples elementos en un solo objeto. <br></br>Puedes considerar una lista como una secuencia ordenada de elementos que pueden ser de diferentes tipos, como números, cadenas de texto, booleanos e incluso otras listas. Se definen utilizando corchetes [ ] y los elementos se separan por comas.</p>
@@ -100,7 +100,7 @@ const MicropythonClass4 = () => {
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
                                     <h2 className="text-light">Métodos de lista</h2>
                                 </button>
-                                <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                <div id="a2" className="accordion-collapse collapse bg-dark" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <p className="text-break mx-auto w-75">Las listas en Python tienen varios métodos integrados que facilitan su manipulación.</p>
                                         <h3 className="text-break w-75 mx-auto">append() / extend()</h3>
@@ -127,7 +127,7 @@ const MicropythonClass4 = () => {
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                     <h2 className="text-light">Funciones en listas</h2>
                                 </button>
-                                <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                <div id="a3" className="accordion-collapse collapse bg-dark" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <p className="text-break mx-auto w-75">
                                             Además de tener métodos para utilizar en listas, también tenemos funciones que nos ayudan a la hora de manipular datos.:
@@ -143,7 +143,7 @@ const MicropythonClass4 = () => {
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFive">
                                     <h2 className="text-light">For</h2>
                                 </button>
-                                <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div id="a4" className="accordion-collapse collapse" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
                                         <CopyButton code={class3Code[9]} />
@@ -159,7 +159,7 @@ const MicropythonClass4 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>PWM</h2>
                                     </button>
-                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a5" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">¿Qué es PWM?</h3>
                                             <p className="text-break mx-auto w-75 mt-4">PWM (Modulación por Ancho de Pulso) es una técnica utilizada para controlar la potencia entregada a dispositivos electrónicos. En lugar de aplicar un voltaje constante, PWM alterna rápidamente entre encendido y apagado, lo que permite simular un voltaje variable.</p>
@@ -190,7 +190,7 @@ const MicropythonClass4 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Potenciometro</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Potenciometro en Raspberry pi pico w (potenciometro)</h3>
                                             <p className="text-break mx-auto w-75 mt-4">Para poder utilizar un Potenciometro debemos utilizar desde la libreria "machine" la clase "ADC"</p>
@@ -215,7 +215,7 @@ const MicropythonClass4 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Led</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funcionamiento de PWM en LEDs</h3>
                                             <p className="text-break mx-auto w-75">Los LEDs son dispositivos semiconductores que convierten energía eléctrica en luz, y su brillo depende de la cantidad de corriente que pasa a través de ellos. Sin embargo, en lugar de ajustar directamente la corriente, lo que podría ser ineficiente y producir calor, el PWM ofrece un enfoque eficiente para regular el brillo mediante el control del tiempo que el LED está encendido o apagado durante un ciclo.</p>
@@ -265,7 +265,7 @@ const MicropythonClass4 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Servomotores</h2>
                                     </button>
-                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a8" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Qué es un servomotor?</h3>
                                             <p className="text-break mx-auto mt-4 w-75">Un servomotor es un tipo de motor que permite un control preciso de la posición, la velocidad y el movimiento. A menudo se utiliza en aplicaciones como robótica, automatización y modelos a escala.</p>

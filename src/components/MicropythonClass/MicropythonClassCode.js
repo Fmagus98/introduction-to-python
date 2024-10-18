@@ -33,3 +33,10 @@ export const class4MCode = [
     `from machine import Pin, ADC\nfrom time import sleep\nadc = ADC(Pin(28))\nLEDS = [Pin(LED, Pin.OUT) for LED in range(6, 9)]\nwhile True:\n    analog_value = adc.read_u16() / 65535\n    print(analog_value)\n    for i in range(3):\n        LEDS[i].off()\n    if analog_value <= 0.33:\n        LEDS[0].on()\n    elif analog_value > 0.66:\n        LEDS[2].on()\n    else:\n        LEDS[1].on()\n    sleep(0.1)`,
     `from machine import Pin, ADC, PWM\nfrom time import sleep\nadc = ADC(Pin(28))\npwm = PWM(Pin(15))\npwm.freq(50)\nwhile True:\n    pot = int(adc.read_u16() * 180 / 65535)\n    print(f"{pot}°")\n    ton = (pot + 45) * 100000 / 9\n    print(ton)\n    pwm.duty_ns(int(ton))`
 ] 
+
+export const class5MCode = [
+`import network`,
+`import network\n\n# Inicializa la interfaz de red en modo estación\nwlan = network.WLAN(network.STA_IF)\nwlan.active(True)\n`,
+`import network\n\n# Inicializa la interfaz de red en modo estación\nwlan = network.WLAN(network.STA_IF)\nwlan.active(True)\n\n# Escanea las redes Wi-Fi disponibles\nprint("Escaneando redes Wi-Fi...")\nnetworks = wlan.scan()\n`,
+`import network\n\n# Inicializa la interfaz de red en modo estación\nwlan = network.WLAN(network.STA_IF)\nwlan.active(True)\n\n# Escanea las redes Wi-Fi disponibles\nprint("Escaneando redes Wi-Fi...")\nnetworks = wlan.scan()\n\n# Muestra las redes encontradas\n# usamos *_ para omitir datos que no nos interesa de la tupla\nfor ssid, *_ in networks:\n    # Decodifica el SSID de bytes a cadena\n    print("Red encontrada:", ssid.decode('utf-8'))\n\n    # Desactiva la interfaz después del escaneo\nwlan.active(False)\n`
+]

@@ -3,17 +3,17 @@ import { useLocation } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import ItemContainer from '../ItemContainer/ItemContainer'
-import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
+import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython, colorPrimaryPythonKids, colorSecondaryPythonKids } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 const Classes = () => {
 
     const location = useLocation();
     const elementVisibility = useScrollAnimation();
     const title = location.pathname.includes("micropython") ? "micropython" : "python"
-    const content = location.pathname === "/micropython/classes" ? "courseMicropython" : location.pathname === "/github/classes" ? "courseGithub" : "course"
-    const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : colorPrimaryPython
+    const content = location.pathname === "/micropython/classes" ? "courseMicropython" : location.pathname === "/github/classes" ? "courseGithub" : location.pathname === "/pythonKids/classes" ? "pythonKids": "course"
+    const color = location.pathname.includes("micropython") ? colorSecondaryMicropython : location.pathname.includes("pythonKids") ? colorPrimaryPythonKids : colorPrimaryPython
     const [course, setCourse] = useState([])
-    const savedCourse = location.pathname === "/classes" ? localStorage.getItem('dataCourse'): location.pathname === "/micropython/classes" ? localStorage.getItem('dataCourseMicropython'):null
+    const savedCourse = location.pathname === "/classes" ? localStorage.getItem('dataCourse'): location.pathname === "/micropython/classes" ? localStorage.getItem('dataCourseMicropython'): location.pathname === "/pythonKids/Classes" ? localStorage.getItem('dataCoursePhythonKids') : null
 
     const callFirebase = useCallback(() => {
         getDocs(collection(db, content)).then(response => {
@@ -30,6 +30,11 @@ const Classes = () => {
             else if (content === "courseGithub") {
                 localStorage.removeItem('dataCourseGithub');
                 localStorage.setItem('dataCourseGithub', JSON.stringify(getData));
+                setCourse(getData);
+            }
+            else if (content === "pythonKids") {
+                localStorage.removeItem('dataCoursePhythonKids');
+                localStorage.setItem('dataCoursePhythonKids', JSON.stringify(getData));
                 setCourse(getData);
             }
             else{
@@ -58,7 +63,7 @@ const Classes = () => {
 
     return (
         <>
-            <section id="hero" style={{ background: location.pathname.includes("micropython") ? colorPrimaryMicropython : colorPrimaryPython }} >
+            <section id="hero" style={{ background: location.pathname.includes("micropython") ? colorPrimaryMicropython : location.pathname.includes("pythonKids") ? colorPrimaryPythonKids : colorPrimaryPython }} >
                 <div className="container">
                     <div className="row justify-content-between">
                         {location.pathname.includes("github") ?
@@ -84,7 +89,7 @@ const Classes = () => {
                                             organizados para aprender los conceptos fundamentales de la programación
                                             utilizando {title} como lenguaje de referencia.</h2>
                                         <div className="text-center text-lg-start">
-                                            <a href="#classes" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`}>Empieza a cursar!</a>
+                                            <a href="#classes" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`} style={{background:location.pathname.includes("pythonKids") ? colorSecondaryPythonKids : null}}>Empieza a cursar!</a>
                                         </div>
                                     </div>
                                 </div>

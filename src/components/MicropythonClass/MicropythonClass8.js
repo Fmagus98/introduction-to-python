@@ -76,7 +76,7 @@ const MicropythonClass8 = () => {
                                     <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >¿Que es micropython?</h2>
                                     </button>
-                                    <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a1" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <img className="d-block mx-auto w-25" alt="" src="../../img/class1Micropython/damien.jpg"></img>
                                             <p className="text-center">MicroPython es una implementación del lenguaje de programación Python 3 diseñada específicamente para ser ejecutada en microcontroladores y sistemas embebidos. Fue creado por Damien George en 2013 y desde entonces ha ganado una gran popularidad en la comunidad de desarrollo de hardware y proyectos electrónicos.</p>
@@ -104,7 +104,7 @@ const MicropythonClass8 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Aplicaciones en el ámbito laboral</h2>
                                     </button>
-                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a2" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="text-center mx-auto w-100">El perfil de un programador puede variar dependiendo de sus habilidades, experiencia y especialización. Sin embargo, hay algunas características y habilidades comunes que suelen definir a un programador y son:
                                             </p>
@@ -133,7 +133,7 @@ const MicropythonClass8 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">¿Que es python?</h2>
                                     </button>
-                                    <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a3" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <div id="content">
                                                 <img className="d-block mx-auto w-25" alt="" src="../img/class1/guido.webp"></img>
@@ -164,7 +164,7 @@ const MicropythonClass8 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                         <h2 className="text-light">Caracteristicas de python</h2>
                                     </button>
-                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a4" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>NIVEL ALTO</h3>
                                             <p className="text-center mx-auto">Dentro de la programación hay tipos niveles, estos niveles determinan la complejidad en la podemos programar
@@ -249,7 +249,7 @@ const MicropythonClass8 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">Instalación de python</h2>
                                     </button>
-                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a5" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link>.<br></br>
                                                 En este curso usaremos la version 3.8.3, para descargar una version diferente a la actual dirigete a downloads.</p>
@@ -269,7 +269,7 @@ const MicropythonClass8 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
                                         <h2 className="text-light">Entorno de desarrollo integrado (IDE)</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="mt-4 mb-4 text-center mx-auto w-75">Para programar en un lenguaje de programación debemos tener en nuestro ordenador un entorno de desarrollo integrado, más conocido como IDE,
                                                 Un IDE combina un editor de código, un compilador o intérprete, herramientas de depuración, un sistema de gestión de versiones,
@@ -330,7 +330,7 @@ const MicropythonClass8 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Ejecución del primer programa</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
                                             <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/class1/p1.webp"></img>

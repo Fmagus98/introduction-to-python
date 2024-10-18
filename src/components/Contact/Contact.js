@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { Link, useLocation } from 'react-router-dom';
-import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython} from '../../colors'
+import { colorPrimaryPython, colorPrimaryPythonKids,colorPrimaryMicropython, colorSecondaryMicropython, colorSecondaryPythonKids} from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 const Contact = () => {
@@ -11,8 +11,8 @@ const Contact = () => {
     const form = useRef();
     const location = useLocation()
     const title = location.pathname.includes("micropython") ? "micropython" : "python"
-    const color = location.pathname.includes("/micropython") ? colorSecondaryMicropython : ""
-    const color2 = location.pathname.includes("/micropython") ? colorPrimaryMicropython : colorPrimaryPython
+    const color = location.pathname.includes("/micropython") ? colorSecondaryMicropython : location.pathname.includes("pythonKids") ? colorPrimaryPythonKids : ""
+    const color2 = location.pathname.includes("/micropython") ? colorPrimaryMicropython : location.pathname.includes("pythonKids") ? colorSecondaryPythonKids : colorPrimaryPython
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_om6xbij', 'template_szjk8z4', form.current, 'CxCHtiHIgRGkMAL1C')
@@ -46,7 +46,7 @@ const Contact = () => {
 
     return (
         <>
-            <section id="hero" style={{ background: location.pathname.includes("micropython") ? "#B34229" : colorPrimaryPython }}>
+            <section id="hero" style={{ background: location.pathname.includes("micropython") ? "#B34229" : location.pathname.includes("pythonKids") ? colorPrimaryPythonKids : colorPrimaryPython }}>
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -56,7 +56,7 @@ const Contact = () => {
                                     <br></br> <br></br>También pueden consultarme directamente por correo electrónico para abordar dudas personalizadas. Estoy aquí para ayudarles en su proceso de aprendizaje en Python.
                                     ¡Nos vemos en Discord y en nuestros intercambios de correo electrónico!</h2>
                                 <div className="text-center text-lg-start">
-                                <a href="#contact" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`}>Contactame</a>
+                                <a href="#contact" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`} style={{background: location.pathname.includes("pythonKids") ? colorSecondaryPythonKids : null}}>Contactame</a>
                                 </div>
                             </div>
                         </div>

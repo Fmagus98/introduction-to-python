@@ -80,7 +80,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >¿Que es micropython?</h2>
                                     </button>
-                                    <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a1" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <img className="mx-auto d-block w-25 border-content" alt="" src="../../img/class1Micropython/damien.jpg"></img>
                                             <p className="text-break mx-auto w-75 mt-4">MicroPython es una implementación del lenguaje de programación Python 3 diseñada específicamente para ser ejecutada en microcontroladores y sistemas embebidos. Fue creado por Damien George en 2013 y desde entonces ha ganado una gran popularidad en la comunidad de desarrollo de hardware y proyectos electrónicos.</p>
@@ -106,7 +106,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2 >Caracteristicas de Micropython</h2>
                                     </button>
-                                    <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a2" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Lenguaje Python</h3>
                                             <p className="text-break mx-auto w-75">MicroPython es compatible con el lenguaje de programación Python 3, lo que significa que puedes escribir código en Python estándar para controlar hardware y dispositivos embebidos.</p>
@@ -127,7 +127,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Aplicaciones en el ámbito laboral</h2>
                                     </button>
-                                    <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a3" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <p className="text-break mx-auto w-75">MicroPython tiene aplicaciones en una variedad de campos y desempeña un papel importante en el mundo laboral en varias áreas. A continuación, se presentan algunas de las aplicaciones y casos de uso más comunes de MicroPython en el mundo laboral:</p>
                                             <h3 className="mt-7 mb-4 fw-bold text-center">Desarrollo de dispositivos IoT (Internet de las cosas)</h3>
@@ -158,7 +158,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">Plataformas de hardware compatibles con MicroPython</h2>
                                     </button>
-                                    <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a4" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <div id="content">
                                                 <p className="text-break mx-auto w-75"> MicroPython es compatible con una amplia variedad de plataformas de hardware, especialmente aquellas que utilizan microcontroladores y microprocesadores. Algunas de las plataformas de hardware compatibles con MicroPython más populares incluyen:</p>
@@ -212,7 +212,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFour">
                                         <h2 className="text-light">Raspberry pi pico</h2>
                                     </button>
-                                    <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a5" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Familia de raspberry pi pico</h3>
                                             <p className="text-break mx-auto w-75">La familia Raspberry Pi Pico consta actualmente de cuatro placas; Raspberry Pi Pico (extremo izquierdo), Pico H (centro izquierda), Pico W (centro derecha) y Pico WH (extremo derecho).<br></br>Raspberry Pi Pico es una placa microcontroladora de alto rendimiento y bajo costo con interfaces digitales flexibles.</p>
@@ -251,7 +251,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">¿Que arquitectura tengo en mi pc?</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark">
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">La arquitectura de 32 bits y 64 bits se refiere a cómo un procesador maneja la información. Estos términos se refieren a la cantidad de datos que un procesador puede procesar en un solo ciclo de reloj y la cantidad máxima de memoria que puede direccionar el procesador.</p>
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">Es importante saberlo ya que vamos a instalar una versión diferente de python e IDE para cada caso. Para saber que tipo de arquitectura tengo en mi pc debemos hacer lo siguiente:</p>
@@ -292,7 +292,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">Instalación de python</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark">
                                             <p className="mt-7 mb-4 text-break mx-auto w-75">1. Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link> y selecciona "Downloads"</p>
                                             <img className="w-75 mx-auto d-block border-content " alt="" src="../../img/class1/python1.webp"></img>
@@ -311,7 +311,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseFive">
                                         <h2 className="text-light">IDE - thonny</h2>
                                     </button>
-                                    <div id="a8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a8" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Instalación de thonny</h3>
                                             <p className="mt-4 mb-4 text-center mx-auto w-50">1_ Dirígete a <Link to="https://thonny.org/" target="_blank" className="text-info">https://thonny.org/</Link> e instala el programa dependiendo tu sistema operativo.</p>
@@ -350,7 +350,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseThree">
                                         <h2 className="text-light">Entrada y salida en terminal</h2>
                                     </button>
-                                    <div id="a9" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                                    <div id="a9" className="accordion-collapse collapse bg-dark" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h2 className=" text-center">Salida de datos - print()</h2>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
@@ -387,7 +387,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Variables</h2>
                                     </button>
-                                    <div id="a10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a10" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <div className="accordion-body text-light">
                                                 <h3 className="text-break mx-auto w-75 mt-4">¿Que es una variable?</h3>
@@ -405,7 +405,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a11" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Ejecución del primer programa</h2>
                                     </button>
-                                    <div id="a11" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a11" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Primer programa: parpadeo en LED incorporado</h3>
                                             <p className="mt-4 mb-2 text-center mx-auto w-75">Para crear un archivo nuevo debemos tocar en el "+"</p>
@@ -441,7 +441,7 @@ const MicropythonClass1 = () => {
                                     <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a12" aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <h2 className="text-light">Simulador de Raspberry pi pico</h2>
                                     </button>
-                                    <div id="a12" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="a12" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>WOKWI - Simulador de raspberry pi pico</h3>
                                             <p className="mt-4 mb-2 text-break mx-auto w-75">En el caso que no dispongan de un microcontrolador Raspberry pi pico, pueden crear una simulación del microcontrolador desde la página Wokwi</p>

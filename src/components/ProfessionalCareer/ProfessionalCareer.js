@@ -55,7 +55,7 @@ const ProfessionalCarrer = () => {
                             <button className="accordion-button collapsed bg-transparent text-light" pe="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <h2>Ciencias de datos</h2>
                             </button>
-                            <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a1" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Aplicaciones en ciencias de datos</h3>
                                     <p className="text-break mx-auto w-75">Con una librería de visualización de datos de Python, puedes crear una variedad increíble de gráficos y representaciones visuales, tales como:</p>
@@ -166,7 +166,7 @@ const ProfessionalCarrer = () => {
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h2 className="text-light">Inteligencia artificial</h2>
                             </button>
-                            <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a2" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Aplicaciones en ciencias de datos</h3>
                                     <p className="text-break mx-auto w-75">La inteligencia artificial (IA) se ha convertido en un campo crucial y en constante evolución con diversas aplicaciones que impactan en diversas áreas de la sociedad y la industria. Aquí hay algunas aplicaciones destacadas de la inteligencia artificial:</p>

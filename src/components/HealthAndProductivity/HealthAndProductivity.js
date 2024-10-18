@@ -53,7 +53,7 @@ const HealthAndProductivity = () => {
                             <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <h2>¿Que es esta sección?</h2>
                             </button>
-                            <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a1" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">En esta sección exploraremos una serie de prácticas diseñadas para mejorar el bienestar físico y mental de aquellos que pasan largas horas frente a una computadora. Ser un programador puede ser gratificante, pero también puede traer consigo desafíos como la tensión muscular, fatiga visual y estrés mental.</p>
                                     <p className="text break mx-auto mt-4 w-75">Aprenderemos una variedad de técnicas, desde estiramientos simples hasta consejos ergonómicos y estrategias para mejorar la concentración y el rendimiento. Estas prácticas no solo pueden aliviar las molestias físicas comunes asociadas con el trabajo de programación, sino que también pueden aumentar la eficiencia y la creatividad.</p>
@@ -76,7 +76,7 @@ const HealthAndProductivity = () => {
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseThree">
                                 <h2 className="text-light">Estiramientos</h2>
                             </button>
-                            <div id="a2" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                            <div id="a2" className="accordion-collapse collapse bg-dark" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Estiramiento de bíceps braquial</h3>
                                     <p className="text break mx-auto mt-4 w-75">El estiramiento  tanto del pectoral y bíceps como de toda la cadena anterior del brazo son importantísimos ya que tienden a estar acortados y por su continuo trabajo y su función principal en las funciones hegemónicas  del ser humano. En la realización de este estiramiento, realizaremos una extensión de hombro manteniendo una pronación del antebrazo, llevando la palma de la mano hacia arriba y evitando una excesiva antepulsión del hombro (movimiento del hombro hacia delante).</p>
@@ -126,7 +126,7 @@ const HealthAndProductivity = () => {
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                 <h2 className="text-light">Equipo</h2>
                             </button>
-                            <div id="a3" className="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
+                            <div id="a3" className="accordion-collapse collapse bg-dark" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <h3 className="text-break mx-auto w-75 mt-4">Monitor</h3>
                                     <ul className="w-75 mx-auto">
@@ -169,7 +169,7 @@ const HealthAndProductivity = () => {
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                 <h2 className="text-light">El mobiliario</h2>
                             </button>
-                            <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a4" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">De nada sirve contar con un equipo ergonómicamente preparado, si luego trabajamos sobre una mesa en la que no nos caben las piernas, o nos sentamos en una silla sin respaldo. Las malas posturas representan, en general, el 75% de las lesiones: dolores de espalda, molestias cervicales, lumbalgias… El mobiliario del puesto de trabajo es, pues, fundamental para no dañar nuestra salud.</p>
                                     <h3 className="text-break mx-auto w-75 mt-4">La mesa</h3>
@@ -216,7 +216,7 @@ const HealthAndProductivity = () => {
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 className="text-light">Postura corporal</h2>
                             </button>
-                            <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a5" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">El diseño del puesto de trabajo debe permitir que se pueda adoptar la siguiente postura, que ha de tenerse en cuenta como referencia. Cualquier otra que no suponga un sobre esfuerzo es también válida.</p>
                                     <ul className="w-75 mx-auto">
@@ -243,7 +243,7 @@ const HealthAndProductivity = () => {
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 className="text-light">Cuidado de la vista</h2>
                             </button>
-                            <div id="a6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a6" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">Existe cierta discrepancia entre los expertos sobre si los trastornos oculares derivados de trabajar con ordenadores son sólo transitorios o se pueden convertir en patológicos. Lo que sí está demostrado es que, al trabajar con pantallas de forma prolongada y habitual, algunas deficiencias oculares sin importancia como ser irritación o fatiga , se pueden convertir en lesiones más o menos graves.</p>
                                     <ul className="w-75 mx-auto">
@@ -264,7 +264,7 @@ const HealthAndProductivity = () => {
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 className="text-light">Hábitos de trabajo y ejercicios saludables</h2>
                             </button>
-                            <div id="a7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a7" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">
                                     <p className="text break mx-auto mt-4 w-75">La colocación del mobiliario, los equipos de la oficina y la iluminación no son los únicos factores que determinan la forma de sentirse a lo largo de la jornada laboral. Sus hábitos de trabajo también son muy importantes.</p>
                                     <ul className="w-75 mx-auto">

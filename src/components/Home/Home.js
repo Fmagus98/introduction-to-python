@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { useLocation,Link} from 'react-router-dom'
-import { colorPrimaryPython, colorPrimaryMicropython } from '../../colors'
+import { colorPrimaryPython, colorPrimaryMicropython, colorPrimaryPythonKids, colorSecondaryPythonKids } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 
@@ -8,11 +8,13 @@ const Home = () => {
 
   const elementVisibility = useScrollAnimation();
   const location = useLocation();
-  const color = location.pathname === "/micropython" ? colorPrimaryMicropython : colorPrimaryPython
-  const title = location.pathname.includes("micropython") ? "micropython" : "python"
+  const color = location.pathname === "/micropython" ? colorPrimaryMicropython : location.pathname.includes("pythonKids")? colorSecondaryPythonKids : colorPrimaryPython 
+  const title = location.pathname.includes("micropython") ? "micropython" :"python"
+  const kids = location.pathname.includes("pythonKids") ? " para jovenes de 8 a 12 años" : ""
   const listPython = ["Introducción a la programación.", "Variables", "Tipos de datos.", "Métodos de tipos de datos.", "Funciones.", "Bucles.", "Módulos.", "Manipulación de datos (Listas y tuplas)", "Programación orientado a objectos (POO)."]
+  const listPythonKids = ["Introducción a la programación.", "Variables", "Tipos de datos.", "Métodos de tipos de datos.", "Bucles.", "Manipulación de datos (Listas y diccionarios)"]
   const listMicroPython = ["Introducción a MicroPython", "Fundamentos de Python en MicroPython", "Entrada y Salida en MicroPython", "Comunicación Serial y Periféricos", "Conectividad Wi-Fi con MicroPython", "MicroPython en Pantallas y Gráficos", "Almacenamiento y Sistemas de Archivos", "Desarrollo de Proyectos Avanzados"]
-  const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : listPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>)
+  const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : location.pathname.includes("pythonKids") ? listPythonKids.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) :listPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>)
 
   useEffect(() => {
     if (location.hash) {
@@ -25,19 +27,19 @@ const Home = () => {
 
   return (
     <>
-      <section id="hero" style={{ background: location.pathname === "/micropython" ? colorPrimaryMicropython : colorPrimaryPython }}>
+      <section id="hero" style={{ background: location.pathname === "/micropython" ? colorPrimaryMicropython : location.pathname === "/pythonKids" ? colorPrimaryPythonKids: colorPrimaryPython }}>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
               <div >
-                <h1> Introducción a la programacion en {title}</h1>
+                <h1> Introducción a la programacion en {title}{kids}</h1>
                 <h2>Este curso está diseñado para introducir a los estudiantes al
                   lenguaje de programación {title}, desde los conceptos básicos hasta
                   habilidades más avanzadas. Los estudiantes aprenderán a diseñar,
                   escribir y depurar programas simples y complejos utilizando {title},
                   y se les presentará a las principales estructuras de datos y
                   algoritmos utilizados en la programación.</h2>
-                  <Link to="#index" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`}>¿Que voy aprender?</Link>
+                  <Link to="#index" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`} style={{background: location.pathname === "/pythonKids" ? colorSecondaryPythonKids:null}}>¿Que voy aprender?</Link>
               </div>
             </div>
             <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
@@ -67,7 +69,7 @@ const Home = () => {
               <img src={`img/${title}2.jpg`} className="img-fluid" alt="" />
             </div>
             <div className="col-md-8 pt-4">
-              <h3 style={{ color: color }}>Bienvenido al curso de introducción de {title}</h3>
+              <h3 style={{ color: color }}>Bienvenido al curso de introducción de {title}{kids}</h3>
               <p className="fst-italic">
                 Los contenidos básicos que vas aprender en el curso son:
               </p>

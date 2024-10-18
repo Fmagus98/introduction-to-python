@@ -79,7 +79,7 @@ const Algorithms = () => {
                             <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <h2>¿Que es un algoritmo?</h2>
                             </button>
-                            <div id="a1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a1" className="accordion-collapse collapse" >
                                 <div className=" accordion-body text-light bg-dark">
                                     <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Descripción</h3>
                                     <p className="text-break mx-auto w-75">Un algoritmo es una secuencia de pasos bien definidos y ordenados que describe cómo resolver un problema o realizar una tarea específica. En esencia, un algoritmo es como una receta o un conjunto de instrucciones detalladas que guían a una computadora (o a cualquier otra entidad que pueda seguir instrucciones) para llevar a cabo una serie de operaciones con el fin de alcanzar un objetivo deseado.</p>
@@ -102,7 +102,7 @@ const Algorithms = () => {
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h2 className="text-light">Algoritmos de búsqueda</h2>
                             </button>
-                            <div id="a2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a2" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark">
                                     <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Descripción</h3>
                                     <p className="text-break mx-auto w-75">Los algoritmos de búsqueda son conjuntos de reglas y procedimientos diseñados para encontrar uno o más elementos específicos dentro de un conjunto de datos. Estos algoritmos son esenciales en informática y se utilizan en una variedad de aplicaciones, desde la búsqueda de un elemento en una lista hasta la exploración de un espacio de soluciones en problemas de inteligencia artificial.</p>
@@ -116,7 +116,7 @@ const Algorithms = () => {
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
                                 <h2 className="text-light">Algoritmos de ordenamiento</h2>
                             </button>
-                            <div id="a3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a3" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark  ">
                                     <div id="content">
                                         <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Descripción</h3>
@@ -132,7 +132,7 @@ const Algorithms = () => {
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
                                 <h2 className="text-light">Algoritmos de grafos</h2>
                             </button>
-                            <div id="a4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a4" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark  ">
                                     <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Descripción</h3>
                                     <p className="text-break mx-auto w-75">Un grafo es una colección de nodos (también llamados vértices) conectados entre sí mediante enlaces (también llamados aristas). Los algoritmos de grafos son ampliamente utilizados en diversas áreas, como redes de computadoras, sistemas de transporte, redes sociales, modelado de relaciones, entre otros.</p>
@@ -146,7 +146,7 @@ const Algorithms = () => {
                             <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
                                 <h2 className="text-light">Algoritmos de árboles</h2>
                             </button>
-                            <div id="a5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div id="a5" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark  ">
                                     <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Descripción</h3>
                                     <p className="text-break mx-auto w-75">Los algoritmos de árbol son algoritmos diseñados para trabajar con estructuras de datos de árbol. Un árbol es una estructura de datos jerárquica que consta de nodos conectados entre sí mediante enlaces llamados "aristas". Cada nodo tiene un valor y puede tener cero o más nodos hijos, dependiendo del tipo de árbol.</p>
