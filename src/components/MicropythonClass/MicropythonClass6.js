@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
-import { colorPrimaryMicropython, colorSecondaryMicropython } from '../../colors'
+import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
+import { class4MCode, class5MCode } from './MicropythonClassCode'
+import { CopyButton } from '../CopyButton/CopyButton'
+import { class3Code, class4Code, class5Code } from '../Class/classCode'
 
 const MicropythonClass6 = () => {
 
@@ -67,327 +70,281 @@ const MicropythonClass6 = () => {
                     </section>
                     <section className="section-bg">
                         <div className="container">
-                            <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`} style={{ color: colorSecondaryMicropython }} >
-                                <h2>Clase 1</h2>
+                            <div id="element1" className={`section-title animated-down ${elementVisibility.element1 ? 'slide-down' : ''}`}>
+                                <h2>Clase 5</h2>
                                 <p>Contenido</p>
                             </div>
-                            <div className="accordion accordion-flush w-100 mx-auto rounded-5" id="accordionFlushExample">
-                                <div id="element2" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2 >¿Que es micropython?</h2>
-                                    </button>
-                                    <div id="a1" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <img className="d-block mx-auto w-25" alt="" src="../../img/class1Micropython/damien.jpg"></img>
-                                            <p className="text-center">MicroPython es una implementación del lenguaje de programación Python 3 diseñada específicamente para ser ejecutada en microcontroladores y sistemas embebidos. Fue creado por Damien George en 2013 y desde entonces ha ganado una gran popularidad en la comunidad de desarrollo de hardware y proyectos electrónicos.</p>
-                                            <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
-                                                <p className="text-center mx-auto">Las características clave de MicroPython incluyen:</p>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "> <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Lenguaje Python</h3><p className="text-center">MicroPython es compatible con el lenguaje de programación Python 3, lo que significa que puedes escribir código en Python estándar para controlar hardware y dispositivos embebidos.</p></li>
-                                                <li className="list-group list-group-numbered w-100 mx-auto ">
-                                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Eficiencia en recursos:</h3>
-                                                    <p className="text-center"> Está diseñado para funcionar en sistemas con recursos limitados, como microcontroladores con poca memoria y potencia de procesamiento. Esto permite que Python se ejecute en dispositivos que normalmente no podrían manejar un lenguaje de alto nivel como Python.</p></li>
-                                                <li className="list-group list-group-numbered w-100 mx-auto ">
-                                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Interacción con hardware</h3>
-                                                    <p className="text-center">MicroPython proporciona una serie de módulos y bibliotecas que permiten la interacción con hardware, como sensores, actuadores y periféricos, a través de pines GPIO, comunicación serie (UART, SPI, I2C) y más.</p></li>
-                                                <li className="list-group list-group-numbered w-100 mx-auto ">
-                                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Facilidad de uso</h3>
-                                                    <p className="text-center"> Es una opción popular para principiantes y personas que ya están familiarizadas con Python, ya que les permite aplicar su conocimiento de Python en el desarrollo de sistemas embebidos.</p></li>
-                                                <li className="list-group list-group-numbered w-100 mx-auto ">
-                                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Comunidad activa</h3><p className="text-center">MicroPython tiene una comunidad activa de desarrolladores y usuarios que contribuyen con bibliotecas y ejemplos de código, lo que facilita el desarrollo de proyectos y la solución de problemas.</p></li>
-                                                <li className="list-group list-group-numbered w-100 mx-auto ">
-                                                    <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Soporte para múltiples plataformas</h3><p className="text-center">Aunque MicroPython se originó en el microcontrolador Pyboard, ahora es compatible con una amplia gama de microcontroladores y placas de desarrollo, lo que permite a los usuarios elegir la plataforma que mejor se adapte a sus necesidades.</p></li>
-                                            </ol>
+                            <div id="element2" className={`rounded-5 animated-left ${elementVisibility.element2 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <h2>Introducción a las pantallas LCD y OLED</h2>
+                                </button>
+                                <div id="a1" className="accordion-collapse collapse" >
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <p className="text-break mx-auto w-75">Las pantallas son componentes clave en muchos proyectos de electrónica y programación, especialmente en el ámbito de la Raspberry Pi Pico W. Conocer las diferencias entre las tecnologías de visualización, como LCD y OLED, es esencial para seleccionar la mejor opción para cada aplicación.</p>
+                                        <h3 className="text-center mx-auto w-75">Pantallas LCD (Liquid Crystal Display)</h3>
+                                        <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd.webp"></img>
+                                        <ul className="text-break mx-auto w-75 list-unstyled ">
+                                            <li><p className="text-break mx-auto w-100">Las pantallas LCD son un tipo de pantalla plana que utiliza cristales líquidos para mostrar imágenes. Funcionan mediante la manipulación de la luz a través de capas de cristales líquidos que cambian su orientación cuando se aplica una corriente eléctrica.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Estructura: </span>Tienen una capa de cristales líquidos entre dos filtros polarizados. La luz de fondo (generalmente LED) atraviesa estos filtros y los cristales, permitiendo que se muestre texto o imágenes en la pantalla.</p></li>
+                                        </ul>
+                                        <h3 className="text-break mx-auto w-75">Ventajas y desventajas en LCD</h3>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Costo: </span>Generalmente más económicas de producir, lo que las hace más accesibles para muchos proyectos.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Durabilidad: </span>Tienen una mayor resistencia al burn-in, un fenómeno donde las imágenes estáticas pueden quedar grabadas permanentemente en la pantalla.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Consumo de energía: </span>Para aplicaciones que muestran principalmente texto o imágenes estáticas, pueden ser más eficientes en términos de energía que las OLED.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Contraste: </span>La calidad del contraste no es tan alta como en las pantallas OLED. Los negros pueden aparecer más apagados debido a la luz de fondo.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Ángulo de visión: </span>Los colores pueden distorsionarse cuando se ven desde ángulos extremos, lo que puede limitar su uso en ciertas aplicaciones.</p></li>
+                                        </ul>
+                                        <h3 className="text-center mx-auto w-75">Pantallas OLED (Organic Light Emitting Diode)</h3>
+                                        <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/oled.webp"></img>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100">A diferencia de las LCD, las pantallas OLED no requieren retroiluminación. Cada píxel en una pantalla OLED es un diodo emisor de luz orgánico que emite su propia luz cuando se le aplica una corriente eléctrica.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Estructura: </span>Están compuestas por una capa de materiales orgánicos entre dos electrodos. Cuando se aplica un voltaje, estos materiales emiten luz, lo que permite mostrar imágenes más brillantes y colores más vivos.</p></li>
+                                        </ul>
+                                        <h3 className="text-break mx-auto w-75">Ventajas y desventajas en OLED</h3>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Calidad de imagen: </span>Ofrecen un contraste superior y colores más vibrantes, lo que mejora la experiencia visual.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Ángulos de visión: </span>Mantienen la calidad de la imagen desde diferentes ángulos, lo que las hace ideales para dispositivos donde el espectador puede estar en diversas posiciones.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">Flexibilidad: </span>Las pantallas OLED pueden ser más delgadas y ligeras, permitiendo su uso en dispositivos portátiles y flexibles.</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="element3" className={`rounded-5 animated-left mt-4 ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <h2>Pantallas Compatibles con Raspberri pi pico w</h2>
+                                </button>
+                                <div id="a2" className="accordion-collapse collapse" >
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <div className="accordion-body text-light">
+                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Los displays LCDs de 16×2 tienen 16 pines de los cuales únicamente usaremos 12 pines para la realización de una conexión básica. Este tipo de pantallas es muy utilizado y es ideal para proyectos que requieren información básica, como menús o datos de sensores.</p>
+                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd16x2conexion.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 20x4</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">El módulo de pantalla LCD de 20 x 4 caracteres tiene una amplia gama de aplicaciones en sistemas integrados y electrónicos.</p>
+                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd20x4conexion.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto mt-4">LCD Gráfica (128x64)</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Esta pantalla tiene una resolución de 128 píxeles de ancho y 64 píxeles de alto, lo que permite mostrar gráficos y texto de manera efectiva.</p>
+                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd128x64conexion.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Los displays LCDs de 16×2 tienen 16 pines de los cuales únicamente usaremos 12 pines para la realización de una conexión básica.</p>
+                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd16x2conexion.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Los displays LCDs de 16×2 tienen 16 pines de los cuales únicamente usaremos 12 pines para la realización de una conexión básica.</p>
+                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd16x2conexion.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Los displays LCDs de 16×2 tienen 16 pines de los cuales únicamente usaremos 12 pines para la realización de una conexión básica.</p>
+                                            <h3 className="text-break w-75 mx-auto mt-4">¿Para qué sirve un servidor web en Internet?</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">El rol principal de un servidor web es almacenar y transmitir el contenido solicitado de un sitio web al navegador del usuario.<br></br>Este proceso, para los internautas no dura más que un segundo, sin embargo, a nivel del web server es una secuencia más complicada de lo que parece.<br></br>Para cumplir con sus funciones el servidor deberá tener la capacidad de estar siempre encendido para evitar interrumpir el servicio que le ofrece a sus clientes. Si dicho servidor falla o se apaga, los internautas tendrán problemas al ingresar al sitio web.</p>
+                                            <h3 className="text-break w-75 mx-auto mt-4">¿Cómo funciona un servidor web?</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">La comunicación entre un servidor y sus clientes se basa en HTTP, es decir, en el protocolo de transferencia de hipertexto o en su variante codificada HTTPS.<br></br>Para saber cómo funciona, primero es necesario conocer que el web server está permanentemente en espera de una solicitud de información.<br></br>Además, ten en cuenta que toda computadora, smartphone o tablet tiene una dirección IP única e irrepetible que lo identifica de otro dispositivo en la red, así es como el servidor web envía la información exacta que el internauta está esperando.<br></br>Ahora bien, para que el web server pueda cumplir con su función es necesario que reciba la petición por parte de un navegador, en otras palabras, se envía un pedido desde una dirección IP hacia la dirección IP del servidor que aloja los archivos del sitio en cuestión.<br></br>A continuación, el servidor web busca en sus archivos la información que se le está solicitando, procede a interpretar las líneas de código y a enviar el resultado al navegador cuya dirección IP fue la solicitante.<br></br>Este resultado se le muestra a los internautas y es lo que siempre sucede cuando se navega en sitios de Internet. Cuando este proceso se completa podemos decir que el web server ha cumplido con su función.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element3" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element3 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <h2 className="text-light">Aplicaciones en el ámbito laboral</h2>
-                                    </button>
-                                    <div id="a2" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <p className="text-center mx-auto w-100">El perfil de un programador puede variar dependiendo de sus habilidades, experiencia y especialización. Sin embargo, hay algunas características y habilidades comunes que suelen definir a un programador y son:
-                                            </p>
-                                            <ol className="list-group list-group-numbered w-75 mx-auto mb-4 text-xl text-center">
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>CONOCIMIENTO DE PROGRAMACIÓN</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores tienen un conocimiento sólido de al menos un lenguaje de programación y están familiarizados con los conceptos fundamentales de la programación, como variables, estructuras de control, funciones, algoritmos, etc.</p></li>
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>RESOLUCIÓN DE PROBLEMAS</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores son buenos para analizar problemas, identificar soluciones y desarrollar algoritmos eficientes para resolverlos. Tienen habilidades de pensamiento lógico y capacidad para descomponer problemas complejos en partes más pequeñas y manejables.</p></li>
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>APRENDIZAJE CONTINUO</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores están dispuestos a aprender nuevas tecnologías, lenguajes de programación y herramientas para mantenerse actualizados en un campo en constante evolución. Están abiertos a la mejora continua y se adaptan rápidamente a nuevos desafíos.</p></li>
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>ATENCIÓN AL DETALLE</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores prestan atención a los detalles y son precisos en su trabajo. Un pequeño error en el código puede tener un gran impacto, por lo que son cuidadosos al escribir, probar y depurar su código.</p></li>
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>TRABAJO EN EQUIPO</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores suelen trabajar en equipo, colaborando con otros desarrolladores, diseñadores y profesionales de TI. Tienen habilidades de comunicación efectivas y pueden trabajar en proyectos colaborativos.</p></li>
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>RESILIENCIA Y SOLUCIÓN DE PROBLEMAS</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores enfrentan desafíos y problemas técnicos de manera regular. La capacidad de resolver problemas de manera efectiva y persistir en la búsqueda de soluciones es una habilidad valiosa.</p></li>
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>PENSAMIENTO ANALÍTICO</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">Los programadores tienen la capacidad de analizar y comprender problemas complejos, descomponerlos en partes más pequeñas y aplicar soluciones lógicas y estructuradas.</p></li>
-                                                <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>CREATIVIDAD</h3>
-                                                <li className="list-group list-group-numbered w-100 mx-auto "><p className="text-center">La programación también requiere creatividad para encontrar soluciones innovadoras y eficientes. Los programadores pueden encontrar diferentes enfoques y perspectivas para resolver problemas.</p></li>
-                                            </ol>
-                                        </div>
+                            </div>
+                            <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h2 className="text-light">Modulo wifi</h2>
+                                </button>
+                                <div id="a3" className="accordion-collapse collapse bg-dark" >
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <h3 className="text-break w-75 mx-auto">Activación del módulo wifi</h3>
+                                        <p className="text-break mx-auto w-75">Primero principal debemos importar la libreria "network" para poder conectarnos a redes wifi</p>
+                                        <CopyButton code={class5MCode[0]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi1.webp"></img>
+                                        <p className="text-break mx-auto w-75">Luego para inicializar la interfaz de la red wifi debemos utilizar network.WLAN(network.STA_IF) y luego indicarle que lo queremos activar(active(true))</p>
+                                        <CopyButton code={class5MCode[1]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi2.webp"></img>
+                                        <p className="text-break mx-auto w-75">Con el método scan() podemos escanear las redes wifi disponibles en nuestro perímetro.</p>
+                                        <CopyButton code={class5MCode[2]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi3.webp"></img>
+                                        <p className="text-break mx-auto w-75">Por último recorremos con un for la lista con tuplas que devuelve el escaneado.</p>
+                                        <p className="text-break mx-auto w-75">Indicamos en el for que solamente queremos el primer dato y lo demás lo omitimos, para hacer esto debemos usar *_.</p>
+                                        <p className="text-break mx-auto w-75">Además de esto pondremos un metodo llamado .decode() para que interprete los caracteres especiales de latinoamerica en los nombres de las redes wifi, en este caso el encode latino es utf-8.</p>
+                                        <CopyButton code={class5MCode[3]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi4.webp"></img>
                                     </div>
                                 </div>
-                                <div id="element4" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <h2 className="text-light">¿Que es python?</h2>
-                                    </button>
-                                    <div id="a3" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <div id="content">
-                                                <img className="d-block mx-auto w-25" alt="" src="../img/class1/guido.webp"></img>
-                                                <p className="text-center mx-auto">Python es un lenguaje de programación de alto nivel basado en C.
-                                                    Fue creado en 1989 por Guido Van Rossum, un programador holandés, mientras trabajaba en el Centro de
-                                                    Investigación para la Informática (CWI) en los Países Bajos. </p>
-                                                <p className="text-center mx-auto">La idea detrás de Python era crear un lenguaje de programación que fuera fácil de aprender, legible
-                                                    y que permitiera a los programadores escribir código rápidamente.
-                                                </p>
-                                                <p className="text-center mx-auto">Van Rossum quería un lenguaje que fuera más poderoso que el lenguaje de script Unix shell, pero que
-                                                    fuera más fácil de usar que otros lenguajes de programación de la época, como C++ y Perl.
-                                                </p>
-                                                <p className="text-center mx-auto">El nombre "Python" fue inspirado por el grupo de comedia británico Monty Python, y muchos de
-                                                    los términos en el lenguaje, como "spam" y "egg", también se tomaron de los sketches de Monty Python.
-                                                    Desde su lanzamiento inicial, Python ha evolucionado y se ha utilizado en una amplia variedad de aplicaciones.
-                                                </p>
-                                                <p className="text-center mx-auto">Python es muy popular en la comunidad de programación debido a su sintaxis simple y legible, así como
-                                                    a su enfoque en la legibilidad del código. En 2008, Python 3 fue lanzado, lo que mejoró aún más el
-                                                    lenguaje y lo hizo más consistente y fácil de aprender. Actualmente, Python es uno de los lenguajes de
-                                                    programación más populares en todo el mundo y las empresas de alto nivel los están utilizando .
-                                                </p>
-                                                <img className="d-block mx-auto w-100" alt="" src="../img/class1/ep.webp"></img>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h2 className="text-light">Conexión a una red wifi</h2>
+                                </button>
+                                <div id="a4" className="accordion-collapse collapse bg-dark" >
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <p className="text-break mx-auto w-75">
+                                            Además de tener métodos para utilizar en listas, también tenemos funciones que nos ayudan a la hora de manipular datos.:
+                                        </p>
+                                        <h3 className="text-break w-75 mx-auto">len()</h3>
+                                        <p className="text-break mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
+                                        <CopyButton code={class5Code[12]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list13.webp"></img>
                                     </div>
                                 </div>
-                                <div id="element5" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        <h2 className="text-light">Caracteristicas de python</h2>
-                                    </button>
-                                    <div id="a4" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>NIVEL ALTO</h3>
-                                            <p className="text-center mx-auto">Dentro de la programación hay tipos niveles, estos niveles determinan la complejidad en la podemos programar
-                                                en dicho lenguaje. Si el nivel es más bajo, este se acercará más al lenguage máquina(código binario) y facilitará a la maquina a interpretar más rápido
-                                                pero a la vez es más complejo para los programadores programar en este lenguaje ya que se aleja del lenguage humano.</p>
-                                            <img className="w-75 mx-auto d-block" alt="" src="../img/class1/level.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>CASE SENSITIVE</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto"> Lo que significa que distingue entre mayúsculas y minúsculas en los nombres de variables, funciones, clases, módulos y otros identificadores. Esto significa que
-                                                dos identificadores que se diferencian solo en su uso de mayúsculas y minúsculas se consideran diferentes en Python.</p>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>IMPLEMENTACIÓN</h3>
-                                            <p className="text-center mx-auto">La implementación de Python se refiere a la forma en que se ejecuta el código de Python. Hay varias implementaciones de Python disponibles, aquí hay algunas de las más populares:</p>
-                                            <ul>
-                                                <p className="text-center mx-auto w-75" >CPython: Es la implementación más común de Python y está escrita en C. CPython es la implementación predeterminada de Python y es utilizada por la mayoría de los programadores de Python. CPython es muy rápido y eficiente, y tiene una gran cantidad de librerías y frameworks disponibles.</p>
-                                                <p className="text-center mx-auto w-75">Jython: Es una implementación de Python escrita en Java. Jython permite a los programadores utilizar Python en una máquina virtual Java y acceder a las librerías y frameworks de Java.</p>
-                                                <p className="text-center mx-auto w-75">IronPython: Es una implementación de Python escrita en C# y diseñada para el entorno .NET. IronPython permite a los programadores utilizar Python en el entorno .NET y acceder a las librerías y frameworks de .NET.</p>
-                                                <p className="text-center mx-auto w-75">PyPy: Es una implementación de Python escrita en Python. PyPy es conocido por ser mucho más rápido que CPython, especialmente en aplicaciones que requieren mucho cálculo.</p>
-                                                <p className="text-center mx-auto w-75">MicroPython: Es una implementación de Python diseñada para ser utilizada en microcontroladores y dispositivos de baja potencia. MicroPython es una versión reducida de Python que incluye un conjunto limitado de librerías y frameworks.</p>
-                                            </ul>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>MULTIPLATAFORMA</h3>
-                                            <p className="text-center mx-auto">Python se puede utilizar en una amplia variedad de plataformas, incluyendo Windows, macOS y Linux, lo que lo hace muy versátil y útil en diferentes entornos de trabajo.</p>
-                                            <img className="w-75 mx-auto d-block" alt="" src="../img/class1/os.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>APLICACIONES EN MERCADO LABORAL</h3>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/bd.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>BIG DATA</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">El uso de Python está muy extendido en dos áreas:
-                                                el análisis de datos y el big data. Su sencillez y su gran número de bibliotecas de procesamiento
-                                                de datos hacen que Python sea ideal a la hora de analizar y gestionar una gran cantidad de
-                                                datos en tiempo real. Python está siendo utilizado en la actualidad por muchísimas
-                                                empresas, tanto de forma directa, como indirecta, ya que detrás de los distintos
-                                                software de data analytics, está este lenguaje interpretado de alto nivel, puesto que
-                                                Python está especializado en analizar una gran cantidad de datos para transformarlos en
-                                                información útil para el big data.</p>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/dm.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DATA MINING</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50"> La minería de datos o data mining es un
-                                                proceso que permite analizar grandes bases de datos con el objetivo de predecir futuras
-                                                tendencias. Se trata de un proceso complejo al que Python puede ayudar, a través de la
-                                                limpieza, organización de datos y del uso de algoritmos de aprendizaje automático que
-                                                simplifica el análisis de datos.</p>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/ds.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DATA SCIENCE</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50"> Los nuevos motores numéricos como “Pandas”
-                                                o “NumPy”, Python están dejando atrás a  MATLAB, lenguaje usado por científicos para trabajar
-                                                con un gran número de datos. Python vuelve a destacar por su simplicidad y  potencial para trabajar
-                                                con un gran número de datos,  el gran número de bibliotecas existentes, hacen que Python sea ideal
-                                                para este tipo de tareas.</p>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/ia.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>INTELIGENCIA ARTIFICIAL</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50"> Cada vez se habla más de la inteligencia artificial
-                                                (IA). Gran parte de su avance se debe a Python. Su facilidad de escritura y su robustez han convertido
-                                                a Python en el aliado perfecto de la IA. Su capacidad de plasmar ideas complejas en pocas líneas, unidas
-                                                al gran número de frameworks existentes, han hecho que Python sea uno de los lenguajes de programación
-                                                que están impulsando a la IA.</p>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/bc.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>BLOCKCHAIN</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">
-                                                Blockchain es una tecnología de registro distribuido que se utiliza para registrar transacciones de manera segura y verificable.
-                                                Consiste en un registro en línea que se actualiza de manera permanente y que está protegido mediante técnicas criptográficas.</p>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/ml.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>MACHINE LEARNING</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">El machine learning o aprendizaje automático es otra de
-                                                las tecnologías que está cambiando el mundo tal y como lo conocemos. La robótica y la IA son ahora capaces
-                                                de aprender por sí mismas a medida que van procesando datos. De esta forma, obtienen información relevante
-                                                que le permite tomar las decisiones adecuadas. Por supuesto, Python es también muy eficaz en este campo,
-                                                en el tratamiento de datos eficaz es esencial.</p>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/dw.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DESARROLLO WEB</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Python permite desarrollar webs complejas con menos líneas de
-                                                código, haciéndolas más ligeras y optimizadas. Django es uno de los frameworks de Python más populares de la actualidad,
-                                                que puede ser utilizado para crear webs dinámicas y muy seguras. Python es empleado para hacer scraping, es decir,
-                                                extraer información de sitios web, como hacen Netflix o Instagram.</p>
-                                            <img className="w-50 mx-auto d-block" alt="" src="../img/class1/g&g3d.webp"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "600" }}>DESARROLLO DE VIDEOJUEGOS</h3>
-                                            <p className="mt-4 text-center mx-auto w-50" style={{ marginBottom: "7rem" }}>Juegos como Battelfield 2 o los Sims 4, parte de su código está escrito en este lenguaje de programación. <br></br>
-                                                A través de librerías como Pygame o Panda 3D, podrás enfocar tu desempeño profesional aparte desarrollo gaming, pero hay otras tantas que están recogidas en wiki python.
-                                                Pero Python no tiene la posibilidad de realizarlos al completo, por lo que te animamos a que descubras otros lenguajes para programar videojuegos, como Java o Lua.
-                                            </p>
-                                        </div>
+                            </div>
+                            <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    <h2 className="text-light">For</h2>
+                                </button>
+                                <div id="a5" className="accordion-collapse collapse" >
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
+                                        <CopyButton code={class3Code[9]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class3/range.webp"></img>
+                                        <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
+                                        <CopyButton code={class3Code[10]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class3/for4.webp"></img>
                                     </div>
                                 </div>
-                                <div id="element6" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        <h2 className="text-light">Instalación de python</h2>
-                                    </button>
-                                    <div id="a5" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Dirígete a <Link to="https://www.python.org/downloads" target="_blank" className="text-info">https://www.python.org/downloads</Link>.<br></br>
-                                                En este curso usaremos la version 3.8.3, para descargar una version diferente a la actual dirigete a downloads.</p>
-                                            <img className="w-75 mx-auto d-block" alt="" src="../img/class1/python1.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto"> Luego iremos a "All release" </p>
-                                            <img className="w-75 mx-auto d-block" alt="" src="../img/class1/python2.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">Buscamos la versión  3.8.3 y tocamos "download"</p>
-                                            <img className="w-75 mx-auto d-block" alt="" src="../img/class1/python3.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">Elegimos el sistema operativo que utilizamos en nuestro dispositivo</p>
-                                            <img className="w-75 mx-auto d-block" alt="" src="../img/class1/python4.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">Cuando ejecutamos el instalador tocaremos "add python 3.8 to PATH" y luego tocamos "install now"</p>
-                                            <img className="w-75 mx-auto d-block" alt="" src="../img/class1/python5.webp" style={{ marginBottom: "7rem" }}></img>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="element7" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseSix">
-                                        <h2 className="text-light">Entorno de desarrollo integrado (IDE)</h2>
+                            </div>
+                            <div className="accordion accordion-flush w-100 mx-auto mt-4" id="accordionFlushExample">
+                                <div id="element7" className={`accordion-item animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2>PWM</h2>
                                     </button>
                                     <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Para programar en un lenguaje de programación debemos tener en nuestro ordenador un entorno de desarrollo integrado, más conocido como IDE,
-                                                Un IDE combina un editor de código, un compilador o intérprete, herramientas de depuración, un sistema de gestión de versiones,
-                                                entre otras funcionalidades, en una sola aplicación integrada.
-                                                Esta integración facilita el trabajo de los programadores al permitirles desarrollar y probar aplicaciones de software en un solo entorno.
-                                            </p>
-                                            <p className="text-center mx-auto">Estos son unos de los IDEs más comunes que se utilizan para el lenguaje de programación python:</p>
-                                            <img className="w-50 d-block mx-auto" alt="" src="../img/class1/IDE.webp"></img>
-                                            <ul className="intr-ul">
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">JupiterLab: Es una interfaz de usuario web interactiva para el entorno de programación Jupyter. Permite la edición de código en varios lenguajes de programación, incluido Python, y proporciona una variedad de características y extensiones útiles. </p></li>
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">Pycharm: Es un entorno de desarrollo integrado para Python desarrollado por JetBrains. Proporciona una amplia gama de características y herramientas para facilitar el desarrollo de aplicaciones Python.</p></li>
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">Spyder: Es un entorno de desarrollo integrado especialmente diseñado para trabajar con Python en el ámbito científico y de análisis de datos. Está orientado a la programación científica y ofrece una serie de características y herramientas específicas para facilitar el desarrollo de proyectos relacionados con ciencia, matemáticas y análisis de datos.</p></li>
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">Visual Studio Code: Es un entorno de desarrollo de código fuente abierto y gratuito desarrollado por Microsoft. Es un editor de código ligero pero potente que se ha vuelto muy popular entre los desarrolladores por su facilidad de poder programar en diferentes lenguajes de programación, incluido Python.</p></li>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">¿Qué es PWM?</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">PWM (Modulación por Ancho de Pulso) es una técnica utilizada para controlar la potencia entregada a dispositivos electrónicos. En lugar de aplicar un voltaje constante, PWM alterna rápidamente entre encendido y apagado, lo que permite simular un voltaje variable.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">En PWM solo tenemos 2 estados, HIGH(3.3V - alto) y LOW(0V - bajo).</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Dentro del gráfico veremos también "ciclo de trabajo"(duty cycle), es un concepto fundamental en PWM (modulación por ancho de pulso), que se refiere al porcentaje de tiempo que una señal está en estado alto (encendida) durante un ciclo completo de la señal.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">El valor máximo del ciclo de trabajo(duty cycle) que tiene internamente un potenciometro es de "65535", esto es porque está en 16bits y la cantidad de valores que puede procesar son 65536(es uno más porque se incluye el 0 como valor)</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Ejemplo: Si una señal PWM tiene un duty cycle del 50%(65535/2 = 32768), significa que la señal está activa (en alto) el 50% del tiempo y en bajo el otro 50%, Si el duty cycle es del 25% (65535/4 = 16383), la señal estará activa solo el 25% del tiempo y en bajo el 75%.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Frecuencia</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">La frecuencia en el contexto de PWM (modulación por ancho de pulso) se refiere a la cantidad de ciclos completos que ocurren en un segundo. Se mide en hercios (Hz), donde 1 Hz equivale a un ciclo completo por segundo.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Ejemplo: Si la frecuencia es 1 Hz, entonces el ciclo completo (tiempo en alto más tiempo en bajo) ocurre una vez por segundo, Si la frecuencia es 1000 Hz (1 kHz), el ciclo completo ocurre 1000 veces en un segundo.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/Hz.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Relación entre Frecuencia y Duty Cycle</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Es importante entender que, aunque el duty cycle y la frecuencia son conceptos distintos, ambos determinan el comportamiento de la señal PWM:</span>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Duty cycle: </span>controla el tiempo que la señal está activa dentro de cada ciclo.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Frecuencia: </span>determina cuántos ciclos ocurren por segundo.</p></li>
                                             </ul>
-                                            <p className="text-center mx-auto w-75 mt-4" style={{ marginBottom: "7rem" }}>
-                                                En este curso utilizaremos Visual Studio code pero cabe destacar que la elección del IDE dependerá de tus necesidades y preferencias personales.
-                                            </p>
-                                            <h2 className=" text-center">Instalación de Visual Studio Code</h2>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">1 - Ve al sitio web oficial de Visual Studio Code en <Link to="https://code.visualstudio.com" target="_blank" className="text-info">https://code.visualstudio.com</Link>.<br></br><br></br>En el inicio de la página web van a ver directamente que dice "Donwload for Windows", si su sistema operativo es Windows van hacer click derecho directamante ahi y se les va a descargar el programa.<br></br> Si en su ordenador tienen otro sistema operativo van a la palomita que esta al lado derecho y van a ver los diferentes sistemas operativos en el que pueden descargarlo, lo más importante es que descarguen la version estable, para hacerlo deben hacer click derecho en la columna "stable" de su sistema operativo </p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/ide1.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">2 - Al ejecutar el instalador deben aceptar los terminos y condiciones del programa haciendo click derecho en "Acepto el acuerdo" y lugo hacer click derecho en el botón "siguiente" para seguir con la instalación.</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/ide2.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">3 - Activa todas las opciones haciendo click derecho en los checkbox y haz click derecho en el botón "siguiente"</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/ide3.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">4 - Haz click derecho en el boton "siguiente" </p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/ide4.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">5 - Al terminar la instalación haz click en "finalizar" para abrir automáticamente el programa Visual Studio Code para empezar a programar! </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/ide5.webp"></img>
-                                            <h2 className=" text-center">Extensiones en Visual Studio Code</h2>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">En nuestro Visual Studio Code tenemos bastantes herramientas que nos falicitará a la hora de
-                                                programar en python, unas de ellas son las extensiones descargables que se nos va a proporcionar en el programa</p>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Para descargar extensiones tendremos que ir a la barra que está en la parte superior izquierda y tocamos el logo indicado en la imagen</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/ext1.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Al tocar el logo veremos que tenemos un buscador para buscar extensiones, un apartado llamado "installed" donde tendrémos todas las extensiones que instalamos y un apartado llamado "recommended" donde vamos a tener extensiones que podría servirnos al utilizar un lenguage en especial</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/ext2.webp"></img>
-                                            <ul className="intr-ul" style={{ marginBottom: "7rem" }}><h3 className="mt-4 mb-4 text-center mx-auto w-75">lista de extensiones que utilizaremos en python:</h3>
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">Spanish Language Pack for Visual Studio Code: Esta extensión nos facilitará toda la interfaz de usuario de visual studio code a español</p></li>
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python: les proporcionará autocompletado avanzado,Análisis estático de código y detección de errores.</p></li>
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python Environment Manager: Gestiona entornos virtuales de Python y seleccionar qué entorno virtual se va a utilizar en un proyecto de Python en particular.</p></li>
-                                                <li><p className="mt-4 mb-4 text-center mx-auto w-50">Python indent: Indentación automática para facilitar la lectura del códigoUna mala indentación puede hacer que el código sea difícil de leer y entender, lo que a su vez puede llevar a errores y problemas en el código.</p></li>
+                                            <p className="text-break mx-auto w-75 mt-4">Por ejemplo, si tienes una señal PWM con una frecuencia de 1 kHz (1000 ciclos por segundo) y un duty cycle del 50%, la señal estará en estado alto durante 0.5 ms (milisegundos) y en estado bajo durante otros 0.5 ms en cada ciclo. Si aumentas la frecuencia, los ciclos serán más rápidos, pero el tiempo que la señal permanece en alto y bajo por ciclo también será menor.</p>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Importancia de la frecuencia en PWM</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>La frecuencia del PWM es clave en aplicaciones como el control de motores y el brillo de LEDs:</span>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Motores eléctricos: </span>Si la frecuencia es demasiado baja, el motor puede vibrar o producir un zumbido debido a la conmutación lenta. Por eso, frecuencias más altas (a menudo en el rango de kHz) se usan para controlar motores de manera más suave.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Control de brillo de LEDs: </span> Si la frecuencia es baja, el LED puede parpadear perceptiblemente, lo que es indeseable. A frecuencias más altas, el parpadeo se vuelve imperceptible, logrando una variación suave en el brillo.</p></li>
                                             </ul>
-                                            <h2 className="mx-auto text-center">Terminal - Python y pip</h2>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Empecemos a utilizar visual studio code para verificar que se instaló correctamente python, si nos vamos a la parte superior del programa veremos unos "...", presionalo con click derecho y ve a Terminal/New terminal ó simplemente presiona ctrl+shift+ñ </p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/t1.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Observamos que se abrirá la terminal en la parte inferior del programa, dentro de la terminal te mostrará la dirección en donde se está ejecutando la terminal. </p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/t2.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Si escribimos en la terminal "python", nos mostrará la versión que estamos utilizando si está instalado.</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/t3.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Para finalizar el proceso de ejecución que muestra la version de python escribiremos "exit()".</p>
-                                            <img className="w-75 d-block mx-auto" alt="" src="../img/class1/t4.webp"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Ya vimos que podemos ver la version de python escribiendo python, ahora empezaremos a ver pip.<br></br>Pip es un sistema de gestión de paquetes utilizado en Python para instalar y administrar bibliotecas y paquetes de terceros que no están incluidos en la biblioteca estándar de Python.
-                                                <br></br>El nombre "pip" se deriva de la frase "Pip Installs Packages" (Pip instala paquetes) y se utiliza para instalar, actualizar y desinstalar paquetes Python y sus dependencias, si escribimos "pip --version" en la terminal nos mostrará la versión del administrador de paquetes.</p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/t5.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                        <h2 className="text-light">Ejecución del primer programa</h2>
+                                <div id="element8" className={`accordion-item animated-left mt-4 ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2>Potenciometro</h2>
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar nuestro primer programa primero debemos ubicarnos en la carpeta en donde queremos tener nuestro programa, para esto debemos ir a "open folder" </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/class1/p1.webp"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Nos aparecerá una pantalla en donde podemos indicarle en que carpeta queremos crear nuestro programa, luego irnos a la carpeta deseada vamos a tocar "seleccionar carpeta"</p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/class1/p2.webp"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Luego de seleccionar la carpeta veremos que en la parte superior izquierda nos aparecerá el nombre de la carpeta seleccionada y en el lado derecho tendremos varios items, el primer item nos dejará que podamos crear un archivo, el segundo nos dejará que podamos crear una carpeta,
-                                                el tercero refrescará la carpeta, el cuarto item nos dejará contraer o plegar una carpeta. en este caso usaremos el primer item para crear un archivo.</p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/class1/p3.webp"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Al crear el archivo le debemos escribir el nombre deseado para el archivo seguido de un ".py" para indicar al programa de que es un archivo de python, por ejemplo: index.py </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p4.webp"></img>
-                                            <h2 className=" text-center">Salida de datos - print()</h2>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Existen diferentes formas de comunicarnos con nuestros scripts de Python
-                                                con el objetivo de poder representar la información que el script nos quiere
-                                                mostrar o poder ingresar alguna acción al programa por medio del teclado u otra entrada,
-                                                en este contenido veremos las instrucciones de entradas y salidas de python más comunes
-                                                que usaremos a lo largo del curso.
-                                            </p>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">Salida de datos: La función print() es sin duda una de las instrucciones más sencillas y que usaremos en el curso,
-                                                ya que nos permite mostrar información por consola como mensajes, números o valores de una
-                                                variable. para su uso solo le pasamos en los argumentos lo que deseamos mostrar en consola.
-                                            </p>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Al seleccionar el archivo de python, se nos va abrir una pestaña en donde vamos a poder empezar a escribir código.<br></br> Para empezar a probar la función "input" escribiremos por ejemplo: input("Bienvenido al curso de introducción de python"), al escribir esto veremos un punto blanco al lado de la pestaña, esto nos indica que escribimos en el archivo de python pero no está guardado, para guardarlo debemos presionar Ctrl + S</p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/class1/p5.webp"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Para ejecutar el programa debemos escribir en la terminal "python" seguido del nombre del archivo que queramos ejecutar, por ejemplo: python index.py. Al ejecutar nos mostrará en la terminal lo que escribimos en el input.</p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p6.webp"></img>
-                                            <h2 className=" text-center">Comentarios - #, """ """</h2>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Un comentario es una porción de texto que se incluye en el código fuente, pero que no se ejecuta como parte del programa, estos comentarios se utilizan para documentar el código y proporcionar información adicional sobre lo que hace cada línea o sección de código.<br></br>
-                                                Cuando Python encuentra un símbolo "#" en el código fuente, ignora todo lo que sigue en esa línea, incluido el propio "#" y cualquier texto que lo siga. Por lo tanto, el uso de "#" permite a los programadores incluir notas y explicaciones en el código fuente sin afectar el funcionamiento del programa, tambiém si querés escribir en varias lineas de codigo podes encerrar el mensaje entre 3 comillas simples o dobles (""" """,''' ''').
-                                            </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p7.webp"></img>
-                                            <h2 className=" text-center">Entrada de datos - input()</h2>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">La función input() permite obtener información
-                                                en la terminal desde el teclado, al momento de ejecutarse esta línea en la consola esperara
-                                                que ingresemos el texto que necesitemos y demos un enter para continuar y guardar el valor
-                                                capturado en una variable de programa.
-                                            </p>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
-                                            </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "4rem" }} alt="" src="../img/class1/p8.webp"></img>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">En este ejemplo vamos a indicarle al usuario que escriba su nombre escribiendo: input("Escribe tu nombre: "). Veremos que cuando ejecutamos el programa nos aparecerá este mismo mensaje en la terminal, dejándonos poder escribir el nombre.
-                                            </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p9.webp"></img>
-                                            <h2 className=" text-center">función len()</h2>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-75">La función len() permite obtener la longitud de caracteres que existen dentro del paréntesis.
-                                            </p>
-                                            <p className="mt-4 mb-2 text-center mx-auto w-75">Por ejemplo si queremos mostrar en pantalla cuántos caracteres tiene la palabra "programación", debemos usar un input y dentro la funcion len(): input(len("Programación")), esto nos retornará la cantidad de caracteres que hay.
-                                            </p>
-                                            <img className="w-75 d-block mx-auto" style={{ marginBottom: "7rem" }} alt="" src="../img/class1/p10.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Potenciometro en Raspberry pi pico w (potenciometro)</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">Para poder utilizar un Potenciometro debemos utilizar desde la libreria "machine" la clase "ADC"</p>
+                                            <CopyButton code={class4MCode[0]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2paso1.webp"></img>
+                                            <p className="text-break mx-auto w-75 mt-4">Luego debemos crear una variable y almacenar la clase ADC junto al pin donde se quiere recibir la señal, en este caso es en el GP28</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Además de esto debemos conectar nuestro potenciómetro a la raspberry pi pico w de la siguiente manera:</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">VCC :</span> La debemos conectar al puerto 3V3 para que nos proporcione el voltaje de 3V (+)</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">SIG : </span> La debemos conectar al Pin GP28 para que podamos comunicar la señal de nuestro potenciometro</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">GND : </span> La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
+                                            </ul>
+                                            <CopyButton code={class4MCode[1]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2paso2.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Visualizar duty Cycle y voltaje en potenciometro</h4>
+                                            <CopyButton code={class4MCode[2]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython }} >
-                                    <Link to="/pythonClassFile/class1.py"
+                                <div id="element9" className={`accordion-item animated-left mt-4 ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <h2>Led</h2>
+                                    </button>
+                                    <div id="a8" className="accordion-collapse collapse" >
+                                        <div className="accordion-body text-light bg-dark ">
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funcionamiento de PWM en LEDs</h3>
+                                            <p className="text-break mx-auto w-75">Los LEDs son dispositivos semiconductores que convierten energía eléctrica en luz, y su brillo depende de la cantidad de corriente que pasa a través de ellos. Sin embargo, en lugar de ajustar directamente la corriente, lo que podría ser ineficiente y producir calor, el PWM ofrece un enfoque eficiente para regular el brillo mediante el control del tiempo que el LED está encendido o apagado durante un ciclo.</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Cuando se usa PWM:</span>
+                                                <li><p className="text-break mx-auto w-75">El LED es encendido y apagado rápidamente a una frecuencia constante.</p></li>
+                                                <li><p className="text-break mx-auto w-75">El ojo humano no percibe este parpadeo si la frecuencia es lo suficientemente alta, por lo que el LED parece estar atenuado en lugar de encendido y apagado.</p></li>
+                                                <li><p className="text-break mx-auto w-75">El brillo percibido del LED es ajustado variando el duty cycle, es decir, cuánto tiempo está encendido en cada ciclo de la señal PWM.</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Frecuencia y Percepción Visual</h3>
+                                            <p className="text-break mx-auto w-75">La frecuencia es otro parámetro clave en el control del brillo de LEDs mediante PWM. La frecuencia es la cantidad de veces por segundo que se repite el ciclo de encendido y apagado. Si la frecuencia es demasiado baja, el parpadeo del LED será perceptible para el ojo humano, lo que puede ser incómodo o distraer.</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Frecuencias altas y bajas</span>
+                                                <li><p className="text-break mx-auto w-75">Frecuencia baja (&lt;100 Hz): A frecuencias bajas, el parpadeo puede ser claramente visible. Un parpadeo inferior a 60 Hz será notorio, ya que es la frecuencia mínima que el ojo humano puede procesar sin notar el parpadeo.</p></li>
+                                                <li><p className="text-break mx-auto w-75">Frecuencia alta (&gt;500 Hz a 1 kHz): A frecuencias más altas, el parpadeo se vuelve imperceptible para el ojo humano. Los LEDs parecen emitir una luz continua y estable.</p></li>
+                                            </ul>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Efecto de la frecuencia en LEDs:</h4>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75">Para aplicaciones comunes, como la iluminación o pantallas LED, una frecuencia mínima de PWM de 500 Hz es recomendable.</p></li>
+                                                <li><p className="text-break mx-auto w-75">Para aplicaciones de mayor precisión, como pantallas LED de alta calidad o iluminación que se graba en cámaras, frecuencias mucho más altas (2 kHz a 5 kHz o más) son necesarias para evitar efectos de parpadeo o interferencias visuales con la grabación.</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Ejecución de Potenciómetro en LEDs(PWM)</h3>
+                                            <p className="text-break mx-auto w-75">Para poder manipular LEDs con un potenciometro vamos a utilizar lo mismo que vimos anteriormente con el potenciómetro, pero añadimos también la clase "PWM" de libreria machine.</p>
+                                            <CopyButton code={class4MCode[3]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed1.webp"></img>
+                                            <p className="text-break mx-auto w-75 mt-4">Agregamos una variable llamada "pwm" y le asignamos la clase PWM() indicandole dentro del paréntesis(parámetro) el Pin que vamos a conectar nuestro led, en este caso va a ser el pin 15.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">También le añadiremos la frecuencia que va a tener el PWM. Para hacerlo debemos llamar a la variable "pwm" y le asignamos el método freq(), en este caso va a ser de 1000Hz(.freq(1000)) y mostramos la frecuencia en la terminal con print(pwm.freq()) </p>
+                                            <p className="text-break mx-auto w-75 mt-4">Para asignarle ahora el duty cycle al PWM en nuestro led, vamos a tener que poner pwm.duty_u16(analog_value)</p>
+                                            <CopyButton code={class4MCode[4]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed2.webp"></img>
+                                            <p className="text-break mx-auto w-75">Ahora conectamos el ánodo(+) del led a una resistencia y en el extremo al Pin GP15 y el cátodo(-) a GND</p>
+                                            <CopyButton code={class4MCode[5]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed3.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Activación de luces Led con Potenciómetro</h4>
+                                            <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
+                                            <CopyButton code={class4MCode[6]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed4.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro</h4>
+                                            <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
+                                            <CopyButton code={class4MCode[7]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed5.webp"></img>
+                                            <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro(Código optimizado)</h4>
+                                            <CopyButton code={class4MCode[8]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed6.webp"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <h2 className="text-light">Servomotores</h2>
+                                    </button>
+                                    <div id="a9" className="accordion-collapse collapse" >
+                                        <div className="accordion-body text-light bg-dark ">
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Qué es un servomotor?</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Un servomotor es un tipo de motor que permite un control preciso de la posición, la velocidad y el movimiento. A menudo se utiliza en aplicaciones como robótica, automatización y modelos a escala.</p>
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo.webp"></img>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tipos de servomotores</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 180 grados: </span> Suelen rotar en un rango de 0 a 180 grados.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 360 grados: </span> Pueden girar continuamente en ambas direcciones.</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Conexión de servomotor</h3>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">VCC/VBUS :</span> La debemos conectar al puerto 3V3 para que nos proporcione el voltaje de 3V (+), aunque usualmente se conecta a 5V por medio del VBUS.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">SIG : </span> La debemos conectar al Pin GP28 para que podamos comunicar la señal de nuestro servomotor</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">GND : </span> La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Valores típicos en un servomotor</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Los servomotores se controlan mediante señales PWM (Modulación por Ancho de Pulso), y el valor que utilizan para moverse se refiere a la duración del pulso en microsegundos (µs) o nanosegundos (ns). </p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled">
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Rango de pulsos:</span> La mayoría de los servomotores estándar se mueven en un rango de pulso entre aproximadamente 1 ms (1000 µs) y 2 ms (2000 µs). Este rango suele corresponder a posiciones de 0° a 180°.</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Posiciones Comunes: </span> 1 ms (1000 µs)Generalmente se asocia con la posición mínima (0°). 1.5 ms (1500 µs): Comúnmente se considera la posición central (90°) y 2 ms (2000 µs): Se asocia con la posición máxima (180°).</p></li>
+                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Frecuencia : </span> La frecuencia típica para la señal PWM es de 50 Hz. Esto significa que se repite un ciclo cada 20 ms (20,000 µs).</p></li>
+                                            </ul>
+                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Potenciometro en servomotor 180°</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Para utilizar este tipo de servomotores vamos a tener que mapear el angulo que puede dar este servomotor en el potenciometro, para ello multiplicamos por 180(angulo) dividido 65535(valor máximo del potenciómetro), así cada vez que giremos el potenciómetro indique el angulo de giro</p>
+                                            <p className="text-break mx-auto mt-4 w-75">También vamos a tener que asignarle el valor al servomotor de la siguiente forma: int((el calculo anterior para mapear el potenciometro + 45) * 100000 / 9), esto se hace para que devuelva un valor en nanosegundos, lo que se necesita para mover el servomotor </p>
+                                            <CopyButton code={class4MCode[9]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo2.webp"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="element11" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <Link to="/micropythonClassFile/class5.py"
                                         target={"_blank"}
-                                        download={"class1.py"}>
+                                        download={"class5.py"}>
                                         <button className="accordion-button collapsed bg-transparent" type="button">
-                                            <h2 className="text-light">Descarga el archivo de la clase 1</h2>
+                                            <h2 className="text-light">Descarga el archivo de la clase 5</h2>
                                         </button>
                                     </Link>
                                 </div>
