@@ -41,7 +41,7 @@ const MicropythonClass8 = () => {
                                         <h2>Integración de sensores, actuadores y conectividad.</h2>
                                         <h2>Prácticas recomendadas y depuración.</h2>
                                         <div className="text-center text-lg-start">
-                                            <a href="#clase1" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 1</a>
+                                            <a href="#clase1" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 8</a>
                                         </div>
                                     </div>
                                 </div>

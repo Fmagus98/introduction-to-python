@@ -44,7 +44,7 @@ const MicropythonClass5 = () => {
                                         <h2>Acceso a Internet y servicios web.</h2>
                                         <h2>Ejemplos de proyectos conectados a la web.</h2>
                                         <div className="text-center text-lg-start">
-                                            <a href="#clase4" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 4</a>
+                                            <a href="#clase4" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 5</a>
                                         </div>
                                     </div>
                                 </div>

@@ -4,9 +4,9 @@ import { db } from '../../Utils/firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
-import { class4MCode, class5MCode } from './MicropythonClassCode'
+import { class4MCode, class5MCode, class6MCode } from './MicropythonClassCode'
 import { CopyButton } from '../CopyButton/CopyButton'
-import { class3Code, class4Code, class5Code } from '../Class/classCode'
+import { class3Code, class5Code } from '../Class/classCode'
 
 const MicropythonClass6 = () => {
 
@@ -44,7 +44,7 @@ const MicropythonClass6 = () => {
                                         <h2>Generación de gráficos simples.</h2>
                                         <h2>Creación de interfaces de usuario básicas.</h2>
                                         <div className="text-center text-lg-start">
-                                            <a href="#clase1" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 1</a>
+                                            <a href="#clase1" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 6</a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,35 +126,29 @@ const MicropythonClass6 = () => {
                                             <h3 className="text-break w-75 mx-auto mt-4">LCD Gráfica (128x64)</h3>
                                             <p className="text-break mx-auto mt-4 w-75">Esta pantalla tiene una resolución de 128 píxeles de ancho y 64 píxeles de alto, lo que permite mostrar gráficos y texto de manera efectiva.</p>
                                             <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd128x64conexion.webp"></img>
-                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Los displays LCDs de 16×2 tienen 16 pines de los cuales únicamente usaremos 12 pines para la realización de una conexión básica.</p>
-                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd16x2conexion.webp"></img>
-                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Los displays LCDs de 16×2 tienen 16 pines de los cuales únicamente usaremos 12 pines para la realización de una conexión básica.</p>
-                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/lcd16x2conexion.webp"></img>
-                                            <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Los displays LCDs de 16×2 tienen 16 pines de los cuales únicamente usaremos 12 pines para la realización de una conexión básica.</p>
-                                            <h3 className="text-break w-75 mx-auto mt-4">¿Para qué sirve un servidor web en Internet?</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">El rol principal de un servidor web es almacenar y transmitir el contenido solicitado de un sitio web al navegador del usuario.<br></br>Este proceso, para los internautas no dura más que un segundo, sin embargo, a nivel del web server es una secuencia más complicada de lo que parece.<br></br>Para cumplir con sus funciones el servidor deberá tener la capacidad de estar siempre encendido para evitar interrumpir el servicio que le ofrece a sus clientes. Si dicho servidor falla o se apaga, los internautas tendrán problemas al ingresar al sitio web.</p>
-                                            <h3 className="text-break w-75 mx-auto mt-4">¿Cómo funciona un servidor web?</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">La comunicación entre un servidor y sus clientes se basa en HTTP, es decir, en el protocolo de transferencia de hipertexto o en su variante codificada HTTPS.<br></br>Para saber cómo funciona, primero es necesario conocer que el web server está permanentemente en espera de una solicitud de información.<br></br>Además, ten en cuenta que toda computadora, smartphone o tablet tiene una dirección IP única e irrepetible que lo identifica de otro dispositivo en la red, así es como el servidor web envía la información exacta que el internauta está esperando.<br></br>Ahora bien, para que el web server pueda cumplir con su función es necesario que reciba la petición por parte de un navegador, en otras palabras, se envía un pedido desde una dirección IP hacia la dirección IP del servidor que aloja los archivos del sitio en cuestión.<br></br>A continuación, el servidor web busca en sus archivos la información que se le está solicitando, procede a interpretar las líneas de código y a enviar el resultado al navegador cuya dirección IP fue la solicitante.<br></br>Este resultado se le muestra a los internautas y es lo que siempre sucede cuando se navega en sitios de Internet. Cuando este proceso se completa podemos decir que el web server ha cumplido con su función.</p>
+                                            <h3 className="text-break w-75 mx-auto mt-4">E paper(e-ink)</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Las pantallas e-Paper son una excelente opción para proyectos con Raspberry Pi Pico W que requieren bajo consumo de energía y buena legibilidad, especialmente en condiciones de luz intensa. Aunque no son adecuadas para aplicaciones de video o gráficos en movimiento, destacan en aplicaciones estáticas y dispositivos de bajo consumo, como lectores de eBooks y etiquetas electrónicas.</p>
+                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/e-ink.webp"></img>
+                                            <h3 className="text-break w-75 mx-auto mt-4">Pantallas táctiles (XPT2046)</h3>
+                                            <p className="text-break mx-auto mt-4 w-75">Aunque las pantallas táctiles no son tan comunes con el Raspberry Pi Pico W, algunas pantallas TFT con controladores táctiles (como XPT2046) son compatibles y pueden conectarse mediante SPI.</p>
+                                            <img className="w-50 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/touch.webp"></img>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="element4" className={`mt-4 rounded-5 animated-left ${elementVisibility.element4 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    <h2 className="text-light">Modulo wifi</h2>
+                                    <h2 className="text-light">Conexión LCD 16x2 I2C</h2>
                                 </button>
                                 <div id="a3" className="accordion-collapse collapse bg-dark" >
                                     <div className="accordion-body text-light bg-dark ">
-                                        <h3 className="text-break w-75 mx-auto">Activación del módulo wifi</h3>
-                                        <p className="text-break mx-auto w-75">Primero principal debemos importar la libreria "network" para poder conectarnos a redes wifi</p>
-                                        <CopyButton code={class5MCode[0]} />
-                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi1.webp"></img>
-                                        <p className="text-break mx-auto w-75">Luego para inicializar la interfaz de la red wifi debemos utilizar network.WLAN(network.STA_IF) y luego indicarle que lo queremos activar(active(true))</p>
-                                        <CopyButton code={class5MCode[1]} />
-                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi2.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Repositorio I2C-LCD - Github</h3>
+                                        <p className="text-break mx-auto w-75">Este repositorio está hecho para facilitar la integración de un LCD I2C con el Raspberry Pi Pico.</p>
+                                        <p className="text-break mx-auto w-75">Primero debemos crear 2 archivos llamado uno 'lcd_api.py' y otro 'pico_ic2_led.py', el contenido del código lo encontraremos ingresando desde este link --  <Link to="https://github.com/T-622/RPI-PICO-I2C-LCD/blob/main/lcd_api.py" target="_blank" className="text-info">https://github.com/T-622/RPI-PICO-I2C-LCD/blob/main/lcd_api.py</Link></p>
+                                        <CopyButton code={class6MCode[0]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/I2CLCD-github.webp"></img>
+                                        <CopyButton code={class6MCode[1]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/I2CLCD-github2.webp"></img>
                                         <p className="text-break mx-auto w-75">Con el método scan() podemos escanear las redes wifi disponibles en nuestro perímetro.</p>
                                         <CopyButton code={class5MCode[2]} />
                                         <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi3.webp"></img>

@@ -86,7 +86,7 @@ const Navbar = () => {
                   {location.pathname.includes("pythonKids") ? <li>
                     <Link to="/" style={{ color: "#012973", fontSize: "1.4rem" }} className="nav-link scrollto active">Python</Link>
                   </li> : <li>
-                    <Link to="/pythonKids" style={{ color: "#012973", fontSize: "1.4rem" }} className="nav-link scrollto active">Python kids</Link>
+                    <Link to="/pythonKids" style={{ color: "#012973", fontSize: "1.4rem" }} className="nav-link scrollto active">Python Kids</Link>
                   </li>
                   }
                   <li onClick={handleMobileNavToggle}>
@@ -106,7 +106,7 @@ const Navbar = () => {
                     {location.pathname.includes("pythonKids") ? <li>
                       <Link to="/" style={{ color: "#012973" }} className="nav-link scrollto active">Python</Link>
                     </li> : <li>
-                      <Link to="/pythonKids" style={{ color: "#012973" }} className="nav-link scrollto active">Python kids</Link>
+                      <Link to="/pythonKids" style={{ color: "#012973" }} className="nav-link scrollto active">Python Kids</Link>
                     </li>
                     }
                     <li>

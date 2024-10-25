@@ -41,7 +41,7 @@ const MicropythonClass7 = () => {
                                         <h2>Lectura y escritura en sistemas de archivos.</h2>
                                         <h2>Ejemplos de aplicaciones que utilizan almacenamiento.</h2>
                                         <div className="text-center text-lg-start">
-                                            <a href="#clase1" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 1</a>
+                                            <a href="#clase1" className="btn-get-started scrollto" style={{ backgroundColor: "#EE7053" }}>Contenido de la clase 7</a>
                                         </div>
                                     </div>
                                 </div>
