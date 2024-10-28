@@ -222,6 +222,12 @@ const MicropythonClass3 = () => {
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led con botones de forma indirecta</h3>
                                             <CopyButton code={class3MCode[3]} />
                                             <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led3.webp"></img>
+                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led Rgb</h3>
+                                            <CopyButton code={class3MCode[4]} />
+                                            <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led5.webp"></img>
+                                            <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led Rgb con botones</h3>
+                                            <CopyButton code={class3MCode[5]} />
+                                            <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led6.webp"></img>
                                         </div>
                                     </div>
                                 </div>
