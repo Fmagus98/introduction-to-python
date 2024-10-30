@@ -14,7 +14,7 @@ const MicropythonClass3 = () => {
     const [date, setDate] = useState()
     const newDate = new Date()
     useEffect(() => {
-        if (!localStorage.getItem("dataCourseMicropython")){
+        if (!localStorage.getItem("dataCourseMicropython")) {
             getDocs(collection(db, "courseMicropython")).then(response => {
                 response.docs.map(doc => {
                     if (doc.id === "NSSBz68HqHvwFtPEtNrX") {
@@ -24,7 +24,7 @@ const MicropythonClass3 = () => {
                 })
             })
         }
-        else{
+        else {
             const dateCourse = JSON.parse(localStorage.getItem("dataCourseMicropython"))
             setDate(dateCourse)
         }
@@ -49,7 +49,7 @@ const MicropythonClass3 = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
-                                    <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                    <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -194,12 +194,14 @@ const MicropythonClass3 = () => {
                                                     <p className="text-break mx-auto"><span className='fw-bold'>Resistencia estándar:</span> 10kΩ es un valor común que proporciona un buen equilibrio entre estabilidad y bajo consumo de corriente. Valores más bajos (como 1kΩ) podrían permitir más corriente, lo que no es necesario en aplicaciones de botones, mientras que valores más altos (como 100kΩ) podrían hacer que el circuito sea más susceptible a interferencias.</p>
                                                 </li>
                                             </ol>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413123812280419329" target="_blank" className="text-info">Botón Pull Down</Link></p>
                                             <CopyButton code={class3MCode[1]} />
                                             <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button5.webp"></img>
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Acción Pull UP</h3>
                                             <p className="text-break mx-auto w-75">Debemos indicarle que acción queremos capturar del botón. En este caso va a ser la acción al presionar el botón. (Pin.PULL_UP), cuando no está pulsado tendrá un valor 1, en caso contrario un 0</p>
                                             <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button2.webp"></img>
                                             <p className="text-break mx-auto w-75 mt-4">Para detectar si el botón está pulsado o no, debemos utilizar el método "value", para detectar constantemente el estado debemos utilizar el bucle while y también la libreria utime para que detecte el estado de forma detenida.</p>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413124364625231873" target="_blank" className="text-info">Botón Pull Up</Link></p>
                                             <CopyButton code={class3MCode[0]} />
                                             <img className="w-75 mx-auto d-block border-content mb-4" alt="" src="../../img/class3Micropython/button3.webp"></img>
                                         </div>
@@ -215,61 +217,27 @@ const MicropythonClass3 = () => {
                                             <p className="text-break mx-auto w-75">Los LEDs básicos son dispositivos de dos pines: un ánodo (+) y un cátodo (-). Para encender y apagar un LED en MicroPython, simplemente se conecta el ánodo a un pin GPIO configurado como salida y el cátodo a tierra (GND). Se puede controlar encendiéndolo o apagándolo con comandos sencillos.</p>
                                             <img className="d-block mx-auto w-50 border-content" alt="" src="../../img/class3Micropython/Led1.webp"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica con led</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413124659022411777" target="_blank" className="text-info">Conexión básica de Led</Link></p>
                                             <CopyButton code={class3MCode[2]} />
                                             <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led2.webp"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led con botones de forma directa</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413124997089648641" target="_blank" className="text-info">Conexión Led con botones de forma directa</Link></p>
                                             <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led4.webp"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led con botones de forma indirecta</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413125311915202561" target="_blank" className="text-info">Conexión Led con botones de forma indirecta</Link></p>
                                             <CopyButton code={class3MCode[3]} />
                                             <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led3.webp"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led Rgb</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413125866262806529" target="_blank" className="text-info">Conexion con Led RGB</Link></p>
                                             <CopyButton code={class3MCode[4]} />
                                             <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led5.webp"></img>
                                             <h3 className="text-center mx-auto mt-4" style={{ fontSize: "25px", fontWeight: "700" }}>Ejecución Basica de control de led Rgb con botones</h3>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413127279792762881" target="_blank" className="text-info">Conexion con Led RGB y botones</Link></p>
                                             <CopyButton code={class3MCode[5]} />
                                             <img className="d-block mx-auto w-75 border-content" alt="" src="../../img/class3Micropython/Led6.webp"></img>
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div id="element8" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseFive">
-                                        <h2 className="text-light">Ejecución del tercer programa</h2>
-                                    </button>
-                                    <div id="a7" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Instalación de thonny</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">1_ Dirígete a <Link to="https://thonny.org/" target="_blank" className="text-info">https://thonny.org/</Link> e instala el programa dependiendo tu sistema operativo.</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE1.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">2_Al ejecutar el instalador oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE2.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">3_Acepta el acuerdo y oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE3.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">4_oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE4.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">5_Nuevamente oprime el botón "next"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE5.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">6_Selecciona "create desktop icon" para tener esta aplicación en tu escritorio y oprime el botón "next</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE6.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">7_Seleccionamos el botón "install"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE7.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">8_Seleccionamos el botón "finish"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE8.jpg"></img>
-                                            <h3 className="text-center mx-auto mt-4" style={{ fontWeight: "700" }}>Configuración de thonny</h3>
-                                            <p className="mt-4 mb-4 text-center mx-auto">1_Seleccionamos el lenguaje, dejamos en configuración "standard" y seleccionamos el botón "Lets go!"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE9.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">2_Al estar dentro del programa accede a Ejecutar/configurar intérprete</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE10.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">3_Elige "micropython (raspberry pi pico)" y presiona "instala o actualiza micropython"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE11.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">4_Debemos conectar nuestro microcontrolador y presionar el botón blanco</p>
-                                            <img className="w-25 mx-auto d-block" alt="" src="../../img/class1Micropython/IDE12.jpg"></img>
-                                            <p className="mt-4 mb-4 w-75 text-center mx-auto">5_Automáticamente nos aparecerá el microcontrolador que conectamos, en este caso vamos a configurarlo de la siguiente manera y le damos a "instalar"</p>
-                                            <img className="mx-auto d-block w-75 border-content" alt="" src="../../img/class1Micropython/IDE13.jpg"></img>
-                                            <p className="mt-4 mb-4 text-center mx-auto">Si en la consola te muestra el nombre del microcontrolador, está bien configurado</p>
-                                            <img className="mx-auto d-block w-75 border-content" style={{ marginBottom: "4rem" }} alt="" src="../../img/class1Micropython/IDE14.jpg"></img>
-                                        </div>
-                                    </div>
-                                </div> */}
                                 <div id="element9" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <Link to="/micropythonClassFile/class3.py"
                                         target={"_blank"}
@@ -298,7 +266,7 @@ const MicropythonClass3 = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }}  >
-                                <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                             </div>
                         </div>
                     </div>
