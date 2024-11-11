@@ -106,7 +106,7 @@ const VirtualAssistant = () => {
                 className="btn rounded-circle chat-button"
                 onClick={toggleChat}
             >
-                {location.pathname.includes("micropython") ? <img src="../img/virtualAssistant2.png" alt="VirtualAssistant" /> : <img src="../img/virtualAssistant.png" alt="VirtualAssistant" />}
+                {location.pathname.includes("micropython") ? <img src="../../img/virtualAssistant2.png" alt="VirtualAssistant" /> : <img src="../img/virtualAssistant.png" alt="VirtualAssistant" />}
             </button>
             {isOpen && (
                 <div className={`card chat-window bg-dark chat-size ${maximizeChat?'':'chat-max-size'}`}>

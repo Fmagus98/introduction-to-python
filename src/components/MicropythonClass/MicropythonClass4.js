@@ -49,7 +49,7 @@ const MicropythonClass4 = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
-                                    <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                    <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -206,6 +206,7 @@ const MicropythonClass4 = () => {
                                             <CopyButton code={class4MCode[1]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2paso2.webp"></img>
                                             <h4 className="mt-4 text-break mx-auto w-75">Visualizar duty Cycle y voltaje en potenciometro</h4>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413388188659100673" target="_blank" className="text-info">Potenciometro Básico</Link></p>
                                             <CopyButton code={class4MCode[2]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2.webp"></img>
                                         </div>
@@ -245,17 +246,21 @@ const MicropythonClass4 = () => {
                                             <CopyButton code={class4MCode[4]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed2.webp"></img>
                                             <p className="text-break mx-auto w-75">Ahora conectamos el ánodo(+) del led a una resistencia y en el extremo al Pin GP15 y el cátodo(-) a GND</p>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413388811649584129" target="_blank" className="text-info">Potenciometro Básico con Led</Link></p>
                                             <CopyButton code={class4MCode[5]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed3.webp"></img>
                                             <h4 className="mt-4 text-break mx-auto w-75">Activación de luces Led con Potenciómetro</h4>
                                             <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413389533717940225" target="_blank" className="text-info">Potenciometro Básico con Leds</Link></p>
                                             <CopyButton code={class4MCode[6]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed4.webp"></img>
                                             <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro</h4>
                                             <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413388811649584129" target="_blank" className="text-info">Potenciometro Básico con Leds 2</Link></p>
                                             <CopyButton code={class4MCode[7]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed5.webp"></img>
                                             <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro(Código optimizado)</h4>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413390055909862401" target="_blank" className="text-info">Potenciometro Básico con Leds 2 optimizado</Link></p>
                                             <CopyButton code={class4MCode[8]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed6.webp"></img>
                                         </div>
@@ -291,6 +296,7 @@ const MicropythonClass4 = () => {
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Potenciometro en servomotor 180°</h3>
                                             <p className="text-break mx-auto mt-4 w-75">Para utilizar este tipo de servomotores vamos a tener que mapear el angulo que puede dar este servomotor en el potenciometro, para ello multiplicamos por 180(angulo) dividido 65535(valor máximo del potenciómetro), así cada vez que giremos el potenciómetro indique el angulo de giro</p>
                                             <p className="text-break mx-auto mt-4 w-75">También vamos a tener que asignarle el valor al servomotor de la siguiente forma: int((el calculo anterior para mapear el potenciometro + 45) * 100000 / 9), esto se hace para que devuelva un valor en nanosegundos, lo que se necesita para mover el servomotor </p>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413390957975731201" target="_blank" className="text-info">Potenciometro Básico con servomores</Link></p>
                                             <CopyButton code={class4MCode[9]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo2.webp"></img>
                                         </div>
@@ -324,7 +330,7 @@ const MicropythonClass4 = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }}  >
-                                <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                             </div>
                         </div>
                     </div>

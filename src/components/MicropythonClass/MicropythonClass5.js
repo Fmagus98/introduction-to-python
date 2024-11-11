@@ -49,7 +49,7 @@ const MicropythonClass5 = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
-                                    <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                    <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -167,16 +167,44 @@ const MicropythonClass5 = () => {
                             </div>
                             <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
                                 <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
-                                    <h2 className="text-light">For</h2>
+                                    <h2 className="text-light">Manipulación de Rasberry Pi Pico W desde Sitio web</h2>
                                 </button>
                                 <div id="a5" className="accordion-collapse collapse" >
                                     <div className="accordion-body text-light bg-dark ">
-                                        <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
+                                        <p className="text-break mx-auto w-75 mt-4">Para realizar manipulaciones de nuestra Raspberry Pi Pico W por medio de un sitio web es algo más complejo ya que debes tener conocimientos en desarrollo web, en este caso lo haremos de una manera simplificada.</p>
+                                        <h3 className="text-break w-75 mx-auto">Paso 1 - Importación de Librerias</h3>
+                                        <ul className="text-break mx-auto w-75 list-unstyled"><span>Veremos principalmente las librerias que debemos importar</span>
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">import network: </span>Permite gestionar la conexión WiFi de la Raspberry Pi Pico W.</p></li>
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">import socket: </span>Proporciona herramientas para la creación de un servidor web que escucha y responde a las solicitudes de clientes (navegadores web).</p></li>
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">import time: </span>Permite realizar pausas en el código.</p></li>
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">from machine import Pin: </span>Permite controlar los pines GPIO de la Raspberry Pi Pico W, como el LED.</p></li>
+                                        </ul>
                                         <CopyButton code={class3Code[9]} />
-                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class3/range.webp"></img>
-                                        <h3 className="text-break mx-auto w-75 mt-4">Bucle for en listas</h3>
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage.webp"></img>
+                                        <h3 className="text-break mx-auto w-75 mt-4">Paso 2 - Configuración de puerto de entrada/salida(Raspberry pi pico)</h3>
+                                        <p className="text-break mx-auto w-75 mt-4">En este caso simple voy a utilizar el Led interno de la raspberry pi pico para manipularlo.</p>
                                         <CopyButton code={class3Code[10]} />
-                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class3/for4.webp"></img>
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage2.webp"></img>
+                                        <h3 className="text-break mx-auto w-75 mt-4">Paso 3 - Conexion WIFI</h3>
+                                        <CopyButton code={class3Code[10]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage3.webp"></img>
+                                        <h3 className="text-break mx-auto w-75 mt-4">Paso 4 - Crear página web de control</h3>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">led_state = "ENCENDIDO" if led.value() else "APAGADO": </span>Determina el estado actual del LED (1 para encendido y 0 para apagado) y lo asigna a led_state.</p></li>
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">Etiquetas h1 y p: </span>La etiqueta 'h1' Se utiliza para indicar titulos y la etiqueta 'p' se utiliza para párrafos.</p></li>
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">Etiqueta a: </span>La etiqueta 'a' se utiliza para redireccionar a una ruta http.</p></li>
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">Etiqueta Button: </span>Permite realizar la acción de un botón.</p></li>
+                                        </ul>
+                                        <CopyButton code={class3Code[10]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage4.webp"></img>
+                                        <h3 className="text-break mx-auto w-75 mt-4">Paso 5 - Configuración del servidor</h3>
+                                        <p className="text-break mx-auto w-75 mt-4">En este caso simple voy a utilizar el Led interno de la raspberry pi pico para manipularlo.</p>
+                                        <CopyButton code={class3Code[10]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage5.webp"></img>
+                                        <h3 className="text-break mx-auto w-75 mt-4">Paso 6 - Bucle principal para manejar solicitudes HTTP</h3>
+                                        <p className="text-break mx-auto w-75 mt-4">En este caso simple voy a utilizar el Led interno de la raspberry pi pico para manipularlo.</p>
+                                        <CopyButton code={class3Code[10]} />
+                                        <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage6.webp"></img>
                                     </div>
                                 </div>
                             </div>
@@ -350,7 +378,7 @@ const MicropythonClass5 = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }}  >
-                                <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                             </div>
                         </div>
                     </div>

@@ -49,7 +49,7 @@ const MicropythonClass3 = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
-                                    <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                    <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -266,7 +266,7 @@ const MicropythonClass3 = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }}  >
-                                <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                             </div>
                         </div>
                     </div>

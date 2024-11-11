@@ -6,7 +6,7 @@ import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { class4MCode, class6MCode } from './MicropythonClassCode'
 import { CopyButton } from '../CopyButton/CopyButton'
-import { class3Code, class4Code, class5Code } from '../Class/classCode'
+import { class3Code, class4Code } from '../Class/classCode'
 
 const MicropythonClass6 = () => {
 
@@ -49,7 +49,7 @@ const MicropythonClass6 = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
-                                    <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                    <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="micropython" />
                                 </div>
                             </div>
                         </div>
@@ -238,10 +238,10 @@ const MicropythonClass6 = () => {
                                 </div>
                             </div>
                             <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
                                     <h2>Introducción a las pantallas LCD y OLED</h2>
                                 </button>
-                                <div id="a4" className="accordion-collapse collapse" >
+                                <div id="a6" className="accordion-collapse collapse" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <p className="text-break mx-auto w-75">Las pantallas son componentes clave en muchos proyectos de electrónica y programación, especialmente en el ámbito de la Raspberry Pi Pico W. Conocer las diferencias entre las tecnologías de visualización, como LCD y OLED, es esencial para seleccionar la mejor opción para cada aplicación.</p>
                                         <h3 className="text-center mx-auto w-75">Pantallas LCD (Liquid Crystal Display)</h3>
@@ -274,10 +274,10 @@ const MicropythonClass6 = () => {
                                 </div>
                             </div>
                             <div id="element6" className={`rounded-5 animated-left mt-4 ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button className="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseOne">
                                     <h2>Pantallas Compatibles con Raspberri pi pico w</h2>
                                 </button>
-                                <div id="a5" className="accordion-collapse collapse" >
+                                <div id="a7" className="accordion-collapse collapse" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <div className="accordion-body text-light">
                                             <h3 className="text-break w-75 mx-auto mt-4">LCD 16x2 (HD44780)</h3>
@@ -300,10 +300,10 @@ const MicropythonClass6 = () => {
                                 </div>
                             </div>
                             <div id="element7" className={`mt-4 rounded-5 animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
-                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    <h2 className="text-light">Conexión LCD 16x2 I2C</h2>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h2 className="text-light">Conexión Pantalla LCD 16x2 I2C</h2>
                                 </button>
-                                <div id="a6" className="accordion-collapse collapse bg-dark" >
+                                <div id="a8" className="accordion-collapse collapse bg-dark" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <p className="text-break mx-auto w-75">Vamos a probar esto desde  <Link to="https://wokwi.com/projects/new/micropython-pi-pico" target="_blank" className="text-info">Wokwi</Link>, primero vamos a empezar a crear la conexión de la raspberry pi pico a nuestra pantalla LCD</p>
                                         <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/I2Cconect1.webp"></img>
@@ -337,41 +337,120 @@ const MicropythonClass6 = () => {
                                         <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/I2Cconect6.webp"></img>
                                         <p className="text-break mx-auto w-75">Ahora creamos una variable que capture la clase I2cLcd del módulo "pico_i2c_lcd" con los datos capturados anteriormente, lo ingresamos en los parámetros de la clase.</p>
                                         <ul className="text-break mx-auto w-75 list-unstyled">
-                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">I2cLcd() </span>Llamada de la clase I2cLcd del módulo "pico_i2c_lcd"</p></li>
-                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">I2C_ADDR </span>Número del adaptador de comunicación I2C</p></li>
-                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">2 </span>Número de filas que tiene la pantalla LCD</p></li>
-                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">16 </span>Número de columnas que tiene la pantalla LCD</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">I2cLcd() : </span>Llamada de la clase I2cLcd del módulo "pico_i2c_lcd"</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">I2C_ADDR : </span>Número del adaptador de comunicación I2C</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">2 : </span>Número de filas que tiene la pantalla LCD</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">16 :</span>Número de columnas que tiene la pantalla LCD</p></li>
                                         </ul>
                                         <CopyButton code={class6MCode[6]} />
                                         <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/I2Cconect7.webp"></img>
-                                        <p className="text-break mx-auto w-75">creamos un bucle while para que constantemente se sobreescriba la palabra que quieras introducir, con el método "putstr" vas a poder ingresar los caracteres dentro del LCD y con "clean" vas a poder limpiar la pantalla.</p>
+                                        <p className="text-break mx-auto w-75">Creamos un bucle while para que constantemente se sobreescriba la palabra que quieras introducir, con el método "putstr" vas a poder ingresar los caracteres dentro del LCD y con "clean" vas a poder limpiar la pantalla.</p>
+                                        <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413391997575993345" target="_blank" className="text-info">Conexión básica de LCD</Link></p>
                                         <CopyButton code={class6MCode[7]} />
                                         <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/I2Cconect6.webp"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="element8" className={`mt-4 rounded-5 animated-left ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <h2 className="text-light">Conexión pantalla OLED I2C (modelo SSD1306)</h2>
+                                </button>
+                                <div id="a9" className="accordion-collapse collapse bg-dark" >
+                                    <div className="accordion-body text-light bg-dark ">
+                                        <h3 className="text-break w-75 mx-auto">Repositorio ssd1306 - Github</h3>
+                                        <p className="text-break mx-auto w-75">Este repositorio está hecho para facilitar la integración de un OLED I2C con el Raspberry Pi Pico.</p>
+                                        <p className="text-break mx-auto w-75">Primero debemos crear 1 archivo llamado uno 'ssd1306.py', el contenido del código lo encontraremos ingresando desde este link --  <Link to="https://github.com/stlehmann/micropython-ssd1306/blob/master/ssd1306.py" target="_blank" className="text-info">https://github.com/stlehmann/micropython-ssd1306/blob/master/ssd1306.py</Link></p>
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect1.webp"></img>
+                                        <p className="text-break mx-auto w-75">Vamos a probar esto desde  <Link to="https://wokwi.com/projects/new/micropython-pi-pico" target="_blank" className="text-info">Wokwi</Link>, primero vamos a empezar a pasar ese archivo a wokwi</p>
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect2.webp"></img>
+                                        <p className="text-break mx-auto w-75">Ahora desde Wokwi vamos hacer la conexión de la pantalla OLED a la raspberry pi pico.</p>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">3v3: </span>La debemos conectar al puerto 3V3 para que nos proporcione el voltaje de 3V (+)</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">GND: </span>La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">SDA: </span>Configura el pin GPIO 0 para ser utilizado como la línea de datos serial (SDA). Esta línea se usa para la transmisión de datos en la comunicación I2C.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">SCL: </span>Configura el pin GPIO 1 para ser utilizado como la línea de reloj serial (SCL). Esta línea genera los pulsos de reloj necesarios para sincronizar la transmisión de datos.</p></li>
+                                        </ul>
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect3.webp"></img>
+                                        <p className="text-break mx-auto w-75">Debemos importar la libreria "machine" con las clases I2C y Pin y importar el módulo SSD1306 con la clase SSD1306_I2C</p>
+                                        <CopyButton code={class6MCode[8]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect4.webp"></img>
+                                        <p className="text-break mx-auto w-75">Ahora debemos guardar en una variable la llamada a la clase i2C para hacer la conexión I2C</p>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">I2C() : </span>Llamada de la clase I2C del módulo machine</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">1° argumento (0) : </span>Especifica que se usará el controlador I2C GP0 del microcontrolador.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">sda=Pin(0) : </span>Configura el pin GPIO 0 para ser utilizado como la línea de datos serial (SDA). Esta línea se usa para la transmisión de datos en la comunicación I2C.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">scl=Pin(1) : </span>Configura el pin GPIO 1 para ser utilizado como la línea de reloj serial (SCL). Esta línea genera los pulsos de reloj necesarios para sincronizar la transmisión de datos.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">freq=400000: </span>Establece la frecuencia de comunicación I2C a 400 kHz. Esta es una velocidad comúnmente utilizada para I2C y se conoce como "modo rápido" (Fast Mode).</p></li>
+                                        </ul>
+                                        <p className="text-break mx-auto w-75">También debemos guardar en una variable la llamada a la clase SSD1306 del módulo "SSD1306_I2C" para obtener toda la funcionalidad de la pantalla OLED.</p>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">SSD1306_I2C() : </span>Llamada de la clase SSD1306 del módulo SSD1306_I2C</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">128 : </span>Ancho de pixeles de la pantalla OLED.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">64 : </span>Largo de pixeles de la pantalla OLED.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">i2c : </span>Variable que contiene la comunicación I2C</p></li>
+                                        </ul>
+                                        <CopyButton code={class6MCode[9]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect5.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Escribir texto en el inicio de la pantalla</h3>
+                                        <p className="text-break mx-auto w-75">Para escribir en la pantalla OLED, debemos utilizar la variable que almacena la clase SSD1306(), en este caso es la variable "oled" y debemos agregarle el método .text()</p>
+                                        <p className="text-break mx-auto w-75">Dentro del método text debemos utilizar los siguientes parámetros:</p>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">"Probando" :</span> Texto que va a imprimir en pantalla</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">0 :</span> Posición Horizontal.</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">0 :</span> Posición Vertical.</p></li>
+                                        </ul>
+                                        <p className="text-break mx-auto w-75">Luego de esto debemos llamar nuevamente la variable que contiene la clase SSD1306() y le asignamos el método .show(), este método va a impactar todo lo que habíamos indicado con el método .text()</p>
+                                        <CopyButton code={class6MCode[10]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect6.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Escribir texto debajo de la linea inicial(Posición Vertical)</h3>
+                                        <p className="text-break mx-auto w-75">Para hacer esto debemos hacer lo mismo que hicimos anteriormente, solamente cambiamos el 2° parámetro del método text() de 0 a 10, cada 10 pixeles vamos a poder ir por lineas</p>
+                                        <CopyButton code={class6MCode[11]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect7.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Escribir texto debajo de la linea inicial y con sangría(Posición Horizontal)</h3>
+                                        <p className="text-break mx-auto w-75">Para hacer esto debemos hacer lo mismo que hicimos anteriormente, solamente cambiamos el 2° parámetro del método text() de 0 a 10, cada 10 pixeles vamos a poder ir por lineas</p>
+                                        <CopyButton code={class6MCode[12]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect8.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Limpiar la pantalla y cambiar el texto.</h3>
+                                        <p className="text-break mx-auto w-75">Para limpiar la pantalla debemos utilizar el método .fill(0) para limpiar la pantalla, luego de esto podemos utilizar nuevamente text() y show() para mostrar algo nuevo en pantalla </p>
+                                        <CopyButton code={class6MCode[13]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect9.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Dibujar con pixeles individuales</h3>
+                                        <p className="text-break mx-auto w-75">Además de tener la posibilidad de escribir texto también podemos graficar de muchas maneras, en este caso podemos dibujar pixeles individuales con el método .pixel().</p>
+                                        <p className="text-break mx-auto w-75">Dentro del método pixel debemos utilizar los siguientes parámetros:</p>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">1° parámetro :</span> Posición Horizontal</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">2° parámetro :</span> Posición Vertical</p></li>
+                                            <li><p className="text-break mx-auto w-100"><span className="fw-bold">3° parámetro :</span> 0 (Pixel desactivado) -- 1 (Pixel activado)</p></li>
+                                        </ul>
+                                        <p className="text-break mx-auto w-75">Puedes verlo desde Wokwi -- <Link to="https://wokwi.com/projects/413758944477152257" target="_blank" className="text-info">Pantalla OLED Dibujo con Pixel</Link></p>
+                                        <CopyButton code={class6MCode[14]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect10.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Dibujar Lineas</h3>
+                                        <p className="text-break mx-auto w-75">Con el mismo método text(), si utilizas un bucle for podes dibujar lineas pixel por pixel.</p>
+                                        <p className="text-break mx-auto w-75">Puedes verlo desde Wokwi -- <Link to="https://wokwi.com/projects/413758944477152257" target="_blank" className="text-info">Pantalla OLED Dibujo con Pixel</Link></p>
+                                        <CopyButton code={class6MCode[15]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect11.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Dibujar un Rectángulo</h3>
+                                        <p className="text-break mx-auto w-75">Dibujar un rectángulo en la pantalla OLED es posible usando un bucle para definir sus bordes.</p>
+                                        <p className="text-break mx-auto w-75">También se puede usar oled.fill_rect() para crear un rectángulo sólido.</p>
+                                        <p className="text-break mx-auto w-75">Puedes verlo desde Wokwi -- <Link to="https://wokwi.com/projects/413830169693719553" target="_blank" className="text-info">Pantalla OLED Dibujo con Pixel - Rectangulo</Link></p>
+                                        <CopyButton code={class6MCode[16]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect12.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Dibujar gráficos en tiempo real.</h3>
+                                        <p className="text-break mx-auto w-75">Para realizar gráficos en tiempo real debemos hacer un refresco constante de nuestro gráfico, para esto debemos utilizar el método .scroll(-1, 0) para mover 1 pixel a la izquierda para x tiempo pero además utilizar fill_rect() con un valor 0 en el 4° parámetro para desactivar el pixel y Limpiar la columna siguiente.</p>
+                                        <p className="text-break mx-auto w-75">En este caso voy a utilizar un potenciómetro para graficar en tiempo real el valor de mi potenciometro</p>
+                                        <p className="text-break mx-auto w-75">Puedes verlo desde Wokwi -- <Link to="https://wokwi.com/projects/413831042287328257" target="_blank" className="text-info">Pantalla OLED Gráfico con Pixel - Potenciometro</Link></p>
+                                        <CopyButton code={class6MCode[17]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class6Micropython/OLEDConect13.webp"></img>
 
                                     </div>
                                 </div>
                             </div>
-                            <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
-                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    <h2 className="text-light">Conexión a una red wifi</h2>
-                                </button>
-                                <div id="a4" className="accordion-collapse collapse bg-dark" >
-                                    <div className="accordion-body text-light bg-dark ">
-                                        <p className="text-break mx-auto w-75">
-                                            Además de tener métodos para utilizar en listas, también tenemos funciones que nos ayudan a la hora de manipular datos.:
-                                        </p>
-                                        <h3 className="text-break w-75 mx-auto">len()</h3>
-                                        <p className="text-break mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
-                                        <CopyButton code={class5Code[12]} />
-                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list13.webp"></img>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="element6" className={`mt-4 rounded-5 animated-left ${elementVisibility.element6 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
-                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="flush-collapseFive">
+                            <div id="element9" className={`mt-4 rounded-5 animated-left ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }}>
+                                <button className="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseFive">
                                     <h2 className="text-light">For</h2>
                                 </button>
-                                <div id="a5" className="accordion-collapse collapse" >
+                                <div id="a8" className="accordion-collapse collapse" >
                                     <div className="accordion-body text-light bg-dark ">
                                         <p className="text-break mx-auto w-75 mt-4"> El bucle for se utiliza para iterar sobre una secuencia de elementos, como una lista, una cadena de texto, un rango de números, entre otros. En cada iteración, el bucle for asigna el siguiente elemento de la secuencia a una variable y ejecuta el bloque de código. Aquí tienes unos ejemplos:</p>
                                         <CopyButton code={class3Code[9]} />
@@ -383,11 +462,11 @@ const MicropythonClass6 = () => {
                                 </div>
                             </div>
                             <div className="accordion accordion-flush w-100 mx-auto mt-4" id="accordionFlushExample">
-                                <div id="element7" className={`accordion-item animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element10" className={`accordion-item animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>PWM</h2>
                                     </button>
-                                    <div id="a6" className="accordion-collapse collapse" >
+                                    <div id="a9" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">¿Qué es PWM?</h3>
                                             <p className="text-break mx-auto w-75 mt-4">PWM (Modulación por Ancho de Pulso) es una técnica utilizada para controlar la potencia entregada a dispositivos electrónicos. En lugar de aplicar un voltaje constante, PWM alterna rápidamente entre encendido y apagado, lo que permite simular un voltaje variable.</p>
@@ -414,11 +493,11 @@ const MicropythonClass6 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element8" className={`accordion-item animated-left mt-4 ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element11" className={`accordion-item animated-left mt-4 ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a10" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Potenciometro</h2>
                                     </button>
-                                    <div id="a7" className="accordion-collapse collapse" >
+                                    <div id="a10" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Potenciometro en Raspberry pi pico w (potenciometro)</h3>
                                             <p className="text-break mx-auto w-75 mt-4">Para poder utilizar un Potenciometro debemos utilizar desde la libreria "machine" la clase "ADC"</p>
@@ -439,11 +518,11 @@ const MicropythonClass6 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element9" className={`accordion-item animated-left mt-4 ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div id="element12" className={`accordion-item animated-left mt-4 ${elementVisibility.element12 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a11" aria-expanded="false" aria-controls="flush-collapseOne">
                                         <h2>Led</h2>
                                     </button>
-                                    <div id="a8" className="accordion-collapse collapse" >
+                                    <div id="a11" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funcionamiento de PWM en LEDs</h3>
                                             <p className="text-break mx-auto w-75">Los LEDs son dispositivos semiconductores que convierten energía eléctrica en luz, y su brillo depende de la cantidad de corriente que pasa a través de ellos. Sin embargo, en lugar de ajustar directamente la corriente, lo que podría ser ineficiente y producir calor, el PWM ofrece un enfoque eficiente para regular el brillo mediante el control del tiempo que el LED está encendido o apagado durante un ciclo.</p>
@@ -489,11 +568,11 @@ const MicropythonClass6 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <div id="element13" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element13 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a12" aria-expanded="false" aria-controls="flush-collapseTwo">
                                         <h2 className="text-light">Servomotores</h2>
                                     </button>
-                                    <div id="a9" className="accordion-collapse collapse" >
+                                    <div id="a12" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
                                             <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Qué es un servomotor?</h3>
                                             <p className="text-break mx-auto mt-4 w-75">Un servomotor es un tipo de motor que permite un control preciso de la posición, la velocidad y el movimiento. A menudo se utiliza en aplicaciones como robótica, automatización y modelos a escala.</p>
@@ -524,7 +603,7 @@ const MicropythonClass6 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="element11" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element11 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
+                                <div id="element14" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element14 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <Link to="/micropythonClassFile/class5.py"
                                         target={"_blank"}
                                         download={"class5.py"}>
@@ -552,7 +631,7 @@ const MicropythonClass6 = () => {
                                 </div>
                             </div>
                             <div className="col-lg-4 order-1 order-lg-2 hero-img" style={{ backgroundColor: "#EE7053" }}  >
-                                <img src="../img/micropython.png" className="img-fluid animated vh-60" alt="" />
+                                <img src="../../img/micropython.png" className="img-fluid animated vh-60" alt="" />
                             </div>
                         </div>
                     </div>
