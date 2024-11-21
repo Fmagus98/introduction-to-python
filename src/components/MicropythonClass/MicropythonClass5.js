@@ -6,7 +6,7 @@ import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
 import { class4MCode, class5MCode } from './MicropythonClassCode'
-import { class3Code, class4Code, class5Code } from '../Class/classCode'
+import { class4Code } from '../Class/classCode'
 
 const MicropythonClass5 = () => {
 
@@ -155,13 +155,25 @@ const MicropythonClass5 = () => {
                                 </button>
                                 <div id="a4" className="accordion-collapse collapse bg-dark" >
                                     <div className="accordion-body text-light bg-dark ">
-                                        <p className="text-break mx-auto w-75">
-                                            Además de tener métodos para utilizar en listas, también tenemos funciones que nos ayudan a la hora de manipular datos.:
-                                        </p>
-                                        <h3 className="text-break w-75 mx-auto">len()</h3>
-                                        <p className="text-break mx-auto w-75">len() te devuelve la cantidad de elementos que contiene la lista.</p>
-                                        <CopyButton code={class5Code[12]} />
-                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5/list13.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Paso 1 - Importación de Librerias</h3>
+                                        <ul className="text-break mx-auto w-75 list-unstyled">
+                                            <li><p className="text-break mx-auto w-75"><span className="fw-bold">import network: </span>Permite gestionar la conexión WiFi de la Raspberry Pi Pico W.</p></li>
+                                        </ul>
+                                        <CopyButton code={class5MCode[0]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi1.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Paso 2 - Activación del módulo wifi</h3>
+                                        <p className="text-break mx-auto w-75">Luego para inicializar la interfaz de la red wifi debemos utilizar network.WLAN(network.STA_IF) y luego indicarle que lo queremos activar(active(true))</p>
+                                        <CopyButton code={class5MCode[1]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wifi2.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Paso 3 - Conexión de red wifi</h3>
+                                        <p className="text-break mx-auto w-75">Debemos hacer la conexión de la red wifi indicandole el nombre de la red wifi junto a la contraseña con el método connect().</p>
+                                        <CopyButton code={class5MCode[4]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wificonect6.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Paso 4 - Verificación de conección a red wifi(IP)</h3>
+                                        <p className="text-break mx-auto w-75">Para saber si realmente hizo una conexion válida debemos crear un bucle while utilizando el método isconnected() para saber si está conectado o no, podemos utilizar la libreria time para esperar 1 segundo y volver a consultar la conexión.</p>
+                                        <p className="text-break mx-auto w-75">Si queremos saber la IP de nuestro dispositivo, debemos utilizar el método ifconfig()[0].</p>
+                                        <CopyButton code={class5MCode[5]} />
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wificonect7.webp"></img>
                                     </div>
                                 </div>
                             </div>
@@ -179,14 +191,14 @@ const MicropythonClass5 = () => {
                                             <li><p className="text-break mx-auto w-75"><span className="fw-bold">import time: </span>Permite realizar pausas en el código.</p></li>
                                             <li><p className="text-break mx-auto w-75"><span className="fw-bold">from machine import Pin: </span>Permite controlar los pines GPIO de la Raspberry Pi Pico W, como el LED.</p></li>
                                         </ul>
-                                        <CopyButton code={class3Code[9]} />
+                                        <CopyButton code={class5MCode[6]} />
                                         <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage.webp"></img>
                                         <h3 className="text-break mx-auto w-75 mt-4">Paso 2 - Configuración de puerto de entrada/salida(Raspberry pi pico)</h3>
                                         <p className="text-break mx-auto w-75 mt-4">En este caso simple voy a utilizar el Led interno de la raspberry pi pico para manipularlo.</p>
-                                        <CopyButton code={class3Code[10]} />
+                                        <CopyButton code={class5MCode[7]} />
                                         <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage2.webp"></img>
                                         <h3 className="text-break mx-auto w-75 mt-4">Paso 3 - Conexion WIFI</h3>
-                                        <CopyButton code={class3Code[10]} />
+                                        <CopyButton code={class5MCode[8]} />
                                         <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage3.webp"></img>
                                         <h3 className="text-break mx-auto w-75 mt-4">Paso 4 - Crear página web de control</h3>
                                         <ul className="text-break mx-auto w-75 list-unstyled">
@@ -195,15 +207,15 @@ const MicropythonClass5 = () => {
                                             <li><p className="text-break mx-auto w-75"><span className="fw-bold">Etiqueta a: </span>La etiqueta 'a' se utiliza para redireccionar a una ruta http.</p></li>
                                             <li><p className="text-break mx-auto w-75"><span className="fw-bold">Etiqueta Button: </span>Permite realizar la acción de un botón.</p></li>
                                         </ul>
-                                        <CopyButton code={class3Code[10]} />
+                                        <CopyButton code={class5MCode[9]} />
                                         <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage4.webp"></img>
                                         <h3 className="text-break mx-auto w-75 mt-4">Paso 5 - Configuración del servidor</h3>
                                         <p className="text-break mx-auto w-75 mt-4">En este caso simple voy a utilizar el Led interno de la raspberry pi pico para manipularlo.</p>
-                                        <CopyButton code={class3Code[10]} />
+                                        <CopyButton code={class5MCode[10]} />
                                         <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage5.webp"></img>
                                         <h3 className="text-break mx-auto w-75 mt-4">Paso 6 - Bucle principal para manejar solicitudes HTTP</h3>
                                         <p className="text-break mx-auto w-75 mt-4">En este caso simple voy a utilizar el Led interno de la raspberry pi pico para manipularlo.</p>
-                                        <CopyButton code={class3Code[10]} />
+                                        <CopyButton code={class5MCode[11]} />
                                         <img className="w-75 d-block mx-auto mt-4 border-content" alt="" src="../../img/class5Micropython/wifipage6.webp"></img>
                                     </div>
                                 </div>
@@ -211,41 +223,39 @@ const MicropythonClass5 = () => {
                             <div className="accordion accordion-flush w-100 mx-auto mt-4" id="accordionFlushExample">
                                 <div id="element7" className={`accordion-item animated-left ${elementVisibility.element7 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2>PWM</h2>
+                                        <h2>Utilización de Apis en raspberry pi pico w</h2>
                                     </button>
                                     <div id="a6" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">¿Qué es PWM?</h3>
-                                            <p className="text-break mx-auto w-75 mt-4">PWM (Modulación por Ancho de Pulso) es una técnica utilizada para controlar la potencia entregada a dispositivos electrónicos. En lugar de aplicar un voltaje constante, PWM alterna rápidamente entre encendido y apagado, lo que permite simular un voltaje variable.</p>
-                                            <p className="text-break mx-auto w-75 mt-4">En PWM solo tenemos 2 estados, HIGH(3.3V - alto) y LOW(0V - bajo).</p>
-                                            <p className="text-break mx-auto w-75 mt-4">Dentro del gráfico veremos también "ciclo de trabajo"(duty cycle), es un concepto fundamental en PWM (modulación por ancho de pulso), que se refiere al porcentaje de tiempo que una señal está en estado alto (encendida) durante un ciclo completo de la señal.</p>
-                                            <p className="text-break mx-auto w-75 mt-4">El valor máximo del ciclo de trabajo(duty cycle) que tiene internamente un potenciometro es de "65535", esto es porque está en 16bits y la cantidad de valores que puede procesar son 65536(es uno más porque se incluye el 0 como valor)</p>
-                                            <p className="text-break mx-auto w-75 mt-4">Ejemplo: Si una señal PWM tiene un duty cycle del 50%(65535/2 = 32768), significa que la señal está activa (en alto) el 50% del tiempo y en bajo el otro 50%, Si el duty cycle es del 25% (65535/4 = 16383), la señal estará activa solo el 25% del tiempo y en bajo el 75%.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM.webp"></img>
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Frecuencia</h3>
-                                            <p className="text-break mx-auto w-75 mt-4">La frecuencia en el contexto de PWM (modulación por ancho de pulso) se refiere a la cantidad de ciclos completos que ocurren en un segundo. Se mide en hercios (Hz), donde 1 Hz equivale a un ciclo completo por segundo.</p>
-                                            <p className="text-break mx-auto w-75 mt-4">Ejemplo: Si la frecuencia es 1 Hz, entonces el ciclo completo (tiempo en alto más tiempo en bajo) ocurre una vez por segundo, Si la frecuencia es 1000 Hz (1 kHz), el ciclo completo ocurre 1000 veces en un segundo.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/Hz.webp"></img>
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Relación entre Frecuencia y Duty Cycle</h3>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Es importante entender que, aunque el duty cycle y la frecuencia son conceptos distintos, ambos determinan el comportamiento de la señal PWM:</span>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Duty cycle: </span>controla el tiempo que la señal está activa dentro de cada ciclo.</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Frecuencia: </span>determina cuántos ciclos ocurren por segundo.</p></li>
-                                            </ul>
-                                            <p className="text-break mx-auto w-75 mt-4">Por ejemplo, si tienes una señal PWM con una frecuencia de 1 kHz (1000 ciclos por segundo) y un duty cycle del 50%, la señal estará en estado alto durante 0.5 ms (milisegundos) y en estado bajo durante otros 0.5 ms en cada ciclo. Si aumentas la frecuencia, los ciclos serán más rápidos, pero el tiempo que la señal permanece en alto y bajo por ciclo también será menor.</p>
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Importancia de la frecuencia en PWM</h3>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>La frecuencia del PWM es clave en aplicaciones como el control de motores y el brillo de LEDs:</span>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Motores eléctricos: </span>Si la frecuencia es demasiado baja, el motor puede vibrar o producir un zumbido debido a la conmutación lenta. Por eso, frecuencias más altas (a menudo en el rango de kHz) se usan para controlar motores de manera más suave.</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Control de brillo de LEDs: </span> Si la frecuencia es baja, el LED puede parpadear perceptiblemente, lo que es indeseable. A frecuencias más altas, el parpadeo se vuelve imperceptible, logrando una variación suave en el brillo.</p></li>
-                                            </ul>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Paso 1 conexión a la red wifi</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">Como hicimos en los temas anteriores tenemos que activar el módulo WIFI de la raspberry pi pico y luego conectarnos a la red wifi</p>
+                                            <CopyButton code={class5MCode[5]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/wificonect7.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Paso 2 importar urequests</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">La importación de la libreria urequests nos servirá para poder hacer una solicitud HTTP</p>
+                                            <CopyButton code={class5MCode[12]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/apiweather.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Paso 3 Realizar solicitud HTTP</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">Para poder hacer una solicitud HTTP debemos utilizar el método .get() dentro del parámetro ingresar la URL que queramos solicitar.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Dentro de la URL ("https://api.open-meteo.com/v1/forecast?latitude=35.68&longitude=139.69&current_weather=true") en "latitude" y "Longitude" debemos indicar la ubicación especifica donde queramos saber la t°.</p>
+                                            <CopyButton code={class5MCode[13]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/apiweather2.webp"></img>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Paso 4 Consumo de Api</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">Para saber si la solicitud fué exitosa, debemos utilizar el método .status_code(), si este método devuelve 200, quiere indicar que el pedido fué exitoso.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Luego este pedido lo debemos transformar en un formato que podamos manipular, en este caso es un formato JSON, para transformarlo debemos utilizar el método .JSON()</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Esta solicitud queda abierto cuando se llama una solicitud, para finalizar el llamado debemos utilizar el método .close()</p>
+                                            <CopyButton code={class5MCode[14]} />
+                                            <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/apiweather3.webp"></img>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="element8" className={`accordion-item animated-left mt-4 ${elementVisibility.element8 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
                                     <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a7" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2>Potenciometro</h2>
+                                        <h2>Comunicación entre raspberry pi pico w</h2>
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">RP pico W(1) - Paso 1 conexión a la red wifi</h3>
                                             <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Potenciometro en Raspberry pi pico w (potenciometro)</h3>
                                             <p className="text-break mx-auto w-75 mt-4">Para poder utilizar un Potenciometro debemos utilizar desde la libreria "machine" la clase "ADC"</p>
                                             <CopyButton code={class4MCode[0]} />

@@ -398,6 +398,43 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.button-sidebar{
+  font-size: 16px;
+  z-index: 13;
+  position: fixed;
+  top: 50vh;
+  left: 96vw;
+  width:40px;
+  height:150px;
+  writing-mode: vertical-lr;
+  background: rgb(238, 112, 83);
+  border: 1px solid rgb(179, 66, 41);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: white; 
+}
+.sidebar {
+  position: relative;
+  pointer-events: none;
+  background-color: white;
+  border-radius: 10px;
+}
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 60vw;
+    margin: 1.75rem auto;
+  }
+}
+@media (max-width: 576px){
+  .modal-dialog {
+    max-width: 90vw;
+    margin-left: 5vw;
+    margin-top: 30vh
+  }
+}
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {

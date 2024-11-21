@@ -35,11 +35,13 @@ const Contact = lazy(() => import('./components/Contact/Contact'));
 const ProfessionalCareer = lazy(() => import('./components/ProfessionalCareer/ProfessionalCareer'));
 const DigitalPortfolio = lazy(() => import('./components/DigitalPortfolio/DigitalPortfolio'));
 const VirtualAssistance = lazy(()=> import('./components/VirtualAssistant/VirtualAssistant'))
+const Sidebar = lazy(()=> import('./components/Sidebar/Sidebar'))
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar/>
+      <Sidebar/>
       <VirtualAssistance/>
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
@@ -82,7 +84,6 @@ function App() {
         <Route path="/pythonKids/contact" element={<Contact/>} />
         <Route path="/github/classes" element={<Classes/>} />
         <Route path="/github/classes/26FRYWt99U3HPuaCfGky" element={<GithubClass1 />} />
-        {/* <Route path="/microPython/github" element={<Github/>} /> */}
         <Route path="/professionalCarrer" element={<ProfessionalCareer/>}/>
         <Route path="/digitalPortfolio" element={<DigitalPortfolio/>}/>
       </Routes>
