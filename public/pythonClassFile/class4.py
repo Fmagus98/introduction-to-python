@@ -63,7 +63,7 @@ import calculadora
 # lo que va hacer ahí es importar el archivo calculadora.py.
 # en este caso va a importar completamente el código de nuestro archivo calcualdora.py
 # en el caso que queramos obtener solo algunas funciones y/o variables, debemos hacerlo de esta manera
-from sumar,restar,multiplicar import calculadora  
+from calculadora import sumar,restar,multiplicar
 
 # lo que hacemos ahí es importar las funciones sumar,restar y multiplicar dentro de nuestro archivo calculadora.py
 

@@ -15,7 +15,6 @@ const MicropythonClass1 = () => {
 
     useEffect(() => {
         if (localStorage.getItem("dataCourseMicropython") === null) {
-            console.log("llamado")
             getDocs(collection(db, "courseMicropython")).then(response => {
                 response.docs.map(doc => {
                     if (doc.id === "DGNVKaHVIjv8RsBsi1yD") {

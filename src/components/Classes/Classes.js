@@ -5,6 +5,8 @@ import { collection, getDocs } from 'firebase/firestore'
 import ItemContainer from '../ItemContainer/ItemContainer'
 import { colorPrimaryPython, colorPrimaryMicropython, colorSecondaryMicropython, colorPrimaryPythonKids, colorSecondaryPythonKids } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
+import { Sidebar } from '../Sidebar/Sidebar'
+
 const Classes = () => {
 
     const location = useLocation();
@@ -50,7 +52,7 @@ const Classes = () => {
             const parsedDates = JSON.parse(savedCourse);
             const firstDate = new Date(parsedDates[1].date);
             const currentDate = new Date();
-            console.log(savedCourse)
+            
             if ((currentDate - firstDate) <= 1
             // 4742590612
         ) {
@@ -68,6 +70,7 @@ const Classes = () => {
             <section id="hero" style={{ background: location.pathname.includes("micropython") ? colorPrimaryMicropython : location.pathname.includes("pythonKids") ? colorPrimaryPythonKids : colorPrimaryPython }} >
                 <div className="container">
                     <div className="row justify-content-between">
+                        <Sidebar/>
                         {location.pathname.includes("github") ?
                             <>
                                 <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
