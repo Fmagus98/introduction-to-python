@@ -1,19 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export const Sidebar = () => {
     const location = useLocation();
     const sidebarState = location.pathname.includes("micropython/classes/");
+    const [display, setDisplay] = useState(false)
+
+    const showModal = () => {
+        setDisplay("flex"); // Cambia el display a flex para mostrar el modal
+    };
+
+    const hideModal = () => {
+        setDisplay("none"); // Cambia el display a none para ocultar el modal
+    };
 
     useEffect(() => {
-        const modal = document.getElementById("exampleModal");
-        if (modal) {
-            modal.classList.remove("show");
-            modal.style.display = "none";
-            modal.setAttribute("aria-hidden", "true");
-            document.body.classList.remove("modal-open");
-            document.body.style.overflow = "";
-        }
+        setDisplay("none"); // Cambia el display a none para ocultar el modal
     }, [location.pathname]);
 
     return (
@@ -24,33 +26,25 @@ export const Sidebar = () => {
                         <button
                             type="button"
                             className="button-sidebar"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
+                            onClick={showModal}
                         >
                             Puertos RPPW
                         </button>
                     </div>
-                    <div
-                        className="modal"
-                        id="exampleModal"
-                        aria-labelledby="exampleModalLabel"
-                        aria-hidden="true"
-                        style={{ display: 'none' }}
-                    >
+                    <div className="modal" onClick={hideModal}
+                        style={{ display: display, background: "rgba(0,0,0,0.6)" }}>
                         <div className="modal-dialog">
                             <div className="sidebar">
                                 <div className="modal-header">
                                     <h3
                                         className="text-center mx-auto w-75 fw-bold"
-                                        id="exampleModalLabel"
                                     >
                                         Puertos de Raspberry Pi Pico W
                                     </h3>
                                     <button
                                         type="button"
                                         className="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"
+                                        
                                     ></button>
                                 </div>
                                 <div className="modal-body">
