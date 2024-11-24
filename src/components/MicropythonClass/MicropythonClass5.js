@@ -354,8 +354,12 @@ const MicropythonClass5 = () => {
                                             <li><p className="text-break mx-auto w-100"><span className="fw-bold">lcd_set_cursor: </span>Esta función indica en que ubicación iniciará el texto.</p></li>
                                             <li><p className="text-break mx-auto w-100"><span className="fw-bold">lcd_print: </span>Esta función imprimirá el texto en la pantalla.</p></li>
                                         </ul>
+                                        <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/415201117168705537" target="_blank" className="text-info">Pantalla LCD1602</Link></p>
                                         <CopyButton code={class5MCode[19]} />
                                         <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/lcd1602-3.webp"></img>
+                                        <h3 className="text-break w-75 mx-auto">Pantalla LCD1602 - Activación de led</h3>
+                                        <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/415348937494693889" target="_blank" className="text-info">Pantalla LCD1602 Activación de led</Link></p>
+                                        <img className="w-75 d-block mx-auto mb-4 border-content" alt="" src="../../img/class5Micropython/lcd1602-4.webp"></img>
                                     </div>
                                 </div>
                             </div>
