@@ -53,8 +53,7 @@ const Classes = () => {
             const firstDate = new Date(parsedDates[1].date);
             const currentDate = new Date();
             
-            if ((currentDate - firstDate) <= 1
-            // 4742590612
+            if ((currentDate - firstDate) <= 4742590612
         ) {
                 setCourse(parsedDates);  
             } else {
