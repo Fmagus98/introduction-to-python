@@ -256,7 +256,7 @@ const MicropythonClass4 = () => {
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed4.webp"></img>
                                             <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro</h4>
                                             <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
-                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413388811649584129" target="_blank" className="text-info">Potenciometro Básico con Leds 2</Link></p>
+                                            <p className="mt-4 mb-4 text-center mx-auto w-50">Para verlo desde Wokwi ingresa al link -- <Link to="https://wokwi.com/projects/413389708213577729" target="_blank" className="text-info">Potenciometro Básico con Leds 2</Link></p>
                                             <CopyButton code={class4MCode[7]} />
                                             <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed5.webp"></img>
                                             <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro(Código optimizado)</h4>
