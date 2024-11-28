@@ -406,7 +406,7 @@ h6 {
   position: fixed;
   top: 50vh;
   left: 96vw;
-  width:40px;
+  width:4vw;
   height:150px;
   writing-mode: vertical-lr;
   background: rgb(238, 112, 83);
@@ -432,6 +432,10 @@ h6 {
     max-width: 90vw;
     margin-left: 5vw;
     margin-top: 30vh
+  }
+  .button-sidebar{
+  left: 90vw;
+  width:10vw;
   }
 }
 /*--------------------------------------------------------------
