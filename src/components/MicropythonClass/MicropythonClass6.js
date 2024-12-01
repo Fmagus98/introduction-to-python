@@ -256,108 +256,48 @@ const MicropythonClass6 = () => {
                                     </button>
                                     <div id="a7" className="accordion-collapse collapse" >
                                         <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">RP pico W(1) - Paso 1 conexión a la red wifi</h3>
-                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Potenciometro en Raspberry pi pico w (potenciometro)</h3>
-                                            <p className="text-break mx-auto w-75 mt-4">Para poder utilizar un Potenciometro debemos utilizar desde la libreria "machine" la clase "ADC"</p>
-                                            <CopyButton code={class4MCode[0]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2paso1.webp"></img>
-                                            <p className="text-break mx-auto w-75 mt-4">Luego debemos crear una variable y almacenar la clase ADC junto al pin donde se quiere recibir la señal, en este caso es en el GP28</p>
-                                            <p className="text-break mx-auto w-75 mt-4">Además de esto debemos conectar nuestro potenciómetro a la raspberry pi pico w de la siguiente manera:</p>
-                                            <ul className="text-break mx-auto w-75 list-unstyled">
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">VCC :</span> La debemos conectar al puerto 3V3 para que nos proporcione el voltaje de 3V (+)</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">SIG : </span> La debemos conectar al Pin GP28 para que podamos comunicar la señal de nuestro potenciometro</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">GND : </span> La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
+                                            <h3 className="mt-7 text-break mx-auto w-75 fw-bold">Servidor y cliente</h3>
+                                            <p className="text-break mx-auto w-75 mt-4">El servidor es el dispositivo que espera conexiones de otros dispositivos y, generalmente, proporciona un servicio o recurso. En este caso, una Raspberry Pi Pico actúa como el servidor.</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span className="fw-bold">Características del servidor:</span>
+                                                <li><p className="text-break mx-auto w-75">- Escucha en un puerto específico (como el puerto 8080) para conexiones entrantes.</p></li>
+                                                <li><p className="text-break mx-auto w-75">- Responde a solicitudes de los clientes.</p></li>
+                                                <li><p className="text-break mx-auto w-75">- Puede manejar múltiples clientes si está configurado para ello.</p></li>
+                                                <li><p className="text-break mx-auto w-75">- Se mantiene disponible mientras espera conexiones.</p></li>
                                             </ul>
-                                            <CopyButton code={class4MCode[1]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2paso2.webp"></img>
-                                            <h4 className="mt-4 text-break mx-auto w-75">Visualizar duty Cycle y voltaje en potenciometro</h4>
-                                            <CopyButton code={class4MCode[2]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWM2.webp"></img>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="element9" className={`accordion-item animated-left mt-4 ${elementVisibility.element9 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#a8" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <h2>Led</h2>
-                                    </button>
-                                    <div id="a8" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Funcionamiento de PWM en LEDs</h3>
-                                            <p className="text-break mx-auto w-75">Los LEDs son dispositivos semiconductores que convierten energía eléctrica en luz, y su brillo depende de la cantidad de corriente que pasa a través de ellos. Sin embargo, en lugar de ajustar directamente la corriente, lo que podría ser ineficiente y producir calor, el PWM ofrece un enfoque eficiente para regular el brillo mediante el control del tiempo que el LED está encendido o apagado durante un ciclo.</p>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Cuando se usa PWM:</span>
-                                                <li><p className="text-break mx-auto w-75">El LED es encendido y apagado rápidamente a una frecuencia constante.</p></li>
-                                                <li><p className="text-break mx-auto w-75">El ojo humano no percibe este parpadeo si la frecuencia es lo suficientemente alta, por lo que el LED parece estar atenuado en lugar de encendido y apagado.</p></li>
-                                                <li><p className="text-break mx-auto w-75">El brillo percibido del LED es ajustado variando el duty cycle, es decir, cuánto tiempo está encendido en cada ciclo de la señal PWM.</p></li>
+                                            <p className="text-break mx-auto w-75 mt-4">El cliente es el dispositivo que inicia la conexión hacia el servidor. En este caso, la otra Raspberry Pi Pico actúa como el cliente.</p>
+                                            <ul className="text-break mx-auto w-75 list-unstyled"><span className="fw-bold">Características del cliente:</span>
+                                                <li><p className="text-break mx-auto w-75">- Se conecta al servidor utilizando su dirección IP y un puerto específico.</p></li>
+                                                <li><p className="text-break mx-auto w-75">- Envía solicitudes o mensajes al servidor.</p></li>
+                                                <li><p className="text-break mx-auto w-75">- Recibe respuestas o datos del servidor.</p></li>
                                             </ul>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Frecuencia y Percepción Visual</h3>
-                                            <p className="text-break mx-auto w-75">La frecuencia es otro parámetro clave en el control del brillo de LEDs mediante PWM. La frecuencia es la cantidad de veces por segundo que se repite el ciclo de encendido y apagado. Si la frecuencia es demasiado baja, el parpadeo del LED será perceptible para el ojo humano, lo que puede ser incómodo o distraer.</p>
-                                            <ul className="text-break mx-auto w-75 list-unstyled"><span>Frecuencias altas y bajas</span>
-                                                <li><p className="text-break mx-auto w-75">Frecuencia baja (&lt;100 Hz): A frecuencias bajas, el parpadeo puede ser claramente visible. Un parpadeo inferior a 60 Hz será notorio, ya que es la frecuencia mínima que el ojo humano puede procesar sin notar el parpadeo.</p></li>
-                                                <li><p className="text-break mx-auto w-75">Frecuencia alta (&gt;500 Hz a 1 kHz): A frecuencias más altas, el parpadeo se vuelve imperceptible para el ojo humano. Los LEDs parecen emitir una luz continua y estable.</p></li>
-                                            </ul>
-                                            <h4 className="mt-4 text-break mx-auto w-75">Efecto de la frecuencia en LEDs:</h4>
-                                            <ul className="text-break mx-auto w-75 list-unstyled">
-                                                <li><p className="text-break mx-auto w-75">Para aplicaciones comunes, como la iluminación o pantallas LED, una frecuencia mínima de PWM de 500 Hz es recomendable.</p></li>
-                                                <li><p className="text-break mx-auto w-75">Para aplicaciones de mayor precisión, como pantallas LED de alta calidad o iluminación que se graba en cámaras, frecuencias mucho más altas (2 kHz a 5 kHz o más) son necesarias para evitar efectos de parpadeo o interferencias visuales con la grabación.</p></li>
-                                            </ul>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Ejecución de Potenciómetro en LEDs(PWM)</h3>
-                                            <p className="text-break mx-auto w-75">Para poder manipular LEDs con un potenciometro vamos a utilizar lo mismo que vimos anteriormente con el potenciómetro, pero añadimos también la clase "PWM" de libreria machine.</p>
-                                            <CopyButton code={class4MCode[3]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed1.webp"></img>
-                                            <p className="text-break mx-auto w-75 mt-4">Agregamos una variable llamada "pwm" y le asignamos la clase PWM() indicandole dentro del paréntesis(parámetro) el Pin que vamos a conectar nuestro led, en este caso va a ser el pin 15.</p>
-                                            <p className="text-break mx-auto w-75 mt-4">También le añadiremos la frecuencia que va a tener el PWM. Para hacerlo debemos llamar a la variable "pwm" y le asignamos el método freq(), en este caso va a ser de 1000Hz(.freq(1000)) y mostramos la frecuencia en la terminal con print(pwm.freq()) </p>
-                                            <p className="text-break mx-auto w-75 mt-4">Para asignarle ahora el duty cycle al PWM en nuestro led, vamos a tener que poner pwm.duty_u16(analog_value)</p>
-                                            <CopyButton code={class4MCode[4]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed2.webp"></img>
-                                            <p className="text-break mx-auto w-75">Ahora conectamos el ánodo(+) del led a una resistencia y en el extremo al Pin GP15 y el cátodo(-) a GND</p>
-                                            <CopyButton code={class4MCode[5]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed3.webp"></img>
-                                            <h4 className="mt-4 text-break mx-auto w-75">Activación de luces Led con Potenciómetro</h4>
-                                            <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
-                                            <CopyButton code={class4MCode[6]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed4.webp"></img>
-                                            <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro</h4>
-                                            <p className="text-break mx-auto w-75">También podemos activar los leds girando el potenciometro</p>
-                                            <CopyButton code={class4MCode[7]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed5.webp"></img>
-                                            <h4 className="mt-4 text-break mx-auto w-75">Elección de luz Led con Potenciómetro(Código optimizado)</h4>
-                                            <CopyButton code={class4MCode[8]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/PWMLed6.webp"></img>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="element10" className={`accordion-item mt-4 rounded-5 animated-left ${elementVisibility.element10 ? 'slide-left' : ''}`} style={{ background: colorPrimaryMicropython, borderRadius: "40px" }} >
-                                    <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a9" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <h2 className="text-light">Servomotores</h2>
-                                    </button>
-                                    <div id="a9" className="accordion-collapse collapse" >
-                                        <div className="accordion-body text-light bg-dark ">
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Qué es un servomotor?</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Un servomotor es un tipo de motor que permite un control preciso de la posición, la velocidad y el movimiento. A menudo se utiliza en aplicaciones como robótica, automatización y modelos a escala.</p>
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo.webp"></img>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Tipos de servomotores</h3>
-                                            <ul className="text-break mx-auto w-75 list-unstyled">
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 180 grados: </span> Suelen rotar en un rango de 0 a 180 grados.</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Servomotores de 360 grados: </span> Pueden girar continuamente en ambas direcciones.</p></li>
-                                            </ul>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Conexión de servomotor</h3>
-                                            <ul className="text-break mx-auto w-75 list-unstyled">
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">VCC/VBUS :</span> La debemos conectar al puerto 3V3 para que nos proporcione el voltaje de 3V (+), aunque usualmente se conecta a 5V por medio del VBUS.</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">SIG : </span> La debemos conectar al Pin GP28 para que podamos comunicar la señal de nuestro servomotor</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">GND : </span> La debemos conectar al Pin GND para que podamos tener la conexión a tierra (-)</p></li>
-                                            </ul>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Valores típicos en un servomotor</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Los servomotores se controlan mediante señales PWM (Modulación por Ancho de Pulso), y el valor que utilizan para moverse se refiere a la duración del pulso en microsegundos (µs) o nanosegundos (ns). </p>
-                                            <ul className="text-break mx-auto w-75 list-unstyled">
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Rango de pulsos:</span> La mayoría de los servomotores estándar se mueven en un rango de pulso entre aproximadamente 1 ms (1000 µs) y 2 ms (2000 µs). Este rango suele corresponder a posiciones de 0° a 180°.</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Posiciones Comunes: </span> 1 ms (1000 µs)Generalmente se asocia con la posición mínima (0°). 1.5 ms (1500 µs): Comúnmente se considera la posición central (90°) y 2 ms (2000 µs): Se asocia con la posición máxima (180°).</p></li>
-                                                <li><p className="text-break mx-auto w-75"><span className="fw-bold">Frecuencia : </span> La frecuencia típica para la señal PWM es de 50 Hz. Esto significa que se repite un ciclo cada 20 ms (20,000 µs).</p></li>
-                                            </ul>
-                                            <h3 className="mt-4 text-break mx-auto w-75 fw-bold">Potenciometro en servomotor 180°</h3>
-                                            <p className="text-break mx-auto mt-4 w-75">Para utilizar este tipo de servomotores vamos a tener que mapear el angulo que puede dar este servomotor en el potenciometro, para ello multiplicamos por 180(angulo) dividido 65535(valor máximo del potenciómetro), así cada vez que giremos el potenciómetro indique el angulo de giro</p>
-                                            <p className="text-break mx-auto mt-4 w-75">También vamos a tener que asignarle el valor al servomotor de la siguiente forma: int((el calculo anterior para mapear el potenciometro + 45) * 100000 / 9), esto se hace para que devuelva un valor en nanosegundos, lo que se necesita para mover el servomotor </p>
-                                            <CopyButton code={class4MCode[9]} />
-                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class4Micropython/servo2.webp"></img>
+                                            <img className="w-50 mx-auto d-block border-content" alt="" src="../../img/class5Micropython/server.webp"></img>
+                                            <h4 className="mt-7 text-break mx-auto w-75 fw-bold">Servidor - RP pico W(1) - Paso 1 conexión a la red wifi</h4>
+                                            <p className="text-break mx-auto w-75 mt-4">Como hicimos anteriormente, debemos hacer la conexión a la red wifi.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">importaremos la libreria Socket, network y time y utilizaremos los métods WLAN, active y connect de la libreria network para realizar la conexión.</p>
+                                            <CopyButton code={class6MCode[15]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class5Micropython/conect2rpw.webp"></img>
+                                            <h4 className="mt-7 text-break mx-auto w-75 fw-bold">Servidor - RP pico W(1) - Paso 2 configuración para recibir solicitudes del cliente</h4>
+                                            <p className="text-break mx-auto w-75 mt-4">Primero debemos guardar en una variable socket.socket(socket.AF_INET, socket.SOCK_STREAM) y luego utilizar el método bind(('', 8080))en donde el primer dato va a estar vacio y el segundo será el número del puerto de nuestro servidor</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Luego de saber esto, tenemos que utilizar un bucle while para consultar constantemente si el cliente nos ha enviado una solicitud.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">para saber si nos envío una solicitud el cliente, debemos utilizar el método acept() en la conexión de nuestra red wifi y servidor para saber si nos llegó una solicitud</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Luego este dato que nos llegó debemos hacer una conversión para que lo pueda entender, para esto utilizamos recv() junto con decode() para formatear los caracteres especiales latinoamericanos</p>
+                                            <p className="text-break mx-auto w-75 mt-4">También podemos enviar un mensaje al cliente, para indicarle que llegó correctamente el mensaje, para esto debemos utilizar send() junto con el enconde('utf-8')</p>
+                                            <CopyButton code={class6MCode[16]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class5Micropython/conect2rpw3.webp"></img>
+                                            <h4 className="mt-7 text-break mx-auto w-75 fw-bold">Cliente - RP pico W(2) - Paso 1 conexión a la red wifi</h4>
+                                            <p className="text-break mx-auto w-75 mt-4">Como hicimos anteriormente, debemos hacer la conexión a la red wifi.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">importaremos la libreria Socket, network y time y utilizaremos los métods WLAN, active y connect de la libreria network para realizar la conexión.</p>
+                                            <CopyButton code={class6MCode[15]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class5Micropython/conect2rpw.webp"></img>
+                                            <h4 className="mt-7 text-break mx-auto w-75 fw-bold">Cliente - RP pico W(2) - Paso 2 configuración para la conexión al servidor</h4>
+                                            <p className="text-break mx-auto w-75 mt-4">Primero debemos saber que ip y puerto debemos conectarnos, para eso veremos la conexión del servidor primero.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Luego de saber esto, tenemos que utilizar un bucle while para poder enviar solicitudes al servidor las veces que queramos.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">para hacer la conexión al servidor debemos utilizar en una variable esto: socket.socket(socket.AF_INET, socket.SOCK_STREAM) y luego llamar a la variable y dentro del método connect() indicar el ip y puerto del servidor.</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Ya estando conectado al servidor, podemos enviar una solicitud, para esto debemos utilizar la variable que contiene la conexión del servidor seguido del método send(), dentro del método send introduce el texto que quieras enviar, en este caso utilicé también un encode para que interprete correctamente los caracteres especiales latinoamericanos(.encode('utf-8'))</p>
+                                            <p className="text-break mx-auto w-75 mt-4">Para saber si realmente le llegó un mensaje, podemos hacer que el servidor nos devuelve una solicitud también, para esto utilizamos client.recv(), dependiendo del número que indiques dentro de los parámetros, podemos recibir un mensaje u otro(dependiendo de como esté configurado el servidor)</p>
+                                            <CopyButton code={class6MCode[17]} />
+                                            <img className="w-75 mx-auto d-block border-content" alt="" src="../../img/class5Micropython/conect2rpw2.webp"></img>
+                                    
                                         </div>
                                     </div>
                                 </div>
