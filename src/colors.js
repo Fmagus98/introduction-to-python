@@ -4,4 +4,5 @@ export const colorPrimaryMicropython = 'rgb(179, 66, 41)'
 export const colorSecondaryMicropython = "rgb(238, 112, 83)"
 export const colorPrimaryPythonKids = "conic-gradient(from 45deg,#E80873,#006ee6)"
 export const colorSecondaryPythonKids = "#4c2882"
+export const colorPrimaryFlet = "conic-gradient(from 45deg,#006ee6,#E80873)"
 

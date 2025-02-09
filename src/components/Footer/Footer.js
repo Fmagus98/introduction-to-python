@@ -5,7 +5,7 @@ import {colorPrimaryPython, colorPrimaryPythonKids} from '../../colors'
 const Footer = () => {
   const location = useLocation()
   
-  const color = location.pathname.includes("micropython")?"#B34229" : location.pathname.includes("pythonKids") ? colorPrimaryPythonKids : colorPrimaryPython
+  const color = location.pathname.includes("micropython")?"#B34229" : location.pathname.includes("pythonKids") || location.pathname.includes("flet")? colorPrimaryPythonKids : colorPrimaryPython
 
   return (
     <footer id="footer" style={{background:color}}>

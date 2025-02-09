@@ -55,7 +55,7 @@ const Access = () => {
             !localStorage.getItem(data) ? <li>  <form onSubmit={handleSubmit} className="form-inline mt-2 mt-md-0">
                 <div className="input-group">
                     <input type="text" id="form3Example3" name="password" className="form-control" value={password} onChange={handleChange} />
-                    <button type="submit" className="btn" style={{ backgroundColor: passwordFail ? "red" : location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : location.pathname.includes("pythonKids")? colorSecondaryPythonKids: "#2f6997" }}>{!passwordFail ? "Acceso Total" : "Código inválido. Intenta de nuevo"}</button>
+                    <button type="submit" className="btn" style={{ backgroundColor: passwordFail ? "red" : location.pathname.includes("micropython") ? "rgb(238, 112, 83)" : location.pathname.includes("pythonKids") || location.pathname.includes("flet")? colorSecondaryPythonKids: "#2f6997" }}>{!passwordFail ? "Acceso Total" : "Código inválido. Intenta de nuevo"}</button>
                 </div>
             </form>
             </li> : <li><p className="access h6 text-light">Acceso total</p></li>

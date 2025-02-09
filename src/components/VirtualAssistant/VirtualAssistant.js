@@ -10,7 +10,7 @@ const VirtualAssistant = () => {
     const location = useLocation();
     const [loadingLLM, setLoadingLLM] = useState('');
     const [disabledButton, setDisabledButton] = useState(false);
-    let promptDefault = "Te llamas PyBot y eres un asistente virtual amigable ayudando a un usuario a resolver solo y unicamente cosas relaciona a python, en el caso que no sea sobre python(saludar si es valido), diles explicitamente: 'Perdon, Estoy  no puedo responder una consulta no relacionada a python'. Al usuario hablale en español. El mensaje del usuario es:"
+    let promptDefault = "Te llamas PyBot y eres un asistente virtual amigable ayudando a un usuario a resolver solo y unicamente cosas relacionadas a python - flet y micropython, en el caso que no sea sobre estos temas(saludar si es valido), diles explicitamente: 'Perdon, Estoy  no puedo responder una consulta no relacionada a python, micropython y flet'. Al usuario hablale en español. El mensaje del usuario es:"
 
     const messagesEndRef = useRef(null);
     const scrollSendMessage = () => {
@@ -72,7 +72,7 @@ const VirtualAssistant = () => {
 
             else {
                 try {
-                    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDY61QLJdNNeon3DM83Qj4AgifolaAY3Bk', {
+                    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCK2Wys44KyihvLS5VNqx3LnmXeJ-tIpKw', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

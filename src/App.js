@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Classes from './components/Classes/Classes';
 import Home from './components/Home/Home';
+
 const Class1 = lazy(() => import('./components/Class/Class1'));
 const Class2 = lazy(() => import('./components/Class/Class2'));
 const Class3 = lazy(() => import('./components/Class/Class3'));
@@ -26,6 +27,14 @@ const PythonKidsClass3 = lazy(() => import('./components/PythonKids/PythonKidsCl
 const PythonKidsClass4 = lazy(() => import('./components/PythonKids/PythonKidsClass4'));
 const PythonKidsClass5 = lazy(() => import('./components/PythonKids/PythonKidsClass5'));
 const PythonKidsClass6 = lazy(() => import('./components/PythonKids/PythonKidsClass6'));
+const FletClass1 = lazy(() => import('./components/FletClass/FletClass1'));
+const FletClass2 = lazy(() => import('./components/FletClass/FletClass2'));
+const FletClass3 = lazy(() => import('./components/FletClass/FletClass3'));
+const FletClass4 = lazy(() => import('./components/FletClass/FletClass4'));
+const FletClass5 = lazy(() => import('./components/FletClass/FletClass5'));
+const FletClass6 = lazy(() => import('./components/FletClass/FletClass6'));
+const FletClass7 = lazy(() => import('./components/FletClass/FletClass7'));
+const FletClass8 = lazy(() => import('./components/FletClass/FletClass8'));
 const GithubClass1 = lazy(() => import('./components/GithubClass/GithubClass1'));
 const Exercises = lazy(() => import('./components/Exercises/Exercises'));
 const Algorithms = lazy(() => import('./components/Algorithms/Algorithms'))
@@ -48,9 +57,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/micropython" element={<Home />} />
         <Route path="/pythonkids" element={<Home />} />
+        <Route path="/flet" element={<Home />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/micropython/classes" element={<Classes />} />
         <Route path="/pythonkids/classes" element={<Classes />} />
+        <Route path="/flet/classes" element={<Classes />} />
         <Route path="/classes/0yKRrkDNEiFiv7K326tk" element={<Class1 />} />
         <Route path="/classes/2KLc4SOyBBSsZ3MvrydE" element={<Class2 />} />
         <Route path="/classes/Ok0Mm7iHM1fIw69Twf4o" element={<Class3 />} />
@@ -73,6 +84,14 @@ function App() {
         <Route path="/pythonKids/classes/GrXBR5kLBjELXVm5X6Bj" element={<PythonKidsClass4 />} />
         <Route path="/pythonKids/classes/dJDZzbJCAXo4E9I1SgUT" element={<PythonKidsClass5 />} />
         <Route path="/pythonKids/classes/dncQtkAWJYQ8YqipLSvK" element={<PythonKidsClass6 />} />
+        <Route path="/flet/classes/RT0KReFWNkYESPThSwHc" element={<FletClass1 />} />
+        <Route path="/flet/classes/RqE3b2yCINn0uwstPeXt" element={<FletClass2 />} />
+        <Route path="/flet/classes/j5m1CXLk8yytCvgKTBdA" element={<FletClass3 />} />
+        <Route path="/flet/classes/kVEcnH5QyeRWpw03w22b" element={<FletClass4 />} />
+        <Route path="/flet/classes/lWBgm33sL7TshdYjY0Tz" element={<FletClass5 />} />
+        <Route path="/flet/classes/mTaDaH6d59tWdg5lyVQp" element={<FletClass6 />} />
+        <Route path="/flet/classes/ptxaEuB77caq8Lvi1maP" element={<FletClass7 />} />
+        <Route path="/flet/classes/spgPPrRF2qDN43VLbnpz" element={<FletClass8 />} />
         <Route path="/micropython/exercises" element={<Exercises/>} />
         <Route path="/exercises" element={<Exercises/>} />
         <Route path="/algorithms" element={<Algorithms/>} />

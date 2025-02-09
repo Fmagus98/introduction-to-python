@@ -149,7 +149,7 @@ const Projects = () => {
                         </div>
                         <div id="element5" className={`mt-4 rounded-5 animated-left ${elementVisibility.element5 ? 'slide-left' : ''}`} style={{ background: colorPrimaryPython, borderRadius: "40px" }}>
                             <button className="accordion-button collapsed  bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="flush-collapseFour">
-                                <h2 className="text-light">Buscador de celulares - Mercadolibre (web scraping)</h2>
+                                <h2 className="text-light">Buscador de productos - Mercadolibre (web scraping)</h2>
                             </button>
                             <div id="a4" className="accordion-collapse collapse" >
                                 <div className="accordion-body text-light bg-dark ">

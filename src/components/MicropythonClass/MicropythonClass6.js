@@ -5,7 +5,7 @@ import { collection, getDocs } from 'firebase/firestore'
 import { colorPrimaryMicropython } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 import { CopyButton } from '../CopyButton/CopyButton'
-import { class4MCode, class6MCode } from './MicropythonClassCode'
+import { class6MCode } from './MicropythonClassCode'
 import { class4Code } from '../Class/classCode'
 
 

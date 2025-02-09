@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react'
-import { useLocation,Link} from 'react-router-dom'
-import { colorPrimaryPython, colorPrimaryMicropython, colorPrimaryPythonKids, colorSecondaryPythonKids } from '../../colors'
+import React, { useEffect } from 'react'
+import { useLocation, Link } from 'react-router-dom'
+import { colorPrimaryPython, colorPrimaryMicropython, colorPrimaryPythonKids, colorSecondaryPythonKids, colorPrimaryFlet } from '../../colors'
 import useScrollAnimation from '../../useScrollAnimation'
 
 
@@ -8,38 +8,49 @@ const Home = () => {
 
   const elementVisibility = useScrollAnimation();
   const location = useLocation();
-  const color = location.pathname === "/micropython" ? colorPrimaryMicropython : location.pathname.includes("pythonKids")? colorSecondaryPythonKids : colorPrimaryPython 
-  const title = location.pathname.includes("micropython") ? "micropython" :"python"
+  const color = location.pathname === "/micropython" ? colorPrimaryMicropython : location.pathname.includes("pythonKids") || location.pathname.includes("flet") ? colorSecondaryPythonKids : colorPrimaryPython
+  const title = location.pathname.includes("micropython") ? "micropython" : location.pathname.includes("flet") ? "flet" : "python"
   const kids = location.pathname.includes("pythonKids") ? " para jovenes de 8 a 12 años" : ""
   const listPython = ["Introducción a la programación.", "Variables", "Tipos de datos.", "Métodos de tipos de datos.", "Funciones.", "Bucles.", "Módulos.", "Manipulación de datos (Listas y tuplas)", "Programación orientado a objectos (POO)."]
   const listPythonKids = ["Introducción a la programación.", "Variables", "Tipos de datos.", "Métodos de tipos de datos.", "Bucles.", "Manipulación de datos (Listas y diccionarios)"]
   const listMicroPython = ["Introducción a MicroPython", "Fundamentos de Python en MicroPython", "Entrada y Salida en MicroPython", "Comunicación Serial y Periféricos", "Conectividad Wi-Fi con MicroPython", "MicroPython en Pantallas y Gráficos", "Almacenamiento y Sistemas de Archivos", "Desarrollo de Proyectos Avanzados"]
-  const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : location.pathname.includes("pythonKids") ? listPythonKids.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) :listPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>)
+  const listFlet = ["Introducción a Flet", "Diseño de la interfaz", "Manejo de Estados y Eventos", "Almacenamiento de Datos (Firebase o SQLite)", "Autenticación de Usuarios", "OPtimizaciones y notificaciones", "Creación de un Panel de Configuración", "Despliegue y Publicación de la Aplicación"]
+  const listDescription = location.pathname.includes("micropython") ? listMicroPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : location.pathname.includes("pythonKids") ? listPythonKids.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : location.pathname.includes("flet") ? listFlet.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>) : listPython.map(text => <li key={text}><i className="bi bi-check"></i>{text}</li>)
 
   useEffect(() => {
     if (location.hash) {
-        const element = document.getElementById(location.hash.substring(1));
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-}, [location]);
+  }, [location]);
 
   return (
     <>
-      <section id="hero" style={{ background: location.pathname === "/micropython" ? colorPrimaryMicropython : location.pathname === "/pythonKids" ? colorPrimaryPythonKids: colorPrimaryPython }}>
+      <section id="hero" style={{ background: location.pathname === "/micropython" ? colorPrimaryMicropython : location.pathname === "/pythonKids" ? colorPrimaryPythonKids : location.pathname === "/flet" ? colorPrimaryFlet:colorPrimaryPython }}>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
               <div >
-                <h1> Introducción a la programacion en {title}{kids}</h1>
-                <h2>Este curso está diseñado para introducir a los estudiantes al
-                  lenguaje de programación {title}, desde los conceptos básicos hasta
-                  habilidades más avanzadas. Los estudiantes aprenderán a diseñar,
-                  escribir y depurar programas simples y complejos utilizando {title},
-                  y se les presentará a las principales estructuras de datos y
-                  algoritmos utilizados en la programación.</h2>
-                  <Link to="#index" className={`btn-get-started scrollto ${title === "micropython"?"micropython-theme":"python-theme"}`} style={{background: location.pathname === "/pythonKids" ? colorSecondaryPythonKids:null}}>¿Que voy aprender?</Link>
+                {location.pathname.includes("flet") ?
+                  <>
+                    <h1> Crea aplicaciones con Flet</h1>
+                    <h2>Este curso está diseñado para introducir a los estudiantes al
+                      desarrollo de aplicaciones con Flet.<br></br><br></br> Flet es un framework de Python 
+                      que permite construir aplicaciones web y de escritorio con una sintaxis 
+                      sencilla y sin necesidad de usar tecnologías como React o Flutter.</h2>
+                  </> :
+                  <>
+                    <h1> Introducción a la programacion en {title}{kids}</h1>
+                    <h2>Este curso está diseñado para introducir a los estudiantes al
+                      lenguaje de programación {title}, desde los conceptos básicos hasta
+                      habilidades más avanzadas. Los estudiantes aprenderán a diseñar,
+                      escribir y depurar programas simples y complejos utilizando {title},
+                      y se les presentará a las principales estructuras de datos y
+                      algoritmos utilizados en la programación.</h2>
+                  </>}
+                <Link to="#index" className={`btn-get-started scrollto ${title === "micropython" ? "micropython-theme" : "python-theme"}`} style={{ background: location.pathname === "/pythonKids" || location.pathname === "/flet" ? colorSecondaryPythonKids : null }}>¿Que voy aprender?</Link>
               </div>
             </div>
             <div className="col-lg-4 order-1 order-lg-2 hero-img"  >
