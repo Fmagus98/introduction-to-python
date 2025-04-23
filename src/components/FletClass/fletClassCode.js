@@ -11,3 +11,13 @@ export const class1FCode = [
     `python main.py`,
     `flet run --web main.py`,
 ]
+
+export const class2FCode = [
+    `contenedor = ft.Container(
+        content=ft.Text("¡Hola, soy un Container!",color=ft.colors.BLACK),
+        bgcolor=ft.Colors.AMBER,
+        padding=20,
+        border_radius=10
+    )
+    page.add(contenedor)`
+]

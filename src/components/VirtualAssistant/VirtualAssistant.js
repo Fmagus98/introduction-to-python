@@ -72,7 +72,7 @@ const VirtualAssistant = () => {
 
             else {
                 try {
-                    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCK2Wys44KyihvLS5VNqx3LnmXeJ-tIpKw', {
+                    const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBW02VHEZdsP7UMxnEdxxUDcCoYbvdAYsc", {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
