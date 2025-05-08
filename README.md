@@ -94,7 +94,7 @@ Cuando finalices el curso, tendrás dentro del sitio web un "Acceso total", en d
    Además de tener el curso de introducción de python desde el sitio web, vas a tener el apartado de [micropython](https://introduction-to-python-chi.vercel.app/micropython), este será un curso sobre micropython para Raspberry pi pico en donde vamos a explicar lo básico para poder controlar microcontroladores, Este curso se va a empezar a realizar a partir del 2025.
 
 ## Asistente Virtual Pybot
- Desde el lado inferior izquierdo podrán utilizar un chatbot potenciado por Gemini(IA de google) en la cual van a poder consultar sobre dudas sobre Python, no podrán consultar sobre cosas que no tengan relación con python ya que está sesgado al contenido de Python.
+ Desde el lado inferior derecho podrán utilizar un chatbot potenciado por Gemini(IA de google) en la cual van a poder consultar sobre dudas sobre Python, no podrán consultar sobre cosas que no tengan relación con python ya que está sesgado al contenido de Python.
 
 ## Reportes de errores
 Somos humanos y nos podemos equivocar. Si viste algún error de tipeo en la página, alguna explicación ambigua o código que no funciona (a excepción del módulo de errores), enviame un correo desde la página del sitio para poder actualizar el contenido del sitio y tener una página cada vez mejor.
