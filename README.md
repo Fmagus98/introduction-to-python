@@ -1,4 +1,4 @@
-# Curso de introducción a la Programación en Python
+# Curso de introducción a la Programación en Python/Micropython/Flet
 
 Este curso actualmente estoy dictando en la sede "Fablab" - Centro de capacitación, ubicado en Sta. Rosa 4146, B1602 Vicente López, Provincia de Buenos Aires.
 
