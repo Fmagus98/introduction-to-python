@@ -1,6 +1,6 @@
 # Curso de introducción a la Programación en Python
 
-Este curso actualmente se está dictando en la sede "Fablab" - Centro de capacitación, ubicado en Sta. Rosa 4146, B1602 Vicente López, Provincia de Buenos Aires.
+Este curso actualmente estoy dictando en la sede "Fablab" - Centro de capacitación, ubicado en Sta. Rosa 4146, B1602 Vicente López, Provincia de Buenos Aires.
 
 ## ¿De qué es el curso?
 
